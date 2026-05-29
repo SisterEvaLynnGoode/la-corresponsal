@@ -297,6 +297,40 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
       <button class="btn btn-sm" onclick="closeTeacher()">✕</button>
     </div>
     <div id="teacher-body"></div>
+
+    <!-- Content generation panel (always visible in teacher modal) -->
+    <div style="margin-top:1.25rem;border-top:2px solid var(--cream-dk);padding-top:1rem;font-family:sans-serif">
+      <div style="font-size:.85rem;font-weight:700;margin-bottom:.5rem">⚡ Generar todo el contenido</div>
+      <div style="font-size:.78rem;color:var(--ink-lt);margin-bottom:.65rem;line-height:1.5">
+        Genera las 60 sesiones (20 países × 3) con tu clave Gemini gratuita. Tarda ~5 minutos.
+        Luego descarga un HTML autónomo — los estudiantes nunca necesitan clave.
+      </div>
+      <div style="margin-bottom:.5rem">
+        <label style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--ink-lt)">Clave Gemini</label>
+        <input id="teacher-key" type="password" placeholder="AIza…"
+          style="width:100%;margin-top:.25rem;padding:.5rem .75rem;border:2px solid var(--cream-dk);
+                 border-radius:6px;font-size:.88rem;font-family:sans-serif"
+          oninput="S.apiKey=this.value;save()">
+      </div>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+        <button class="btn btn-gold" id="gen-btn" onclick="generateAllContent()">🚀 Generar todo (60 sesiones)</button>
+      </div>
+      <div id="gen-progress" style="display:none;margin-bottom:.75rem">
+        <div style="font-size:.8rem;color:var(--ink-lt);margin-bottom:.3rem" id="gen-status">Iniciando…</div>
+        <div style="background:#ddd;border-radius:4px;height:8px;overflow:hidden">
+          <div id="gen-bar" style="background:var(--green);height:100%;width:0%;transition:width .4s"></div>
+        </div>
+        <div style="font-size:.72rem;color:var(--ink-lt);margin-top:.25rem" id="gen-count">0 / 60 sesiones</div>
+      </div>
+      <div id="gen-export" style="display:none">
+        <button class="btn btn-primary" onclick="exportStandaloneHTML()" style="width:100%">
+          📥 Descargar HTML autónomo (sin clave API)
+        </button>
+        <div style="font-size:.72rem;color:var(--ink-lt);margin-top:.4rem;line-height:1.5">
+          Sube ese archivo a Vercel (reemplaza index.html) y tus estudiantes nunca necesitarán clave.
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -315,9 +349,9 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
                onkeydown="if(event.key==='Enter')startGame()">
       </div>
       <div class="fgroup">
-        <label>Clave API de Anthropic</label>
-        <input id="inp-key" type="password" placeholder="sk-ant-…">
-        <div class="hint">Se guarda solo en este navegador. Sin clave, se usará contenido de ejemplo.</div>
+        <label>Clave API de Google (Gemini)</label>
+        <input id="inp-key" type="password" placeholder="AIza…">
+        <div class="hint">Clave gratuita en <strong>aistudio.google.com</strong>. Se guarda solo en este navegador. Sin clave, se usa contenido de ejemplo.</div>
       </div>
       <button class="btn btn-primary" onclick="startGame()">🗞️ Comenzar la Aventura</button>
     </div>
@@ -576,6 +610,7 @@ const SCAFFOLDS = [
 // FALLBACK CONTENT  (México, sesión 0)
 // ─────────────────────────────────────────────────────────────────────────────
 
+// @@CONTENT_START@@
 const FALLBACK = {
   'México_0': {
     topic:'Los mercados tradicionales de Oaxaca',
@@ -624,6 +659,7 @@ const FALLBACK = {
     }
   }
 };
+// @@CONTENT_END@@
 
 // ─────────────────────────────────────────────────────────────────────────────
 // STATE
@@ -825,7 +861,7 @@ async function loadSession() {
 
   loading(true, `Generando contenido para ${COUNTRIES[S.currentCountry].name}…`);
   try {
-    content = await generateContent();
+    content = await generateContent(S.currentCountry, S.currentSession);
     setContent(content);
     renderAll();
   } catch (e) {
@@ -838,15 +874,20 @@ async function loadSession() {
   }
 }
 
-async function generateContent() {
-  const ctry = COUNTRIES[S.currentCountry];
-  const topic = TOPICS[S.currentSession % TOPICS.length];
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+async function generateContent(countryIdx, sessionIdx) {
+  // Allow caller to override current country/session (used in bulk generation)
+  const ci = countryIdx !== undefined ? countryIdx : S.currentCountry;
+  const si = sessionIdx  !== undefined ? sessionIdx  : S.currentSession;
+  const ctry  = COUNTRIES[ci];
+  const topic = TOPICS[si % TOPICS.length];
 
   const prompt = `Genera contenido educativo para un juego periodístico de español para estudiantes de secundaria (heritage speakers, nivel inicial de lectoescritura).
 
 País: ${ctry.name} (${ctry.region}, capital: ${ctry.cap})
 Tema de la sesión: ${topic}
-Sesión número: ${S.currentSession + 1} de ${SESSIONS_PER}
+Sesión número: ${si + 1} de ${SESSIONS_PER}
 
 Responde SOLO con JSON válido (sin texto antes ni después) con esta estructura exacta:
 
@@ -884,27 +925,104 @@ Responde SOLO con JSON válido (sin texto antes ni después) con esta estructura
 
 Reglas: oraciones cortas (máx 20 palabras), vocabulario auténtico regional, referencias a lugares/comidas/personas reales de ${ctry.name}, sin inglés en ninguna parte.`;
 
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method:'POST',
-    headers:{
-      'Content-Type':'application/json',
-      'x-api-key': S.apiKey,
-      'anthropic-version':'2023-06-01',
-      'anthropic-dangerous-direct-browser-access':'true'
-    },
-    body: JSON.stringify({
-      model:'claude-sonnet-4-20250514',
-      max_tokens:2200,
-      messages:[{role:'user', content:prompt}]
-    })
-  });
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${S.apiKey}`,
+    {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        contents:[{parts:[{text: prompt}]}],
+        generationConfig:{temperature:0.8, maxOutputTokens:2200}
+      })
+    }
+  );
 
   if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
   const data = await res.json();
-  const txt = data.content[0].text;
+  const txt = data.candidates[0].content.parts[0].text;
   const match = txt.match(/\{[\s\S]*\}/);
   if (!match) throw new Error('No JSON in response');
   return JSON.parse(match[0]);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BULK GENERATION (teacher mode)
+// ─────────────────────────────────────────────────────────────────────────────
+
+async function generateAllContent() {
+  if (!S.apiKey) { toast('Ingresa tu clave Gemini primero.'); return; }
+
+  const total = COUNTRIES.length * SESSIONS_PER;
+  const RATE_DELAY_MS = 4200; // stay safely under 15 RPM free tier
+  let done = 0, errors = [];
+
+  document.getElementById('gen-btn').disabled = true;
+  document.getElementById('gen-progress').style.display = 'block';
+  document.getElementById('gen-export').style.display = 'none';
+
+  for (let ci = 0; ci < COUNTRIES.length; ci++) {
+    for (let si = 0; si < SESSIONS_PER; si++) {
+      const key = `${COUNTRIES[ci].name}_${si}`;
+      if (S.cachedContent[key]) { done++; updateGenUI(done, total, key + ' (ya generado)'); continue; }
+
+      updateGenUI(done, total, `${COUNTRIES[ci].name} — sesión ${si + 1}…`);
+      try {
+        const c = await generateContent(ci, si);
+        S.cachedContent[key] = c;
+        save();
+        done++;
+        updateGenUI(done, total, `✓ ${COUNTRIES[ci].name} sesión ${si + 1}`);
+      } catch (e) {
+        errors.push(key);
+        done++;
+        updateGenUI(done, total, `⚠ Error en ${key}, continuando…`);
+      }
+
+      if (done < total) await sleep(RATE_DELAY_MS);
+    }
+  }
+
+  updateGenUI(done, total, errors.length
+    ? `Completado con ${errors.length} error(es). Puedes reintentar.`
+    : '✅ ¡Todo el contenido generado!');
+
+  document.getElementById('gen-btn').disabled = false;
+  document.getElementById('gen-export').style.display = 'block';
+}
+
+function updateGenUI(done, total, statusText) {
+  document.getElementById('gen-status').textContent = statusText;
+  document.getElementById('gen-bar').style.width = Math.round(done / total * 100) + '%';
+  document.getElementById('gen-count').textContent = `${done} / ${total} sesiones`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// EXPORT STANDALONE HTML  (bakes all cached content into a new file)
+// ─────────────────────────────────────────────────────────────────────────────
+
+async function exportStandaloneHTML() {
+  const allContent = {...FALLBACK, ...S.cachedContent};
+  const jsonStr = JSON.stringify(allContent, null, 2);
+
+  // Fetch own source, replace the FALLBACK block using sentinel comments
+  let src;
+  try { src = await fetch(location.href).then(r => r.text()); }
+  catch { toast('No se pudo leer el archivo fuente. ¿Estás en localhost o Vercel?'); return; }
+
+  const updated = src.replace(
+    /\/\/ @@CONTENT_START@@[\s\S]*?\/\/ @@CONTENT_END@@/,
+    `// @@CONTENT_START@@\nconst FALLBACK = ${jsonStr};\n// @@CONTENT_END@@`
+  );
+
+  if (updated === src) { toast('Marcadores no encontrados — exportación fallida.'); return; }
+
+  const blob = new Blob([updated], {type:'text/html;charset=utf-8'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'la-corresponsal-standalone.html';
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('¡Archivo descargado! Sube ese HTML a Vercel.');
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1286,6 +1404,15 @@ function promptTeacher() {
 }
 
 function openTeacher() {
+  // Pre-fill Gemini key field
+  const keyEl = document.getElementById('teacher-key');
+  if (keyEl && S.apiKey) keyEl.value = S.apiKey;
+
+  // Show export button if content already fully generated
+  const total = COUNTRIES.length * SESSIONS_PER;
+  const generated = Object.keys(S.cachedContent).length;
+  if (generated >= total) document.getElementById('gen-export').style.display = 'block';
+
   const ctry = COUNTRIES[S.currentCountry];
   const cred = getCred();
   const last = S.publishedArticles[S.publishedArticles.length - 1];
