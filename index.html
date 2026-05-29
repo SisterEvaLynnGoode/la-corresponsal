@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Corresponsal | El Mundo Nuestro</title>
+<style>
+:root {
+  --terracotta:#C4622D; --terra-lt:#E8956D;
+  --cream:#FDF5E6; --cream-dk:#F0E6D0;
+  --green:#2D5A27; --green-lt:#4A7C43;
+  --gold:#C9A227; --gold-lt:#E8C547;
+  --ink:#2C1810; --ink-lt:#6B4C3B;
+  --white:#fff;
+  --shadow:rgba(0,0,0,.15);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-height:100vh}
+
+/* ── Screens ── */
+.screen{display:none;min-height:100vh;flex-direction:column}
+.screen.active{display:flex}
+
+/* ── Setup ── */
+#screen-setup{align-items:center;justify-content:center;padding:2rem;
+  background:linear-gradient(135deg,var(--terracotta) 0%,var(--green) 100%)}
+.setup-card{background:var(--cream);border-radius:16px;padding:2.5rem;max-width:460px;width:100%;
+  box-shadow:0 8px 32px var(--shadow)}
+.paper-title{font-size:2rem;font-weight:700;color:var(--terracotta);text-align:center;
+  letter-spacing:2px;font-style:italic;margin-bottom:.2rem}
+.paper-rule{text-align:center;color:var(--ink-lt);font-size:.78rem;letter-spacing:1px;
+  text-transform:uppercase;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);
+  padding:.3rem 0;margin-bottom:1.8rem;font-family:sans-serif}
+.fgroup{margin-bottom:1.1rem}
+.fgroup label{display:block;font-size:.78rem;font-weight:700;color:var(--ink-lt);
+  text-transform:uppercase;letter-spacing:1px;margin-bottom:.35rem;font-family:sans-serif}
+.fgroup input{width:100%;padding:.7rem 1rem;border:2px solid var(--cream-dk);border-radius:8px;
+  font-size:1rem;font-family:inherit;background:var(--white);transition:border-color .2s}
+.fgroup input:focus{outline:none;border-color:var(--terracotta)}
+.hint{font-size:.72rem;color:var(--ink-lt);margin-top:.25rem;font-family:sans-serif}
+
+/* ── Buttons ── */
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.4rem;border:none;
+  border-radius:8px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:sans-serif;
+  transition:transform .1s,opacity .15s}
+.btn:active{transform:scale(.97)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn-primary{background:var(--terracotta);color:var(--white);width:100%;
+  justify-content:center;padding:1rem;box-shadow:0 4px 12px rgba(196,98,45,.35)}
+.btn-primary:hover:not(:disabled){background:var(--terra-lt)}
+.btn-gold{background:var(--gold);color:var(--white);box-shadow:0 4px 12px rgba(201,162,39,.35)}
+.btn-gold:hover:not(:disabled){background:var(--gold-lt)}
+.btn-sm{background:var(--cream-dk);color:var(--ink);padding:.35rem .75rem;font-size:.78rem}
+.btn-ghost{background:rgba(255,255,255,.15);color:var(--white);padding:.3rem .7rem;
+  font-size:.78rem;border:none;border-radius:6px;cursor:pointer;font-family:sans-serif;
+  transition:background .2s}
+.btn-ghost:hover{background:rgba(255,255,255,.28)}
+.tts{background:none;border:1px solid var(--cream-dk);border-radius:4px;
+  padding:.12rem .4rem;cursor:pointer;font-size:.78rem;color:var(--ink-lt);
+  font-family:sans-serif;transition:background .15s}
+.tts:hover{background:var(--cream-dk)}
+
+/* ── Game Header ── */
+.g-header{background:var(--terracotta);color:var(--white);padding:.5rem 1rem;
+  display:flex;align-items:center;gap:1rem;font-family:sans-serif;
+  box-shadow:0 2px 8px var(--shadow);flex-shrink:0}
+.g-logo{font-style:italic;font-family:Georgia,serif;font-size:1.05rem;font-weight:700;
+  white-space:nowrap}
+.xp-wrap{flex:1;max-width:280px}
+.xp-lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:1px;opacity:.85;margin-bottom:2px}
+.xp-track{background:rgba(255,255,255,.3);border-radius:999px;height:7px;overflow:hidden}
+.xp-fill{background:var(--gold-lt);height:100%;border-radius:999px;transition:width .5s ease}
+.cred-badge{background:var(--gold);color:var(--white);padding:.2rem .65rem;border-radius:999px;
+  font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;white-space:nowrap}
+.h-actions{display:flex;gap:.4rem;margin-left:auto}
+
+/* ── Step Progress ── */
+.step-bar{background:var(--cream-dk);padding:.45rem 1rem;display:flex;align-items:center;
+  gap:.4rem;flex-shrink:0;border-bottom:1px solid rgba(0,0,0,.08);
+  font-family:sans-serif;overflow-x:auto}
+.s-dot{display:flex;align-items:center;gap:.35rem;font-size:.72rem;color:var(--ink-lt);
+  white-space:nowrap}
+.s-dot .pip{width:26px;height:26px;border-radius:50%;background:var(--cream-dk);
+  border:2px solid #bbb;display:flex;align-items:center;justify-content:center;
+  font-size:.62rem;font-weight:700;transition:all .3s}
+.s-dot.active .pip{background:var(--terracotta);border-color:var(--terracotta);color:var(--white)}
+.s-dot.done .pip{background:var(--green);border-color:var(--green);color:var(--white)}
+.s-conn{flex:1;height:2px;background:var(--cream-dk);min-width:8px;border-radius:1px}
+.s-conn.done{background:var(--green-lt)}
+
+/* ── 3-col Layout ── */
+.g-body{display:grid;grid-template-columns:210px 1fr 250px;flex:1;
+  overflow:hidden;height:calc(100vh - 94px)}
+@media(max-width:860px){
+  .g-body{grid-template-columns:1fr;height:auto;overflow:visible}
+  #sidebar-right{display:none}
+  #sidebar-left{border-right:none;border-bottom:1px solid var(--cream-dk);
+    display:grid;grid-template-columns:1fr 1fr;gap:.5rem;padding:.75rem}
+}
+
+/* ── Left Sidebar ── */
+#sidebar-left{background:var(--cream);border-right:1px solid var(--cream-dk);
+  padding:1rem;overflow-y:auto;font-family:sans-serif}
+.cred-card{background:linear-gradient(135deg,var(--terracotta),var(--gold));
+  color:var(--white);border-radius:12px;padding:1rem;margin-bottom:1rem;text-align:center}
+.cred-card .card-lbl{font-size:.62rem;text-transform:uppercase;letter-spacing:1.5px;opacity:.85}
+.cred-card .s-name{font-size:1.05rem;font-weight:700;margin:.3rem 0;font-family:Georgia,serif}
+.cred-card .s-rank{font-size:.82rem;opacity:.9}
+.sec-title{font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;
+  color:var(--ink-lt);margin:1rem 0 .5rem;font-weight:700}
+.c-dots{display:flex;flex-wrap:wrap;gap:4px}
+.c-dot{width:22px;height:22px;border-radius:50%;background:var(--cream-dk);
+  border:2px solid #ccc;display:flex;align-items:center;justify-content:center;
+  font-size:.6rem;cursor:pointer;position:relative;transition:transform .2s;
+  font-family:sans-serif;user-select:none}
+.c-dot:hover{transform:scale(1.25)}
+.c-dot.done{background:var(--green);border-color:var(--green);color:var(--white)}
+.c-dot.current{background:var(--terracotta);border-color:var(--terracotta);
+  color:var(--white);animation:pulse 2s infinite}
+.c-dot.locked{opacity:.35;cursor:default}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.country-info{font-size:.82rem;color:var(--ink-lt);line-height:1.6}
+
+/* ── Main Content ── */
+#main-content{overflow-y:auto;padding:1.5rem;background:var(--cream)}
+
+/* ── Right Sidebar ── */
+#sidebar-right{background:var(--white);border-left:1px solid var(--cream-dk);
+  padding:1rem;overflow-y:auto;font-family:sans-serif}
+.chat-hdr{font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;
+  color:var(--ink-lt);font-weight:700;margin-bottom:.75rem;padding-bottom:.5rem;
+  border-bottom:1px solid var(--cream-dk)}
+.bubble{background:var(--cream-dk);border-radius:12px 12px 12px 2px;
+  padding:.7rem;margin-bottom:.75rem;font-size:.83rem;line-height:1.55;
+  animation:fadeUp .3s ease}
+.bubble-from{font-size:.67rem;font-weight:700;color:var(--terracotta);
+  margin-bottom:.25rem;text-transform:uppercase;letter-spacing:.5px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── Step Views ── */
+.step-view{display:none}
+.step-view.active{display:block}
+
+/* Llegada */
+.llegada-wrap{text-align:center;max-width:560px;margin:0 auto}
+.flag-big{font-size:5rem;margin-bottom:.75rem;animation:landIn .6s ease}
+@keyframes landIn{from{transform:translateY(-16px) scale(.8);opacity:0}
+  to{transform:translateY(0) scale(1);opacity:1}}
+.llegada-title{font-size:1.9rem;color:var(--terracotta);margin-bottom:.3rem}
+.llegada-sub{font-size:.8rem;color:var(--ink-lt);font-family:sans-serif;
+  text-transform:uppercase;letter-spacing:2px;margin-bottom:1.25rem}
+.llegada-body{font-size:.98rem;line-height:1.75;color:var(--ink);
+  background:var(--cream-dk);padding:1.25rem;border-radius:12px;
+  text-align:left;margin-bottom:1.25rem}
+
+/* Lectura */
+.art-grid{display:grid;grid-template-columns:1fr 190px;gap:1.5rem;max-width:860px}
+@media(max-width:680px){.art-grid{grid-template-columns:1fr}}
+.art-headline{font-size:1.5rem;line-height:1.3;margin-bottom:.2rem}
+.art-byline{font-family:sans-serif;font-size:.78rem;color:var(--ink-lt);
+  border-bottom:2px solid var(--ink);padding-bottom:.45rem;margin-bottom:.85rem}
+.art-body p{margin-bottom:.9rem;line-height:1.8;font-size:.97rem}
+.kw-box{background:var(--cream-dk);border-radius:12px;padding:.9rem;align-self:start;
+  position:sticky;top:0}
+.kw-title{font-family:sans-serif;font-size:.67rem;text-transform:uppercase;
+  letter-spacing:1.5px;color:var(--ink-lt);margin-bottom:.65rem;font-weight:700}
+.kw-item{margin-bottom:.65rem;font-size:.83rem}
+.kw-word{font-weight:700;color:var(--terracotta)}
+.kw-def{color:var(--ink-lt);font-family:sans-serif;font-size:.77rem;
+  margin-top:.1rem;line-height:1.4}
+.kw-hi{color:var(--terracotta);font-weight:700;cursor:help;
+  text-decoration:underline dotted}
+
+/* Questions */
+.q-section{margin-top:1.75rem;border-top:2px solid var(--cream-dk);padding-top:1.25rem}
+.q-title{font-family:sans-serif;font-size:.72rem;text-transform:uppercase;
+  letter-spacing:1.5px;color:var(--ink-lt);font-weight:700;margin-bottom:.9rem}
+.q-block{background:var(--cream-dk);border-radius:10px;padding:.9rem;margin-bottom:.9rem}
+.q-text{font-size:.93rem;font-weight:700;margin-bottom:.65rem;line-height:1.5}
+.opt{display:flex;align-items:center;gap:.5rem;padding:.45rem .7rem;border-radius:6px;
+  cursor:pointer;font-size:.88rem;font-family:sans-serif;margin-bottom:.35rem;
+  transition:background .12s}
+.opt:hover{background:rgba(0,0,0,.05)}
+.opt.correct{background:rgba(45,90,39,.15);color:var(--green);font-weight:700}
+.opt.wrong{background:rgba(196,98,45,.1);color:var(--terracotta)}
+.opt input{accent-color:var(--terracotta)}
+.written-ta{width:100%;padding:.55rem;border:2px solid #ddd;border-radius:6px;
+  font-size:.88rem;font-family:Georgia,serif;resize:vertical;min-height:76px;
+  background:var(--white)}
+.written-ta:focus{outline:none;border-color:var(--terracotta)}
+
+/* Escucha */
+.audio-card{background:var(--cream-dk);border-radius:12px;padding:1.4rem;
+  max-width:580px;margin-bottom:1.5rem}
+.audio-src{font-family:sans-serif;font-size:.75rem;color:var(--ink-lt);
+  text-transform:uppercase;letter-spacing:1px;margin-bottom:.4rem}
+.audio-lbl{font-size:1.05rem;font-weight:700;margin-bottom:.9rem}
+.audio-row{display:flex;gap:.75rem;align-items:center}
+.play-btn{background:var(--terracotta);color:var(--white);border:none;
+  border-radius:50%;width:46px;height:46px;font-size:1.15rem;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  transition:background .2s}
+.play-btn:hover{background:var(--terra-lt)}
+.audio-status{font-family:sans-serif;font-size:.83rem;color:var(--ink-lt);flex:1}
+.locked-msg{text-align:center;padding:2rem;color:var(--ink-lt);
+  font-family:sans-serif;font-size:.88rem}
+
+/* Redaccion */
+.redac-wrap{max-width:680px}
+.scaffold-row{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:.85rem}
+.scaffold-btn{background:var(--cream-dk);border:1px solid var(--gold);border-radius:6px;
+  padding:.35rem .75rem;font-size:.78rem;font-family:Georgia,serif;cursor:pointer;
+  color:var(--ink);transition:all .2s}
+.scaffold-btn:hover{background:var(--gold);color:var(--white)}
+.redac-ta{width:100%;min-height:190px;padding:.9rem;border:2px solid var(--cream-dk);
+  border-radius:10px;font-size:.97rem;font-family:Georgia,serif;resize:vertical;
+  background:var(--white);line-height:1.7}
+.redac-ta:focus{outline:none;border-color:var(--terracotta)}
+.wc{font-family:sans-serif;font-size:.78rem;color:var(--ink-lt);margin-top:.35rem}
+.wc.ready{color:var(--green);font-weight:700}
+
+/* Publicacion */
+.clip{max-width:620px;margin:0 auto;background:var(--white);
+  border:3px solid var(--ink);border-radius:3px;padding:1.75rem;
+  box-shadow:7px 7px 0 var(--ink);animation:clipIn .5s ease;font-family:Georgia,serif}
+@keyframes clipIn{from{opacity:0;transform:scale(.9) rotate(-1deg)}
+  to{opacity:1;transform:scale(1) rotate(0)}}
+.clip-hdr{text-align:center;border-bottom:3px double var(--ink);
+  padding-bottom:.65rem;margin-bottom:.65rem}
+.clip-paper{font-size:1.4rem;font-weight:700;letter-spacing:3px}
+.clip-date{font-size:.68rem;font-family:sans-serif;color:var(--ink-lt);
+  text-transform:uppercase}
+.clip-hed{font-size:1.3rem;font-weight:700;margin:.65rem 0 .2rem;line-height:1.3}
+.clip-byl{font-size:.78rem;font-style:italic;color:var(--ink-lt);margin-bottom:.9rem}
+.clip-body{font-size:.88rem;line-height:1.7;column-count:2;column-gap:1.4rem}
+@media(max-width:560px){.clip-body{column-count:1}}
+.xp-pop{text-align:center;margin-top:1.4rem;font-family:sans-serif}
+.xp-num{font-size:1.9rem;font-weight:700;color:var(--gold);
+  animation:popIn .4s ease .3s both}
+@keyframes popIn{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+
+/* Byline Wall */
+#screen-byline{background:var(--cream-dk)}
+.bw-header{background:var(--ink);color:var(--white);padding:1.25rem 1.75rem;
+  font-family:Georgia,serif;display:flex;align-items:center;gap:1rem;flex-shrink:0}
+.bw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+  gap:1.25rem;padding:1.75rem;overflow-y:auto;flex:1}
+.bw-card{background:var(--white);border:2px solid var(--ink);border-radius:3px;
+  padding:1.1rem;box-shadow:4px 4px 0 var(--cream-dk);font-family:Georgia,serif}
+.bw-meta{font-size:.68rem;font-family:sans-serif;color:var(--ink-lt);margin-bottom:.35rem}
+.bw-hed{font-size:1rem;font-weight:700;margin-bottom:.4rem;line-height:1.3}
+.bw-byl{font-size:.78rem;font-style:italic;color:var(--ink-lt);margin-bottom:.65rem}
+.bw-excerpt{font-size:.83rem;line-height:1.6}
+
+/* Loading overlay */
+#loading{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;
+  align-items:center;justify-content:center;z-index:1000}
+#loading.on{display:flex}
+.load-card{background:var(--cream);border-radius:12px;padding:2rem;text-align:center;max-width:280px}
+.spinner{width:38px;height:38px;border:4px solid var(--cream-dk);
+  border-top-color:var(--terracotta);border-radius:50%;
+  animation:spin .75s linear infinite;margin:0 auto .9rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.load-msg{font-family:sans-serif;color:var(--ink-lt);font-size:.87rem}
+
+/* Toast */
+#toast{position:fixed;bottom:1.4rem;right:1.4rem;background:var(--green);
+  color:var(--white);padding:.65rem 1.1rem;border-radius:8px;font-family:sans-serif;
+  font-size:.87rem;box-shadow:0 4px 12px var(--shadow);
+  transform:translateY(80px);transition:transform .3s ease;z-index:999}
+#toast.show{transform:translateY(0)}
+
+/* Teacher modal */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;
+  align-items:center;justify-content:center;z-index:900}
+.modal-bg.open{display:flex}
+.modal-card{background:var(--cream);border-radius:12px;padding:1.75rem;
+  max-width:480px;width:90%;max-height:80vh;overflow-y:auto}
+</style>
+</head>
+<body>
+
+<!-- Loading -->
+<div id="loading"><div class="load-card">
+  <div class="spinner"></div>
+  <div class="load-msg" id="load-msg">Cargando contenido...</div>
+</div></div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- Teacher Modal -->
+<div class="modal-bg" id="teacher-modal">
+  <div class="modal-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+      <h2 style="font-family:sans-serif;font-size:1rem">👩‍🏫 Vista Docente</h2>
+      <button class="btn btn-sm" onclick="closeTeacher()">✕</button>
+    </div>
+    <div id="teacher-body"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SCREEN: SETUP
+═══════════════════════════════════════ -->
+<div class="screen active" id="screen-setup">
+  <div class="setup-card">
+    <div class="paper-title">El Mundo Nuestro</div>
+    <div class="paper-rule">La Corresponsal — Aventura Periodística</div>
+
+    <div id="setup-area">
+      <div class="fgroup">
+        <label>Tu nombre</label>
+        <input id="inp-name" type="text" placeholder="Escribe tu nombre…" maxlength="40"
+               onkeydown="if(event.key==='Enter')startGame()">
+      </div>
+      <div class="fgroup">
+        <label>Clave API de Anthropic</label>
+        <input id="inp-key" type="password" placeholder="sk-ant-…">
+        <div class="hint">Se guarda solo en este navegador. Sin clave, se usará contenido de ejemplo.</div>
+      </div>
+      <button class="btn btn-primary" onclick="startGame()">🗞️ Comenzar la Aventura</button>
+    </div>
+
+    <div style="margin-top:1.25rem;text-align:center;font-family:sans-serif;font-size:.78rem;color:var(--ink-lt)">
+      ¿Maestra? <a href="#" onclick="promptTeacher()" style="color:var(--terracotta)">Acceso docente</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SCREEN: GAME
+═══════════════════════════════════════ -->
+<div class="screen" id="screen-game">
+
+  <!-- Header -->
+  <div class="g-header">
+    <div class="g-logo">El Mundo Nuestro</div>
+    <div class="xp-wrap">
+      <div class="xp-lbl">XP: <span id="xp-num">0</span></div>
+      <div class="xp-track"><div class="xp-fill" id="xp-fill" style="width:0%"></div></div>
+    </div>
+    <div class="cred-badge" id="cred-badge">Pasante</div>
+    <div class="h-actions">
+      <button class="btn-ghost" onclick="showBylineWall()">📰 Mis artículos</button>
+      <button class="btn-ghost" onclick="promptTeacher()">👩‍🏫</button>
+    </div>
+  </div>
+
+  <!-- Step bar -->
+  <div class="step-bar" id="step-bar"></div>
+
+  <!-- 3-col body -->
+  <div class="g-body">
+
+    <!-- Left sidebar -->
+    <div id="sidebar-left">
+      <div class="cred-card">
+        <div class="card-lbl">Periodista</div>
+        <div class="s-name" id="sb-name">—</div>
+        <div class="s-rank" id="sb-rank">Pasante</div>
+      </div>
+      <div class="sec-title">Viaje</div>
+      <div class="c-dots" id="c-dots"></div>
+      <div class="sec-title" style="margin-top:1.25rem">País actual</div>
+      <div class="country-info" id="country-info"></div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content">
+
+      <!-- 0: Llegada -->
+      <div class="step-view" id="step-llegada">
+        <div class="llegada-wrap">
+          <div class="flag-big" id="ll-flag"></div>
+          <div class="llegada-title" id="ll-title"></div>
+          <div class="llegada-sub" id="ll-sub"></div>
+          <div class="llegada-body" id="ll-body"></div>
+          <div style="display:flex;gap:.75rem;justify-content:center">
+            <button class="tts" onclick="speak('ll-body')">🔊 Escuchar</button>
+            <button class="btn btn-primary" onclick="nextStep()">Continuar →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1: Asignación -->
+      <div class="step-view" id="step-asignacion">
+        <div style="max-width:480px;margin:0 auto">
+          <div class="sec-title">Nueva Asignación</div>
+          <div class="bubble-from">✉️ La Editora</div>
+          <div class="bubble" id="asig-bubble"></div>
+          <button class="tts" style="margin-bottom:1.25rem" onclick="speak('asig-bubble')">🔊 Escuchar</button>
+          <div style="text-align:center">
+            <button class="btn btn-primary" onclick="nextStep()">Aceptar la Asignación →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: Lectura -->
+      <div class="step-view" id="step-lectura">
+        <div class="art-grid">
+          <div>
+            <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem">
+              <button class="tts" onclick="speak('art-body')">🔊 Escuchar artículo</button>
+            </div>
+            <div class="art-headline" id="art-head"></div>
+            <div class="art-byline" id="art-byl"></div>
+            <div class="art-body" id="art-body"></div>
+            <div class="q-section" id="lec-qs"></div>
+            <div style="margin-top:.9rem;text-align:right">
+              <button class="btn btn-primary" id="btn-lec" onclick="submitLectura()">Entregar →</button>
+            </div>
+          </div>
+          <div>
+            <div class="kw-box" id="kw-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: Escucha -->
+      <div class="step-view" id="step-escucha">
+        <div style="max-width:660px">
+          <div class="audio-card">
+            <div class="audio-src" id="aud-src"></div>
+            <div class="audio-lbl">Entrevista de campo</div>
+            <div class="audio-row">
+              <button class="play-btn" id="play-btn" onclick="toggleAudio()">▶</button>
+              <div class="audio-status" id="aud-status">Presiona ▶ para escuchar la entrevista</div>
+            </div>
+          </div>
+          <div id="esc-locked" class="locked-msg">🎧 Escucha la entrevista completa para ver las preguntas.</div>
+          <div id="esc-qs" style="display:none">
+            <div class="q-title" style="font-family:sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--ink-lt);font-weight:700;margin-bottom:.9rem">Preguntas de comprensión</div>
+            <div id="esc-q-blocks"></div>
+            <div style="margin-top:.9rem;text-align:right">
+              <button class="btn btn-primary" id="btn-esc" onclick="submitEscucha()">Entregar →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Redacción -->
+      <div class="step-view" id="step-redaccion">
+        <div class="redac-wrap">
+          <h2 style="font-size:1.2rem;margin-bottom:.4rem">📝 Redacción</h2>
+          <p style="font-family:sans-serif;font-size:.87rem;color:var(--ink-lt);margin-bottom:.9rem">
+            Escribe 3–5 oraciones sobre lo que aprendiste. Mínimo 30 palabras para publicar.</p>
+          <div class="scaffold-row" id="scaffolds"></div>
+          <textarea class="redac-ta" id="redac-ta" placeholder="Escribe tu resumen aquí…" oninput="onRedacInput()"></textarea>
+          <div class="wc" id="wc">0 palabras</div>
+          <div style="margin-top:1.1rem;text-align:right">
+            <button class="btn btn-gold" id="btn-pub" onclick="publicar()" disabled>📤 Publicar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Publicación -->
+      <div class="step-view" id="step-publicacion">
+        <div style="text-align:center;margin-bottom:1.25rem">
+          <div style="font-size:1.4rem;margin-bottom:.35rem">🎉</div>
+          <h2 style="font-family:sans-serif;font-size:1.1rem">¡Artículo publicado en El Mundo Nuestro!</h2>
+        </div>
+        <div class="clip" id="clip">
+          <div class="clip-hdr">
+            <div class="clip-paper">EL MUNDO NUESTRO</div>
+            <div class="clip-date" id="clip-date"></div>
+          </div>
+          <div class="clip-hed" id="clip-hed"></div>
+          <div class="clip-byl" id="clip-byl"></div>
+          <div class="clip-body" id="clip-body"></div>
+        </div>
+        <div class="xp-pop">
+          <div style="font-family:sans-serif;font-size:.85rem;color:var(--ink-lt);margin-top:1.25rem;margin-bottom:.2rem">Puntos ganados esta sesión</div>
+          <div class="xp-num" id="xp-award">+0 XP</div>
+        </div>
+        <div style="text-align:center;margin-top:1.4rem">
+          <button class="btn btn-primary" onclick="advanceSession()">Siguiente sesión →</button>
+        </div>
+      </div>
+
+    </div><!-- /main-content -->
+
+    <!-- Right sidebar -->
+    <div id="sidebar-right">
+      <div class="chat-hdr">✉️ Mensajes de la Editora</div>
+      <div id="editor-msgs"></div>
+    </div>
+
+  </div><!-- /g-body -->
+</div><!-- /screen-game -->
+
+<!-- ═══════════════════════════════════════
+     SCREEN: BYLINE WALL
+═══════════════════════════════════════ -->
+<div class="screen" id="screen-byline">
+  <div class="bw-header">
+    <button class="btn btn-sm" onclick="showScreen('game')">← Volver</button>
+    <div>
+      <div style="font-size:1.3rem;font-weight:700;letter-spacing:2px">Mis Artículos</div>
+      <div style="font-size:.75rem;opacity:.7;font-family:sans-serif;margin-top:.15rem">El Mundo Nuestro — Archivo Personal</div>
+    </div>
+  </div>
+  <div class="bw-grid" id="bw-grid"></div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// DATA
+// ─────────────────────────────────────────────────────────────────────────────
+
+const COUNTRIES = [
+  {name:'México',        cap:'Ciudad de México',   emoji:'🇲🇽', region:'América del Norte',
+   flavor:'La tierra de los mayas y aztecas, de los mariachis y los mercados de colores. México es un mosaico de culturas indígenas y modernas, volcanes imponentes y costas infinitas.'},
+  {name:'Guatemala',     cap:'Ciudad de Guatemala', emoji:'🇬🇹', region:'Centroamérica',
+   flavor:'Tierra de volcanes activos y mayas modernos. El lago Atitlán y las ruinas de Tikal guardan siglos de historia viva. Los tejidos de colores son el orgullo del pueblo quiché.'},
+  {name:'Honduras',      cap:'Tegucigalpa',         emoji:'🇭🇳', region:'Centroamérica',
+   flavor:'País de playas caribeñas, selvas tropicales y las ruinas mayas de Copán. La música garífuna y la gastronomía costeña son tesoros únicos en el mundo.'},
+  {name:'El Salvador',   cap:'San Salvador',        emoji:'🇸🇻', region:'Centroamérica',
+   flavor:'El país más pequeño de Centroamérica, conocido por sus pupusas, sus volcanes y su gente resiliente. La costa del Pacífico es de las más hermosas de la región.'},
+  {name:'Nicaragua',     cap:'Managua',             emoji:'🇳🇮', region:'Centroamérica',
+   flavor:'Tierra de lagos, volcanes y poesía. Nicaragua tiene el lago más grande de Centroamérica y una tradición literaria poderosa con Rubén Darío como emblema nacional.'},
+  {name:'Costa Rica',    cap:'San José',            emoji:'🇨🇷', region:'Centroamérica',
+   flavor:'País pionero en ecoturismo y conservación. Alberga el 5% de la biodiversidad mundial. Sus ciudadanos viven bajo la filosofía de "¡Pura vida!" como forma de ser.'},
+  {name:'Panamá',        cap:'Ciudad de Panamá',    emoji:'🇵🇦', region:'Centroamérica',
+   flavor:'El puente entre dos océanos y dos continentes. El Canal de Panamá es una maravilla de ingeniería que une el Atlántico con el Pacífico y cambió el comercio mundial.'},
+  {name:'Cuba',          cap:'La Habana',           emoji:'🇨🇺', region:'El Caribe',
+   flavor:'Isla de música, revolución y colores brillantes. Cuba es famosa por su salsa, sus autos vintage, la arquitectura colonial de La Habana Vieja y su rica herencia afrocubana.'},
+  {name:'República Dominicana', cap:'Santo Domingo', emoji:'🇩🇴', region:'El Caribe',
+   flavor:'La primera ciudad europea del Nuevo Mundo está en Santo Domingo. La isla comparte Hispaniola con Haití y es cuna del merengue y la bachata, ritmos que llegaron al mundo entero.'},
+  {name:'Puerto Rico',   cap:'San Juan',            emoji:'🇵🇷', region:'El Caribe',
+   flavor:'La isla del encanto. Puerto Rico mezcla la cultura taína, española y africana en una identidad boricua única, expresada en su música, cocina, arte y un orgullo inquebrantable.'},
+  {name:'Colombia',      cap:'Bogotá',              emoji:'🇨🇴', region:'América del Sur',
+   flavor:'País de flores, café y García Márquez. Colombia es megadiversa: costas en dos océanos, selva amazónica, los Andes y la región cafetera, Patrimonio de la Humanidad.'},
+  {name:'Venezuela',     cap:'Caracas',             emoji:'🇻🇪', region:'América del Sur',
+   flavor:'Tierra del Salto Ángel, la catarata más alta del mundo. Venezuela tiene playas paradisíacas, los tepuyes de la Gran Sabana y el Lago de Maracaibo, relámpago eterno.'},
+  {name:'Ecuador',       cap:'Quito',               emoji:'🇪🇨', region:'América del Sur',
+   flavor:'El país que lleva el ecuador en su nombre une las Islas Galápagos, la Amazonía, los Andes y la costa del Pacífico en un territorio compacto y de asombrosa biodiversidad.'},
+  {name:'Perú',          cap:'Lima',                emoji:'🇵🇪', region:'América del Sur',
+   flavor:'Cuna de los incas y de Machu Picchu. Perú tiene una de las cocinas más reconocidas del mundo: el ceviche y la papa son tesoros peruanos que llegaron a toda la humanidad.'},
+  {name:'Bolivia',       cap:'Sucre / La Paz',      emoji:'🇧🇴', region:'América del Sur',
+   flavor:'El Salar de Uyuni es el espejo más grande de la Tierra. Bolivia es uno de los países con mayor diversidad étnica y lingüística, y tiene la ciudad más alta del mundo.'},
+  {name:'Chile',         cap:'Santiago',            emoji:'🇨🇱', region:'América del Sur',
+   flavor:'El país más largo del mundo de norte a sur: del desierto de Atacama a los glaciares de la Patagonia, con la Cordillera de los Andes y el océano Pacífico siempre presentes.'},
+  {name:'Argentina',     cap:'Buenos Aires',        emoji:'🇦🇷', region:'América del Sur',
+   flavor:'Tierra del tango, el mate y el fútbol. Argentina es el segundo país más grande de América del Sur, con la Patagonia, las cataratas del Iguazú y la infinita llanura pampeana.'},
+  {name:'Uruguay',       cap:'Montevideo',          emoji:'🇺🇾', region:'América del Sur',
+   flavor:'El país más pequeño de América del Sur tiene una democracia sólida, playas hermosas en Punta del Este y una cultura del mate y el asado muy arraigada en la vida cotidiana.'},
+  {name:'Paraguay',      cap:'Asunción',            emoji:'🇵🇾', region:'América del Sur',
+   flavor:'Un país sin salida al mar en el corazón de Sudamérica, bilingüe en español y guaraní. La cultura guaraní permea todo: la música, la comida y el alma del pueblo paraguayo.'},
+  {name:'España',        cap:'Madrid',              emoji:'🇪🇸', region:'Europa',
+   flavor:'La madre del español en Europa. España es internamente diversa: el flamenco del sur, el modernismo de Barcelona, los pintxos del norte y la historia islámica de Andalucía.'}
+];
+
+const SESSIONS_PER = 3;
+const TOPICS = ['cultura','medio ambiente','comunidad','historia','juventud'];
+
+const CREDS = [
+  {id:'pasante',   label:'Pasante',          emoji:'🎒', minXP:0,    maxXP:600},
+  {id:'reportera', label:'Reportera',        emoji:'📰', minXP:600,  maxXP:1800},
+  {id:'corresponsal',label:'Corresponsal',   emoji:'✈️', minXP:1800, maxXP:3600},
+  {id:'jefa',      label:'Jefa de Redacción',emoji:'🏆', minXP:3600, maxXP:6000}
+];
+
+const STEP_LABELS = ['Llegada','Asignación','Lectura','Escucha','Redacción','Publicación'];
+const STEP_IDS    = ['llegada','asignacion','lectura','escucha','redaccion','publicacion'];
+
+const SCAFFOLDS = [
+  'En esta historia aprendí que…',
+  'Me sorprendió que…',
+  'Esto me recuerda a…',
+  'Lo más importante es que…',
+  'Según la entrevista…'
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// FALLBACK CONTENT  (México, sesión 0)
+// ─────────────────────────────────────────────────────────────────────────────
+
+const FALLBACK = {
+  'México_0': {
+    topic:'Los mercados tradicionales de Oaxaca',
+    assignment:'Hola, corresponsal. Ya llegaste a México. Desde Oaxaca nos llegan noticias importantes: un mercado de 500 años está en peligro. Habla con la comunidad, conoce a los artesanos y cuéntanos su historia. ¡Cuento contigo!',
+    article:{
+      headline:'El mercado de colores: tradición viva en Oaxaca',
+      byline:'Corresponsal, El Mundo Nuestro | Oaxaca, México',
+      paragraphs:[
+        'En el centro de la ciudad de Oaxaca existe un lugar donde el tiempo parece detenerse. El Mercado Benito Juárez lleva más de quinientos años en el mismo lugar. Sus colores, olores y sonidos cuentan la historia de un pueblo entero.',
+        'Las artesanas llegan desde los pueblos de los valles centrales cada semana. Traen textiles de lana teñidos con colores naturales: el rojo del gusano cochinilla, el azul del añil y el amarillo brillante de la flor de cempasúchil.',
+        'Doña Carmen Ruiz lleva treinta años vendiendo en el mercado. "Mi abuela me enseñó a tejer aquí mismo", dice, mientras sus manos nunca dejan de moverse. "Este mercado es nuestra universidad, nuestra historia viva."',
+        'Pero el mercado enfrenta un reto nuevo: los turistas quieren comprar, pero no siempre entienden el valor real de lo que ven. Una cobija tejida a mano puede tomar tres semanas de trabajo. "No es un souvenir", explica Doña Carmen. "Es arte."'
+      ],
+      keywords:[
+        {word:'artesanía',  definition:'objeto hecho a mano con técnicas tradicionales de una cultura'},
+        {word:'textil',     definition:'tela o ropa hecha con fibras naturales como lana o algodón'},
+        {word:'cochinilla', definition:'insecto pequeño que vive en los nopales y produce tinte rojo'},
+        {word:'patrimonio', definition:'herencia cultural que se pasa de una generación a la siguiente'},
+        {word:'artesana',   definition:'persona que crea objetos a mano usando técnicas tradicionales'}
+      ],
+      questions:[
+        {text:'¿Cuántos años lleva el mercado en el mismo lugar?',
+         type:'mc',opts:['Cien años','Quinientos años','Veinte años','Mil años'],correct:1},
+        {text:'¿De qué insecto viene el tinte rojo?',
+         type:'mc',opts:['Del añil','Del cempasúchil','De la cochinilla','De la lana'],correct:2},
+        {text:'¿Qué dice Doña Carmen sobre el mercado?',
+         type:'mc',opts:['"Es un supermercado moderno"','"Es nuestra universidad, nuestra historia viva"','"Es solo para turistas"','"Ya no sirve de nada"'],correct:1},
+        {text:'¿Por qué tarda tanto en hacerse una cobija?',
+         type:'mc',opts:['Porque la lana es cara','Porque se teje a mano','Porque el mercado cierra temprano','Porque no hay colores'],correct:1},
+        {text:'¿Por qué te parece importante conservar lugares como este mercado?', type:'written'}
+      ]
+    },
+    audio:{
+      script:'Me llamo Esperanza Mendoza y llevo sesenta años tejiendo en este mercado. Mi madre me trajo aquí cuando yo tenía cinco años. Ella tejía cobijas de lana con diseños geométricos que vienen de los antiguos zapotecas. Yo aprendí mirando sus manos. Ahora mis manos hacen lo mismo. Cada diseño tiene un significado. El caracol representa el agua. El diamante representa el cielo. Los colores no los compramos en ninguna tienda — los hacemos con plantas y animales de nuestra tierra. El rojo viene de la cochinilla, un insecto pequeño que vive en los nopales. El azul viene del añil, una planta que cultivamos nosotros mismos. Cuando un turista me dice "¡qué barato!" por una cobija que me tomó tres semanas tejer, me duele el corazón. Quiero que la gente entienda: no están comprando un objeto. Están llevando a su casa quinientos años de historia. Eso no tiene precio.',
+      source:'Doña Esperanza Mendoza, artesana zapoteca',
+      questions:[
+        {text:'¿Cuántos años lleva Doña Esperanza en el mercado?',
+         type:'mc',opts:['Veinte años','Cuarenta años','Sesenta años','Cien años'],correct:2},
+        {text:'¿Qué representa el caracol en los diseños?',
+         type:'mc',opts:['El fuego','El agua','El viento','La tierra'],correct:1},
+        {text:'¿De dónde viene el color rojo?',
+         type:'mc',opts:['Del añil','De la flor','De la cochinilla','Del cempasúchil'],correct:2},
+        {text:'¿Por qué le duele el corazón a Doña Esperanza?',
+         type:'mc',opts:['Porque está enferma','Porque los turistas dicen que sus cobijas son baratas','Porque el mercado va a cerrar','Porque no tiene clientes'],correct:1}
+      ]
+    }
+  }
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────────────────────────────────────
+
+const DEFAULTS = {
+  studentName:'', apiKey:'',
+  currentCountry:0, currentSession:0, currentStep:0,
+  xp:0,
+  publishedArticles:[],
+  cachedContent:{},
+  audioPlayed:false,
+  lecSubmitted:false, escSubmitted:false, sessionPublished:false,
+  sessionXP:0
+};
+
+let S = {...DEFAULTS};
+let content = null;   // current session content object
+let audioSpeaking = false;
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PERSISTENCE
+// ─────────────────────────────────────────────────────────────────────────────
+
+function save() {
+  localStorage.setItem('lc_state', JSON.stringify(S));
+}
+
+function load() {
+  try {
+    const raw = localStorage.getItem('lc_state');
+    if (!raw) return false;
+    S = {...DEFAULTS, ...JSON.parse(raw)};
+    return !!S.studentName;
+  } catch { return false; }
+}
+
+function cacheKey() { return `${COUNTRIES[S.currentCountry].name}_${S.currentSession}`; }
+
+function getContent() {
+  return S.cachedContent[cacheKey()] || FALLBACK[cacheKey()] || null;
+}
+
+function setContent(data) {
+  S.cachedContent[cacheKey()] = data;
+  save();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CREDENTIALS / XP
+// ─────────────────────────────────────────────────────────────────────────────
+
+function getCred() {
+  const idx = Math.min(Math.floor(S.currentCountry / 5), CREDS.length - 1);
+  return CREDS[idx];
+}
+
+function xpPct() {
+  const c = getCred();
+  return Math.max(0, Math.min(1, (S.xp - c.minXP) / (c.maxXP - c.minXP))) * 100;
+}
+
+function addXP(n) {
+  S.xp += n;
+  S.sessionXP += n;
+  save();
+  updateHeaderUI();
+  toast(`+${n} XP`);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// UI UTILITIES
+// ─────────────────────────────────────────────────────────────────────────────
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + id).classList.add('active');
+}
+
+function loading(on, msg) {
+  const el = document.getElementById('loading');
+  el.classList.toggle('on', on);
+  if (msg) document.getElementById('load-msg').textContent = msg;
+}
+
+let toastTimer;
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2500);
+}
+
+function speak(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(el.innerText || el.textContent);
+  u.lang = 'es-MX'; u.rate = 0.9;
+  const v = window.speechSynthesis.getVoices().find(x => x.lang.startsWith('es'));
+  if (v) u.voice = v;
+  window.speechSynthesis.speak(u);
+}
+
+function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// HEADER / SIDEBAR UI
+// ─────────────────────────────────────────────────────────────────────────────
+
+function updateHeaderUI() {
+  const c = getCred();
+  document.getElementById('xp-num').textContent = S.xp;
+  document.getElementById('xp-fill').style.width = xpPct() + '%';
+  document.getElementById('cred-badge').textContent = c.emoji + ' ' + c.label;
+  document.getElementById('sb-rank').textContent = c.emoji + ' ' + c.label;
+}
+
+function renderSidebar() {
+  document.getElementById('sb-name').textContent = S.studentName;
+  updateHeaderUI();
+  renderDots();
+  renderCountryInfo();
+}
+
+function renderDots() {
+  const wrap = document.getElementById('c-dots');
+  wrap.innerHTML = '';
+  COUNTRIES.forEach((c, i) => {
+    const d = document.createElement('div');
+    d.className = 'c-dot';
+    if (i < S.currentCountry)        { d.classList.add('done');    d.textContent = '✓'; }
+    else if (i === S.currentCountry) { d.classList.add('current'); d.textContent = c.emoji; }
+    else                              { d.classList.add('locked');  d.textContent = i + 1; }
+    d.title = c.name;
+    wrap.appendChild(d);
+  });
+}
+
+function renderCountryInfo() {
+  const c = COUNTRIES[S.currentCountry];
+  document.getElementById('country-info').innerHTML =
+    `<strong>${c.emoji} ${c.name}</strong><br>${c.cap}<br>${c.region}<br>
+     <span style="color:var(--terracotta)">Sesión ${S.currentSession + 1} de ${SESSIONS_PER}</span>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STEP BAR
+// ─────────────────────────────────────────────────────────────────────────────
+
+function renderStepBar() {
+  const bar = document.getElementById('step-bar');
+  bar.innerHTML = '';
+  STEP_LABELS.forEach((lbl, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'step-view s-dot' +
+      (i < S.currentStep ? ' done' : i === S.currentStep ? ' active' : '');
+    dot.style.display = 'flex';
+    dot.innerHTML = `<div class="pip">${i < S.currentStep ? '✓' : i + 1}</div><span>${lbl}</span>`;
+    bar.appendChild(dot);
+    if (i < STEP_LABELS.length - 1) {
+      const conn = document.createElement('div');
+      conn.className = 's-conn' + (i < S.currentStep ? ' done' : '');
+      bar.appendChild(conn);
+    }
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STEP NAVIGATION
+// ─────────────────────────────────────────────────────────────────────────────
+
+function showStep(n) {
+  S.currentStep = n;
+  STEP_IDS.forEach((id, i) => {
+    document.getElementById('step-' + id).classList.toggle('active', i === n);
+  });
+  renderStepBar();
+  save();
+}
+
+function nextStep() { showStep(S.currentStep + 1); }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CONTENT LOADING
+// ─────────────────────────────────────────────────────────────────────────────
+
+async function loadSession() {
+  content = getContent();
+  if (content) { renderAll(); return; }
+
+  if (!S.apiKey) {
+    content = FALLBACK['México_0'];
+    if (content) { renderAll(); return; }
+    toast('Sin clave API y sin contenido de ejemplo disponible.');
+    return;
+  }
+
+  loading(true, `Generando contenido para ${COUNTRIES[S.currentCountry].name}…`);
+  try {
+    content = await generateContent();
+    setContent(content);
+    renderAll();
+  } catch (e) {
+    console.error(e);
+    content = FALLBACK['México_0'];
+    if (content) { renderAll(); toast('Error de API — usando contenido de ejemplo.'); }
+    else toast('Error al cargar contenido. Revisa tu clave API.');
+  } finally {
+    loading(false);
+  }
+}
+
+async function generateContent() {
+  const ctry = COUNTRIES[S.currentCountry];
+  const topic = TOPICS[S.currentSession % TOPICS.length];
+
+  const prompt = `Genera contenido educativo para un juego periodístico de español para estudiantes de secundaria (heritage speakers, nivel inicial de lectoescritura).
+
+País: ${ctry.name} (${ctry.region}, capital: ${ctry.cap})
+Tema de la sesión: ${topic}
+Sesión número: ${S.currentSession + 1} de ${SESSIONS_PER}
+
+Responde SOLO con JSON válido (sin texto antes ni después) con esta estructura exacta:
+
+{
+  "topic": "título corto del tema (5-8 palabras)",
+  "assignment": "mensaje de la editora (2-3 oraciones, tono amigable y urgente, menciona un lugar real del país)",
+  "article": {
+    "headline": "titular periodístico",
+    "byline": "Corresponsal, El Mundo Nuestro | Ciudad, ${ctry.name}",
+    "paragraphs": ["párrafo 1 (50-70 palabras)", "párrafo 2", "párrafo 3", "párrafo 4"],
+    "keywords": [
+      {"word":"palabra","definition":"definición simple en español, máx 15 palabras"},
+      {"word":"...","definition":"..."},
+      {"word":"...","definition":"..."},
+      {"word":"...","definition":"..."},
+      {"word":"...","definition":"..."}
+    ],
+    "questions": [
+      {"text":"pregunta literal","type":"mc","opts":["A","B","C","D"],"correct":0},
+      {"text":"pregunta literal 2","type":"mc","opts":["A","B","C","D"],"correct":1},
+      {"text":"pregunta inferencial","type":"mc","opts":["A","B","C","D"],"correct":2},
+      {"text":"pregunta de conexión personal","type":"written"}
+    ]
+  },
+  "audio": {
+    "script": "monólogo de 160-200 palabras en primera persona de una fuente local con vocabulario regional auténtico de ${ctry.name}",
+    "source": "Nombre y descripción (ej: 'Doña María, agricultora andina')",
+    "questions": [
+      {"text":"pregunta 1","type":"mc","opts":["A","B","C","D"],"correct":0},
+      {"text":"pregunta 2","type":"mc","opts":["A","B","C","D"],"correct":1},
+      {"text":"pregunta 3","type":"mc","opts":["A","B","C","D"],"correct":2}
+    ]
+  }
+}
+
+Reglas: oraciones cortas (máx 20 palabras), vocabulario auténtico regional, referencias a lugares/comidas/personas reales de ${ctry.name}, sin inglés en ninguna parte.`;
+
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json',
+      'x-api-key': S.apiKey,
+      'anthropic-version':'2023-06-01',
+      'anthropic-dangerous-direct-browser-access':'true'
+    },
+    body: JSON.stringify({
+      model:'claude-sonnet-4-20250514',
+      max_tokens:2200,
+      messages:[{role:'user', content:prompt}]
+    })
+  });
+
+  if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
+  const data = await res.json();
+  const txt = data.content[0].text;
+  const match = txt.match(/\{[\s\S]*\}/);
+  if (!match) throw new Error('No JSON in response');
+  return JSON.parse(match[0]);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// RENDER ALL STEP VIEWS
+// ─────────────────────────────────────────────────────────────────────────────
+
+function renderAll() {
+  const ctry = COUNTRIES[S.currentCountry];
+
+  // ── Llegada ──
+  document.getElementById('ll-flag').textContent  = ctry.emoji;
+  document.getElementById('ll-title').textContent = `Bienvenida a ${ctry.name}`;
+  document.getElementById('ll-sub').textContent   = `${ctry.cap} · ${ctry.region}`;
+  document.getElementById('ll-body').textContent  = ctry.flavor;
+
+  // ── Asignación ──
+  const asigEl = document.getElementById('asig-bubble');
+  asigEl.textContent = content.assignment;
+  addEditorMsg(content.assignment);
+
+  // ── Lectura ──
+  renderLectura(content.article);
+
+  // ── Escucha ──
+  renderEscucha(content.audio);
+
+  // ── Redacción scaffolds ──
+  renderScaffolds();
+
+  // Restore submitted state if returning mid-session
+  if (S.lecSubmitted) {
+    document.getElementById('btn-lec').disabled = true;
+    document.getElementById('btn-lec').textContent = '✓ Entregado';
+  }
+  if (S.escSubmitted) {
+    document.getElementById('btn-esc').disabled = true;
+    document.getElementById('btn-esc').textContent = '✓ Entregado';
+  }
+  if (S.audioPlayed) {
+    document.getElementById('esc-locked').style.display = 'none';
+    document.getElementById('esc-qs').style.display = 'block';
+  }
+  if (S.sessionPublished) restoreClipping();
+
+  showStep(S.currentStep);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// LECTURA
+// ─────────────────────────────────────────────────────────────────────────────
+
+function renderLectura(art) {
+  document.getElementById('art-head').textContent = art.headline;
+  document.getElementById('art-byl').textContent  = art.byline;
+
+  const body = document.getElementById('art-body');
+  body.innerHTML = '';
+  const kwWords = (art.keywords || []).map(k => k.word);
+  art.paragraphs.forEach(p => {
+    const para = document.createElement('p');
+    let html = p;
+    kwWords.forEach(w => {
+      const kw = art.keywords.find(k => k.word === w);
+      html = html.replace(new RegExp(`\\b(${esc(w)})\\b`, 'gi'),
+        `<span class="kw-hi" title="${kw ? kw.definition : ''}">$1</span>`);
+    });
+    para.innerHTML = html;
+    body.appendChild(para);
+  });
+
+  // Keywords sidebar
+  const box = document.getElementById('kw-box');
+  box.innerHTML = '<div class="kw-title">📚 Palabras clave</div>';
+  (art.keywords || []).forEach(k => {
+    box.insertAdjacentHTML('beforeend',
+      `<div class="kw-item"><div class="kw-word">${k.word}</div><div class="kw-def">${k.definition}</div></div>`);
+  });
+
+  // Questions
+  const qs = document.getElementById('lec-qs');
+  qs.innerHTML = '<div class="q-title">Preguntas de comprensión</div>';
+  (art.questions || []).forEach((q, i) => renderQ(q, i, 'lec', qs));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ESCUCHA
+// ─────────────────────────────────────────────────────────────────────────────
+
+function renderEscucha(aud) {
+  document.getElementById('aud-src').textContent = aud.source;
+  document.getElementById('esc-locked').style.display = 'block';
+  document.getElementById('esc-qs').style.display = 'none';
+  document.getElementById('aud-status').textContent = 'Presiona ▶ para escuchar la entrevista';
+  document.getElementById('play-btn').textContent = '▶';
+
+  const blocks = document.getElementById('esc-q-blocks');
+  blocks.innerHTML = '';
+  (aud.questions || []).forEach((q, i) => renderQ(q, i, 'esc', blocks));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// QUESTION RENDERER
+// ─────────────────────────────────────────────────────────────────────────────
+
+function renderQ(q, i, prefix, container) {
+  const block = document.createElement('div');
+  block.className = 'q-block';
+  block.id = `${prefix}-q${i}`;
+
+  if (q.type === 'mc') {
+    block.dataset.correct = q.correct;
+    block.innerHTML = `<div class="q-text">${i + 1}. ${q.text}</div>`;
+    (q.opts || q.options || []).forEach((opt, oi) => {
+      block.insertAdjacentHTML('beforeend',
+        `<label class="opt"><input type="radio" name="${prefix}-q${i}" value="${oi}"> ${opt}</label>`);
+    });
+  } else {
+    block.innerHTML = `<div class="q-text">${i + 1}. ${q.text}</div>
+      <textarea class="written-ta" rows="3" placeholder="Escribe tu respuesta aquí…"></textarea>`;
+  }
+  container.appendChild(block);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SUBMIT LECTURA
+// ─────────────────────────────────────────────────────────────────────────────
+
+function submitLectura() {
+  const {score, total} = gradeBlocks('lec', content.article.questions);
+  const xp = 20 + (score === total && total > 0 ? 10 : 0);
+  addXP(xp);
+  S.lecSubmitted = true;
+  save();
+  document.getElementById('btn-lec').disabled = true;
+  document.getElementById('btn-lec').textContent = `✓ Entregado (${score}/${total})`;
+  setTimeout(nextStep, 1400);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// AUDIO / TTS
+// ─────────────────────────────────────────────────────────────────────────────
+
+function toggleAudio() {
+  if (audioSpeaking) {
+    window.speechSynthesis.cancel();
+    audioSpeaking = false;
+    document.getElementById('play-btn').textContent = '▶';
+    document.getElementById('aud-status').textContent = 'Pausado. Presiona ▶ para continuar.';
+    return;
+  }
+  playScript(content.audio.script, () => {
+    audioSpeaking = false;
+    S.audioPlayed = true;
+    save();
+    document.getElementById('esc-locked').style.display = 'none';
+    document.getElementById('esc-qs').style.display = 'block';
+    document.getElementById('aud-status').textContent = '✓ Entrevista completada';
+    document.getElementById('play-btn').textContent = '🔄';
+  });
+}
+
+function playScript(text, onEnd) {
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'es-MX'; u.rate = 0.9;
+  const v = window.speechSynthesis.getVoices().find(x => x.lang.startsWith('es'));
+  if (v) u.voice = v;
+  u.onstart = () => {
+    audioSpeaking = true;
+    document.getElementById('play-btn').textContent = '⏸';
+    document.getElementById('aud-status').textContent = 'Reproduciendo entrevista…';
+  };
+  u.onend = () => { audioSpeaking = false; if (onEnd) onEnd(); };
+  u.onerror = () => {
+    audioSpeaking = false;
+    S.audioPlayed = true; save();
+    document.getElementById('esc-locked').style.display = 'none';
+    document.getElementById('esc-qs').style.display = 'block';
+    document.getElementById('aud-status').textContent = 'Audio no disponible. Preguntas desbloqueadas.';
+    document.getElementById('play-btn').textContent = '▶';
+  };
+  window.speechSynthesis.speak(u);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SUBMIT ESCUCHA
+// ─────────────────────────────────────────────────────────────────────────────
+
+function submitEscucha() {
+  const {score, total} = gradeBlocks('esc', content.audio.questions);
+  const xp = 20 + (score === total && total > 0 ? 10 : 0);
+  addXP(xp);
+  S.escSubmitted = true;
+  save();
+  document.getElementById('btn-esc').disabled = true;
+  document.getElementById('btn-esc').textContent = `✓ Entregado (${score}/${total})`;
+  setTimeout(nextStep, 1400);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// GRADE HELPER
+// ─────────────────────────────────────────────────────────────────────────────
+
+function gradeBlocks(prefix, questions) {
+  let score = 0, total = 0;
+  (questions || []).forEach((q, i) => {
+    if (q.type !== 'mc') return;
+    total++;
+    const block = document.getElementById(`${prefix}-q${i}`);
+    if (!block) return;
+    const correct = parseInt(block.dataset.correct);
+    const sel = block.querySelector(`input[name="${prefix}-q${i}"]:checked`);
+    const chosen = sel ? parseInt(sel.value) : -1;
+    block.querySelectorAll('.opt').forEach((lbl, li) => {
+      lbl.style.pointerEvents = 'none';
+      if (li === correct)                         lbl.classList.add('correct');
+      else if (li === chosen && chosen !== correct) lbl.classList.add('wrong');
+    });
+    if (chosen === correct) score++;
+  });
+  return {score, total};
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// REDACCIÓN
+// ─────────────────────────────────────────────────────────────────────────────
+
+function renderScaffolds() {
+  const row = document.getElementById('scaffolds');
+  row.innerHTML = '';
+  SCAFFOLDS.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'scaffold-btn';
+    btn.textContent = s;
+    btn.onclick = () => {
+      const ta = document.getElementById('redac-ta');
+      const v = ta.value;
+      if (v && !/\s$/.test(v)) ta.value += ' ';
+      ta.value += s;
+      ta.focus();
+      onRedacInput();
+    };
+    row.appendChild(btn);
+  });
+}
+
+function onRedacInput() {
+  const txt = document.getElementById('redac-ta').value;
+  const wc = txt.trim() ? txt.trim().split(/\s+/).length : 0;
+  const el = document.getElementById('wc');
+  el.textContent = `${wc} palabra${wc !== 1 ? 's' : ''}`;
+  el.className = 'wc' + (wc >= 30 ? ' ready' : '');
+  document.getElementById('btn-pub').disabled = wc < 30;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PUBLICAR
+// ─────────────────────────────────────────────────────────────────────────────
+
+function publicar() {
+  const txt = document.getElementById('redac-ta').value.trim();
+  if (txt.split(/\s+/).length < 30) return;
+
+  const ctry = COUNTRIES[S.currentCountry];
+  const art  = content.article;
+  const today = new Date().toLocaleDateString('es-ES', {year:'numeric',month:'long',day:'numeric'});
+
+  const article = {
+    headline: art.headline,
+    country: ctry.name, emoji: ctry.emoji,
+    byline: S.studentName, date: today, text: txt,
+    countryIndex: S.currentCountry, session: S.currentSession
+  };
+  S.publishedArticles.push(article);
+
+  addXP(30);
+  S.sessionPublished = true;
+  save();
+
+  document.getElementById('xp-award').textContent = `+${S.sessionXP} XP esta sesión`;
+  fillClipping(art.headline, S.studentName, ctry.name, today, txt);
+  showStep(5);
+}
+
+function fillClipping(headline, byline, country, date, body) {
+  document.getElementById('clip-date').textContent = date;
+  document.getElementById('clip-hed').textContent  = headline;
+  document.getElementById('clip-byl').textContent  = `Por ${byline} — Corresponsal en ${country}`;
+  document.getElementById('clip-body').textContent = body;
+}
+
+function restoreClipping() {
+  const arts = S.publishedArticles;
+  if (!arts.length) return;
+  const a = arts[arts.length - 1];
+  fillClipping(a.headline, a.byline, a.country, a.date, a.text);
+  document.getElementById('xp-award').textContent = `+${S.sessionXP} XP esta sesión`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ADVANCE SESSION / COUNTRY
+// ─────────────────────────────────────────────────────────────────────────────
+
+function advanceSession() {
+  window.speechSynthesis.cancel();
+  S.currentSession++;
+  if (S.currentSession >= SESSIONS_PER) {
+    S.currentSession = 0;
+    S.currentCountry++;
+    if (S.currentCountry >= COUNTRIES.length) {
+      S.currentCountry = COUNTRIES.length - 1;
+      toast('¡Felicitaciones! ¡Completaste todos los países!');
+      save();
+      return;
+    }
+    toast(`¡Avanzaste a ${COUNTRIES[S.currentCountry].name}!`);
+  }
+
+  // Reset per-session flags
+  S.currentStep = 0;
+  S.audioPlayed = false;
+  S.lecSubmitted = false;
+  S.escSubmitted = false;
+  S.sessionPublished = false;
+  S.sessionXP = 0;
+  content = null;
+
+  save();
+  document.getElementById('editor-msgs').innerHTML = '';
+  document.getElementById('redac-ta').value = '';
+  onRedacInput();
+  renderSidebar();
+  loadSession();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// EDITOR CHAT BUBBLE
+// ─────────────────────────────────────────────────────────────────────────────
+
+function addEditorMsg(msg) {
+  const wrap = document.getElementById('editor-msgs');
+  wrap.insertAdjacentHTML('beforeend',
+    `<div class="bubble-from">✉️ La Editora</div><div class="bubble">${msg}</div>`);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// BYLINE WALL
+// ─────────────────────────────────────────────────────────────────────────────
+
+function showBylineWall() {
+  const grid = document.getElementById('bw-grid');
+  if (!S.publishedArticles.length) {
+    grid.innerHTML = `<div style="font-family:sans-serif;color:var(--ink-lt);font-size:.9rem;
+      text-align:center;padding:3rem;grid-column:1/-1">
+      Aún no has publicado ningún artículo. ¡Empieza tu aventura!</div>`;
+  } else {
+    grid.innerHTML = '';
+    [...S.publishedArticles].reverse().forEach(a => {
+      grid.insertAdjacentHTML('beforeend', `
+        <div class="bw-card">
+          <div class="bw-meta">${a.emoji} ${a.country} · ${a.date}</div>
+          <div class="bw-hed">${a.headline}</div>
+          <div class="bw-byl">Por ${a.byline}</div>
+          <div class="bw-excerpt">${a.text.substring(0,220)}${a.text.length>220?'…':''}</div>
+        </div>`);
+    });
+  }
+  showScreen('byline');
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// TEACHER MODE
+// ─────────────────────────────────────────────────────────────────────────────
+
+function promptTeacher() {
+  const pw = prompt('Contraseña docente:');
+  if (pw === 'profe') openTeacher();
+  else if (pw !== null) toast('Contraseña incorrecta.');
+}
+
+function openTeacher() {
+  const ctry = COUNTRIES[S.currentCountry];
+  const cred = getCred();
+  const last = S.publishedArticles[S.publishedArticles.length - 1];
+  document.getElementById('teacher-body').innerHTML = `
+    <div style="font-family:sans-serif;font-size:.88rem">
+      <div style="background:var(--cream-dk);padding:.9rem;border-radius:8px;margin-bottom:1rem;line-height:1.7">
+        <strong>${S.studentName}</strong><br>
+        País: ${ctry.emoji} ${ctry.name} — Sesión ${S.currentSession + 1} / ${SESSIONS_PER}<br>
+        XP: ${S.xp} — Nivel: ${cred.emoji} ${cred.label}<br>
+        Artículos publicados: ${S.publishedArticles.length}
+      </div>
+      <div style="margin-bottom:1rem">
+        <strong>Avanzar manualmente:</strong>
+        <div style="display:flex;gap:.5rem;margin-top:.5rem;flex-wrap:wrap">
+          <button class="btn btn-sm" onclick="teacherNext('session')">Siguiente sesión</button>
+          <button class="btn btn-sm" onclick="teacherNext('country')">Siguiente país</button>
+          <button class="btn btn-sm" style="background:var(--terracotta);color:#fff"
+            onclick="if(confirm('¿Borrar todo el progreso?')){localStorage.clear();location.reload()}">Reiniciar todo</button>
+        </div>
+      </div>
+      ${last ? `<strong>Último artículo publicado:</strong>
+        <div style="background:var(--cream-dk);padding:.75rem;border-radius:6px;
+          margin-top:.4rem;font-size:.83rem;line-height:1.6">${last.text}</div>` : ''}
+    </div>`;
+  document.getElementById('teacher-modal').classList.add('open');
+}
+
+function closeTeacher() { document.getElementById('teacher-modal').classList.remove('open'); }
+
+function teacherNext(what) {
+  closeTeacher();
+  if (what === 'country') S.currentSession = SESSIONS_PER; // will roll over
+  advanceSession();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SETUP / START
+// ─────────────────────────────────────────────────────────────────────────────
+
+function startGame() {
+  const name   = document.getElementById('inp-name').value.trim();
+  const apiKey = document.getElementById('inp-key').value.trim();
+  if (!name) { alert('Por favor escribe tu nombre.'); return; }
+
+  S.studentName = name;
+  S.apiKey = apiKey;
+  save();
+  enterGame();
+}
+
+function enterGame() {
+  renderSidebar();
+  renderStepBar();
+  showScreen('game');
+  loadSession();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────────────────────────────────────
+
+function init() {
+  // Pre-load voices
+  window.speechSynthesis.getVoices();
+  if ('onvoiceschanged' in window.speechSynthesis)
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+
+  if (load()) {
+    // Pre-fill setup form in case they go back
+    document.getElementById('inp-name').value = S.studentName;
+    document.getElementById('inp-key').value  = S.apiKey || '';
+    enterGame();
+  }
+}
+
+init();
+</script>
+</body>
+</html>
