@@ -1,0 +1,818 @@
+{
+  "Bolivia_0": {
+    "topic": "El Salar de Uyuni, el espejo más grande del mundo",
+    "assignment": "¡Corresponsal, llegaste a Bolivia! Ve al Salar de Uyuni, una planicie blanca de sal tan grande que se ve desde el espacio. Cuando llueve se convierte en un espejo gigante. Y debajo hay algo que el mundo entero quiere. Ve a investigar.",
+    "article": {
+      "headline": "Diez mil kilómetros de sal y un tesoro debajo",
+      "byline": "Corresponsal, El Mundo Nuestro | Uyuni, Potosí, Bolivia",
+      "paragraphs": [
+        "El Salar de Uyuni es la mayor planicie de sal del planeta: más de diez mil kilómetros cuadrados a casi cuatro mil metros de altura. Hace miles de años era un lago gigante que se secó y dejó esta costra blanca.",
+        "En temporada seca la superficie se agrieta en figuras de seis lados, como un panal enorme. En temporada de lluvias se cubre con unos centímetros de agua y refleja el cielo con tanta claridad que no se distingue dónde termina el suelo.",
+        "Por esa superficie tan plana y estable, los satélites la usan para calibrar sus instrumentos desde el espacio. Es una de las referencias más exactas que existen en la Tierra para ese trabajo.",
+        "Bajo la costra de sal hay salmuera rica en litio, el metal que se usa en las baterías de celulares y autos eléctricos. Bolivia tiene una de las mayores reservas del mundo y discute cómo aprovecharla sin repetir la historia de otros minerales."
+      ],
+      "keywords": [
+        {
+          "word": "planicie",
+          "definition": "terreno extenso y plano"
+        },
+        {
+          "word": "costra",
+          "definition": "capa dura que se forma sobre una superficie"
+        },
+        {
+          "word": "agrieta",
+          "definition": "se abre en rajaduras o grietas"
+        },
+        {
+          "word": "calibrar",
+          "definition": "ajustar un instrumento para que mida con exactitud"
+        },
+        {
+          "word": "salmuera",
+          "definition": "agua con mucha sal disuelta"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué tamaño tiene el salar?",
+          "type": "mc",
+          "opts": [
+            "Más de diez mil kilómetros cuadrados",
+            "Mil kilómetros cuadrados",
+            "Un millón",
+            "Cien kilómetros cuadrados"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué había antes en ese lugar?",
+          "type": "mc",
+          "opts": [
+            "Un desierto",
+            "Un lago gigante que se secó",
+            "Un bosque",
+            "Un volcán"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Para qué usan los satélites el salar?",
+          "type": "mc",
+          "opts": [
+            "Para comunicarse",
+            "Para aterrizar",
+            "Para calibrar sus instrumentos",
+            "Para tomar fotos bonitas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hay bajo la costra de sal?",
+          "type": "mc",
+          "opts": [
+            "Oro",
+            "Agua dulce",
+            "Petróleo",
+            "Salmuera rica en litio"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué debería considerar un país antes de extraer un recurso muy valioso? Da tu opinión.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, mi nombre es Genaro Mamani y soy salero y también guía en el Salar de Uyuni. Mi familia saca sal de aquí desde hace tres generaciones. Nosotros trabajamos a la antigua: juntamos la sal en montoncitos cónicos para que escurra el agua, la dejamos secar al sol y después la cargamos. Con este sol y este reflejo, uno tiene que usar lentes oscuros y taparse toda la cara, porque la luz rebota del suelo y le quema a uno hasta debajo de la nariz. Ahora todos hablan del litio. Vienen empresas de muchos países a ofrecer. Nosotros escuchamos con cuidado. Aquí en Bolivia tenemos una memoria larga: en Potosí, a unas horas de aquí, hay un cerro del que sacaron plata durante siglos y se la llevaron toda. Ese cerro hoy está hueco y la gente de ahí sigue siendo pobre. Yo no digo que no al litio. Digo que esta vez la ganancia se tiene que quedar. Que haya trabajo aquí, escuelas aquí, fábricas aquí. Si no, es el mismo cuento de siempre con otro mineral.",
+      "source": "Genaro Mamani, salero y guía de Uyuni",
+      "questions": [
+        {
+          "text": "¿Cómo trabajan la sal?",
+          "type": "mc",
+          "opts": [
+            "La juntan en montoncitos cónicos para que escurra y se seque al sol",
+            "La sacan con agua",
+            "La compran",
+            "Con máquinas grandes"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué deben taparse la cara?",
+          "type": "mc",
+          "opts": [
+            "Por el frío",
+            "Porque la luz rebota del suelo y quema",
+            "Por el viento",
+            "Por el polvo"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué ejemplo menciona sobre Potosí?",
+          "type": "mc",
+          "opts": [
+            "Que está cerca",
+            "Que hay mucho turismo",
+            "Un cerro del que sacaron plata siglos y la gente sigue pobre",
+            "Que produce litio"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál es su posición sobre el litio?",
+          "type": "mc",
+          "opts": [
+            "Que decidan las empresas",
+            "No le interesa",
+            "Que no se extraiga nunca",
+            "Que se extraiga pero que la ganancia se quede"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Bolivia_1": {
+    "topic": "Las cholitas escaladoras de La Paz",
+    "assignment": "Corresponsal, esta historia te va a gustar. Un grupo de mujeres aymaras que trabajaban como cocineras para expediciones decidió subir ellas mismas a las montañas más altas de Bolivia. Y suben con pollera. Ve a conocerlas.",
+    "article": {
+      "headline": "Suben montañas de seis mil metros con pollera puesta",
+      "byline": "Corresponsal, El Mundo Nuestro | El Alto, La Paz, Bolivia",
+      "paragraphs": [
+        "En Bolivia se llama chola o cholita a la mujer indígena aymara o quechua que usa la vestimenta tradicional: pollera amplia, manta bordada, trenzas largas y sombrero bombín. Durante mucho tiempo fue una palabra usada con desprecio.",
+        "Un grupo de mujeres aymaras de El Alto trabajaba como cocineras y porteadoras para expediciones de montaña. Subían con la carga hasta los campamentos base, cocinaban para los escaladores extranjeros y se quedaban esperando abajo.",
+        "En 2015 decidieron que ellas también querían llegar a la cumbre. Consiguieron equipo prestado y empezaron a entrenar. Subieron el Huayna Potosí y después el Illimani, ambos de más de seis mil metros.",
+        "Suben con crampones, cuerdas y piolet, pero conservan la pollera sobre el pantalón térmico. No es un detalle decorativo: es una declaración. Han llegado a cumbres en Argentina y en el Himalaya, y su historia dio la vuelta al mundo."
+      ],
+      "keywords": [
+        {
+          "word": "aymara",
+          "definition": "pueblo e idioma indígena del altiplano boliviano y peruano"
+        },
+        {
+          "word": "pollera",
+          "definition": "falda amplia tradicional de las mujeres andinas"
+        },
+        {
+          "word": "expediciones",
+          "definition": "viajes organizados para explorar o escalar"
+        },
+        {
+          "word": "cumbre",
+          "definition": "punto más alto de una montaña"
+        },
+        {
+          "word": "crampones",
+          "definition": "garras de metal que se ponen en las botas para caminar sobre hielo"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué usa tradicionalmente una cholita?",
+          "type": "mc",
+          "opts": [
+            "Pollera, manta bordada, trenzas y sombrero bombín",
+            "Uniforme",
+            "Ropa de montaña",
+            "Pantalón y botas"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hacían antes en las expediciones?",
+          "type": "mc",
+          "opts": [
+            "Escalaban",
+            "Cocinaban y cargaban, y esperaban abajo",
+            "Guiaban al grupo",
+            "Nada"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué decidieron en 2015?",
+          "type": "mc",
+          "opts": [
+            "Mudarse",
+            "Dejar el trabajo",
+            "Que ellas también querían llegar a la cumbre",
+            "Abrir un restaurante"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué conservan la pollera al escalar?",
+          "type": "mc",
+          "opts": [
+            "Porque no tienen pantalones",
+            "Porque lo pide la ley",
+            "Porque abriga más",
+            "Porque es una declaración"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Conoces a alguien que haya entrado a un espacio donde no la esperaban? Cuenta su historia.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Kamisaraki. Buenos días. Me llamo Justina Apaza y soy cholita escaladora. Yo trabajé nueve años de cocinera en campamento base. Nueve años. Yo subía la carga, prendía la cocina, hacía la sopa para los señores extranjeros, y cuando ellos salían a la cumbre de madrugada, yo me quedaba lavando ollas. Los veía irse con sus linternas en la oscuridad. Y yo miraba la montaña. Un día le dije a mi comadre: y por qué nosotras no. Ella se rió. Después se quedó callada y me dijo: sí pues, por qué no. Éramos once al principio. Conseguimos botas prestadas, unas nos quedaban grandes. El primer cerro nos costó muchísimo, llorábamos del cansancio. Cuando llegamos arriba del Huayna Potosí y vi todo el altiplano allá abajo, yo pensé en mi mamá, que vendió verduras en la calle toda su vida. La gente nos pregunta siempre por la pollera. Que si no estorba. Yo les digo: mi mamá usó pollera, mi abuela usó pollera, y a ellas nadie las dejaba entrar a ciertos lugares por eso mismo. Yo llegué a seis mil metros con pollera. Que se entienda bien.",
+      "source": "Justina Apaza, cholita escaladora de El Alto",
+      "questions": [
+        {
+          "text": "¿Cuántos años trabajó de cocinera en campamento base?",
+          "type": "mc",
+          "opts": [
+            "Nueve años",
+            "Veinte años",
+            "Un año",
+            "Dos años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hacía mientras los escaladores salían a la cumbre?",
+          "type": "mc",
+          "opts": [
+            "Dormía",
+            "Se quedaba lavando ollas",
+            "Los acompañaba",
+            "Bajaba al pueblo"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuántas eran al principio?",
+          "type": "mc",
+          "opts": [
+            "Cinco",
+            "Tres",
+            "Once",
+            "Veinte"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué responde cuando le preguntan por la pollera?",
+          "type": "mc",
+          "opts": [
+            "Que es más cómoda",
+            "Que es una moda",
+            "Que estorba un poco",
+            "Que su mamá y su abuela la usaron y por eso no las dejaban entrar a ciertos lugares"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Bolivia_2": {
+    "topic": "El teleférico que unió a La Paz con El Alto",
+    "assignment": "Corresponsal, en La Paz el transporte público va por el aire. La ciudad construyó la red de teleféricos urbanos más grande del mundo para salvar una diferencia de altura enorme. Súbete a una cabina y cuéntanos qué ves.",
+    "article": {
+      "headline": "La ciudad donde se toma el teleférico para ir al trabajo",
+      "byline": "Corresponsal, El Mundo Nuestro | La Paz, Bolivia",
+      "paragraphs": [
+        "La Paz está construida dentro de un cañón y El Alto está arriba, en el borde del altiplano. Entre las dos ciudades hay una diferencia de altura de unos cuatrocientos metros en muy poca distancia horizontal.",
+        "Durante décadas, subir o bajar significaba una hora o más de tráfico en curvas empinadas y llenas de minibuses. Para mucha gente que vive arriba y trabaja abajo, eso eran dos o tres horas diarias de viaje.",
+        "En 2014 se inauguró Mi Teleférico. No es una atracción turística: es transporte público urbano. Hoy tiene varias líneas identificadas por colores, decenas de kilómetros de cable y transporta a cientos de miles de personas al día.",
+        "El viaje que antes tomaba una hora ahora puede durar quince minutos. Además, la vista cambió la relación entre las dos ciudades: desde la cabina, cualquiera ve los techos de barrios que antes no conocía y el nevado Illimani al fondo."
+      ],
+      "keywords": [
+        {
+          "word": "cañón",
+          "definition": "valle profundo y estrecho entre montañas"
+        },
+        {
+          "word": "altiplano",
+          "definition": "meseta muy alta y plana entre montañas"
+        },
+        {
+          "word": "empinadas",
+          "definition": "muy inclinadas"
+        },
+        {
+          "word": "inauguró",
+          "definition": "se abrió oficialmente por primera vez"
+        },
+        {
+          "word": "cabina",
+          "definition": "cajón cerrado donde viajan los pasajeros"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuánta diferencia de altura hay entre La Paz y El Alto?",
+          "type": "mc",
+          "opts": [
+            "Unos cuatrocientos metros",
+            "Dos mil metros",
+            "Diez metros",
+            "Cincuenta metros"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto tardaba antes el viaje?",
+          "type": "mc",
+          "opts": [
+            "Diez minutos",
+            "Una hora o más",
+            "Cinco minutos",
+            "Tres horas siempre"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es Mi Teleférico?",
+          "type": "mc",
+          "opts": [
+            "Un mirador",
+            "Una atracción turística",
+            "Transporte público urbano",
+            "Un tren"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuánto puede durar hoy ese viaje?",
+          "type": "mc",
+          "opts": [
+            "Dos horas",
+            "Un minuto",
+            "Una hora",
+            "Quince minutos"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué problema de transporte hay donde vives? ¿Se te ocurre una solución creativa?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, mi nombre es Elvira Condori y soy operadora de estación en la línea roja del teleférico. Yo vivo en El Alto y trabajo abajo, en La Paz. Antes de que existiera esto, yo me levantaba a las cuatro y media de la mañana para llegar a las siete. Bajaba en minibús por la autopista, apretada, con la gente encima, y si había bloqueo o accidente uno se quedaba parado una hora sin moverse. Volvía a mi casa a las nueve de la noche. A mis hijos los veía dormidos, nada más. Ahora salgo de mi casa a las seis y cuarto y estoy en mi trabajo a las siete. Quince minutos de viaje, sentada, mirando por la ventana. Recuperé como tres horas al día de mi vida. Eso no lo puedo explicar bien: son tres horas diarias con mis hijos que antes no tenía. Y le voy a contar algo curioso. En la cabina van seis personas juntas, calladitas, mirando hacia abajo. Gente de El Alto y gente de la zona sur, que antes no se cruzaban nunca. Se saludan. Eso también lo cambió el teleférico.",
+      "source": "Elvira Condori, operadora de estación de Mi Teleférico",
+      "questions": [
+        {
+          "text": "¿A qué hora se levantaba antes?",
+          "type": "mc",
+          "opts": [
+            "A las cuatro y media",
+            "A las cinco",
+            "A las siete",
+            "A las seis"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo veía a sus hijos antes?",
+          "type": "mc",
+          "opts": [
+            "Por la mañana",
+            "Dormidos, nada más",
+            "En el almuerzo",
+            "Los fines de semana"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuánto tiempo recuperó al día?",
+          "type": "mc",
+          "opts": [
+            "Cinco horas",
+            "Una hora",
+            "Como tres horas",
+            "Media hora"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué le parece curioso de las cabinas?",
+          "type": "mc",
+          "opts": [
+            "Que son pequeñas",
+            "Que hay silencio",
+            "Que van muy rápido",
+            "Que se saluda gente que antes no se cruzaba nunca"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Chile_0": {
+    "topic": "El desierto de Atacama y los telescopios",
+    "assignment": "¡Corresponsal, llegaste a Chile! Vas al desierto más seco del mundo. Suena vacío, pero es el mejor lugar del planeta para mirar el cielo, y allí están los telescopios más potentes que existen. Ve de noche.",
+    "article": {
+      "headline": "El lugar más seco de la Tierra es la mejor ventana al universo",
+      "byline": "Corresponsal, El Mundo Nuestro | San Pedro de Atacama, Chile",
+      "paragraphs": [
+        "El desierto de Atacama, en el norte de Chile, es el desierto no polar más seco del planeta. Hay estaciones meteorológicas que en décadas nunca registraron una gota de lluvia. Algunas zonas se parecen tanto a Marte que allí se prueban robots espaciales.",
+        "Esa sequedad es justamente lo que atrae a los astrónomos. El vapor de agua en el aire distorsiona la luz de las estrellas. Sin nubes y sin humedad, y a gran altura, las imágenes salen mucho más nítidas.",
+        "Además hay muy poca contaminación lumínica. No hay ciudades grandes cerca que iluminen el cielo, y existen normas que obligan a usar luces bajas y dirigidas hacia el suelo en toda la región.",
+        "Por eso se instalaron allí observatorios de muchos países. El conjunto ALMA, en el llano de Chajnantor a más de cinco mil metros, usa decenas de antenas que trabajan juntas como si fueran un solo telescopio gigante."
+      ],
+      "keywords": [
+        {
+          "word": "meteorológicas",
+          "definition": "que miden el clima y el estado del tiempo"
+        },
+        {
+          "word": "astrónomos",
+          "definition": "científicos que estudian las estrellas y el universo"
+        },
+        {
+          "word": "distorsiona",
+          "definition": "deforma o cambia la forma de algo"
+        },
+        {
+          "word": "nítidas",
+          "definition": "claras y bien definidas"
+        },
+        {
+          "word": "lumínica",
+          "definition": "relacionada con la luz"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué se prueba en algunas zonas de Atacama?",
+          "type": "mc",
+          "opts": [
+            "Robots espaciales, porque se parece a Marte",
+            "Autos",
+            "Barcos",
+            "Aviones"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué la sequedad ayuda a la astronomía?",
+          "type": "mc",
+          "opts": [
+            "Hace más calor",
+            "El vapor de agua distorsiona la luz de las estrellas",
+            "Hay menos viento",
+            "Se ve de día"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué son las normas de luces bajas?",
+          "type": "mc",
+          "opts": [
+            "Para los animales",
+            "Para ahorrar energía",
+            "Para evitar contaminación lumínica",
+            "Para la seguridad"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo funciona ALMA?",
+          "type": "mc",
+          "opts": [
+            "Con satélites",
+            "Con cámaras",
+            "Con un solo telescopio",
+            "Con decenas de antenas que trabajan como un solo telescopio"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cómo es el cielo de noche donde vives? ¿Se ven las estrellas? ¿Por qué crees que sí o no?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas noches, soy Ignacia Fuentealba y soy operadora de telescopio en un observatorio de la región de Antofagasta. Trabajo de noche, siempre. Mi turno empieza cuando se pone el sol y termina cuando amanece. Duermo de día con cortinas negras. Le voy a contar cómo es esto en realidad, porque la gente se imagina a uno con el ojo pegado a un tubo mirando planetas. No es así hace mucho tiempo. Yo estoy en una sala con pantallas, controlando apuntamiento, foco y condiciones. Los datos se guardan y los analizan astrónomos que están en otros países. A veces yo tomo la imagen de una galaxia y el científico que la pidió está durmiendo en Alemania. Lo que sí es cierto es la salida a la plataforma. Cada noche salgo un rato al frío, apago la linterna y dejo que los ojos se acostumbren unos minutos. Y ahí está la Vía Láctea completa, atravesando el cielo de lado a lado, tan brillante que hace sombra. Llevo siete años y todavía me paro ahí como tonta, mirando. Uno no se acostumbra a eso.",
+      "source": "Ignacia Fuentealba, operadora de telescopio",
+      "questions": [
+        {
+          "text": "¿Cuándo trabaja Ignacia?",
+          "type": "mc",
+          "opts": [
+            "De noche, desde que se pone el sol",
+            "Solo en invierno",
+            "Los fines de semana",
+            "De día"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo es su trabajo en realidad?",
+          "type": "mc",
+          "opts": [
+            "Mira por un tubo",
+            "Está en una sala con pantallas controlando el telescopio",
+            "Viaja mucho",
+            "Analiza los datos ella misma"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Dónde puede estar el científico que pidió una imagen?",
+          "type": "mc",
+          "opts": [
+            "En el desierto",
+            "En la misma sala",
+            "Durmiendo en Alemania",
+            "En Santiago"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hace cada noche en la plataforma?",
+          "type": "mc",
+          "opts": [
+            "Toma fotos",
+            "Habla por radio",
+            "Revisa el equipo",
+            "Apaga la linterna y deja que los ojos se acostumbren para ver la Vía Láctea"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Chile_1": {
+    "topic": "Las caletas de pescadores y las algas del Pacífico",
+    "assignment": "Corresponsal, baja a la costa. En Chile hay caletas de pescadores artesanales con un sistema poco común: cada caleta tiene su propio pedazo de mar y responde por él. Ve a ver cómo funciona.",
+    "article": {
+      "headline": "Cuando un sindicato de pescadores es dueño de su pedazo de mar",
+      "byline": "Corresponsal, El Mundo Nuestro | Caleta de la Región de Coquimbo, Chile",
+      "paragraphs": [
+        "La costa chilena tiene más de cuatro mil kilómetros y cientos de caletas: pequeños puertos donde trabajan pescadores artesanales. De allí salen mariscos como el loco, el erizo, la macha y también las algas.",
+        "En Chile existe un sistema llamado áreas de manejo. El Estado le asigna a un sindicato de pescadores un sector de mar determinado. Ese grupo tiene el derecho exclusivo de trabajarlo, pero también la obligación de cuidarlo.",
+        "Cada área tiene que hacer estudios periódicos para saber cuántos ejemplares hay y de qué tamaño. Con esos datos se decide cuánto se puede extraer ese año. Si se saca de más, el mismo grupo se queda sin recurso el año siguiente.",
+        "El sistema cambió la lógica del trabajo. Antes convenía sacar todo rápido antes de que llegara otro. Ahora conviene cuidar, porque el beneficio de esperar se queda en la misma comunidad."
+      ],
+      "keywords": [
+        {
+          "word": "caletas",
+          "definition": "pequeños puertos de pescadores"
+        },
+        {
+          "word": "artesanales",
+          "definition": "que trabajan a pequeña escala y con métodos tradicionales"
+        },
+        {
+          "word": "sindicato",
+          "definition": "organización de trabajadores que defiende sus intereses"
+        },
+        {
+          "word": "exclusivo",
+          "definition": "que pertenece solo a alguien y a nadie más"
+        },
+        {
+          "word": "ejemplares",
+          "definition": "individuos concretos de una especie"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué son las caletas?",
+          "type": "mc",
+          "opts": [
+            "Pequeños puertos de pescadores artesanales",
+            "Playas turísticas",
+            "Fábricas",
+            "Barcos grandes"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué es un área de manejo?",
+          "type": "mc",
+          "opts": [
+            "Una zona prohibida",
+            "Un sector de mar asignado a un sindicato, que debe cuidarlo",
+            "Un parque marino",
+            "Un puerto"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Para qué sirven los estudios periódicos?",
+          "type": "mc",
+          "opts": [
+            "Para vender más caro",
+            "Para cobrar impuestos",
+            "Para saber cuántos ejemplares hay y cuánto se puede extraer",
+            "Para atraer turistas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué convenía hacer antes del sistema?",
+          "type": "mc",
+          "opts": [
+            "No pescar",
+            "Pescar poco",
+            "Cuidar el recurso",
+            "Sacar todo rápido antes de que llegara otro"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que la gente cuida más algo cuando le pertenece? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, soy Nibaldo Araya, buzo mariscador y presidente del sindicato de esta caleta. Llevo veintinueve años metiéndome al agua. Nosotros trabajamos con traje y con narguile, que es una manguera que baja del bote con aire desde un compresor. Uno anda abajo entre las rocas buscando el loco y el erizo. El agua acá es helada todo el año, la corriente de Humboldt no perdona. Le cuento cómo era antes del área de manejo. Era una carrera. Uno sabía que si no sacaba el loco hoy, mañana venía otro de otra caleta y se lo llevaba. Entonces todos sacábamos todo, incluso los chicos, los que no tenían talla. Y cada año había menos. Todos veíamos que se acababa y ninguno podía parar solo, porque el que paraba perdía. Cuando nos dieron el área fue distinto. Este pedazo es nuestro y de nadie más. Hacemos el estudio, contamos, y decidimos entre todos cuánto se saca. Los primeros años nos apretamos el cinturón feo. Pero ahora hay locos grandes otra vez. Mi hijo se está metiendo al buceo y va a tener qué sacar.",
+      "source": "Nibaldo Araya, buzo mariscador y dirigente sindical",
+      "questions": [
+        {
+          "text": "¿Qué es el narguile?",
+          "type": "mc",
+          "opts": [
+            "Una manguera que baja aire desde un compresor en el bote",
+            "Un traje especial",
+            "Un tipo de marisco",
+            "Un tipo de red"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué antes sacaban incluso los ejemplares chicos?",
+          "type": "mc",
+          "opts": [
+            "Porque valían más",
+            "Porque si no, venía otro de otra caleta y se los llevaba",
+            "Porque era más fácil",
+            "Porque lo permitía la ley"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Por qué nadie podía parar solo?",
+          "type": "mc",
+          "opts": [
+            "Por falta de dinero",
+            "Porque estaba prohibido",
+            "Porque el que paraba perdía",
+            "Porque no sabían"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo fueron los primeros años con el área de manejo?",
+          "type": "mc",
+          "opts": [
+            "Iguales que antes",
+            "Peores para siempre",
+            "Muy buenos",
+            "Se apretaron el cinturón feo"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Chile_2": {
+    "topic": "Gabriela Mistral, la maestra rural que ganó el Nobel",
+    "assignment": "Corresponsal, última historia chilena y es sobre una maestra. Gabriela Mistral empezó dando clases en escuelas rurales pobres, sin título, y llegó a ser la primera persona de América Latina en ganar el Nobel de Literatura. Ve al Valle de Elqui.",
+    "article": {
+      "headline": "Empezó dando clases a los quince años y terminó ganando el Nobel",
+      "byline": "Corresponsal, El Mundo Nuestro | Valle de Elqui, Coquimbo, Chile",
+      "paragraphs": [
+        "Lucila Godoy Alcayaga nació en 1889 en un pueblo pequeño del Valle de Elqui, en el norte de Chile. Su familia era pobre. Empezó a trabajar como ayudante de escuela a los quince años para mantener a su madre.",
+        "No pudo estudiar en la Escuela Normal para maestros: se lo negaron. Aprendió por su cuenta, leyendo todo lo que caía en sus manos, y siguió enseñando en escuelas rurales muy alejadas, algunas sin luz ni piso.",
+        "Empezó a publicar poemas con el nombre de Gabriela Mistral. En 1945 recibió el Premio Nobel de Literatura. Fue la primera persona de América Latina en ganarlo, hombre o mujer.",
+        "Nunca dejó de considerarse maestra. Ayudó a reformar la educación pública en Chile y en México, defendió el derecho de las niñas campesinas a estudiar y escribió mucho sobre la infancia y sobre los pueblos indígenas."
+      ],
+      "keywords": [
+        {
+          "word": "rurales",
+          "definition": "del campo, fuera de las ciudades"
+        },
+        {
+          "word": "alejadas",
+          "definition": "que están lejos de todo"
+        },
+        {
+          "word": "publicar",
+          "definition": "sacar a la luz un texto para que otros lo lean"
+        },
+        {
+          "word": "reformar",
+          "definition": "cambiar algo para mejorarlo"
+        },
+        {
+          "word": "infancia",
+          "definition": "etapa de la vida en que se es niño o niña"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuál era su nombre verdadero?",
+          "type": "mc",
+          "opts": [
+            "Lucila Godoy Alcayaga",
+            "Lucila Mistral",
+            "Gabriela Godoy",
+            "Gabriela Mistral"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿A qué edad empezó a trabajar en una escuela?",
+          "type": "mc",
+          "opts": [
+            "A los veinte",
+            "A los quince años",
+            "A los diez",
+            "A los treinta"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasó con la Escuela Normal?",
+          "type": "mc",
+          "opts": [
+            "Estudió allí de grande",
+            "Se graduó con honores",
+            "Le negaron la entrada y aprendió por su cuenta",
+            "Nunca lo intentó"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué logró en 1945?",
+          "type": "mc",
+          "opts": [
+            "Publicó su primer libro",
+            "Viajó a Europa",
+            "Fue directora de escuela",
+            "Recibió el Premio Nobel de Literatura"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Has tenido un maestro o maestra que te haya marcado? Cuenta qué hizo por ti.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas tardes, mi nombre es Rosalba Pizarro y soy profesora básica en una escuela rural del Valle de Elqui. Tengo un curso combinado: veintitrés niños de primero a sexto, todos en la misma sala. Así mismo enseñaba Gabriela Mistral hace más de cien años, en escuelas como esta, en estos mismos cerros. A mis alumnos les cuesta creer que ella caminaba horas para llegar a hacer clases. Que le negaron entrar a estudiar para maestra porque decían que sus escritos eran inapropiados para una señorita. Y que igual siguió. Yo les leo sus poemas en voz alta. Hay uno que dice que el que no ama, no enseña. Se los leo el primer día de clases todos los años. La gente afuera piensa que ella era una señora solemne de estatua y de billete. Yo les digo a los niños que era una mujer del campo, pobre, con las manos frías, que enseñaba a leer a niños como ustedes en una sala como esta. Y que del mundo entero vinieron a darle un premio por escribir lo que sentía. Eso les cambia la cara. Ahí entienden que sí se puede.",
+      "source": "Rosalba Pizarro, profesora rural del Valle de Elqui",
+      "questions": [
+        {
+          "text": "¿Cómo es el curso de Rosalba?",
+          "type": "mc",
+          "opts": [
+            "Combinado: veintitrés niños de primero a sexto en una sala",
+            "De secundaria",
+            "De cincuenta alumnos",
+            "Solo de primer grado"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué le negaron a Mistral estudiar para maestra?",
+          "type": "mc",
+          "opts": [
+            "Por falta de dinero",
+            "Decían que sus escritos eran inapropiados para una señorita",
+            "Por su edad",
+            "Por vivir lejos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué les lee el primer día de clases?",
+          "type": "mc",
+          "opts": [
+            "Un cuento",
+            "Las reglas",
+            "Un poema que dice que el que no ama, no enseña",
+            "Una carta"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué les dice a los niños sobre Mistral?",
+          "type": "mc",
+          "opts": [
+            "Que vivía en Europa",
+            "Que era muy rica",
+            "Que era una señora solemne",
+            "Que era una mujer del campo, pobre, que enseñaba en una sala como esta"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

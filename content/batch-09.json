@@ -1,0 +1,818 @@
+{
+  "Argentina_0": {
+    "topic": "El tango, del puerto a los salones del mundo",
+    "assignment": "¡Corresponsal, llegaste a Argentina! Ve a un barrio de Buenos Aires donde nació el tango. Empezó siendo música de inmigrantes pobres en el puerto y hoy es patrimonio de la humanidad. Ve a una milonga y observa.",
+    "article": {
+      "headline": "La música que nació entre inmigrantes y llegó a todo el planeta",
+      "byline": "Corresponsal, El Mundo Nuestro | Buenos Aires, Argentina",
+      "paragraphs": [
+        "El tango nació a finales del siglo diecinueve en los barrios pobres cercanos al puerto de Buenos Aires y Montevideo. Allí se juntaban inmigrantes italianos, españoles, criollos y afrodescendientes, cada uno con su música.",
+        "De esa mezcla salió algo nuevo. El instrumento más característico es el bandoneón, una especie de acordeón cuadrado que llegó desde Alemania y que en el Río de la Plata encontró su verdadero hogar.",
+        "Al principio fue música mal vista. Se bailaba en patios y lugares humildes, y la gente acomodada la despreciaba. Todo cambió cuando el tango se puso de moda en París en los años diez, y entonces Buenos Aires lo aceptó.",
+        "Al lugar donde se baila tango se le llama milonga. Hay códigos: se invita a bailar con la mirada, se baila una tanda de tres o cuatro temas y luego se cambia de pareja. En 2009 la UNESCO lo declaró patrimonio de la humanidad."
+      ],
+      "keywords": [
+        {
+          "word": "inmigrantes",
+          "definition": "personas que llegan a vivir a un país que no es el suyo"
+        },
+        {
+          "word": "criollos",
+          "definition": "personas nacidas en América de ascendencia europea"
+        },
+        {
+          "word": "bandoneón",
+          "definition": "instrumento parecido a un acordeón cuadrado, típico del tango"
+        },
+        {
+          "word": "acomodada",
+          "definition": "que tiene buena posición económica"
+        },
+        {
+          "word": "milonga",
+          "definition": "lugar o evento donde se baila tango"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde nació el tango?",
+          "type": "mc",
+          "opts": [
+            "En los barrios pobres cerca del puerto",
+            "En París",
+            "En el campo",
+            "En los teatros elegantes"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál es el instrumento más característico?",
+          "type": "mc",
+          "opts": [
+            "La guitarra",
+            "El bandoneón",
+            "El piano",
+            "El violín"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hizo que Buenos Aires aceptara el tango?",
+          "type": "mc",
+          "opts": [
+            "La radio",
+            "Una ley",
+            "Que se puso de moda en París",
+            "Un concurso"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo se invita a bailar en una milonga?",
+          "type": "mc",
+          "opts": [
+            "Por escrito",
+            "Con la mano",
+            "Gritando",
+            "Con la mirada"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Conoces algún estilo de música que primero fuera despreciado y después aceptado? Compáralo con el tango.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas noches, me llamo Osvaldo Bianchi y toco el bandoneón desde los doce años. Ahora tengo setenta y ocho. Este instrumento es un monstruo, le digo la verdad. Tiene setenta y un botones y no están ordenados de forma lógica. Y peor todavía: la misma tecla suena distinta al abrir que al cerrar el fuelle. Uno tiene que aprender dos instrumentos en uno. Por eso quedamos pocos bandoneonistas. Mi abuelo llegó de Italia en barco a los diecisiete años, sin nada, y trabajó en el puerto toda su vida. Él no era músico, pero contaba que en el conventillo donde vivía había gente de todas partes y todos tocaban algo en el patio los domingos. El tango salió de esos patios, de esa gente que había dejado su país y estaba sola. Por eso las letras hablan tanto de la ausencia, del que se fue, del barrio que ya no está. Ahora vienen muchachos jóvenes a estudiar conmigo, y también extranjeros. Eso me da alegría. Yo les digo siempre lo mismo: la técnica se aprende, pero si no entendés de dónde viene esta música, te va a salir prolijo y vacío.",
+      "source": "Osvaldo Bianchi, bandoneonista",
+      "questions": [
+        {
+          "text": "¿Cuántos botones tiene el bandoneón?",
+          "type": "mc",
+          "opts": [
+            "Setenta y uno",
+            "Cien",
+            "Doce",
+            "Treinta"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hace especialmente difícil al instrumento?",
+          "type": "mc",
+          "opts": [
+            "Que es pesado",
+            "Que la misma tecla suena distinta al abrir que al cerrar",
+            "Que es muy caro",
+            "Que es muy grande"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿De dónde llegó su abuelo?",
+          "type": "mc",
+          "opts": [
+            "De Francia",
+            "De España",
+            "De Italia",
+            "De Alemania"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué les dice a sus alumnos?",
+          "type": "mc",
+          "opts": [
+            "Que compren buen instrumento",
+            "Que viajen a París",
+            "Que practiquen más horas",
+            "Que si no entienden de dónde viene la música, saldrá prolijo y vacío"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Argentina_1": {
+    "topic": "El mate, una bebida que se comparte",
+    "assignment": "Corresponsal, esta historia parece pequeña pero explica mucho. En Argentina se toma mate a toda hora, y casi nunca solo: se pasa de mano en mano en la misma bombilla. Ve a una plaza y observa las reglas de esa ronda.",
+    "article": {
+      "headline": "Una sola bombilla, muchas manos: las reglas del mate",
+      "byline": "Corresponsal, El Mundo Nuestro | Buenos Aires, Argentina",
+      "paragraphs": [
+        "El mate se prepara con hojas secas y molidas de la yerba mate, una planta originaria de la región guaraní. Se colocan en un recipiente, también llamado mate, y se toma con una bombilla, un tubo de metal con filtro.",
+        "La costumbre viene de los guaraníes, que ya consumían la yerba antes de la llegada de los europeos. Hoy se toma en Argentina, Uruguay, Paraguay, el sur de Brasil y buena parte de Bolivia y Chile.",
+        "Lo importante no es solo la bebida sino la ronda. Una persona ceba: sirve el agua caliente y le pasa el mate a otra, que lo toma todo y se lo devuelve. Después el cebador vuelve a llenarlo y se lo pasa al siguiente.",
+        "Hay reglas que todos conocen. No se revuelve la bombilla. No se agradece hasta que uno ya no quiere más, porque decir gracias significa salirse de la ronda. Y todos toman de la misma bombilla, sin excepción."
+      ],
+      "keywords": [
+        {
+          "word": "yerba",
+          "definition": "planta cuyas hojas secas se usan para preparar el mate"
+        },
+        {
+          "word": "bombilla",
+          "definition": "tubo de metal con filtro para tomar el mate"
+        },
+        {
+          "word": "guaraníes",
+          "definition": "pueblo indígena del noreste argentino y Paraguay"
+        },
+        {
+          "word": "ronda",
+          "definition": "grupo de personas que se van pasando algo por turnos"
+        },
+        {
+          "word": "ceba",
+          "definition": "sirve el agua caliente en el mate y lo prepara"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿De qué está hecho el mate?",
+          "type": "mc",
+          "opts": [
+            "De hojas secas y molidas de yerba mate",
+            "De té negro",
+            "De cacao",
+            "De café molido"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿De quiénes viene la costumbre?",
+          "type": "mc",
+          "opts": [
+            "De los españoles",
+            "De los guaraníes",
+            "De los incas",
+            "De los italianos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hace la persona que ceba?",
+          "type": "mc",
+          "opts": [
+            "Lava la bombilla",
+            "Toma primero siempre",
+            "Sirve el agua y va pasando el mate a cada uno",
+            "Compra la yerba"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué significa decir gracias en la ronda?",
+          "type": "mc",
+          "opts": [
+            "Que quiere otro",
+            "Que hay que cambiar la yerba",
+            "Que estuvo rico",
+            "Que uno ya no quiere más y se sale de la ronda"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Hay alguna comida o bebida que en tu familia se comparta con reglas parecidas? Descríbela.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, soy Malena Duarte y tengo veintitrés años, estudio enfermería en Buenos Aires. Vos me preguntás por el mate y te digo que es difícil de explicar a alguien de afuera. No es como un café que cada uno pide el suyo. Es uno solo y va pasando. Todos tomamos de la misma bombilla y a nadie se le ocurre que eso sea raro. Yo llevo el termo a la facultad todos los días. En los recreos nos sentamos en el pasto y armamos la ronda. Ahí se habla de todo, de los parciales, de los problemas de cada uno. Muchas veces las conversaciones más importantes que tuve en mi vida pasaron con un mate en la mano. Hay algo en el ritmo, en tener que esperar tu turno, que hace que la charla vaya más despacio. Cuando mi abuela se enfermó, yo me sentaba al lado de la cama y cebaba para las dos. Ella casi no podía hablar ya. Pero tomaba su mate y me apretaba la mano. No hacía falta decir nada. Eso también es el mate: estar al lado de alguien sin tener que llenar el silencio.",
+      "source": "Malena Duarte, estudiante de enfermería",
+      "questions": [
+        {
+          "text": "¿Qué lleva Malena a la facultad todos los días?",
+          "type": "mc",
+          "opts": [
+            "El termo",
+            "Su computadora",
+            "Comida",
+            "Un libro"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué dice que la charla va más despacio?",
+          "type": "mc",
+          "opts": [
+            "Porque hace calor",
+            "Por el ritmo de tener que esperar tu turno",
+            "Porque están cansados",
+            "Porque hablan poco"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacía con su abuela enferma?",
+          "type": "mc",
+          "opts": [
+            "La llevaba a pasear",
+            "Le leía",
+            "Se sentaba al lado y cebaba para las dos",
+            "Le cocinaba"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué dice que también es el mate?",
+          "type": "mc",
+          "opts": [
+            "Una tradición vieja",
+            "Algo de los jóvenes",
+            "Una bebida caliente",
+            "Estar al lado de alguien sin tener que llenar el silencio"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Argentina_2": {
+    "topic": "Los dinosaurios gigantes de la Patagonia",
+    "assignment": "Corresponsal, última misión argentina y es enorme, literalmente. En la Patagonia se han encontrado los dinosaurios más grandes que caminaron la Tierra. Muchos los descubrieron peones rurales, no científicos. Ve a Neuquén.",
+    "article": {
+      "headline": "Los animales más grandes que pisaron la Tierra vivieron aquí",
+      "byline": "Corresponsal, El Mundo Nuestro | Neuquén, Patagonia, Argentina",
+      "paragraphs": [
+        "La Patagonia argentina es uno de los mejores lugares del mundo para buscar dinosaurios. El viento y la falta de vegetación dejan la roca desnuda, y eso hace que los huesos fósiles queden a la vista en la superficie.",
+        "Allí se encontró el Argentinosaurus y también el Patagotitan mayorum, un saurópodo que pudo medir más de treinta y cinco metros de largo y pesar como diez elefantes juntos. Están entre los animales terrestres más grandes conocidos.",
+        "También apareció el Giganotosaurus, un carnívoro tan grande como el famoso Tyrannosaurus rex o incluso mayor. Vivió millones de años antes que él, en un continente distinto.",
+        "Muchos hallazgos importantes los hicieron trabajadores rurales. El Patagotitan lo encontró un peón de una estancia que vio un hueso enorme asomando en el campo y avisó al museo local."
+      ],
+      "keywords": [
+        {
+          "word": "vegetación",
+          "definition": "conjunto de plantas de un lugar"
+        },
+        {
+          "word": "fósiles",
+          "definition": "restos de seres vivos muy antiguos conservados en la roca"
+        },
+        {
+          "word": "saurópodo",
+          "definition": "dinosaurio herbívoro de cuello y cola muy largos"
+        },
+        {
+          "word": "carnívoro",
+          "definition": "animal que se alimenta de carne"
+        },
+        {
+          "word": "estancia",
+          "definition": "finca grande de campo en Argentina"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Por qué es buena la Patagonia para buscar fósiles?",
+          "type": "mc",
+          "opts": [
+            "Porque el viento y la falta de vegetación dejan la roca desnuda",
+            "Porque llueve mucho",
+            "Porque hay poca gente",
+            "Porque hay muchos museos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto pudo medir el Patagotitan?",
+          "type": "mc",
+          "opts": [
+            "Diez metros",
+            "Más de treinta y cinco metros",
+            "Cien metros",
+            "Cinco metros"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo era el Giganotosaurus?",
+          "type": "mc",
+          "opts": [
+            "Acuático",
+            "Herbívoro y pequeño",
+            "Un carnívoro tan grande como el T. rex o mayor",
+            "Volador"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Quién encontró el Patagotitan?",
+          "type": "mc",
+          "opts": [
+            "Un turista",
+            "Un estudiante",
+            "Un paleontólogo famoso",
+            "Un peón de estancia que vio un hueso asomando"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que las personas del lugar pueden ser clave para los descubrimientos científicos? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, mi nombre es Hipólito Sandoval y soy técnico de campo en un museo paleontológico de Neuquén. Yo no soy doctor ni nada. Empecé como peón en una estancia, cuidando ovejas. Un día, buscando un animal perdido, vi algo raro en una barranca. Parecía un tronco de piedra gris, pero tenía forma de hueso. Avisé en el pueblo y vinieron los del museo. Resultó ser un fémur de un dinosaurio gigante. Me acuerdo la cara que pusieron cuando lo midieron. Después me invitaron a trabajar con ellos y llevo diecisiete años. Lo que yo aporto es el ojo del campo. Yo conozco estos cerros, sé leer el terreno, sé por dónde se camina y por dónde no. Los científicos saben lo que hay adentro del hueso; yo sé dónde está el hueso. Es un trabajo de mucha paciencia. Se limpia con pincelito y con palillo, milímetro a milímetro, días enteros bajo el sol y el viento patagónico, que no para nunca. Cuando uno destapa un hueso que nadie vio en noventa millones de años, se le pone la piel de gallina. A mí todavía me pasa.",
+      "source": "Hipólito Sandoval, técnico de campo en paleontología",
+      "questions": [
+        {
+          "text": "¿Cuál era su trabajo antes?",
+          "type": "mc",
+          "opts": [
+            "Peón en una estancia, cuidando ovejas",
+            "Maestro",
+            "Guía turístico",
+            "Científico"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo encontró el hueso?",
+          "type": "mc",
+          "opts": [
+            "Excavando",
+            "Buscando un animal perdido vio algo raro en una barranca",
+            "Se lo dijeron",
+            "En un libro"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué dice que aporta él?",
+          "type": "mc",
+          "opts": [
+            "Las herramientas",
+            "El conocimiento científico",
+            "El ojo del campo: sabe leer el terreno",
+            "El dinero"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo se limpia un fósil?",
+          "type": "mc",
+          "opts": [
+            "Con máquinas",
+            "Con las manos",
+            "Con agua a presión",
+            "Con pincelito y palillo, milímetro a milímetro"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Uruguay_0": {
+    "topic": "El candombe y las llamadas de tambores",
+    "assignment": "¡Corresponsal, llegaste a Uruguay! Los domingos, en los barrios Sur y Palermo de Montevideo, salen cuerdas de tambores a la calle. Se llama candombe y viene de África. Ve a una llamada y escucha los tres tambores.",
+    "article": {
+      "headline": "Tres tambores que conversan por las calles de Montevideo",
+      "byline": "Corresponsal, El Mundo Nuestro | Barrio Sur, Montevideo, Uruguay",
+      "paragraphs": [
+        "El candombe es una tradición afrouruguaya nacida de las personas africanas esclavizadas traídas al Río de la Plata. Se conserva sobre todo en los barrios Sur, Palermo y Cordón de Montevideo.",
+        "Se toca con tres tambores de tamaños distintos, hechos de madera con duelas y cuero. El chico es agudo y rápido, el repique improvisa y hace las variaciones, y el piano es grande y grave y marca la base.",
+        "Los tres tienen que sonar juntos para que aparezca el ritmo completo. Ninguno suena bien solo: el candombe existe solamente cuando conversan entre sí. Al grupo que toca junto se le llama cuerda.",
+        "Antes de tocar hay que templar los tambores con fuego. Se hace una fogata en la calle y se acerca el cuero a las llamas para tensarlo y afinarlo. En 2009, la UNESCO declaró el candombe patrimonio de la humanidad."
+      ],
+      "keywords": [
+        {
+          "word": "afrouruguaya",
+          "definition": "de la herencia africana en Uruguay"
+        },
+        {
+          "word": "duelas",
+          "definition": "tablas curvas de madera que forman el cuerpo del tambor"
+        },
+        {
+          "word": "agudo",
+          "definition": "sonido alto, fino"
+        },
+        {
+          "word": "grave",
+          "definition": "sonido bajo, profundo"
+        },
+        {
+          "word": "templar",
+          "definition": "calentar el cuero del tambor para tensarlo y afinarlo"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos tambores se usan?",
+          "type": "mc",
+          "opts": [
+            "Tres",
+            "Cinco",
+            "Uno",
+            "Dos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál improvisa y hace variaciones?",
+          "type": "mc",
+          "opts": [
+            "El chico",
+            "El repique",
+            "El piano",
+            "Ninguno"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa si toca un solo tambor?",
+          "type": "mc",
+          "opts": [
+            "Es lo normal",
+            "Suena perfecto",
+            "No suena bien: el candombe existe cuando conversan entre sí",
+            "Suena más fuerte"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Para qué se hace una fogata en la calle?",
+          "type": "mc",
+          "opts": [
+            "Para cocinar",
+            "Para dar luz",
+            "Para calentarse",
+            "Para templar los tambores y afinarlos"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que algunas cosas solo funcionan en grupo y no solas? Da un ejemplo tuyo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, yo soy Wilson Ferreira y toco el piano de candombe en una cuerda del Barrio Sur. Toco desde los seis años, y mi viejo tocaba, y mi abuelo también. En este barrio el tambor se hereda como se hereda un apellido. La gente de afuera ve la llamada y ve una fiesta con mucho ruido y color. Y sí, es una fiesta. Pero atrás hay otra cosa. Estos tambores vienen de la gente que trajeron encadenada de África y que en este mismo barrio, en los conventillos, se juntaba los domingos porque era el único día que tenían. Lo único que les quedaba era el ritmo, y lo guardaron en el cuerpo. Cuando yo toco el piano, que es el tambor grande, estoy haciendo el mismo golpe base que hacían ellos. Hay una parte que a mí me emociona siempre: la templada. Antes de salir prendemos el fuego en medio de la calle y todos los tamborileros nos juntamos alrededor a calentar el cuero. Nadie habla mucho ahí. Es como una ceremonia. Y cuando el primer tambor prueba y suena afinado, ya sabés que la calle es nuestra.",
+      "source": "Wilson Ferreira, tamborilero del Barrio Sur",
+      "questions": [
+        {
+          "text": "¿Qué tambor toca Wilson?",
+          "type": "mc",
+          "opts": [
+            "El piano",
+            "El repique",
+            "Los tres",
+            "El chico"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo dice que se hereda el tambor en el barrio?",
+          "type": "mc",
+          "opts": [
+            "Se compra",
+            "Como se hereda un apellido",
+            "Se enseña en la escuela",
+            "No se hereda"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Por qué se juntaban los domingos en los conventillos?",
+          "type": "mc",
+          "opts": [
+            "Por orden del gobierno",
+            "Porque era día de fiesta",
+            "Porque era el único día que tenían",
+            "Porque no trabajaban nunca"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es la templada?",
+          "type": "mc",
+          "opts": [
+            "Una canción",
+            "El final de la llamada",
+            "Un baile",
+            "Calentar el cuero de los tambores en el fuego antes de salir"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Uruguay_1": {
+    "topic": "El viento uruguayo y la transformación energética",
+    "assignment": "Corresponsal, en pocos años Uruguay pasó de importar casi toda su energía a generar la mayor parte con viento. Es uno de los cambios más rápidos del mundo. Ve al campo, donde los molinos conviven con las vacas.",
+    "article": {
+      "headline": "Un país que en diez años se puso a funcionar con viento",
+      "byline": "Corresponsal, El Mundo Nuestro | Departamento de Maldonado, Uruguay",
+      "paragraphs": [
+        "Hace unos veinte años, Uruguay dependía mucho del petróleo importado y de la lluvia para sus represas. Cuando había sequía o subía el precio del petróleo, la electricidad se volvía cara e insegura.",
+        "El país no tiene petróleo ni carbón. Pero tiene mucho viento: llanuras abiertas sin montañas que lo frenen, con corrientes constantes durante todo el año.",
+        "A partir de 2010 se instalaron parques eólicos por todo el territorio. En pocos años, la energía eólica pasó de casi cero a ser una de las principales fuentes del país. Hoy Uruguay genera la gran mayoría de su electricidad con fuentes renovables.",
+        "Los molinos se instalaron en campos ganaderos que siguen funcionando igual. Las vacas pastan entre las torres y los dueños del campo cobran un alquiler por cada molino. En días de mucho viento, el país llega a exportar electricidad a sus vecinos."
+      ],
+      "keywords": [
+        {
+          "word": "represas",
+          "definition": "muros que retienen agua de un río para generar energía"
+        },
+        {
+          "word": "sequía",
+          "definition": "temporada larga sin lluvia"
+        },
+        {
+          "word": "llanuras",
+          "definition": "terrenos extensos y planos"
+        },
+        {
+          "word": "eólicos",
+          "definition": "relacionados con el viento"
+        },
+        {
+          "word": "pastan",
+          "definition": "comen hierba en el campo, hablando de animales"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿De qué dependía Uruguay hace veinte años?",
+          "type": "mc",
+          "opts": [
+            "Del petróleo importado y de la lluvia para sus represas",
+            "Del carbón propio",
+            "Del sol",
+            "Del viento"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué tiene tanto viento?",
+          "type": "mc",
+          "opts": [
+            "Por sus montañas",
+            "Por sus llanuras abiertas sin montañas que lo frenen",
+            "Por estar en la costa solamente",
+            "Por el clima frío"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuándo empezaron a instalarse los parques eólicos?",
+          "type": "mc",
+          "opts": [
+            "Hace cincuenta años",
+            "En 1990",
+            "A partir de 2010",
+            "En 2020"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasa con los campos donde hay molinos?",
+          "type": "mc",
+          "opts": [
+            "Se venden",
+            "Se convierten en fábricas",
+            "Se dejan de usar",
+            "Siguen funcionando: las vacas pastan entre las torres"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué recurso natural abundante tiene tu región que se podría aprovechar mejor? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, mi nombre es Gustavo Silveira y soy técnico de mantenimiento de aerogeneradores. Sí, yo soy uno de los que se sube a los molinos. La torre tiene como ciento veinte metros de altura y adentro hay una escalera. Uno sube con arnés, todo enganchado, y le lleva unos veinte minutos llegar arriba si va tranquilo. Arriba está la góndola, que es donde está el generador, y ahí uno trabaja con las herramientas. Se mueve un poco, no le voy a mentir. Al principio impresiona bastante. Yo antes trabajaba en una gomería en el pueblo. Cuando empezaron a instalar el parque eólico acá cerca, ofrecieron un curso de capacitación para gente de la zona. Me anoté sin saber bien de qué se trataba. Éramos veintidós y quedamos ocho. Ahora tengo un oficio que hace quince años no existía en este país. Lo que más me gusta es que mi hija de nueve años sabe explicarle a sus compañeros de escuela de dónde sale la luz de su casa. Me señala el molino desde el patio y dice: mi papá arregla ese.",
+      "source": "Gustavo Silveira, técnico de aerogeneradores",
+      "questions": [
+        {
+          "text": "¿Cuánto mide la torre?",
+          "type": "mc",
+          "opts": [
+            "Como ciento veinte metros",
+            "Doscientos metros",
+            "Diez metros",
+            "Cincuenta metros"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál era su trabajo antes?",
+          "type": "mc",
+          "opts": [
+            "Ganadero",
+            "Trabajaba en una gomería",
+            "Electricista",
+            "Maestro"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuántos terminaron el curso?",
+          "type": "mc",
+          "opts": [
+            "Dos",
+            "Veintidós",
+            "Ocho",
+            "Quince"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es lo que más le gusta?",
+          "type": "mc",
+          "opts": [
+            "Subir a la torre",
+            "Viajar",
+            "El sueldo",
+            "Que su hija sabe explicar de dónde sale la luz de su casa"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Uruguay_2": {
+    "topic": "El Plan Ceibal: una laptop para cada niño",
+    "assignment": "Corresponsal, última historia uruguaya. Uruguay fue el primer país del mundo en darle una computadora gratis a cada estudiante y cada maestro de la escuela pública. Ve a una escuela rural y averigua qué cambió de verdad.",
+    "article": {
+      "headline": "El país que le dio una computadora a cada estudiante",
+      "byline": "Corresponsal, El Mundo Nuestro | Escuela rural, Departamento de Tacuarembó, Uruguay",
+      "paragraphs": [
+        "En 2007 Uruguay lanzó el Plan Ceibal. El objetivo era entregar una computadora portátil gratuita a cada niño y a cada maestro de la escuela pública del país, sin excepción y sin costo para las familias.",
+        "En 2009 Uruguay se convirtió en el primer país del mundo en lograrlo a escala nacional. Se entregaron cientos de miles de equipos, incluso en escuelas rurales alejadas donde había pocos alumnos.",
+        "El plan no fue solo repartir aparatos. Se llevó conexión a internet a escuelas de zonas donde no llegaba, se capacitó a los maestros y se crearon programas de matemática, lectura e inglés a distancia.",
+        "Un programa conecta por videoconferencia a escuelas rurales pequeñas con profesores de inglés que están en Montevideo o incluso en otros países. Así, niños de escuelas de pocos alumnos reciben clases que antes eran imposibles."
+      ],
+      "keywords": [
+        {
+          "word": "portátil",
+          "definition": "que se puede llevar de un lugar a otro fácilmente"
+        },
+        {
+          "word": "escala",
+          "definition": "tamaño o alcance de algo"
+        },
+        {
+          "word": "conexión",
+          "definition": "enlace que permite comunicarse o acceder a internet"
+        },
+        {
+          "word": "capacitó",
+          "definition": "entrenó para que supieran hacer algo"
+        },
+        {
+          "word": "videoconferencia",
+          "definition": "reunión por video entre personas que están en lugares distintos"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuándo se lanzó el Plan Ceibal?",
+          "type": "mc",
+          "opts": [
+            "En 2007",
+            "En 2015",
+            "En 2020",
+            "En 1999"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué logró Uruguay en 2009?",
+          "type": "mc",
+          "opts": [
+            "Construir más escuelas",
+            "Ser el primer país del mundo en dar una computadora a cada estudiante",
+            "Bajar el precio de las computadoras",
+            "Crear una fábrica"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué más incluyó el plan además de las computadoras?",
+          "type": "mc",
+          "opts": [
+            "Transporte",
+            "Nada más",
+            "Internet, capacitación a maestros y programas educativos",
+            "Uniformes"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo reciben clases de inglés las escuelas rurales pequeñas?",
+          "type": "mc",
+          "opts": [
+            "Con libros",
+            "No reciben",
+            "Con un maestro que viaja",
+            "Por videoconferencia con profesores de Montevideo u otros países"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué necesitaría tu escuela para que la tecnología ayudara de verdad al aprendizaje? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, soy Nancy Olivera y soy maestra de escuela rural en Tacuarembó. Tengo doce alumnos, de primero a sexto, todos en el mismo salón. Estamos a treinta kilómetros de asfalto. Cuando llegaron las máquinas del Ceibal, en 2008, yo tenía mis dudas. Pensé: acá lo que hace falta es un techo que no gotee y una estufa, no computadoras. Se lo digo con honestidad porque así lo pensé. Pero pasó algo que yo no había previsto. Mis alumnos empezaron a tener clase de inglés por videoconferencia con una profesora que está en Montevideo. Antes eso era impensable: ningún profesor de inglés iba a venir hasta acá por doce niños. Y otra cosa que me emocionó. Las madres empezaron a venir a la escuela de tarde a usar las máquinas de sus hijos. Varias aprendieron a leer mejor ahí. Una señora de sesenta años hizo una videollamada con su hermana que vive en España y hacía diecinueve años que no le veía la cara. Lloraron las dos y yo también. Yo estaba equivocada. El techo igual sigue goteando, eso sí.",
+      "source": "Nancy Olivera, maestra rural de Tacuarembó",
+      "questions": [
+        {
+          "text": "¿Cuántos alumnos tiene Nancy?",
+          "type": "mc",
+          "opts": [
+            "Doce, de primero a sexto",
+            "Cinco",
+            "Cincuenta",
+            "Treinta"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pensó al principio?",
+          "type": "mc",
+          "opts": [
+            "Que era una gran idea",
+            "Que hacía falta un techo que no gotee y una estufa, no computadoras",
+            "Que era muy caro",
+            "Que no servirían"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué era impensable antes?",
+          "type": "mc",
+          "opts": [
+            "Tener alumnos",
+            "Tener luz",
+            "Que un profesor de inglés llegara hasta allá por doce niños",
+            "Tener libros"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hizo una señora de sesenta años?",
+          "type": "mc",
+          "opts": [
+            "Compró una computadora",
+            "Se hizo maestra",
+            "Aprendió a escribir",
+            "Una videollamada con su hermana en España después de diecinueve años"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

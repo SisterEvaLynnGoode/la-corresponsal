@@ -1,0 +1,818 @@
+{
+  "Ecuador_0": {
+    "topic": "Los guardaparques de las Islas Galápagos",
+    "assignment": "¡Corresponsal, llegaste a Ecuador! Toma un vuelo a las Islas Galápagos, el lugar donde Darwin entendió cómo cambian las especies. Los guardaparques tienen una tarea enorme. Ve a acompañarlos un día completo.",
+    "article": {
+      "headline": "Las islas donde los animales no le tienen miedo a la gente",
+      "byline": "Corresponsal, El Mundo Nuestro | Isla Santa Cruz, Galápagos, Ecuador",
+      "paragraphs": [
+        "Las Galápagos están a casi mil kilómetros de la costa de Ecuador, en medio del océano Pacífico. Nunca estuvieron unidas al continente: son islas volcánicas que salieron del fondo del mar.",
+        "Por ese aislamiento, allí evolucionaron especies que no existen en ningún otro lugar. Hay tortugas gigantes que viven más de cien años, iguanas marinas que bucean para comer algas y pinzones con picos de formas distintas en cada isla.",
+        "Fueron precisamente esos pinzones los que ayudaron a Charles Darwin a desarrollar su teoría de la evolución después de su visita en 1835. Cada isla tenía aves parecidas, pero con picos adaptados a la comida disponible allí.",
+        "El mayor riesgo hoy son las especies introducidas. Cabras, ratas, gatos y hormigas que llegaron en barcos se comen los huevos y las plantas nativas. Los guardaparques dedican gran parte de su trabajo a controlarlas."
+      ],
+      "keywords": [
+        {
+          "word": "volcánicas",
+          "definition": "formadas por la actividad de los volcanes"
+        },
+        {
+          "word": "aislamiento",
+          "definition": "estado de estar separado y sin contacto"
+        },
+        {
+          "word": "iguanas",
+          "definition": "reptiles grandes de piel escamosa"
+        },
+        {
+          "word": "pinzones",
+          "definition": "aves pequeñas que Darwin estudió en las islas"
+        },
+        {
+          "word": "introducidas",
+          "definition": "traídas de otro lugar, que no son originales del sitio"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿A qué distancia están las Galápagos de la costa?",
+          "type": "mc",
+          "opts": [
+            "Casi mil kilómetros",
+            "Diez kilómetros",
+            "Cinco mil kilómetros",
+            "Cien kilómetros"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué comen las iguanas marinas?",
+          "type": "mc",
+          "opts": [
+            "Peces",
+            "Algas, buceando",
+            "Insectos",
+            "Frutas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué ayudaron a desarrollar los pinzones?",
+          "type": "mc",
+          "opts": [
+            "La agricultura",
+            "Un mapa",
+            "La teoría de la evolución de Darwin",
+            "Un tipo de barco"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál es el mayor riesgo hoy?",
+          "type": "mc",
+          "opts": [
+            "El frío",
+            "La falta de agua",
+            "Los volcanes",
+            "Las especies introducidas"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que un animal traído de otro lugar puede hacer tanto daño? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, mi nombre es Fabián Chalén y soy guardaparque del Parque Nacional Galápagos desde hace once años. La gente se imagina que mi trabajo es andar viendo tortugas todo el día. Ojalá. La mayor parte del tiempo la paso peleando contra plantas y animales que no deberían estar aquí. Le doy un ejemplo. La mora, esa planta de zarzamora, alguien la trajo para hacer mermelada hace décadas. Hoy cubre miles de hectáreas en la parte alta de Santa Cruz y ahoga a la scalesia, que es un árbol nativo que solo existe aquí. Nosotros la cortamos a mano, mata por mata. También revisamos cada avión y cada barco que llega. Buscamos semillas en las suelas de los zapatos, insectos en el equipaje, fruta escondida. Una sola hormiga puede acabar con una colonia de aves. La gente a veces se molesta cuando le quitamos una manzana. Yo se lo explico con calma: usted está entrando a un lugar que no tiene defensas. Aquí los animales nunca aprendieron a tenerle miedo a nada. Esa es su maravilla y también su debilidad.",
+      "source": "Fabián Chalén, guardaparque de Galápagos",
+      "questions": [
+        {
+          "text": "¿En qué pasa la mayor parte de su tiempo?",
+          "type": "mc",
+          "opts": [
+            "Peleando contra plantas y animales que no deberían estar",
+            "Guiando turistas",
+            "En la oficina",
+            "Viendo tortugas"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Para qué trajeron la mora?",
+          "type": "mc",
+          "opts": [
+            "Para dar sombra",
+            "Para hacer mermelada",
+            "Para alimentar animales",
+            "Por error"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué buscan en los aviones y barcos?",
+          "type": "mc",
+          "opts": [
+            "Animales grandes",
+            "Armas",
+            "Semillas, insectos y fruta escondida",
+            "Documentos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué dice que las islas no tienen defensas?",
+          "type": "mc",
+          "opts": [
+            "Porque son pequeñas",
+            "Porque están lejos",
+            "Porque no hay policía",
+            "Porque los animales nunca aprendieron a tenerle miedo a nada"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Ecuador_1": {
+    "topic": "El sombrero de paja toquilla, mal llamado Panama hat",
+    "assignment": "Corresponsal, ve a Montecristi, en la costa ecuatoriana. Allí tejen los sombreros de paja más finos del mundo. Y ojo con el nombre: el mundo los llama Panama hats, pero son ecuatorianos. Averigua por qué pasó eso.",
+    "article": {
+      "headline": "El sombrero ecuatoriano al que el mundo le puso otro nombre",
+      "byline": "Corresponsal, El Mundo Nuestro | Montecristi, Manabí, Ecuador",
+      "paragraphs": [
+        "En la costa de Ecuador crece una palma llamada toquilla. De sus hojas tiernas se saca una fibra fina y clara que se hierve, se seca y se corta en hebras delgadísimas. Con eso se tejen los sombreros.",
+        "Los mejores vienen de Montecristi. Un sombrero fino se teje enteramente a mano, con la pieza apoyada en un bloque de madera. Los tejedores trabajan de madrugada o al anochecer, porque el calor del día reseca la paja y la quiebra.",
+        "La calidad se mide contando las vueltas o hileras de tejido. Un sombrero corriente tiene unas diez por pulgada. Uno superfino puede pasar de cuarenta y tardar entre seis y ocho meses de trabajo continuo.",
+        "El nombre equivocado tiene su historia. En el siglo diecinueve, los sombreros se embarcaban desde Panamá hacia el resto del mundo. Los compradores creyeron que se hacían allí. En 2012 la UNESCO reconoció el tejido como patrimonio ecuatoriano."
+      ],
+      "keywords": [
+        {
+          "word": "toquilla",
+          "definition": "palma de cuyas hojas se saca la fibra del sombrero"
+        },
+        {
+          "word": "fibra",
+          "definition": "hilo natural que se saca de una planta"
+        },
+        {
+          "word": "hebras",
+          "definition": "hilos muy finos y largos"
+        },
+        {
+          "word": "hileras",
+          "definition": "filas ordenadas, una detrás de otra"
+        },
+        {
+          "word": "embarcaban",
+          "definition": "subían mercancía a un barco para enviarla"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿De qué planta sale la fibra?",
+          "type": "mc",
+          "opts": [
+            "De la palma toquilla",
+            "Del bambú",
+            "Del maguey",
+            "Del algodón"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué tejen de madrugada o al anochecer?",
+          "type": "mc",
+          "opts": [
+            "Para descansar de día",
+            "Porque el calor del día reseca la paja y la quiebra",
+            "Porque hay más luz",
+            "Por costumbre"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo se mide la calidad?",
+          "type": "mc",
+          "opts": [
+            "Por el tamaño",
+            "Por el peso",
+            "Contando las vueltas o hileras por pulgada",
+            "Por el color"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué se llaman Panama hats?",
+          "type": "mc",
+          "opts": [
+            "Por un error de traducción",
+            "Porque un panameño los diseñó",
+            "Porque se inventaron en Panamá",
+            "Porque se embarcaban desde Panamá al resto del mundo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Conoces algo de tu cultura que otros conozcan con el nombre equivocado? Explícalo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, me llamo Simón Delgado y soy tejedor de sombrero fino en Montecristi. Aprendí de mi madre a los ocho años. En este pueblo casi todos tejemos, pero los que hacemos superfino quedamos poquitos, tal vez veinte personas. Yo tejo de madrugada, desde las cuatro. A esa hora hay humedad en el aire y la paja está flexible. Cuando pega el sol, la fibra se pone quebradiza y se le revienta a uno en los dedos. Un sombrero superfino me lleva ocho meses. Ocho meses en una sola pieza. Uno se inclina sobre el bloque de madera y la vista se cansa muchísimo. Casi todos los tejedores viejos de aquí terminamos con problemas de la vista y de la espalda. Lo que a mí me duele no es eso. Es que a veces vendemos el sombrero en cien o doscientos dólares y después uno se entera de que en una tienda de Nueva York el mismo sombrero se vende en dos mil. Y encima le dicen Panama hat. Ni el nombre nos dejaron. Por eso yo le pongo mi firma adentro, en el ala. Para que quede claro de qué manos salió.",
+      "source": "Simón Delgado, tejedor de sombrero fino de Montecristi",
+      "questions": [
+        {
+          "text": "¿A qué hora teje Simón?",
+          "type": "mc",
+          "opts": [
+            "Desde las cuatro de la madrugada",
+            "Por la tarde",
+            "Cuando puede",
+            "Al mediodía"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto le lleva un sombrero superfino?",
+          "type": "mc",
+          "opts": [
+            "Un mes",
+            "Ocho meses",
+            "Una semana",
+            "Dos años"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué le duele más a Simón?",
+          "type": "mc",
+          "opts": [
+            "Trabajar de madrugada",
+            "El cansancio de la vista",
+            "La diferencia de precio y que le cambien el nombre",
+            "El calor"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hace para que se sepa de quién es el sombrero?",
+          "type": "mc",
+          "opts": [
+            "Lo registra",
+            "Nada",
+            "Le pone una etiqueta",
+            "Le pone su firma adentro, en el ala"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Ecuador_2": {
+    "topic": "Los otavaleños, comerciantes y músicos por el mundo",
+    "assignment": "Corresponsal, sube a la sierra norte, a Otavalo. Su mercado es famoso, pero lo más increíble es otra cosa: los otavaleños venden y tocan música en ciudades de los cinco continentes, y siempre vuelven. Ve a entender cómo lo hacen.",
+    "article": {
+      "headline": "Salen a todo el mundo y siempre regresan a Otavalo",
+      "byline": "Corresponsal, El Mundo Nuestro | Otavalo, Imbabura, Ecuador",
+      "paragraphs": [
+        "Otavalo es una ciudad de la sierra norte del Ecuador, al pie del volcán Imbabura. Su Plaza de Ponchos es uno de los mercados artesanales más conocidos de América del Sur, con textiles, tapices y música en vivo.",
+        "Los otavaleños son un pueblo kichwa con una larga tradición textil. Desde hace décadas viajan a vender sus tejidos y a tocar música andina a Europa, Asia, Estados Unidos y otros países de América.",
+        "Lo distintivo es que casi siempre regresan. Muchos pasan temporadas fuera, ahorran y vuelven a construir su casa en Otavalo. También mantienen su vestimenta: los hombres con trenza larga, poncho azul y sombrero; las mujeres con anaco y blusa bordada.",
+        "Ese ir y venir no debilitó la cultura, la reforzó. El kichwa se sigue hablando en las casas y en las escuelas de la zona. Muchas familias mandan a sus hijos a la universidad con lo ganado en los viajes."
+      ],
+      "keywords": [
+        {
+          "word": "sierra",
+          "definition": "región de montañas altas"
+        },
+        {
+          "word": "tapices",
+          "definition": "tejidos decorativos que se cuelgan en la pared"
+        },
+        {
+          "word": "kichwa",
+          "definition": "pueblo e idioma indígena de los Andes ecuatorianos"
+        },
+        {
+          "word": "vestimenta",
+          "definition": "conjunto de ropa que usa una persona o un pueblo"
+        },
+        {
+          "word": "anaco",
+          "definition": "falda tradicional de las mujeres kichwas"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cómo se llama el mercado de Otavalo?",
+          "type": "mc",
+          "opts": [
+            "Plaza de Ponchos",
+            "Mercado Central",
+            "Plaza Imbabura",
+            "Plaza Mayor"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿A dónde viajan los otavaleños?",
+          "type": "mc",
+          "opts": [
+            "Solo a Quito",
+            "A Europa, Asia, Estados Unidos y otros países",
+            "A ningún lado",
+            "Solo a Colombia"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es lo distintivo de sus viajes?",
+          "type": "mc",
+          "opts": [
+            "Que viajan poco tiempo",
+            "Que se quedan afuera",
+            "Que casi siempre regresan",
+            "Que no venden nada"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasó con su cultura por tanto viajar?",
+          "type": "mc",
+          "opts": [
+            "Desapareció",
+            "No cambió nada",
+            "Se debilitó",
+            "Se reforzó"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Crees que se puede salir de un lugar y mantener su cultura al mismo tiempo? Da tu opinión.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Alli puncha. Buenos días. Me llamo Segundo Maldonado y soy músico y comerciante otavaleño. He tocado la zampoña y el charango en las calles de Barcelona, de Berlín, de Tokio y de Chicago. Empecé a viajar a los diecinueve años con mi tío. Salimos con dos maletas de tejidos y unos instrumentos, y no hablábamos ni una palabra de otro idioma. La gente me pregunta si no me daba miedo. Claro que sí. Pero nosotros nunca viajamos solos de verdad. Siempre hay un primo, un compadre, alguien de Otavalo en esa ciudad que te recibe y te presta un cuarto. Esa red es nuestra fuerza. Yo estuve fuera catorce años en total, en temporadas. Y en todos esos años nunca me corté la trenza. Nunca. Me miraban raro en el metro de Berlín, y estaba bien, que miraran. Volví hace seis años, construí mi casa aquí y ahora mis hijos van a la escuela en Otavalo y hablan kichwa. Uno sale a buscar el pan afuera, pero la raíz se queda sembrada acá.",
+      "source": "Segundo Maldonado, músico y comerciante otavaleño",
+      "questions": [
+        {
+          "text": "¿A qué edad empezó a viajar?",
+          "type": "mc",
+          "opts": [
+            "A los diecinueve años",
+            "A los treinta",
+            "A los veinticinco",
+            "A los quince"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué dice que nunca viajan solos de verdad?",
+          "type": "mc",
+          "opts": [
+            "Porque van en grupos grandes",
+            "Porque siempre hay alguien de Otavalo que los recibe",
+            "Porque llevan familia",
+            "Porque contratan guías"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué nunca hizo en todos esos años?",
+          "type": "mc",
+          "opts": [
+            "Vender tejidos",
+            "Tocar música",
+            "Cortarse la trenza",
+            "Volver a casa"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué dice al final sobre la raíz?",
+          "type": "mc",
+          "opts": [
+            "Que hay que quedarse siempre",
+            "Que no importa",
+            "Que se pierde al viajar",
+            "Que uno sale a buscar el pan afuera pero la raíz se queda sembrada acá"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Perú_0": {
+    "topic": "Las papas nativas de los Andes",
+    "assignment": "¡Corresponsal, llegaste a Perú! Aquí no hay una papa: hay miles. Sube a las comunidades andinas cerca de Cusco, donde las familias guardan variedades que el mundo entero perdió. Ve al Parque de la Papa.",
+    "article": {
+      "headline": "El país donde existen más de cuatro mil papas distintas",
+      "byline": "Corresponsal, El Mundo Nuestro | Pisac, Cusco, Perú",
+      "paragraphs": [
+        "La papa se domesticó en los Andes hace unos ocho mil años, en la zona del lago Titicaca. Desde allí se extendió por el mundo y hoy es uno de los alimentos más importantes del planeta.",
+        "En Perú existen más de cuatro mil variedades nativas. Las hay moradas, amarillas, rojas, negras y hasta con manchas de dos colores. Cada una tiene su nombre en quechua, su sabor y su uso propio en la cocina.",
+        "Las comunidades siembran muchas variedades juntas en la misma chacra, en vez de una sola. Esa mezcla es una protección: si una plaga o una helada ataca a una variedad, las otras resisten y la familia no se queda sin comida.",
+        "Cerca de Pisac, varias comunidades quechuas crearon el Parque de la Papa. Allí conservan más de mil trescientas variedades y comparten semillas. También trabajan con bancos de semillas internacionales para guardar copias de seguridad."
+      ],
+      "keywords": [
+        {
+          "word": "domesticó",
+          "definition": "se convirtió de planta silvestre en planta cultivada"
+        },
+        {
+          "word": "variedades",
+          "definition": "tipos distintos dentro de una misma especie"
+        },
+        {
+          "word": "quechua",
+          "definition": "idioma y pueblo indígena de los Andes"
+        },
+        {
+          "word": "chacra",
+          "definition": "terreno pequeño de cultivo familiar"
+        },
+        {
+          "word": "helada",
+          "definition": "frío tan fuerte que congela y daña las plantas"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde se domesticó la papa?",
+          "type": "mc",
+          "opts": [
+            "En los Andes, cerca del lago Titicaca",
+            "En México",
+            "En Asia",
+            "En Europa"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuántas variedades nativas hay en Perú?",
+          "type": "mc",
+          "opts": [
+            "Cien",
+            "Más de cuatro mil",
+            "Veinte",
+            "Un millón"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Por qué siembran muchas variedades juntas?",
+          "type": "mc",
+          "opts": [
+            "Porque lo pide el gobierno",
+            "Porque es más bonito",
+            "Porque si una plaga ataca a una, las otras resisten",
+            "Porque crecen más rápido"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántas variedades conserva el Parque de la Papa?",
+          "type": "mc",
+          "opts": [
+            "Cuatro mil",
+            "Cincuenta",
+            "Cien",
+            "Más de mil trescientas"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que es peligroso depender de un solo tipo de alimento? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Allillanchu. Buenos días. Me llamo Sabina Quispe y soy papera de la comunidad de Amaru, a tres mil ochocientos metros. Yo cuido ciento noventa variedades de papa en mis chacras. Sí, ciento noventa. Y me sé el nombre de todas en quechua. Hay una que se llama puma maki, que quiere decir mano de puma, porque tiene la forma de una garra. Hay otra que le decimos llumchuy waqachi, que significa hace llorar a la nuera, porque tiene tantos hoyitos que pelarla es una tortura. Antes la suegra se la daba a pelar a la nuera nueva para probarla. Yo aprendí de mi madre y ella de la suya. Nosotras las mujeres somos las que guardamos la semilla. Escogemos las mejores papas de la cosecha y esas no se comen, esas se guardan para sembrar. Ahora hay un problema serio: el calor está subiendo el cultivo cerro arriba. Las papas que mi abuela sembraba a tres mil quinientos ahora solo dan bien a tres mil novecientos. Estamos subiendo y subiendo. Algún día se nos acaba el cerro.",
+      "source": "Sabina Quispe, guardiana de papa de la comunidad de Amaru",
+      "questions": [
+        {
+          "text": "¿Cuántas variedades cuida Sabina?",
+          "type": "mc",
+          "opts": [
+            "Ciento noventa",
+            "Mil",
+            "Cinco",
+            "Veinte"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué significa llumchuy waqachi?",
+          "type": "mc",
+          "opts": [
+            "Mano de puma",
+            "Hace llorar a la nuera",
+            "Papa morada",
+            "Papa de altura"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Quiénes guardan la semilla?",
+          "type": "mc",
+          "opts": [
+            "Los científicos",
+            "Los hombres",
+            "Las mujeres",
+            "El gobierno"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué problema causa el calor?",
+          "type": "mc",
+          "opts": [
+            "Llueve demasiado",
+            "Se pierden las semillas",
+            "Las papas crecen más",
+            "El cultivo tiene que subir cerro arriba"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Perú_1": {
+    "topic": "El ceviche y la corriente fría del Pacífico",
+    "assignment": "Corresponsal, baja a la costa, a Lima. Vas a investigar el plato más famoso del Perú. Pero hay una pregunta detrás: ¿por qué justo aquí el mar da tanto pescado? La respuesta está en una corriente de agua fría.",
+    "article": {
+      "headline": "El plato que se cocina sin fuego",
+      "byline": "Corresponsal, El Mundo Nuestro | Lima, Perú",
+      "paragraphs": [
+        "El ceviche peruano se prepara con pescado crudo fresco, cortado en cubos y mezclado con jugo de limón, ají, cebolla morada y sal. Se sirve con camote y choclo. No pasa por el fuego en ningún momento.",
+        "El ácido del limón hace algo parecido a la cocción: cambia la estructura de las proteínas del pescado y lo vuelve opaco y firme. Por eso se dice que el ceviche se cocina en frío.",
+        "En Lima el ceviche se come al mediodía, no de noche, porque el pescado llega fresco en la mañana. A la mezcla de jugo, ají y pescado se le llama leche de tigre y muchos la toman aparte, en vaso.",
+        "El mar peruano es de los más productivos del mundo por la corriente de Humboldt, que trae agua fría desde el sur. Esa agua sube nutrientes del fondo, alimenta al plancton y sostiene enormes cardúmenes de peces."
+      ],
+      "keywords": [
+        {
+          "word": "crudo",
+          "definition": "que no está cocinado"
+        },
+        {
+          "word": "cocción",
+          "definition": "proceso de cocinar un alimento"
+        },
+        {
+          "word": "opaco",
+          "definition": "que no deja pasar la luz, no transparente"
+        },
+        {
+          "word": "nutrientes",
+          "definition": "sustancias que alimentan a los seres vivos"
+        },
+        {
+          "word": "cardúmenes",
+          "definition": "grupos grandes de peces que nadan juntos"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Con qué se prepara el ceviche?",
+          "type": "mc",
+          "opts": [
+            "Pescado crudo con jugo de limón, ají y cebolla",
+            "Pescado al horno",
+            "Mariscos cocidos",
+            "Pescado frito"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hace el ácido del limón?",
+          "type": "mc",
+          "opts": [
+            "Le da sabor nada más",
+            "Cambia las proteínas y lo vuelve opaco y firme",
+            "Lo calienta",
+            "Lo conserva por meses"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Por qué se come al mediodía?",
+          "type": "mc",
+          "opts": [
+            "Porque hace calor",
+            "Por tradición religiosa",
+            "Porque el pescado llega fresco en la mañana",
+            "Porque de noche no hay"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué el mar peruano es tan productivo?",
+          "type": "mc",
+          "opts": [
+            "Porque es poco profundo",
+            "Porque no hay pesca",
+            "Por el sol",
+            "Por la corriente de Humboldt, que sube nutrientes del fondo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué plato de tu cultura tiene una explicación científica o geográfica interesante? Investiga o imagina una.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas tardes, mi nombre es Teófilo Ramos y tengo una cevichería en el Callao desde hace veintiocho años. Yo empecé como ayudante lavando platos y ahora tengo mi local con doce mesas. La regla del ceviche es una sola: el pescado. Todo lo demás es secundario. Yo voy al terminal pesquero a las cinco de la mañana, todos los días, sin faltar. Le miro el ojo al pescado, que esté brillante y saltón, no hundido. Le levanto la agalla, que esté roja viva. Y lo huelo. Si huele a pescado, no sirve. El pescado fresco huele a mar, a nada más. Otra cosa que la gente hace mal: dejar el pescado nadando en el limón media hora. Eso lo mata. El pescado se pone duro y blanco como goma. Yo lo mezclo y lo sirvo en dos o tres minutos, así queda jugoso por dentro. Mi hija estudió cocina en un instituto y llegó con muchas ideas nuevas. Discutimos harto. Al final le dije: hija, cambia lo que quieras, pero el ojo del pescado se mira igual que hace veintiocho años.",
+      "source": "Teófilo Ramos, cevichero del Callao",
+      "questions": [
+        {
+          "text": "¿A qué hora va al terminal pesquero?",
+          "type": "mc",
+          "opts": [
+            "A las cinco de la mañana",
+            "Al mediodía",
+            "En la tarde",
+            "A las ocho"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo debe estar el ojo del pescado?",
+          "type": "mc",
+          "opts": [
+            "Hundido",
+            "Brillante y saltón",
+            "Cerrado",
+            "Oscuro"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa si el pescado huele a pescado?",
+          "type": "mc",
+          "opts": [
+            "Es más barato",
+            "Está perfecto",
+            "No sirve",
+            "Hay que lavarlo"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué error común menciona?",
+          "type": "mc",
+          "opts": [
+            "Usar cebolla blanca",
+            "Servirlo frío",
+            "Poner poco limón",
+            "Dejar el pescado media hora en el limón"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Perú_2": {
+    "topic": "Los porteadores del Camino Inca",
+    "assignment": "Corresponsal, última misión peruana. Miles de turistas caminan el Camino Inca hasta Machu Picchu cada año, pero pocos saben quién carga las carpas y la comida. Ve a Ollantaytambo y habla con los porteadores.",
+    "article": {
+      "headline": "Los que llegan primero y nadie fotografía",
+      "byline": "Corresponsal, El Mundo Nuestro | Ollantaytambo, Cusco, Perú",
+      "paragraphs": [
+        "El Camino Inca es una ruta de piedra de unos cuarenta y tres kilómetros que llega hasta Machu Picchu. Es parte del Qhapaq Ñan, la enorme red de caminos que conectaba el imperio inca a lo largo de los Andes.",
+        "La caminata dura cuatro días y cruza un paso de montaña a más de cuatro mil doscientos metros de altura. En ese punto el aire tiene mucho menos oxígeno y muchos caminantes avanzan lentísimo.",
+        "Los grupos van acompañados por porteadores, hombres de las comunidades quechuas cercanas. Ellos cargan carpas, comida, cocinas y equipaje, adelantan al grupo por el camino y llegan antes para tener el campamento listo.",
+        "Durante años cargaban pesos enormes por muy poca paga. Tras la protesta de los propios trabajadores, una ley limitó la carga a veinte kilos por porteador y fijó un salario mínimo. Los pesos se revisan en los controles del camino."
+      ],
+      "keywords": [
+        {
+          "word": "porteadores",
+          "definition": "personas que cargan equipaje y equipo en caminatas de montaña"
+        },
+        {
+          "word": "imperio",
+          "definition": "estado grande que domina varios territorios"
+        },
+        {
+          "word": "oxígeno",
+          "definition": "gas del aire que necesitamos para respirar"
+        },
+        {
+          "word": "campamento",
+          "definition": "lugar con carpas donde se pasa la noche al aire libre"
+        },
+        {
+          "word": "protesta",
+          "definition": "acción de reclamar públicamente por algo injusto"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos kilómetros tiene el Camino Inca?",
+          "type": "mc",
+          "opts": [
+            "Unos cuarenta y tres",
+            "Cien",
+            "Doscientos",
+            "Diez"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pasa en el paso de más de cuatro mil doscientos metros?",
+          "type": "mc",
+          "opts": [
+            "Hace calor",
+            "El aire tiene mucho menos oxígeno",
+            "Llueve siempre",
+            "El camino termina"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacen los porteadores?",
+          "type": "mc",
+          "opts": [
+            "Venden recuerdos",
+            "Guían al grupo",
+            "Cargan el equipo y llegan antes para armar el campamento",
+            "Cocinan solamente"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué logró la protesta de los trabajadores?",
+          "type": "mc",
+          "opts": [
+            "Cerrar el camino",
+            "Nuevos caminos",
+            "Más turistas",
+            "Una ley que limita la carga a veinte kilos y fija salario mínimo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que el trabajo de algunas personas se vuelve invisible? Explica con un ejemplo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, me llamo Cirilo Huamán y soy porteador del Camino Inca desde hace dieciséis años. Soy de una comunidad arriba de Ollantaytambo, a tres mil ochocientos metros. Por eso a mí la altura no me pega: yo nací respirando este aire. Nosotros salimos después que el grupo y llegamos antes. Los pasamos en el camino casi corriendo, con la carga en la espalda. Cuando el turista llega al campamento, ya está su carpa armada y su mate caliente servido. Antes esto era muy duro. Yo he cargado cuarenta y cinco kilos. He visto compañeros con sandalias de llanta cruzando el paso en la nieve. Nos pagaban una miseria y a veces la agencia se quedaba con la propina. Nos organizamos y peleamos varios años. Ahora hay un límite de veinte kilos y nos pesan la mochila en el control. Hay balanza. La cosa mejoró bastante. Lo que todavía me da un poco de pena es otra cosa. Al final, en Machu Picchu, todos se toman su foto. Nosotros ya vamos bajando con las carpas. Casi nadie sabe nuestros nombres.",
+      "source": "Cirilo Huamán, porteador del Camino Inca",
+      "questions": [
+        {
+          "text": "¿Por qué no le afecta la altura a Cirilo?",
+          "type": "mc",
+          "opts": [
+            "Porque nació respirando ese aire, a tres mil ochocientos metros",
+            "Porque carga poco",
+            "Porque va despacio",
+            "Porque entrena mucho"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto llegó a cargar antes?",
+          "type": "mc",
+          "opts": [
+            "Veinte kilos",
+            "Cuarenta y cinco kilos",
+            "Diez kilos",
+            "Cien kilos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo se controla ahora el peso?",
+          "type": "mc",
+          "opts": [
+            "Lo calculan a ojo",
+            "Nadie lo controla",
+            "Pesan la mochila en el control, hay balanza",
+            "Lo dice la agencia"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué le da un poco de pena todavía?",
+          "type": "mc",
+          "opts": [
+            "El frío",
+            "La paga",
+            "El peso",
+            "Que casi nadie sabe sus nombres"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

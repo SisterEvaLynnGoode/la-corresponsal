@@ -1,0 +1,818 @@
+{
+  "Colombia_0": {
+    "topic": "Los recolectores de café del Eje Cafetero",
+    "assignment": "¡Corresponsal, llegaste a Colombia! Ve al Eje Cafetero, declarado Paisaje Cultural por la UNESCO. Detrás de cada taza de café hay unas manos que escogieron el grano una por una. Ve a conocerlas.",
+    "article": {
+      "headline": "Grano por grano: las manos detrás del café colombiano",
+      "byline": "Corresponsal, El Mundo Nuestro | Salento, Quindío, Colombia",
+      "paragraphs": [
+        "El Eje Cafetero colombiano abarca los departamentos de Caldas, Quindío, Risaralda y parte del Valle. En 2011 la UNESCO lo declaró Paisaje Cultural Cafetero por la forma única en que la gente vive y trabaja en estas montañas.",
+        "Las laderas son tan empinadas que no entra ninguna máquina. Todo el café colombiano se recolecta a mano. El recolector carga un canasto amarrado a la cintura y sube y baja las pendientes durante todo el día.",
+        "El trabajo exige criterio, no solo fuerza. Solo se toman las cerezas rojas maduras. En una misma rama hay frutos verdes, pintones y maduros, porque no maduran al mismo tiempo. Por eso se pasa varias veces por la misma planta.",
+        "A esas pasadas se les llama pases. Una cosecha puede requerir cuatro o cinco pases en semanas distintas. Un recolector experto llena más de cien kilos en un buen día y le pagan por peso recogido."
+      ],
+      "keywords": [
+        {
+          "word": "laderas",
+          "definition": "lados inclinados de una montaña"
+        },
+        {
+          "word": "empinadas",
+          "definition": "muy inclinadas, difíciles de subir"
+        },
+        {
+          "word": "recolector",
+          "definition": "persona que recoge la cosecha"
+        },
+        {
+          "word": "pintones",
+          "definition": "frutos que están a medio madurar"
+        },
+        {
+          "word": "cosecha",
+          "definition": "recogida de los frutos del campo"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué declaró la UNESCO en 2011?",
+          "type": "mc",
+          "opts": [
+            "Paisaje Cultural Cafetero",
+            "Una reserva natural",
+            "Un parque nacional",
+            "Que el café era el mejor"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué se recolecta todo a mano?",
+          "type": "mc",
+          "opts": [
+            "Por tradición nada más",
+            "Porque las laderas son tan empinadas que no entra máquina",
+            "Porque es más barato",
+            "Porque no hay máquinas en Colombia"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué cerezas se toman?",
+          "type": "mc",
+          "opts": [
+            "Las pintonas",
+            "Todas juntas",
+            "Solo las rojas maduras",
+            "Las verdes"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué son los pases?",
+          "type": "mc",
+          "opts": [
+            "Los caminos de la finca",
+            "Los canastos",
+            "Permisos de trabajo",
+            "Las veces que se pasa por la misma planta"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué trabajo conoces que parezca sencillo desde afuera pero exija mucha habilidad? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, mi nombre es Aureliano Restrepo y llevo treinta y tres años recolectando café aquí en el Quindío. La gente se imagina que uno solo arranca lo que ve y ya. No señor. Este oficio es de ojo. En una rama usted encuentra el verde, el pintón y el maduro, todo revuelto. Y uno tiene que sacar únicamente el rojo, en su punto. Si uno arranca el verde, daña la taza y además le quita a la planta lo que iba a madurar la semana entrante. Trabajamos en pendiente pura. Yo he trabajado en laderas donde uno se sostiene con una mano y recoge con la otra. Empezamos a las cinco y media de la mañana, con neblina, y a esa hora el frío se le mete a uno en los huesos. Me pagan por kilo. En un buen día hago ciento veinte kilos. Mi papá también fue recolector y mis dos hijos estudiaron, uno es ingeniero. Yo me siento tranquilo con eso. Alguien tenía que sostener la casa mientras ellos estudiaban, y esas fueron estas manos.",
+      "source": "Aureliano Restrepo, recolector de café del Quindío",
+      "questions": [
+        {
+          "text": "¿Cuántos años lleva recolectando?",
+          "type": "mc",
+          "opts": [
+            "Treinta y tres años",
+            "Cincuenta años",
+            "Cinco años",
+            "Diez años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pasa si uno arranca el grano verde?",
+          "type": "mc",
+          "opts": [
+            "No pasa nada",
+            "Daña la taza y le quita a la planta lo que iba a madurar",
+            "Pesa más",
+            "Se vende igual"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿A qué hora empiezan?",
+          "type": "mc",
+          "opts": [
+            "De noche",
+            "A las ocho de la mañana",
+            "A las cinco y media de la mañana",
+            "Al mediodía"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo se siente Aureliano respecto a sus hijos?",
+          "type": "mc",
+          "opts": [
+            "Molesto",
+            "Preocupado",
+            "Triste porque no recolectan",
+            "Tranquilo, porque sus manos sostuvieron la casa mientras estudiaban"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Colombia_1": {
+    "topic": "Los páramos, las fábricas de agua de Colombia",
+    "assignment": "Corresponsal, sube muy alto, arriba de los tres mil metros. Allí están los páramos, unos ecosistemas que casi solo existen en esta parte del mundo y que le dan agua a millones de personas. Ve a ver el frailejón.",
+    "article": {
+      "headline": "La planta peluda que le da de beber a Bogotá",
+      "byline": "Corresponsal, El Mundo Nuestro | Páramo de Sumapaz, Colombia",
+      "paragraphs": [
+        "Los páramos son ecosistemas de montaña muy alta, arriba del bosque y debajo de la nieve. Existen casi únicamente en Colombia, Ecuador, Venezuela y el norte del Perú. Colombia tiene cerca de la mitad de todos los páramos del mundo.",
+        "La planta más característica es el frailejón. Tiene hojas gruesas cubiertas de pelitos blancos y crece lentísimo: alrededor de un centímetro por año. Un frailejón de dos metros puede tener doscientos años de edad.",
+        "Esos pelitos hacen algo asombroso. Atrapan la humedad de la niebla que pasa y la convierten en gotas. El agua baja por la planta y entra al suelo, que es esponjoso y la guarda. Poco a poco el páramo la va soltando en quebradas y ríos.",
+        "Por eso a los páramos les dicen fábricas de agua. El Páramo de Sumapaz, el más grande del mundo, abastece de agua a buena parte de Bogotá. Un solo páramo puede sostener a millones de personas río abajo."
+      ],
+      "keywords": [
+        {
+          "word": "páramos",
+          "definition": "ecosistemas de montaña muy alta que producen y guardan agua"
+        },
+        {
+          "word": "ecosistemas",
+          "definition": "conjuntos de seres vivos y su ambiente natural"
+        },
+        {
+          "word": "frailejón",
+          "definition": "planta de páramo con hojas peludas que atrapa la niebla"
+        },
+        {
+          "word": "niebla",
+          "definition": "nube baja que se forma cerca del suelo"
+        },
+        {
+          "word": "abastece",
+          "definition": "suministra o provee lo que se necesita"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde están los páramos?",
+          "type": "mc",
+          "opts": [
+            "Arriba del bosque y debajo de la nieve",
+            "En el desierto",
+            "En la selva",
+            "En la costa"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto crece un frailejón por año?",
+          "type": "mc",
+          "opts": [
+            "Un metro",
+            "Alrededor de un centímetro",
+            "Diez centímetros",
+            "No crece"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacen los pelitos de las hojas?",
+          "type": "mc",
+          "opts": [
+            "Dan color",
+            "Protegen del sol",
+            "Atrapan la humedad de la niebla y la convierten en gotas",
+            "Espantan insectos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿A qué ciudad abastece el Páramo de Sumapaz?",
+          "type": "mc",
+          "opts": [
+            "A Cali",
+            "A Cartagena",
+            "A Medellín",
+            "A buena parte de Bogotá"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿De dónde viene el agua que tomas en tu casa? Si no lo sabes, ¿cómo podrías averiguarlo?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, me llamo Blanca Cely y soy guardapáramo en Sumapaz. Yo nací aquí arriba, en una finca de papa a tres mil quinientos metros. Mi familia sembró papa en el páramo por tres generaciones. Le voy a contar algo que a mí me costó entender. Nosotros arábamos la tierra para sembrar, y esa tierra del páramo es como una esponja negra, llena de agua. Cuando uno la abre con el arado, esa esponja se seca y ya no vuelve a ser igual. Nunca. Uno se demora un año en dañar lo que la naturaleza hizo en mil. Yo no lo sabía. Nadie nos lo había dicho. Cuando hicieron la delimitación del páramo tuvimos que dejar de sembrar arriba de cierta altura. Al principio hubo mucha rabia en las veredas, mucha pelea. Yo también estaba brava. Pero me metí a un programa de guardapáramos y aprendí. Ahora yo soy la que camina y monitorea los frailejones. Y cuando bajo a Bogotá y veo a la gente abrir la llave sin pensar, pienso: esa agua salió de mi montaña.",
+      "source": "Blanca Cely, guardapáramo de Sumapaz",
+      "questions": [
+        {
+          "text": "¿A qué se dedicaba la familia de Blanca?",
+          "type": "mc",
+          "opts": [
+            "A sembrar papa en el páramo",
+            "Al turismo",
+            "A la minería",
+            "Al ganado"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pasa cuando se ara la tierra del páramo?",
+          "type": "mc",
+          "opts": [
+            "Crece mejor la papa",
+            "La esponja se seca y ya no vuelve a ser igual",
+            "Se llena de agua",
+            "No pasa nada"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo reaccionaron en las veredas ante la delimitación?",
+          "type": "mc",
+          "opts": [
+            "Se mudaron todos",
+            "Con alegría",
+            "Con mucha rabia y pelea",
+            "Con indiferencia"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué piensa Blanca cuando ve a la gente en Bogotá abrir la llave?",
+          "type": "mc",
+          "opts": [
+            "Que deberían pagar más",
+            "Nada en especial",
+            "Que gastan poco",
+            "Que esa agua salió de su montaña"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Colombia_2": {
+    "topic": "Los silleteros de Santa Elena y la Feria de las Flores",
+    "assignment": "Corresponsal, última parada en Colombia: Medellín en agosto. Cada año, campesinos de Santa Elena cargan en la espalda estructuras enormes cubiertas de flores. Ve al corregimiento y entiende de dónde viene esa tradición.",
+    "article": {
+      "headline": "Cargar flores en la espalda: el orgullo de los silleteros",
+      "byline": "Corresponsal, El Mundo Nuestro | Santa Elena, Medellín, Colombia",
+      "paragraphs": [
+        "Cada agosto, Medellín celebra la Feria de las Flores. El evento más esperado es el Desfile de Silleteros, donde campesinos del corregimiento de Santa Elena bajan a la ciudad cargando silletas cubiertas de flores.",
+        "Una silleta es una estructura de madera que se carga en la espalda con correas. En el desfile van completamente cubiertas de flores frescas: hortensias, claveles, girasoles y astromelias, sembradas por las mismas familias.",
+        "Las silletas más grandes miden más de dos metros y pesan cerca de setenta kilos. Los silleteros las cargan durante un recorrido de varios kilómetros bajo el sol, saludando a la multitud sin soltar el peso.",
+        "El origen es antiguo y humilde. Hace más de un siglo, los campesinos bajaban a Medellín con las silletas para vender sus flores y verduras. Hoy la tradición se hereda: hay silleteros de cuarta y quinta generación."
+      ],
+      "keywords": [
+        {
+          "word": "silleteros",
+          "definition": "personas que cargan silletas de flores en la espalda"
+        },
+        {
+          "word": "corregimiento",
+          "definition": "zona rural que pertenece a un municipio"
+        },
+        {
+          "word": "silleta",
+          "definition": "estructura de madera que se carga en la espalda con correas"
+        },
+        {
+          "word": "hortensias",
+          "definition": "flores redondas de muchos pétalos pequeños"
+        },
+        {
+          "word": "multitud",
+          "definition": "gran cantidad de personas reunidas"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuándo se celebra la Feria de las Flores?",
+          "type": "mc",
+          "opts": [
+            "Cada agosto",
+            "En marzo",
+            "En junio",
+            "En diciembre"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto pesan las silletas más grandes?",
+          "type": "mc",
+          "opts": [
+            "Diez kilos",
+            "Cerca de setenta kilos",
+            "Doscientos kilos",
+            "Cinco kilos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿De dónde viene el origen de la tradición?",
+          "type": "mc",
+          "opts": [
+            "De España",
+            "De una fiesta del gobierno",
+            "De campesinos que bajaban a vender flores y verduras",
+            "De un concurso"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Quiénes cultivan las flores del desfile?",
+          "type": "mc",
+          "opts": [
+            "El municipio",
+            "Se importan",
+            "Empresas grandes",
+            "Las mismas familias silleteras"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué tradición de tu familia o comunidad se ha heredado por generaciones? Descríbela.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, yo soy Gilberto Atehortúa y soy silletero de cuarta generación en Santa Elena. Mi bisabuelo cargaba silleta, mi abuelo, mi papá y ahora yo. Y mi hija de once años ya tiene su silletica pequeña para el desfile infantil. Le voy a explicar algo que la gente no ve. La silleta no se arma el día antes. Nosotros sembramos las flores desde meses atrás, en nuestra propia tierra. Uno tiene que calcular cuándo florece cada mata para que todo esté abierto justo el día del desfile. Si se abre una semana antes, llega marchita. El diseño lo pienso durante todo el año. Mi silleta pesa como setenta kilos y el recorrido es de varios kilómetros. Yo entreno cargando bultos desde junio. Al final del desfile uno tiene la espalda destrozada y no puede ni levantar los brazos. Pero cuando uno pasa y ve a la gente aplaudiendo y llorando, y uno sabe que su bisabuelo pasó por esa misma calle hace cien años con flores en la espalda, ahí uno se olvida del dolor.",
+      "source": "Gilberto Atehortúa, silletero de Santa Elena",
+      "questions": [
+        {
+          "text": "¿De qué generación de silleteros es Gilberto?",
+          "type": "mc",
+          "opts": [
+            "Cuarta",
+            "Primera",
+            "Décima",
+            "Segunda"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuándo siembran las flores?",
+          "type": "mc",
+          "opts": [
+            "El día antes",
+            "Desde meses atrás, en su propia tierra",
+            "Las compran",
+            "La semana anterior"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa si una flor se abre una semana antes?",
+          "type": "mc",
+          "opts": [
+            "Pesa más",
+            "Se ve mejor",
+            "Llega marchita",
+            "No pasa nada"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Desde cuándo entrena cargando bultos?",
+          "type": "mc",
+          "opts": [
+            "Desde la semana antes",
+            "No entrena",
+            "Desde enero",
+            "Desde junio"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Venezuela_0": {
+    "topic": "Los tepuyes y el Salto Ángel",
+    "assignment": "¡Corresponsal, llegaste a Venezuela! Vas a la Gran Sabana, donde hay montañas de cima plana llamadas tepuyes. De una de ellas cae la catarata más alta del mundo. Ve con los guías pemón y cuéntanos lo que veas.",
+    "article": {
+      "headline": "Islas en el cielo: la catarata más alta del planeta",
+      "byline": "Corresponsal, El Mundo Nuestro | Parque Nacional Canaima, Venezuela",
+      "paragraphs": [
+        "En el sur de Venezuela hay montañas que parecen mesas gigantes. Se llaman tepuyes y tienen paredes verticales de cientos de metros y una cima completamente plana. Son de las formaciones rocosas más antiguas de la Tierra.",
+        "Los tepuyes tienen más de mil quinientos millones de años. Estuvieron aislados tanto tiempo que en sus cimas evolucionaron plantas y animales que no existen en ningún otro lugar del planeta. Son como islas en el cielo.",
+        "Del tepuy Auyán-tepui cae el Salto Ángel, la catarata más alta del mundo. El agua se desploma novecientos setenta y nueve metros. Es tan alta que buena parte del agua se convierte en neblina antes de tocar el suelo.",
+        "El nombre pemón del salto es Kerepakupai Merú. El pueblo pemón vive en esta región desde hace siglos y hoy muchos trabajan como guías. Llegar hasta la base requiere varias horas de curiara por el río y una caminata en la selva."
+      ],
+      "keywords": [
+        {
+          "word": "tepuyes",
+          "definition": "montañas de paredes verticales y cima plana"
+        },
+        {
+          "word": "verticales",
+          "definition": "que van derecho hacia arriba, sin inclinación"
+        },
+        {
+          "word": "cima",
+          "definition": "parte más alta de una montaña"
+        },
+        {
+          "word": "aislados",
+          "definition": "separados y sin contacto con lo demás"
+        },
+        {
+          "word": "curiara",
+          "definition": "canoa tradicional indígena de la región"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cómo son los tepuyes?",
+          "type": "mc",
+          "opts": [
+            "De paredes verticales y cima plana",
+            "Volcanes activos",
+            "Colinas suaves",
+            "Puntiagudos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuántos años tienen aproximadamente?",
+          "type": "mc",
+          "opts": [
+            "Mil años",
+            "Más de mil quinientos millones de años",
+            "Un millón de años",
+            "Cien mil años"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuánto cae el agua del Salto Ángel?",
+          "type": "mc",
+          "opts": [
+            "Dos mil metros",
+            "Cien metros",
+            "Novecientos setenta y nueve metros",
+            "Cincuenta metros"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo se llega hasta la base del salto?",
+          "type": "mc",
+          "opts": [
+            "En tren",
+            "A pie desde la ciudad",
+            "En carro",
+            "Varias horas de curiara y una caminata en la selva"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que en lugares aislados evolucionan especies únicas? Da tu idea.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, mi nombre es Jesús Castro y soy guía pemón del Parque Nacional Canaima. Nací en la comunidad de Kamarata, al pie del Auyán-tepui. Para nosotros esa montaña no es solamente una roca bonita. Nuestros abuelos cuentan que en la cima habitan espíritus, los mawari, y por eso uno sube con respeto y pide permiso. Yo llevo visitantes desde hace catorce años. El viaje no es fácil. Son horas en curiara subiendo el río Churún, y si el río está bajo hay que bajarse y empujar la curiara entre las piedras. Después es una caminata de dos horas por selva, con barro hasta las rodillas. La gente llega cansada y a veces de mal humor. Pero cuando salimos al mirador y ven el salto completo, todos se callan. Todos. Lo he visto cientos de veces y siempre pasa lo mismo. Un silencio largo. Y ahí les cuento el nombre verdadero: Kerepakupai Merú. Les digo que este lugar tenía nombre mucho antes de que llegara cualquier avión.",
+      "source": "Jesús Castro, guía pemón de Canaima",
+      "questions": [
+        {
+          "text": "¿Dónde nació Jesús?",
+          "type": "mc",
+          "opts": [
+            "En Kamarata, al pie del Auyán-tepui",
+            "En la costa",
+            "En Brasil",
+            "En Caracas"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué cuentan los abuelos sobre la cima?",
+          "type": "mc",
+          "opts": [
+            "Que hay oro",
+            "Que habitan espíritus llamados mawari",
+            "Que no se puede subir",
+            "Que hay una ciudad"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hay que hacer si el río está bajo?",
+          "type": "mc",
+          "opts": [
+            "Ir en avión",
+            "Regresar",
+            "Bajarse y empujar la curiara entre las piedras",
+            "Esperar la lluvia"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasa cuando los visitantes ven el salto completo?",
+          "type": "mc",
+          "opts": [
+            "Toman fotos y se van",
+            "Se quejan del viaje",
+            "Aplauden",
+            "Todos se callan"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Venezuela_1": {
+    "topic": "El Sistema: orquestas juveniles en todo el país",
+    "assignment": "Corresponsal, hay un programa venezolano que el mundo entero ha copiado: orquestas gratuitas para niños de cualquier barrio. Se llama El Sistema. Ve a un núcleo, escucha un ensayo y pregunta qué cambia en la vida de un muchacho.",
+    "article": {
+      "headline": "Un violín en cada barrio: la orquesta que empezó en un estacionamiento",
+      "byline": "Corresponsal, El Mundo Nuestro | Caracas, Venezuela",
+      "paragraphs": [
+        "En 1975, el músico y economista José Antonio Abreu convocó a un ensayo en un estacionamiento de Caracas. Llegaron once muchachos. De ese ensayo nació lo que hoy se conoce como El Sistema.",
+        "La idea era sencilla y radical: que cualquier niño, sin importar su dinero, pudiera aprender un instrumento gratis y tocar en una orquesta desde el primer día. No hay audición de entrada y el instrumento se presta.",
+        "El programa se organizó en núcleos repartidos por todo el país, muchos en barrios muy pobres. Con los años ha formado a cientos de miles de niños y jóvenes venezolanos.",
+        "Del programa salió el director de orquesta Gustavo Dudamel, que llegó a dirigir orquestas famosas en Estados Unidos y Europa. Más de sesenta países han creado programas inspirados en el modelo venezolano."
+      ],
+      "keywords": [
+        {
+          "word": "convocó",
+          "definition": "llamó o citó a un grupo de personas"
+        },
+        {
+          "word": "radical",
+          "definition": "muy profunda, que cambia las cosas desde la raíz"
+        },
+        {
+          "word": "audición",
+          "definition": "prueba donde alguien toca o actúa para ser aceptado"
+        },
+        {
+          "word": "núcleos",
+          "definition": "centros locales donde funciona el programa"
+        },
+        {
+          "word": "inspirados",
+          "definition": "creados tomando la idea de otra cosa"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde fue el primer ensayo?",
+          "type": "mc",
+          "opts": [
+            "En un estacionamiento de Caracas",
+            "En una escuela",
+            "En una iglesia",
+            "En un teatro"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuántos muchachos llegaron?",
+          "type": "mc",
+          "opts": [
+            "Cien",
+            "Once",
+            "Cincuenta",
+            "Mil"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué se necesita para entrar al programa?",
+          "type": "mc",
+          "opts": [
+            "Vivir en Caracas",
+            "Pasar una audición",
+            "Nada: no hay audición y el instrumento se presta",
+            "Comprar un instrumento"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántos países han creado programas inspirados en el modelo?",
+          "type": "mc",
+          "opts": [
+            "Veinte",
+            "Dos",
+            "Cinco",
+            "Más de sesenta"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué actividad gratuita crees que le cambiaría la vida a los jóvenes de tu comunidad? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, mi nombre es Deivis Márquez y soy profesor de violín en un núcleo aquí en Caracas. Yo entré al Sistema a los siete años. Mi mamá me llevó porque en mi barrio la calle estaba complicada y ella quería que yo estuviera ocupado en la tarde. Así de simple fue. No fue un plan artístico, fue una mamá buscando dónde meter a su hijo. Me pusieron un violín en las manos el primer día. No sabía ni cómo agarrarlo. Y ese mismo día me sentaron en la orquesta, al lado de muchachos que llevaban años. Esa es la clave del método, ¿sabe? Uno no espera dos años practicando solo en un cuarto para después tocar con otros. Uno toca con otros desde el minuto uno, aunque suene feo. Uno aprende oyendo al de al lado. Ahora yo tengo cuarenta y dos alumnos. Muchos vienen de casas muy difíciles. Y yo les digo lo que a mí me dijeron: aquí tú tienes una silla, y esa silla es tuya, y si un día faltas, la orquesta suena distinta. Porque haces falta.",
+      "source": "Deivis Márquez, profesor de violín de El Sistema",
+      "questions": [
+        {
+          "text": "¿Por qué lo llevó su mamá al programa?",
+          "type": "mc",
+          "opts": [
+            "Porque la calle estaba complicada y quería que estuviera ocupado",
+            "Porque era gratis",
+            "Porque quería ser músico",
+            "Porque era muy talentoso"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuándo lo sentaron en la orquesta?",
+          "type": "mc",
+          "opts": [
+            "Después de dos años",
+            "El mismo primer día",
+            "Al mes",
+            "Cuando ya sabía tocar"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuál dice que es la clave del método?",
+          "type": "mc",
+          "opts": [
+            "Empezar de niño",
+            "Practicar solo mucho tiempo",
+            "Tocar con otros desde el minuto uno",
+            "Tener buen instrumento"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué les dice a sus alumnos?",
+          "type": "mc",
+          "opts": [
+            "Que sean profesionales",
+            "Que compitan",
+            "Que practiquen más",
+            "Que tienen una silla y si faltan, la orquesta suena distinta"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Venezuela_2": {
+    "topic": "La arepa y la cocina que viajó con la gente",
+    "assignment": "Corresponsal, última historia venezolana y es sobre comida y distancia. La arepa se come en Venezuela desde antes de la colonia, y hoy también se come en Bogotá, en Madrid y en Santiago, porque los venezolanos se la llevaron. Ve a una arepera.",
+    "article": {
+      "headline": "La arepa cruzó fronteras dentro de las maletas",
+      "byline": "Corresponsal, El Mundo Nuestro | Caracas, Venezuela",
+      "paragraphs": [
+        "La arepa es un pan redondo de maíz que se asa, se fríe o se hornea, y luego se abre y se rellena. Los pueblos indígenas de esta región ya la preparaban mucho antes de la llegada de los europeos.",
+        "Se come a cualquier hora, sobre todo en el desayuno y en la cena. Los rellenos tienen nombres propios. La reina pepiada lleva pollo con aguacate. La dominó lleva frijoles negros con queso blanco rallado.",
+        "En años recientes, millones de venezolanos han emigrado a otros países. Se calcula que más de siete millones de personas salieron. Es uno de los movimientos migratorios más grandes de la región.",
+        "Con la gente viajó la comida. Hoy hay areperas en Bogotá, Lima, Santiago, Buenos Aires, Madrid y muchas ciudades más. Para muchas familias, hacer arepas los domingos es la forma de mantener la casa cerca aunque esté lejos."
+      ],
+      "keywords": [
+        {
+          "word": "arepa",
+          "definition": "pan redondo de maíz que se abre y se rellena"
+        },
+        {
+          "word": "asa",
+          "definition": "cocina sobre fuego o plancha, sin sumergir en aceite"
+        },
+        {
+          "word": "rallado",
+          "definition": "cortado en tiras muy finas con un rallador"
+        },
+        {
+          "word": "emigrado",
+          "definition": "que se han ido a vivir a otro país"
+        },
+        {
+          "word": "areperas",
+          "definition": "locales donde se venden arepas"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿De qué está hecha la arepa?",
+          "type": "mc",
+          "opts": [
+            "De maíz",
+            "De arroz",
+            "De papa",
+            "De trigo"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué lleva la reina pepiada?",
+          "type": "mc",
+          "opts": [
+            "Frijoles y queso",
+            "Pollo con aguacate",
+            "Carne molida",
+            "Solo queso"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuántos venezolanos se calcula que han salido del país?",
+          "type": "mc",
+          "opts": [
+            "Veinte millones",
+            "Un millón",
+            "Más de siete millones",
+            "Cien mil"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué representa hacer arepas los domingos para muchas familias?",
+          "type": "mc",
+          "opts": [
+            "Una obligación",
+            "Una fiesta",
+            "Un negocio",
+            "Mantener la casa cerca aunque esté lejos"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Hay alguna comida que tu familia prepare para sentirse conectada con otro lugar? Cuéntalo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, yo soy Marisol Peña y tengo una arepera pequeña aquí en Caracas, pero le voy a hablar de algo que me pasa seguido. Mis tres hijos están afuera. Uno en Santiago de Chile, una en Madrid y el menor en Bogotá. Los domingos nos conectamos por videollamada los cuatro al mismo tiempo, y hacemos arepas juntos. Cada uno en su cocina, con su teléfono apoyado en algo. Yo les voy diciendo: no le pongan tanta agua a la masa, déjenla reposar cinco minutos, mójense las manos para que no se pegue. Mi hija en Madrid consigue la harina en una tienda latina que le queda lejísimos, pero va igual. Mi hijo en Chile me manda foto de las suyas cada domingo para que yo le diga si le quedaron bien. Al principio me daba una tristeza tremenda. Sentía que estaba cocinando con fantasmas. Ahora lo veo distinto. La mesa se estiró, nada más. Es la misma masa, las mismas manos que yo enseñé. Está repartida en tres países, pero es la misma mesa.",
+      "source": "Marisol Peña, dueña de arepera en Caracas",
+      "questions": [
+        {
+          "text": "¿Dónde están los hijos de Marisol?",
+          "type": "mc",
+          "opts": [
+            "En Santiago, Madrid y Bogotá",
+            "En Estados Unidos",
+            "En Colombia los tres",
+            "Todos en Venezuela"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hacen los domingos?",
+          "type": "mc",
+          "opts": [
+            "Se escriben cartas",
+            "Hacen arepas juntos por videollamada",
+            "Se visitan",
+            "Nada especial"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué consejo les da sobre la masa?",
+          "type": "mc",
+          "opts": [
+            "Que compren la masa hecha",
+            "Que le pongan mucha agua",
+            "Que no le pongan tanta agua y la dejen reposar cinco minutos",
+            "Que la cocinen rápido"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo ve ahora la situación?",
+          "type": "mc",
+          "opts": [
+            "Con rabia",
+            "Prefiere no pensarlo",
+            "Con la misma tristeza",
+            "Que la mesa se estiró, pero es la misma mesa"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

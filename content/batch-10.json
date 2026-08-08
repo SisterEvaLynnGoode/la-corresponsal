@@ -1,0 +1,818 @@
+{
+  "Paraguay_0": {
+    "topic": "El guaraní, un idioma indígena que habla todo un país",
+    "assignment": "¡Corresponsal, llegaste a Paraguay! Aquí pasa algo que no ocurre en ningún otro país de América: un idioma indígena lo habla la mayoría de la población, indígena o no. Ve a Asunción y al campo, y escucha cómo se mezcla con el español.",
+    "article": {
+      "headline": "El único país de América donde un idioma indígena es de todos",
+      "byline": "Corresponsal, El Mundo Nuestro | Asunción, Paraguay",
+      "paragraphs": [
+        "Paraguay tiene dos idiomas oficiales: el español y el guaraní. Lo excepcional es que el guaraní no lo habla solamente la población indígena. Lo habla la mayoría del país, en el campo y en la ciudad.",
+        "En muchos hogares se habla guaraní en la casa y español en la oficina o la escuela. Mucha gente mezcla los dos en la misma conversación, e incluso en la misma frase. A esa mezcla cotidiana se le llama jopara.",
+        "El guaraní está en todas partes del habla diaria. Palabras como che, ndaipóri o el sufijo pa aparecen constantemente. Muchos nombres de plantas, animales, ríos y ciudades del país son guaraníes.",
+        "Desde 1992 el guaraní tiene rango constitucional como idioma oficial y se enseña obligatoriamente en las escuelas. Hoy se publican libros, se transmite radio y televisión, y hay contenidos en internet en guaraní."
+      ],
+      "keywords": [
+        {
+          "word": "oficiales",
+          "definition": "reconocidos por el Estado para uso público y legal"
+        },
+        {
+          "word": "excepcional",
+          "definition": "muy poco común, fuera de lo normal"
+        },
+        {
+          "word": "cotidiana",
+          "definition": "de todos los días"
+        },
+        {
+          "word": "jopara",
+          "definition": "mezcla de guaraní y español usada en el habla diaria"
+        },
+        {
+          "word": "sufijo",
+          "definition": "parte que se añade al final de una palabra y cambia su sentido"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuáles son los idiomas oficiales de Paraguay?",
+          "type": "mc",
+          "opts": [
+            "El español y el guaraní",
+            "El guaraní solamente",
+            "Tres idiomas",
+            "Solo el español"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué tiene de excepcional el caso paraguayo?",
+          "type": "mc",
+          "opts": [
+            "Que nadie habla guaraní",
+            "Que el guaraní lo habla la mayoría, no solo la población indígena",
+            "Que el español es minoritario",
+            "Que hay muchos idiomas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es el jopara?",
+          "type": "mc",
+          "opts": [
+            "Un pueblo",
+            "Una comida",
+            "La mezcla de guaraní y español en el habla diaria",
+            "Un baile"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasó en 1992?",
+          "type": "mc",
+          "opts": [
+            "Se creó el jopara",
+            "Se dejó de enseñar",
+            "Se prohibió el guaraní",
+            "El guaraní obtuvo rango constitucional como idioma oficial"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿En tu casa se mezclan dos idiomas al hablar? Describe cómo y cuándo pasa.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Mba'éichapa. Buenos días. Me llamo Perla Ayala y soy maestra de guaraní en un colegio de Asunción. Yo crecí hablando guaraní con mi abuela en Caaguazú. Pero le voy a contar algo que todavía me duele. Cuando yo era chica, en la escuela nos castigaban si hablábamos guaraní en el recreo. Nos hacían escribir cien veces que debíamos hablar en español. A mi mamá le decían que si yo hablaba guaraní iba a salir burra, que no iba a progresar. Muchos padres de esa época dejaron de hablarles guaraní a sus hijos por miedo, por querer protegerlos. Se perdió una generación casi entera en las ciudades. Ahora yo enseño el idioma que me prohibieron, en un aula, con libros de texto. A veces me paro frente a la clase y pienso en esa nena escribiendo castigos en el pizarrón. Mis alumnos adolescentes al principio dicen que el guaraní no sirve, que mejor inglés. Y yo les digo: aprendé inglés, por supuesto, aprendé todo lo que puedas. Pero el guaraní no es para conseguir trabajo. Es para saber quién sos.",
+      "source": "Perla Ayala, profesora de guaraní",
+      "questions": [
+        {
+          "text": "¿Qué pasaba si hablaban guaraní en el recreo?",
+          "type": "mc",
+          "opts": [
+            "Los castigaban y les hacían escribir cien veces",
+            "Los felicitaban",
+            "Los mandaban a casa",
+            "Nada"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué le decían a su mamá?",
+          "type": "mc",
+          "opts": [
+            "Que le enseñara más guaraní",
+            "Que si hablaba guaraní iba a salir burra y no progresaría",
+            "Que cambiara de escuela",
+            "Nada"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué dicen sus alumnos adolescentes al principio?",
+          "type": "mc",
+          "opts": [
+            "Que ya lo saben",
+            "Que les encanta",
+            "Que el guaraní no sirve, que mejor inglés",
+            "Que es fácil"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Para qué dice Perla que sirve el guaraní?",
+          "type": "mc",
+          "opts": [
+            "Para viajar",
+            "Para estudiar",
+            "Para conseguir trabajo",
+            "Para saber quién sos"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Paraguay_1": {
+    "topic": "El ñandutí, el encaje que imita la telaraña",
+    "assignment": "Corresponsal, ve a Itauguá, a media hora de Asunción. Allí las mujeres tejen ñandutí, un encaje tan fino que su nombre en guaraní significa telaraña. Ve a ver cómo se hace y pregunta cuánto tarda.",
+    "article": {
+      "headline": "Telaraña de hilo: el encaje que se teje en el aire",
+      "byline": "Corresponsal, El Mundo Nuestro | Itauguá, Paraguay",
+      "paragraphs": [
+        "Ñandutí quiere decir telaraña en guaraní. Es un encaje circular de hilos finos que forman figuras como rayos de sol saliendo del centro. Se teje sobre todo en Itauguá, donde el oficio pasa de madres a hijas.",
+        "La técnica combina influencias de encajes que llegaron de España con diseños y nombres guaraníes. Muchas figuras llevan nombres de la naturaleza local: flores, frutas, animales y estrellas.",
+        "Se trabaja sobre un bastidor de madera con la tela bien tensada. Primero se marcan los hilos radiales, como los de una telaraña real. Después se van tejiendo los círculos y rellenando cada espacio con puntadas.",
+        "Al terminar, la tela de base se corta con cuidado y queda solamente el encaje, que parece sostenerse en el aire. Una pieza grande puede llevar semanas. Los colores fuertes son marca del ñandutí paraguayo."
+      ],
+      "keywords": [
+        {
+          "word": "encaje",
+          "definition": "tejido fino y calado con figuras y espacios abiertos"
+        },
+        {
+          "word": "circular",
+          "definition": "con forma de círculo"
+        },
+        {
+          "word": "influencias",
+          "definition": "efectos o aportes que vienen de otro lugar o cultura"
+        },
+        {
+          "word": "radiales",
+          "definition": "que salen del centro hacia afuera, como rayos"
+        },
+        {
+          "word": "tensada",
+          "definition": "estirada y firme, sin arrugas"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué significa ñandutí en guaraní?",
+          "type": "mc",
+          "opts": [
+            "Telaraña",
+            "Estrella",
+            "Hilo",
+            "Flor"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué combina la técnica?",
+          "type": "mc",
+          "opts": [
+            "Solo diseños guaraníes",
+            "Encajes que llegaron de España con diseños y nombres guaraníes",
+            "Técnicas modernas",
+            "Diseños africanos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué se marca primero?",
+          "type": "mc",
+          "opts": [
+            "El centro relleno",
+            "Los círculos",
+            "Los hilos radiales, como los de una telaraña",
+            "El borde"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasa al terminar la pieza?",
+          "type": "mc",
+          "opts": [
+            "Se pinta",
+            "Se cose a un vestido",
+            "Se lava",
+            "Se corta la tela de base y queda solo el encaje"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué objeto hecho a mano tiene valor especial en tu familia? Describe cómo es.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Mba'éichapa. Me llamo Ña Feliciana Benítez y tejo ñandutí desde los nueve años, aquí en Itauguá. Mi madre tejía, mi abuela tejía. En este pueblo uno aprende mirando, sentada al lado. Le explico cómo es. Yo estiro bien la tela en el bastidor y con lápiz marco el círculo. Después paso los hilos derechos, del centro hacia afuera, como los rayos de una rueda. Esos hilos son el esqueleto de todo. Si quedan flojos o disparejos, la pieza sale torcida y no hay cómo arreglarla. Encima de esos rayos voy tejiendo los dibujos. Tenemos muchos nombres para las figuras y casi todos son de la naturaleza: hay una que se llama flor de coco, otra rueda de carreta, otra cola de pavo real. Yo me sé como cuarenta. Lo más lindo y lo que más asusta es el final, cuando agarro la tijera y corto la tela de abajo. Ahí uno reza un poquito. Si el tejido está bien hecho, el encaje se queda entero, solito, como una telaraña de verdad. Si está mal hecho, se te deshace en la mano.",
+      "source": "Feliciana Benítez, tejedora de ñandutí",
+      "questions": [
+        {
+          "text": "¿A qué edad empezó a tejer?",
+          "type": "mc",
+          "opts": [
+            "A los nueve años",
+            "A los quince",
+            "A los veinte",
+            "A los cinco"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pasa si los hilos radiales quedan flojos?",
+          "type": "mc",
+          "opts": [
+            "No pasa nada",
+            "La pieza sale torcida y no hay cómo arreglarla",
+            "Se teje más rápido",
+            "Queda más suave"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿De dónde vienen los nombres de las figuras?",
+          "type": "mc",
+          "opts": [
+            "De los compradores",
+            "De España",
+            "Casi todos de la naturaleza",
+            "De las tejedoras"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es lo que más asusta del proceso?",
+          "type": "mc",
+          "opts": [
+            "Marcar el círculo",
+            "Elegir los colores",
+            "Empezar",
+            "El final, cuando corta la tela de abajo"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Paraguay_2": {
+    "topic": "La orquesta de instrumentos hechos con basura",
+    "assignment": "Corresponsal, última historia paraguaya y es extraordinaria. En Cateura, un barrio construido junto a un vertedero, los niños tocan violines y cellos hechos con basura reciclada. Ve a un ensayo y escucha cómo suenan.",
+    "article": {
+      "headline": "Violines de latas de pintura y cellos de bidones",
+      "byline": "Corresponsal, El Mundo Nuestro | Cateura, Asunción, Paraguay",
+      "paragraphs": [
+        "Cateura es un barrio de Asunción construido junto al vertedero principal de la ciudad. Muchas familias viven de la recolección y venta de materiales reciclables que separan de la basura.",
+        "Hace algunos años, un profesor de música llamado Favio Chávez llegó a trabajar allí y empezó a dar clases a los niños. Enseguida apareció un problema: un violín de verdad costaba más que una casa del barrio.",
+        "La solución la aportó Nicolás Gómez, un recolector con habilidad para la carpintería. Empezó a construir instrumentos con lo que salía del vertedero: latas de pintura, bidones, tenedores, bandejas de horno y llaves viejas.",
+        "Así nació la Orquesta de Instrumentos Reciclados de Cateura. Los violines se hacen con latas y los cellos con bidones. La orquesta ha tocado en muchos países y su historia recorrió el mundo entero."
+      ],
+      "keywords": [
+        {
+          "word": "vertedero",
+          "definition": "lugar donde se deposita la basura de una ciudad"
+        },
+        {
+          "word": "reciclables",
+          "definition": "materiales que se pueden volver a usar o transformar"
+        },
+        {
+          "word": "carpintería",
+          "definition": "oficio de trabajar la madera"
+        },
+        {
+          "word": "bidones",
+          "definition": "recipientes grandes de metal o plástico para líquidos"
+        },
+        {
+          "word": "orquesta",
+          "definition": "grupo grande de músicos que tocan juntos"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde está el barrio de Cateura?",
+          "type": "mc",
+          "opts": [
+            "Junto al vertedero principal de la ciudad",
+            "En el campo",
+            "En la frontera",
+            "En el centro de Asunción"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál fue el problema al empezar las clases?",
+          "type": "mc",
+          "opts": [
+            "No había alumnos",
+            "Un violín costaba más que una casa del barrio",
+            "No había profesor",
+            "No había espacio"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Quién construyó los instrumentos?",
+          "type": "mc",
+          "opts": [
+            "Los niños",
+            "Una fábrica",
+            "Nicolás Gómez, un recolector con habilidad para la carpintería",
+            "El profesor de música"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Con qué se hacen los cellos?",
+          "type": "mc",
+          "opts": [
+            "Con madera nueva",
+            "Con cajas de cartón",
+            "Con latas de pintura",
+            "Con bidones"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué material que se tira en tu casa podría transformarse en algo útil? Da una idea concreta.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, mi nombre es Tania Villalba y tengo dieciséis años. Toco el violín en la orquesta desde los diez. Mi violín está hecho con una lata de pintura, un tenedor viejo que sostiene las cuerdas y madera de cajones de verdura. Lo hizo don Nicolás, que era recolector como mi papá. Cuando gente de afuera lo ve, algunos ponen cara rara, como de lástima. Eso al principio me daba vergüenza. Ahora no. Ahora yo lo levanto y lo muestro. Porque el asunto es este: el mundo nos manda su basura a nosotros. Todo lo que ustedes tiran termina acá, al lado de mi casa. Y nosotros con esa misma basura hacemos música. Eso a mí me parece lo más grande del mundo. Hemos tocado en otros países y yo he subido a un avión, cosa que en mi familia nunca nadie había hecho. Pero lo que más me marcó no fue eso. Fue una nena chiquita de mi barrio que me vio ensayando y me preguntó si ella también podía. Le dije que sí. Ahora toca viola. Yo quiero ser profesora de música. Quiero quedarme acá y enseñar.",
+      "source": "Tania Villalba, violinista de la Orquesta de Cateura",
+      "questions": [
+        {
+          "text": "¿Con qué está hecho su violín?",
+          "type": "mc",
+          "opts": [
+            "Con una lata de pintura, un tenedor viejo y madera de cajones",
+            "Con plástico",
+            "Con metal nuevo",
+            "Con madera fina"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo se sentía al principio cuando ponían cara rara?",
+          "type": "mc",
+          "opts": [
+            "Orgullosa",
+            "Le daba vergüenza",
+            "No le importaba",
+            "Se enojaba"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué dice sobre la basura?",
+          "type": "mc",
+          "opts": [
+            "Que deberían llevársela",
+            "Que hay que reciclarla toda",
+            "Que el mundo les manda su basura y ellos hacen música con ella",
+            "Que no le molesta"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué quiere ser Tania?",
+          "type": "mc",
+          "opts": [
+            "Ingeniera",
+            "Recolectora",
+            "Violinista profesional en Europa",
+            "Profesora de música, quedarse allí y enseñar"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "España_0": {
+    "topic": "El flamenco y el compás que no se cuenta igual",
+    "assignment": "¡Corresponsal, llegaste a España! Ve a Andalucía, a una peña flamenca de Sevilla o Jerez. El flamenco no es solo baile: es cante, toque y compás. Y el compás es más raro de lo que parece. Ve a escucharlo de cerca.",
+    "article": {
+      "headline": "Palmas, cante y un compás de doce tiempos",
+      "byline": "Corresponsal, El Mundo Nuestro | Sevilla, Andalucía, España",
+      "paragraphs": [
+        "El flamenco nació en Andalucía, en el sur de España, del encuentro de varias culturas: el pueblo gitano, la tradición andaluza, la herencia judía y la musulmana de siglos anteriores.",
+        "Tiene tres partes que van juntas: el cante, que es la voz; el toque, que es la guitarra; y el baile. A eso se suman las palmas y el zapateado, que también son instrumentos de ritmo.",
+        "Cada estilo se llama palo. Hay soleá, bulerías, alegrías, seguiriyas, tangos y muchos más. Cada palo tiene su propio compás, su carácter y su forma de empezar y terminar.",
+        "Varios palos usan un compás de doce tiempos con acentos irregulares, que caen en lugares que sorprenden a quien viene de otra música. Aprender a llevar las palmas correctamente puede tomar años. En 2010 la UNESCO lo declaró patrimonio de la humanidad."
+      ],
+      "keywords": [
+        {
+          "word": "flamenco",
+          "definition": "arte andaluz que une cante, guitarra y baile"
+        },
+        {
+          "word": "cante",
+          "definition": "el canto en el flamenco"
+        },
+        {
+          "word": "toque",
+          "definition": "la guitarra flamenca"
+        },
+        {
+          "word": "palo",
+          "definition": "cada uno de los estilos del flamenco"
+        },
+        {
+          "word": "compás",
+          "definition": "patrón de tiempos que organiza el ritmo"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde nació el flamenco?",
+          "type": "mc",
+          "opts": [
+            "En Andalucía, en el sur de España",
+            "En Cataluña",
+            "En América",
+            "En Madrid"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuáles son las tres partes que van juntas?",
+          "type": "mc",
+          "opts": [
+            "Piano, voz y baile",
+            "El cante, el toque y el baile",
+            "Palmas, guitarra y tambor",
+            "Solo el baile"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es un palo?",
+          "type": "mc",
+          "opts": [
+            "Un baile de pareja",
+            "Un instrumento",
+            "Cada uno de los estilos del flamenco",
+            "Un tipo de guitarra"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué tiene de particular el compás de varios palos?",
+          "type": "mc",
+          "opts": [
+            "No tiene ritmo",
+            "Es igual al de la salsa",
+            "Es muy lento",
+            "Tiene doce tiempos con acentos irregulares"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué habilidad has intentado aprender que resultó más difícil de lo que parecía? Cuéntalo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, me llamo Rocío Amaya y soy cantaora, de Jerez de la Frontera. En mi familia se canta desde hace generaciones; en las fiestas de mi casa el que no canta, toca las palmas. Y ojo, que las palmas no son cualquier cosa. Mucha gente cree que es dar palmas y ya. No, señor. Las palmas llevan el compás y si te equivocas, tiras abajo a todo el mundo. Yo he visto a músicos de conservatorio, gente que lee partituras dificilísimas, quedarse perdida intentando llevar unas bulerías. Porque el compás de doce no se cuenta con la cabeza, se lleva en el cuerpo. A mí nadie me enseñó con papel. Yo lo mamé de chica, sentada en el suelo mientras los mayores cantaban hasta las tantas. Lo otro que quiero decir es lo del quejío. La gente de fuera piensa que el flamenco es tristeza pura. No es tristeza, es verdad. Hay bulerías que son pura alegría y te levantan de la silla. Lo que no puede haber es mentira. Si sales a cantar y no sientes lo que dices, el público lo nota enseguida. Aquí no se perdona eso.",
+      "source": "Rocío Amaya, cantaora de Jerez",
+      "questions": [
+        {
+          "text": "¿Qué pasa si te equivocas en las palmas?",
+          "type": "mc",
+          "opts": [
+            "Tiras abajo a todo el mundo",
+            "Se para el baile",
+            "Hay que empezar de nuevo",
+            "No se nota"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué dice del compás de doce?",
+          "type": "mc",
+          "opts": [
+            "Que se cuenta con la cabeza",
+            "Que no se cuenta con la cabeza, se lleva en el cuerpo",
+            "Que es fácil",
+            "Que se aprende con partituras"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo aprendió Rocío?",
+          "type": "mc",
+          "opts": [
+            "Por internet",
+            "En el conservatorio",
+            "De chica, sentada en el suelo mientras los mayores cantaban",
+            "Con libros"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué dice sobre el flamenco y la tristeza?",
+          "type": "mc",
+          "opts": [
+            "Que siempre es alegre",
+            "Que depende del público",
+            "Que es tristeza pura",
+            "Que no es tristeza, es verdad"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "España_1": {
+    "topic": "La Sagrada Familia y la arquitectura de Gaudí",
+    "assignment": "Corresponsal, ve a Barcelona. Hay un templo que empezó a construirse en 1882 y todavía no está terminado. Su arquitecto decía que su cliente no tenía prisa. Ve a verlo y explícanos por qué se parece tanto a un bosque.",
+    "article": {
+      "headline": "El templo que lleva más de cien años en obras",
+      "byline": "Corresponsal, El Mundo Nuestro | Barcelona, Cataluña, España",
+      "paragraphs": [
+        "La Sagrada Familia empezó a construirse en Barcelona en 1882. Al año siguiente tomó el proyecto el arquitecto Antoni Gaudí, que le dedicó más de cuarenta años, y los últimos de su vida en exclusiva.",
+        "Gaudí observaba la naturaleza y copiaba sus soluciones. Las columnas del interior se abren en ramas al llegar arriba, como árboles, y sostienen el techo repartiendo el peso igual que lo hace un bosque real.",
+        "También usó formas geométricas poco comunes en la arquitectura de su época y maquetas colgantes con pesos y cuerdas para calcular las curvas de los arcos por gravedad, en lugar de hacerlo solo con cálculos en papel.",
+        "El templo se financia con donaciones y con las entradas de los visitantes, y por eso avanza despacio. Gaudí murió en 1926 sin verlo terminado. Hoy las obras continúan siguiendo sus planos y sus maquetas."
+      ],
+      "keywords": [
+        {
+          "word": "arquitecto",
+          "definition": "persona que diseña edificios"
+        },
+        {
+          "word": "columnas",
+          "definition": "elementos verticales que sostienen un techo o estructura"
+        },
+        {
+          "word": "geométricas",
+          "definition": "relacionadas con formas como curvas, triángulos y espirales"
+        },
+        {
+          "word": "maquetas",
+          "definition": "modelos pequeños de un edificio para estudiarlo"
+        },
+        {
+          "word": "donaciones",
+          "definition": "dinero que se da voluntariamente para ayudar"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuándo empezó a construirse?",
+          "type": "mc",
+          "opts": [
+            "En 1882",
+            "En 1926",
+            "En 2000",
+            "En 1950"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿A qué se parecen las columnas del interior?",
+          "type": "mc",
+          "opts": [
+            "A montañas",
+            "A árboles que se abren en ramas",
+            "A olas",
+            "A escaleras"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Para qué usaba las maquetas colgantes?",
+          "type": "mc",
+          "opts": [
+            "Para vender el proyecto",
+            "Para decorar",
+            "Para calcular las curvas de los arcos por gravedad",
+            "Para enseñar a sus alumnos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué avanza despacio la obra?",
+          "type": "mc",
+          "opts": [
+            "Porque perdieron los planos",
+            "Por el clima",
+            "Por falta de trabajadores",
+            "Porque se financia con donaciones y entradas"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Te parece bien seguir construyendo una obra según los planos de alguien que murió hace cien años? Da tu opinión.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, me llamo Jordi Puigcerver y soy tallista de piedra en la Sagrada Familia. Llevo veinticuatro años picando piedra en este taller. Mi padre también trabajó aquí, y su hermano. Somos varias familias que llevamos generaciones en esta obra. La gente me pregunta si no me desespera trabajar en algo que no voy a ver acabado. Y mire, es una pregunta muy razonable, pero aquí uno piensa distinto. Gaudí decía que su cliente no tenía prisa, y con eso se refería a Dios. A mí me gusta pensarlo de otra manera: yo trabajo para alguien que todavía no ha nacido. Yo hago mi piedra lo mejor que sé, y otro vendrá y hará la suya encima. Hay una cosa que me emociona. Cuando Gaudí murió, en el veintiséis, quedaron sus maquetas de yeso. Muchas se rompieron años después y hubo que reconstruirlas a partir de los pedazos, como un rompecabezas gigante. Ahora usamos ordenadores para calcular lo que él calculaba colgando pesos de unas cuerdas. Y sale igual. Ese hombre iba cien años por delante. Yo solo soy un par de manos en una cadena muy larga.",
+      "source": "Jordi Puigcerver, tallista de piedra",
+      "questions": [
+        {
+          "text": "¿Cuántos años lleva trabajando allí?",
+          "type": "mc",
+          "opts": [
+            "Veinticuatro años",
+            "Cuarenta",
+            "Cinco",
+            "Diez"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo prefiere pensar en su trabajo?",
+          "type": "mc",
+          "opts": [
+            "Como un empleo cualquiera",
+            "Que trabaja para alguien que todavía no ha nacido",
+            "Que nunca acabará",
+            "Como una obligación"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasó con las maquetas de yeso?",
+          "type": "mc",
+          "opts": [
+            "Las vendieron",
+            "Se conservan intactas",
+            "Muchas se rompieron y hubo que reconstruirlas como un rompecabezas",
+            "Se perdieron para siempre"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué dice sobre los cálculos de Gaudí?",
+          "type": "mc",
+          "opts": [
+            "Que eran demasiado simples",
+            "Que nadie los entiende",
+            "Que estaban mal",
+            "Que con ordenadores sale igual que colgando pesos de cuerdas"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "España_2": {
+    "topic": "Los pueblos vacíos que vuelven a llenarse",
+    "assignment": "Corresponsal, última misión del viaje. En el interior de España hay cientos de pueblos casi vacíos porque la gente se fue a las ciudades. Algunos están volviendo a llenarse. Ve a uno y cuenta cómo lo lograron. ¡Y luego vuelve a la redacción!",
+    "article": {
+      "headline": "El pueblo que buscaba vecinos y los encontró",
+      "byline": "Corresponsal, El Mundo Nuestro | Provincia de Teruel, España",
+      "paragraphs": [
+        "Durante el siglo veinte, millones de personas dejaron los pueblos del interior de España para irse a trabajar a las ciudades. Muchos pueblos quedaron con unas pocas casas habitadas y una población muy mayor.",
+        "A ese fenómeno se le llama la España vaciada. Hay provincias con menos habitantes por kilómetro cuadrado que algunas zonas frías del norte de Europa. Cuando cierra la escuela de un pueblo, suele ser el principio del final.",
+        "Pero algunos pueblos reaccionaron. Ofrecieron casas baratas o gratis a familias dispuestas a mudarse, con una condición clave: tener hijos en edad escolar, para poder reabrir la escuela y sostenerla.",
+        "También ayudó el internet rápido, que permite trabajar a distancia desde una casa en el campo. Varios pueblos que estaban a punto de desaparecer hoy tienen niños en el patio otra vez y algunos comercios abiertos."
+      ],
+      "keywords": [
+        {
+          "word": "habitadas",
+          "definition": "donde vive gente"
+        },
+        {
+          "word": "fenómeno",
+          "definition": "hecho o situación que se observa y se estudia"
+        },
+        {
+          "word": "vaciada",
+          "definition": "que se quedó sin habitantes"
+        },
+        {
+          "word": "escolar",
+          "definition": "relacionado con la escuela"
+        },
+        {
+          "word": "comercios",
+          "definition": "tiendas y negocios"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Por qué se vaciaron los pueblos?",
+          "type": "mc",
+          "opts": [
+            "Porque la gente se fue a trabajar a las ciudades",
+            "Por guerras",
+            "Por el clima",
+            "Por desastres naturales"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué suele pasar cuando cierra la escuela de un pueblo?",
+          "type": "mc",
+          "opts": [
+            "No pasa nada",
+            "Suele ser el principio del final",
+            "Llegan más familias",
+            "Abre otra"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué condición ponían los pueblos que ofrecían casas?",
+          "type": "mc",
+          "opts": [
+            "Trabajar en el campo",
+            "Tener dinero",
+            "Tener hijos en edad escolar",
+            "Ser del pueblo"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué otra cosa ayudó?",
+          "type": "mc",
+          "opts": [
+            "El turismo",
+            "Las fábricas",
+            "Más carreteras",
+            "El internet rápido, que permite trabajar a distancia"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Terminaste tu viaje por veinte países. ¿Cuál historia te marcó más y por qué? Explica como corresponsal.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, soy Amparo Lázaro y soy alcaldesa de un pueblo de Teruel. Cuando yo tomé posesión, éramos cuarenta y un vecinos y la media de edad pasaba de los setenta años. La escuela llevaba nueve años cerrada. Le voy a ser sincera: yo pensaba que esto se acababa conmigo, que yo iba a ser la última alcaldesa. Nos juntamos unos cuantos y decidimos intentar algo. El ayuntamiento tenía casas viejas embargadas y las arreglamos con lo poco que había. Pusimos un anuncio buscando familias con niños. Yo esperaba que no contestara nadie. Recibimos más de trescientas solicitudes. Trescientas. Nos quedamos de piedra. Vinieron cuatro familias, con nueve críos entre todos. Y con nueve críos pudimos pedir la reapertura de la escuela. El día que sonó otra vez el timbre del recreo, había vecinos de ochenta años asomados a la ventana llorando. Le juro que no exagero. Ahora somos setenta y tres vecinos. No es que hayamos resuelto nada del todo, ojo, esto sigue siendo frágil. Pero ya no somos un pueblo que se muere. Somos un pueblo que empieza otra vez.",
+      "source": "Amparo Lázaro, alcaldesa de un pueblo de Teruel",
+      "questions": [
+        {
+          "text": "¿Cuántos vecinos había al principio?",
+          "type": "mc",
+          "opts": [
+            "Cuarenta y uno",
+            "Diez",
+            "Doscientos",
+            "Cien"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuántas solicitudes recibieron?",
+          "type": "mc",
+          "opts": [
+            "Diez",
+            "Más de trescientas",
+            "Cincuenta",
+            "Ninguna"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuántos niños trajeron las cuatro familias?",
+          "type": "mc",
+          "opts": [
+            "Dos",
+            "Cuatro",
+            "Nueve",
+            "Veinte"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo describe hoy a su pueblo?",
+          "type": "mc",
+          "opts": [
+            "Como un pueblo turístico",
+            "Como un pueblo grande",
+            "Como un pueblo que se muere",
+            "Como un pueblo que empieza otra vez"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

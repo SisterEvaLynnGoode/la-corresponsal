@@ -1,0 +1,818 @@
+{
+  "Nicaragua_0": {
+    "topic": "León, la ciudad de los poetas",
+    "assignment": "¡Corresponsal, bienvenida a Nicaragua! Aquí a la poesía la toman muy en serio. Ve a León, la ciudad de Rubén Darío, el poeta que cambió el idioma español. Y busca a los jóvenes que escriben hoy. ¡A leer y a escuchar!",
+    "article": {
+      "headline": "En Nicaragua los poetas son héroes nacionales",
+      "byline": "Corresponsal, El Mundo Nuestro | León, Nicaragua",
+      "paragraphs": [
+        "En muchos países los héroes nacionales son militares o presidentes. En Nicaragua, uno de los más queridos es un poeta. Se llamaba Rubén Darío y nació en 1867 en un pueblo pequeño.",
+        "Darío cambió la manera de escribir en español. Antes, la poesía en español seguía reglas muy rígidas. Él trajo ritmos nuevos, palabras de otros idiomas y imágenes brillantes. A ese movimiento se le llamó modernismo.",
+        "Escritores de toda América Latina y de España lo leyeron y lo imitaron. Por eso lo llaman el príncipe de las letras castellanas. Murió en León a los cuarenta y nueve años y está enterrado en la catedral.",
+        "La tradición sigue viva. Nicaragua tiene un Festival Internacional de Poesía en Granada que llena las plazas. En León hay talleres donde adolescentes escriben y leen sus versos en voz alta cada semana."
+      ],
+      "keywords": [
+        {
+          "word": "poeta",
+          "definition": "persona que escribe poesía"
+        },
+        {
+          "word": "modernismo",
+          "definition": "movimiento literario que renovó la poesía en español"
+        },
+        {
+          "word": "rígidas",
+          "definition": "muy estrictas, que no permiten cambios"
+        },
+        {
+          "word": "catedral",
+          "definition": "iglesia principal y más grande de una ciudad"
+        },
+        {
+          "word": "versos",
+          "definition": "líneas de un poema"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿En qué año nació Rubén Darío?",
+          "type": "mc",
+          "opts": [
+            "En 1867",
+            "En 1900",
+            "En 1920",
+            "En 1800"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué trajo Darío a la poesía en español?",
+          "type": "mc",
+          "opts": [
+            "Reglas más estrictas",
+            "Ritmos nuevos e imágenes brillantes",
+            "Poemas más cortos",
+            "Solo temas religiosos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo se llamó su movimiento?",
+          "type": "mc",
+          "opts": [
+            "Barroco",
+            "Romanticismo",
+            "Modernismo",
+            "Realismo"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Dónde está enterrado Rubén Darío?",
+          "type": "mc",
+          "opts": [
+            "En España",
+            "En Granada",
+            "En Managua",
+            "En la catedral de León"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Si escribieras un poema sobre tu vida, ¿de qué se trataría?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas tardes, me llamo Douglas Ramírez y coordino un taller de poesía para jóvenes aquí en León. Nos reunimos los miércoles en el patio de una casa vieja, debajo de un árbol de mango. Vienen entre quince y veinte muchachos, de catorce a diecinueve años. La primera regla del taller es que nadie se burla de nadie. Eso es sagrado. Muchos llegan diciendo que la poesía es aburrida, que es cosa de la escuela, que son puras palabras raras de hace cien años. Entonces yo les leo a Darío en voz alta, bien fuerte, marcando el ritmo con la mano. Y les digo: escuchen, esto suena como música. Después les pido que escriban de lo que sea. De su barrio, de su abuela, de la muchacha que les gusta, del bus que nunca pasa. Al mes ya nadie dice que es aburrido. Una muchacha escribió un poema sobre las manos de su mamá lavando ropa ajena. Lo leyó llorando. Todos aplaudimos de pie. Eso es poesía, les dije. Eso es exactamente.",
+      "source": "Douglas Ramírez, coordinador de taller de poesía juvenil",
+      "questions": [
+        {
+          "text": "¿Dónde se reúne el taller?",
+          "type": "mc",
+          "opts": [
+            "En el patio de una casa vieja, bajo un árbol de mango",
+            "En la catedral",
+            "En una biblioteca",
+            "En una escuela"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál es la primera regla del taller?",
+          "type": "mc",
+          "opts": [
+            "Llegar temprano",
+            "Que nadie se burla de nadie",
+            "Escribir todos los días",
+            "Leer a Darío"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hace Douglas cuando dicen que la poesía es aburrida?",
+          "type": "mc",
+          "opts": [
+            "Cambia de tema",
+            "Los regaña",
+            "Les lee a Darío en voz alta marcando el ritmo",
+            "Los manda a su casa"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Sobre qué escribió la muchacha que leyó llorando?",
+          "type": "mc",
+          "opts": [
+            "Sobre la escuela",
+            "Sobre Rubén Darío",
+            "Sobre el mar",
+            "Sobre las manos de su mamá lavando ropa ajena"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Nicaragua_1": {
+    "topic": "Ometepe, la isla de dos volcanes",
+    "assignment": "Corresponsal, toma la lancha. En medio del lago Cocibolca hay una isla formada por dos volcanes unidos. Se llama Ometepe y toda la isla es reserva de la biosfera. Ve a ver cómo viven allí y qué están protegiendo.",
+    "article": {
+      "headline": "Una isla hecha de dos volcanes",
+      "byline": "Corresponsal, El Mundo Nuestro | Isla de Ometepe, Rivas, Nicaragua",
+      "paragraphs": [
+        "El lago Cocibolca es el lago más grande de Centroamérica. Es tan grande que tiene olas y en él viven tiburones de agua dulce, algo rarísimo en el mundo. En medio del lago está la isla de Ometepe.",
+        "Ometepe nació de dos volcanes. El Concepción todavía está activo y tiene forma de cono perfecto. El Maderas está dormido y en su cima hay una laguna rodeada de bosque nuboso. La lava de ambos unió las dos partes y formó la isla.",
+        "El nombre viene del náhuatl: ome quiere decir dos y tepetl quiere decir cerro. Dos cerros. Los pueblos antiguos dejaron aquí petroglifos, dibujos tallados en piedra que todavía se pueden ver en los caminos.",
+        "En 2010, la UNESCO declaró toda la isla reserva de la biosfera. Los habitantes cultivan plátano, café y frijol, y muchos trabajan en turismo rural. Las familias reciben visitantes en sus propias casas."
+      ],
+      "keywords": [
+        {
+          "word": "biosfera",
+          "definition": "zona protegida donde se cuida la naturaleza y la vida humana juntas"
+        },
+        {
+          "word": "activo",
+          "definition": "que todavía puede hacer erupción, hablando de un volcán"
+        },
+        {
+          "word": "nuboso",
+          "definition": "bosque de montaña siempre cubierto de nubes y humedad"
+        },
+        {
+          "word": "náhuatl",
+          "definition": "idioma indígena hablado en México y Centroamérica"
+        },
+        {
+          "word": "petroglifos",
+          "definition": "dibujos antiguos tallados en piedra"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué tiene de raro el lago Cocibolca?",
+          "type": "mc",
+          "opts": [
+            "Que tiene tiburones de agua dulce",
+            "Que no tiene peces",
+            "Que es muy pequeño",
+            "Que es salado"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál de los dos volcanes está activo?",
+          "type": "mc",
+          "opts": [
+            "El Maderas",
+            "El Concepción",
+            "Los dos",
+            "Ninguno"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué significa Ometepe en náhuatl?",
+          "type": "mc",
+          "opts": [
+            "Tierra buena",
+            "Isla grande",
+            "Dos cerros",
+            "Lago azul"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué declaró la UNESCO en 2010?",
+          "type": "mc",
+          "opts": [
+            "Que el lago está contaminado",
+            "Que hay que cerrar la isla",
+            "Que la isla es patrimonio arquitectónico",
+            "Que toda la isla es reserva de la biosfera"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Te gustaría vivir en un lugar declarado reserva natural? ¿Qué sería lo bueno y lo difícil?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, mi nombre es Xiomara Gutiérrez y vivo en Balgüe, al pie del volcán Maderas. Mi familia siembra plátano y café desde hace cuatro generaciones. Vivir en una isla te enseña una cosa rápido: aquí no llega camión de basura, no hay a dónde botar nada. Lo que uno tira se queda. Hace unos años el plástico nos estaba ganando. Botellas por todos lados, en la playa, en los caminos, en el lago. Nos organizamos entre varias comunidades. Ahora separamos la basura y una lancha se lleva el plástico y el vidrio al continente una vez por semana. También hicimos algo que a mí me gusta mucho. Los visitantes que llegan a mi casa duermen con nosotros, comen lo que comemos y ayudan en la siembra si quieren. No es un hotel, es mi casa. Me pagan y con eso mando a mis hijos a la escuela. Ellos ven que la gente viene de Alemania, de Japón, de Estados Unidos, a ver los mismos volcanes que ellos ven todos los días. Eso les enseña que lo de uno vale.",
+      "source": "Xiomara Gutiérrez, agricultora y anfitriona de turismo rural",
+      "questions": [
+        {
+          "text": "¿Qué siembra la familia de Xiomara?",
+          "type": "mc",
+          "opts": [
+            "Plátano y café",
+            "Frijol y tomate",
+            "Caña de azúcar",
+            "Maíz y arroz"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué le enseña rápido vivir en una isla?",
+          "type": "mc",
+          "opts": [
+            "Que hay mucha agua",
+            "Que lo que uno tira se queda, no hay a dónde botar",
+            "Que hace calor",
+            "Que se pesca fácil"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cada cuánto se llevan el plástico al continente?",
+          "type": "mc",
+          "opts": [
+            "Una vez al año",
+            "Cada día",
+            "Una vez por semana",
+            "Una vez al mes"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué aprenden sus hijos al ver llegar visitantes de otros países?",
+          "type": "mc",
+          "opts": [
+            "Que hay que hablar inglés",
+            "Que el turismo es difícil",
+            "Que deben irse de la isla",
+            "Que lo de uno vale"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Nicaragua_2": {
+    "topic": "Las hamacas tejidas de Masaya",
+    "assignment": "Corresponsal, última historia en Nicaragua. En Masaya hay talleres donde las hamacas se tejen a mano, nudo por nudo. Es un oficio que se hereda en familia. Ve al mercado de artesanías y pregunta cómo se aprende.",
+    "article": {
+      "headline": "Ochocientos nudos para una hamaca",
+      "byline": "Corresponsal, El Mundo Nuestro | Masaya, Nicaragua",
+      "paragraphs": [
+        "Masaya es conocida como la cuna del folclore nicaragüense. En su mercado de artesanías se vende de todo: cerámica, cuero, máscaras de madera. Pero lo más famoso son las hamacas.",
+        "Una hamaca nicaragüense no se hace con máquina. Se teje a mano en un bastidor de madera, hilo por hilo y nudo por nudo. Una hamaca sencilla lleva unos ochocientos nudos. Las más finas llevan miles.",
+        "El hilo se llama pabilo y se hace de algodón. Los tejedores lo tensan, lo cruzan y lo amarran con un movimiento rapidísimo de los dedos. Un artesano con experiencia termina una hamaca en dos o tres días de trabajo.",
+        "El oficio se hereda. Los niños aprenden mirando a sus padres y empiezan haciendo los flecos de las orillas. \"Primero los flecos, después el cuerpo, y hasta el final el enrejado\", explica el artesano Julio Baltodano."
+      ],
+      "keywords": [
+        {
+          "word": "folclore",
+          "definition": "conjunto de tradiciones, bailes y música de un pueblo"
+        },
+        {
+          "word": "hamacas",
+          "definition": "camas de tela o hilo que se cuelgan de dos puntos"
+        },
+        {
+          "word": "bastidor",
+          "definition": "armazón de madera donde se sostiene el tejido"
+        },
+        {
+          "word": "pabilo",
+          "definition": "hilo grueso de algodón usado para tejer hamacas"
+        },
+        {
+          "word": "flecos",
+          "definition": "hilos sueltos que cuelgan del borde de una tela"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cómo se conoce a Masaya?",
+          "type": "mc",
+          "opts": [
+            "Como la cuna del folclore nicaragüense",
+            "Como un puerto",
+            "Como una ciudad nueva",
+            "Como la capital"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuántos nudos lleva una hamaca sencilla?",
+          "type": "mc",
+          "opts": [
+            "Cien",
+            "Unos ochocientos",
+            "Cinco mil",
+            "Veinte"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿De qué se hace el pabilo?",
+          "type": "mc",
+          "opts": [
+            "De seda",
+            "De lana",
+            "De algodón",
+            "De plástico"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hacen primero los niños que aprenden el oficio?",
+          "type": "mc",
+          "opts": [
+            "Venden en el mercado",
+            "El enrejado",
+            "El cuerpo de la hamaca",
+            "Los flecos de las orillas"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué habilidad te gustaría aprender de alguien mayor de tu familia? ¿Por qué?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, soy Julio Baltodano y tejo hamacas desde los nueve años. Aquí en el barrio Monimbó casi todas las casas tienen un bastidor en el corredor. Uno crece oyendo ese sonido del hilo tensándose. Mi mamá me sentó al lado de ella y me puso a hacer flecos. Nada más flecos, durante como dos años. Yo me desesperaba, quería hacer el enrejado bonito del centro. Ella me decía: si no aprendés a hacer bien lo que nadie mira, no vas a poder hacer bien lo que todos miran. Ahora se lo digo yo a mis nietos y me río de acordarme. Una hamaca buena tiene que sostener a una persona grande meciéndose por veinte años. Si un solo nudo está flojo, ahí se va a reventar. Por eso uno no puede tejer apurado ni enojado. Yo tejo temprano, con café, cuando está fresco y la cabeza está tranquila. En dos o tres días sale una. Y cuando alguien se acuesta y suspira de gusto, uno sabe que quedó bien hecha.",
+      "source": "Julio Baltodano, artesano hamaquero de Monimbó",
+      "questions": [
+        {
+          "text": "¿A qué edad empezó a tejer Julio?",
+          "type": "mc",
+          "opts": [
+            "A los nueve años",
+            "A los quince años",
+            "A los veinte años",
+            "A los cinco años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué le hizo hacer su mamá durante dos años?",
+          "type": "mc",
+          "opts": [
+            "El enrejado",
+            "Nada más flecos",
+            "Vender hamacas",
+            "Cortar hilo"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué le decía su mamá?",
+          "type": "mc",
+          "opts": [
+            "Que vendiera en el mercado",
+            "Que tejiera más rápido",
+            "Que si no aprende a hacer bien lo que nadie mira, no podrá hacer bien lo que todos miran",
+            "Que estudiara otra cosa"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuándo teje Julio?",
+          "type": "mc",
+          "opts": [
+            "Al mediodía",
+            "Los domingos",
+            "De noche",
+            "Temprano, con café, cuando está fresco"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Costa Rica_0": {
+    "topic": "Los puentes de monos y la vida silvestre",
+    "assignment": "¡Pura vida, corresponsal! Llegaste a Costa Rica. Aquí hay una idea sencilla que salvó a miles de animales: puentes de cuerda sobre las carreteras para que los monos crucen sin bajar al suelo. Ve a verlos y pregunta a quién se le ocurrió.",
+    "article": {
+      "headline": "Puentes de cuerda para que los monos crucen la carretera",
+      "byline": "Corresponsal, El Mundo Nuestro | Manuel Antonio, Puntarenas, Costa Rica",
+      "paragraphs": [
+        "Costa Rica es un país pequeño, pero tiene cerca del cinco por ciento de todas las especies del mundo. Aquí viven monos, perezosos, tucanes, ranas de colores y más de novecientas especies de aves.",
+        "Muchos de esos animales viven en los árboles y casi nunca bajan al suelo. Cuando una carretera parte un bosque en dos, se queda un problema serio: los animales quedan aislados y para cruzar tienen que arriesgarse.",
+        "Los monos y perezosos que bajaban a cruzar morían atropellados o electrocutados en los cables de luz. En algunas zonas turísticas se contaban decenas de muertes cada año.",
+        "La solución fue simple y barata: puentes de cuerda tendidos de un árbol a otro por encima de la carretera. Los animales aprendieron a usarlos en pocas semanas. Hoy hay cientos instalados y los accidentes bajaron muchísimo."
+      ],
+      "keywords": [
+        {
+          "word": "especies",
+          "definition": "tipos diferentes de plantas o animales"
+        },
+        {
+          "word": "perezosos",
+          "definition": "animales de movimientos muy lentos que viven en los árboles"
+        },
+        {
+          "word": "aislados",
+          "definition": "separados, sin poder llegar a otro lugar"
+        },
+        {
+          "word": "atropellados",
+          "definition": "golpeados por un vehículo"
+        },
+        {
+          "word": "electrocutados",
+          "definition": "heridos o muertos por una descarga eléctrica"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué porcentaje de las especies del mundo hay en Costa Rica?",
+          "type": "mc",
+          "opts": [
+            "Cerca del cinco por ciento",
+            "El veinte por ciento",
+            "El cincuenta por ciento",
+            "El uno por ciento"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué problema causa una carretera en el bosque?",
+          "type": "mc",
+          "opts": [
+            "Hace ruido nada más",
+            "Los animales quedan aislados y deben arriesgarse a cruzar",
+            "Ayuda a los animales",
+            "No causa problemas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo morían los monos y perezosos?",
+          "type": "mc",
+          "opts": [
+            "Por el calor",
+            "De hambre",
+            "Atropellados o electrocutados",
+            "Por enfermedades"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuánto tardaron los animales en aprender a usar los puentes?",
+          "type": "mc",
+          "opts": [
+            "Nunca aprendieron",
+            "Un día",
+            "Años",
+            "Pocas semanas"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué problema de tu comunidad crees que tendría una solución sencilla y barata? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, soy Priscilla Vargas y trabajo en un refugio de rescate de fauna cerca de Quepos. Yo estudié veterinaria y llevo doce años en esto. Antes de los puentes, mi trabajo era muy triste. Nos llegaban monos con quemaduras eléctricas horribles. Un mono agarra el cable con la mano y con la cola al mismo tiempo, y la corriente lo atraviesa. Muchos perdían un brazo. Otros no sobrevivían. Y las mamás monas cargan a sus crías en la espalda, así que a veces perdíamos a los dos. Una compañera propuso los puentes. La idea no era nueva, ya se usaba en otros países, pero nadie la había traído aquí. Empezamos con cuerdas donadas y escaleras prestadas. La gente nos veía subidos en los postes y pensaba que estábamos locos. El primer puente lo cruzó un mono carablanca a los once días. Yo lloré. Ahora la compañía eléctrica también forra los cables y las municipalidades nos ayudan. Ya casi no recibimos monos quemados. Ese silencio en la clínica es la mejor noticia de mi vida.",
+      "source": "Priscilla Vargas, veterinaria de fauna silvestre",
+      "questions": [
+        {
+          "text": "¿Cuántos años lleva Priscilla en este trabajo?",
+          "type": "mc",
+          "opts": [
+            "Doce años",
+            "Veinte años",
+            "Dos años",
+            "Cinco años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué los monos sufrían quemaduras eléctricas?",
+          "type": "mc",
+          "opts": [
+            "Por el sol",
+            "Porque agarran el cable con la mano y la cola y la corriente los atraviesa",
+            "Por incendios",
+            "Por el agua"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuántos días tardó el primer mono en cruzar el puente?",
+          "type": "mc",
+          "opts": [
+            "Un año",
+            "Un día",
+            "Once días",
+            "Un mes"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué considera Priscilla la mejor noticia de su vida?",
+          "type": "mc",
+          "opts": [
+            "Viajar a otro país",
+            "Abrir otro refugio",
+            "Ganar un premio",
+            "El silencio en la clínica, casi no recibir monos quemados"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Costa Rica_1": {
+    "topic": "Un país que se mueve con energía limpia",
+    "assignment": "Corresponsal, aquí hay un dato que sorprende al mundo: Costa Rica genera casi toda su electricidad con fuentes renovables. Ve a una planta geotérmica al pie de un volcán y explícanos cómo lo lograron.",
+    "article": {
+      "headline": "Casi toda la luz del país viene del agua, el viento y los volcanes",
+      "byline": "Corresponsal, El Mundo Nuestro | Guanacaste, Costa Rica",
+      "paragraphs": [
+        "Costa Rica genera más del noventa y ocho por ciento de su electricidad con fuentes renovables. Eso significa energía que no se acaba y que casi no contamina: agua, viento, sol y calor de la tierra.",
+        "La mayor parte viene de plantas hidroeléctricas. El país tiene muchos ríos y llueve muchísimo. El agua que baja de las montañas mueve turbinas gigantes que producen electricidad.",
+        "Otra parte viene de la energía geotérmica. Costa Rica tiene volcanes activos, y bajo la tierra el agua se calienta hasta convertirse en vapor. Ese vapor sube por tuberías y también mueve turbinas.",
+        "En Guanacaste hay además enormes campos de molinos de viento. Sumando todo, hay años en que el país funciona meses enteros sin quemar combustibles fósiles. La decisión se tomó hace décadas y hoy da resultados."
+      ],
+      "keywords": [
+        {
+          "word": "renovables",
+          "definition": "fuentes de energía que no se acaban, como el sol o el viento"
+        },
+        {
+          "word": "hidroeléctricas",
+          "definition": "plantas que producen electricidad con la fuerza del agua"
+        },
+        {
+          "word": "turbinas",
+          "definition": "máquinas con aspas que giran para generar energía"
+        },
+        {
+          "word": "geotérmica",
+          "definition": "energía que se obtiene del calor del interior de la Tierra"
+        },
+        {
+          "word": "fósiles",
+          "definition": "combustibles como el petróleo y el carbón, formados hace millones de años"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué porcentaje de su electricidad genera Costa Rica con fuentes renovables?",
+          "type": "mc",
+          "opts": [
+            "Más del noventa y ocho por ciento",
+            "El veinte por ciento",
+            "El setenta por ciento",
+            "El cincuenta por ciento"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿De dónde viene la mayor parte de esa energía?",
+          "type": "mc",
+          "opts": [
+            "Del sol",
+            "De plantas hidroeléctricas",
+            "Del viento",
+            "Del carbón"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué aprovecha la energía geotérmica?",
+          "type": "mc",
+          "opts": [
+            "La luz del sol",
+            "La lluvia",
+            "El calor bajo la tierra",
+            "Las olas del mar"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hay en Guanacaste además de plantas geotérmicas?",
+          "type": "mc",
+          "opts": [
+            "Pozos de petróleo",
+            "Fábricas",
+            "Minas de carbón",
+            "Campos de molinos de viento"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué fuente de energía crees que sería mejor para tu ciudad? Explica por qué.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, mi nombre es Álvaro Jiménez y soy técnico en la planta geotérmica de Miravalles, aquí en Guanacaste. Llevo dieciocho años trabajando al pie de este volcán. La gente se imagina algo peligroso, con lava y todo. No es así. Nosotros perforamos pozos muy profundos, de más de dos kilómetros. Allá abajo el agua está a doscientos cuarenta grados por el calor del volcán. Esa agua sube convertida en vapor, mueve la turbina y genera electricidad. Y aquí viene lo bonito: después de usar el vapor, el agua la volvemos a inyectar en la tierra. Se recalienta y vuelve a subir. Es un ciclo, no se gasta. Lo que más me enorgullece es explicárselo a los estudiantes que nos visitan. Les digo que Costa Rica quitó su ejército en 1948 y puso esa plata en escuelas, salud y en esto. No somos un país rico. Somos un país que decidió en qué gastar. Cuando ellos ven que se puede, algo les cambia en la cara.",
+      "source": "Álvaro Jiménez, técnico de planta geotérmica",
+      "questions": [
+        {
+          "text": "¿Cuánto llevan de profundidad los pozos?",
+          "type": "mc",
+          "opts": [
+            "Más de dos kilómetros",
+            "Diez metros",
+            "Veinte kilómetros",
+            "Cien metros"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿A qué temperatura está el agua allá abajo?",
+          "type": "mc",
+          "opts": [
+            "A cien grados",
+            "A doscientos cuarenta grados",
+            "A cincuenta grados",
+            "A mil grados"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacen con el agua después de usar el vapor?",
+          "type": "mc",
+          "opts": [
+            "La guardan en tanques",
+            "La tiran al río",
+            "La vuelven a inyectar en la tierra",
+            "La venden"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué les dice Álvaro a los estudiantes sobre Costa Rica?",
+          "type": "mc",
+          "opts": [
+            "Que tiene muchos volcanes",
+            "Que necesita más plantas",
+            "Que es un país rico",
+            "Que quitó su ejército y puso esa plata en escuelas, salud y energía"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Costa Rica_2": {
+    "topic": "Las tortugas marinas y las noches de arribada",
+    "assignment": "Corresponsal, última misión en Costa Rica y es de noche. En la playa de Ostional ocurre algo que casi no pasa en ningún otro lugar del planeta: miles de tortugas salen del mar la misma noche a poner huevos. Ve y cuéntanos qué viste.",
+    "article": {
+      "headline": "La noche en que miles de tortugas salen del mar a la vez",
+      "byline": "Corresponsal, El Mundo Nuestro | Ostional, Guanacaste, Costa Rica",
+      "paragraphs": [
+        "En la playa de Ostional pasa un fenómeno llamado arribada. Durante unas pocas noches al mes, miles de tortugas lora salen del mar al mismo tiempo para poner sus huevos en la arena.",
+        "Puede haber tantas tortugas juntas que casi no se ve la arena. Cada tortuga cava un hueco con las aletas traseras, pone alrededor de cien huevos, tapa el nido y regresa al mar. Todo le toma cerca de una hora.",
+        "Hay tantos nidos que las tortugas que llegan después rompen sin querer los huevos de las primeras. Muchos huevos de los primeros días se pierden de todos modos y se pudren en la arena.",
+        "Por eso existe un acuerdo poco común. La comunidad de Ostional puede recolectar legalmente los huevos de los primeros días, los que igual se perderían. A cambio, los vecinos vigilan la playa y protegen los nidos que sí van a nacer."
+      ],
+      "keywords": [
+        {
+          "word": "arribada",
+          "definition": "llegada masiva de tortugas a la playa para poner huevos"
+        },
+        {
+          "word": "aletas",
+          "definition": "extremidades planas que usan las tortugas para nadar y cavar"
+        },
+        {
+          "word": "nido",
+          "definition": "hueco donde un animal pone y protege sus huevos"
+        },
+        {
+          "word": "recolectar",
+          "definition": "recoger o juntar algo"
+        },
+        {
+          "word": "vigilan",
+          "definition": "cuidan y observan para que nada malo pase"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cómo se llama el fenómeno de Ostional?",
+          "type": "mc",
+          "opts": [
+            "Arribada",
+            "Desove único",
+            "Marea alta",
+            "Migración"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuántos huevos pone cada tortuga aproximadamente?",
+          "type": "mc",
+          "opts": [
+            "Cincuenta",
+            "Alrededor de cien",
+            "Mil",
+            "Diez"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Por qué se pierden muchos huevos de los primeros días?",
+          "type": "mc",
+          "opts": [
+            "Por la lluvia",
+            "Por el sol",
+            "Porque las tortugas que llegan después los rompen sin querer",
+            "Porque se los comen los peces"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hace la comunidad a cambio de poder recolectar huevos?",
+          "type": "mc",
+          "opts": [
+            "Cierra la playa",
+            "Cría tortugas",
+            "Paga un impuesto",
+            "Vigila la playa y protege los nidos que sí van a nacer"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Te parece buena idea el acuerdo de Ostional? Da una razón a favor y una en contra.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas noches, me llamo Karol Espinoza y soy vigilante de playa en Ostional. Trabajo de noche, de seis de la tarde a cinco de la mañana. Uso una linterna de luz roja, porque la luz blanca desorienta a las tortugas y las hace regresar al mar sin poner. La primera vez que vi una arribada tenía ocho años. Mi papá me despertó y me dijo: vení a ver esto. Había tortugas hasta donde alcanzaba la vista. No se oía nada más que el mar y las aletas raspando la arena. Yo pensé que estaba soñando. Mucha gente de afuera nos critica por lo del aprovechamiento de huevos. Dicen que cómo es posible. Yo les explico con calma: nosotros solo tomamos los de las primeras treinta y seis horas, los que las otras tortugas van a destruir igual. Y gracias a eso nadie aquí saquea nidos, porque el pueblo entero cuida la playa. Antes venían ladrones de huevos armados. Ahora no pasan de la entrada. La tortuga nos da de comer y nosotros la cuidamos. Así de simple.",
+      "source": "Karol Espinoza, vigilante de playa en Ostional",
+      "questions": [
+        {
+          "text": "¿Por qué usa una linterna de luz roja?",
+          "type": "mc",
+          "opts": [
+            "Porque la luz blanca desorienta a las tortugas",
+            "Porque es más bonita",
+            "Porque se ve más lejos",
+            "Porque gasta menos batería"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué edad tenía cuando vio su primera arribada?",
+          "type": "mc",
+          "opts": [
+            "Cinco años",
+            "Ocho años",
+            "Quince años",
+            "Veinte años"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿De cuántas horas son los huevos que recolectan?",
+          "type": "mc",
+          "opts": [
+            "De un mes",
+            "De las primeras doce horas",
+            "De las primeras treinta y seis horas",
+            "De toda la semana"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasaba antes con los ladrones de huevos?",
+          "type": "mc",
+          "opts": [
+            "Trabajaban con el pueblo",
+            "Se los llevaba la policía",
+            "No existían",
+            "Venían armados y ahora no pasan de la entrada"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

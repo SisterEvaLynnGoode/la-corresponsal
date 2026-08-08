@@ -1,0 +1,818 @@
+{
+  "Panamá_0": {
+    "topic": "El Canal de Panamá y la gente que lo mueve",
+    "assignment": "¡Corresponsal, llegaste a Panamá! Aquí los barcos cruzan de un océano a otro por en medio de la tierra. Ve a las esclusas de Miraflores y averigua quiénes hacen posible ese milagro de ingeniería todos los días.",
+    "article": {
+      "headline": "Los barcos suben una escalera de agua",
+      "byline": "Corresponsal, El Mundo Nuestro | Esclusas de Miraflores, Panamá",
+      "paragraphs": [
+        "El Canal de Panamá une el océano Atlántico con el océano Pacífico. Mide unos ochenta kilómetros. Un barco que lo cruza se ahorra semanas de viaje: antes tenía que rodear toda América del Sur.",
+        "Hay un detalle que sorprende a mucha gente. Los dos océanos no están a la misma altura que el lago del centro del canal. El lago Gatún está veintiséis metros más arriba. Por eso los barcos tienen que subir.",
+        "Para eso existen las esclusas. Son cámaras gigantes de concreto que se llenan y se vacían de agua. El barco entra, se cierran las compuertas, entra el agua y el barco sube flotando. Es una escalera de agua.",
+        "Lo más impresionante es que no usan bombas. El agua entra y sale solo por gravedad, desde el lago. Esta obra de ingeniería cambió el comercio del mundo entero. Panamá recuperó el control del canal el 31 de diciembre de 1999 y desde entonces lo administran los panameños."
+      ],
+      "keywords": [
+        {
+          "word": "esclusas",
+          "definition": "cámaras con compuertas que suben o bajan barcos con agua"
+        },
+        {
+          "word": "compuertas",
+          "definition": "puertas grandes que dejan pasar o detienen el agua"
+        },
+        {
+          "word": "gravedad",
+          "definition": "fuerza que hace que las cosas caigan hacia abajo"
+        },
+        {
+          "word": "administran",
+          "definition": "dirigen y manejan algo"
+        },
+        {
+          "word": "ingeniería",
+          "definition": "ciencia de diseñar y construir máquinas y obras grandes"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuánto mide aproximadamente el Canal de Panamá?",
+          "type": "mc",
+          "opts": [
+            "Unos ochenta kilómetros",
+            "Quinientos kilómetros",
+            "Mil kilómetros",
+            "Diez kilómetros"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué tienen que subir los barcos?",
+          "type": "mc",
+          "opts": [
+            "Porque hay montañas",
+            "Porque el lago Gatún está veintiséis metros más arriba",
+            "Porque el mar baja",
+            "Por el viento"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué son las esclusas?",
+          "type": "mc",
+          "opts": [
+            "Puertos",
+            "Puentes",
+            "Cámaras de concreto que se llenan y vacían de agua",
+            "Túneles"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo entra y sale el agua de las esclusas?",
+          "type": "mc",
+          "opts": [
+            "Con motores",
+            "Con el viento",
+            "Con bombas eléctricas",
+            "Solo por gravedad, desde el lago"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué obra o construcción de tu ciudad te parece impresionante? Explica por qué.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, me llamo Ricaurte Sánchez y soy práctico del Canal de Panamá. Un práctico es la persona que se sube al barco y toma el mando para cruzarlo. Sí, oyó bien: durante el cruce, el capitán del barco me obedece a mí. Es la única parte del mundo donde eso pasa por ley. Yo llevo veintiséis años en esto. Manejo barcos de trescientos metros de largo por un canal donde a veces me sobran sesenta centímetros de cada lado. Sesenta centímetros. Uno aprende a respirar despacio. Mi abuelo trabajó en el canal cuando lo administraban los americanos. Él era pintor de compuertas y no podía entrar a ciertas áreas ni ganar el mismo sueldo. Había dos escalas de pago según quién eras. Cuando yo me gradué de práctico, mi abuelo ya estaba viejito, pero lo llevé a Miraflores a verme trabajar. Se agarró de la baranda y me dijo: mijo, esto ahora es tuyo. De nosotros. Yo pienso en él cada vez que subo a un barco.",
+      "source": "Ricaurte Sánchez, práctico del Canal de Panamá",
+      "questions": [
+        {
+          "text": "¿Qué hace un práctico del canal?",
+          "type": "mc",
+          "opts": [
+            "Se sube al barco y toma el mando para cruzarlo",
+            "Vende boletos",
+            "Repara motores",
+            "Limpia las esclusas"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto espacio le sobra a veces a cada lado del barco?",
+          "type": "mc",
+          "opts": [
+            "Diez metros",
+            "Sesenta centímetros",
+            "Cinco metros",
+            "Un metro"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuál era el trabajo de su abuelo?",
+          "type": "mc",
+          "opts": [
+            "Ingeniero",
+            "Práctico",
+            "Pintor de compuertas",
+            "Capitán"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué le dijo su abuelo en Miraflores?",
+          "type": "mc",
+          "opts": [
+            "Que se cambiara de trabajo",
+            "Que él lo construyó",
+            "Que era peligroso",
+            "Que esto ahora es tuyo, de nosotros"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Panamá_1": {
+    "topic": "Las molas del pueblo guna",
+    "assignment": "Corresponsal, toma una avioneta hacia el archipiélago de Guna Yala. Allí las mujeres guna cosen molas: capas de tela cortadas una sobre otra que forman figuras increíbles. Ve a aprender cómo se hacen y qué significan.",
+    "article": {
+      "headline": "Capa sobre capa: el arte de cortar para revelar",
+      "byline": "Corresponsal, El Mundo Nuestro | Guna Yala, Panamá",
+      "paragraphs": [
+        "El pueblo guna vive en el archipiélago de Guna Yala, en el Caribe panameño. Son más de trescientas islas, aunque solo unas cuarenta están habitadas. Los guna se gobiernan a sí mismos con sus propias autoridades.",
+        "Las mujeres guna son famosas por las molas. Una mola es un panel de tela que se cose al frente y a la espalda de la blusa tradicional. Nunca se pinta ni se estampa: todo el dibujo se hace cortando y cosiendo.",
+        "La técnica se llama aplicación inversa. Se ponen varias capas de tela de colores distintos, una encima de otra. Luego se corta la capa de arriba con mucho cuidado y aparece el color de abajo. Cada corte se cose a mano con puntadas diminutas.",
+        "Los diseños vienen de la naturaleza y de los sueños: peces, tortugas, plantas, figuras geométricas. Una mola bien hecha puede llevar cinco capas y más de cien horas de trabajo. Nunca hay dos iguales."
+      ],
+      "keywords": [
+        {
+          "word": "archipiélago",
+          "definition": "grupo de muchas islas cercanas entre sí"
+        },
+        {
+          "word": "habitadas",
+          "definition": "donde vive gente"
+        },
+        {
+          "word": "mola",
+          "definition": "panel de tela guna hecho con capas cortadas y cosidas"
+        },
+        {
+          "word": "capas",
+          "definition": "telas puestas una encima de otra"
+        },
+        {
+          "word": "puntadas",
+          "definition": "cada uno de los pasos del hilo al coser"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántas islas tiene aproximadamente Guna Yala?",
+          "type": "mc",
+          "opts": [
+            "Más de trescientas",
+            "Mil",
+            "Diez",
+            "Cuarenta"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo se hace el dibujo de una mola?",
+          "type": "mc",
+          "opts": [
+            "Se estampa con máquina",
+            "Se hace cortando y cosiendo capas",
+            "Se dibuja con marcador",
+            "Se pinta"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo se llama la técnica?",
+          "type": "mc",
+          "opts": [
+            "Teñido natural",
+            "Bordado libre",
+            "Aplicación inversa",
+            "Tejido de punto"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántas horas puede llevar una mola bien hecha?",
+          "type": "mc",
+          "opts": [
+            "Mil horas",
+            "Dos horas",
+            "Diez horas",
+            "Más de cien horas"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué diseño harías tú si pudieras crear una mola? Describe qué figuras usarías y por qué.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Nuegambi. Buenos días. Me llamo Olonagdi Pérez y soy de la isla de Ustupu. Coso molas desde los seis años. Mi madre me dio aguja e hilo y una tela pequeña y me dijo que empezara. Mis primeras puntadas eran grandotas y feas. Ella no me las corregía, solo me decía: seguí. Las molas cuentan cosas. Algunas cuentan historias de nuestros antepasados, otras muestran animales del mar, y algunas vienen de sueños. Yo he cosido molas de un sueño donde vi un pez con alas. Nadie más tiene esa mola. Es mía. Trabajo con cuatro o cinco capas de tela. Corto arriba y aparece el color de abajo. Hay que pensar al revés, imaginarse el resultado antes de cortar. Si uno se equivoca, no hay cómo pegar la tela otra vez. Ahora vienen compradores que quieren molas rápidas y baratas, cosidas a máquina. Yo no hago eso. Prefiero vender menos. Una mola es la mano de una mujer. Si la hace una máquina, ya no dice nada.",
+      "source": "Olonagdi Pérez, artesana guna de Ustupu",
+      "questions": [
+        {
+          "text": "¿A qué edad empezó a coser molas?",
+          "type": "mc",
+          "opts": [
+            "A los seis años",
+            "A los diez años",
+            "A los quince años",
+            "A los tres años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué le decía su madre cuando sus puntadas eran feas?",
+          "type": "mc",
+          "opts": [
+            "Que las corrigiera",
+            "Que siguiera",
+            "Que empezara de nuevo",
+            "Que parara"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿De dónde vino el diseño del pez con alas?",
+          "type": "mc",
+          "opts": [
+            "Del mar",
+            "De un libro",
+            "De un sueño",
+            "De su madre"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué no hace molas a máquina?",
+          "type": "mc",
+          "opts": [
+            "Porque son más caras",
+            "Porque están prohibidas",
+            "Porque no tiene máquina",
+            "Porque una mola es la mano de una mujer y a máquina ya no dice nada"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Panamá_2": {
+    "topic": "El café geisha de las montañas de Boquete",
+    "assignment": "Corresponsal, sube a Boquete, en las montañas de Chiriquí. Allí se cultiva el café más caro del mundo. Nadie lo esperaba: fue casi un accidente. Ve a la finca y pregunta cómo pasó.",
+    "article": {
+      "headline": "El café que nadie quería y hoy es el más caro del mundo",
+      "byline": "Corresponsal, El Mundo Nuestro | Boquete, Chiriquí, Panamá",
+      "paragraphs": [
+        "En las montañas de Boquete, cerca del volcán Barú, crece un café llamado geisha. Sus granos se venden en subastas internacionales a precios altísimos. En algunas ventas han superado los mil dólares por libra.",
+        "La historia empieza con un accidente. La planta llegó de Etiopía a Centroamérica hace décadas, pero no gustó. Producía poco y las ramas eran largas y desordenadas. Los agricultores la sembraron en las orillas de las fincas, casi como cerco.",
+        "En 2004, una familia productora de Boquete separó por curiosidad los granos de esas plantas olvidadas y los llevó a una competencia. Los jueces probaron la taza y no lo podían creer. Sabía a jazmín, a durazno y a bergamota.",
+        "Ese año el geisha ganó el concurso y rompió el récord de precio. Hoy Panamá es famoso por ese café. Lo que salvó al geisha fue la altura y el frío: crece arriba de los mil quinientos metros, donde el grano madura muy lento."
+      ],
+      "keywords": [
+        {
+          "word": "subastas",
+          "definition": "ventas donde gana quien ofrece más dinero"
+        },
+        {
+          "word": "cerco",
+          "definition": "línea de plantas o postes que marca el límite de un terreno"
+        },
+        {
+          "word": "jueces",
+          "definition": "personas que evalúan y deciden en una competencia"
+        },
+        {
+          "word": "bergamota",
+          "definition": "fruta cítrica de aroma perfumado"
+        },
+        {
+          "word": "récord",
+          "definition": "marca máxima alcanzada hasta el momento"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿De dónde llegó originalmente la planta geisha?",
+          "type": "mc",
+          "opts": [
+            "De Etiopía",
+            "De Brasil",
+            "De Panamá",
+            "De Colombia"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué al principio no gustaba?",
+          "type": "mc",
+          "opts": [
+            "Sabía mal",
+            "Producía poco y tenía ramas largas y desordenadas",
+            "Era muy cara",
+            "No crecía"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasó en 2004?",
+          "type": "mc",
+          "opts": [
+            "Bajó el precio",
+            "Se dejó de sembrar",
+            "Una familia la llevó a una competencia y ganó",
+            "Se descubrió la planta"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué ayudó a que el geisha tuviera ese sabor?",
+          "type": "mc",
+          "opts": [
+            "Mucha agua",
+            "Fertilizantes especiales",
+            "El calor de la costa",
+            "La altura y el frío, arriba de los mil quinientos metros"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Conoces algo que al principio nadie valoraba y después resultó muy valioso? Cuéntalo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, soy Eduviges Caballero y trabajo la cosecha de café en Boquete desde hace treinta años. Soy recolectora. Mi trabajo es escoger el grano en la planta. Y esa palabra, escoger, es la clave de todo. En el café corriente uno agarra la rama y la ordeña completa. Cae el maduro, el verde y el pasado, todo junto al canasto. Con el geisha no se puede. Hay que ir grano por grano y tomar solo los que están rojos brillantes, en su punto exacto. Ni un día antes ni un día después. Si uno mete un grano verde, arruina el sabor de todo el lote. Somos como cuarenta recolectoras y a nosotras nos pagan mejor que en otras fincas, porque el patrón sabe que sin buen ojo no hay café caro. Cuando me dicen que una libra de lo que yo recojo se vende en mil dólares al otro lado del mundo, me da risa y también orgullo. Alguien en Japón se está tomando lo que salió de estos dedos.",
+      "source": "Eduviges Caballero, recolectora de café en Boquete",
+      "questions": [
+        {
+          "text": "¿Cuál es el trabajo de Eduviges?",
+          "type": "mc",
+          "opts": [
+            "Escoger el grano en la planta",
+            "Vender el café",
+            "Sembrar plantas",
+            "Tostar el café"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo se recoge el café corriente?",
+          "type": "mc",
+          "opts": [
+            "Grano por grano",
+            "Se ordeña la rama completa",
+            "Con máquina",
+            "Con las manos limpias"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa si mete un grano verde?",
+          "type": "mc",
+          "opts": [
+            "Pesa menos",
+            "No pasa nada",
+            "Arruina el sabor de todo el lote",
+            "Se cocina distinto"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué les pagan mejor que en otras fincas?",
+          "type": "mc",
+          "opts": [
+            "Porque son pocas",
+            "Porque el gobierno lo exige",
+            "Porque trabajan más horas",
+            "Porque sin buen ojo no hay café caro"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Cuba_0": {
+    "topic": "Los autos clásicos de La Habana",
+    "assignment": "¡Corresponsal, llegaste a Cuba! En las calles de La Habana ruedan autos de los años cincuenta que en otros países ya son piezas de museo. Aquí siguen trabajando. Ve a un taller y descubre cómo los mantienen vivos.",
+    "article": {
+      "headline": "Autos de los años cincuenta que siguen rodando",
+      "byline": "Corresponsal, El Mundo Nuestro | La Habana, Cuba",
+      "paragraphs": [
+        "Caminar por La Habana es como entrar a una fotografía antigua. Por el Malecón pasan autos enormes de colores brillantes: Chevrolet, Ford, Buick y Cadillac de los años cuarenta y cincuenta. Los cubanos les dicen almendrones.",
+        "Estos autos llegaron a la isla antes de 1959. Después, durante muchas décadas, casi no entraron carros nuevos ni repuestos originales. Los dueños tuvieron que arreglárselas solos para mantenerlos andando.",
+        "Así nació una cultura de mecánica creativa. Si no hay una pieza, se fabrica. Muchos almendrones llevan hoy motores de camión, frenos de otro modelo y piezas hechas a mano en un torno del barrio.",
+        "Los mecánicos cubanos son famosos por eso. Le llaman resolver: encontrar la manera con lo que hay. Muchos almendrones trabajan como taxis colectivos y son parte del transporte diario de la ciudad."
+      ],
+      "keywords": [
+        {
+          "word": "almendrones",
+          "definition": "nombre cubano para los autos clásicos estadounidenses"
+        },
+        {
+          "word": "repuestos",
+          "definition": "piezas nuevas para reemplazar las que se dañan"
+        },
+        {
+          "word": "mecánica",
+          "definition": "trabajo de arreglar máquinas y motores"
+        },
+        {
+          "word": "torno",
+          "definition": "máquina que da forma a piezas de metal girándolas"
+        },
+        {
+          "word": "colectivos",
+          "definition": "que transportan a varias personas a la vez"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cómo les dicen los cubanos a estos autos?",
+          "type": "mc",
+          "opts": [
+            "Almendrones",
+            "Antiguos",
+            "Máquinas nuevas",
+            "Clásicos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuándo llegaron estos autos a la isla?",
+          "type": "mc",
+          "opts": [
+            "Después de 1990",
+            "Antes de 1959",
+            "En el año 2000",
+            "El siglo pasado, en los ochenta"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacen si no hay una pieza?",
+          "type": "mc",
+          "opts": [
+            "Se cambia el auto",
+            "Se deja el auto parado",
+            "Se fabrica",
+            "Se compra en otro país"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué significa resolver en Cuba?",
+          "type": "mc",
+          "opts": [
+            "Pedir ayuda al gobierno",
+            "Estudiar mecánica",
+            "Vender el auto",
+            "Encontrar la manera con lo que hay"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Has visto a alguien arreglar algo de forma creativa por falta de recursos? Descríbelo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Qué bolá, asere. Me llamo Yoandri Fuentes y tengo un taller en Centro Habana. Este Chevrolet del cincuenta y siete era de mi bisabuelo. Cuatro generaciones manejando el mismo carro. De original ya casi no le queda nada, te digo la verdad. Tiene motor de camión ruso, la caja de velocidades es de un Hyundai, y los frenos se los saqué a un Lada. Las gomas son de por ahí. Lo único original es la carrocería y el timón. Aquí uno aprende a inventar desde niño. ¿Que se rompió una pieza y no existe en la isla? Pues la torneo yo mismo, o la fabrico de otra cosa. Yo he hecho empaquetaduras con una chancleta de goma. En serio. Y funcionan. La gente de afuera viene y me dice que soy un artista. Yo no sé si soy artista, pero sé que este carro me da de comer. Llevo turistas al Malecón, llevo gente al hospital, lo que salga. Mi hijo tiene catorce años y ya sabe cambiar un carburador. Este carro nos va a enterrar a todos.",
+      "source": "Yoandri Fuentes, mecánico y chofer de almendrón",
+      "questions": [
+        {
+          "text": "¿De quién era originalmente el Chevrolet?",
+          "type": "mc",
+          "opts": [
+            "De su bisabuelo",
+            "Lo compró él",
+            "De un vecino",
+            "De su padre"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué es lo único original que le queda al auto?",
+          "type": "mc",
+          "opts": [
+            "El motor",
+            "La carrocería y el timón",
+            "Los frenos",
+            "Las gomas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Con qué dice que ha hecho empaquetaduras?",
+          "type": "mc",
+          "opts": [
+            "Con plástico",
+            "Con papel",
+            "Con una chancleta de goma",
+            "Con metal"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué sabe hacer ya su hijo de catorce años?",
+          "type": "mc",
+          "opts": [
+            "Pintar el carro",
+            "Vender repuestos",
+            "Manejar",
+            "Cambiar un carburador"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Cuba_1": {
+    "topic": "Los organopónicos: huertos en medio de la ciudad",
+    "assignment": "Corresponsal, en La Habana hay terrenos que antes eran baldíos y hoy producen toneladas de verduras. Se llaman organopónicos y nacieron de una crisis. Ve a uno y cuéntanos cómo funciona la agricultura urbana.",
+    "article": {
+      "headline": "Lechugas donde antes había escombros",
+      "byline": "Corresponsal, El Mundo Nuestro | La Habana, Cuba",
+      "paragraphs": [
+        "En medio de La Habana, entre edificios, hay huertos organizados en hileras largas y ordenadas. Se llaman organopónicos. Producen lechuga, acelga, rábano, tomate y muchas hierbas medicinales.",
+        "Nacieron en los años noventa, en un momento muy difícil. La isla se quedó casi sin combustible, sin fertilizantes químicos y sin transporte. Traer comida del campo a la ciudad se volvió carísimo.",
+        "La respuesta fue producir la comida dentro de la ciudad. Se usaron terrenos baldíos, patios y azoteas. Como no había productos químicos, se aprendió a cultivar con abono orgánico, composta y control biológico de plagas.",
+        "Hoy La Habana tiene cientos de organopónicos. Muchos venden directamente al vecindario, sin intermediarios ni transporte. Investigadores de varios países han venido a estudiar el modelo cubano de agricultura urbana."
+      ],
+      "keywords": [
+        {
+          "word": "organopónicos",
+          "definition": "huertos urbanos cubanos que cultivan sin químicos"
+        },
+        {
+          "word": "hileras",
+          "definition": "filas ordenadas de plantas"
+        },
+        {
+          "word": "baldíos",
+          "definition": "terrenos vacíos y sin uso"
+        },
+        {
+          "word": "composta",
+          "definition": "abono hecho con restos de plantas y comida"
+        },
+        {
+          "word": "plagas",
+          "definition": "insectos o animales que dañan los cultivos"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuándo nacieron los organopónicos?",
+          "type": "mc",
+          "opts": [
+            "En los años noventa",
+            "En 2010",
+            "Hace un año",
+            "En los años cincuenta"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué se volvió difícil traer comida del campo?",
+          "type": "mc",
+          "opts": [
+            "Por lluvias",
+            "Porque faltaba combustible y transporte",
+            "Porque no había agricultores",
+            "Por la guerra"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué se usó para cultivar sin químicos?",
+          "type": "mc",
+          "opts": [
+            "Semillas importadas",
+            "Más agua",
+            "Abono orgánico, composta y control biológico",
+            "Máquinas nuevas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿A quién le venden muchos organopónicos?",
+          "type": "mc",
+          "opts": [
+            "A supermercados grandes",
+            "A hoteles solamente",
+            "A otros países",
+            "Directamente al vecindario"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Sería posible un huerto en tu escuela o tu barrio? ¿Qué se necesitaría?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, me llamo Caridad Betancourt y llevo el organopónico de esta cuadra desde hace dieciocho años. Este terreno era un basurero. Había escombros de un edificio que se cayó, latas, hierros viejos. Nadie pasaba por aquí. Sacamos la basura entre los vecinos, a mano, en carretillas. Nos tomó cuatro meses. Yo era maestra de primaria, no sabía nada de sembrar. Aprendí en un curso del gobierno y de una vecina campesina que se había mudado del campo. Ella me enseñó lo importante: la tierra está viva, hay que alimentarla. Nosotros hacemos nuestra composta con restos de comida del barrio. Y para las plagas no usamos veneno. Sembramos albahaca y flores entre las lechugas, porque atraen insectos buenos que se comen a los malos. Vendo aquí mismo, en la puerta. La gente viene con su jaba, escoge su lechuga y se la corto delante de ella. Más fresco imposible. Lo que más me gusta es cuando vienen los niños de la escuela y me preguntan si las zanahorias crecen en el árbol.",
+      "source": "Caridad Betancourt, encargada de organopónico",
+      "questions": [
+        {
+          "text": "¿Qué había antes en ese terreno?",
+          "type": "mc",
+          "opts": [
+            "Un basurero con escombros",
+            "Una escuela",
+            "Un edificio nuevo",
+            "Un parque"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuál era la profesión de Caridad antes?",
+          "type": "mc",
+          "opts": [
+            "Campesina",
+            "Maestra de primaria",
+            "Enfermera",
+            "Ingeniera"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué le enseñó la vecina campesina?",
+          "type": "mc",
+          "opts": [
+            "A regar mucho",
+            "A vender",
+            "Que la tierra está viva y hay que alimentarla",
+            "A usar máquinas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo controlan las plagas?",
+          "type": "mc",
+          "opts": [
+            "Con humo",
+            "Con redes",
+            "Con veneno",
+            "Sembrando albahaca y flores que atraen insectos buenos"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Cuba_2": {
+    "topic": "El son cubano y la música que dio origen a la salsa",
+    "assignment": "Corresponsal, ve al oriente de Cuba, a Santiago. De allí salió el son, la música que después dio origen a la salsa que se baila en el mundo entero. Busca a los soneros viejos y pregúntales de dónde salió ese ritmo.",
+    "article": {
+      "headline": "Del oriente cubano al mundo: la historia del son",
+      "byline": "Corresponsal, El Mundo Nuestro | Santiago de Cuba, Cuba",
+      "paragraphs": [
+        "El son nació en el oriente de Cuba, en las montañas cerca de Santiago, a finales del siglo diecinueve. Es la mezcla de dos herencias: la guitarra y la melodía que vinieron de España, y los tambores y los ritmos que vinieron de África.",
+        "El son tiene una estructura muy particular. Primero viene una parte cantada con letra fija. Después llega el montuno, donde el coro repite una frase corta y el cantante improvisa encima. Esa parte puede durar lo que quiera el grupo.",
+        "Los instrumentos clásicos son el tres, una guitarra cubana de tres pares de cuerdas, junto con el bongó, las maracas, el contrabajo y la clave. La clave son dos palitos de madera que marcan el patrón rítmico de todo.",
+        "En los años cuarenta y cincuenta el son viajó a Nueva York. Allí músicos cubanos y puertorriqueños lo mezclaron con jazz y otros ritmos caribeños. De esa mezcla salió lo que hoy llamamos salsa."
+      ],
+      "keywords": [
+        {
+          "word": "herencias",
+          "definition": "cosas que se reciben de generaciones anteriores"
+        },
+        {
+          "word": "montuno",
+          "definition": "parte del son donde el coro repite y el cantante improvisa"
+        },
+        {
+          "word": "improvisa",
+          "definition": "inventa en el momento, sin tenerlo preparado"
+        },
+        {
+          "word": "tres",
+          "definition": "guitarra cubana de tres pares de cuerdas"
+        },
+        {
+          "word": "clave",
+          "definition": "dos palitos de madera que marcan el ritmo base"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde nació el son?",
+          "type": "mc",
+          "opts": [
+            "En el oriente de Cuba, cerca de Santiago",
+            "En Nueva York",
+            "En Puerto Rico",
+            "En La Habana"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué dos herencias se mezclan en el son?",
+          "type": "mc",
+          "opts": [
+            "La francesa y la inglesa",
+            "La española y la africana",
+            "La indígena y la asiática",
+            "La mexicana y la cubana"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa en el montuno?",
+          "type": "mc",
+          "opts": [
+            "Termina la canción",
+            "Todos callan",
+            "El coro repite y el cantante improvisa",
+            "Se toca más lento"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es la clave?",
+          "type": "mc",
+          "opts": [
+            "Una guitarra",
+            "Un tipo de canto",
+            "Un tambor",
+            "Dos palitos de madera que marcan el ritmo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué música se escucha en tu casa? ¿De dónde viene y qué historia tiene para tu familia?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Oye, mi nombre es Radamés Terry y toco el tres desde hace cincuenta y dos años. Aquí en Santiago la música no se estudia en una escuela, se agarra en la calle. Yo aprendí en el portal de mi casa, viendo a los viejos tocar los domingos. Nadie me explicó nada con papel. Uno mira las manos y repite hasta que sale. Lo primero que hay que entender del son es la clave. Son dos palitos que hacen un patrón sencillo, pero todo lo demás se acomoda encima de eso. Si el grupo se sale de clave, la música se cae, se pone fea, aunque cada uno toque bien su instrumento. La clave manda. Es como el latido del corazón de la música. La gente joven ahora hace reguetón y a mí me parece bien, que hagan lo suyo. Pero cuando les pongo un son viejo y les digo que ahí está la raíz de la salsa que bailan sus primos en Miami y en Nueva York, se quedan pensando. Esa semilla salió de estas montañas.",
+      "source": "Radamés Terry, tresero santiaguero",
+      "questions": [
+        {
+          "text": "¿Cuántos años lleva tocando el tres?",
+          "type": "mc",
+          "opts": [
+            "Cincuenta y dos años",
+            "Treinta años",
+            "Diez años",
+            "Veinte años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Dónde aprendió a tocar?",
+          "type": "mc",
+          "opts": [
+            "En una escuela de música",
+            "En el portal de su casa, viendo a los viejos",
+            "En La Habana",
+            "En Nueva York"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa si el grupo se sale de clave?",
+          "type": "mc",
+          "opts": [
+            "Empieza el montuno",
+            "No pasa nada",
+            "La música se cae y se pone fea",
+            "Se toca más rápido"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué opina del reguetón que hacen los jóvenes?",
+          "type": "mc",
+          "opts": [
+            "Que no es música",
+            "Que debe prohibirse",
+            "Que está mal",
+            "Que le parece bien, que hagan lo suyo"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

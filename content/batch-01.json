@@ -1,0 +1,818 @@
+{
+  "México_0": {
+    "topic": "Los mercados tradicionales de Oaxaca",
+    "assignment": "Hola, corresponsal. Ya llegaste a México. Desde Oaxaca nos llegan noticias importantes: un mercado de 500 años está cambiando. Habla con la comunidad, conoce a los artesanos y cuéntanos su historia. ¡Cuento contigo!",
+    "article": {
+      "headline": "El mercado de colores: tradición viva en Oaxaca",
+      "byline": "Corresponsal, El Mundo Nuestro | Oaxaca, México",
+      "paragraphs": [
+        "En el centro de la ciudad de Oaxaca existe un lugar donde el tiempo parece detenerse. El Mercado Benito Juárez lleva más de quinientos años en el mismo sitio. Sus colores, olores y sonidos cuentan la historia de un pueblo entero.",
+        "Las artesanas llegan desde los pueblos de los valles centrales cada semana. Traen textiles de lana teñidos con colores naturales. El rojo viene del gusano cochinilla. El azul viene del añil. El amarillo viene de la flor de cempasúchil.",
+        "Doña Carmen Ruiz lleva treinta años vendiendo aquí. \"Mi abuela me enseñó a tejer en este mismo pasillo\", dice, mientras sus manos nunca dejan de moverse. \"Este mercado es nuestra universidad. Es nuestra historia viva.\"",
+        "Pero el mercado enfrenta un reto nuevo. Los turistas quieren comprar, pero no siempre entienden el valor de lo que ven. Una cobija tejida a mano puede tomar tres semanas de trabajo. \"No es un souvenir\", explica Doña Carmen. \"Es patrimonio. Es arte.\""
+      ],
+      "keywords": [
+        {
+          "word": "artesanas",
+          "definition": "personas que crean objetos a mano con técnicas tradicionales"
+        },
+        {
+          "word": "textiles",
+          "definition": "telas o ropa hechas con fibras naturales como lana o algodón"
+        },
+        {
+          "word": "cochinilla",
+          "definition": "insecto pequeño que vive en los nopales y produce tinte rojo"
+        },
+        {
+          "word": "patrimonio",
+          "definition": "herencia cultural que pasa de una generación a la siguiente"
+        },
+        {
+          "word": "cobija",
+          "definition": "manta gruesa de lana para cubrirse del frío"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos años lleva el mercado en el mismo sitio?",
+          "type": "mc",
+          "opts": [
+            "Más de quinientos años",
+            "Veinte años",
+            "Mil años",
+            "Cien años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿De qué insecto viene el tinte rojo?",
+          "type": "mc",
+          "opts": [
+            "Del cempasúchil",
+            "De la cochinilla",
+            "De la lana",
+            "Del añil"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué dice Doña Carmen sobre el mercado?",
+          "type": "mc",
+          "opts": [
+            "\"Ya no sirve de nada\"",
+            "\"Es un supermercado moderno\"",
+            "\"Es nuestra universidad, nuestra historia viva\"",
+            "\"Es solo para turistas\""
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué tarda tanto en hacerse una cobija?",
+          "type": "mc",
+          "opts": [
+            "Porque el mercado cierra temprano",
+            "Porque no hay colores",
+            "Porque la lana es cara",
+            "Porque se teje a mano"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué te parece importante conservar lugares como este mercado?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Me llamo Esperanza Mendoza y llevo sesenta años tejiendo en este mercado. Mi madre me trajo aquí cuando yo tenía cinco años. Ella tejía cobijas de lana con diseños geométricos que vienen de los antiguos zapotecas. Yo aprendí mirando sus manos. Ahora mis manos hacen lo mismo. Cada diseño tiene un significado. El caracol representa el agua. El diamante representa el cielo. Los colores no los compramos en ninguna tienda. Los hacemos con plantas y animales de nuestra tierra. El rojo viene de la cochinilla, un insecto pequeño que vive en los nopales. El azul viene del añil, una planta que cultivamos nosotros mismos. Cuando un turista me dice \"¡qué barato!\" por una cobija que me tomó tres semanas tejer, me duele el corazón. Quiero que la gente entienda algo. No están comprando un objeto. Están llevando a su casa quinientos años de historia. Eso no tiene precio.",
+      "source": "Doña Esperanza Mendoza, artesana zapoteca",
+      "questions": [
+        {
+          "text": "¿Cuántos años lleva Doña Esperanza tejiendo en el mercado?",
+          "type": "mc",
+          "opts": [
+            "Sesenta años",
+            "Cien años",
+            "Veinte años",
+            "Cuarenta años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué representa el caracol en los diseños?",
+          "type": "mc",
+          "opts": [
+            "El fuego",
+            "El agua",
+            "El viento",
+            "La tierra"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Quién le enseñó a tejer?",
+          "type": "mc",
+          "opts": [
+            "Un turista",
+            "Su vecina",
+            "Su madre",
+            "Una escuela"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué le duele el corazón a Doña Esperanza?",
+          "type": "mc",
+          "opts": [
+            "Porque el mercado va a cerrar",
+            "Porque no tiene clientes",
+            "Porque está enferma",
+            "Porque los turistas dicen que sus cobijas son baratas"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "México_1": {
+    "topic": "Las mariposas monarca de Michoacán",
+    "assignment": "¡Corresponsal! Cambio de planes. Vete a Michoacán, a los bosques de Angangueo. Cada invierno llegan millones de mariposas monarca después de volar desde Canadá. Los guardabosques tienen algo que contarnos. ¡Sube a la montaña!",
+    "article": {
+      "headline": "Millones de alas naranjas llegan a los bosques de Michoacán",
+      "byline": "Corresponsal, El Mundo Nuestro | Angangueo, Michoacán, México",
+      "paragraphs": [
+        "Cada noviembre ocurre algo increíble en las montañas de Michoacán. Millones de mariposas monarca llegan a los bosques de oyamel. Vinieron volando desde Canadá y Estados Unidos. El viaje es de más de cuatro mil kilómetros.",
+        "Lo más asombroso es que ninguna mariposa hace el viaje completa. La monarca vive solo unas semanas. Son sus hijos y sus nietos los que terminan el camino. Nadie les enseña la ruta, pero siempre llegan al mismo bosque.",
+        "Cuando el sol calienta, las mariposas abren las alas todas al mismo tiempo. El bosque entero se vuelve naranja. Se escucha un sonido suave, como lluvia ligera. Son millones de alas moviéndose juntas.",
+        "La comunidad de Angangueo protege esta reserva. Antes muchas familias cortaban árboles para vivir. Hoy trabajan como guías y guardabosques. \"El bosque nos da más vivo que muerto\", dice el guardabosques Rubén Ortiz."
+      ],
+      "keywords": [
+        {
+          "word": "monarca",
+          "definition": "mariposa naranja y negra que viaja miles de kilómetros cada año"
+        },
+        {
+          "word": "oyamel",
+          "definition": "árbol alto de montaña donde duermen las mariposas en invierno"
+        },
+        {
+          "word": "reserva",
+          "definition": "área natural protegida donde no se puede dañar la naturaleza"
+        },
+        {
+          "word": "guardabosques",
+          "definition": "persona que cuida y protege un bosque"
+        },
+        {
+          "word": "kilómetros",
+          "definition": "medida de distancia; mil metros forman un kilómetro"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿De dónde vienen volando las mariposas?",
+          "type": "mc",
+          "opts": [
+            "De Canadá y Estados Unidos",
+            "De España",
+            "De Brasil",
+            "De Guatemala"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué ninguna mariposa hace el viaje completo?",
+          "type": "mc",
+          "opts": [
+            "Porque se pierden",
+            "Porque vive solo unas semanas",
+            "Porque hace mucho frío",
+            "Porque no saben volar bien"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa cuando el sol calienta?",
+          "type": "mc",
+          "opts": [
+            "Las mariposas se van",
+            "Las mariposas se duermen",
+            "El bosque se vuelve naranja",
+            "Empieza a llover"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿A qué se dedican hoy muchas familias de Angangueo?",
+          "type": "mc",
+          "opts": [
+            "A la minería",
+            "A cortar árboles",
+            "A la pesca",
+            "A ser guías y guardabosques"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué crees que significa la frase \"el bosque nos da más vivo que muerto\"?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días. Me llamo Rubén Ortiz y soy guardabosques aquí en la reserva. Mi papá era leñador. Cortaba oyameles para vender la madera. Así comíamos en mi casa. Yo iba con él desde niño y aprendí a usar el hacha a los diez años. Un día llegó una bióloga de la ciudad. Nos explicó que las mariposas viajan cuatro mil kilómetros para llegar exactamente a estos árboles. A estos, no a otros. Mi papá no le creyó al principio. Le pareció imposible. Pero se quedó pensando. Ahora yo cuido los mismos árboles que él cortaba. Camino este bosque todos los días. Cuando llega noviembre y veo el cielo naranja, pienso en él. Los visitantes vienen de todo el mundo y pagan por caminar aquí conmigo. Gano más que mi papá con el hacha. Y el bosque sigue de pie. Eso es lo que le digo a los jóvenes de aquí. Cuidar también es trabajo.",
+      "source": "Rubén Ortiz, guardabosques de la Reserva de la Biosfera Mariposa Monarca",
+      "questions": [
+        {
+          "text": "¿Cuál era el trabajo del papá de Rubén?",
+          "type": "mc",
+          "opts": [
+            "Leñador",
+            "Pescador",
+            "Maestro",
+            "Guía turístico"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿A qué edad aprendió Rubén a usar el hacha?",
+          "type": "mc",
+          "opts": [
+            "A los cinco años",
+            "A los diez años",
+            "A los quince años",
+            "A los veinte años"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Quién les explicó el viaje de las mariposas?",
+          "type": "mc",
+          "opts": [
+            "Un maestro",
+            "El gobierno",
+            "Una bióloga",
+            "Un turista"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué dice Rubén sobre su trabajo actual?",
+          "type": "mc",
+          "opts": [
+            "No le gusta",
+            "Quiere volver a cortar árboles",
+            "Gana menos que su papá",
+            "Gana más que su papá con el hacha"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "México_2": {
+    "topic": "Los murales y los jóvenes artistas de la Ciudad de México",
+    "assignment": "Última parada en México, corresponsal. En la Ciudad de México hay barrios enteros pintados de colores. Jóvenes artistas están transformando las paredes de sus vecindarios. Busca a los muralistas y pregúntales por qué pintan. ¡Adelante!",
+    "article": {
+      "headline": "Jóvenes muralistas pintan la historia de su barrio",
+      "byline": "Corresponsal, El Mundo Nuestro | Ciudad de México, México",
+      "paragraphs": [
+        "En el barrio de Pedregal de Santo Domingo, las paredes hablan. Hay caras enormes, flores gigantes y animales de colores. Todo lo pintaron jóvenes que viven en las mismas calles.",
+        "México tiene una tradición muralista muy antigua. Hace cien años, Diego Rivera y David Alfaro Siqueiros pintaron muros enormes con la historia del país. Querían que el arte fuera para todos, no solo para los museos.",
+        "Los muralistas jóvenes de hoy siguen ese camino, pero con temas nuevos. Pintan a sus abuelas, a los vendedores del mercado y a las personas del barrio. \"Yo pinté a mi vecina, la señora que vende tamales\", cuenta Yolanda Reyes, de diecisiete años.",
+        "El proyecto empezó con quince jóvenes y ahora son más de sesenta. Un vecino donó la pintura. Otro presta escaleras. \"Antes esta pared tenía basura enfrente\", dice Yolanda. \"Ahora la gente viene a tomarse fotos.\""
+      ],
+      "keywords": [
+        {
+          "word": "muralistas",
+          "definition": "artistas que pintan cuadros grandes directamente en las paredes"
+        },
+        {
+          "word": "muros",
+          "definition": "paredes, especialmente las de afuera de un edificio"
+        },
+        {
+          "word": "barrio",
+          "definition": "zona de una ciudad donde vive una comunidad"
+        },
+        {
+          "word": "tradición",
+          "definition": "costumbre que se repite y se pasa entre generaciones"
+        },
+        {
+          "word": "vecina",
+          "definition": "persona que vive cerca de tu casa"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Quiénes pintaron los murales del barrio?",
+          "type": "mc",
+          "opts": [
+            "Jóvenes que viven en las mismas calles",
+            "El gobierno",
+            "Los turistas",
+            "Artistas extranjeros"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué querían Diego Rivera y Siqueiros?",
+          "type": "mc",
+          "opts": [
+            "Vender cuadros caros",
+            "Que el arte fuera para todos",
+            "Pintar solo en museos",
+            "Ser famosos en Europa"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿A quién pintó Yolanda Reyes?",
+          "type": "mc",
+          "opts": [
+            "A su maestro",
+            "A un futbolista",
+            "A su vecina que vende tamales",
+            "A un presidente"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántos jóvenes participan ahora en el proyecto?",
+          "type": "mc",
+          "opts": [
+            "Cien",
+            "Quince",
+            "Treinta",
+            "Más de sesenta"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Si pudieras pintar un mural en tu escuela o tu calle, ¿qué pintarías y por qué?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, soy Yolanda Reyes y tengo diecisiete años. Empecé a pintar porque estaba enojada, la verdad. En la tele siempre hablan de mi barrio como un lugar peligroso. Nunca muestran a mi mamá saliendo a trabajar a las cinco de la mañana. Nunca muestran a Don Beto arreglando bicicletas gratis a los niños. Entonces pensé, pues yo lo muestro. Mi primer mural fue la señora Lupita, la de los tamales. La pinté de tres metros de altura, con su olla y su rebozo verde. Cuando lo terminé, ella lloró. Me dijo que nunca nadie le había hecho un retrato. Ahora los niños chiquitos me ven pintando y me preguntan si les enseño. Les digo que sí. Los sábados somos como veinte pintando juntos. Mi sueño es que un día alguien camine por aquí y entienda quiénes somos de verdad. No lo que dicen las noticias. Lo que somos nosotros.",
+      "source": "Yolanda Reyes, muralista de 17 años",
+      "questions": [
+        {
+          "text": "¿Por qué empezó a pintar Yolanda?",
+          "type": "mc",
+          "opts": [
+            "Porque estaba enojada por cómo hablaban de su barrio",
+            "Porque quería ganar dinero",
+            "Porque se lo pidió la escuela",
+            "Porque le gustaba el color"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Quién fue su primer mural?",
+          "type": "mc",
+          "opts": [
+            "Don Beto",
+            "La señora Lupita, la de los tamales",
+            "Una futbolista",
+            "Su mamá"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hizo la señora Lupita cuando vio el mural?",
+          "type": "mc",
+          "opts": [
+            "No dijo nada",
+            "Se enojó",
+            "Lloró",
+            "Se rió"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántos jóvenes pintan juntos los sábados?",
+          "type": "mc",
+          "opts": [
+            "Como cincuenta",
+            "Como cinco",
+            "Como diez",
+            "Como veinte"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Guatemala_0": {
+    "topic": "Los tejidos mayas de Chichicastenango",
+    "assignment": "¡Bienvenida a Guatemala, corresponsal! Ve al mercado de Chichicastenango, uno de los más grandes de América. Cada huipil que verás cuenta una historia con hilos. Habla con las tejedoras. ¡Que tengas buen viaje!",
+    "article": {
+      "headline": "Cada huipil cuenta de dónde eres: el idioma secreto de los tejidos",
+      "byline": "Corresponsal, El Mundo Nuestro | Chichicastenango, Guatemala",
+      "paragraphs": [
+        "Los jueves y domingos, Chichicastenango se llena de gente. Su mercado es uno de los más grandes de toda América. Entre los puestos brillan cientos de huipiles de colores intensos.",
+        "Un huipil es la blusa tradicional de las mujeres mayas. Pero es mucho más que ropa. Los diseños dicen de qué pueblo viene la persona que lo lleva. Es como un mapa que se usa puesto.",
+        "En Santiago Atitlán bordan pájaros. En Nebaj usan rojo y amarillo brillante. En San Antonio Aguas Calientes hacen figuras geométricas muy pequeñas. Una tejedora experta reconoce el pueblo de origen con solo mirar.",
+        "Elena Chávez teje con telar de cintura, la misma técnica que usaban sus bisabuelas. El telar se amarra a un poste y a la cintura de la tejedora. \"Mi cuerpo es parte del telar\", explica. Un huipil completo puede tomarle tres meses."
+      ],
+      "keywords": [
+        {
+          "word": "huipil",
+          "definition": "blusa tradicional maya, tejida y bordada a mano"
+        },
+        {
+          "word": "tejedora",
+          "definition": "mujer que hace telas cruzando hilos"
+        },
+        {
+          "word": "telar",
+          "definition": "herramienta que sirve para cruzar hilos y formar tela"
+        },
+        {
+          "word": "bordan",
+          "definition": "cosen figuras de colores sobre una tela"
+        },
+        {
+          "word": "geométricas",
+          "definition": "de formas como cuadrados, triángulos y rombos"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué días se llena el mercado de Chichicastenango?",
+          "type": "mc",
+          "opts": [
+            "Jueves y domingos",
+            "Solo los sábados",
+            "Todos los días",
+            "Lunes y martes"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué información dan los diseños de un huipil?",
+          "type": "mc",
+          "opts": [
+            "La edad de la persona",
+            "De qué pueblo viene la persona",
+            "Cuánto dinero tiene",
+            "Su trabajo"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué bordan en Santiago Atitlán?",
+          "type": "mc",
+          "opts": [
+            "Peces",
+            "Flores",
+            "Pájaros",
+            "Estrellas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuánto puede tardar un huipil completo?",
+          "type": "mc",
+          "opts": [
+            "Tres años",
+            "Tres días",
+            "Tres semanas",
+            "Tres meses"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué objeto o ropa de tu familia cuenta una historia sobre quiénes son? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas tardes. Mi nombre es Elena Chávez y soy tejedora de Chichicastenango. Hablo k'iche' y español. Aprendí a tejer a los siete años, sentada al lado de mi abuela. Ella no hablaba español, solo k'iche'. Me enseñaba con las manos, no con palabras. Uso el telar de cintura. Es muy antiguo. Un extremo se amarra a un poste o a un árbol y el otro extremo se amarra a mi cintura. Cuando me echo para atrás, los hilos se tensan. Mi cuerpo es parte del telar. Por eso cada huipil sale un poco diferente. Ahora yo enseño a mi hija y también a doce muchachas del pueblo. Algunas quieren irse a la capital a trabajar. Yo les digo que está bien, que estudien. Pero que se lleven el telar. Porque el día que nadie teja, nadie va a saber de dónde venimos. Los hilos son nuestra memoria.",
+      "source": "Elena Chávez, tejedora k'iche'",
+      "questions": [
+        {
+          "text": "¿A qué edad aprendió Elena a tejer?",
+          "type": "mc",
+          "opts": [
+            "A los siete años",
+            "A los doce años",
+            "A los quince años",
+            "A los cinco años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo le enseñaba su abuela?",
+          "type": "mc",
+          "opts": [
+            "Con palabras en español",
+            "Con las manos, no con palabras",
+            "Con libros",
+            "Por teléfono"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Dónde se amarra el telar de cintura?",
+          "type": "mc",
+          "opts": [
+            "A dos sillas",
+            "A la pared y al techo",
+            "A un poste y a la cintura de la tejedora",
+            "A una mesa"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué les dice Elena a las muchachas que quieren irse a la capital?",
+          "type": "mc",
+          "opts": [
+            "Que dejen de tejer",
+            "Que vendan el telar",
+            "Que no se vayan nunca",
+            "Que estudien, pero que se lleven el telar"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Guatemala_1": {
+    "topic": "El lago Atitlán y las comunidades que lo limpian",
+    "assignment": "Corresponsal, hay una historia grande en el lago Atitlán. Es uno de los lagos más bellos del mundo, pero tiene un problema serio. Los pueblos de la orilla se organizaron para salvarlo. Ve y cuéntanos cómo lo están logrando.",
+    "article": {
+      "headline": "Doce pueblos, un lago: la alianza que limpia Atitlán",
+      "byline": "Corresponsal, El Mundo Nuestro | Panajachel, Sololá, Guatemala",
+      "paragraphs": [
+        "El lago Atitlán está rodeado de tres volcanes y doce pueblos. Muchos viajeros lo llaman el lago más bello del mundo. El agua es azul profunda y muy honda: en algunas partes tiene trescientos metros.",
+        "Pero hace años apareció un problema. Una capa verde empezó a cubrir el agua. Es una cianobacteria que crece cuando llegan al lago jabones, fertilizantes y aguas sucias. El lago se estaba enfermando.",
+        "Las comunidades no esperaron ayuda de afuera. Los doce pueblos formaron una alianza. Construyeron plantas de tratamiento para el agua sucia. Cambiaron a jabones biodegradables. Sembraron plantas en las orillas para filtrar la tierra.",
+        "Los jóvenes también participan. Cada mes, estudiantes de secundaria recogen basura en lancha y miden la calidad del agua. \"Este lago es de nosotros\", dice Marta Sicay, estudiante de dieciséis años. \"Si nosotros no lo cuidamos, ¿quién?\""
+      ],
+      "keywords": [
+        {
+          "word": "volcanes",
+          "definition": "montañas por donde puede salir lava y ceniza"
+        },
+        {
+          "word": "cianobacteria",
+          "definition": "organismo muy pequeño que forma una capa verde en el agua"
+        },
+        {
+          "word": "fertilizantes",
+          "definition": "productos que se echan a la tierra para que crezcan las plantas"
+        },
+        {
+          "word": "biodegradables",
+          "definition": "que se deshacen de forma natural sin dañar el ambiente"
+        },
+        {
+          "word": "alianza",
+          "definition": "acuerdo entre varios grupos para trabajar juntos"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos pueblos rodean el lago Atitlán?",
+          "type": "mc",
+          "opts": [
+            "Doce",
+            "Veinte",
+            "Tres",
+            "Siete"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué causa la capa verde en el agua?",
+          "type": "mc",
+          "opts": [
+            "El sol muy fuerte",
+            "Jabones, fertilizantes y aguas sucias",
+            "Los volcanes",
+            "Los peces"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hicieron las comunidades?",
+          "type": "mc",
+          "opts": [
+            "Cerraron el lago",
+            "Esperaron ayuda del gobierno",
+            "Formaron una alianza y actuaron",
+            "Se mudaron a otro lugar"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué hacen los estudiantes cada mes?",
+          "type": "mc",
+          "opts": [
+            "Venden pescado",
+            "Pintan lanchas",
+            "Nadan en el lago",
+            "Recogen basura y miden la calidad del agua"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Hay algún lugar natural cerca de ti que necesite cuidado? ¿Qué podrías hacer?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, me llamo Marta Sicay, tengo dieciséis años y vivo en San Pedro La Laguna. Mi abuelo era pescador en este lago. Él cuenta que antes se podía ver el fondo desde la lancha. El agua era tan clara que veías los peces nadando abajo. Yo nunca vi eso. Cuando yo nací el lago ya tenía manchas verdes. En el colegio nos enseñaron por qué pasa. No es una maldición ni mala suerte. Es lo que echamos nosotros: el jabón, el detergente, el drenaje. Eso me dio esperanza, porque si el problema lo hicimos nosotros, nosotros lo podemos arreglar. Ahora somos un grupo de treinta estudiantes. Salimos en lancha los sábados. Recogemos botellas, bolsas y basura. También tomamos muestras del agua y anotamos los datos en un cuaderno. Ya llevamos dos años de registros. Mi meta es estudiar biología. Quiero que mis nietos vean el fondo del lago como lo vio mi abuelo.",
+      "source": "Marta Sicay, estudiante y voluntaria ambiental",
+      "questions": [
+        {
+          "text": "¿Qué cuenta el abuelo de Marta sobre el lago?",
+          "type": "mc",
+          "opts": [
+            "Que antes se podía ver el fondo desde la lancha",
+            "Que no había peces",
+            "Que era más pequeño",
+            "Que siempre estuvo verde"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué le dio esperanza aprender la causa del problema?",
+          "type": "mc",
+          "opts": [
+            "Porque no era culpa de nadie",
+            "Porque si lo hicimos nosotros, nosotros lo podemos arreglar",
+            "Porque el gobierno lo iba a resolver",
+            "Porque no era grave"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacen los sábados?",
+          "type": "mc",
+          "opts": [
+            "Venden comida",
+            "Descansan",
+            "Salen en lancha a recoger basura y tomar muestras",
+            "Van a la escuela"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué quiere estudiar Marta?",
+          "type": "mc",
+          "opts": [
+            "Derecho",
+            "Ingeniería",
+            "Medicina",
+            "Biología"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Guatemala_2": {
+    "topic": "Las radios comunitarias en idiomas mayas",
+    "assignment": "Corresponsal, esta historia es sobre voces. En Guatemala se hablan más de veinte idiomas mayas, y pequeñas radios comunitarias transmiten en ellos todos los días. Ve a Sololá y conoce a quienes están al micrófono. ¡Escucha bien!",
+    "article": {
+      "headline": "La radio que habla veintidós idiomas",
+      "byline": "Corresponsal, El Mundo Nuestro | Sololá, Guatemala",
+      "paragraphs": [
+        "En Guatemala se hablan veintidós idiomas mayas, además del español, el garífuna y el xinca. Pero en la televisión y en los periódicos casi todo aparece en español. Muchas personas mayores no entienden esos mensajes.",
+        "Por eso existen las radios comunitarias. Son estaciones pequeñas, a veces de un solo cuarto, que transmiten en el idioma del pueblo. En Sololá se transmite en kaqchikel, k'iche' y tz'utujil.",
+        "Estas radios avisan cosas importantes. Cuándo hay vacunas, cuándo viene una tormenta, cuándo se reúne el comité del agua. También pasan música local, consejos de siembra y programas de salud para las familias.",
+        "Los locutores son voluntarios del mismo pueblo. Ana Petzey, de diecinueve años, conduce un programa juvenil los sábados. \"Cuando una señora me dice que entendió algo por primera vez porque lo dije en su idioma, me da mucha alegría\", cuenta."
+      ],
+      "keywords": [
+        {
+          "word": "idiomas",
+          "definition": "lenguas que habla un grupo de personas"
+        },
+        {
+          "word": "comunitarias",
+          "definition": "que pertenecen a una comunidad y sirven a esa comunidad"
+        },
+        {
+          "word": "transmiten",
+          "definition": "envían sonido o imágenes por radio o televisión"
+        },
+        {
+          "word": "locutores",
+          "definition": "personas que hablan en la radio o la televisión"
+        },
+        {
+          "word": "voluntarios",
+          "definition": "personas que trabajan sin cobrar dinero, por ayudar"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos idiomas mayas se hablan en Guatemala?",
+          "type": "mc",
+          "opts": [
+            "Veintidós",
+            "Cincuenta",
+            "Cinco",
+            "Diez"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué son necesarias las radios comunitarias?",
+          "type": "mc",
+          "opts": [
+            "Porque la música es mejor",
+            "Porque muchas personas no entienden los mensajes en español",
+            "Porque son más baratas",
+            "Porque no hay televisión"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué tipo de avisos dan estas radios?",
+          "type": "mc",
+          "opts": [
+            "Solo música",
+            "Solo noticias internacionales",
+            "Vacunas, tormentas y reuniones del comité",
+            "Solo deportes"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Quiénes son los locutores?",
+          "type": "mc",
+          "opts": [
+            "Extranjeros",
+            "Empleados del gobierno",
+            "Profesionales de la capital",
+            "Voluntarios del mismo pueblo"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que es importante recibir información en tu propio idioma?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola a todos, soy Ana Petzey y tengo diecinueve años. Conduzco el programa juvenil de Radio Sololá los sábados por la mañana. La cabina es un cuarto chiquito con paredes de cartón de huevo para el sonido. No tenemos equipo caro. Tenemos un micrófono, una computadora vieja y muchas ganas. Yo hablo kaqchikel con mi familia desde niña, pero en la escuela todo era en español. Por mucho tiempo me dio pena hablar kaqchikel en público. Sentía que era menos. Un día mi tía me dijo algo que no olvido: un idioma no se muere porque alguien lo prohíba, se muere porque los jóvenes dejan de hablarlo. Al día siguiente pedí trabajo en la radio. Ahora hago entrevistas, pongo música y contesto cartas de los oyentes. Lo que más me gusta es cuando llaman abuelitas. Me dicen: hija, qué bonito que hablás nuestro idioma en la radio. Eso vale más que cualquier sueldo.",
+      "source": "Ana Petzey, locutora de Radio Sololá",
+      "questions": [
+        {
+          "text": "¿Cómo es la cabina de la radio?",
+          "type": "mc",
+          "opts": [
+            "Un cuarto chiquito con paredes de cartón de huevo",
+            "Un estudio profesional",
+            "Un camión",
+            "Grande y moderna"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué le daba pena hablar kaqchikel en público?",
+          "type": "mc",
+          "opts": [
+            "Porque no lo hablaba bien",
+            "Porque sentía que era menos",
+            "Porque nadie la entendía",
+            "Porque estaba prohibido"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué le dijo su tía?",
+          "type": "mc",
+          "opts": [
+            "Que trabajara en la capital",
+            "Que estudiara español",
+            "Que un idioma se muere cuando los jóvenes dejan de hablarlo",
+            "Que se fuera de Sololá"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es lo que más le gusta a Ana de su trabajo?",
+          "type": "mc",
+          "opts": [
+            "La música",
+            "Salir en televisión",
+            "El sueldo",
+            "Cuando llaman las abuelitas"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

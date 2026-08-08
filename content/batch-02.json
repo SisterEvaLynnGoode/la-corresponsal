@@ -1,0 +1,818 @@
+{
+  "Honduras_0": {
+    "topic": "El tambor garífuna en la costa caribeña",
+    "assignment": "¡Corresponsal, llegaste a Honduras! Ve a la costa caribeña, a un pueblo garífuna cerca de La Ceiba. Allí el tambor no es solo música: es idioma, es historia y es identidad. La UNESCO lo declaró patrimonio de la humanidad. ¡Ve a escucharlo!",
+    "article": {
+      "headline": "El tambor que guardó una lengua entera",
+      "byline": "Corresponsal, El Mundo Nuestro | La Ceiba, Honduras",
+      "paragraphs": [
+        "En la costa caribeña de Honduras viven los garífunas. Son descendientes de africanos y de indígenas caribes. Llegaron a estas playas hace más de doscientos años y trajeron su idioma, su comida y su música.",
+        "El corazón de esa cultura es el tambor. Se llama garaón y se hace con madera hueca y piel de animal. Cuando suenan dos garaones juntos, uno lleva el ritmo base y el otro conversa encima. Parecen dos personas hablando.",
+        "La música garífuna tiene muchos estilos. La punta se baila en fiestas y celebraciones. La parranda se canta con guitarra y es más lenta. Cada canción cuenta algo real: una pesca, una despedida, un amor, una historia del pueblo.",
+        "En 2001, la UNESCO reconoció la lengua, la danza y la música garífuna como patrimonio de la humanidad. Hoy los mayores enseñan a los niños después de la escuela. \"El tambor enseña el idioma\", dice el músico Teodoro Martínez."
+      ],
+      "keywords": [
+        {
+          "word": "garífunas",
+          "definition": "pueblo afroindígena de la costa caribeña de Centroamérica"
+        },
+        {
+          "word": "descendientes",
+          "definition": "personas que vienen de una familia o un pueblo anterior"
+        },
+        {
+          "word": "garaón",
+          "definition": "tambor tradicional garífuna hecho de madera y piel"
+        },
+        {
+          "word": "punta",
+          "definition": "baile y ritmo alegre de la cultura garífuna"
+        },
+        {
+          "word": "patrimonio",
+          "definition": "herencia cultural que se protege para el futuro"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿De quiénes son descendientes los garífunas?",
+          "type": "mc",
+          "opts": [
+            "De africanos e indígenas caribes",
+            "De ingleses",
+            "De aztecas",
+            "De españoles y mayas"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo se llama el tambor tradicional?",
+          "type": "mc",
+          "opts": [
+            "Tambora",
+            "Garaón",
+            "Marimba",
+            "Bongó"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa cuando suenan dos garaones juntos?",
+          "type": "mc",
+          "opts": [
+            "Se tapan uno al otro",
+            "Suenan igual",
+            "Uno lleva el ritmo y el otro conversa encima",
+            "Suena muy fuerte"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué reconoció la UNESCO en 2001?",
+          "type": "mc",
+          "opts": [
+            "Las playas",
+            "Los tambores nada más",
+            "Solo la comida garífuna",
+            "La lengua, la danza y la música garífuna"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Hay música en tu familia o comunidad que cuente historias? Describe una.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, mi nombre es Teodoro Martínez y soy tamborero garífuna. Nací en Triunfo de la Cruz, aquí en la costa. Mi abuelo hacía los tambores con sus manos. Cortaba el tronco, lo ahuecaba con fuego y paciencia, y le ponía piel bien estirada. Yo lo miraba trabajar horas y horas sin hablar. Cuando yo era joven, muchos muchachos ya no querían tocar. Decían que la música garífuna era cosa de viejos. Preferían la música de la radio. Yo también me fui a trabajar a la ciudad por unos años. Pero allá, lejos, extrañaba el sonido. Extrañaba el idioma. Volví y abrí una escuelita de tambor. Empezamos con cuatro niños. Hoy vienen más de cuarenta cada tarde. Y pasa algo bonito: aprenden el ritmo, pero también aprenden las palabras de las canciones. Así el garífuna no se pierde. El tambor enseña el idioma sin que uno se dé cuenta.",
+      "source": "Teodoro Martínez, tamborero de Triunfo de la Cruz",
+      "questions": [
+        {
+          "text": "¿Cómo hacía los tambores el abuelo de Teodoro?",
+          "type": "mc",
+          "opts": [
+            "Ahuecaba el tronco con fuego y le ponía piel estirada",
+            "Usaba plástico",
+            "Los pedía a otro país",
+            "Los compraba"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué decían muchos muchachos de la música garífuna?",
+          "type": "mc",
+          "opts": [
+            "Que era muy difícil",
+            "Que era cosa de viejos",
+            "Que era la mejor",
+            "Que era muy cara"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué extrañaba Teodoro cuando vivía en la ciudad?",
+          "type": "mc",
+          "opts": [
+            "A su abuelo",
+            "La comida",
+            "El sonido y el idioma",
+            "El mar"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántos niños vienen hoy a su escuelita?",
+          "type": "mc",
+          "opts": [
+            "Cien",
+            "Cuatro",
+            "Diez",
+            "Más de cuarenta"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Honduras_1": {
+    "topic": "Los arrecifes de coral de Roatán",
+    "assignment": "Corresponsal, ponte el traje de buceo. En Roatán está parte del segundo arrecife de coral más grande del mundo. Hay pescadores que cambiaron las redes por el cuidado del mar. Ve a la isla y cuéntanos qué encontraste bajo el agua.",
+    "article": {
+      "headline": "Los pescadores que ahora protegen el arrecife",
+      "byline": "Corresponsal, El Mundo Nuestro | Roatán, Islas de la Bahía, Honduras",
+      "paragraphs": [
+        "Frente a las costas de Honduras está el Arrecife Mesoamericano. Es el segundo arrecife de coral más grande del planeta, después del de Australia. Se extiende por más de mil kilómetros, desde México hasta Honduras.",
+        "Un arrecife parece una roca de colores, pero está vivo. El coral es un animal muy pequeño que construye una casa de piedra caliza. Millones de ellos, juntos y durante siglos, forman ciudades submarinas donde viven peces, tortugas y tiburones.",
+        "Durante años, la pesca excesiva y el agua caliente dañaron el arrecife. Cuando el mar se calienta demasiado, el coral se pone blanco y puede morir. Los científicos llaman a eso blanqueamiento.",
+        "En Roatán, un grupo de pescadores tomó una decisión difícil. Cerraron algunas zonas a la pesca por varios años. Hoy esos mismos pescadores trabajan como guías de buceo y viveristas de coral. Cultivan coral en estructuras y luego lo siembran en el arrecife."
+      ],
+      "keywords": [
+        {
+          "word": "arrecife",
+          "definition": "estructura submarina formada por corales vivos"
+        },
+        {
+          "word": "coral",
+          "definition": "animal marino diminuto que construye una casa de piedra caliza"
+        },
+        {
+          "word": "submarinas",
+          "definition": "que están debajo del agua del mar"
+        },
+        {
+          "word": "blanqueamiento",
+          "definition": "cuando el coral pierde su color y se pone blanco por el calor"
+        },
+        {
+          "word": "viveristas",
+          "definition": "personas que cultivan plantas o corales pequeños para sembrarlos después"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuál es el arrecife más grande del planeta?",
+          "type": "mc",
+          "opts": [
+            "El de Australia",
+            "El de México",
+            "El de Cuba",
+            "El de Honduras"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué es realmente el coral?",
+          "type": "mc",
+          "opts": [
+            "Una planta",
+            "Un animal muy pequeño",
+            "Un tipo de alga",
+            "Una roca"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es el blanqueamiento?",
+          "type": "mc",
+          "opts": [
+            "Un tipo de pez",
+            "Limpiar el arrecife",
+            "Cuando el coral pierde el color por el calor",
+            "Pintar el coral"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué decisión difícil tomaron los pescadores?",
+          "type": "mc",
+          "opts": [
+            "Pescar más",
+            "Vender sus lanchas",
+            "Mudarse de la isla",
+            "Cerrar algunas zonas a la pesca por varios años"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Te parece justo pedirle a alguien que deje su trabajo para proteger la naturaleza? Explica tu opinión.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas tardes, me llamo Wilmer Bodden y soy de Roatán. Pesqué durante veintidós años. Mi papá pescaba, mi abuelo pescaba. Salíamos de madrugada y volvíamos con la lancha llena. Pero con los años algo cambió. Salíamos más horas y volvíamos con menos pescado. Los meros grandes desaparecieron. Los pargos se hicieron chiquitos. Un biólogo nos mostró unas fotos del arrecife de hace treinta años y de hoy. Fue duro verlo. Parecía un cementerio blanco. Nos reunimos como cuarenta pescadores y discutimos mucho. Hubo gritos, se lo digo de verdad. Cerrar una zona significa no comer un tiempo. Pero votamos y cerramos tres zonas. Los primeros dos años fueron durísimos. Al cuarto año empezamos a ver peces grandes otra vez. Ahora yo llevo turistas a bucear y también siembro coral. Cultivamos pedacitos en unos árboles de plástico bajo el agua y después los pegamos en la roca. Le estoy devolviendo al mar lo que le saqué.",
+      "source": "Wilmer Bodden, ex pescador y viverista de coral",
+      "questions": [
+        {
+          "text": "¿Cuántos años pescó Wilmer?",
+          "type": "mc",
+          "opts": [
+            "Veintidós años",
+            "Treinta años",
+            "Cinco años",
+            "Diez años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué notaron con los años?",
+          "type": "mc",
+          "opts": [
+            "Que había más pescado",
+            "Que salían más horas y volvían con menos pescado",
+            "Que el mar estaba más frío",
+            "Que había más lanchas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo describió el arrecife en las fotos recientes?",
+          "type": "mc",
+          "opts": [
+            "Igual que antes",
+            "Como un jardín",
+            "Como un cementerio blanco",
+            "Como una ciudad"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuándo empezaron a ver peces grandes otra vez?",
+          "type": "mc",
+          "opts": [
+            "Al décimo año",
+            "Al primer año",
+            "Al segundo año",
+            "Al cuarto año"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Honduras_2": {
+    "topic": "Los jóvenes guías de las ruinas de Copán",
+    "assignment": "Última misión en Honduras, corresponsal. Ve a Copán, la ciudad maya de las escaleras con escritura. Allí hay jóvenes del pueblo que aprendieron a leer los glifos mayas y hoy guían a los visitantes. Habla con ellos.",
+    "article": {
+      "headline": "Los jóvenes que aprendieron a leer las piedras de Copán",
+      "byline": "Corresponsal, El Mundo Nuestro | Copán Ruinas, Honduras",
+      "paragraphs": [
+        "Copán fue una ciudad maya muy importante. Hoy quedan templos, plazas y esculturas de piedra en medio de la selva. Lo más famoso es la Escalinata Jeroglífica: sesenta y tres escalones cubiertos de glifos mayas.",
+        "Esa escalinata tiene más de dos mil doscientos glifos. Es el texto maya más largo que existe. Cuenta la historia de los reyes de Copán, sus nombres y sus fechas. Es como un libro de piedra al aire libre.",
+        "Durante mucho tiempo, los arqueólogos que estudiaban Copán venían de otros países. Los vecinos del pueblo trabajaban cargando herramientas, pero pocos aprendían a interpretar lo que se encontraba.",
+        "Eso cambió. Hoy existe un programa que forma guías locales. Jóvenes del pueblo estudian historia maya, epigrafía y también inglés. Karla Aguilar, de veintiún años, es una de ellas. \"Mis bisabuelos caminaban entre estas piedras sin saber qué decían\", cuenta. \"Yo sí sé.\""
+      ],
+      "keywords": [
+        {
+          "word": "escalinata",
+          "definition": "escalera grande y ancha, generalmente de piedra"
+        },
+        {
+          "word": "glifos",
+          "definition": "signos que los mayas usaban para escribir"
+        },
+        {
+          "word": "arqueólogos",
+          "definition": "científicos que estudian objetos y ruinas del pasado"
+        },
+        {
+          "word": "epigrafía",
+          "definition": "estudio de las escrituras antiguas talladas en piedra"
+        },
+        {
+          "word": "esculturas",
+          "definition": "figuras talladas en piedra, madera u otro material"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos escalones tiene la Escalinata Jeroglífica?",
+          "type": "mc",
+          "opts": [
+            "Sesenta y tres",
+            "Cien",
+            "Doscientos",
+            "Treinta"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué cuenta el texto de la escalinata?",
+          "type": "mc",
+          "opts": [
+            "Recetas de comida",
+            "La historia de los reyes de Copán",
+            "Cuentos para niños",
+            "Mapas de la selva"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacían antes los vecinos del pueblo en las excavaciones?",
+          "type": "mc",
+          "opts": [
+            "Nada",
+            "Interpretaban los glifos",
+            "Cargaban herramientas",
+            "Dirigían el proyecto"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué estudian hoy los jóvenes guías?",
+          "type": "mc",
+          "opts": [
+            "Solo matemáticas",
+            "Turismo nada más",
+            "Solo inglés",
+            "Historia maya, epigrafía e inglés"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que importa que las personas del lugar cuenten su propia historia?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, soy Karla Aguilar y tengo veintiún años. Nací aquí en Copán Ruinas, a diez minutos caminando del parque arqueológico. De niña entraba a jugar entre las piedras sin pagar, porque los del pueblo entramos gratis. Nunca me imaginé que ese lugar iba a ser mi trabajo. Cuando terminé la secundaria no había dinero para la universidad. Vi un anuncio de un curso de guía y me metí. Duró dos años. Estudiamos historia maya, epigrafía, un poco de arqueología y bastante inglés. Lo más difícil fue la epigrafía. Los glifos no se leen letra por letra, se leen por sílabas y por símbolos completos. Es como resolver un rompecabezas. Ahora yo puedo pararme frente a la escalinata y decirle a un grupo de visitantes: aquí dice el nombre del rey Humo Jaguar, y esta fecha corresponde al año 695. Mi abuela vino un día a escucharme. Se quedó callada todo el recorrido. Al final me dijo: yo pasé toda mi vida al lado de esto y no sabía que hablaba.",
+      "source": "Karla Aguilar, guía arqueológica de Copán",
+      "questions": [
+        {
+          "text": "¿Por qué entraba gratis Karla de niña?",
+          "type": "mc",
+          "opts": [
+            "Porque los del pueblo entran gratis",
+            "Porque su papá trabajaba ahí",
+            "Porque era muy pequeña",
+            "Porque era estudiante"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cuánto duró el curso de guía?",
+          "type": "mc",
+          "opts": [
+            "Un año",
+            "Dos años",
+            "Cuatro años",
+            "Seis meses"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cómo se leen los glifos mayas?",
+          "type": "mc",
+          "opts": [
+            "Con números",
+            "Letra por letra",
+            "Por sílabas y símbolos completos",
+            "De derecha a izquierda solamente"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué le dijo su abuela al final del recorrido?",
+          "type": "mc",
+          "opts": [
+            "Que no entendió nada",
+            "Que quería ser guía",
+            "Que estaba orgullosa",
+            "Que pasó su vida al lado de esto y no sabía que hablaba"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "El Salvador_0": {
+    "topic": "La pupusa, plato nacional de El Salvador",
+    "assignment": "¡Corresponsal, llegaste a El Salvador! Aquí hay un plato tan importante que tiene su propio día nacional: la pupusa. Ve a Olocuilta, la capital de las pupusas, y descubre por qué es mucho más que comida.",
+    "article": {
+      "headline": "La pupusa cumple siglos y sigue reuniendo a la familia",
+      "byline": "Corresponsal, El Mundo Nuestro | Olocuilta, La Paz, El Salvador",
+      "paragraphs": [
+        "La pupusa es una tortilla gruesa de maíz rellena. Los rellenos más comunes son queso, frijoles molidos y chicharrón. También hay de loroco, una flor comestible que crece en la región y tiene un sabor muy particular.",
+        "El origen es antiguo. Los pipiles, pueblo indígena de esta zona, ya hacían pupusas antes de la llegada de los españoles. Se han encontrado utensilios de cocina de hace más de dos mil años.",
+        "Toda pupusa se sirve con curtido y salsa. El curtido es repollo con zanahoria y vinagre, un poco picante. No se come con cubiertos: se agarra con la mano y se le pone el curtido encima.",
+        "En 2005, El Salvador declaró la pupusa plato nacional. El segundo domingo de noviembre es el Día Nacional de la Pupusa. En Olocuilta hay una calle entera de pupuserías que trabajan las veinticuatro horas."
+      ],
+      "keywords": [
+        {
+          "word": "pupusa",
+          "definition": "tortilla gruesa de maíz rellena, plato típico de El Salvador"
+        },
+        {
+          "word": "chicharrón",
+          "definition": "carne de cerdo frita y molida que se usa como relleno"
+        },
+        {
+          "word": "loroco",
+          "definition": "flor comestible de sabor fuerte que crece en Centroamérica"
+        },
+        {
+          "word": "curtido",
+          "definition": "repollo con zanahoria y vinagre que acompaña la pupusa"
+        },
+        {
+          "word": "pupuserías",
+          "definition": "lugares donde se hacen y se venden pupusas"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuáles son rellenos comunes de la pupusa?",
+          "type": "mc",
+          "opts": [
+            "Queso, frijoles y chicharrón",
+            "Pescado y papa",
+            "Carne de res solamente",
+            "Pollo y arroz"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pueblo indígena ya hacía pupusas?",
+          "type": "mc",
+          "opts": [
+            "Los mayas",
+            "Los pipiles",
+            "Los aztecas",
+            "Los incas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es el curtido?",
+          "type": "mc",
+          "opts": [
+            "Una bebida",
+            "Una salsa dulce",
+            "Repollo con zanahoria y vinagre",
+            "Un tipo de queso"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuándo es el Día Nacional de la Pupusa?",
+          "type": "mc",
+          "opts": [
+            "El 15 de septiembre",
+            "En diciembre",
+            "El primer lunes de enero",
+            "El segundo domingo de noviembre"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Cuál es un plato que reúne a tu familia? Descríbelo y di por qué es especial.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, me llamo Rosa Elena Guardado y tengo una pupusería en Olocuilta desde hace treinta y cuatro años. Empecé con un comal y una mesita en la orilla de la carretera. Nada más. Ahora tengo seis comales y trabajan conmigo mis dos hijas y tres muchachas del pueblo. La gente me pregunta cuál es el secreto. No hay secreto, hay práctica. La masa tiene que estar tibia y suave, ni muy aguada ni muy dura. Uno hace la bolita, la abre con el pulgar, le pone el relleno y la cierra bien. Si queda mal cerrada, se abre en el comal y se sale el queso. Yo hago como cuatrocientas pupusas al día. Mis manos ya saben solas, no tengo que pensar. Lo que más me gusta es que la gente viene a comer pupusas en familia. Vienen los domingos, se sientan, hablan, se ríen. Yo he visto crecer a niños que ahora traen a sus propios hijos. Uno alimenta a un pueblo entero y eso da orgullo.",
+      "source": "Rosa Elena Guardado, pupusera de Olocuilta",
+      "questions": [
+        {
+          "text": "¿Con qué empezó Rosa Elena su negocio?",
+          "type": "mc",
+          "opts": [
+            "Con un comal y una mesita en la carretera",
+            "Con seis comales",
+            "Con un camión",
+            "Con un restaurante grande"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo debe estar la masa?",
+          "type": "mc",
+          "opts": [
+            "Muy aguada",
+            "Tibia y suave",
+            "Fría",
+            "Muy dura"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa si la pupusa queda mal cerrada?",
+          "type": "mc",
+          "opts": [
+            "Queda muy grande",
+            "Se quema",
+            "Se abre en el comal y se sale el queso",
+            "No se cocina"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántas pupusas hace al día?",
+          "type": "mc",
+          "opts": [
+            "Mil",
+            "Cien",
+            "Doscientas",
+            "Como cuatrocientas"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "El Salvador_1": {
+    "topic": "La Ruta de las Flores y el café de altura",
+    "assignment": "Corresponsal, sube a las montañas del occidente salvadoreño. Hay una carretera entre pueblos de colores que llaman la Ruta de las Flores. Allí se cultiva café bajo la sombra de los árboles. Ve a conocer a las familias cafetaleras.",
+    "article": {
+      "headline": "Café bajo la sombra: el bosque que también es finca",
+      "byline": "Corresponsal, El Mundo Nuestro | Juayúa, Sonsonate, El Salvador",
+      "paragraphs": [
+        "La Ruta de las Flores conecta cinco pueblos en las montañas del occidente: Nahuizalco, Salcoatitán, Juayúa, Apaneca y Ataco. Las casas están pintadas de colores fuertes y las calles son de piedra.",
+        "Aquí se cultiva café de altura. Mientras más alto crece la planta, más lento madura el grano y más sabor concentra. El café de estas montañas crece a más de mil doscientos metros sobre el nivel del mar.",
+        "Lo especial de El Salvador es el café de sombra. Las plantas de café crecen debajo de árboles grandes, no en campo abierto. Eso protege el suelo, guarda humedad y da casa a las aves migratorias que llegan cada invierno.",
+        "Las fincas de sombra funcionan casi como un bosque. Un estudio contó más de ciento cincuenta especies de aves en estos cafetales. \"Nosotros no tenemos una finca, tenemos un bosque que además da café\", explica la productora Silvia Menjívar."
+      ],
+      "keywords": [
+        {
+          "word": "fincas",
+          "definition": "terrenos de campo donde se cultiva o se cría ganado"
+        },
+        {
+          "word": "altura",
+          "definition": "distancia hacia arriba respecto al nivel del mar"
+        },
+        {
+          "word": "madura",
+          "definition": "se pone listo para cosechar o comer"
+        },
+        {
+          "word": "migratorias",
+          "definition": "que viajan de un país a otro según la estación del año"
+        },
+        {
+          "word": "cafetales",
+          "definition": "terrenos plantados de café"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos pueblos conecta la Ruta de las Flores?",
+          "type": "mc",
+          "opts": [
+            "Cinco",
+            "Diez",
+            "Doce",
+            "Tres"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué pasa cuando el café crece más alto?",
+          "type": "mc",
+          "opts": [
+            "Madura más rápido",
+            "Madura más lento y concentra más sabor",
+            "No da fruto",
+            "Necesita más agua"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es el café de sombra?",
+          "type": "mc",
+          "opts": [
+            "Café sin sol nunca",
+            "Café que crece de noche",
+            "Café que crece debajo de árboles grandes",
+            "Café guardado en la oscuridad"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuántas especies de aves contó un estudio en estos cafetales?",
+          "type": "mc",
+          "opts": [
+            "Mil",
+            "Veinte",
+            "Cincuenta",
+            "Más de ciento cincuenta"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que produce más beneficios una finca que también funciona como bosque?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, soy Silvia Menjívar y soy productora de café en Apaneca. Esta finca era de mi abuelo y después de mi mamá. Somos tres generaciones en la misma tierra. Cuando yo tomé la finca, un ingeniero me recomendó cortar los árboles grandes. Me dijo que a pleno sol la planta produce más quintales. Es cierto, produce más. Pero yo le pregunté qué pasa en diez años. No supo contestarme. Decidí no cortar nada. A pleno sol la tierra se seca, hay que echar más químicos y el suelo se cansa. Bajo sombra la hoja cae, se hace abono sola y el agua se queda. En noviembre llegan las aves de Canadá y de Estados Unidos. Duermen en mis árboles, se comen los insectos y se van en marzo. Trabajan gratis para mí. Mi café produce menos quintales que el del vecino, es verdad. Pero lo vendo más caro porque sabe mejor y porque los compradores quieren café que no destruye el bosque. Al final me va igual o mejor. Y la tierra sigue viva para mis hijos.",
+      "source": "Silvia Menjívar, productora de café de Apaneca",
+      "questions": [
+        {
+          "text": "¿Cuántas generaciones de su familia han trabajado la finca?",
+          "type": "mc",
+          "opts": [
+            "Tres",
+            "Cinco",
+            "Una",
+            "Dos"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué le recomendó el ingeniero?",
+          "type": "mc",
+          "opts": [
+            "Sembrar más árboles",
+            "Cortar los árboles grandes",
+            "Vender la finca",
+            "Cambiar de cultivo"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacen las aves que llegan en noviembre?",
+          "type": "mc",
+          "opts": [
+            "Hacen ruido",
+            "Dañan el café",
+            "Se comen los insectos",
+            "Se llevan los granos"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué vende su café más caro?",
+          "type": "mc",
+          "opts": [
+            "Porque está más cerca",
+            "Porque tiene más trabajadores",
+            "Porque produce más",
+            "Porque sabe mejor y no destruye el bosque"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "El Salvador_2": {
+    "topic": "Las jóvenes surfistas de la costa salvadoreña",
+    "assignment": "Corresponsal, última parada en El Salvador: la playa. Las olas de esta costa son famosas en todo el mundo del surf. Y algo está cambiando: cada vez hay más muchachas del pueblo sobre la tabla. Ve a El Tunco y platica con ellas.",
+    "article": {
+      "headline": "Las olas ya no son solo de ellos",
+      "byline": "Corresponsal, El Mundo Nuestro | El Tunco, La Libertad, El Salvador",
+      "paragraphs": [
+        "La costa de La Libertad tiene algunas de las mejores olas del mundo. En Punta Roca y El Tunco, las olas rompen a la derecha de forma larga y pareja. Surfistas de muchos países vienen a probarlas.",
+        "Durante años, casi todos los surfistas locales eran hombres. Las muchachas del pueblo miraban desde la orilla. Muchas familias pensaban que el mar era peligroso para ellas o que no era cosa de mujeres.",
+        "Eso empezó a cambiar con clubes de surf femenino. Hoy varias jóvenes salvadoreñas compiten a nivel internacional y algunas han representado al país en campeonatos mundiales.",
+        "Los clubes piden algo a cambio del entrenamiento: buenas notas en la escuela. \"Si no pasás tus materias, no entrás al agua\", explica la entrenadora Mariela Cortez. Las tablas y los trajes son prestados, para que el dinero no sea una barrera."
+      ],
+      "keywords": [
+        {
+          "word": "surfistas",
+          "definition": "personas que practican el surf sobre las olas"
+        },
+        {
+          "word": "rompen",
+          "definition": "cuando las olas se quiebran y forman espuma"
+        },
+        {
+          "word": "femenino",
+          "definition": "de las mujeres o para las mujeres"
+        },
+        {
+          "word": "campeonatos",
+          "definition": "competencias donde se busca al mejor"
+        },
+        {
+          "word": "entrenadora",
+          "definition": "mujer que enseña y prepara a deportistas"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cómo son las olas de Punta Roca y El Tunco?",
+          "type": "mc",
+          "opts": [
+            "Largas y parejas, rompen a la derecha",
+            "Muy pequeñas",
+            "Siempre peligrosas",
+            "Cortas y bruscas"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hacían antes las muchachas del pueblo?",
+          "type": "mc",
+          "opts": [
+            "Surfeaban todas",
+            "Miraban desde la orilla",
+            "Entrenaban en otro país",
+            "Trabajaban en el mar"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué piden los clubes a cambio del entrenamiento?",
+          "type": "mc",
+          "opts": [
+            "Comprar su propia tabla",
+            "Dinero",
+            "Buenas notas en la escuela",
+            "Trabajar en la playa"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué las tablas son prestadas?",
+          "type": "mc",
+          "opts": [
+            "Porque no se pueden comprar",
+            "Porque son del gobierno",
+            "Porque son viejas",
+            "Para que el dinero no sea una barrera"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Conoces alguna actividad donde falten oportunidades para ciertas personas? ¿Qué se podría hacer?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, me llamo Mariela Cortez y entreno al club de surf de niñas de El Tunco. Yo empecé a surfear a los once años con una tabla rota que un turista dejó botada. La arreglé con cinta adhesiva. Mi papá no quería. Me decía que una señorita no anda en traje de baño frente a todo el mundo. Nos peleamos mucho por eso. Yo me escapaba en la mañana antes de que él se levantara. Al final gané un campeonato nacional y él fue a verme. No dijo nada, solo lloró. Ahora es el que carga las tablas de las niñas del club. Tengo veintiséis alumnas, la más chiquita tiene siete años. La regla es clara: primero la escuela, después el agua. Yo reviso las notas cada mes. Y les enseño algo más importante que pararse en la tabla. Les enseño que el mar no le pertenece a nadie. Que ese lugar en la ola también es de ellas. Cuando una niña se para por primera vez, grita. Siempre gritan. Ese grito es lo que me hace seguir.",
+      "source": "Mariela Cortez, entrenadora de surf",
+      "questions": [
+        {
+          "text": "¿Con qué tabla empezó Mariela?",
+          "type": "mc",
+          "opts": [
+            "Con una tabla rota que arregló con cinta adhesiva",
+            "Con la tabla de su papá",
+            "Sin tabla",
+            "Con una tabla nueva"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué le decía su papá?",
+          "type": "mc",
+          "opts": [
+            "Que surfeara más",
+            "Que una señorita no anda en traje de baño frente a todos",
+            "Que compitiera",
+            "Que fuera entrenadora"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hizo su papá cuando ella ganó el campeonato nacional?",
+          "type": "mc",
+          "opts": [
+            "Se enojó",
+            "No fue",
+            "Fue a verla y lloró",
+            "Le compró una tabla"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál es la regla del club?",
+          "type": "mc",
+          "opts": [
+            "Pagar una cuota",
+            "Competir cada mes",
+            "Entrenar todos los días",
+            "Primero la escuela, después el agua"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}

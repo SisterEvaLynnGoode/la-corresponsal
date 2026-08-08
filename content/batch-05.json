@@ -1,0 +1,818 @@
+{
+  "República Dominicana_0": {
+    "topic": "La bachata, de la marginación al reconocimiento mundial",
+    "assignment": "¡Corresponsal, llegaste a República Dominicana! Aquí hay una música que durante años fue despreciada y hoy la UNESCO la protege y el mundo entero la baila. Ve a un colmado, busca a los bachateros viejos y pregúntales cómo cambió todo.",
+    "article": {
+      "headline": "La bachata pasó de prohibida a patrimonio de la humanidad",
+      "byline": "Corresponsal, El Mundo Nuestro | Santo Domingo, República Dominicana",
+      "paragraphs": [
+        "La bachata nació en los campos y los barrios pobres dominicanos a mediados del siglo veinte. Se tocaba con guitarra, bongó, güira y bajo. Las letras hablaban de desamor, de trabajo duro y de la vida diaria.",
+        "Durante décadas fue música despreciada. Las emisoras grandes no la pasaban y la llamaban música de amargue, con desprecio. Se escuchaba sobre todo en los colmados de barrio y en las zonas rurales.",
+        "Todo empezó a cambiar en los años ochenta y noventa. Artistas como Juan Luis Guerra la llevaron a públicos nuevos sin quitarle su raíz. Después llegaron grupos dominicanos formados en Nueva York que la mezclaron con otros sonidos.",
+        "En 2019, la UNESCO declaró la bachata patrimonio cultural inmaterial de la humanidad. Hoy se baila en Tokio, en Madrid y en Nueva York. La misma música que las radios rechazaban llena estadios en todo el planeta."
+      ],
+      "keywords": [
+        {
+          "word": "bachata",
+          "definition": "género musical dominicano de guitarra, nacido en los barrios y el campo"
+        },
+        {
+          "word": "güira",
+          "definition": "instrumento de metal que se raspa para marcar el ritmo"
+        },
+        {
+          "word": "despreciada",
+          "definition": "tratada con desprecio, considerada de poco valor"
+        },
+        {
+          "word": "colmados",
+          "definition": "tiendas pequeñas de barrio donde también se socializa"
+        },
+        {
+          "word": "inmaterial",
+          "definition": "que no es un objeto físico, como la música o las costumbres"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde nació la bachata?",
+          "type": "mc",
+          "opts": [
+            "En los campos y barrios pobres dominicanos",
+            "En Nueva York",
+            "En España",
+            "En los hoteles de lujo"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo la llamaban con desprecio?",
+          "type": "mc",
+          "opts": [
+            "Música de salón",
+            "Música de amargue",
+            "Música moderna",
+            "Música del campo"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Dónde se escuchaba sobre todo?",
+          "type": "mc",
+          "opts": [
+            "En la televisión",
+            "En las emisoras grandes",
+            "En los colmados de barrio y zonas rurales",
+            "En los teatros"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasó en 2019?",
+          "type": "mc",
+          "opts": [
+            "Dejó de tocarse",
+            "Nació la bachata",
+            "Se prohibió",
+            "La UNESCO la declaró patrimonio de la humanidad"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Conoces algo (música, comida, forma de hablar) que antes se despreciaba y hoy se valora? Explícalo.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Saludos, mi nombre es Anselmo Reyes y toco la guitarra de bachata desde los quince años. Ahora tengo setenta y uno. Yo viví los tiempos en que a uno le daba vergüenza decir que era bachatero. De verdad. Uno tocaba en los colmados, en los cumpleaños, en las fiestas de barrio. Pero si a uno le preguntaban en la ciudad a qué se dedicaba, uno decía que era músico y ya, sin especificar. Había gente que decía que la bachata era música de gente sin educación. Dolía. Mi propia suegra no quería que su hija se casara con un bachatero. Y mire ahora. Mi nieta me manda videos de muchachos rubios en Alemania bailando bachata en una academia. Pagan por aprender lo que nosotros hacíamos gratis en el patio. Yo me río solo. No me da rabia, le soy sincero. Me da una satisfacción tranquila. Lo que hicimos nosotros con hambre y con guitarra prestada resultó que valía. Siempre valió. Solamente que ellos tardaron en darse cuenta.",
+      "source": "Anselmo Reyes, guitarrista de bachata",
+      "questions": [
+        {
+          "text": "¿A qué edad empezó a tocar Anselmo?",
+          "type": "mc",
+          "opts": [
+            "A los quince años",
+            "A los veinte años",
+            "A los treinta años",
+            "A los diez años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hacía cuando le preguntaban a qué se dedicaba?",
+          "type": "mc",
+          "opts": [
+            "Decía que era bachatero con orgullo",
+            "Decía que era músico y ya, sin especificar",
+            "No contestaba",
+            "Mentía completamente"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué le mandan sus nietos por video?",
+          "type": "mc",
+          "opts": [
+            "Noticias",
+            "Fotos de la familia",
+            "Muchachos en Alemania bailando bachata",
+            "Canciones nuevas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cómo se siente Anselmo hoy?",
+          "type": "mc",
+          "opts": [
+            "Con tristeza",
+            "Sin interés",
+            "Con rabia",
+            "Con una satisfacción tranquila"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "República Dominicana_1": {
+    "topic": "Las ballenas jorobadas de la bahía de Samaná",
+    "assignment": "Corresponsal, sube a una lancha en Samaná. Cada invierno llegan miles de ballenas jorobadas a esta bahía desde el Atlántico Norte. Vienen a tener sus crías. Ve a verlas y averigua qué reglas protegen el encuentro.",
+    "article": {
+      "headline": "Las ballenas vuelven cada enero a la misma bahía",
+      "byline": "Corresponsal, El Mundo Nuestro | Samaná, República Dominicana",
+      "paragraphs": [
+        "Entre enero y marzo, la bahía de Samaná se llena de ballenas jorobadas. Llegan desde aguas frías del Atlántico Norte, cerca de Canadá y Groenlandia. Nadan más de seis mil kilómetros para llegar aquí.",
+        "Vienen por dos razones: aparearse y tener a sus crías. El agua de Samaná es tibia y poco profunda, ideal para un ballenato recién nacido. Una cría pesa cerca de una tonelada al nacer y toma leche por casi un año.",
+        "Los machos cantan. Producen sonidos largos y complejos que pueden durar veinte minutos y repetirse durante horas. Todos los machos de una zona cantan la misma canción, y esa canción cambia poco a poco cada temporada.",
+        "El avistamiento está muy regulado. Solo pueden entrar lanchas autorizadas, deben mantener distancia, apagar motores cerca de los animales y salir después de treinta minutos. Los capitanes locales recibieron capacitación y hoy vigilan que todos cumplan."
+      ],
+      "keywords": [
+        {
+          "word": "jorobadas",
+          "definition": "tipo de ballena con una joroba en el lomo"
+        },
+        {
+          "word": "aparearse",
+          "definition": "unirse macho y hembra para tener crías"
+        },
+        {
+          "word": "ballenato",
+          "definition": "cría de ballena"
+        },
+        {
+          "word": "avistamiento",
+          "definition": "actividad de observar animales en su ambiente natural"
+        },
+        {
+          "word": "capacitación",
+          "definition": "entrenamiento para aprender a hacer bien un trabajo"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿En qué meses llegan las ballenas?",
+          "type": "mc",
+          "opts": [
+            "Entre enero y marzo",
+            "Septiembre a diciembre",
+            "Todo el año",
+            "Junio a agosto"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué es ideal el agua de Samaná para las crías?",
+          "type": "mc",
+          "opts": [
+            "Porque es fría",
+            "Porque es tibia y poco profunda",
+            "Porque hay mucha comida",
+            "Porque no hay barcos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué hacen los machos?",
+          "type": "mc",
+          "opts": [
+            "Se van rápido",
+            "Cazan",
+            "Cantan la misma canción, que cambia cada temporada",
+            "Cuidan a las crías"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuánto tiempo pueden quedarse las lanchas?",
+          "type": "mc",
+          "opts": [
+            "Dos horas",
+            "Cinco minutos",
+            "Todo el día",
+            "Treinta minutos"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Por qué crees que es necesario poner reglas para observar animales salvajes?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenos días, yo soy Ramón Jiménez, capitán de lancha aquí en Samaná. Llevo diecinueve temporadas de ballenas. Antes yo pescaba, como casi todos aquí. Le voy a contar cómo era esto al principio, cuando empezó el turismo de ballenas. Era un desorden. Llegaban veinte lanchas a rodear a una madre con su cría. Todos acelerando, todos queriendo la mejor foto para su pasajero. Una vez vi a un ballenato separarse de su madre por el ruido de los motores. Eso me dejó pensando muchos días. Nos organizamos en una asociación de capitanes. Pusimos reglas nosotros mismos, antes de que el gobierno nos las pusiera. Solo una lancha a la vez cerca del animal. Motor apagado o en neutro. Media hora máximo y nos vamos. Nunca cortarle el paso. Al principio unos se molestaron, decían que iban a ganar menos. Pero pasó al revés. Las ballenas se acostumbraron y ahora se acercan ellas solas. Una madre pasó por debajo de mi lancha el mes pasado con su cría. Iba tranquila. Eso no pasaba antes.",
+      "source": "Ramón Jiménez, capitán de lancha de avistamiento",
+      "questions": [
+        {
+          "text": "¿Cuántas temporadas lleva Ramón?",
+          "type": "mc",
+          "opts": [
+            "Diecinueve",
+            "Treinta",
+            "Dos",
+            "Cinco"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué vio una vez que lo dejó pensando?",
+          "type": "mc",
+          "opts": [
+            "Una ballena herida",
+            "Un ballenato separarse de su madre por el ruido",
+            "Una lancha hundirse",
+            "Muchos turistas"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Quién puso las reglas primero?",
+          "type": "mc",
+          "opts": [
+            "Unos científicos",
+            "El gobierno",
+            "Los capitanes, en su propia asociación",
+            "Los turistas"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué pasó después de poner las reglas?",
+          "type": "mc",
+          "opts": [
+            "Se fueron las ballenas",
+            "Cerró el turismo",
+            "Ganaron menos",
+            "Las ballenas se acostumbraron y ahora se acercan solas"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "República Dominicana_2": {
+    "topic": "El béisbol y los muchachos de San Pedro de Macorís",
+    "assignment": "Corresponsal, ve a San Pedro de Macorís. De esa ciudad pequeña han salido más jugadores de Grandes Ligas que de casi cualquier lugar del mundo. Ve a los campos de tierra y habla con los muchachos que sueñan.",
+    "article": {
+      "headline": "La ciudad que produce peloteros",
+      "byline": "Corresponsal, El Mundo Nuestro | San Pedro de Macorís, República Dominicana",
+      "paragraphs": [
+        "San Pedro de Macorís tiene alrededor de doscientos mil habitantes. De esta sola ciudad han salido más de cien peloteros que llegaron a las Grandes Ligas de Estados Unidos. Ningún otro lugar del mundo tiene esa proporción.",
+        "El béisbol se juega en todas partes: en campos de tierra, en calles cerradas, en terrenos baldíos. Muchos niños aprenden con guantes hechos de cartón de leche y bates de rama. La pelota a veces es de tela enrollada con cinta.",
+        "En el país existen las academias, campos de entrenamiento que financian los equipos estadounidenses. Allí los adolescentes entrenan, comen bien y a veces reciben clases. Un muchacho puede firmar contrato a los dieciséis años.",
+        "Pero la realidad es dura. De cada cien firmados, muy pocos llegan a jugar en Grandes Ligas. Por eso ahora varias academias exigen que los jóvenes sigan estudiando. \"El bate se rompe, la cabeza no\", dice el entrenador Félix Encarnación."
+      ],
+      "keywords": [
+        {
+          "word": "peloteros",
+          "definition": "jugadores de béisbol"
+        },
+        {
+          "word": "proporción",
+          "definition": "relación entre una cantidad y el total"
+        },
+        {
+          "word": "baldíos",
+          "definition": "terrenos vacíos y sin construir"
+        },
+        {
+          "word": "academias",
+          "definition": "centros donde se entrena y forma a deportistas jóvenes"
+        },
+        {
+          "word": "financian",
+          "definition": "pagan los gastos de algo"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Cuántos peloteros de Grandes Ligas han salido de San Pedro?",
+          "type": "mc",
+          "opts": [
+            "Más de cien",
+            "Cerca de mil",
+            "Cinco",
+            "Unos diez"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Con qué aprenden muchos niños?",
+          "type": "mc",
+          "opts": [
+            "Con equipo profesional",
+            "Con guantes de cartón de leche y bates de rama",
+            "Con equipo prestado del club",
+            "No practican"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿A qué edad puede firmar contrato un muchacho?",
+          "type": "mc",
+          "opts": [
+            "A los treinta años",
+            "A los doce años",
+            "A los dieciséis años",
+            "A los veintiún años"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué varias academias exigen que sigan estudiando?",
+          "type": "mc",
+          "opts": [
+            "Porque estudian mejor que juegan",
+            "Porque no hay entrenadores",
+            "Porque lo pide la ley",
+            "Porque muy pocos llegan a Grandes Ligas"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué significa para ti la frase \"el bate se rompe, la cabeza no\"?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, mi nombre es Félix Encarnación y entreno muchachos de doce a diecisiete años aquí en San Pedro. Yo firmé a los diecisiete con una organización de Grandes Ligas. Me fui a Estados Unidos convencido de que iba a ser estrella. Duré cuatro años en ligas menores. Me lesioné el hombro y se acabó. Volví a los veintiuno sin dinero, sin inglés y sin bachillerato, porque yo dejé la escuela a los quince para entrenar todo el día. Eso es lo que nadie te cuenta. Aquí todos los muchachos ven a los que triunfan en la televisión. Nadie ve a los que volvemos. Por eso yo tengo una regla en mi programa: si te reprueban en la escuela, no juegas conmigo. Se han molestado padres. Me han dicho que yo les estoy quitando la oportunidad a sus hijos. Yo les contesto tranquilo: yo soy la oportunidad que su hijo va a necesitar cuando el béisbol no funcione. Y en la mayoría de los casos, no funciona. Prefiero formar hombres que peloteros.",
+      "source": "Félix Encarnación, entrenador juvenil de béisbol",
+      "questions": [
+        {
+          "text": "¿A qué edad firmó Félix?",
+          "type": "mc",
+          "opts": [
+            "A los diecisiete años",
+            "A los veinte años",
+            "A los doce años",
+            "A los quince años"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué se acabó su carrera?",
+          "type": "mc",
+          "opts": [
+            "Lo despidieron",
+            "Se lesionó el hombro",
+            "No le gustaba",
+            "Volvió por su familia"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuál es su regla?",
+          "type": "mc",
+          "opts": [
+            "Pagar una cuota",
+            "Entrenar todos los días",
+            "Si te reprueban en la escuela, no juegas",
+            "Llegar temprano"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué prefiere formar Félix?",
+          "type": "mc",
+          "opts": [
+            "Entrenadores",
+            "Estudiantes solamente",
+            "Peloteros famosos",
+            "Hombres, más que peloteros"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Puerto Rico_0": {
+    "topic": "La bomba y la plena, el pulso afroboricua",
+    "assignment": "¡Bienvenida a Puerto Rico, corresponsal! Ve a Loíza, capital de la tradición afroboricua. Allí la bomba no es un espectáculo: es una conversación entre quien baila y quien toca el tambor. Ve y entiende cómo funciona.",
+    "article": {
+      "headline": "En la bomba, quien baila le da las órdenes al tambor",
+      "byline": "Corresponsal, El Mundo Nuestro | Loíza, Puerto Rico",
+      "paragraphs": [
+        "La bomba es una de las tradiciones musicales más antiguas de Puerto Rico. Nació hace siglos entre las personas africanas esclavizadas y sus descendientes en la isla. Loíza es uno de sus centros más importantes.",
+        "Lo que hace única a la bomba es una regla al revés. En casi toda la música, quien baila sigue al músico. En la bomba pasa lo contrario: el tambor principal, llamado subidor, tiene que seguir a quien está bailando.",
+        "La persona que baila hace un movimiento fuerte y marcado. A eso se le llama piquete. El subidor tiene que responder con un golpe que corresponda a ese movimiento exacto. Es un diálogo, casi un reto amistoso.",
+        "La plena es otra tradición, más reciente. Se toca con panderos de distintos tamaños y sus letras cuentan noticias del barrio. Por eso le dicen el periódico cantado. Ambas siguen vivas en fiestas y escuelas de la isla."
+      ],
+      "keywords": [
+        {
+          "word": "diálogo",
+          "definition": "conversación entre dos partes que se responden"
+        },
+        {
+          "word": "esclavizadas",
+          "definition": "personas obligadas por la fuerza a trabajar sin libertad"
+        },
+        {
+          "word": "subidor",
+          "definition": "tambor principal de la bomba, que responde al bailador"
+        },
+        {
+          "word": "piquete",
+          "definition": "movimiento marcado del bailador que el tambor debe responder"
+        },
+        {
+          "word": "panderos",
+          "definition": "instrumentos redondos de mano usados en la plena"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Dónde nació la bomba?",
+          "type": "mc",
+          "opts": [
+            "Entre las personas africanas esclavizadas en la isla",
+            "En Nueva York",
+            "En los teatros",
+            "En España"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué regla se invierte en la bomba?",
+          "type": "mc",
+          "opts": [
+            "Se baila sin música",
+            "El tambor sigue a quien baila, no al revés",
+            "No se puede cantar",
+            "Se baila en silencio"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué es un piquete?",
+          "type": "mc",
+          "opts": [
+            "Un baile en pareja",
+            "Un tipo de tambor",
+            "Un movimiento marcado que el tambor debe responder",
+            "Una canción"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué a la plena le dicen el periódico cantado?",
+          "type": "mc",
+          "opts": [
+            "Porque sale en el periódico",
+            "Porque es muy antigua",
+            "Porque se lee",
+            "Porque sus letras cuentan noticias del barrio"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Qué te parece la idea de que quien baila mande sobre el músico? ¿Dónde más has visto algo así?",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "¡Saludos! Yo soy Yarimar Calderón y toco bomba desde niña, aquí en Loíza. Mi familia es bombera de generaciones. La gente que viene de afuera se confunde al principio. Ven a la bailadora y creen que está siguiendo el ritmo del tambor. Es al revés. Yo, como tocadora del subidor, tengo que estar mirándole los pies y las caderas. Cuando ella marca un piquete, yo tengo que responder en ese instante. Si me distraigo, se nota enseguida y quedo mal yo, no ella. Es una conversación de verdad. A veces la bailadora te reta, te hace movimientos rapiditos a ver si la puedes seguir. Y una responde. Es bien bonito porque en la bomba el poder está en el cuerpo de la mujer que baila, y eso viene de hace siglos, de nuestras ancestras. Ahora doy talleres a nenes de la escuela. Les explico que esto no es folclor de museo. Esto se sigue creando. Cada batey es distinto porque cada persona que baila es distinta. La bomba está viva.",
+      "source": "Yarimar Calderón, tocadora de bomba de Loíza",
+      "questions": [
+        {
+          "text": "¿Qué se confunde la gente de afuera?",
+          "type": "mc",
+          "opts": [
+            "Creen que la bailadora sigue al tambor",
+            "La letra de las canciones",
+            "El lugar de origen",
+            "El nombre de los tambores"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué tiene que mirar Yarimar mientras toca?",
+          "type": "mc",
+          "opts": [
+            "El público",
+            "Los pies y las caderas de la bailadora",
+            "Los otros músicos",
+            "Sus propias manos"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasa si se distrae?",
+          "type": "mc",
+          "opts": [
+            "La bailadora se va",
+            "No pasa nada",
+            "Se nota y queda mal ella, no la bailadora",
+            "Se para la música"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué les explica a los nenes de la escuela?",
+          "type": "mc",
+          "opts": [
+            "Que es muy difícil",
+            "Que deben viajar a Loíza",
+            "Que es folclor de museo",
+            "Que esto no es folclor de museo, se sigue creando"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Puerto Rico_1": {
+    "topic": "El Yunque, el único bosque tropical lluvioso del sistema federal",
+    "assignment": "Corresponsal, ponte botas. Vas al Yunque, un bosque donde llueve casi todos los días y donde canta el coquí. Después del huracán María quedó muy dañado y se está recuperando. Ve a ver cómo va.",
+    "article": {
+      "headline": "El bosque que se está curando solo",
+      "byline": "Corresponsal, El Mundo Nuestro | Río Grande, Puerto Rico",
+      "paragraphs": [
+        "El Yunque es el único bosque tropical lluvioso dentro del sistema de bosques nacionales de Estados Unidos. Está en el noreste de Puerto Rico y recibe más de cuatro metros de lluvia al año en sus partes altas.",
+        "Allí vive el coquí, una rana diminuta que cabe en la punta de un dedo. Su canto de dos notas, co-quí, se oye por toda la isla al anochecer y es un símbolo nacional puertorriqueño.",
+        "En septiembre de 2017 el huracán María golpeó la isla con vientos de más de doscientos kilómetros por hora. El Yunque perdió la mayor parte de sus hojas. Desde el aire, el bosque verde se veía café y pelado.",
+        "Pero los bosques tropicales del Caribe evolucionaron con huracanes. En pocos meses los árboles echaron hojas nuevas desde el tronco. Los científicos aprovecharon para estudiar la recuperación y hoy vigilan qué especies vuelven primero."
+      ],
+      "keywords": [
+        {
+          "word": "tropical",
+          "definition": "de las zonas cálidas cercanas al ecuador"
+        },
+        {
+          "word": "coquí",
+          "definition": "rana pequeña de Puerto Rico, símbolo nacional"
+        },
+        {
+          "word": "huracán",
+          "definition": "tormenta muy fuerte con vientos que giran"
+        },
+        {
+          "word": "evolucionaron",
+          "definition": "cambiaron poco a poco a lo largo de mucho tiempo"
+        },
+        {
+          "word": "recuperación",
+          "definition": "proceso de volver a estar bien después de un daño"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué tiene de único el Yunque?",
+          "type": "mc",
+          "opts": [
+            "Es el único bosque tropical lluvioso del sistema federal de EE.UU.",
+            "No tiene animales",
+            "Nunca llueve",
+            "Es el más grande"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Cómo es el coquí?",
+          "type": "mc",
+          "opts": [
+            "Un ave grande",
+            "Una rana diminuta que cabe en la punta de un dedo",
+            "Un pez",
+            "Un insecto"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasó en septiembre de 2017?",
+          "type": "mc",
+          "opts": [
+            "Hubo sequía",
+            "Hubo un incendio",
+            "El huracán María golpeó la isla",
+            "Se creó el bosque"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Por qué se recuperó el bosque?",
+          "type": "mc",
+          "opts": [
+            "Porque llovió menos",
+            "Porque cerraron el parque",
+            "Porque lo replantaron todo",
+            "Porque los bosques del Caribe evolucionaron con huracanes"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "¿Has visto a la naturaleza recuperarse de algún daño? Describe qué pasó.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Hola, mi nombre es Nélida Ortiz y soy bióloga en El Yunque. Estudio las poblaciones de coquí. Le voy a ser honesta: después de María yo pensé que esto no se recuperaba. Subí al bosque como a las dos semanas. No había hojas. Ninguna. Se veía el cielo desde abajo, cosa que aquí nunca pasa porque el dosel siempre lo tapa todo. Y había un silencio horrible. Sin hojas no hay humedad, y sin humedad los coquíes no cantan. Yo me senté en una piedra y lloré, se lo digo de verdad. Volví seis semanas después y ya había brotes verdes saliendo directo de los troncos. Los árboles de aquí saben hacer eso. Han pasado por esto mil veces en miles de años. A los cuatro meses volví a oír coquíes. Poquitos, pero se oían. Ahora, años después, tenemos algunas especies casi en los números de antes, y otras todavía atrás. Yo aprendí algo en esto. El bosque no necesita que lo salvemos. Necesita que lo dejemos en paz y le demos tiempo.",
+      "source": "Nélida Ortiz, bióloga de El Yunque",
+      "questions": [
+        {
+          "text": "¿Qué estudia Nélida?",
+          "type": "mc",
+          "opts": [
+            "Las poblaciones de coquí",
+            "El clima",
+            "Las aves",
+            "Los árboles"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Por qué había silencio después del huracán?",
+          "type": "mc",
+          "opts": [
+            "Porque se fueron los turistas",
+            "Sin hojas no hay humedad, y sin humedad los coquíes no cantan",
+            "Porque era de noche",
+            "Porque hacía frío"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Cuándo volvió a oír coquíes?",
+          "type": "mc",
+          "opts": [
+            "A los cinco años",
+            "A las dos semanas",
+            "A los cuatro meses",
+            "Al año"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué aprendió Nélida?",
+          "type": "mc",
+          "opts": [
+            "Que el bosque no se recupera",
+            "Que hay que cerrar el parque",
+            "Que hay que replantar todo",
+            "Que el bosque necesita que lo dejemos en paz y le demos tiempo"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  },
+  "Puerto Rico_2": {
+    "topic": "Las cocinas y huertos comunitarios de la isla",
+    "assignment": "Corresponsal, última historia en Puerto Rico. Después de los huracanes y los apagones, muchos barrios montaron cocinas y huertos comunitarios que siguen funcionando hoy. Ve a uno y cuenta cómo se organizan los vecinos.",
+    "article": {
+      "headline": "El barrio que decidió cocinar junto",
+      "byline": "Corresponsal, El Mundo Nuestro | Caguas, Puerto Rico",
+      "paragraphs": [
+        "Puerto Rico importa cerca del ochenta y cinco por ciento de los alimentos que consume. Cuando un huracán cierra los puertos o se va la luz por semanas, los supermercados se vacían rápido y la comida escasea.",
+        "Después del huracán María, en muchos barrios los vecinos montaron cocinas comunitarias. Juntaban lo que cada quien tenía, cocinaban en fogones de leña y repartían platos calientes gratis, sobre todo a personas mayores.",
+        "Lo interesante es que muchas de esas cocinas no cerraron cuando volvió la normalidad. Se convirtieron en centros permanentes. Algunos incluyen huertos donde se siembra plátano, yautía, gandules, lechuga y hierbas.",
+        "El movimiento se conecta con una idea que se llama soberanía alimentaria: que una comunidad pueda producir y decidir su propia comida. \"Aprendimos que la ayuda de afuera llega tarde\", dice la organizadora Zoraida Nieves."
+      ],
+      "keywords": [
+        {
+          "word": "importa",
+          "definition": "trae productos desde otro país"
+        },
+        {
+          "word": "escasea",
+          "definition": "hay muy poca cantidad de algo"
+        },
+        {
+          "word": "fogones",
+          "definition": "lugares donde se hace fuego para cocinar"
+        },
+        {
+          "word": "gandules",
+          "definition": "legumbre muy usada en la cocina puertorriqueña"
+        },
+        {
+          "word": "soberanía",
+          "definition": "poder de decidir sobre lo propio sin depender de otros"
+        }
+      ],
+      "questions": [
+        {
+          "text": "¿Qué porcentaje de sus alimentos importa Puerto Rico?",
+          "type": "mc",
+          "opts": [
+            "Cerca del ochenta y cinco por ciento",
+            "La mitad",
+            "Casi nada",
+            "El veinte por ciento"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Qué hicieron los vecinos después del huracán María?",
+          "type": "mc",
+          "opts": [
+            "Se mudaron",
+            "Montaron cocinas comunitarias",
+            "Esperaron en casa",
+            "Cerraron los barrios"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Qué pasó con muchas de esas cocinas?",
+          "type": "mc",
+          "opts": [
+            "Se mudaron a la capital",
+            "Cerraron enseguida",
+            "No cerraron, se volvieron centros permanentes",
+            "Se vendieron"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Qué es la soberanía alimentaria?",
+          "type": "mc",
+          "opts": [
+            "Importar más",
+            "Cocinar en grupo",
+            "Comprar comida barata",
+            "Que una comunidad pueda producir y decidir su propia comida"
+          ],
+          "correct": 3
+        },
+        {
+          "text": "Si tu comunidad tuviera que alimentarse sola por dos semanas, ¿qué necesitaría? Explica.",
+          "type": "written"
+        }
+      ]
+    },
+    "audio": {
+      "script": "Buenas, yo soy Zoraida Nieves y coordino el comedor y el huerto comunitario de este barrio en Caguas. Esto empezó por necesidad pura. Después de María estuvimos cincuenta y tres días sin luz. Sin luz no hay nevera, y sin nevera se echa a perder todo lo que uno tiene. La gente mayor era la que peor la estaba pasando. Doña Iris, mi vecina de al lado, tiene ochenta y siete años y vive sola. Empecé cocinando para ella y para otros tres viejitos en mi fogón de leña en el patio. A la semana éramos como quince personas cocinando y dábamos ciento y pico de platos diarios. Cuando volvió la luz, nos preguntamos si parábamos. Y decidimos que no. Porque nos dimos cuenta de algo. Antes del huracán, doña Iris comía sola todos los días y nadie sabía nada de ella. Ahora viene, se sienta, habla, se ríe con la gente. El problema nunca fue solamente la comida. Era que estábamos viviendo al lado sin conocernos.",
+      "source": "Zoraida Nieves, coordinadora de comedor comunitario",
+      "questions": [
+        {
+          "text": "¿Cuántos días estuvieron sin luz?",
+          "type": "mc",
+          "opts": [
+            "Cincuenta y tres días",
+            "Cien días",
+            "Tres días",
+            "Diez días"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "¿Para quiénes empezó cocinando Zoraida?",
+          "type": "mc",
+          "opts": [
+            "Para todo el barrio",
+            "Para doña Iris y otros tres viejitos",
+            "Para su familia",
+            "Para la escuela"
+          ],
+          "correct": 1
+        },
+        {
+          "text": "¿Por qué decidieron no parar cuando volvió la luz?",
+          "type": "mc",
+          "opts": [
+            "Porque no tenían neveras",
+            "Porque ganaban dinero",
+            "Porque antes la gente vivía al lado sin conocerse",
+            "Porque el gobierno lo pidió"
+          ],
+          "correct": 2
+        },
+        {
+          "text": "¿Cuál dice Zoraida que era el problema de fondo?",
+          "type": "mc",
+          "opts": [
+            "La falta de dinero",
+            "El huracán",
+            "La falta de comida solamente",
+            "Que estaban viviendo al lado sin conocerse"
+          ],
+          "correct": 3
+        }
+      ]
+    }
+  }
+}
