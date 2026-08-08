@@ -331,6 +331,58 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
         </div>
       </div>
     </div>
+
+    <!-- ElevenLabs audio generation -->
+    <div style="margin-top:1rem;border-top:2px solid var(--cream-dk);padding-top:1rem;font-family:sans-serif">
+      <div style="font-size:.85rem;font-weight:700;margin-bottom:.4rem">🎙️ Audio con ElevenLabs</div>
+      <div style="font-size:.78rem;color:var(--ink-lt);margin-bottom:.65rem;line-height:1.5">
+        Pre-genera los 60 clips de entrevista. Se descargan como MP3. Ponlos en <code>/audio/</code> del repo → Vercel los sirve y los estudiantes no necesitan ninguna clave.
+      </div>
+      <div style="margin-bottom:.45rem">
+        <label style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--ink-lt)">Clave ElevenLabs</label>
+        <input id="el-key" type="password" placeholder="sk_…"
+          style="width:100%;margin-top:.2rem;padding:.45rem .7rem;border:2px solid var(--cream-dk);
+                 border-radius:6px;font-size:.85rem;font-family:sans-serif">
+      </div>
+      <div style="margin-bottom:.65rem">
+        <label style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--ink-lt)">Voice ID</label>
+        <input id="el-voice" type="text" placeholder="21m00Tcm4TlvDq8ikWAM"
+          style="width:100%;margin-top:.2rem;padding:.45rem .7rem;border:2px solid var(--cream-dk);
+                 border-radius:6px;font-size:.85rem;font-family:sans-serif">
+        <div style="font-size:.68rem;color:var(--ink-lt);margin-top:.2rem">
+          Encuentra tu Voice ID en elevenlabs.io → Voices. Usa <em>eleven_multilingual_v2</em> para mejor español.
+        </div>
+      </div>
+      <button class="btn btn-gold" id="el-btn" onclick="generateAllAudio()" style="width:100%;margin-bottom:.65rem">
+        🎙️ Generar todo el audio (60 clips)
+      </button>
+      <div id="el-progress" style="display:none;margin-bottom:.65rem">
+        <div style="font-size:.78rem;color:var(--ink-lt);margin-bottom:.25rem" id="el-status">Iniciando…</div>
+        <div style="background:#ddd;border-radius:4px;height:7px;overflow:hidden">
+          <div id="el-bar" style="background:var(--terracotta);height:100%;width:0%;transition:width .4s"></div>
+        </div>
+        <div style="font-size:.68rem;color:var(--ink-lt);margin-top:.2rem" id="el-count">0 / 60 clips</div>
+      </div>
+      <div id="el-done" style="display:none;background:var(--cream-dk);border-radius:6px;padding:.65rem;font-size:.75rem;line-height:1.6">
+        ✅ <strong>Próximos pasos:</strong><br>
+        1. Crea la carpeta <code>audio/</code> en el repo de GitHub.<br>
+        2. Sube los 60 archivos MP3 (nombrados <code>0_0.mp3</code>, <code>0_1.mp3</code>…)<br>
+        3. Haz push → Vercel los sirve automáticamente.<br>
+        4. El juego los detecta y los usa; si falta alguno, usa la voz del navegador.
+      </div>
+    </div>
+
+    <!-- Progress code (cross-device rescue) -->
+    <div style="margin-top:1rem;border-top:2px solid var(--cream-dk);padding-top:1rem;font-family:sans-serif">
+      <div style="font-size:.85rem;font-weight:700;margin-bottom:.4rem">💾 Código de progreso del estudiante</div>
+      <div style="font-size:.78rem;color:var(--ink-lt);margin-bottom:.65rem;line-height:1.5">
+        Si el estudiante cambia de Chromebook, copia este código y pégalo en la pantalla de inicio del nuevo dispositivo.
+      </div>
+      <div id="progress-code-display" style="background:var(--cream-dk);border-radius:6px;padding:.65rem;
+        font-family:monospace;font-size:.78rem;word-break:break-all;letter-spacing:.5px;margin-bottom:.5rem"></div>
+      <button class="btn btn-sm" onclick="copyProgressCode()" style="width:100%">📋 Copiar código</button>
+    </div>
+
   </div>
 </div>
 
@@ -356,8 +408,22 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
       <button class="btn btn-primary" onclick="startGame()">🗞️ Comenzar la Aventura</button>
     </div>
 
-    <div style="margin-top:1.25rem;text-align:center;font-family:sans-serif;font-size:.78rem;color:var(--ink-lt)">
+    <div id="restore-area" style="margin-top:1rem;border-top:1px solid var(--cream-dk);padding-top:1rem;display:none">
+      <div style="font-family:sans-serif;font-size:.78rem;color:var(--ink-lt);margin-bottom:.4rem">
+        ¿Cambiaste de Chromebook? Pega tu código de progreso:
+      </div>
+      <div style="display:flex;gap:.5rem">
+        <input id="inp-restore" type="text" placeholder="Pega tu código aquí…"
+          style="flex:1;padding:.5rem .75rem;border:2px solid var(--cream-dk);border-radius:6px;
+                 font-size:.82rem;font-family:monospace">
+        <button class="btn btn-sm" onclick="restoreFromCode()" style="white-space:nowrap">Restaurar</button>
+      </div>
+    </div>
+
+    <div style="margin-top:.85rem;text-align:center;font-family:sans-serif;font-size:.78rem;color:var(--ink-lt)">
       ¿Maestra? <a href="#" onclick="promptTeacher()" style="color:var(--terracotta)">Acceso docente</a>
+      &nbsp;·&nbsp;
+      <a href="#" onclick="document.getElementById('restore-area').style.display='block'" style="color:var(--ink-lt)">Restaurar progreso</a>
     </div>
   </div>
 </div>
@@ -377,6 +443,7 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
     <div class="cred-badge" id="cred-badge">Pasante</div>
     <div class="h-actions">
       <button class="btn-ghost" onclick="showBylineWall()">📰 Mis artículos</button>
+      <button class="btn-ghost" onclick="showSaveCode()" title="Guardar progreso">💾</button>
       <button class="btn-ghost" onclick="promptTeacher()">👩‍🏫</button>
     </div>
   </div>
@@ -1162,26 +1229,56 @@ function submitLectura() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// AUDIO / TTS
+// AUDIO — tries hosted MP3 → browser TTS fallback
 // ─────────────────────────────────────────────────────────────────────────────
 
-function toggleAudio() {
-  if (audioSpeaking) {
+let currentAudioEl = null;
+
+async function toggleAudio() {
+  // Stop whatever is playing
+  if (audioSpeaking || currentAudioEl) {
     window.speechSynthesis.cancel();
+    if (currentAudioEl) { currentAudioEl.pause(); currentAudioEl = null; }
     audioSpeaking = false;
     document.getElementById('play-btn').textContent = '▶';
     document.getElementById('aud-status').textContent = 'Pausado. Presiona ▶ para continuar.';
     return;
   }
-  playScript(content.audio.script, () => {
-    audioSpeaking = false;
-    S.audioPlayed = true;
-    save();
-    document.getElementById('esc-locked').style.display = 'none';
-    document.getElementById('esc-qs').style.display = 'block';
-    document.getElementById('aud-status').textContent = '✓ Entrevista completada';
-    document.getElementById('play-btn').textContent = '🔄';
-  });
+
+  // Try hosted ElevenLabs MP3 first (teacher pre-generated)
+  const hostedPath = `/audio/${S.currentCountry}_${S.currentSession}.mp3`;
+  try {
+    const check = await fetch(hostedPath, {method:'HEAD'});
+    if (check.ok) { playHostedAudio(hostedPath); return; }
+  } catch {}
+
+  // Fall back to browser Web Speech API
+  playScript(content.audio.script, onAudioComplete);
+}
+
+function playHostedAudio(src) {
+  const audio = new Audio(src);
+  currentAudioEl = audio;
+  audio.onplay = () => {
+    audioSpeaking = true;
+    document.getElementById('play-btn').textContent = '⏸';
+    document.getElementById('aud-status').textContent = 'Reproduciendo entrevista…';
+  };
+  audio.onended = () => { audioSpeaking = false; currentAudioEl = null; onAudioComplete(); };
+  audio.onerror = () => {
+    audioSpeaking = false; currentAudioEl = null;
+    playScript(content.audio.script, onAudioComplete); // fall back to TTS
+  };
+  audio.play().catch(() => playScript(content.audio.script, onAudioComplete));
+}
+
+function onAudioComplete() {
+  S.audioPlayed = true; save();
+  document.getElementById('esc-locked').style.display = 'none';
+  document.getElementById('esc-qs').style.display  = 'block';
+  document.getElementById('aud-status').textContent = '✓ Entrevista completada';
+  document.getElementById('play-btn').textContent   = '🔄';
+  audioSpeaking = false;
 }
 
 function playScript(text, onEnd) {
@@ -1195,16 +1292,150 @@ function playScript(text, onEnd) {
     document.getElementById('play-btn').textContent = '⏸';
     document.getElementById('aud-status').textContent = 'Reproduciendo entrevista…';
   };
-  u.onend = () => { audioSpeaking = false; if (onEnd) onEnd(); };
+  u.onend   = () => { audioSpeaking = false; if (onEnd) onEnd(); };
   u.onerror = () => {
     audioSpeaking = false;
-    S.audioPlayed = true; save();
-    document.getElementById('esc-locked').style.display = 'none';
-    document.getElementById('esc-qs').style.display = 'block';
     document.getElementById('aud-status').textContent = 'Audio no disponible. Preguntas desbloqueadas.';
     document.getElementById('play-btn').textContent = '▶';
+    onAudioComplete();
   };
   window.speechSynthesis.speak(u);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ELEVENLABS BULK AUDIO GENERATION
+// ─────────────────────────────────────────────────────────────────────────────
+
+async function generateAllAudio() {
+  const elKey  = document.getElementById('el-key').value.trim();
+  const voiceId = document.getElementById('el-voice').value.trim();
+  if (!elKey)   { toast('Ingresa tu clave ElevenLabs.'); return; }
+  if (!voiceId) { toast('Ingresa un Voice ID.'); return; }
+
+  const total = COUNTRIES.length * SESSIONS_PER;
+  let done = 0;
+  document.getElementById('el-btn').disabled = true;
+  document.getElementById('el-progress').style.display = 'block';
+  document.getElementById('el-done').style.display = 'none';
+
+  for (let ci = 0; ci < COUNTRIES.length; ci++) {
+    for (let si = 0; si < SESSIONS_PER; si++) {
+      const key = `${COUNTRIES[ci].name}_${si}`;
+      const sc  = S.cachedContent[key] || FALLBACK[key];
+      const filename = `${ci}_${si}.mp3`;
+
+      if (!sc?.audio?.script) {
+        done++;
+        updateAudioGenUI(done, total, `Sin contenido para ${COUNTRIES[ci].name} S${si+1} — saltando`);
+        continue;
+      }
+
+      updateAudioGenUI(done, total, `${COUNTRIES[ci].name} — sesión ${si+1}…`);
+      try {
+        const blob = await callElevenLabs(sc.audio.script, voiceId, elKey);
+        downloadBlob(blob, filename);
+        done++;
+        updateAudioGenUI(done, total, `✓ ${filename}`);
+      } catch (e) {
+        done++;
+        updateAudioGenUI(done, total, `⚠ Error ${filename}: ${e.message}`);
+      }
+      if (done < total) await sleep(1800); // stay under rate limits
+    }
+  }
+
+  document.getElementById('el-btn').disabled = false;
+  document.getElementById('el-done').style.display = 'block';
+  updateAudioGenUI(done, total, '✅ ¡Todo el audio generado!');
+}
+
+async function callElevenLabs(text, voiceId, apiKey) {
+  const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+    method:'POST',
+    headers:{'Content-Type':'application/json','xi-api-key':apiKey},
+    body: JSON.stringify({
+      text,
+      model_id:'eleven_multilingual_v2',
+      voice_settings:{stability:0.5, similarity_boost:0.8, style:0.3, use_speaker_boost:true}
+    })
+  });
+  if (!res.ok) throw new Error(`ElevenLabs ${res.status}: ${await res.text()}`);
+  return res.blob();
+}
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = Object.assign(document.createElement('a'), {href:url, download:filename});
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 8000);
+}
+
+function updateAudioGenUI(done, total, text) {
+  document.getElementById('el-status').textContent = text;
+  document.getElementById('el-bar').style.width    = Math.round(done / total * 100) + '%';
+  document.getElementById('el-count').textContent  = `${done} / ${total} clips`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PROGRESS CODE — cross-device save/restore
+// ─────────────────────────────────────────────────────────────────────────────
+
+function buildProgressCode() {
+  const payload = {
+    n: S.studentName,
+    c: S.currentCountry,
+    s: S.currentSession,
+    t: S.currentStep,
+    x: S.xp,
+    a: S.publishedArticles.map(a => ({h:a.headline, co:a.country, d:a.date}))
+  };
+  return btoa(unescape(encodeURIComponent(JSON.stringify(payload)))).replace(/=/g,'');
+}
+
+function copyProgressCode() {
+  const code = buildProgressCode();
+  navigator.clipboard.writeText(code).then(
+    () => toast('¡Código copiado!'),
+    () => { prompt('Copia este código:', code); }
+  );
+}
+
+function showSaveCode() {
+  const code = buildProgressCode();
+  const msg = `Copia este código y guárdalo en un lugar seguro. Si cambias de Chromebook, pégalo en la pantalla de inicio.\n\n${code}`;
+  const copied = prompt(msg, code);
+  if (copied !== null) {
+    navigator.clipboard.writeText(code).catch(() => {});
+    toast('¡Código listo! Escríbelo o pégalo en un lugar seguro.');
+  }
+}
+
+function restoreFromCode() {
+  const raw = document.getElementById('inp-restore').value.trim();
+  if (!raw) return;
+  try {
+    const payload = JSON.parse(decodeURIComponent(escape(atob(raw))));
+    S.studentName      = payload.n || '';
+    S.currentCountry   = payload.c || 0;
+    S.currentSession   = payload.s || 0;
+    S.currentStep      = payload.t || 0;
+    S.xp               = payload.x || 0;
+    S.publishedArticles = (payload.a || []).map(a => ({
+      headline:a.h, country:a.co, emoji:COUNTRIES.find(c=>c.name===a.co)?.emoji||'🌎',
+      byline:payload.n, date:a.d, text:'[artículo restaurado]',
+      countryIndex:0, session:0
+    }));
+    S.audioPlayed = false; S.lecSubmitted = false;
+    S.escSubmitted = false; S.sessionPublished = false; S.sessionXP = 0;
+    save();
+    document.getElementById('inp-name').value = S.studentName;
+    toast(`¡Bienvenida de vuelta, ${S.studentName}!`);
+    setTimeout(enterGame, 800);
+  } catch {
+    toast('Código inválido. Intenta de nuevo.');
+  }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1328,6 +1559,8 @@ function restoreClipping() {
 
 function advanceSession() {
   window.speechSynthesis.cancel();
+  if (currentAudioEl) { currentAudioEl.pause(); currentAudioEl = null; }
+  audioSpeaking = false;
   S.currentSession++;
   if (S.currentSession >= SESSIONS_PER) {
     S.currentSession = 0;
@@ -1437,6 +1670,11 @@ function openTeacher() {
         <div style="background:var(--cream-dk);padding:.75rem;border-radius:6px;
           margin-top:.4rem;font-size:.83rem;line-height:1.6">${last.text}</div>` : ''}
     </div>`;
+
+  // Show progress code
+  const codeEl = document.getElementById('progress-code-display');
+  if (codeEl && S.studentName) codeEl.textContent = buildProgressCode();
+
   document.getElementById('teacher-modal').classList.add('open');
 }
 
