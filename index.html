@@ -526,6 +526,9 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
               <div class="audio-status" id="aud-status">Presiona ▶ para escuchar la entrevista</div>
             </div>
           </div>
+          <!-- Shown only when no audio can play at all, so the session is never a dead end -->
+          <div id="aud-transcript" style="display:none;background:var(--cream);border-left:3px solid var(--terracotta);
+               padding:.9rem 1.1rem;margin-bottom:1rem;border-radius:4px;line-height:1.7"></div>
           <div id="esc-locked" class="locked-msg">🎧 Escucha la entrevista completa para ver las preguntas.</div>
           <div id="esc-qs" style="display:none">
             <div class="q-title" style="font-family:sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--ink-lt);font-weight:700;margin-bottom:.9rem">Preguntas de comprensión</div>
@@ -9368,6 +9371,7 @@ function renderLectura(art) {
 
 function renderEscucha(aud) {
   document.getElementById('aud-src').textContent = aud.source;
+  document.getElementById('aud-transcript').style.display = 'none';
   document.getElementById('esc-locked').style.display = 'block';
   document.getElementById('esc-qs').style.display = 'none';
   document.getElementById('aud-status').textContent = 'Presiona ▶ para escuchar la entrevista';
@@ -9422,7 +9426,13 @@ function submitLectura() {
 
 let currentAudioEl = null;
 
-async function toggleAudio() {
+// NOTE: deliberately NOT async. Chrome only allows play() inside the user
+// activation window opened by the click. The previous version awaited a HEAD
+// probe first, which spent that token, so play() was rejected with
+// NotAllowedError and we silently dropped to TTS — silent on any machine with
+// no Spanish voice. Start playback synchronously and let onerror handle a
+// missing file instead of probing for it.
+function toggleAudio() {
   // Stop whatever is playing
   if (audioSpeaking || currentAudioEl) {
     window.speechSynthesis.cancel();
@@ -9432,20 +9442,45 @@ async function toggleAudio() {
     document.getElementById('aud-status').textContent = 'Pausado. Presiona ▶ para continuar.';
     return;
   }
+  playHostedAudio(`/audio/${S.currentCountry}_${S.currentSession}.mp3`);
+}
 
-  // Try hosted ElevenLabs MP3 first (teacher pre-generated)
-  const hostedPath = `/audio/${S.currentCountry}_${S.currentSession}.mp3`;
-  try {
-    const check = await fetch(hostedPath, {method:'HEAD'});
-    if (check.ok) { playHostedAudio(hostedPath); return; }
-  } catch {}
+// onerror and the play() rejection can both fire for one failure; only act once.
+let audioFellBack = false;
 
-  // Fall back to browser Web Speech API
+function audioFallback(kind) {
+  if (audioFellBack) return;
+  audioFellBack = true;
+  audioSpeaking = false;
+  currentAudioEl = null;
+
+  if (kind === 'blocked') {
+    // Autoplay refused. Never silently swallow this — tell them to tap again.
+    document.getElementById('play-btn').textContent   = '▶';
+    document.getElementById('aud-status').textContent = 'Presiona ▶ para escuchar la entrevista.';
+    return;
+  }
+  // No hosted clip for this session yet — read the script aloud instead.
   playScript(content.audio.script, onAudioComplete);
 }
 
+// Last-resort accessibility net: if neither the MP3 nor TTS can produce sound,
+// show the interview text so the student can still answer instead of being stuck
+// behind a play button that does nothing.
+function showAudioTranscript() {
+  const box = document.getElementById('aud-transcript');
+  if (!box || !content || !content.audio) return;
+  box.innerHTML = `<div style="font-family:sans-serif;font-size:.7rem;text-transform:uppercase;
+    letter-spacing:1.5px;color:var(--ink-lt);font-weight:700;margin-bottom:.5rem">
+    📄 Transcripción de la entrevista</div>${content.audio.script}`;
+  box.style.display = 'block';
+}
+
 function playHostedAudio(src) {
+  audioFellBack = false;
+  document.getElementById('aud-transcript').style.display = 'none';
   const audio = new Audio(src);
+  audio.preload = 'auto';
   currentAudioEl = audio;
   audio.onplay = () => {
     audioSpeaking = true;
@@ -9453,11 +9488,8 @@ function playHostedAudio(src) {
     document.getElementById('aud-status').textContent = 'Reproduciendo entrevista…';
   };
   audio.onended = () => { audioSpeaking = false; currentAudioEl = null; onAudioComplete(); };
-  audio.onerror = () => {
-    audioSpeaking = false; currentAudioEl = null;
-    playScript(content.audio.script, onAudioComplete); // fall back to TTS
-  };
-  audio.play().catch(() => playScript(content.audio.script, onAudioComplete));
+  audio.onerror = () => audioFallback('missing');
+  audio.play().catch(err => audioFallback(err && err.name === 'NotAllowedError' ? 'blocked' : 'missing'));
 }
 
 function onAudioComplete() {
@@ -9471,10 +9503,25 @@ function onAudioComplete() {
 
 function playScript(text, onEnd) {
   window.speechSynthesis.cancel();
+
+  // Same trap as speak(): setting lang without assigning a matching voice makes
+  // Chrome go quiet on machines with no Spanish installed. Don't claim to be
+  // playing when nothing will come out — unlock the questions and say why.
+  const v = pickVoice();
+  if (!v) {
+    audioSpeaking = false;
+    document.getElementById('play-btn').textContent   = '▶';
+    document.getElementById('aud-status').textContent =
+      'Esta computadora no tiene voz en español. Puedes leer la entrevista y seguir.';
+    showAudioTranscript();
+    onAudioComplete();
+    return;
+  }
+
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'es-MX'; u.rate = 0.9;
-  const v = window.speechSynthesis.getVoices().find(x => x.lang.startsWith('es'));
-  if (v) u.voice = v;
+  u.voice = v;
+  u.lang  = v.lang;
+  u.rate  = 0.9;
   u.onstart = () => {
     audioSpeaking = true;
     document.getElementById('play-btn').textContent = '⏸';
