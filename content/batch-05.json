@@ -60,23 +60,23 @@
           "text": "¿Dónde se escuchaba sobre todo?",
           "type": "mc",
           "opts": [
-            "En la televisión",
-            "En las emisoras grandes",
             "En los colmados de barrio y zonas rurales",
-            "En los teatros"
+            "En los teatros",
+            "En la televisión",
+            "En las emisoras grandes"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué pasó en 2019?",
           "type": "mc",
           "opts": [
+            "La UNESCO la declaró patrimonio de la humanidad",
             "Dejó de tocarse",
             "Nació la bachata",
-            "Se prohibió",
-            "La UNESCO la declaró patrimonio de la humanidad"
+            "Se prohibió"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Conoces algo (música, comida, forma de hablar) que antes se despreciaba y hoy se valora? Explícalo.",
@@ -92,12 +92,12 @@
           "text": "¿A qué edad empezó a tocar Anselmo?",
           "type": "mc",
           "opts": [
+            "A los diez años",
             "A los quince años",
             "A los veinte años",
-            "A los treinta años",
-            "A los diez años"
+            "A los treinta años"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué hacía cuando le preguntaban a qué se dedicaba?",
@@ -125,12 +125,12 @@
           "text": "¿Cómo se siente Anselmo hoy?",
           "type": "mc",
           "opts": [
-            "Con tristeza",
-            "Sin interés",
             "Con rabia",
-            "Con una satisfacción tranquila"
+            "Con una satisfacción tranquila",
+            "Con tristeza",
+            "Sin interés"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -174,45 +174,45 @@
           "text": "¿En qué meses llegan las ballenas?",
           "type": "mc",
           "opts": [
-            "Entre enero y marzo",
-            "Septiembre a diciembre",
             "Todo el año",
-            "Junio a agosto"
+            "Junio a agosto",
+            "Entre enero y marzo",
+            "Septiembre a diciembre"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Por qué es ideal el agua de Samaná para las crías?",
           "type": "mc",
           "opts": [
+            "Porque no hay barcos",
             "Porque es fría",
             "Porque es tibia y poco profunda",
-            "Porque hay mucha comida",
-            "Porque no hay barcos"
+            "Porque hay mucha comida"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué hacen los machos?",
           "type": "mc",
           "opts": [
-            "Se van rápido",
-            "Cazan",
             "Cantan la misma canción, que cambia cada temporada",
-            "Cuidan a las crías"
+            "Cuidan a las crías",
+            "Se van rápido",
+            "Cazan"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Cuánto tiempo pueden quedarse las lanchas?",
           "type": "mc",
           "opts": [
-            "Dos horas",
             "Cinco minutos",
             "Todo el día",
-            "Treinta minutos"
+            "Treinta minutos",
+            "Dos horas"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "¿Por qué crees que es necesario poner reglas para observar animales salvajes?",
@@ -228,12 +228,12 @@
           "text": "¿Cuántas temporadas lleva Ramón?",
           "type": "mc",
           "opts": [
-            "Diecinueve",
-            "Treinta",
             "Dos",
-            "Cinco"
+            "Cinco",
+            "Diecinueve",
+            "Treinta"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué vio una vez que lo dejó pensando?",
@@ -250,12 +250,12 @@
           "text": "¿Quién puso las reglas primero?",
           "type": "mc",
           "opts": [
-            "Unos científicos",
             "El gobierno",
             "Los capitanes, en su propia asociación",
-            "Los turistas"
+            "Los turistas",
+            "Unos científicos"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué pasó después de poner las reglas?",
@@ -332,23 +332,23 @@
           "text": "¿A qué edad puede firmar contrato un muchacho?",
           "type": "mc",
           "opts": [
-            "A los treinta años",
-            "A los doce años",
             "A los dieciséis años",
-            "A los veintiún años"
+            "A los veintiún años",
+            "A los treinta años",
+            "A los doce años"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Por qué varias academias exigen que sigan estudiando?",
           "type": "mc",
           "opts": [
+            "Porque muy pocos llegan a Grandes Ligas",
             "Porque estudian mejor que juegan",
             "Porque no hay entrenadores",
-            "Porque lo pide la ley",
-            "Porque muy pocos llegan a Grandes Ligas"
+            "Porque lo pide la ley"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Qué significa para ti la frase \"el bate se rompe, la cabeza no\"?",
@@ -364,45 +364,45 @@
           "text": "¿A qué edad firmó Félix?",
           "type": "mc",
           "opts": [
+            "A los quince años",
             "A los diecisiete años",
             "A los veinte años",
-            "A los doce años",
-            "A los quince años"
+            "A los doce años"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Por qué se acabó su carrera?",
           "type": "mc",
           "opts": [
+            "Volvió por su familia",
             "Lo despidieron",
             "Se lesionó el hombro",
-            "No le gustaba",
-            "Volvió por su familia"
+            "No le gustaba"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Cuál es su regla?",
           "type": "mc",
           "opts": [
-            "Pagar una cuota",
-            "Entrenar todos los días",
             "Si te reprueban en la escuela, no juegas",
-            "Llegar temprano"
+            "Llegar temprano",
+            "Pagar una cuota",
+            "Entrenar todos los días"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué prefiere formar Félix?",
           "type": "mc",
           "opts": [
+            "Hombres, más que peloteros",
             "Entrenadores",
             "Estudiantes solamente",
-            "Peloteros famosos",
-            "Hombres, más que peloteros"
+            "Peloteros famosos"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }
@@ -446,12 +446,12 @@
           "text": "¿Dónde nació la bomba?",
           "type": "mc",
           "opts": [
-            "Entre las personas africanas esclavizadas en la isla",
-            "En Nueva York",
             "En los teatros",
-            "En España"
+            "En España",
+            "Entre las personas africanas esclavizadas en la isla",
+            "En Nueva York"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué regla se invierte en la bomba?",
@@ -468,12 +468,12 @@
           "text": "¿Qué es un piquete?",
           "type": "mc",
           "opts": [
-            "Un baile en pareja",
             "Un tipo de tambor",
             "Un movimiento marcado que el tambor debe responder",
-            "Una canción"
+            "Una canción",
+            "Un baile en pareja"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Por qué a la plena le dicen el periódico cantado?",
@@ -511,23 +511,23 @@
           "text": "¿Qué tiene que mirar Yarimar mientras toca?",
           "type": "mc",
           "opts": [
+            "Sus propias manos",
             "El público",
             "Los pies y las caderas de la bailadora",
-            "Los otros músicos",
-            "Sus propias manos"
+            "Los otros músicos"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué pasa si se distrae?",
           "type": "mc",
           "opts": [
-            "La bailadora se va",
             "No pasa nada",
             "Se nota y queda mal ella, no la bailadora",
-            "Se para la música"
+            "Se para la música",
+            "La bailadora se va"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué les explica a los nenes de la escuela?",
@@ -582,23 +582,23 @@
           "text": "¿Qué tiene de único el Yunque?",
           "type": "mc",
           "opts": [
-            "Es el único bosque tropical lluvioso del sistema federal de EE.UU.",
-            "No tiene animales",
             "Nunca llueve",
-            "Es el más grande"
+            "Es el más grande",
+            "Es el único bosque tropical lluvioso del sistema federal de EE.UU.",
+            "No tiene animales"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cómo es el coquí?",
           "type": "mc",
           "opts": [
-            "Un ave grande",
-            "Una rana diminuta que cabe en la punta de un dedo",
             "Un pez",
-            "Un insecto"
+            "Un insecto",
+            "Un ave grande",
+            "Una rana diminuta que cabe en la punta de un dedo"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué pasó en septiembre de 2017?",
@@ -647,12 +647,12 @@
           "text": "¿Por qué había silencio después del huracán?",
           "type": "mc",
           "opts": [
+            "Porque hacía frío",
             "Porque se fueron los turistas",
             "Sin hojas no hay humedad, y sin humedad los coquíes no cantan",
-            "Porque era de noche",
-            "Porque hacía frío"
+            "Porque era de noche"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Cuándo volvió a oír coquíes?",
@@ -669,12 +669,12 @@
           "text": "¿Qué aprendió Nélida?",
           "type": "mc",
           "opts": [
-            "Que el bosque no se recupera",
-            "Que hay que cerrar el parque",
             "Que hay que replantar todo",
-            "Que el bosque necesita que lo dejemos en paz y le demos tiempo"
+            "Que el bosque necesita que lo dejemos en paz y le demos tiempo",
+            "Que el bosque no se recupera",
+            "Que hay que cerrar el parque"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -729,12 +729,12 @@
           "text": "¿Qué hicieron los vecinos después del huracán María?",
           "type": "mc",
           "opts": [
+            "Cerraron los barrios",
             "Se mudaron",
             "Montaron cocinas comunitarias",
-            "Esperaron en casa",
-            "Cerraron los barrios"
+            "Esperaron en casa"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué pasó con muchas de esas cocinas?",
@@ -751,12 +751,12 @@
           "text": "¿Qué es la soberanía alimentaria?",
           "type": "mc",
           "opts": [
-            "Importar más",
             "Cocinar en grupo",
             "Comprar comida barata",
-            "Que una comunidad pueda producir y decidir su propia comida"
+            "Que una comunidad pueda producir y decidir su propia comida",
+            "Importar más"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "Si tu comunidad tuviera que alimentarse sola por dos semanas, ¿qué necesitaría? Explica.",
@@ -805,12 +805,12 @@
           "text": "¿Cuál dice Zoraida que era el problema de fondo?",
           "type": "mc",
           "opts": [
+            "Que estaban viviendo al lado sin conocerse",
             "La falta de dinero",
             "El huracán",
-            "La falta de comida solamente",
-            "Que estaban viviendo al lado sin conocerse"
+            "La falta de comida solamente"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }

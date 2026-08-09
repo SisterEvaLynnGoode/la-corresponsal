@@ -38,23 +38,23 @@
           "text": "¿Qué declaró la UNESCO en 2011?",
           "type": "mc",
           "opts": [
-            "Paisaje Cultural Cafetero",
-            "Una reserva natural",
             "Un parque nacional",
-            "Que el café era el mejor"
+            "Que el café era el mejor",
+            "Paisaje Cultural Cafetero",
+            "Una reserva natural"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Por qué se recolecta todo a mano?",
           "type": "mc",
           "opts": [
-            "Por tradición nada más",
             "Porque las laderas son tan empinadas que no entra máquina",
             "Porque es más barato",
-            "Porque no hay máquinas en Colombia"
+            "Porque no hay máquinas en Colombia",
+            "Por tradición nada más"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué cerezas se toman?",
@@ -92,45 +92,45 @@
           "text": "¿Cuántos años lleva recolectando?",
           "type": "mc",
           "opts": [
-            "Treinta y tres años",
-            "Cincuenta años",
             "Cinco años",
-            "Diez años"
+            "Diez años",
+            "Treinta y tres años",
+            "Cincuenta años"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué pasa si uno arranca el grano verde?",
           "type": "mc",
           "opts": [
+            "Se vende igual",
             "No pasa nada",
             "Daña la taza y le quita a la planta lo que iba a madurar",
-            "Pesa más",
-            "Se vende igual"
+            "Pesa más"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿A qué hora empiezan?",
           "type": "mc",
           "opts": [
+            "Al mediodía",
             "De noche",
             "A las ocho de la mañana",
-            "A las cinco y media de la mañana",
-            "Al mediodía"
+            "A las cinco y media de la mañana"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Cómo se siente Aureliano respecto a sus hijos?",
           "type": "mc",
           "opts": [
-            "Molesto",
-            "Preocupado",
             "Triste porque no recolectan",
-            "Tranquilo, porque sus manos sostuvieron la casa mientras estudiaban"
+            "Tranquilo, porque sus manos sostuvieron la casa mientras estudiaban",
+            "Molesto",
+            "Preocupado"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -174,34 +174,34 @@
           "text": "¿Dónde están los páramos?",
           "type": "mc",
           "opts": [
-            "Arriba del bosque y debajo de la nieve",
             "En el desierto",
             "En la selva",
-            "En la costa"
+            "En la costa",
+            "Arriba del bosque y debajo de la nieve"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuánto crece un frailejón por año?",
           "type": "mc",
           "opts": [
-            "Un metro",
-            "Alrededor de un centímetro",
             "Diez centímetros",
-            "No crece"
+            "No crece",
+            "Un metro",
+            "Alrededor de un centímetro"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué hacen los pelitos de las hojas?",
           "type": "mc",
           "opts": [
-            "Dan color",
-            "Protegen del sol",
             "Atrapan la humedad de la niebla y la convierten en gotas",
-            "Espantan insectos"
+            "Espantan insectos",
+            "Dan color",
+            "Protegen del sol"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿A qué ciudad abastece el Páramo de Sumapaz?",
@@ -228,12 +228,12 @@
           "text": "¿A qué se dedicaba la familia de Blanca?",
           "type": "mc",
           "opts": [
+            "Al ganado",
             "A sembrar papa en el páramo",
             "Al turismo",
-            "A la minería",
-            "Al ganado"
+            "A la minería"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué pasa cuando se ara la tierra del páramo?",
@@ -261,12 +261,12 @@
           "text": "¿Qué piensa Blanca cuando ve a la gente en Bogotá abrir la llave?",
           "type": "mc",
           "opts": [
-            "Que deberían pagar más",
             "Nada en especial",
             "Que gastan poco",
-            "Que esa agua salió de su montaña"
+            "Que esa agua salió de su montaña",
+            "Que deberían pagar más"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -310,23 +310,23 @@
           "text": "¿Cuándo se celebra la Feria de las Flores?",
           "type": "mc",
           "opts": [
+            "En diciembre",
             "Cada agosto",
             "En marzo",
-            "En junio",
-            "En diciembre"
+            "En junio"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cuánto pesan las silletas más grandes?",
           "type": "mc",
           "opts": [
-            "Diez kilos",
-            "Cerca de setenta kilos",
             "Doscientos kilos",
-            "Cinco kilos"
+            "Cinco kilos",
+            "Diez kilos",
+            "Cerca de setenta kilos"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿De dónde viene el origen de la tradición?",
@@ -343,12 +343,12 @@
           "text": "¿Quiénes cultivan las flores del desfile?",
           "type": "mc",
           "opts": [
+            "Las mismas familias silleteras",
             "El municipio",
             "Se importan",
-            "Empresas grandes",
-            "Las mismas familias silleteras"
+            "Empresas grandes"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Qué tradición de tu familia o comunidad se ha heredado por generaciones? Descríbela.",
@@ -364,34 +364,34 @@
           "text": "¿De qué generación de silleteros es Gilberto?",
           "type": "mc",
           "opts": [
-            "Cuarta",
-            "Primera",
             "Décima",
-            "Segunda"
+            "Segunda",
+            "Cuarta",
+            "Primera"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cuándo siembran las flores?",
           "type": "mc",
           "opts": [
+            "La semana anterior",
             "El día antes",
             "Desde meses atrás, en su propia tierra",
-            "Las compran",
-            "La semana anterior"
+            "Las compran"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué pasa si una flor se abre una semana antes?",
           "type": "mc",
           "opts": [
-            "Pesa más",
             "Se ve mejor",
             "Llega marchita",
-            "No pasa nada"
+            "No pasa nada",
+            "Pesa más"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Desde cuándo entrena cargando bultos?",
@@ -457,34 +457,34 @@
           "text": "¿Cuántos años tienen aproximadamente?",
           "type": "mc",
           "opts": [
-            "Mil años",
             "Más de mil quinientos millones de años",
             "Un millón de años",
-            "Cien mil años"
+            "Cien mil años",
+            "Mil años"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cuánto cae el agua del Salto Ángel?",
           "type": "mc",
           "opts": [
+            "Cincuenta metros",
             "Dos mil metros",
             "Cien metros",
-            "Novecientos setenta y nueve metros",
-            "Cincuenta metros"
+            "Novecientos setenta y nueve metros"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Cómo se llega hasta la base del salto?",
           "type": "mc",
           "opts": [
+            "Varias horas de curiara y una caminata en la selva",
             "En tren",
             "A pie desde la ciudad",
-            "En carro",
-            "Varias horas de curiara y una caminata en la selva"
+            "En carro"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Por qué crees que en lugares aislados evolucionan especies únicas? Da tu idea.",
@@ -511,34 +511,34 @@
           "text": "¿Qué cuentan los abuelos sobre la cima?",
           "type": "mc",
           "opts": [
-            "Que hay oro",
-            "Que habitan espíritus llamados mawari",
             "Que no se puede subir",
-            "Que hay una ciudad"
+            "Que hay una ciudad",
+            "Que hay oro",
+            "Que habitan espíritus llamados mawari"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué hay que hacer si el río está bajo?",
           "type": "mc",
           "opts": [
+            "Esperar la lluvia",
             "Ir en avión",
             "Regresar",
-            "Bajarse y empujar la curiara entre las piedras",
-            "Esperar la lluvia"
+            "Bajarse y empujar la curiara entre las piedras"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué pasa cuando los visitantes ven el salto completo?",
           "type": "mc",
           "opts": [
-            "Toman fotos y se van",
             "Se quejan del viaje",
             "Aplauden",
-            "Todos se callan"
+            "Todos se callan",
+            "Toman fotos y se van"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -582,12 +582,12 @@
           "text": "¿Dónde fue el primer ensayo?",
           "type": "mc",
           "opts": [
+            "En un teatro",
             "En un estacionamiento de Caracas",
             "En una escuela",
-            "En una iglesia",
-            "En un teatro"
+            "En una iglesia"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cuántos muchachos llegaron?",
@@ -604,23 +604,23 @@
           "text": "¿Qué se necesita para entrar al programa?",
           "type": "mc",
           "opts": [
-            "Vivir en Caracas",
             "Pasar una audición",
             "Nada: no hay audición y el instrumento se presta",
-            "Comprar un instrumento"
+            "Comprar un instrumento",
+            "Vivir en Caracas"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Cuántos países han creado programas inspirados en el modelo?",
           "type": "mc",
           "opts": [
-            "Veinte",
             "Dos",
             "Cinco",
-            "Más de sesenta"
+            "Más de sesenta",
+            "Veinte"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "¿Qué actividad gratuita crees que le cambiaría la vida a los jóvenes de tu comunidad? Explica.",
@@ -669,12 +669,12 @@
           "text": "¿Qué les dice a sus alumnos?",
           "type": "mc",
           "opts": [
-            "Que sean profesionales",
-            "Que compitan",
             "Que practiquen más",
-            "Que tienen una silla y si faltan, la orquesta suena distinta"
+            "Que tienen una silla y si faltan, la orquesta suena distinta",
+            "Que sean profesionales",
+            "Que compitan"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -718,45 +718,45 @@
           "text": "¿De qué está hecha la arepa?",
           "type": "mc",
           "opts": [
-            "De maíz",
             "De arroz",
             "De papa",
-            "De trigo"
+            "De trigo",
+            "De maíz"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué lleva la reina pepiada?",
           "type": "mc",
           "opts": [
-            "Frijoles y queso",
-            "Pollo con aguacate",
             "Carne molida",
-            "Solo queso"
+            "Solo queso",
+            "Frijoles y queso",
+            "Pollo con aguacate"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cuántos venezolanos se calcula que han salido del país?",
           "type": "mc",
           "opts": [
-            "Veinte millones",
             "Un millón",
             "Más de siete millones",
-            "Cien mil"
+            "Cien mil",
+            "Veinte millones"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué representa hacer arepas los domingos para muchas familias?",
           "type": "mc",
           "opts": [
+            "Mantener la casa cerca aunque esté lejos",
             "Una obligación",
             "Una fiesta",
-            "Un negocio",
-            "Mantener la casa cerca aunque esté lejos"
+            "Un negocio"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Hay alguna comida que tu familia prepare para sentirse conectada con otro lugar? Cuéntalo.",
@@ -772,45 +772,45 @@
           "text": "¿Dónde están los hijos de Marisol?",
           "type": "mc",
           "opts": [
-            "En Santiago, Madrid y Bogotá",
-            "En Estados Unidos",
             "En Colombia los tres",
-            "Todos en Venezuela"
+            "Todos en Venezuela",
+            "En Santiago, Madrid y Bogotá",
+            "En Estados Unidos"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué hacen los domingos?",
           "type": "mc",
           "opts": [
-            "Se escriben cartas",
             "Hacen arepas juntos por videollamada",
             "Se visitan",
-            "Nada especial"
+            "Nada especial",
+            "Se escriben cartas"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué consejo les da sobre la masa?",
           "type": "mc",
           "opts": [
-            "Que compren la masa hecha",
-            "Que le pongan mucha agua",
             "Que no le pongan tanta agua y la dejen reposar cinco minutos",
-            "Que la cocinen rápido"
+            "Que la cocinen rápido",
+            "Que compren la masa hecha",
+            "Que le pongan mucha agua"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Cómo ve ahora la situación?",
           "type": "mc",
           "opts": [
+            "Que la mesa se estiró, pero es la misma mesa",
             "Con rabia",
             "Prefiere no pensarlo",
-            "Con la misma tristeza",
-            "Que la mesa se estiró, pero es la misma mesa"
+            "Con la misma tristeza"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }

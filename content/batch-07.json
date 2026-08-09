@@ -38,34 +38,34 @@
           "text": "¿A qué distancia están las Galápagos de la costa?",
           "type": "mc",
           "opts": [
-            "Casi mil kilómetros",
             "Diez kilómetros",
             "Cinco mil kilómetros",
-            "Cien kilómetros"
+            "Cien kilómetros",
+            "Casi mil kilómetros"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué comen las iguanas marinas?",
           "type": "mc",
           "opts": [
-            "Peces",
             "Algas, buceando",
             "Insectos",
-            "Frutas"
+            "Frutas",
+            "Peces"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué ayudaron a desarrollar los pinzones?",
           "type": "mc",
           "opts": [
-            "La agricultura",
             "Un mapa",
             "La teoría de la evolución de Darwin",
-            "Un tipo de barco"
+            "Un tipo de barco",
+            "La agricultura"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Cuál es el mayor riesgo hoy?",
@@ -114,23 +114,23 @@
           "text": "¿Qué buscan en los aviones y barcos?",
           "type": "mc",
           "opts": [
-            "Animales grandes",
             "Armas",
             "Semillas, insectos y fruta escondida",
-            "Documentos"
+            "Documentos",
+            "Animales grandes"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Por qué dice que las islas no tienen defensas?",
           "type": "mc",
           "opts": [
+            "Porque los animales nunca aprendieron a tenerle miedo a nada",
             "Porque son pequeñas",
             "Porque están lejos",
-            "Porque no hay policía",
-            "Porque los animales nunca aprendieron a tenerle miedo a nada"
+            "Porque no hay policía"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }
@@ -174,23 +174,23 @@
           "text": "¿De qué planta sale la fibra?",
           "type": "mc",
           "opts": [
+            "Del algodón",
             "De la palma toquilla",
             "Del bambú",
-            "Del maguey",
-            "Del algodón"
+            "Del maguey"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Por qué tejen de madrugada o al anochecer?",
           "type": "mc",
           "opts": [
-            "Para descansar de día",
             "Porque el calor del día reseca la paja y la quiebra",
             "Porque hay más luz",
-            "Por costumbre"
+            "Por costumbre",
+            "Para descansar de día"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cómo se mide la calidad?",
@@ -207,12 +207,12 @@
           "text": "¿Por qué se llaman Panama hats?",
           "type": "mc",
           "opts": [
-            "Por un error de traducción",
-            "Porque un panameño los diseñó",
             "Porque se inventaron en Panamá",
-            "Porque se embarcaban desde Panamá al resto del mundo"
+            "Porque se embarcaban desde Panamá al resto del mundo",
+            "Por un error de traducción",
+            "Porque un panameño los diseñó"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Conoces algo de tu cultura que otros conozcan con el nombre equivocado? Explícalo.",
@@ -228,23 +228,23 @@
           "text": "¿A qué hora teje Simón?",
           "type": "mc",
           "opts": [
+            "Al mediodía",
             "Desde las cuatro de la madrugada",
             "Por la tarde",
-            "Cuando puede",
-            "Al mediodía"
+            "Cuando puede"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cuánto le lleva un sombrero superfino?",
           "type": "mc",
           "opts": [
-            "Un mes",
-            "Ocho meses",
             "Una semana",
-            "Dos años"
+            "Dos años",
+            "Un mes",
+            "Ocho meses"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué le duele más a Simón?",
@@ -261,12 +261,12 @@
           "text": "¿Qué hace para que se sepa de quién es el sombrero?",
           "type": "mc",
           "opts": [
-            "Lo registra",
-            "Nada",
             "Le pone una etiqueta",
-            "Le pone su firma adentro, en el ala"
+            "Le pone su firma adentro, en el ala",
+            "Lo registra",
+            "Nada"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -310,45 +310,45 @@
           "text": "¿Cómo se llama el mercado de Otavalo?",
           "type": "mc",
           "opts": [
-            "Plaza de Ponchos",
-            "Mercado Central",
             "Plaza Imbabura",
-            "Plaza Mayor"
+            "Plaza Mayor",
+            "Plaza de Ponchos",
+            "Mercado Central"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿A dónde viajan los otavaleños?",
           "type": "mc",
           "opts": [
+            "Solo a Colombia",
             "Solo a Quito",
             "A Europa, Asia, Estados Unidos y otros países",
-            "A ningún lado",
-            "Solo a Colombia"
+            "A ningún lado"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué es lo distintivo de sus viajes?",
           "type": "mc",
           "opts": [
-            "Que viajan poco tiempo",
             "Que se quedan afuera",
             "Que casi siempre regresan",
-            "Que no venden nada"
+            "Que no venden nada",
+            "Que viajan poco tiempo"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué pasó con su cultura por tanto viajar?",
           "type": "mc",
           "opts": [
-            "Desapareció",
-            "No cambió nada",
             "Se debilitó",
-            "Se reforzó"
+            "Se reforzó",
+            "Desapareció",
+            "No cambió nada"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Crees que se puede salir de un lugar y mantener su cultura al mismo tiempo? Da tu opinión.",
@@ -364,45 +364,45 @@
           "text": "¿A qué edad empezó a viajar?",
           "type": "mc",
           "opts": [
-            "A los diecinueve años",
-            "A los treinta",
             "A los veinticinco",
-            "A los quince"
+            "A los quince",
+            "A los diecinueve años",
+            "A los treinta"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Por qué dice que nunca viajan solos de verdad?",
           "type": "mc",
           "opts": [
+            "Porque contratan guías",
             "Porque van en grupos grandes",
             "Porque siempre hay alguien de Otavalo que los recibe",
-            "Porque llevan familia",
-            "Porque contratan guías"
+            "Porque llevan familia"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué nunca hizo en todos esos años?",
           "type": "mc",
           "opts": [
+            "Volver a casa",
             "Vender tejidos",
             "Tocar música",
-            "Cortarse la trenza",
-            "Volver a casa"
+            "Cortarse la trenza"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué dice al final sobre la raíz?",
           "type": "mc",
           "opts": [
-            "Que hay que quedarse siempre",
-            "Que no importa",
             "Que se pierde al viajar",
-            "Que uno sale a buscar el pan afuera pero la raíz se queda sembrada acá"
+            "Que uno sale a buscar el pan afuera pero la raíz se queda sembrada acá",
+            "Que hay que quedarse siempre",
+            "Que no importa"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -446,23 +446,23 @@
           "text": "¿Dónde se domesticó la papa?",
           "type": "mc",
           "opts": [
-            "En los Andes, cerca del lago Titicaca",
-            "En México",
             "En Asia",
-            "En Europa"
+            "En Europa",
+            "En los Andes, cerca del lago Titicaca",
+            "En México"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cuántas variedades nativas hay en Perú?",
           "type": "mc",
           "opts": [
-            "Cien",
-            "Más de cuatro mil",
             "Veinte",
-            "Un millón"
+            "Un millón",
+            "Cien",
+            "Más de cuatro mil"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Por qué siembran muchas variedades juntas?",
@@ -479,12 +479,12 @@
           "text": "¿Cuántas variedades conserva el Parque de la Papa?",
           "type": "mc",
           "opts": [
-            "Cuatro mil",
             "Cincuenta",
             "Cien",
-            "Más de mil trescientas"
+            "Más de mil trescientas",
+            "Cuatro mil"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "¿Por qué crees que es peligroso depender de un solo tipo de alimento? Explica.",
@@ -500,45 +500,45 @@
           "text": "¿Cuántas variedades cuida Sabina?",
           "type": "mc",
           "opts": [
+            "Veinte",
             "Ciento noventa",
             "Mil",
-            "Cinco",
-            "Veinte"
+            "Cinco"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué significa llumchuy waqachi?",
           "type": "mc",
           "opts": [
-            "Mano de puma",
             "Hace llorar a la nuera",
             "Papa morada",
-            "Papa de altura"
+            "Papa de altura",
+            "Mano de puma"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Quiénes guardan la semilla?",
           "type": "mc",
           "opts": [
-            "Los científicos",
             "Los hombres",
             "Las mujeres",
-            "El gobierno"
+            "El gobierno",
+            "Los científicos"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué problema causa el calor?",
           "type": "mc",
           "opts": [
-            "Llueve demasiado",
-            "Se pierden las semillas",
             "Las papas crecen más",
-            "El cultivo tiene que subir cerro arriba"
+            "El cultivo tiene que subir cerro arriba",
+            "Llueve demasiado",
+            "Se pierden las semillas"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -582,45 +582,45 @@
           "text": "¿Con qué se prepara el ceviche?",
           "type": "mc",
           "opts": [
+            "Pescado frito",
             "Pescado crudo con jugo de limón, ají y cebolla",
             "Pescado al horno",
-            "Mariscos cocidos",
-            "Pescado frito"
+            "Mariscos cocidos"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué hace el ácido del limón?",
           "type": "mc",
           "opts": [
-            "Le da sabor nada más",
             "Cambia las proteínas y lo vuelve opaco y firme",
             "Lo calienta",
-            "Lo conserva por meses"
+            "Lo conserva por meses",
+            "Le da sabor nada más"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Por qué se come al mediodía?",
           "type": "mc",
           "opts": [
-            "Porque hace calor",
-            "Por tradición religiosa",
             "Porque el pescado llega fresco en la mañana",
-            "Porque de noche no hay"
+            "Porque de noche no hay",
+            "Porque hace calor",
+            "Por tradición religiosa"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Por qué el mar peruano es tan productivo?",
           "type": "mc",
           "opts": [
+            "Por la corriente de Humboldt, que sube nutrientes del fondo",
             "Porque es poco profundo",
             "Porque no hay pesca",
-            "Por el sol",
-            "Por la corriente de Humboldt, que sube nutrientes del fondo"
+            "Por el sol"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Qué plato de tu cultura tiene una explicación científica o geográfica interesante? Investiga o imagina una.",
@@ -636,45 +636,45 @@
           "text": "¿A qué hora va al terminal pesquero?",
           "type": "mc",
           "opts": [
-            "A las cinco de la mañana",
-            "Al mediodía",
             "En la tarde",
-            "A las ocho"
+            "A las ocho",
+            "A las cinco de la mañana",
+            "Al mediodía"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cómo debe estar el ojo del pescado?",
           "type": "mc",
           "opts": [
+            "Oscuro",
             "Hundido",
             "Brillante y saltón",
-            "Cerrado",
-            "Oscuro"
+            "Cerrado"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué pasa si el pescado huele a pescado?",
           "type": "mc",
           "opts": [
-            "Es más barato",
-            "Está perfecto",
             "No sirve",
-            "Hay que lavarlo"
+            "Hay que lavarlo",
+            "Es más barato",
+            "Está perfecto"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué error común menciona?",
           "type": "mc",
           "opts": [
-            "Usar cebolla blanca",
             "Servirlo frío",
             "Poner poco limón",
-            "Dejar el pescado media hora en el limón"
+            "Dejar el pescado media hora en el limón",
+            "Usar cebolla blanca"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -718,12 +718,12 @@
           "text": "¿Cuántos kilómetros tiene el Camino Inca?",
           "type": "mc",
           "opts": [
-            "Unos cuarenta y tres",
             "Cien",
             "Doscientos",
-            "Diez"
+            "Diez",
+            "Unos cuarenta y tres"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué pasa en el paso de más de cuatro mil doscientos metros?",
@@ -751,12 +751,12 @@
           "text": "¿Qué logró la protesta de los trabajadores?",
           "type": "mc",
           "opts": [
-            "Cerrar el camino",
-            "Nuevos caminos",
             "Más turistas",
-            "Una ley que limita la carga a veinte kilos y fija salario mínimo"
+            "Una ley que limita la carga a veinte kilos y fija salario mínimo",
+            "Cerrar el camino",
+            "Nuevos caminos"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Por qué crees que el trabajo de algunas personas se vuelve invisible? Explica con un ejemplo.",
@@ -772,34 +772,34 @@
           "text": "¿Por qué no le afecta la altura a Cirilo?",
           "type": "mc",
           "opts": [
-            "Porque nació respirando ese aire, a tres mil ochocientos metros",
-            "Porque carga poco",
             "Porque va despacio",
-            "Porque entrena mucho"
+            "Porque entrena mucho",
+            "Porque nació respirando ese aire, a tres mil ochocientos metros",
+            "Porque carga poco"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cuánto llegó a cargar antes?",
           "type": "mc",
           "opts": [
-            "Veinte kilos",
-            "Cuarenta y cinco kilos",
             "Diez kilos",
-            "Cien kilos"
+            "Cien kilos",
+            "Veinte kilos",
+            "Cuarenta y cinco kilos"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cómo se controla ahora el peso?",
           "type": "mc",
           "opts": [
-            "Lo calculan a ojo",
-            "Nadie lo controla",
             "Pesan la mochila en el control, hay balanza",
-            "Lo dice la agencia"
+            "Lo dice la agencia",
+            "Lo calculan a ojo",
+            "Nadie lo controla"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué le da un poco de pena todavía?",

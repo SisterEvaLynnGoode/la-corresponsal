@@ -38,45 +38,45 @@
           "text": "¿En qué año nació Rubén Darío?",
           "type": "mc",
           "opts": [
-            "En 1867",
-            "En 1900",
             "En 1920",
-            "En 1800"
+            "En 1800",
+            "En 1867",
+            "En 1900"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué trajo Darío a la poesía en español?",
           "type": "mc",
           "opts": [
-            "Reglas más estrictas",
-            "Ritmos nuevos e imágenes brillantes",
             "Poemas más cortos",
-            "Solo temas religiosos"
+            "Solo temas religiosos",
+            "Reglas más estrictas",
+            "Ritmos nuevos e imágenes brillantes"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cómo se llamó su movimiento?",
           "type": "mc",
           "opts": [
-            "Barroco",
             "Romanticismo",
             "Modernismo",
-            "Realismo"
+            "Realismo",
+            "Barroco"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Dónde está enterrado Rubén Darío?",
           "type": "mc",
           "opts": [
+            "En la catedral de León",
             "En España",
             "En Granada",
-            "En Managua",
-            "En la catedral de León"
+            "En Managua"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "Si escribieras un poema sobre tu vida, ¿de qué se trataría?",
@@ -92,34 +92,34 @@
           "text": "¿Dónde se reúne el taller?",
           "type": "mc",
           "opts": [
-            "En el patio de una casa vieja, bajo un árbol de mango",
             "En la catedral",
             "En una biblioteca",
-            "En una escuela"
+            "En una escuela",
+            "En el patio de una casa vieja, bajo un árbol de mango"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuál es la primera regla del taller?",
           "type": "mc",
           "opts": [
+            "Leer a Darío",
             "Llegar temprano",
             "Que nadie se burla de nadie",
-            "Escribir todos los días",
-            "Leer a Darío"
+            "Escribir todos los días"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué hace Douglas cuando dicen que la poesía es aburrida?",
           "type": "mc",
           "opts": [
-            "Cambia de tema",
-            "Los regaña",
             "Les lee a Darío en voz alta marcando el ritmo",
-            "Los manda a su casa"
+            "Los manda a su casa",
+            "Cambia de tema",
+            "Los regaña"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Sobre qué escribió la muchacha que leyó llorando?",
@@ -174,45 +174,45 @@
           "text": "¿Qué tiene de raro el lago Cocibolca?",
           "type": "mc",
           "opts": [
+            "Que es salado",
             "Que tiene tiburones de agua dulce",
             "Que no tiene peces",
-            "Que es muy pequeño",
-            "Que es salado"
+            "Que es muy pequeño"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cuál de los dos volcanes está activo?",
           "type": "mc",
           "opts": [
-            "El Maderas",
             "El Concepción",
             "Los dos",
-            "Ninguno"
+            "Ninguno",
+            "El Maderas"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué significa Ometepe en náhuatl?",
           "type": "mc",
           "opts": [
+            "Lago azul",
             "Tierra buena",
             "Isla grande",
-            "Dos cerros",
-            "Lago azul"
+            "Dos cerros"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué declaró la UNESCO en 2010?",
           "type": "mc",
           "opts": [
+            "Que toda la isla es reserva de la biosfera",
             "Que el lago está contaminado",
             "Que hay que cerrar la isla",
-            "Que la isla es patrimonio arquitectónico",
-            "Que toda la isla es reserva de la biosfera"
+            "Que la isla es patrimonio arquitectónico"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Te gustaría vivir en un lugar declarado reserva natural? ¿Qué sería lo bueno y lo difícil?",
@@ -228,23 +228,23 @@
           "text": "¿Qué siembra la familia de Xiomara?",
           "type": "mc",
           "opts": [
-            "Plátano y café",
             "Frijol y tomate",
             "Caña de azúcar",
-            "Maíz y arroz"
+            "Maíz y arroz",
+            "Plátano y café"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué le enseña rápido vivir en una isla?",
           "type": "mc",
           "opts": [
-            "Que hay mucha agua",
             "Que lo que uno tira se queda, no hay a dónde botar",
             "Que hace calor",
-            "Que se pesca fácil"
+            "Que se pesca fácil",
+            "Que hay mucha agua"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cada cuánto se llevan el plástico al continente?",
@@ -261,12 +261,12 @@
           "text": "¿Qué aprenden sus hijos al ver llegar visitantes de otros países?",
           "type": "mc",
           "opts": [
-            "Que hay que hablar inglés",
             "Que el turismo es difícil",
             "Que deben irse de la isla",
-            "Que lo de uno vale"
+            "Que lo de uno vale",
+            "Que hay que hablar inglés"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -310,45 +310,45 @@
           "text": "¿Cómo se conoce a Masaya?",
           "type": "mc",
           "opts": [
-            "Como la cuna del folclore nicaragüense",
             "Como un puerto",
             "Como una ciudad nueva",
-            "Como la capital"
+            "Como la capital",
+            "Como la cuna del folclore nicaragüense"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuántos nudos lleva una hamaca sencilla?",
           "type": "mc",
           "opts": [
-            "Cien",
             "Unos ochocientos",
             "Cinco mil",
-            "Veinte"
+            "Veinte",
+            "Cien"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿De qué se hace el pabilo?",
           "type": "mc",
           "opts": [
+            "De plástico",
             "De seda",
             "De lana",
-            "De algodón",
-            "De plástico"
+            "De algodón"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué hacen primero los niños que aprenden el oficio?",
           "type": "mc",
           "opts": [
-            "Venden en el mercado",
             "El enrejado",
             "El cuerpo de la hamaca",
-            "Los flecos de las orillas"
+            "Los flecos de las orillas",
+            "Venden en el mercado"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "¿Qué habilidad te gustaría aprender de alguien mayor de tu familia? ¿Por qué?",
@@ -364,23 +364,23 @@
           "text": "¿A qué edad empezó a tejer Julio?",
           "type": "mc",
           "opts": [
-            "A los nueve años",
             "A los quince años",
             "A los veinte años",
-            "A los cinco años"
+            "A los cinco años",
+            "A los nueve años"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué le hizo hacer su mamá durante dos años?",
           "type": "mc",
           "opts": [
+            "Cortar hilo",
             "El enrejado",
             "Nada más flecos",
-            "Vender hamacas",
-            "Cortar hilo"
+            "Vender hamacas"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué le decía su mamá?",
@@ -397,12 +397,12 @@
           "text": "¿Cuándo teje Julio?",
           "type": "mc",
           "opts": [
-            "Al mediodía",
             "Los domingos",
             "De noche",
-            "Temprano, con café, cuando está fresco"
+            "Temprano, con café, cuando está fresco",
+            "Al mediodía"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -446,23 +446,23 @@
           "text": "¿Qué porcentaje de las especies del mundo hay en Costa Rica?",
           "type": "mc",
           "opts": [
+            "El uno por ciento",
             "Cerca del cinco por ciento",
             "El veinte por ciento",
-            "El cincuenta por ciento",
-            "El uno por ciento"
+            "El cincuenta por ciento"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué problema causa una carretera en el bosque?",
           "type": "mc",
           "opts": [
-            "Hace ruido nada más",
-            "Los animales quedan aislados y deben arriesgarse a cruzar",
             "Ayuda a los animales",
-            "No causa problemas"
+            "No causa problemas",
+            "Hace ruido nada más",
+            "Los animales quedan aislados y deben arriesgarse a cruzar"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cómo morían los monos y perezosos?",
@@ -479,12 +479,12 @@
           "text": "¿Cuánto tardaron los animales en aprender a usar los puentes?",
           "type": "mc",
           "opts": [
-            "Nunca aprendieron",
             "Un día",
             "Años",
-            "Pocas semanas"
+            "Pocas semanas",
+            "Nunca aprendieron"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "¿Qué problema de tu comunidad crees que tendría una solución sencilla y barata? Explica.",
@@ -511,23 +511,23 @@
           "text": "¿Por qué los monos sufrían quemaduras eléctricas?",
           "type": "mc",
           "opts": [
-            "Por el sol",
             "Porque agarran el cable con la mano y la cola y la corriente los atraviesa",
             "Por incendios",
-            "Por el agua"
+            "Por el agua",
+            "Por el sol"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cuántos días tardó el primer mono en cruzar el puente?",
           "type": "mc",
           "opts": [
+            "Un mes",
             "Un año",
             "Un día",
-            "Once días",
-            "Un mes"
+            "Once días"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué considera Priscilla la mejor noticia de su vida?",
@@ -582,12 +582,12 @@
           "text": "¿Qué porcentaje de su electricidad genera Costa Rica con fuentes renovables?",
           "type": "mc",
           "opts": [
-            "Más del noventa y ocho por ciento",
-            "El veinte por ciento",
             "El setenta por ciento",
-            "El cincuenta por ciento"
+            "El cincuenta por ciento",
+            "Más del noventa y ocho por ciento",
+            "El veinte por ciento"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿De dónde viene la mayor parte de esa energía?",
@@ -604,12 +604,12 @@
           "text": "¿Qué aprovecha la energía geotérmica?",
           "type": "mc",
           "opts": [
-            "La luz del sol",
             "La lluvia",
             "El calor bajo la tierra",
-            "Las olas del mar"
+            "Las olas del mar",
+            "La luz del sol"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué hay en Guanacaste además de plantas geotérmicas?",
@@ -647,23 +647,23 @@
           "text": "¿A qué temperatura está el agua allá abajo?",
           "type": "mc",
           "opts": [
+            "A mil grados",
             "A cien grados",
             "A doscientos cuarenta grados",
-            "A cincuenta grados",
-            "A mil grados"
+            "A cincuenta grados"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué hacen con el agua después de usar el vapor?",
           "type": "mc",
           "opts": [
-            "La guardan en tanques",
             "La tiran al río",
             "La vuelven a inyectar en la tierra",
-            "La venden"
+            "La venden",
+            "La guardan en tanques"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué les dice Álvaro a los estudiantes sobre Costa Rica?",
@@ -729,34 +729,34 @@
           "text": "¿Cuántos huevos pone cada tortuga aproximadamente?",
           "type": "mc",
           "opts": [
-            "Cincuenta",
-            "Alrededor de cien",
             "Mil",
-            "Diez"
+            "Diez",
+            "Cincuenta",
+            "Alrededor de cien"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Por qué se pierden muchos huevos de los primeros días?",
           "type": "mc",
           "opts": [
-            "Por la lluvia",
             "Por el sol",
             "Porque las tortugas que llegan después los rompen sin querer",
-            "Porque se los comen los peces"
+            "Porque se los comen los peces",
+            "Por la lluvia"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué hace la comunidad a cambio de poder recolectar huevos?",
           "type": "mc",
           "opts": [
-            "Cierra la playa",
             "Cría tortugas",
             "Paga un impuesto",
-            "Vigila la playa y protege los nidos que sí van a nacer"
+            "Vigila la playa y protege los nidos que sí van a nacer",
+            "Cierra la playa"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "¿Te parece buena idea el acuerdo de Ostional? Da una razón a favor y una en contra.",
@@ -805,12 +805,12 @@
           "text": "¿Qué pasaba antes con los ladrones de huevos?",
           "type": "mc",
           "opts": [
-            "Trabajaban con el pueblo",
             "Se los llevaba la policía",
             "No existían",
-            "Venían armados y ahora no pasan de la entrada"
+            "Venían armados y ahora no pasan de la entrada",
+            "Trabajaban con el pueblo"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }

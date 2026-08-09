@@ -38,34 +38,34 @@
           "text": "¿Dónde nació el tango?",
           "type": "mc",
           "opts": [
-            "En los barrios pobres cerca del puerto",
             "En París",
             "En el campo",
-            "En los teatros elegantes"
+            "En los teatros elegantes",
+            "En los barrios pobres cerca del puerto"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuál es el instrumento más característico?",
           "type": "mc",
           "opts": [
-            "La guitarra",
             "El bandoneón",
             "El piano",
-            "El violín"
+            "El violín",
+            "La guitarra"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué hizo que Buenos Aires aceptara el tango?",
           "type": "mc",
           "opts": [
-            "La radio",
-            "Una ley",
             "Que se puso de moda en París",
-            "Un concurso"
+            "Un concurso",
+            "La radio",
+            "Una ley"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Cómo se invita a bailar en una milonga?",
@@ -92,12 +92,12 @@
           "text": "¿Cuántos botones tiene el bandoneón?",
           "type": "mc",
           "opts": [
-            "Setenta y uno",
             "Cien",
             "Doce",
-            "Treinta"
+            "Treinta",
+            "Setenta y uno"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué hace especialmente difícil al instrumento?",
@@ -114,23 +114,23 @@
           "text": "¿De dónde llegó su abuelo?",
           "type": "mc",
           "opts": [
-            "De Francia",
-            "De España",
             "De Italia",
-            "De Alemania"
+            "De Alemania",
+            "De Francia",
+            "De España"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué les dice a sus alumnos?",
           "type": "mc",
           "opts": [
-            "Que compren buen instrumento",
-            "Que viajen a París",
             "Que practiquen más horas",
-            "Que si no entienden de dónde viene la música, saldrá prolijo y vacío"
+            "Que si no entienden de dónde viene la música, saldrá prolijo y vacío",
+            "Que compren buen instrumento",
+            "Que viajen a París"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -174,45 +174,45 @@
           "text": "¿De qué está hecho el mate?",
           "type": "mc",
           "opts": [
-            "De hojas secas y molidas de yerba mate",
             "De té negro",
             "De cacao",
-            "De café molido"
+            "De café molido",
+            "De hojas secas y molidas de yerba mate"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿De quiénes viene la costumbre?",
           "type": "mc",
           "opts": [
-            "De los españoles",
             "De los guaraníes",
             "De los incas",
-            "De los italianos"
+            "De los italianos",
+            "De los españoles"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué hace la persona que ceba?",
           "type": "mc",
           "opts": [
-            "Lava la bombilla",
-            "Toma primero siempre",
             "Sirve el agua y va pasando el mate a cada uno",
-            "Compra la yerba"
+            "Compra la yerba",
+            "Lava la bombilla",
+            "Toma primero siempre"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué significa decir gracias en la ronda?",
           "type": "mc",
           "opts": [
-            "Que quiere otro",
-            "Que hay que cambiar la yerba",
             "Que estuvo rico",
-            "Que uno ya no quiere más y se sale de la ronda"
+            "Que uno ya no quiere más y se sale de la ronda",
+            "Que quiere otro",
+            "Que hay que cambiar la yerba"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Hay alguna comida o bebida que en tu familia se comparta con reglas parecidas? Descríbela.",
@@ -239,12 +239,12 @@
           "text": "¿Por qué dice que la charla va más despacio?",
           "type": "mc",
           "opts": [
-            "Porque hace calor",
-            "Por el ritmo de tener que esperar tu turno",
             "Porque están cansados",
-            "Porque hablan poco"
+            "Porque hablan poco",
+            "Porque hace calor",
+            "Por el ritmo de tener que esperar tu turno"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué hacía con su abuela enferma?",
@@ -310,34 +310,34 @@
           "text": "¿Por qué es buena la Patagonia para buscar fósiles?",
           "type": "mc",
           "opts": [
+            "Porque hay muchos museos",
             "Porque el viento y la falta de vegetación dejan la roca desnuda",
             "Porque llueve mucho",
-            "Porque hay poca gente",
-            "Porque hay muchos museos"
+            "Porque hay poca gente"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cuánto pudo medir el Patagotitan?",
           "type": "mc",
           "opts": [
-            "Diez metros",
-            "Más de treinta y cinco metros",
             "Cien metros",
-            "Cinco metros"
+            "Cinco metros",
+            "Diez metros",
+            "Más de treinta y cinco metros"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cómo era el Giganotosaurus?",
           "type": "mc",
           "opts": [
+            "Volador",
             "Acuático",
             "Herbívoro y pequeño",
-            "Un carnívoro tan grande como el T. rex o mayor",
-            "Volador"
+            "Un carnívoro tan grande como el T. rex o mayor"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Quién encontró el Patagotitan?",
@@ -375,34 +375,34 @@
           "text": "¿Cómo encontró el hueso?",
           "type": "mc",
           "opts": [
+            "En un libro",
             "Excavando",
             "Buscando un animal perdido vio algo raro en una barranca",
-            "Se lo dijeron",
-            "En un libro"
+            "Se lo dijeron"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué dice que aporta él?",
           "type": "mc",
           "opts": [
+            "El dinero",
             "Las herramientas",
             "El conocimiento científico",
-            "El ojo del campo: sabe leer el terreno",
-            "El dinero"
+            "El ojo del campo: sabe leer el terreno"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Cómo se limpia un fósil?",
           "type": "mc",
           "opts": [
-            "Con máquinas",
-            "Con las manos",
             "Con agua a presión",
-            "Con pincelito y palillo, milímetro a milímetro"
+            "Con pincelito y palillo, milímetro a milímetro",
+            "Con máquinas",
+            "Con las manos"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -446,34 +446,34 @@
           "text": "¿Cuántos tambores se usan?",
           "type": "mc",
           "opts": [
-            "Tres",
-            "Cinco",
             "Uno",
-            "Dos"
+            "Dos",
+            "Tres",
+            "Cinco"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cuál improvisa y hace variaciones?",
           "type": "mc",
           "opts": [
-            "El chico",
-            "El repique",
             "El piano",
-            "Ninguno"
+            "Ninguno",
+            "El chico",
+            "El repique"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué pasa si toca un solo tambor?",
           "type": "mc",
           "opts": [
-            "Es lo normal",
-            "Suena perfecto",
             "No suena bien: el candombe existe cuando conversan entre sí",
-            "Suena más fuerte"
+            "Suena más fuerte",
+            "Es lo normal",
+            "Suena perfecto"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Para qué se hace una fogata en la calle?",
@@ -500,45 +500,45 @@
           "text": "¿Qué tambor toca Wilson?",
           "type": "mc",
           "opts": [
+            "El chico",
             "El piano",
             "El repique",
-            "Los tres",
-            "El chico"
+            "Los tres"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cómo dice que se hereda el tambor en el barrio?",
           "type": "mc",
           "opts": [
-            "Se compra",
             "Como se hereda un apellido",
             "Se enseña en la escuela",
-            "No se hereda"
+            "No se hereda",
+            "Se compra"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Por qué se juntaban los domingos en los conventillos?",
           "type": "mc",
           "opts": [
+            "Porque no trabajaban nunca",
             "Por orden del gobierno",
             "Porque era día de fiesta",
-            "Porque era el único día que tenían",
-            "Porque no trabajaban nunca"
+            "Porque era el único día que tenían"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué es la templada?",
           "type": "mc",
           "opts": [
+            "Calentar el cuero de los tambores en el fuego antes de salir",
             "Una canción",
             "El final de la llamada",
-            "Un baile",
-            "Calentar el cuero de los tambores en el fuego antes de salir"
+            "Un baile"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }
@@ -582,45 +582,45 @@
           "text": "¿De qué dependía Uruguay hace veinte años?",
           "type": "mc",
           "opts": [
-            "Del petróleo importado y de la lluvia para sus represas",
-            "Del carbón propio",
             "Del sol",
-            "Del viento"
+            "Del viento",
+            "Del petróleo importado y de la lluvia para sus represas",
+            "Del carbón propio"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Por qué tiene tanto viento?",
           "type": "mc",
           "opts": [
-            "Por sus montañas",
             "Por sus llanuras abiertas sin montañas que lo frenen",
             "Por estar en la costa solamente",
-            "Por el clima frío"
+            "Por el clima frío",
+            "Por sus montañas"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cuándo empezaron a instalarse los parques eólicos?",
           "type": "mc",
           "opts": [
-            "Hace cincuenta años",
             "En 1990",
             "A partir de 2010",
-            "En 2020"
+            "En 2020",
+            "Hace cincuenta años"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué pasa con los campos donde hay molinos?",
           "type": "mc",
           "opts": [
+            "Siguen funcionando: las vacas pastan entre las torres",
             "Se venden",
             "Se convierten en fábricas",
-            "Se dejan de usar",
-            "Siguen funcionando: las vacas pastan entre las torres"
+            "Se dejan de usar"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Qué recurso natural abundante tiene tu región que se podría aprovechar mejor? Explica.",
@@ -647,12 +647,12 @@
           "text": "¿Cuál era su trabajo antes?",
           "type": "mc",
           "opts": [
+            "Maestro",
             "Ganadero",
             "Trabajaba en una gomería",
-            "Electricista",
-            "Maestro"
+            "Electricista"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Cuántos terminaron el curso?",
@@ -718,12 +718,12 @@
           "text": "¿Cuándo se lanzó el Plan Ceibal?",
           "type": "mc",
           "opts": [
+            "En 1999",
             "En 2007",
             "En 2015",
-            "En 2020",
-            "En 1999"
+            "En 2020"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué logró Uruguay en 2009?",
@@ -772,23 +772,23 @@
           "text": "¿Cuántos alumnos tiene Nancy?",
           "type": "mc",
           "opts": [
-            "Doce, de primero a sexto",
             "Cinco",
             "Cincuenta",
-            "Treinta"
+            "Treinta",
+            "Doce, de primero a sexto"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué pensó al principio?",
           "type": "mc",
           "opts": [
-            "Que era una gran idea",
             "Que hacía falta un techo que no gotee y una estufa, no computadoras",
             "Que era muy caro",
-            "Que no servirían"
+            "Que no servirían",
+            "Que era una gran idea"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué era impensable antes?",

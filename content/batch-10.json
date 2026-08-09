@@ -38,45 +38,45 @@
           "text": "¿Cuáles son los idiomas oficiales de Paraguay?",
           "type": "mc",
           "opts": [
-            "El español y el guaraní",
-            "El guaraní solamente",
             "Tres idiomas",
-            "Solo el español"
+            "Solo el español",
+            "El español y el guaraní",
+            "El guaraní solamente"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué tiene de excepcional el caso paraguayo?",
           "type": "mc",
           "opts": [
+            "Que hay muchos idiomas",
             "Que nadie habla guaraní",
             "Que el guaraní lo habla la mayoría, no solo la población indígena",
-            "Que el español es minoritario",
-            "Que hay muchos idiomas"
+            "Que el español es minoritario"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué es el jopara?",
           "type": "mc",
           "opts": [
-            "Un pueblo",
-            "Una comida",
             "La mezcla de guaraní y español en el habla diaria",
-            "Un baile"
+            "Un baile",
+            "Un pueblo",
+            "Una comida"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué pasó en 1992?",
           "type": "mc",
           "opts": [
+            "El guaraní obtuvo rango constitucional como idioma oficial",
             "Se creó el jopara",
             "Se dejó de enseñar",
-            "Se prohibió el guaraní",
-            "El guaraní obtuvo rango constitucional como idioma oficial"
+            "Se prohibió el guaraní"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿En tu casa se mezclan dos idiomas al hablar? Describe cómo y cuándo pasa.",
@@ -92,45 +92,45 @@
           "text": "¿Qué pasaba si hablaban guaraní en el recreo?",
           "type": "mc",
           "opts": [
+            "Nada",
             "Los castigaban y les hacían escribir cien veces",
             "Los felicitaban",
-            "Los mandaban a casa",
-            "Nada"
+            "Los mandaban a casa"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué le decían a su mamá?",
           "type": "mc",
           "opts": [
-            "Que le enseñara más guaraní",
             "Que si hablaba guaraní iba a salir burra y no progresaría",
             "Que cambiara de escuela",
-            "Nada"
+            "Nada",
+            "Que le enseñara más guaraní"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué dicen sus alumnos adolescentes al principio?",
           "type": "mc",
           "opts": [
-            "Que ya lo saben",
-            "Que les encanta",
             "Que el guaraní no sirve, que mejor inglés",
-            "Que es fácil"
+            "Que es fácil",
+            "Que ya lo saben",
+            "Que les encanta"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Para qué dice Perla que sirve el guaraní?",
           "type": "mc",
           "opts": [
-            "Para viajar",
             "Para estudiar",
             "Para conseguir trabajo",
-            "Para saber quién sos"
+            "Para saber quién sos",
+            "Para viajar"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -174,23 +174,23 @@
           "text": "¿Qué significa ñandutí en guaraní?",
           "type": "mc",
           "opts": [
+            "Flor",
             "Telaraña",
             "Estrella",
-            "Hilo",
-            "Flor"
+            "Hilo"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué combina la técnica?",
           "type": "mc",
           "opts": [
+            "Diseños africanos",
             "Solo diseños guaraníes",
             "Encajes que llegaron de España con diseños y nombres guaraníes",
-            "Técnicas modernas",
-            "Diseños africanos"
+            "Técnicas modernas"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué se marca primero?",
@@ -207,12 +207,12 @@
           "text": "¿Qué pasa al terminar la pieza?",
           "type": "mc",
           "opts": [
-            "Se pinta",
-            "Se cose a un vestido",
             "Se lava",
-            "Se corta la tela de base y queda solo el encaje"
+            "Se corta la tela de base y queda solo el encaje",
+            "Se pinta",
+            "Se cose a un vestido"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Qué objeto hecho a mano tiene valor especial en tu familia? Describe cómo es.",
@@ -239,12 +239,12 @@
           "text": "¿Qué pasa si los hilos radiales quedan flojos?",
           "type": "mc",
           "opts": [
-            "No pasa nada",
-            "La pieza sale torcida y no hay cómo arreglarla",
             "Se teje más rápido",
-            "Queda más suave"
+            "Queda más suave",
+            "No pasa nada",
+            "La pieza sale torcida y no hay cómo arreglarla"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿De dónde vienen los nombres de las figuras?",
@@ -261,12 +261,12 @@
           "text": "¿Qué es lo que más asusta del proceso?",
           "type": "mc",
           "opts": [
-            "Marcar el círculo",
             "Elegir los colores",
             "Empezar",
-            "El final, cuando corta la tela de abajo"
+            "El final, cuando corta la tela de abajo",
+            "Marcar el círculo"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -310,23 +310,23 @@
           "text": "¿Dónde está el barrio de Cateura?",
           "type": "mc",
           "opts": [
-            "Junto al vertedero principal de la ciudad",
             "En el campo",
             "En la frontera",
-            "En el centro de Asunción"
+            "En el centro de Asunción",
+            "Junto al vertedero principal de la ciudad"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuál fue el problema al empezar las clases?",
           "type": "mc",
           "opts": [
+            "No había espacio",
             "No había alumnos",
             "Un violín costaba más que una casa del barrio",
-            "No había profesor",
-            "No había espacio"
+            "No había profesor"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Quién construyó los instrumentos?",
@@ -343,12 +343,12 @@
           "text": "¿Con qué se hacen los cellos?",
           "type": "mc",
           "opts": [
-            "Con madera nueva",
-            "Con cajas de cartón",
             "Con latas de pintura",
-            "Con bidones"
+            "Con bidones",
+            "Con madera nueva",
+            "Con cajas de cartón"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Qué material que se tira en tu casa podría transformarse en algo útil? Da una idea concreta.",
@@ -364,12 +364,12 @@
           "text": "¿Con qué está hecho su violín?",
           "type": "mc",
           "opts": [
-            "Con una lata de pintura, un tenedor viejo y madera de cajones",
-            "Con plástico",
             "Con metal nuevo",
-            "Con madera fina"
+            "Con madera fina",
+            "Con una lata de pintura, un tenedor viejo y madera de cajones",
+            "Con plástico"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cómo se sentía al principio cuando ponían cara rara?",
@@ -386,12 +386,12 @@
           "text": "¿Qué dice sobre la basura?",
           "type": "mc",
           "opts": [
-            "Que deberían llevársela",
             "Que hay que reciclarla toda",
             "Que el mundo les manda su basura y ellos hacen música con ella",
-            "Que no le molesta"
+            "Que no le molesta",
+            "Que deberían llevársela"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué quiere ser Tania?",
@@ -457,23 +457,23 @@
           "text": "¿Cuáles son las tres partes que van juntas?",
           "type": "mc",
           "opts": [
+            "Solo el baile",
             "Piano, voz y baile",
             "El cante, el toque y el baile",
-            "Palmas, guitarra y tambor",
-            "Solo el baile"
+            "Palmas, guitarra y tambor"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué es un palo?",
           "type": "mc",
           "opts": [
-            "Un baile de pareja",
             "Un instrumento",
             "Cada uno de los estilos del flamenco",
-            "Un tipo de guitarra"
+            "Un tipo de guitarra",
+            "Un baile de pareja"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué tiene de particular el compás de varios palos?",
@@ -500,23 +500,23 @@
           "text": "¿Qué pasa si te equivocas en las palmas?",
           "type": "mc",
           "opts": [
+            "No se nota",
             "Tiras abajo a todo el mundo",
             "Se para el baile",
-            "Hay que empezar de nuevo",
-            "No se nota"
+            "Hay que empezar de nuevo"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué dice del compás de doce?",
           "type": "mc",
           "opts": [
-            "Que se cuenta con la cabeza",
             "Que no se cuenta con la cabeza, se lleva en el cuerpo",
             "Que es fácil",
-            "Que se aprende con partituras"
+            "Que se aprende con partituras",
+            "Que se cuenta con la cabeza"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cómo aprendió Rocío?",
@@ -593,12 +593,12 @@
           "text": "¿A qué se parecen las columnas del interior?",
           "type": "mc",
           "opts": [
-            "A montañas",
-            "A árboles que se abren en ramas",
             "A olas",
-            "A escaleras"
+            "A escaleras",
+            "A montañas",
+            "A árboles que se abren en ramas"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Para qué usaba las maquetas colgantes?",
@@ -669,12 +669,12 @@
           "text": "¿Qué dice sobre los cálculos de Gaudí?",
           "type": "mc",
           "opts": [
-            "Que eran demasiado simples",
-            "Que nadie los entiende",
             "Que estaban mal",
-            "Que con ordenadores sale igual que colgando pesos de cuerdas"
+            "Que con ordenadores sale igual que colgando pesos de cuerdas",
+            "Que eran demasiado simples",
+            "Que nadie los entiende"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -729,12 +729,12 @@
           "text": "¿Qué suele pasar cuando cierra la escuela de un pueblo?",
           "type": "mc",
           "opts": [
+            "Abre otra",
             "No pasa nada",
             "Suele ser el principio del final",
-            "Llegan más familias",
-            "Abre otra"
+            "Llegan más familias"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué condición ponían los pueblos que ofrecían casas?",
@@ -751,12 +751,12 @@
           "text": "¿Qué otra cosa ayudó?",
           "type": "mc",
           "opts": [
+            "El internet rápido, que permite trabajar a distancia",
             "El turismo",
             "Las fábricas",
-            "Más carreteras",
-            "El internet rápido, que permite trabajar a distancia"
+            "Más carreteras"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "Terminaste tu viaje por veinte países. ¿Cuál historia te marcó más y por qué? Explica como corresponsal.",
@@ -772,23 +772,23 @@
           "text": "¿Cuántos vecinos había al principio?",
           "type": "mc",
           "opts": [
-            "Cuarenta y uno",
             "Diez",
             "Doscientos",
-            "Cien"
+            "Cien",
+            "Cuarenta y uno"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuántas solicitudes recibieron?",
           "type": "mc",
           "opts": [
+            "Ninguna",
             "Diez",
             "Más de trescientas",
-            "Cincuenta",
-            "Ninguna"
+            "Cincuenta"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Cuántos niños trajeron las cuatro familias?",
@@ -805,12 +805,12 @@
           "text": "¿Cómo describe hoy a su pueblo?",
           "type": "mc",
           "opts": [
+            "Como un pueblo que empieza otra vez",
             "Como un pueblo turístico",
             "Como un pueblo grande",
-            "Como un pueblo que se muere",
-            "Como un pueblo que empieza otra vez"
+            "Como un pueblo que se muere"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }

@@ -38,34 +38,34 @@
           "text": "¿De quiénes son descendientes los garífunas?",
           "type": "mc",
           "opts": [
+            "De españoles y mayas",
             "De africanos e indígenas caribes",
             "De ingleses",
-            "De aztecas",
-            "De españoles y mayas"
+            "De aztecas"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cómo se llama el tambor tradicional?",
           "type": "mc",
           "opts": [
-            "Tambora",
             "Garaón",
             "Marimba",
-            "Bongó"
+            "Bongó",
+            "Tambora"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué pasa cuando suenan dos garaones juntos?",
           "type": "mc",
           "opts": [
-            "Se tapan uno al otro",
-            "Suenan igual",
             "Uno lleva el ritmo y el otro conversa encima",
-            "Suena muy fuerte"
+            "Suena muy fuerte",
+            "Se tapan uno al otro",
+            "Suenan igual"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué reconoció la UNESCO en 2001?",
@@ -92,23 +92,23 @@
           "text": "¿Cómo hacía los tambores el abuelo de Teodoro?",
           "type": "mc",
           "opts": [
-            "Ahuecaba el tronco con fuego y le ponía piel estirada",
-            "Usaba plástico",
             "Los pedía a otro país",
-            "Los compraba"
+            "Los compraba",
+            "Ahuecaba el tronco con fuego y le ponía piel estirada",
+            "Usaba plástico"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué decían muchos muchachos de la música garífuna?",
           "type": "mc",
           "opts": [
+            "Que era muy cara",
             "Que era muy difícil",
             "Que era cosa de viejos",
-            "Que era la mejor",
-            "Que era muy cara"
+            "Que era la mejor"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué extrañaba Teodoro cuando vivía en la ciudad?",
@@ -174,12 +174,12 @@
           "text": "¿Cuál es el arrecife más grande del planeta?",
           "type": "mc",
           "opts": [
-            "El de Australia",
             "El de México",
             "El de Cuba",
-            "El de Honduras"
+            "El de Honduras",
+            "El de Australia"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué es realmente el coral?",
@@ -196,23 +196,23 @@
           "text": "¿Qué es el blanqueamiento?",
           "type": "mc",
           "opts": [
-            "Un tipo de pez",
-            "Limpiar el arrecife",
             "Cuando el coral pierde el color por el calor",
-            "Pintar el coral"
+            "Pintar el coral",
+            "Un tipo de pez",
+            "Limpiar el arrecife"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué decisión difícil tomaron los pescadores?",
           "type": "mc",
           "opts": [
-            "Pescar más",
             "Vender sus lanchas",
             "Mudarse de la isla",
-            "Cerrar algunas zonas a la pesca por varios años"
+            "Cerrar algunas zonas a la pesca por varios años",
+            "Pescar más"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "¿Te parece justo pedirle a alguien que deje su trabajo para proteger la naturaleza? Explica tu opinión.",
@@ -228,45 +228,45 @@
           "text": "¿Cuántos años pescó Wilmer?",
           "type": "mc",
           "opts": [
-            "Veintidós años",
-            "Treinta años",
             "Cinco años",
-            "Diez años"
+            "Diez años",
+            "Veintidós años",
+            "Treinta años"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué notaron con los años?",
           "type": "mc",
           "opts": [
-            "Que había más pescado",
-            "Que salían más horas y volvían con menos pescado",
             "Que el mar estaba más frío",
-            "Que había más lanchas"
+            "Que había más lanchas",
+            "Que había más pescado",
+            "Que salían más horas y volvían con menos pescado"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cómo describió el arrecife en las fotos recientes?",
           "type": "mc",
           "opts": [
+            "Como una ciudad",
             "Igual que antes",
             "Como un jardín",
-            "Como un cementerio blanco",
-            "Como una ciudad"
+            "Como un cementerio blanco"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Cuándo empezaron a ver peces grandes otra vez?",
           "type": "mc",
           "opts": [
-            "Al décimo año",
-            "Al primer año",
             "Al segundo año",
-            "Al cuarto año"
+            "Al cuarto año",
+            "Al décimo año",
+            "Al primer año"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -310,45 +310,45 @@
           "text": "¿Cuántos escalones tiene la Escalinata Jeroglífica?",
           "type": "mc",
           "opts": [
-            "Sesenta y tres",
-            "Cien",
             "Doscientos",
-            "Treinta"
+            "Treinta",
+            "Sesenta y tres",
+            "Cien"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué cuenta el texto de la escalinata?",
           "type": "mc",
           "opts": [
-            "Recetas de comida",
             "La historia de los reyes de Copán",
             "Cuentos para niños",
-            "Mapas de la selva"
+            "Mapas de la selva",
+            "Recetas de comida"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué hacían antes los vecinos del pueblo en las excavaciones?",
           "type": "mc",
           "opts": [
+            "Dirigían el proyecto",
             "Nada",
             "Interpretaban los glifos",
-            "Cargaban herramientas",
-            "Dirigían el proyecto"
+            "Cargaban herramientas"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué estudian hoy los jóvenes guías?",
           "type": "mc",
           "opts": [
-            "Solo matemáticas",
-            "Turismo nada más",
             "Solo inglés",
-            "Historia maya, epigrafía e inglés"
+            "Historia maya, epigrafía e inglés",
+            "Solo matemáticas",
+            "Turismo nada más"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Por qué crees que importa que las personas del lugar cuenten su propia historia?",
@@ -364,45 +364,45 @@
           "text": "¿Por qué entraba gratis Karla de niña?",
           "type": "mc",
           "opts": [
+            "Porque era estudiante",
             "Porque los del pueblo entran gratis",
             "Porque su papá trabajaba ahí",
-            "Porque era muy pequeña",
-            "Porque era estudiante"
+            "Porque era muy pequeña"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cuánto duró el curso de guía?",
           "type": "mc",
           "opts": [
-            "Un año",
-            "Dos años",
             "Cuatro años",
-            "Seis meses"
+            "Seis meses",
+            "Un año",
+            "Dos años"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cómo se leen los glifos mayas?",
           "type": "mc",
           "opts": [
+            "De derecha a izquierda solamente",
             "Con números",
             "Letra por letra",
-            "Por sílabas y símbolos completos",
-            "De derecha a izquierda solamente"
+            "Por sílabas y símbolos completos"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué le dijo su abuela al final del recorrido?",
           "type": "mc",
           "opts": [
-            "Que no entendió nada",
             "Que quería ser guía",
             "Que estaba orgullosa",
-            "Que pasó su vida al lado de esto y no sabía que hablaba"
+            "Que pasó su vida al lado de esto y no sabía que hablaba",
+            "Que no entendió nada"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -446,12 +446,12 @@
           "text": "¿Cuáles son rellenos comunes de la pupusa?",
           "type": "mc",
           "opts": [
+            "Pollo y arroz",
             "Queso, frijoles y chicharrón",
             "Pescado y papa",
-            "Carne de res solamente",
-            "Pollo y arroz"
+            "Carne de res solamente"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué pueblo indígena ya hacía pupusas?",
@@ -468,23 +468,23 @@
           "text": "¿Qué es el curtido?",
           "type": "mc",
           "opts": [
-            "Una bebida",
             "Una salsa dulce",
             "Repollo con zanahoria y vinagre",
-            "Un tipo de queso"
+            "Un tipo de queso",
+            "Una bebida"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Cuándo es el Día Nacional de la Pupusa?",
           "type": "mc",
           "opts": [
+            "El segundo domingo de noviembre",
             "El 15 de septiembre",
             "En diciembre",
-            "El primer lunes de enero",
-            "El segundo domingo de noviembre"
+            "El primer lunes de enero"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Cuál es un plato que reúne a tu familia? Descríbelo y di por qué es especial.",
@@ -500,12 +500,12 @@
           "text": "¿Con qué empezó Rosa Elena su negocio?",
           "type": "mc",
           "opts": [
+            "Con un restaurante grande",
             "Con un comal y una mesita en la carretera",
             "Con seis comales",
-            "Con un camión",
-            "Con un restaurante grande"
+            "Con un camión"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Cómo debe estar la masa?",
@@ -533,12 +533,12 @@
           "text": "¿Cuántas pupusas hace al día?",
           "type": "mc",
           "opts": [
-            "Mil",
             "Cien",
             "Doscientas",
-            "Como cuatrocientas"
+            "Como cuatrocientas",
+            "Mil"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -582,23 +582,23 @@
           "text": "¿Cuántos pueblos conecta la Ruta de las Flores?",
           "type": "mc",
           "opts": [
-            "Cinco",
-            "Diez",
             "Doce",
-            "Tres"
+            "Tres",
+            "Cinco",
+            "Diez"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué pasa cuando el café crece más alto?",
           "type": "mc",
           "opts": [
-            "Madura más rápido",
-            "Madura más lento y concentra más sabor",
             "No da fruto",
-            "Necesita más agua"
+            "Necesita más agua",
+            "Madura más rápido",
+            "Madura más lento y concentra más sabor"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué es el café de sombra?",
@@ -636,12 +636,12 @@
           "text": "¿Cuántas generaciones de su familia han trabajado la finca?",
           "type": "mc",
           "opts": [
-            "Tres",
-            "Cinco",
             "Una",
-            "Dos"
+            "Dos",
+            "Tres",
+            "Cinco"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué le recomendó el ingeniero?",
@@ -658,23 +658,23 @@
           "text": "¿Qué hacen las aves que llegan en noviembre?",
           "type": "mc",
           "opts": [
-            "Hacen ruido",
-            "Dañan el café",
             "Se comen los insectos",
-            "Se llevan los granos"
+            "Se llevan los granos",
+            "Hacen ruido",
+            "Dañan el café"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Por qué vende su café más caro?",
           "type": "mc",
           "opts": [
-            "Porque está más cerca",
-            "Porque tiene más trabajadores",
             "Porque produce más",
-            "Porque sabe mejor y no destruye el bosque"
+            "Porque sabe mejor y no destruye el bosque",
+            "Porque está más cerca",
+            "Porque tiene más trabajadores"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -718,23 +718,23 @@
           "text": "¿Cómo son las olas de Punta Roca y El Tunco?",
           "type": "mc",
           "opts": [
-            "Largas y parejas, rompen a la derecha",
             "Muy pequeñas",
             "Siempre peligrosas",
-            "Cortas y bruscas"
+            "Cortas y bruscas",
+            "Largas y parejas, rompen a la derecha"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué hacían antes las muchachas del pueblo?",
           "type": "mc",
           "opts": [
-            "Surfeaban todas",
-            "Miraban desde la orilla",
             "Entrenaban en otro país",
-            "Trabajaban en el mar"
+            "Trabajaban en el mar",
+            "Surfeaban todas",
+            "Miraban desde la orilla"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué piden los clubes a cambio del entrenamiento?",
@@ -751,12 +751,12 @@
           "text": "¿Por qué las tablas son prestadas?",
           "type": "mc",
           "opts": [
-            "Porque no se pueden comprar",
-            "Porque son del gobierno",
             "Porque son viejas",
-            "Para que el dinero no sea una barrera"
+            "Para que el dinero no sea una barrera",
+            "Porque no se pueden comprar",
+            "Porque son del gobierno"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Conoces alguna actividad donde falten oportunidades para ciertas personas? ¿Qué se podría hacer?",
@@ -772,45 +772,45 @@
           "text": "¿Con qué tabla empezó Mariela?",
           "type": "mc",
           "opts": [
+            "Con una tabla nueva",
             "Con una tabla rota que arregló con cinta adhesiva",
             "Con la tabla de su papá",
-            "Sin tabla",
-            "Con una tabla nueva"
+            "Sin tabla"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué le decía su papá?",
           "type": "mc",
           "opts": [
+            "Que fuera entrenadora",
             "Que surfeara más",
             "Que una señorita no anda en traje de baño frente a todos",
-            "Que compitiera",
-            "Que fuera entrenadora"
+            "Que compitiera"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Qué hizo su papá cuando ella ganó el campeonato nacional?",
           "type": "mc",
           "opts": [
+            "Le compró una tabla",
             "Se enojó",
             "No fue",
-            "Fue a verla y lloró",
-            "Le compró una tabla"
+            "Fue a verla y lloró"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Cuál es la regla del club?",
           "type": "mc",
           "opts": [
+            "Primero la escuela, después el agua",
             "Pagar una cuota",
             "Competir cada mes",
-            "Entrenar todos los días",
-            "Primero la escuela, después el agua"
+            "Entrenar todos los días"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }

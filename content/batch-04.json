@@ -49,34 +49,34 @@
           "text": "¿Por qué tienen que subir los barcos?",
           "type": "mc",
           "opts": [
-            "Porque hay montañas",
-            "Porque el lago Gatún está veintiséis metros más arriba",
             "Porque el mar baja",
-            "Por el viento"
+            "Por el viento",
+            "Porque hay montañas",
+            "Porque el lago Gatún está veintiséis metros más arriba"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué son las esclusas?",
           "type": "mc",
           "opts": [
-            "Puertos",
-            "Puentes",
             "Cámaras de concreto que se llenan y vacían de agua",
-            "Túneles"
+            "Túneles",
+            "Puertos",
+            "Puentes"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Cómo entra y sale el agua de las esclusas?",
           "type": "mc",
           "opts": [
+            "Solo por gravedad, desde el lago",
             "Con motores",
             "Con el viento",
-            "Con bombas eléctricas",
-            "Solo por gravedad, desde el lago"
+            "Con bombas eléctricas"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Qué obra o construcción de tu ciudad te parece impresionante? Explica por qué.",
@@ -92,23 +92,23 @@
           "text": "¿Qué hace un práctico del canal?",
           "type": "mc",
           "opts": [
-            "Se sube al barco y toma el mando para cruzarlo",
-            "Vende boletos",
             "Repara motores",
-            "Limpia las esclusas"
+            "Limpia las esclusas",
+            "Se sube al barco y toma el mando para cruzarlo",
+            "Vende boletos"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cuánto espacio le sobra a veces a cada lado del barco?",
           "type": "mc",
           "opts": [
-            "Diez metros",
             "Sesenta centímetros",
             "Cinco metros",
-            "Un metro"
+            "Un metro",
+            "Diez metros"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cuál era el trabajo de su abuelo?",
@@ -125,12 +125,12 @@
           "text": "¿Qué le dijo su abuelo en Miraflores?",
           "type": "mc",
           "opts": [
+            "Que esto ahora es tuyo, de nosotros",
             "Que se cambiara de trabajo",
             "Que él lo construyó",
-            "Que era peligroso",
-            "Que esto ahora es tuyo, de nosotros"
+            "Que era peligroso"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }
@@ -185,34 +185,34 @@
           "text": "¿Cómo se hace el dibujo de una mola?",
           "type": "mc",
           "opts": [
-            "Se estampa con máquina",
-            "Se hace cortando y cosiendo capas",
             "Se dibuja con marcador",
-            "Se pinta"
+            "Se pinta",
+            "Se estampa con máquina",
+            "Se hace cortando y cosiendo capas"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Cómo se llama la técnica?",
           "type": "mc",
           "opts": [
-            "Teñido natural",
             "Bordado libre",
             "Aplicación inversa",
-            "Tejido de punto"
+            "Tejido de punto",
+            "Teñido natural"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Cuántas horas puede llevar una mola bien hecha?",
           "type": "mc",
           "opts": [
-            "Mil horas",
-            "Dos horas",
             "Diez horas",
-            "Más de cien horas"
+            "Más de cien horas",
+            "Mil horas",
+            "Dos horas"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Qué diseño harías tú si pudieras crear una mola? Describe qué figuras usarías y por qué.",
@@ -239,23 +239,23 @@
           "text": "¿Qué le decía su madre cuando sus puntadas eran feas?",
           "type": "mc",
           "opts": [
-            "Que las corrigiera",
             "Que siguiera",
             "Que empezara de nuevo",
-            "Que parara"
+            "Que parara",
+            "Que las corrigiera"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿De dónde vino el diseño del pez con alas?",
           "type": "mc",
           "opts": [
-            "Del mar",
-            "De un libro",
             "De un sueño",
-            "De su madre"
+            "De su madre",
+            "Del mar",
+            "De un libro"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Por qué no hace molas a máquina?",
@@ -310,45 +310,45 @@
           "text": "¿De dónde llegó originalmente la planta geisha?",
           "type": "mc",
           "opts": [
-            "De Etiopía",
-            "De Brasil",
             "De Panamá",
-            "De Colombia"
+            "De Colombia",
+            "De Etiopía",
+            "De Brasil"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Por qué al principio no gustaba?",
           "type": "mc",
           "opts": [
-            "Sabía mal",
             "Producía poco y tenía ramas largas y desordenadas",
             "Era muy cara",
-            "No crecía"
+            "No crecía",
+            "Sabía mal"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué pasó en 2004?",
           "type": "mc",
           "opts": [
+            "Se descubrió la planta",
             "Bajó el precio",
             "Se dejó de sembrar",
-            "Una familia la llevó a una competencia y ganó",
-            "Se descubrió la planta"
+            "Una familia la llevó a una competencia y ganó"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué ayudó a que el geisha tuviera ese sabor?",
           "type": "mc",
           "opts": [
+            "La altura y el frío, arriba de los mil quinientos metros",
             "Mucha agua",
             "Fertilizantes especiales",
-            "El calor de la costa",
-            "La altura y el frío, arriba de los mil quinientos metros"
+            "El calor de la costa"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Conoces algo que al principio nadie valoraba y después resultó muy valioso? Cuéntalo.",
@@ -364,12 +364,12 @@
           "text": "¿Cuál es el trabajo de Eduviges?",
           "type": "mc",
           "opts": [
-            "Escoger el grano en la planta",
             "Vender el café",
             "Sembrar plantas",
-            "Tostar el café"
+            "Tostar el café",
+            "Escoger el grano en la planta"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cómo se recoge el café corriente?",
@@ -446,12 +446,12 @@
           "text": "¿Cómo les dicen los cubanos a estos autos?",
           "type": "mc",
           "opts": [
-            "Almendrones",
             "Antiguos",
             "Máquinas nuevas",
-            "Clásicos"
+            "Clásicos",
+            "Almendrones"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuándo llegaron estos autos a la isla?",
@@ -468,12 +468,12 @@
           "text": "¿Qué hacen si no hay una pieza?",
           "type": "mc",
           "opts": [
-            "Se cambia el auto",
             "Se deja el auto parado",
             "Se fabrica",
-            "Se compra en otro país"
+            "Se compra en otro país",
+            "Se cambia el auto"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué significa resolver en Cuba?",
@@ -500,45 +500,45 @@
           "text": "¿De quién era originalmente el Chevrolet?",
           "type": "mc",
           "opts": [
+            "De su padre",
             "De su bisabuelo",
             "Lo compró él",
-            "De un vecino",
-            "De su padre"
+            "De un vecino"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué es lo único original que le queda al auto?",
           "type": "mc",
           "opts": [
-            "El motor",
             "La carrocería y el timón",
             "Los frenos",
-            "Las gomas"
+            "Las gomas",
+            "El motor"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Con qué dice que ha hecho empaquetaduras?",
           "type": "mc",
           "opts": [
-            "Con plástico",
-            "Con papel",
             "Con una chancleta de goma",
-            "Con metal"
+            "Con metal",
+            "Con plástico",
+            "Con papel"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué sabe hacer ya su hijo de catorce años?",
           "type": "mc",
           "opts": [
+            "Cambiar un carburador",
             "Pintar el carro",
             "Vender repuestos",
-            "Manejar",
-            "Cambiar un carburador"
+            "Manejar"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }
@@ -582,12 +582,12 @@
           "text": "¿Cuándo nacieron los organopónicos?",
           "type": "mc",
           "opts": [
-            "En los años noventa",
             "En 2010",
             "Hace un año",
-            "En los años cincuenta"
+            "En los años cincuenta",
+            "En los años noventa"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Por qué se volvió difícil traer comida del campo?",
@@ -604,12 +604,12 @@
           "text": "¿Qué se usó para cultivar sin químicos?",
           "type": "mc",
           "opts": [
-            "Semillas importadas",
             "Más agua",
             "Abono orgánico, composta y control biológico",
-            "Máquinas nuevas"
+            "Máquinas nuevas",
+            "Semillas importadas"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿A quién le venden muchos organopónicos?",
@@ -647,23 +647,23 @@
           "text": "¿Cuál era la profesión de Caridad antes?",
           "type": "mc",
           "opts": [
-            "Campesina",
             "Maestra de primaria",
             "Enfermera",
-            "Ingeniera"
+            "Ingeniera",
+            "Campesina"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué le enseñó la vecina campesina?",
           "type": "mc",
           "opts": [
+            "A usar máquinas",
             "A regar mucho",
             "A vender",
-            "Que la tierra está viva y hay que alimentarla",
-            "A usar máquinas"
+            "Que la tierra está viva y hay que alimentarla"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Cómo controlan las plagas?",
@@ -718,34 +718,34 @@
           "text": "¿Dónde nació el son?",
           "type": "mc",
           "opts": [
-            "En el oriente de Cuba, cerca de Santiago",
             "En Nueva York",
             "En Puerto Rico",
-            "En La Habana"
+            "En La Habana",
+            "En el oriente de Cuba, cerca de Santiago"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué dos herencias se mezclan en el son?",
           "type": "mc",
           "opts": [
-            "La francesa y la inglesa",
             "La española y la africana",
             "La indígena y la asiática",
-            "La mexicana y la cubana"
+            "La mexicana y la cubana",
+            "La francesa y la inglesa"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué pasa en el montuno?",
           "type": "mc",
           "opts": [
-            "Termina la canción",
-            "Todos callan",
             "El coro repite y el cantante improvisa",
-            "Se toca más lento"
+            "Se toca más lento",
+            "Termina la canción",
+            "Todos callan"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué es la clave?",
@@ -772,34 +772,34 @@
           "text": "¿Cuántos años lleva tocando el tres?",
           "type": "mc",
           "opts": [
+            "Veinte años",
             "Cincuenta y dos años",
             "Treinta años",
-            "Diez años",
-            "Veinte años"
+            "Diez años"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Dónde aprendió a tocar?",
           "type": "mc",
           "opts": [
-            "En una escuela de música",
-            "En el portal de su casa, viendo a los viejos",
             "En La Habana",
-            "En Nueva York"
+            "En Nueva York",
+            "En una escuela de música",
+            "En el portal de su casa, viendo a los viejos"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué pasa si el grupo se sale de clave?",
           "type": "mc",
           "opts": [
-            "Empieza el montuno",
-            "No pasa nada",
             "La música se cae y se pone fea",
-            "Se toca más rápido"
+            "Se toca más rápido",
+            "Empieza el montuno",
+            "No pasa nada"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Qué opina del reguetón que hacen los jóvenes?",

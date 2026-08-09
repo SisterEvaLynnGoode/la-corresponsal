@@ -26,10 +26,67 @@ const batches = files.map(f => ({ f, data: JSON.parse(readFileSync(join(dir, f),
 const ownerOf = {};
 batches.forEach(b => Object.keys(b.data).forEach(k => { ownerOf[k] = b; }));
 
+// Deterministic PRNG so the shuffle is reproducible across runs and machines.
+function mulberry32(a) {
+  return function () {
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+
+// First count the questions, then build a target list holding each of A/B/C/D an
+// equal number of times and shuffle it. Simply cycling n%4 also balances the
+// totals, but lays them out as A,B,C,D,A,B,C,D — which on a printed worksheet a
+// student cracks immediately. Balanced AND unpredictable is what we need.
+function buildTargets(count) {
+  const t = [];
+  for (let i = 0; i < count; i++) t.push(i % 4);
+  const rnd = mulberry32(0x1A5C0);          // fixed seed → same result every run
+  for (let i = t.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [t[i], t[j]] = [t[j], t[i]];
+  }
+
+  // A fair shuffle still throws up long streaks — the raw draw had eight of the
+  // same letter in a row, which reads as a mistake on a printed page. Break any
+  // run longer than MAXRUN by swapping with a later differing element. Swapping
+  // (rather than reassigning) keeps the four counts exactly equal.
+  const MAXRUN = 3;
+  for (let i = MAXRUN; i < t.length; i++) {
+    let run = 1;
+    while (run <= MAXRUN && t[i - run] === t[i]) run++;
+    if (run <= MAXRUN) continue;
+    for (let j = i + 1; j < t.length; j++) {
+      if (t[j] === t[i]) continue;
+      if (t[j] === t[i - 1]) continue;                 // would extend the run
+      if (j > 0 && t[j - 1] === t[i]) continue;        // would create one there
+      if (j + 1 < t.length && t[j + 1] === t[i]) continue;
+      [t[i], t[j]] = [t[j], t[i]];
+      break;
+    }
+  }
+  return t;
+}
+
 // Walk sessions in a STABLE order (country order, then session, then question)
 // so adding new batches later never renumbers the questions already balanced.
 let n = 0, changed = 0;
 const before = [0,0,0,0], after = [0,0,0,0];
+
+// Count first so the target list is the right length.
+let qCount = 0;
+for (const country of COUNTRIES)
+  for (let si = 0; si < SESSIONS; si++) {
+    const s0 = ownerOf[`${country}_${si}`]?.data[`${country}_${si}`];
+    if (!s0) continue;
+    for (const q of [...(s0.article?.questions || []), ...(s0.audio?.questions || [])]) {
+      const o = q.opts || q.options;
+      if (q.type === 'mc' && Array.isArray(o) && o.length === 4 && typeof q.correct === 'number') qCount++;
+    }
+  }
+const TARGETS = buildTargets(qCount);
 
 for (const country of COUNTRIES) {
   for (let si = 0; si < SESSIONS; si++) {
@@ -42,7 +99,7 @@ for (const country of COUNTRIES) {
       if (typeof q.correct !== 'number') continue;
 
       before[q.correct]++;
-      const target = n++ % 4;
+      const target = TARGETS[n++];
       const r = (target - q.correct + 4) % 4;
       if (r !== 0) {
         const rotated = new Array(4);

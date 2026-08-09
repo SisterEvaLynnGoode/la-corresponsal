@@ -38,34 +38,34 @@
           "text": "¿Cuántos años lleva el mercado en el mismo sitio?",
           "type": "mc",
           "opts": [
-            "Más de quinientos años",
             "Veinte años",
             "Mil años",
-            "Cien años"
+            "Cien años",
+            "Más de quinientos años"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿De qué insecto viene el tinte rojo?",
           "type": "mc",
           "opts": [
-            "Del cempasúchil",
-            "De la cochinilla",
             "De la lana",
-            "Del añil"
+            "Del añil",
+            "Del cempasúchil",
+            "De la cochinilla"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué dice Doña Carmen sobre el mercado?",
           "type": "mc",
           "opts": [
-            "\"Ya no sirve de nada\"",
             "\"Es un supermercado moderno\"",
             "\"Es nuestra universidad, nuestra historia viva\"",
-            "\"Es solo para turistas\""
+            "\"Es solo para turistas\"",
+            "\"Ya no sirve de nada\""
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Por qué tarda tanto en hacerse una cobija?",
@@ -92,34 +92,34 @@
           "text": "¿Cuántos años lleva Doña Esperanza tejiendo en el mercado?",
           "type": "mc",
           "opts": [
-            "Sesenta años",
             "Cien años",
             "Veinte años",
-            "Cuarenta años"
+            "Cuarenta años",
+            "Sesenta años"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué representa el caracol en los diseños?",
           "type": "mc",
           "opts": [
-            "El fuego",
             "El agua",
             "El viento",
-            "La tierra"
+            "La tierra",
+            "El fuego"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Quién le enseñó a tejer?",
           "type": "mc",
           "opts": [
-            "Un turista",
             "Su vecina",
             "Su madre",
-            "Una escuela"
+            "Una escuela",
+            "Un turista"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Por qué le duele el corazón a Doña Esperanza?",
@@ -174,12 +174,12 @@
           "text": "¿De dónde vienen volando las mariposas?",
           "type": "mc",
           "opts": [
-            "De Canadá y Estados Unidos",
-            "De España",
             "De Brasil",
-            "De Guatemala"
+            "De Guatemala",
+            "De Canadá y Estados Unidos",
+            "De España"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Por qué ninguna mariposa hace el viaje completo?",
@@ -196,23 +196,23 @@
           "text": "¿Qué pasa cuando el sol calienta?",
           "type": "mc",
           "opts": [
-            "Las mariposas se van",
-            "Las mariposas se duermen",
             "El bosque se vuelve naranja",
-            "Empieza a llover"
+            "Empieza a llover",
+            "Las mariposas se van",
+            "Las mariposas se duermen"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿A qué se dedican hoy muchas familias de Angangueo?",
           "type": "mc",
           "opts": [
+            "A ser guías y guardabosques",
             "A la minería",
             "A cortar árboles",
-            "A la pesca",
-            "A ser guías y guardabosques"
+            "A la pesca"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Qué crees que significa la frase \"el bosque nos da más vivo que muerto\"?",
@@ -228,12 +228,12 @@
           "text": "¿Cuál era el trabajo del papá de Rubén?",
           "type": "mc",
           "opts": [
-            "Leñador",
-            "Pescador",
             "Maestro",
-            "Guía turístico"
+            "Guía turístico",
+            "Leñador",
+            "Pescador"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿A qué edad aprendió Rubén a usar el hacha?",
@@ -250,12 +250,12 @@
           "text": "¿Quién les explicó el viaje de las mariposas?",
           "type": "mc",
           "opts": [
+            "Un turista",
             "Un maestro",
             "El gobierno",
-            "Una bióloga",
-            "Un turista"
+            "Una bióloga"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué dice Rubén sobre su trabajo actual?",
@@ -310,45 +310,45 @@
           "text": "¿Quiénes pintaron los murales del barrio?",
           "type": "mc",
           "opts": [
-            "Jóvenes que viven en las mismas calles",
             "El gobierno",
             "Los turistas",
-            "Artistas extranjeros"
+            "Artistas extranjeros",
+            "Jóvenes que viven en las mismas calles"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Qué querían Diego Rivera y Siqueiros?",
           "type": "mc",
           "opts": [
-            "Vender cuadros caros",
             "Que el arte fuera para todos",
             "Pintar solo en museos",
-            "Ser famosos en Europa"
+            "Ser famosos en Europa",
+            "Vender cuadros caros"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿A quién pintó Yolanda Reyes?",
           "type": "mc",
           "opts": [
-            "A su maestro",
-            "A un futbolista",
             "A su vecina que vende tamales",
-            "A un presidente"
+            "A un presidente",
+            "A su maestro",
+            "A un futbolista"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Cuántos jóvenes participan ahora en el proyecto?",
           "type": "mc",
           "opts": [
-            "Cien",
             "Quince",
             "Treinta",
-            "Más de sesenta"
+            "Más de sesenta",
+            "Cien"
           ],
-          "correct": 3
+          "correct": 2
         },
         {
           "text": "Si pudieras pintar un mural en tu escuela o tu calle, ¿qué pintarías y por qué?",
@@ -375,12 +375,12 @@
           "text": "¿Quién fue su primer mural?",
           "type": "mc",
           "opts": [
-            "Don Beto",
             "La señora Lupita, la de los tamales",
             "Una futbolista",
-            "Su mamá"
+            "Su mamá",
+            "Don Beto"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué hizo la señora Lupita cuando vio el mural?",
@@ -446,12 +446,12 @@
           "text": "¿Qué días se llena el mercado de Chichicastenango?",
           "type": "mc",
           "opts": [
+            "Lunes y martes",
             "Jueves y domingos",
             "Solo los sábados",
-            "Todos los días",
-            "Lunes y martes"
+            "Todos los días"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué información dan los diseños de un huipil?",
@@ -479,12 +479,12 @@
           "text": "¿Cuánto puede tardar un huipil completo?",
           "type": "mc",
           "opts": [
+            "Tres meses",
             "Tres años",
             "Tres días",
-            "Tres semanas",
-            "Tres meses"
+            "Tres semanas"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Qué objeto o ropa de tu familia cuenta una historia sobre quiénes son? Explica.",
@@ -500,45 +500,45 @@
           "text": "¿A qué edad aprendió Elena a tejer?",
           "type": "mc",
           "opts": [
-            "A los siete años",
-            "A los doce años",
             "A los quince años",
-            "A los cinco años"
+            "A los cinco años",
+            "A los siete años",
+            "A los doce años"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cómo le enseñaba su abuela?",
           "type": "mc",
           "opts": [
-            "Con palabras en español",
-            "Con las manos, no con palabras",
             "Con libros",
-            "Por teléfono"
+            "Por teléfono",
+            "Con palabras en español",
+            "Con las manos, no con palabras"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Dónde se amarra el telar de cintura?",
           "type": "mc",
           "opts": [
+            "A una mesa",
             "A dos sillas",
             "A la pared y al techo",
-            "A un poste y a la cintura de la tejedora",
-            "A una mesa"
+            "A un poste y a la cintura de la tejedora"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué les dice Elena a las muchachas que quieren irse a la capital?",
           "type": "mc",
           "opts": [
-            "Que dejen de tejer",
-            "Que vendan el telar",
             "Que no se vayan nunca",
-            "Que estudien, pero que se lleven el telar"
+            "Que estudien, pero que se lleven el telar",
+            "Que dejen de tejer",
+            "Que vendan el telar"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -582,12 +582,12 @@
           "text": "¿Cuántos pueblos rodean el lago Atitlán?",
           "type": "mc",
           "opts": [
+            "Siete",
             "Doce",
             "Veinte",
-            "Tres",
-            "Siete"
+            "Tres"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué causa la capa verde en el agua?",
@@ -604,23 +604,23 @@
           "text": "¿Qué hicieron las comunidades?",
           "type": "mc",
           "opts": [
+            "Se mudaron a otro lugar",
             "Cerraron el lago",
             "Esperaron ayuda del gobierno",
-            "Formaron una alianza y actuaron",
-            "Se mudaron a otro lugar"
+            "Formaron una alianza y actuaron"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué hacen los estudiantes cada mes?",
           "type": "mc",
           "opts": [
-            "Venden pescado",
-            "Pintan lanchas",
             "Nadan en el lago",
-            "Recogen basura y miden la calidad del agua"
+            "Recogen basura y miden la calidad del agua",
+            "Venden pescado",
+            "Pintan lanchas"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Hay algún lugar natural cerca de ti que necesite cuidado? ¿Qué podrías hacer?",
@@ -636,12 +636,12 @@
           "text": "¿Qué cuenta el abuelo de Marta sobre el lago?",
           "type": "mc",
           "opts": [
+            "Que siempre estuvo verde",
             "Que antes se podía ver el fondo desde la lancha",
             "Que no había peces",
-            "Que era más pequeño",
-            "Que siempre estuvo verde"
+            "Que era más pequeño"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Por qué le dio esperanza aprender la causa del problema?",
@@ -658,12 +658,12 @@
           "text": "¿Qué hacen los sábados?",
           "type": "mc",
           "opts": [
+            "Van a la escuela",
             "Venden comida",
             "Descansan",
-            "Salen en lancha a recoger basura y tomar muestras",
-            "Van a la escuela"
+            "Salen en lancha a recoger basura y tomar muestras"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué quiere estudiar Marta?",
@@ -718,34 +718,34 @@
           "text": "¿Cuántos idiomas mayas se hablan en Guatemala?",
           "type": "mc",
           "opts": [
+            "Diez",
             "Veintidós",
             "Cincuenta",
-            "Cinco",
-            "Diez"
+            "Cinco"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Por qué son necesarias las radios comunitarias?",
           "type": "mc",
           "opts": [
-            "Porque la música es mejor",
             "Porque muchas personas no entienden los mensajes en español",
             "Porque son más baratas",
-            "Porque no hay televisión"
+            "Porque no hay televisión",
+            "Porque la música es mejor"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué tipo de avisos dan estas radios?",
           "type": "mc",
           "opts": [
-            "Solo música",
             "Solo noticias internacionales",
             "Vacunas, tormentas y reuniones del comité",
-            "Solo deportes"
+            "Solo deportes",
+            "Solo música"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Quiénes son los locutores?",
@@ -772,23 +772,23 @@
           "text": "¿Cómo es la cabina de la radio?",
           "type": "mc",
           "opts": [
-            "Un cuarto chiquito con paredes de cartón de huevo",
-            "Un estudio profesional",
             "Un camión",
-            "Grande y moderna"
+            "Grande y moderna",
+            "Un cuarto chiquito con paredes de cartón de huevo",
+            "Un estudio profesional"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Por qué le daba pena hablar kaqchikel en público?",
           "type": "mc",
           "opts": [
-            "Porque no lo hablaba bien",
-            "Porque sentía que era menos",
             "Porque nadie la entendía",
-            "Porque estaba prohibido"
+            "Porque estaba prohibido",
+            "Porque no lo hablaba bien",
+            "Porque sentía que era menos"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué le dijo su tía?",
@@ -805,12 +805,12 @@
           "text": "¿Qué es lo que más le gusta a Ana de su trabajo?",
           "type": "mc",
           "opts": [
-            "La música",
-            "Salir en televisión",
             "El sueldo",
-            "Cuando llaman las abuelitas"
+            "Cuando llaman las abuelitas",
+            "La música",
+            "Salir en televisión"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }

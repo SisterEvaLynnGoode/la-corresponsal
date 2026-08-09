@@ -38,23 +38,23 @@
           "text": "¿Qué tamaño tiene el salar?",
           "type": "mc",
           "opts": [
+            "Cien kilómetros cuadrados",
             "Más de diez mil kilómetros cuadrados",
             "Mil kilómetros cuadrados",
-            "Un millón",
-            "Cien kilómetros cuadrados"
+            "Un millón"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué había antes en ese lugar?",
           "type": "mc",
           "opts": [
+            "Un volcán",
             "Un desierto",
             "Un lago gigante que se secó",
-            "Un bosque",
-            "Un volcán"
+            "Un bosque"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Para qué usan los satélites el salar?",
@@ -71,12 +71,12 @@
           "text": "¿Qué hay bajo la costra de sal?",
           "type": "mc",
           "opts": [
-            "Oro",
-            "Agua dulce",
             "Petróleo",
-            "Salmuera rica en litio"
+            "Salmuera rica en litio",
+            "Oro",
+            "Agua dulce"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Qué debería considerar un país antes de extraer un recurso muy valioso? Da tu opinión.",
@@ -103,12 +103,12 @@
           "text": "¿Por qué deben taparse la cara?",
           "type": "mc",
           "opts": [
-            "Por el frío",
             "Porque la luz rebota del suelo y quema",
             "Por el viento",
-            "Por el polvo"
+            "Por el polvo",
+            "Por el frío"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué ejemplo menciona sobre Potosí?",
@@ -174,45 +174,45 @@
           "text": "¿Qué usa tradicionalmente una cholita?",
           "type": "mc",
           "opts": [
-            "Pollera, manta bordada, trenzas y sombrero bombín",
-            "Uniforme",
             "Ropa de montaña",
-            "Pantalón y botas"
+            "Pantalón y botas",
+            "Pollera, manta bordada, trenzas y sombrero bombín",
+            "Uniforme"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Qué hacían antes en las expediciones?",
           "type": "mc",
           "opts": [
-            "Escalaban",
             "Cocinaban y cargaban, y esperaban abajo",
             "Guiaban al grupo",
-            "Nada"
+            "Nada",
+            "Escalaban"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Qué decidieron en 2015?",
           "type": "mc",
           "opts": [
+            "Abrir un restaurante",
             "Mudarse",
             "Dejar el trabajo",
-            "Que ellas también querían llegar a la cumbre",
-            "Abrir un restaurante"
+            "Que ellas también querían llegar a la cumbre"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Por qué conservan la pollera al escalar?",
           "type": "mc",
           "opts": [
+            "Porque es una declaración",
             "Porque no tienen pantalones",
             "Porque lo pide la ley",
-            "Porque abriga más",
-            "Porque es una declaración"
+            "Porque abriga más"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Conoces a alguien que haya entrado a un espacio donde no la esperaban? Cuenta su historia.",
@@ -228,45 +228,45 @@
           "text": "¿Cuántos años trabajó de cocinera en campamento base?",
           "type": "mc",
           "opts": [
+            "Dos años",
             "Nueve años",
             "Veinte años",
-            "Un año",
-            "Dos años"
+            "Un año"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Qué hacía mientras los escaladores salían a la cumbre?",
           "type": "mc",
           "opts": [
+            "Bajaba al pueblo",
             "Dormía",
             "Se quedaba lavando ollas",
-            "Los acompañaba",
-            "Bajaba al pueblo"
+            "Los acompañaba"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Cuántas eran al principio?",
           "type": "mc",
           "opts": [
+            "Veinte",
             "Cinco",
             "Tres",
-            "Once",
-            "Veinte"
+            "Once"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Qué responde cuando le preguntan por la pollera?",
           "type": "mc",
           "opts": [
+            "Que su mamá y su abuela la usaron y por eso no las dejaban entrar a ciertos lugares",
             "Que es más cómoda",
             "Que es una moda",
-            "Que estorba un poco",
-            "Que su mamá y su abuela la usaron y por eso no las dejaban entrar a ciertos lugares"
+            "Que estorba un poco"
           ],
-          "correct": 3
+          "correct": 0
         }
       ]
     }
@@ -310,45 +310,45 @@
           "text": "¿Cuánta diferencia de altura hay entre La Paz y El Alto?",
           "type": "mc",
           "opts": [
-            "Unos cuatrocientos metros",
             "Dos mil metros",
             "Diez metros",
-            "Cincuenta metros"
+            "Cincuenta metros",
+            "Unos cuatrocientos metros"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cuánto tardaba antes el viaje?",
           "type": "mc",
           "opts": [
-            "Diez minutos",
-            "Una hora o más",
             "Cinco minutos",
-            "Tres horas siempre"
+            "Tres horas siempre",
+            "Diez minutos",
+            "Una hora o más"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué es Mi Teleférico?",
           "type": "mc",
           "opts": [
-            "Un mirador",
-            "Una atracción turística",
             "Transporte público urbano",
-            "Un tren"
+            "Un tren",
+            "Un mirador",
+            "Una atracción turística"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Cuánto puede durar hoy ese viaje?",
           "type": "mc",
           "opts": [
-            "Dos horas",
-            "Un minuto",
             "Una hora",
-            "Quince minutos"
+            "Quince minutos",
+            "Dos horas",
+            "Un minuto"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Qué problema de transporte hay donde vives? ¿Se te ocurre una solución creativa?",
@@ -364,45 +364,45 @@
           "text": "¿A qué hora se levantaba antes?",
           "type": "mc",
           "opts": [
-            "A las cuatro y media",
-            "A las cinco",
             "A las siete",
-            "A las seis"
+            "A las seis",
+            "A las cuatro y media",
+            "A las cinco"
           ],
-          "correct": 0
+          "correct": 2
         },
         {
           "text": "¿Cómo veía a sus hijos antes?",
           "type": "mc",
           "opts": [
-            "Por la mañana",
             "Dormidos, nada más",
             "En el almuerzo",
-            "Los fines de semana"
+            "Los fines de semana",
+            "Por la mañana"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Cuánto tiempo recuperó al día?",
           "type": "mc",
           "opts": [
-            "Cinco horas",
             "Una hora",
             "Como tres horas",
-            "Media hora"
+            "Media hora",
+            "Cinco horas"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué le parece curioso de las cabinas?",
           "type": "mc",
           "opts": [
-            "Que son pequeñas",
-            "Que hay silencio",
             "Que van muy rápido",
-            "Que se saluda gente que antes no se cruzaba nunca"
+            "Que se saluda gente que antes no se cruzaba nunca",
+            "Que son pequeñas",
+            "Que hay silencio"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -468,12 +468,12 @@
           "text": "¿Qué son las normas de luces bajas?",
           "type": "mc",
           "opts": [
+            "Para la seguridad",
             "Para los animales",
             "Para ahorrar energía",
-            "Para evitar contaminación lumínica",
-            "Para la seguridad"
+            "Para evitar contaminación lumínica"
           ],
-          "correct": 2
+          "correct": 3
         },
         {
           "text": "¿Cómo funciona ALMA?",
@@ -500,45 +500,45 @@
           "text": "¿Cuándo trabaja Ignacia?",
           "type": "mc",
           "opts": [
-            "De noche, desde que se pone el sol",
             "Solo en invierno",
             "Los fines de semana",
-            "De día"
+            "De día",
+            "De noche, desde que se pone el sol"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Cómo es su trabajo en realidad?",
           "type": "mc",
           "opts": [
+            "Analiza los datos ella misma",
             "Mira por un tubo",
             "Está en una sala con pantallas controlando el telescopio",
-            "Viaja mucho",
-            "Analiza los datos ella misma"
+            "Viaja mucho"
           ],
-          "correct": 1
+          "correct": 2
         },
         {
           "text": "¿Dónde puede estar el científico que pidió una imagen?",
           "type": "mc",
           "opts": [
-            "En el desierto",
             "En la misma sala",
             "Durmiendo en Alemania",
-            "En Santiago"
+            "En Santiago",
+            "En el desierto"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué hace cada noche en la plataforma?",
           "type": "mc",
           "opts": [
-            "Toma fotos",
-            "Habla por radio",
             "Revisa el equipo",
-            "Apaga la linterna y deja que los ojos se acostumbren para ver la Vía Láctea"
+            "Apaga la linterna y deja que los ojos se acostumbren para ver la Vía Láctea",
+            "Toma fotos",
+            "Habla por radio"
           ],
-          "correct": 3
+          "correct": 1
         }
       ]
     }
@@ -615,12 +615,12 @@
           "text": "¿Qué convenía hacer antes del sistema?",
           "type": "mc",
           "opts": [
+            "Sacar todo rápido antes de que llegara otro",
             "No pescar",
             "Pescar poco",
-            "Cuidar el recurso",
-            "Sacar todo rápido antes de que llegara otro"
+            "Cuidar el recurso"
           ],
-          "correct": 3
+          "correct": 0
         },
         {
           "text": "¿Por qué crees que la gente cuida más algo cuando le pertenece? Explica.",
@@ -636,45 +636,45 @@
           "text": "¿Qué es el narguile?",
           "type": "mc",
           "opts": [
+            "Un tipo de red",
             "Una manguera que baja aire desde un compresor en el bote",
             "Un traje especial",
-            "Un tipo de marisco",
-            "Un tipo de red"
+            "Un tipo de marisco"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿Por qué antes sacaban incluso los ejemplares chicos?",
           "type": "mc",
           "opts": [
-            "Porque valían más",
             "Porque si no, venía otro de otra caleta y se los llevaba",
             "Porque era más fácil",
-            "Porque lo permitía la ley"
+            "Porque lo permitía la ley",
+            "Porque valían más"
           ],
-          "correct": 1
+          "correct": 0
         },
         {
           "text": "¿Por qué nadie podía parar solo?",
           "type": "mc",
           "opts": [
-            "Por falta de dinero",
-            "Porque estaba prohibido",
             "Porque el que paraba perdía",
-            "Porque no sabían"
+            "Porque no sabían",
+            "Por falta de dinero",
+            "Porque estaba prohibido"
           ],
-          "correct": 2
+          "correct": 0
         },
         {
           "text": "¿Cómo fueron los primeros años con el área de manejo?",
           "type": "mc",
           "opts": [
-            "Iguales que antes",
             "Peores para siempre",
             "Muy buenos",
-            "Se apretaron el cinturón feo"
+            "Se apretaron el cinturón feo",
+            "Iguales que antes"
           ],
-          "correct": 3
+          "correct": 2
         }
       ]
     }
@@ -718,45 +718,45 @@
           "text": "¿Cuál era su nombre verdadero?",
           "type": "mc",
           "opts": [
+            "Gabriela Mistral",
             "Lucila Godoy Alcayaga",
             "Lucila Mistral",
-            "Gabriela Godoy",
-            "Gabriela Mistral"
+            "Gabriela Godoy"
           ],
-          "correct": 0
+          "correct": 1
         },
         {
           "text": "¿A qué edad empezó a trabajar en una escuela?",
           "type": "mc",
           "opts": [
-            "A los veinte",
-            "A los quince años",
             "A los diez",
-            "A los treinta"
+            "A los treinta",
+            "A los veinte",
+            "A los quince años"
           ],
-          "correct": 1
+          "correct": 3
         },
         {
           "text": "¿Qué pasó con la Escuela Normal?",
           "type": "mc",
           "opts": [
-            "Estudió allí de grande",
             "Se graduó con honores",
             "Le negaron la entrada y aprendió por su cuenta",
-            "Nunca lo intentó"
+            "Nunca lo intentó",
+            "Estudió allí de grande"
           ],
-          "correct": 2
+          "correct": 1
         },
         {
           "text": "¿Qué logró en 1945?",
           "type": "mc",
           "opts": [
-            "Publicó su primer libro",
-            "Viajó a Europa",
             "Fue directora de escuela",
-            "Recibió el Premio Nobel de Literatura"
+            "Recibió el Premio Nobel de Literatura",
+            "Publicó su primer libro",
+            "Viajó a Europa"
           ],
-          "correct": 3
+          "correct": 1
         },
         {
           "text": "¿Has tenido un maestro o maestra que te haya marcado? Cuenta qué hizo por ti.",
@@ -772,12 +772,12 @@
           "text": "¿Cómo es el curso de Rosalba?",
           "type": "mc",
           "opts": [
-            "Combinado: veintitrés niños de primero a sexto en una sala",
             "De secundaria",
             "De cincuenta alumnos",
-            "Solo de primer grado"
+            "Solo de primer grado",
+            "Combinado: veintitrés niños de primero a sexto en una sala"
           ],
-          "correct": 0
+          "correct": 3
         },
         {
           "text": "¿Por qué le negaron a Mistral estudiar para maestra?",
