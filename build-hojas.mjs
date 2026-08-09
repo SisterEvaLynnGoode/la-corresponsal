@@ -156,9 +156,83 @@ function sessionPages(week, sessionNo, key, extra, pageNos, totalPages) {
 }
 
 // ═════════════════════════════════════════════════════════════════════════════
+//  DAYS 1–3 — orientation, norms, persona. Runs BEFORE any country content.
+//
+//  Two surfaces, one source: the norms and the newsroom phrases below are
+//  rendered into both the projector deck (presentacion.html) and the printed
+//  packet (hojas/dias-1-3.html). A student must never meet a rule on screen
+//  worded differently from the rule on their paper.
+//
+//  Modelled on la-liga-sombra's lib/decks/intro.ts, but the norms are different
+//  on purpose: that class is Spanish 1, where the risk is being afraid to speak.
+//  This class is heritage speakers, where the risk is shame about the Spanish
+//  they already have, and students policing each other's variety.
+// ═════════════════════════════════════════════════════════════════════════════
+
+const PROFILE = {
+  name: 'Mr. Tommy (they/them)',
+  bio: [
+    'Me llamo Tommy Martin-Edwards y aquí todos me dicen Mr. Tommy. Lo primero que deben saber de mí es algo que los pone a ustedes por delante: yo no crecí hablando español. Lo aprendí en un salón, de un libro, ya de grande.',
+    'Ustedes tienen algo que yo no voy a tener nunca. A ustedes el español les llegó de gente que los quiere: de una abuela, de una mamá, de un tío que cuenta chistes. Eso no se estudia. Eso se hereda.',
+    'Entonces que quede claro desde hoy: yo no estoy aquí para arreglarles el español. Estoy aquí para darles las partes que la escuela les quedó debiendo — leer rápido, escribir sin miedo, y saber que lo que hablan en su casa es un idioma completo.',
+  ],
+  facts: [
+    ['Cómo llamarme', 'Mr. Tommy (they/them)'],
+    ['Enseñando desde', '2010–2011'],
+    ['También he enseñado', 'Español, chino, tecnología — y fui subdirector'],
+    ['Países que conozco', 'España, México, Canadá, Francia, Bélgica, China'],
+    ['Pregúntame sobre', 'El Camino de Santiago, o la historia queer'],
+  ],
+  personal:
+    'Una cosa más, dicha el primer día para que nadie tenga que adivinar: soy queer y tengo esposo. Si algún día quieren preguntarme de historia queer, es de mis temas favoritos.',
+};
+
+// The norms. Spanish label + the reasoning, because a rule without a reason is
+// just an order, and these students have heard plenty of orders about Spanish.
+const NORMAS = [
+  ['Aquí no se corrige el español de nadie',
+   'Nadie en este salón se burla de cómo habla otra persona. Ni del acento, ni de una palabra «mal dicha», ni del español de tu casa, ni de lo que dice tu familia en el pueblo de donde vienen. Tampoco se burla nadie de quién eres, a quién quieres, cómo te ves, ni de lo que todavía estás descubriendo. Y va en las dos direcciones: no se le dice a nadie que habla «demasiado español», ni que «ni siquiera sabe español». Ésta es la única regla que no tiene primera advertencia.'],
+  ['Tu español ya es correcto',
+   'No hay un español bueno y muchos malos. Hay un español de la escuela, uno de tu casa, uno de Michoacán, uno de San Salvador, uno de aquí de la esquina. Todos siguen reglas. Este año vamos a agregar uno más — el del periódico — sin quitarte ninguno de los que ya traes.'],
+  ['Se escribe aunque salga mal',
+   'Casi todos ustedes hablan mejor de lo que escriben. Eso no es un defecto: es lo normal cuando aprendiste un idioma oyéndolo. Aquí se escribe todos los días, con faltas, sin borrar tres veces. La ortografía se arregla después. La página en blanco no se arregla sola.'],
+  ['Treinta segundos antes de preguntar',
+   'Cuando no sepas una palabra, quédate treinta segundos con la duda antes de buscarla. Ahí es donde se te queda. Pasados los treinta segundos, pregunta fuerte y con confianza.'],
+  ['Se puede mezclar mientras aprendes',
+   'Si a media oración se te sale una palabra en inglés, dila y sigue. Mezclar no es un error, es lo que hacen los bilingües del mundo entero. Lo que sí te voy a pedir es que lo que entregues por escrito esté en español — porque ese es el músculo que venimos a entrenar.'],
+  ['Se puede repetir',
+   'Casi todo aquí se puede volver a hacer por la nota completa. Una calificación baja es información, no una sentencia. Lo único que no se arregla es el trabajo que nunca entregaste.'],
+];
+
+// Phrases for THIS class. Not survival Spanish — these students have that. The
+// gap for a heritage speaker is the newsroom register and, above all, being
+// able to say "I can say it but I can't spell it" without shame.
+const FRASES = [
+  ['¿Cómo se escribe…?', 'How do you spell / write…?', 'La pregunta más útil del año.'],
+  ['Lo sé decir pero no lo sé escribir', 'I can say it but I can\'t write it', 'Dilo sin pena. Le pasa a todo el mundo aquí.'],
+  ['¿Lleva acento?', 'Does it take an accent mark?', 'Pregunta legítima y frecuente.'],
+  ['¿Me lo repite, por favor?', 'Could you repeat that?', 'Siempre pide la repetición.'],
+  ['¿Qué significa…?', 'What does … mean?', 'Aunque la hayas oído toda la vida.'],
+  ['En mi casa decimos…', 'At home we say…', 'Siempre es un dato bienvenido, no una corrección.'],
+  ['No estoy segura / seguro', 'I\'m not sure', 'Mejor que inventar un dato.'],
+  ['Según la fuente…', 'According to the source…', 'Frase de periodista. Úsala al citar.'],
+  ['¿Me das un ejemplo?', 'Can you give me an example?', 'Sirve conmigo y sirve en una entrevista.'],
+  ['Todavía no', 'Not yet', 'No es «no puedo». Es «no puedo todavía».'],
+];
+
+const PASOS = [
+  ['1 · Llegada', 'Llegas al país y conoces dónde estás.'],
+  ['2 · Asignación', 'La editora te dice qué historia buscar.'],
+  ['3 · Lectura', 'Lees la nota y aprendes las palabras clave.'],
+  ['4 · Escucha', 'Escuchas a una persona real de ese lugar.'],
+  ['5 · Redacción', 'Escribes tu propio artículo.'],
+  ['6 · Publicación', 'Se publica con tu nombre.'],
+];
+
+// ═════════════════════════════════════════════════════════════════════════════
 //  WEEK 1 — front matter: first week of school, persona, community
 // ═════════════════════════════════════════════════════════════════════════════
-const W1_P1 = sheet('Semana 1 · Día 1<br>Bienvenida', `
+const D_P1 = sheet('Días 1–3 · Día 1<br>Bienvenida', `
   ${namebar(true)}
   <h1>Te contrataron.</h1>
   <div class="sub">El Mundo Nuestro · Departamento de Corresponsales</div>
@@ -206,9 +280,9 @@ const W1_P1 = sheet('Semana 1 · Día 1<br>Bienvenida', `
       <span style="flex:2">Firma</span><span style="flex:1">Fecha</span>
     </div>
   </div>`,
-  'La Corresponsal · Semana 1', 'Página 1 de 13');
+  'La Corresponsal · Días 1–3', 'Página 1 de 6');
 
-const W1_P2 = sheet('Semana 1 · Día 1<br>Tu primera entrevista', `
+const D_P2 = sheet('Días 1–3 · Día 1<br>Tu primera entrevista', `
   ${namebar()}
   <h1>Tu primera entrevista</h1>
   <div class="sub">Practica con alguien de esta sala</div>
@@ -248,9 +322,9 @@ const W1_P2 = sheet('Semana 1 · Día 1<br>Tu primera entrevista', `
   <div class="instr">Tres oraciones sobre esta persona, como si fuera para el periódico. Empieza
   con lo más interesante, no con «se llama…».</div>
   ${lines(5)}`,
-  'La Corresponsal · Semana 1', 'Página 2 de 13');
+  'La Corresponsal · Días 1–3', 'Página 2 de 6');
 
-const W1_P3 = sheet('Semana 1 · Día 1<br>El mapa de mi español', `
+const D_P3 = sheet('Días 1–3 · Día 3<br>El mapa de mi español', `
   ${namebar()}
   <h1>El mapa de mi español</h1>
   <div class="sub">De dónde viene tu voz</div>
@@ -301,9 +375,9 @@ const W1_P3 = sheet('Semana 1 · Día 1<br>El mapa de mi español', `
   <p style="font-size:.98rem">Cuando hablo español me siento _____________________________</p>
   <p style="font-size:.98rem">Lo que me cuesta del español escrito es ____________________</p>
   <p style="font-size:.98rem">Este año quiero poder ______________________________________</p>`,
-  'La Corresponsal · Semana 1', 'Página 3 de 13');
+  'La Corresponsal · Días 1–3', 'Página 3 de 6');
 
-const W1_P4 = sheet('Semana 1 · Día 2<br>Credencial de prensa', `
+const D_P5 = sheet('Días 1–3 · Día 3<br>Credencial de prensa', `
   ${namebar()}
   <h1>Crea tu corresponsal</h1>
   <div class="sub">Quién eres cuando firmas un artículo</div>
@@ -355,7 +429,112 @@ const W1_P4 = sheet('Semana 1 · Día 2<br>Credencial de prensa', `
     <li>¿A quién quiero que lea lo que escribo?
       ${lines(2)}</li>
   </ol>`,
-  'La Corresponsal · Semana 1', 'Página 4 de 13');
+  'La Corresponsal · Días 1–3', 'Página 5 de 6');
+
+// Page 4 — the norms, co-constructed. Same six norms as the projector deck.
+const D_P4 = sheet('Días 1–3 · Día 2<br>Las normas', `
+  ${namebar()}
+  <h1>Las normas de la redacción</h1>
+  <div class="sub">Cómo funciona este salón, y por qué</div>
+
+  <div class="instr">Léelas con tu grupo. No son órdenes: cada una tiene una razón, y la razón
+  importa más que la regla.</div>
+
+  <table>
+    <thead><tr><th style="width:30%">La norma</th><th style="width:70%">Por qué</th></tr></thead>
+    <tbody>
+      ${NORMAS.map(([l, t]) => `<tr><td><strong>${esc(l)}</strong></td><td>${esc(t)}</td></tr>`).join('\n      ')}
+    </tbody>
+  </table>
+
+  <h2>La norma que falta</h2>
+  <div class="instr">En parejas. ¿Qué norma le falta a este salón? Escríbanla con su razón, igual
+  que las de arriba. Las que la clase apruebe se quedan en la pared todo el año, firmadas.</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%"><strong>Nuestra norma</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Por qué la necesitamos</strong></td><td class="blank" style="height:.55in"></td></tr>
+      <tr><td><strong>Propuesta por</strong></td><td class="blank" style="height:.26in"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip"><strong>De las seis, una no tiene segunda oportunidad:</strong> aquí no se
+  corrige ni se burla nadie del español de otra persona. Las demás se hablan. Ésa no.</div>`,
+  'La Corresponsal · Días 1–3', 'Página 4 de 6');
+
+// Page 6 — the same ten phrases the projector shows, so paper and screen agree.
+const D_P6 = sheet('Días 1–3 · Día 2<br>Frases de la redacción', `
+  ${namebar()}
+  <h1>Diez frases para este salón</h1>
+  <div class="sub">No son frases de sobrevivencia — ésas ya las tienes</div>
+
+  <div class="instr">Ustedes ya saben saludar y pedir permiso. Éstas son otras: las que hacen
+  falta cuando uno <em>sabe decir</em> algo pero no sabe escribirlo. Aquí se usan sin pena.</div>
+
+  <table>
+    <thead><tr><th style="width:34%">En español</th><th style="width:26%">En inglés</th>
+      <th style="width:40%">Cuándo la vas a usar</th></tr></thead>
+    <tbody>
+      ${FRASES.map(([es, en, nt]) =>
+        `<tr><td><strong>${esc(es)}</strong></td><td>${esc(en)}</td><td>${esc(nt)}</td></tr>`).join('\n      ')}
+    </tbody>
+  </table>
+
+  <h2>Practica ahora</h2>
+  <div class="instr">Voltéate con la persona de al lado. Dile tu nombre y después la frase de esta
+  lista que crees que vas a necesitar más este año. Los dos lo van a decir medio raro. Ése es el
+  punto del día de hoy.</div>
+  <div class="box" style="padding:.55rem .7rem">
+    <p style="font-size:1rem">Hola, me llamo ________________________.
+    Creo que voy a necesitar «________________________________».</p>
+  </div>
+
+  <h2>Mi frase</h2>
+  <div class="instr">¿Cuál escogiste y por qué?</div>
+  ${lines(2)}`,
+  'La Corresponsal · Días 1–3', 'Página 6 de 6');
+
+// México portada — week 1 now starts at the content, like weeks 2–4.
+const W1_PORTADA = sheet('Semana 1 · México<br>Portada', `
+  ${namebar(true)}
+  <h1>Primera semana: México</h1>
+  <div class="sub">Mercados, mariposas y muros que hablan</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Ya firmaste el contrato y ya tienes credencial. Se acabó el entrenamiento: esta semana
+      sales a trabajar.</p>
+      <p>Empiezas por México, y no por las razones de siempre. No vas a las pirámides ni a la
+      playa. Vas a un mercado donde una señora lleva sesenta años tejiendo, a un bosque donde
+      cada noviembre llegan millones de mariposas después de volar cuatro mil kilómetros, y a un
+      barrio donde unos muchachos de tu edad están pintando a sus vecinos en paredes de tres
+      metros.</p>
+      <p>Las tres historias tienen algo en común: alguien decidió que lo suyo valía la pena
+      contarlo. Búscalo mientras trabajas.</p>
+    </div>
+  </div>
+
+  <h2>La pregunta de la semana</h2>
+  <div class="box">
+    <p style="font-size:1.02rem;font-style:italic">¿Quién decide qué historias merecen contarse?</p>
+  </div>
+  <div class="instr"><strong>Lunes:</strong> escribe tu primera respuesta, aunque no estés segura.</div>
+  ${lines(3)}
+  <div class="instr" style="margin-top:.4rem"><strong>Viernes:</strong> vuelve a leerla. ¿Cambió
+  después de las tres historias?</div>
+  ${lines(3)}
+
+  <h2>México en tres datos</h2>
+  <table>
+    <thead><tr><th style="width:26%">Sesión</th><th style="width:74%">Un dato que me sorprendió</th></tr></thead>
+    <tbody>
+      <tr><td>El mercado</td><td class="blank"></td></tr>
+      <tr><td>Las mariposas</td><td class="blank"></td></tr>
+      <tr><td>Los murales</td><td class="blank"></td></tr>
+    </tbody>
+  </table>`,
+  'La Corresponsal · Semana 1', 'Página 1 de 10');
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  Per-session extras
@@ -742,6 +921,217 @@ const W4_P11 = sheet('Semana 4 · Cierre<br>Proyecto final', `
   'La Corresponsal · Semana 4', 'Página 11 de 11');
 
 // ═════════════════════════════════════════════════════════════════════════════
+//  PROJECTOR DECK — presentacion.html
+//  Built from the same NORMAS / FRASES / PASOS arrays as the paper packet.
+// ═════════════════════════════════════════════════════════════════════════════
+function buildDeck() {
+  const S = [];
+  const cover = (day, title, hook) => S.push({cls:'cover', day, html:
+    `<div class="eyebrow">El Mundo Nuestro · Día ${day}</div>
+     <h1>${title}</h1><p class="hook">${hook}</p>`});
+  const beat = (day, eyebrow, head, paras, pull) => S.push({cls:'beat', day, html:
+    `<div class="eyebrow">${eyebrow}</div><h2>${head}</h2>
+     ${paras.map(p => `<p>${p}</p>`).join('')}
+     ${pull ? `<div class="pull">${pull}</div>` : ''}`});
+  const list = (day, eyebrow, head, items, note) => S.push({cls:'list', day, html:
+    `<div class="eyebrow">${eyebrow}</div><h2>${head}</h2>
+     <dl>${items.map(([l, t]) => `<dt>${l}</dt><dd>${t}</dd>`).join('')}</dl>
+     ${note ? `<div class="pull">${note}</div>` : ''}`});
+  const act = (day, head, what, page) => S.push({cls:'act', day, html:
+    `<div class="eyebrow">Actividad</div><h2>${head}</h2><p>${what}</p>
+     <div class="page">📄 ${page}</div>`});
+
+  // ── DÍA 1 ────────────────────────────────────────────────────────────────
+  cover(1, 'Te contrataron.',
+    'Veinte países. Sesenta historias. Un año para contarlas — y las vas a contar tú.');
+
+  beat(1, 'Quién soy', PROFILE.name, PROFILE.bio,
+    'Yo no vengo a arreglarles el español. Vengo a darles lo que la escuela les quedó debiendo.');
+
+  list(1, 'Quién soy', 'Para que me conozcan', PROFILE.facts, PROFILE.personal);
+
+  beat(1, 'Por qué existe esta clase', 'Ustedes ya tienen el idioma. Falta lo demás.', [
+    'Esta clase no es español para principiantes y no es español de castigo. Ustedes llegan hablando. Eso es la parte difícil y ya la tienen.',
+    'Lo que falta es lo que la escuela normalmente no les da: leer un texto largo sin cansarse, escribir sin miedo a la falta de ortografía, y tener palabras para hablar de cosas serias — no sólo de la casa y la familia, sino del trabajo, del medio ambiente, de la política, del arte.',
+    'A eso le vamos a llamar «rango». Al final del año van a poder moverse entre el español de su casa y el español del periódico, sin perder ninguno de los dos.',
+  ], 'Nadie sale de aquí hablando menos como su familia. Salen hablando también de otras maneras.');
+
+  beat(1, 'El periódico', 'El Mundo Nuestro', [
+    'Todo el año van a trabajar para un periódico. Cada semana viajan a un país distinto, leen una nota, escuchan a una persona real de ahí y escriben su propio artículo.',
+    'Las historias no son de turista. No hay ruinas bonitas ni playas. Hay una tejedora que perdió el idioma de su abuela, unos pescadores que cerraron su propia pesca, unas señoras que suben montañas de seis mil metros en pollera.',
+    'Son historias donde la gente del lugar es la protagonista y no el decorado. Ustedes las van a contar.',
+  ]);
+
+  act(1, 'Tu primera entrevista',
+    'Busca a alguien con quien no hablas todos los días. Hazle las seis preguntas de la hoja y ANOTA lo que conteste. Después inventa una pregunta tuya de seguimiento — ésa es la que importa.',
+    'Días 1–3, página 2');
+
+  // ── DÍA 2 ────────────────────────────────────────────────────────────────
+  cover(2, 'Las normas de la redacción',
+    'Toda redacción tiene reglas. Éstas son las nuestras, y por qué existen.');
+
+  list(2, 'Las normas', 'Cómo funciona este salón', NORMAS.slice(0, 3));
+  list(2, 'Las normas', 'Cómo funciona este salón (2)', NORMAS.slice(3));
+
+  beat(2, 'La nota', 'Setenta por ciento qué tan bien. Treinta por ciento cuánto.', [
+    'Su calificación se arma de dos cosas. Setenta por ciento es calidad: qué tan bien leen, escriben y entienden. Treinta por ciento es cuánto terminaron.',
+    'Esa división es a propósito. El trabajo cuidadoso vale más que el trabajo rápido, pero no se puede saltar la mitad de las sesiones y salvarse por hablar bien español.',
+  ], 'Casi nada hunde una calificación aquí, menos el trabajo que nunca se entregó.');
+
+  list(2, 'La nota', 'Qué cuenta y qué no', [
+    ['Cuenta a tu favor', 'Terminar las sesiones. Escribir aunque salga con faltas. Preguntar. Rehacer algo que te salió mal. Venir.'],
+    ['No cuenta en tu contra', 'Un acento que se te olvidó. Una palabra escrita como suena. No saber una palabra. Hablar como habla tu familia.'],
+    ['Sí cuenta en tu contra', 'No entregar nada. Pasar un párrafo por un traductor o una inteligencia artificial y entregarme su español en vez del tuyo. Se nota, y peor: ese día no aprendiste nada.'],
+    ['Sobre los traductores', 'Buscar una palabra es investigación y está bien. Pegar un párrafo no. Si no sabes de qué lado de la raya estás, pregúntame antes y no después.'],
+  ]);
+
+  act(2, 'La norma que falta',
+    'En parejas: lean las seis normas. ¿Cuál les falta? Escriban una norma nueva para este salón, con su razón. Las mejores se quedan en la pared todo el año, firmadas por quien las propuso.',
+    'Días 1–3, página 4');
+
+  S.push({cls:'vocab', day:2, html:
+    `<div class="eyebrow">Frases de la redacción</div>
+     <h2>Diez frases para este salón</h2>
+     <p class="sm">Ustedes ya saben pedir permiso y saludar. Éstas son otras — las que se necesitan
+     cuando uno sabe decir algo pero no sabe escribirlo.</p>
+     <table>${FRASES.map(([es, en, note]) =>
+       `<tr><td class="es">${es}</td><td class="en">${en}</td><td class="nt">${note}</td></tr>`).join('')}
+     </table>`});
+
+  // ── DÍA 3 ────────────────────────────────────────────────────────────────
+  cover(3, 'Tu corresponsal',
+    'Antes de salir a México, decide quién eres cuando firmas un artículo.');
+
+  beat(3, 'El mapa de mi español', 'De dónde viene tu voz', [
+    'Antes de escribir de otros, hay que saber de dónde viene uno. Hoy van a dibujar su propio mapa: quién les habla en español, qué palabras sólo saben en un idioma, y cómo se dicen las cosas en su casa.',
+    'Esta hoja no lleva calificación. La voy a leer, y me va a decir más de ustedes que cualquier examen.',
+  ], 'Ninguna forma de decir algo es la incorrecta. Todas son datos.');
+
+  act(3, 'El mapa de mi español',
+    'Llena las cuatro partes de la hoja. En la tercera, «Así lo decimos en mi casa», piensa en palabras que sabes que se dicen distinto en otros lados. Ésas son oro.',
+    'Días 1–3, página 3');
+
+  list(3, 'Cómo funciona', 'Los seis pasos de cada sesión', PASOS);
+
+  act(3, 'Tu credencial de prensa',
+    'Diseña tu credencial: nombre de corresponsal (puede ser un nombre de pluma), de dónde eres, tu especialidad y tu lema. Después contesta las tres preguntas de tu historia de origen. Recórtala y pégala en tu cuaderno.',
+    'Días 1–3, página 5');
+
+  S.push({cls:'closer', day:3, html:
+    `<h2>Mañana sales a México.</h2>
+     <p class="hook">Trae tu credencial, tu cuaderno y la pregunta de seguimiento que inventaste.
+     Tu primera historia es un mercado de quinientos años en Oaxaca, y la señora que teje ahí
+     lleva sesenta años esperando que alguien cuente bien su historia.</p>`});
+
+  const slides = S.map((s, i) => `
+  <section class="slide ${s.cls}" data-day="${s.day}" id="s${i}">
+    <div class="inner">${s.html}</div>
+    <div class="foot"><span>El Mundo Nuestro · Día ${s.day}</span><span>${i + 1} / ${S.length}</span></div>
+  </section>`).join('');
+
+  return `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Días 1–3 — Presentación | La Corresponsal</title>
+<style>
+:root{--terracotta:#C4622D;--cream:#FDF5E6;--cream-dk:#F0E6D0;--ink:#2C1810;
+  --ink-lt:#6B4C3B;--gold:#E8C547;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--ink);color:var(--ink);font-family:Georgia,'Times New Roman',serif;overflow:hidden}
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+
+.slide{position:absolute;inset:0;display:none;background:var(--cream);
+  padding:4vh 6vw 7vh;overflow:auto}
+.slide.on{display:flex;flex-direction:column;justify-content:center}
+.inner{max-width:min(1180px,88vw);margin:0 auto;width:100%}
+
+.eyebrow{font-family:sans-serif;font-size:clamp(.7rem,1.35vw,1rem);text-transform:uppercase;
+  letter-spacing:.22em;color:var(--terracotta);font-weight:700;margin-bottom:.6rem}
+h1{font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.02;letter-spacing:-.02em;margin-bottom:1.1rem}
+h2{font-size:clamp(1.7rem,3.9vw,3.1rem);line-height:1.1;margin-bottom:1rem}
+p{font-size:clamp(1rem,1.85vw,1.5rem);line-height:1.5;margin-bottom:.75rem;max-width:56ch}
+p.sm{font-size:clamp(.9rem,1.45vw,1.15rem);color:var(--ink-lt)}
+.hook{font-size:clamp(1.15rem,2.5vw,2rem);line-height:1.32;color:var(--ink-lt);max-width:44ch}
+.pull{border-left:5px solid var(--terracotta);padding:.5rem 0 .5rem 1.1rem;margin-top:1.2rem;
+  font-size:clamp(1.05rem,2.05vw,1.6rem);font-style:italic;line-height:1.34;max-width:52ch}
+
+dl{display:grid;grid-template-columns:minmax(min-content,17rem) 1fr;
+  gap:.75rem 1.8rem;align-items:baseline}
+dt{font-family:sans-serif;font-weight:700;font-size:clamp(.9rem,1.6vw,1.35rem);
+  color:var(--terracotta);line-height:1.22}
+dd{font-size:clamp(.9rem,1.55vw,1.3rem);line-height:1.42}
+
+table{width:100%;border-collapse:collapse;font-size:clamp(.82rem,1.4vw,1.2rem)}
+td{padding:.4rem .7rem;border-bottom:1px solid var(--cream-dk);vertical-align:baseline}
+td.es{font-weight:700;white-space:nowrap}
+td.en{color:var(--ink-lt);font-family:sans-serif;font-size:.86em}
+td.nt{color:var(--ink-lt);font-style:italic;font-size:.84em}
+
+.cover{background:var(--ink);color:var(--cream)}
+.cover h1{color:var(--cream)}
+.cover .hook{color:var(--gold)}
+.cover .eyebrow{color:var(--gold)}
+.closer{background:var(--terracotta);color:var(--white)}
+.closer h2,.closer .hook{color:var(--white);max-width:52ch}
+.act{background:var(--cream-dk)}
+.page{display:inline-block;margin-top:1rem;background:var(--ink);color:var(--cream);
+  font-family:sans-serif;font-size:clamp(.85rem,1.5vw,1.2rem);padding:.5rem 1.1rem;border-radius:6px}
+
+.foot{position:absolute;left:6vw;right:6vw;bottom:2.4vh;display:flex;justify-content:space-between;
+  font-family:sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-lt);opacity:.65}
+.cover .foot,.closer .foot{color:var(--cream);opacity:.6}
+
+#bar{position:fixed;left:0;top:0;height:4px;background:var(--terracotta);
+  transition:width .18s;z-index:10}
+#help{position:fixed;right:1rem;bottom:1rem;font-family:sans-serif;font-size:.7rem;
+  color:var(--ink-lt);opacity:.5;z-index:10}
+@media print{
+  body{overflow:visible;background:#fff}
+  .slide{position:relative;display:block !important;page-break-after:always;
+    min-height:0;padding:.5in;border-bottom:1px solid #ccc}
+  .cover,.closer,.act{background:#fff;color:#111}
+  .cover h1,.cover .hook,.cover .eyebrow,.closer h2,.closer .hook{color:#111}
+  #bar,#help{display:none}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+${slides}
+<div id="help">← → o barra espaciadora · F pantalla completa</div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = Math.min(+(location.hash.slice(1) || 0), slides.length - 1);
+  function show(n) {
+    i = Math.max(0, Math.min(n, slides.length - 1));
+    slides.forEach((s, k) => s.classList.toggle('on', k === i));
+    document.getElementById('bar').style.width = ((i + 1) / slides.length * 100) + '%';
+    history.replaceState(null, '', '#' + i);
+    slides[i].scrollTop = 0;
+  }
+  addEventListener('keydown', e => {
+    if (['ArrowRight',' ','PageDown','ArrowDown'].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    else if (['ArrowLeft','PageUp','ArrowUp'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (e.key.toLowerCase() === 'f') {
+      document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+    }
+  });
+  // Tap right half to advance, left half to go back — for a touchscreen panel.
+  addEventListener('click', e => show(e.clientX > innerWidth / 2 ? i + 1 : i - 1));
+  show(i);
+</script>
+</body>
+</html>
+`;
+}
+
+// ═════════════════════════════════════════════════════════════════════════════
 //  Assemble
 // ═════════════════════════════════════════════════════════════════════════════
 function docHTML(title, pages, printLabel) {
@@ -766,12 +1156,20 @@ ${pages}
 }
 
 // Week 1: 4 front pages + 3 sessions x 2 pages = 10
-const w1 = W1_P1 + W1_P2 + W1_P3 + W1_P4
-  + sessionPages(1, 1, 'México_0', EX['México_0'], [5, 6, 7],    13)
-  + sessionPages(1, 2, 'México_1', EX['México_1'], [8, 9, 10],   13)
-  + sessionPages(1, 3, 'México_2', EX['México_2'], [11, 12, 13], 13);
+// Days 1–3: orientation, norms and persona, before any country content.
+const dias = D_P1 + D_P2 + D_P3 + D_P4 + D_P5 + D_P6;
+writeFileSync(join(OUT, 'dias-1-3.html'),
+  docHTML('Días 1–3 — Normas y credencial | La Corresponsal', dias, 'Imprimir las 6 páginas'), 'utf8');
+
+writeFileSync(join(__dirname, 'presentacion.html'), buildDeck(), 'utf8');
+
+// Week 1: portada + 3 sessions x 3 pages = 10
+const w1 = W1_PORTADA
+  + sessionPages(1, 1, 'México_0', EX['México_0'], [2, 3, 4],   10)
+  + sessionPages(1, 2, 'México_1', EX['México_1'], [5, 6, 7],   10)
+  + sessionPages(1, 3, 'México_2', EX['México_2'], [8, 9, 10],  10);
 writeFileSync(join(OUT, 'semana-1.html'),
-  docHTML('Semana 1 — México | La Corresponsal', w1, 'Imprimir las 13 páginas'), 'utf8');
+  docHTML('Semana 1 — México | La Corresponsal', w1, 'Imprimir las 10 páginas'), 'utf8');
 
 // Week 2: 1 front page + 3 sessions x 2 pages + 1 closing = 8
 const w2 = W2_P1
@@ -868,14 +1266,14 @@ const keyPages =
   trampa deliberada — ese dato no aparece en esa nota. La respuesta correcta es «no aparece».
   El punto es que decir «no lo sé» es una respuesta periodística válida.</div>
 
-  <h2>Notas de las páginas de comunidad (Semana 1)</h2>
+  <h2>Notas del paquete de Días 1–3</h2>
   <ul style="font-size:.88rem">
-    <li><strong>Tu primera entrevista (p. 2):</strong> lo que se evalúa es que haya
+    <li><strong>Tu primera entrevista (Días 1–3, p. 2):</strong> lo que se evalúa es que haya
       <em>anotado</em> las respuestas y que la pregunta de seguimiento sea de verdad nueva,
       no una de la lista.</li>
-    <li><strong>El mapa de mi español (p. 3):</strong> no se califica. Es diagnóstica y personal.
+    <li><strong>El mapa de mi español (Días 1–3, p. 3):</strong> no se califica. Es diagnóstica y personal.
       Léela: te dice quién habla qué en casa y qué variedad trae cada estudiante.</li>
-    <li><strong>Credencial (p. 4):</strong> acepta nombres de pluma. Un estudiante que no quiere
+    <li><strong>Credencial (Días 1–3, p. 5):</strong> acepta nombres de pluma. Un estudiante que no quiere
       usar su nombre real muchas veces está probando si aquí puede tener una voz distinta.</li>
   </ul>
 
@@ -907,7 +1305,9 @@ const keyPages =
 writeFileSync(join(OUT, 'claves.html'),
   docHTML('Clave de respuestas | La Corresponsal', keyPages, 'Imprimir la clave'), 'utf8');
 
-console.log('semana-1.html  13 páginas');
+console.log('dias-1-3.html      6 páginas  (normas + credencial)');
+console.log('presentacion.html  deck proyectable');
+console.log('semana-1.html     10 páginas');
 console.log('semana-2.html  11 páginas');
 console.log('semana-3.html  11 páginas');
 console.log('semana-4.html  11 páginas');

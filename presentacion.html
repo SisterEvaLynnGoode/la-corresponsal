@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Días 1–3 — Presentación | La Corresponsal</title>
+<style>
+:root{--terracotta:#C4622D;--cream:#FDF5E6;--cream-dk:#F0E6D0;--ink:#2C1810;
+  --ink-lt:#6B4C3B;--gold:#E8C547;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--ink);color:var(--ink);font-family:Georgia,'Times New Roman',serif;overflow:hidden}
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+
+.slide{position:absolute;inset:0;display:none;background:var(--cream);
+  padding:4vh 6vw 7vh;overflow:auto}
+.slide.on{display:flex;flex-direction:column;justify-content:center}
+.inner{max-width:min(1180px,88vw);margin:0 auto;width:100%}
+
+.eyebrow{font-family:sans-serif;font-size:clamp(.7rem,1.35vw,1rem);text-transform:uppercase;
+  letter-spacing:.22em;color:var(--terracotta);font-weight:700;margin-bottom:.6rem}
+h1{font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.02;letter-spacing:-.02em;margin-bottom:1.1rem}
+h2{font-size:clamp(1.7rem,3.9vw,3.1rem);line-height:1.1;margin-bottom:1rem}
+p{font-size:clamp(1rem,1.85vw,1.5rem);line-height:1.5;margin-bottom:.75rem;max-width:56ch}
+p.sm{font-size:clamp(.9rem,1.45vw,1.15rem);color:var(--ink-lt)}
+.hook{font-size:clamp(1.15rem,2.5vw,2rem);line-height:1.32;color:var(--ink-lt);max-width:44ch}
+.pull{border-left:5px solid var(--terracotta);padding:.5rem 0 .5rem 1.1rem;margin-top:1.2rem;
+  font-size:clamp(1.05rem,2.05vw,1.6rem);font-style:italic;line-height:1.34;max-width:52ch}
+
+dl{display:grid;grid-template-columns:minmax(min-content,17rem) 1fr;
+  gap:.75rem 1.8rem;align-items:baseline}
+dt{font-family:sans-serif;font-weight:700;font-size:clamp(.9rem,1.6vw,1.35rem);
+  color:var(--terracotta);line-height:1.22}
+dd{font-size:clamp(.9rem,1.55vw,1.3rem);line-height:1.42}
+
+table{width:100%;border-collapse:collapse;font-size:clamp(.82rem,1.4vw,1.2rem)}
+td{padding:.4rem .7rem;border-bottom:1px solid var(--cream-dk);vertical-align:baseline}
+td.es{font-weight:700;white-space:nowrap}
+td.en{color:var(--ink-lt);font-family:sans-serif;font-size:.86em}
+td.nt{color:var(--ink-lt);font-style:italic;font-size:.84em}
+
+.cover{background:var(--ink);color:var(--cream)}
+.cover h1{color:var(--cream)}
+.cover .hook{color:var(--gold)}
+.cover .eyebrow{color:var(--gold)}
+.closer{background:var(--terracotta);color:var(--white)}
+.closer h2,.closer .hook{color:var(--white);max-width:52ch}
+.act{background:var(--cream-dk)}
+.page{display:inline-block;margin-top:1rem;background:var(--ink);color:var(--cream);
+  font-family:sans-serif;font-size:clamp(.85rem,1.5vw,1.2rem);padding:.5rem 1.1rem;border-radius:6px}
+
+.foot{position:absolute;left:6vw;right:6vw;bottom:2.4vh;display:flex;justify-content:space-between;
+  font-family:sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-lt);opacity:.65}
+.cover .foot,.closer .foot{color:var(--cream);opacity:.6}
+
+#bar{position:fixed;left:0;top:0;height:4px;background:var(--terracotta);
+  transition:width .18s;z-index:10}
+#help{position:fixed;right:1rem;bottom:1rem;font-family:sans-serif;font-size:.7rem;
+  color:var(--ink-lt);opacity:.5;z-index:10}
+@media print{
+  body{overflow:visible;background:#fff}
+  .slide{position:relative;display:block !important;page-break-after:always;
+    min-height:0;padding:.5in;border-bottom:1px solid #ccc}
+  .cover,.closer,.act{background:#fff;color:#111}
+  .cover h1,.cover .hook,.cover .eyebrow,.closer h2,.closer .hook{color:#111}
+  #bar,#help{display:none}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+  <section class="slide cover" data-day="1" id="s0">
+    <div class="inner"><div class="eyebrow">El Mundo Nuestro · Día 1</div>
+     <h1>Te contrataron.</h1><p class="hook">Veinte países. Sesenta historias. Un año para contarlas — y las vas a contar tú.</p></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 1</span><span>1 / 19</span></div>
+  </section>
+  <section class="slide beat" data-day="1" id="s1">
+    <div class="inner"><div class="eyebrow">Quién soy</div><h2>Mr. Tommy (they/them)</h2>
+     <p>Me llamo Tommy Martin-Edwards y aquí todos me dicen Mr. Tommy. Lo primero que deben saber de mí es algo que los pone a ustedes por delante: yo no crecí hablando español. Lo aprendí en un salón, de un libro, ya de grande.</p><p>Ustedes tienen algo que yo no voy a tener nunca. A ustedes el español les llegó de gente que los quiere: de una abuela, de una mamá, de un tío que cuenta chistes. Eso no se estudia. Eso se hereda.</p><p>Entonces que quede claro desde hoy: yo no estoy aquí para arreglarles el español. Estoy aquí para darles las partes que la escuela les quedó debiendo — leer rápido, escribir sin miedo, y saber que lo que hablan en su casa es un idioma completo.</p>
+     <div class="pull">Yo no vengo a arreglarles el español. Vengo a darles lo que la escuela les quedó debiendo.</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 1</span><span>2 / 19</span></div>
+  </section>
+  <section class="slide list" data-day="1" id="s2">
+    <div class="inner"><div class="eyebrow">Quién soy</div><h2>Para que me conozcan</h2>
+     <dl><dt>Cómo llamarme</dt><dd>Mr. Tommy (they/them)</dd><dt>Enseñando desde</dt><dd>2010–2011</dd><dt>También he enseñado</dt><dd>Español, chino, tecnología — y fui subdirector</dd><dt>Países que conozco</dt><dd>España, México, Canadá, Francia, Bélgica, China</dd><dt>Pregúntame sobre</dt><dd>El Camino de Santiago, o la historia queer</dd></dl>
+     <div class="pull">Una cosa más, dicha el primer día para que nadie tenga que adivinar: soy queer y tengo esposo. Si algún día quieren preguntarme de historia queer, es de mis temas favoritos.</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 1</span><span>3 / 19</span></div>
+  </section>
+  <section class="slide beat" data-day="1" id="s3">
+    <div class="inner"><div class="eyebrow">Por qué existe esta clase</div><h2>Ustedes ya tienen el idioma. Falta lo demás.</h2>
+     <p>Esta clase no es español para principiantes y no es español de castigo. Ustedes llegan hablando. Eso es la parte difícil y ya la tienen.</p><p>Lo que falta es lo que la escuela normalmente no les da: leer un texto largo sin cansarse, escribir sin miedo a la falta de ortografía, y tener palabras para hablar de cosas serias — no sólo de la casa y la familia, sino del trabajo, del medio ambiente, de la política, del arte.</p><p>A eso le vamos a llamar «rango». Al final del año van a poder moverse entre el español de su casa y el español del periódico, sin perder ninguno de los dos.</p>
+     <div class="pull">Nadie sale de aquí hablando menos como su familia. Salen hablando también de otras maneras.</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 1</span><span>4 / 19</span></div>
+  </section>
+  <section class="slide beat" data-day="1" id="s4">
+    <div class="inner"><div class="eyebrow">El periódico</div><h2>El Mundo Nuestro</h2>
+     <p>Todo el año van a trabajar para un periódico. Cada semana viajan a un país distinto, leen una nota, escuchan a una persona real de ahí y escriben su propio artículo.</p><p>Las historias no son de turista. No hay ruinas bonitas ni playas. Hay una tejedora que perdió el idioma de su abuela, unos pescadores que cerraron su propia pesca, unas señoras que suben montañas de seis mil metros en pollera.</p><p>Son historias donde la gente del lugar es la protagonista y no el decorado. Ustedes las van a contar.</p>
+     </div>
+    <div class="foot"><span>El Mundo Nuestro · Día 1</span><span>5 / 19</span></div>
+  </section>
+  <section class="slide act" data-day="1" id="s5">
+    <div class="inner"><div class="eyebrow">Actividad</div><h2>Tu primera entrevista</h2><p>Busca a alguien con quien no hablas todos los días. Hazle las seis preguntas de la hoja y ANOTA lo que conteste. Después inventa una pregunta tuya de seguimiento — ésa es la que importa.</p>
+     <div class="page">📄 Días 1–3, página 2</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 1</span><span>6 / 19</span></div>
+  </section>
+  <section class="slide cover" data-day="2" id="s6">
+    <div class="inner"><div class="eyebrow">El Mundo Nuestro · Día 2</div>
+     <h1>Las normas de la redacción</h1><p class="hook">Toda redacción tiene reglas. Éstas son las nuestras, y por qué existen.</p></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 2</span><span>7 / 19</span></div>
+  </section>
+  <section class="slide list" data-day="2" id="s7">
+    <div class="inner"><div class="eyebrow">Las normas</div><h2>Cómo funciona este salón</h2>
+     <dl><dt>Aquí no se corrige el español de nadie</dt><dd>Nadie en este salón se burla de cómo habla otra persona. Ni del acento, ni de una palabra «mal dicha», ni del español de tu casa, ni de lo que dice tu familia en el pueblo de donde vienen. Tampoco se burla nadie de quién eres, a quién quieres, cómo te ves, ni de lo que todavía estás descubriendo. Y va en las dos direcciones: no se le dice a nadie que habla «demasiado español», ni que «ni siquiera sabe español». Ésta es la única regla que no tiene primera advertencia.</dd><dt>Tu español ya es correcto</dt><dd>No hay un español bueno y muchos malos. Hay un español de la escuela, uno de tu casa, uno de Michoacán, uno de San Salvador, uno de aquí de la esquina. Todos siguen reglas. Este año vamos a agregar uno más — el del periódico — sin quitarte ninguno de los que ya traes.</dd><dt>Se escribe aunque salga mal</dt><dd>Casi todos ustedes hablan mejor de lo que escriben. Eso no es un defecto: es lo normal cuando aprendiste un idioma oyéndolo. Aquí se escribe todos los días, con faltas, sin borrar tres veces. La ortografía se arregla después. La página en blanco no se arregla sola.</dd></dl>
+     </div>
+    <div class="foot"><span>El Mundo Nuestro · Día 2</span><span>8 / 19</span></div>
+  </section>
+  <section class="slide list" data-day="2" id="s8">
+    <div class="inner"><div class="eyebrow">Las normas</div><h2>Cómo funciona este salón (2)</h2>
+     <dl><dt>Treinta segundos antes de preguntar</dt><dd>Cuando no sepas una palabra, quédate treinta segundos con la duda antes de buscarla. Ahí es donde se te queda. Pasados los treinta segundos, pregunta fuerte y con confianza.</dd><dt>Se puede mezclar mientras aprendes</dt><dd>Si a media oración se te sale una palabra en inglés, dila y sigue. Mezclar no es un error, es lo que hacen los bilingües del mundo entero. Lo que sí te voy a pedir es que lo que entregues por escrito esté en español — porque ese es el músculo que venimos a entrenar.</dd><dt>Se puede repetir</dt><dd>Casi todo aquí se puede volver a hacer por la nota completa. Una calificación baja es información, no una sentencia. Lo único que no se arregla es el trabajo que nunca entregaste.</dd></dl>
+     </div>
+    <div class="foot"><span>El Mundo Nuestro · Día 2</span><span>9 / 19</span></div>
+  </section>
+  <section class="slide beat" data-day="2" id="s9">
+    <div class="inner"><div class="eyebrow">La nota</div><h2>Setenta por ciento qué tan bien. Treinta por ciento cuánto.</h2>
+     <p>Su calificación se arma de dos cosas. Setenta por ciento es calidad: qué tan bien leen, escriben y entienden. Treinta por ciento es cuánto terminaron.</p><p>Esa división es a propósito. El trabajo cuidadoso vale más que el trabajo rápido, pero no se puede saltar la mitad de las sesiones y salvarse por hablar bien español.</p>
+     <div class="pull">Casi nada hunde una calificación aquí, menos el trabajo que nunca se entregó.</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 2</span><span>10 / 19</span></div>
+  </section>
+  <section class="slide list" data-day="2" id="s10">
+    <div class="inner"><div class="eyebrow">La nota</div><h2>Qué cuenta y qué no</h2>
+     <dl><dt>Cuenta a tu favor</dt><dd>Terminar las sesiones. Escribir aunque salga con faltas. Preguntar. Rehacer algo que te salió mal. Venir.</dd><dt>No cuenta en tu contra</dt><dd>Un acento que se te olvidó. Una palabra escrita como suena. No saber una palabra. Hablar como habla tu familia.</dd><dt>Sí cuenta en tu contra</dt><dd>No entregar nada. Pasar un párrafo por un traductor o una inteligencia artificial y entregarme su español en vez del tuyo. Se nota, y peor: ese día no aprendiste nada.</dd><dt>Sobre los traductores</dt><dd>Buscar una palabra es investigación y está bien. Pegar un párrafo no. Si no sabes de qué lado de la raya estás, pregúntame antes y no después.</dd></dl>
+     </div>
+    <div class="foot"><span>El Mundo Nuestro · Día 2</span><span>11 / 19</span></div>
+  </section>
+  <section class="slide act" data-day="2" id="s11">
+    <div class="inner"><div class="eyebrow">Actividad</div><h2>La norma que falta</h2><p>En parejas: lean las seis normas. ¿Cuál les falta? Escriban una norma nueva para este salón, con su razón. Las mejores se quedan en la pared todo el año, firmadas por quien las propuso.</p>
+     <div class="page">📄 Días 1–3, página 4</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 2</span><span>12 / 19</span></div>
+  </section>
+  <section class="slide vocab" data-day="2" id="s12">
+    <div class="inner"><div class="eyebrow">Frases de la redacción</div>
+     <h2>Diez frases para este salón</h2>
+     <p class="sm">Ustedes ya saben pedir permiso y saludar. Éstas son otras — las que se necesitan
+     cuando uno sabe decir algo pero no sabe escribirlo.</p>
+     <table><tr><td class="es">¿Cómo se escribe…?</td><td class="en">How do you spell / write…?</td><td class="nt">La pregunta más útil del año.</td></tr><tr><td class="es">Lo sé decir pero no lo sé escribir</td><td class="en">I can say it but I can't write it</td><td class="nt">Dilo sin pena. Le pasa a todo el mundo aquí.</td></tr><tr><td class="es">¿Lleva acento?</td><td class="en">Does it take an accent mark?</td><td class="nt">Pregunta legítima y frecuente.</td></tr><tr><td class="es">¿Me lo repite, por favor?</td><td class="en">Could you repeat that?</td><td class="nt">Siempre pide la repetición.</td></tr><tr><td class="es">¿Qué significa…?</td><td class="en">What does … mean?</td><td class="nt">Aunque la hayas oído toda la vida.</td></tr><tr><td class="es">En mi casa decimos…</td><td class="en">At home we say…</td><td class="nt">Siempre es un dato bienvenido, no una corrección.</td></tr><tr><td class="es">No estoy segura / seguro</td><td class="en">I'm not sure</td><td class="nt">Mejor que inventar un dato.</td></tr><tr><td class="es">Según la fuente…</td><td class="en">According to the source…</td><td class="nt">Frase de periodista. Úsala al citar.</td></tr><tr><td class="es">¿Me das un ejemplo?</td><td class="en">Can you give me an example?</td><td class="nt">Sirve conmigo y sirve en una entrevista.</td></tr><tr><td class="es">Todavía no</td><td class="en">Not yet</td><td class="nt">No es «no puedo». Es «no puedo todavía».</td></tr>
+     </table></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 2</span><span>13 / 19</span></div>
+  </section>
+  <section class="slide cover" data-day="3" id="s13">
+    <div class="inner"><div class="eyebrow">El Mundo Nuestro · Día 3</div>
+     <h1>Tu corresponsal</h1><p class="hook">Antes de salir a México, decide quién eres cuando firmas un artículo.</p></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 3</span><span>14 / 19</span></div>
+  </section>
+  <section class="slide beat" data-day="3" id="s14">
+    <div class="inner"><div class="eyebrow">El mapa de mi español</div><h2>De dónde viene tu voz</h2>
+     <p>Antes de escribir de otros, hay que saber de dónde viene uno. Hoy van a dibujar su propio mapa: quién les habla en español, qué palabras sólo saben en un idioma, y cómo se dicen las cosas en su casa.</p><p>Esta hoja no lleva calificación. La voy a leer, y me va a decir más de ustedes que cualquier examen.</p>
+     <div class="pull">Ninguna forma de decir algo es la incorrecta. Todas son datos.</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 3</span><span>15 / 19</span></div>
+  </section>
+  <section class="slide act" data-day="3" id="s15">
+    <div class="inner"><div class="eyebrow">Actividad</div><h2>El mapa de mi español</h2><p>Llena las cuatro partes de la hoja. En la tercera, «Así lo decimos en mi casa», piensa en palabras que sabes que se dicen distinto en otros lados. Ésas son oro.</p>
+     <div class="page">📄 Días 1–3, página 3</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 3</span><span>16 / 19</span></div>
+  </section>
+  <section class="slide list" data-day="3" id="s16">
+    <div class="inner"><div class="eyebrow">Cómo funciona</div><h2>Los seis pasos de cada sesión</h2>
+     <dl><dt>1 · Llegada</dt><dd>Llegas al país y conoces dónde estás.</dd><dt>2 · Asignación</dt><dd>La editora te dice qué historia buscar.</dd><dt>3 · Lectura</dt><dd>Lees la nota y aprendes las palabras clave.</dd><dt>4 · Escucha</dt><dd>Escuchas a una persona real de ese lugar.</dd><dt>5 · Redacción</dt><dd>Escribes tu propio artículo.</dd><dt>6 · Publicación</dt><dd>Se publica con tu nombre.</dd></dl>
+     </div>
+    <div class="foot"><span>El Mundo Nuestro · Día 3</span><span>17 / 19</span></div>
+  </section>
+  <section class="slide act" data-day="3" id="s17">
+    <div class="inner"><div class="eyebrow">Actividad</div><h2>Tu credencial de prensa</h2><p>Diseña tu credencial: nombre de corresponsal (puede ser un nombre de pluma), de dónde eres, tu especialidad y tu lema. Después contesta las tres preguntas de tu historia de origen. Recórtala y pégala en tu cuaderno.</p>
+     <div class="page">📄 Días 1–3, página 5</div></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 3</span><span>18 / 19</span></div>
+  </section>
+  <section class="slide closer" data-day="3" id="s18">
+    <div class="inner"><h2>Mañana sales a México.</h2>
+     <p class="hook">Trae tu credencial, tu cuaderno y la pregunta de seguimiento que inventaste.
+     Tu primera historia es un mercado de quinientos años en Oaxaca, y la señora que teje ahí
+     lleva sesenta años esperando que alguien cuente bien su historia.</p></div>
+    <div class="foot"><span>El Mundo Nuestro · Día 3</span><span>19 / 19</span></div>
+  </section>
+<div id="help">← → o barra espaciadora · F pantalla completa</div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = Math.min(+(location.hash.slice(1) || 0), slides.length - 1);
+  function show(n) {
+    i = Math.max(0, Math.min(n, slides.length - 1));
+    slides.forEach((s, k) => s.classList.toggle('on', k === i));
+    document.getElementById('bar').style.width = ((i + 1) / slides.length * 100) + '%';
+    history.replaceState(null, '', '#' + i);
+    slides[i].scrollTop = 0;
+  }
+  addEventListener('keydown', e => {
+    if (['ArrowRight',' ','PageDown','ArrowDown'].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    else if (['ArrowLeft','PageUp','ArrowUp'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (e.key.toLowerCase() === 'f') {
+      document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+    }
+  });
+  // Tap right half to advance, left half to go back — for a touchscreen panel.
+  addEventListener('click', e => show(e.clientX > innerWidth / 2 ? i + 1 : i - 1));
+  show(i);
+</script>
+</body>
+</html>
