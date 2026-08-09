@@ -650,6 +650,57 @@ const EX = {
     </tbody>
   </table>`,
 
+  'República Dominicana_0': `
+  <h2>Lo que antes se despreciaba</h2>
+  <div class="instr">A Anselmo le daba vergüenza decir que era bachatero. Hoy se paga por aprender
+  lo que él hacía gratis en el patio. Piensa en algo de tu cultura que antes se veía feo y ahora
+  se ve bien.</div>
+  ${lines(3)}`,
+
+  'República Dominicana_1': `
+  <h2>Las reglas las pusieron ellos</h2>
+  <div class="instr">Los capitanes de Samaná se pusieron sus propias reglas antes de que el
+  gobierno se las pusiera. Anota tres reglas de la nota y por qué cada una protege a las
+  ballenas.</div>
+  <table>
+    <thead><tr><th style="width:44%">La regla</th><th style="width:56%">A qué ayuda</th></tr></thead>
+    <tbody>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+    </tbody>
+  </table>`,
+
+  'República Dominicana_2': `
+  <h2>«El bate se rompe, la cabeza no»</h2>
+  <div class="instr">Félix firmó a los diecisiete y volvió a los veintiuno sin nada. Ahora exige
+  buenas notas para dejar jugar. Explica su frase y di si estás de acuerdo.</div>
+  ${lines(4)}`,
+
+  'Puerto Rico_0': `
+  <h2>Quién manda en la bomba</h2>
+  <div class="instr">En casi toda la música, quien baila sigue al músico. En la bomba es al revés:
+  el tambor sigue al cuerpo. Explica con tus palabras cómo funciona esa conversación.</div>
+  ${lines(3)}`,
+
+  'Puerto Rico_1': `
+  <h2>El bosque se curó solo</h2>
+  <div class="instr">Nélida pensó que El Yunque no se recuperaba. Ordena lo que pasó, según la
+  entrevista.</div>
+  <table>
+    <thead><tr><th style="width:26%">Cuándo</th><th style="width:74%">Qué vio</th></tr></thead>
+    <tbody>
+      <tr><td>A las dos semanas</td><td class="blank"></td></tr>
+      <tr><td>A las seis semanas</td><td class="blank"></td></tr>
+      <tr><td>A los cuatro meses</td><td class="blank"></td></tr>
+    </tbody>
+  </table>`,
+
+  'Puerto Rico_2': `
+  <h2>El problema de fondo</h2>
+  <div class="instr">Zoraida dice que el problema nunca fue solamente la comida: era que vivían al
+  lado sin conocerse. ¿Hay algo así donde tú vives? ¿Qué haría falta?</div>
+  ${lines(4)}`,
+
   'Panamá_0': `
   <h2>Dos generaciones en el mismo canal</h2>
   <div class="instr">El abuelo de Ricaurte pintaba compuertas y no podía entrar a ciertas áreas ni
@@ -1339,6 +1390,153 @@ const W8_P11 = sheet('Semana 8 · Cierre<br>Proyecto', `
   'La Corresponsal · Semana 8', 'Página 11 de 11');
 
 // ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 9 — República Dominicana. Skill: better questions.
+// ═════════════════════════════════════════════════════════════════════════════
+const W9_P1 = sheet('Semana 9 · Rep. Dominicana<br>Portada', `
+  ${namebar(true)}
+  <h1>Novena semana: República Dominicana</h1>
+  <div class="sub">Bachata, ballenas y béisbol</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>En la semana 3 saliste a entrevistar a alguien de tu familia. Esta semana volvemos a eso,
+      pero mejor: vas a aprender a hacer preguntas que abran, no que cierren.</p>
+      <p>Las tres historias dominicanas son de gente a la que le dijeron que lo suyo no valía —
+      la música, el mar, el muchacho que no llegó a Grandes Ligas — y que resultó valiendo mucho.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: la pregunta abierta</h2>
+  <div class="instr">Una pregunta cerrada se contesta con sí, no, o un dato. Una abierta obliga a
+  contar. Las dos sirven, pero una entrevista hecha sólo de cerradas no da nada que publicar.</div>
+  <table>
+    <thead><tr><th style="width:46%">Cerrada</th><th style="width:54%">Abierta</th></tr></thead>
+    <tbody>
+      <tr><td>¿Tocas bachata?</td><td>¿Cómo era tocar bachata cuando nadie la respetaba?</td></tr>
+      <tr><td>¿Te gusta tu trabajo?</td><td>¿Qué es lo más difícil de tu trabajo que la gente no se imagina?</td></tr>
+      <tr><td>¿Tienes hijos?</td><td>¿Qué quieres que tus hijos sepan hacer que tú no supiste?</td></tr>
+    </tbody>
+  </table>
+  <div class="tip">Truco: las abiertas casi siempre empiezan con <strong>cómo</strong>, <strong>por
+  qué</strong> o <strong>qué es lo que</strong>. Las cerradas empiezan con un verbo.</div>
+
+  <h2>Conviértelas</h2>
+  <div class="instr">Pasa estas preguntas cerradas a abiertas.</div>
+  <ol class="q" style="font-size:.93rem">
+    <li>¿Vives aquí desde hace mucho?
+      ${lines(1)}</li>
+    <li>¿Fue difícil?
+      ${lines(1)}</li>
+  </ol>`,
+  'La Corresponsal · Semana 9', 'Página 1 de 11');
+
+const W9_P11 = sheet('Semana 9 · Cierre<br>Proyecto', `
+  ${namebar()}
+  <h1>Segunda entrevista de verdad</h1>
+  <div class="sub">Tarea de la semana — fuera del salón</div>
+
+  <div class="instr">Entrevista a alguien otra vez, pero no a la misma persona de la semana 3.
+  Esta vez las preguntas son tuyas y tienen que ser abiertas.</div>
+
+  <table>
+    <tbody>
+      <tr><td style="width:32%"><strong>¿A quién entrevisté?</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>¿Por qué escogí a esta persona?</strong></td><td class="blank"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Mis cuatro preguntas abiertas</h2>
+  <div class="instr">Escríbelas <em>antes</em> de la entrevista. Ninguna puede contestarse con sí
+  o no.</div>
+  <table>
+    <thead><tr><th style="width:42%">Pregunta</th><th style="width:58%">Lo que contestó</th></tr></thead>
+    <tbody>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h2>La mejor cita</h2>
+  <div class="instr">Copia exacta, entre comillas.</div>
+  <div class="box" style="min-height:.5in"></div>`,
+  'La Corresponsal · Semana 9', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 10 — Puerto Rico. Skill: el titular.
+// ═════════════════════════════════════════════════════════════════════════════
+const W10_P1 = sheet('Semana 10 · Puerto Rico<br>Portada', `
+  ${namebar(true)}
+  <h1>Décima semana: Puerto Rico</h1>
+  <div class="sub">Tambores, un bosque y una cocina</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Diez semanas. Estás a la mitad del primer semestre y ya escribes notas completas.</p>
+      <p>Esta semana toca la última pieza que te falta y es la primera que ve el lector: el
+      titular. Un buen titular cabe en una línea, no miente, y hace que alguien se detenga.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: el titular</h2>
+  <table>
+    <thead><tr><th style="width:26%">Regla</th><th style="width:74%">Qué significa</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Corto</strong></td><td>Una línea. Si no cabe, sobra algo.</td></tr>
+      <tr><td><strong>Verdadero</strong></td><td>No promete más de lo que la nota da. Exagerar es mentir.</td></tr>
+      <tr><td><strong>Concreto</strong></td><td>«Un bosque que se cura solo» dice más que «La naturaleza es increíble».</td></tr>
+      <tr><td><strong>Con verbo</strong></td><td>Un titular sin verbo es una etiqueta, no una noticia.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Juzga estos titulares</h2>
+  <div class="instr">Los tres son de notas que ya leíste. Marca cuál regla rompe cada uno.</div>
+  <ol class="q" style="font-size:.93rem">
+    <li>«Cosas interesantes sobre Guatemala»
+      ${lines(1)}</li>
+    <li>«El descubrimiento más impactante de la historia del café»
+      ${lines(1)}</li>
+    <li>«Mariposas»
+      ${lines(1)}</li>
+  </ol>`,
+  'La Corresponsal · Semana 10', 'Página 1 de 11');
+
+const W10_P11 = sheet('Semana 10 · Cierre<br>Proyecto', `
+  ${namebar()}
+  <h1>La portada del semestre</h1>
+  <div class="sub">Cierre de diez semanas</div>
+
+  <div class="instr">Diez países. Treinta historias. Arma una portada con tres de ellas: una
+  principal y dos secundarias, cada una con su titular.</div>
+
+  <h2>1 · La nota principal</h2>
+  <table>
+    <tbody>
+      <tr><td style="width:24%"><strong>Historia</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Titular</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Por qué va arriba</strong></td><td class="blank" style="height:.4in"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>2 · Las dos secundarias</h2>
+  <table>
+    <thead><tr><th style="width:38%">Historia</th><th style="width:62%">Titular</th></tr></thead>
+    <tbody>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h2>3 · Escribe la principal</h2>
+  <div class="instr">De 8 a 10 oraciones, con todo lo que ya sabes: entrada que jala, orden de
+  pirámide, cita directa, dato exacto, contexto y un detalle de los sentidos.</div>
+  ${lines(10)}`,
+  'La Corresponsal · Semana 10', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
 //  PROJECTOR DECK — presentacion.html
 //  Built from the same NORMAS / FRASES / PASOS arrays as the paper packet.
 // ═════════════════════════════════════════════════════════════════════════════
@@ -1652,6 +1850,24 @@ const w8 = W8_P1
 writeFileSync(join(OUT, 'semana-8.html'),
   docHTML('Semana 8 — Cuba | La Corresponsal', w8, 'Imprimir las 11 páginas'), 'utf8');
 
+// Week 9: República Dominicana
+const w9 = W9_P1
+  + sessionPages(9, 1, 'República Dominicana_0', EX['República Dominicana_0'], [2, 3, 4],  11)
+  + sessionPages(9, 2, 'República Dominicana_1', EX['República Dominicana_1'], [5, 6, 7],  11)
+  + sessionPages(9, 3, 'República Dominicana_2', EX['República Dominicana_2'], [8, 9, 10], 11)
+  + W9_P11;
+writeFileSync(join(OUT, 'semana-9.html'),
+  docHTML('Semana 9 — República Dominicana | La Corresponsal', w9, 'Imprimir las 11 páginas'), 'utf8');
+
+// Week 10: Puerto Rico
+const w10 = W10_P1
+  + sessionPages(10, 1, 'Puerto Rico_0', EX['Puerto Rico_0'], [2, 3, 4],  11)
+  + sessionPages(10, 2, 'Puerto Rico_1', EX['Puerto Rico_1'], [5, 6, 7],  11)
+  + sessionPages(10, 3, 'Puerto Rico_2', EX['Puerto Rico_2'], [8, 9, 10], 11)
+  + W10_P11;
+writeFileSync(join(OUT, 'semana-10.html'),
+  docHTML('Semana 10 — Puerto Rico | La Corresponsal', w10, 'Imprimir las 11 páginas'), 'utf8');
+
 // ── Answer key, generated from the same data so it cannot drift ──────────────
 function keyFor(week, sessionNo, key) {
   const s = CONTENT[key];
@@ -1673,56 +1889,70 @@ const keyPages =
   ${keyFor(1, 1, 'México_0')}
   ${keyFor(1, 2, 'México_1')}
   ${keyFor(1, 3, 'México_2')}`,
-  'Clave · Semana 1', 'Página 1 de 9')
+  'Clave · Semana 1', 'Página 1 de 11')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 2: Guatemala</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(2, 1, 'Guatemala_0')}
   ${keyFor(2, 2, 'Guatemala_1')}
   ${keyFor(2, 3, 'Guatemala_2')}`,
-  'Clave · Semana 2', 'Página 2 de 9')
+  'Clave · Semana 2', 'Página 2 de 11')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 3: Honduras</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(3, 1, 'Honduras_0')}
   ${keyFor(3, 2, 'Honduras_1')}
   ${keyFor(3, 3, 'Honduras_2')}`,
-  'Clave · Semana 3', 'Página 3 de 9')
+  'Clave · Semana 3', 'Página 3 de 11')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 4: El Salvador</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(4, 1, 'El Salvador_0')}
   ${keyFor(4, 2, 'El Salvador_1')}
   ${keyFor(4, 3, 'El Salvador_2')}`,
-  'Clave · Semana 4', 'Página 4 de 9')
+  'Clave · Semana 4', 'Página 4 de 11')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 5: Nicaragua</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(5, 1, 'Nicaragua_0')}
   ${keyFor(5, 2, 'Nicaragua_1')}
   ${keyFor(5, 3, 'Nicaragua_2')}`,
-  'Clave · Semana 5', 'Página 5 de 9')
+  'Clave · Semana 5', 'Página 5 de 11')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 6: Costa Rica</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(6, 1, 'Costa Rica_0')}
   ${keyFor(6, 2, 'Costa Rica_1')}
   ${keyFor(6, 3, 'Costa Rica_2')}`,
-  'Clave · Semana 6', 'Página 6 de 9')
+  'Clave · Semana 6', 'Página 6 de 11')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 7: Panamá</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(7, 1, 'Panamá_0')}
   ${keyFor(7, 2, 'Panamá_1')}
   ${keyFor(7, 3, 'Panamá_2')}`,
-  'Clave · Semana 7', 'Página 7 de 9')
+  'Clave · Semana 7', 'Página 7 de 11')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 8: Cuba</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(8, 1, 'Cuba_0')}
   ${keyFor(8, 2, 'Cuba_1')}
   ${keyFor(8, 3, 'Cuba_2')}`,
-  'Clave · Semana 8', 'Página 8 de 9')
+  'Clave · Semana 8', 'Página 8 de 11')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 9: República Dominicana</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
+  ${keyFor(9, 1, 'República Dominicana_0')}
+  ${keyFor(9, 2, 'República Dominicana_1')}
+  ${keyFor(9, 3, 'República Dominicana_2')}`,
+  'Clave · Semana 9', 'Página 9 de 11')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 10: Puerto Rico</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
+  ${keyFor(10, 1, 'Puerto Rico_0')}
+  ${keyFor(10, 2, 'Puerto Rico_1')}
+  ${keyFor(10, 3, 'Puerto Rico_2')}`,
+  'Clave · Semana 10', 'Página 10 de 11')
   + sheet('Rúbrica<br>Sólo para la maestra', `
   <h1>Rúbrica para la redacción</h1>
   <div class="sub">Sirve para las dos semanas y para el resto del año</div>
@@ -1783,7 +2013,7 @@ const keyPages =
   fuera del salón): lo que se califica es que la cita directa esté entre comillas y sin
   «arreglar», y que la versión indirecta cambie de verdad la persona del verbo. El contenido de
   la entrevista es de ellos; no lo califiques.</p>`,
-  'Rúbrica y notas', 'Página 9 de 9');
+  'Rúbrica y notas', 'Página 11 de 11');
 
 writeFileSync(join(OUT, 'claves.html'),
   docHTML('Clave de respuestas | La Corresponsal', keyPages, 'Imprimir la clave'), 'utf8');
@@ -1794,4 +2024,4 @@ console.log('semana-1.html     10 páginas');
 console.log('semana-2.html  11 páginas');
 console.log('semana-3.html  11 páginas');
 console.log('semana-4.html  11 páginas');
-console.log('semana-5.html  11 páginas');console.log('semana-6.html  11 páginas');console.log('semana-7.html  11 páginas');console.log('semana-8.html  11 páginas');console.log('claves.html     9 páginas');
+console.log('semana-5.html  11 páginas');console.log('semana-6.html  11 páginas');console.log('semana-7.html  11 páginas');console.log('semana-8.html  11 páginas');console.log('semana-9.html  11 páginas');console.log('semana-10.html 11 páginas');console.log('claves.html    11 páginas');
