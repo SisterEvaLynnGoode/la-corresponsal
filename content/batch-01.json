@@ -6,8 +6,8 @@
       "headline": "El mercado de colores: tradición viva en Oaxaca",
       "byline": "Corresponsal, El Mundo Nuestro | Oaxaca, México",
       "paragraphs": [
-        "En el centro de la ciudad de Oaxaca existe un lugar donde el tiempo parece detenerse. El Mercado Benito Juárez lleva más de quinientos años en el mismo sitio. Sus colores, olores y sonidos cuentan la historia de un pueblo entero.",
-        "Las artesanas llegan desde los pueblos de los valles centrales cada semana. Traen textiles de lana teñidos con colores naturales. El rojo viene del gusano cochinilla. El azul viene del añil. El amarillo viene de la flor de cempasúchil.",
+        "En el centro de la ciudad de Oaxaca existe un lugar donde el tiempo parece detenerse. El Mercado Benito Juárez continúa una tradición de mercado que lleva más de quinientos años en el centro de la ciudad. Sus colores, olores y sonidos cuentan la historia de un pueblo entero.",
+        "Las artesanas llegan desde los pueblos de los valles centrales cada semana. Traen textiles de lana teñidos con tintes naturales. El rojo viene de la grana cochinilla, un insecto que vive en los nopales. El azul viene del añil. El amarillo viene de la flor de cempasúchil.",
         "Doña Carmen Ruiz lleva treinta años vendiendo aquí. \"Mi abuela me enseñó a tejer en este mismo pasillo\", dice, mientras sus manos nunca dejan de moverse. \"Este mercado es nuestra universidad. Es nuestra historia viva.\"",
         "Pero el mercado enfrenta un reto nuevo. Los turistas quieren comprar, pero no siempre entienden el valor de lo que ven. Una cobija tejida a mano puede tomar tres semanas de trabajo. \"No es un souvenir\", explica Doña Carmen. \"Es patrimonio. Es arte.\""
       ],
@@ -35,7 +35,7 @@
       ],
       "questions": [
         {
-          "text": "¿Cuántos años lleva el mercado en el mismo sitio?",
+          "text": "¿Cuántos años lleva la tradición de mercado en el centro de Oaxaca?",
           "type": "mc",
           "opts": [
             "Veinte años",
@@ -85,7 +85,7 @@
       ]
     },
     "audio": {
-      "script": "Me llamo Esperanza Mendoza y llevo sesenta años tejiendo en este mercado. Mi madre me trajo aquí cuando yo tenía cinco años. Ella tejía cobijas de lana con diseños geométricos que vienen de los antiguos zapotecas. Yo aprendí mirando sus manos. Ahora mis manos hacen lo mismo. Cada diseño tiene un significado. El caracol representa el agua. El diamante representa el cielo. Los colores no los compramos en ninguna tienda. Los hacemos con plantas y animales de nuestra tierra. El rojo viene de la cochinilla, un insecto pequeño que vive en los nopales. El azul viene del añil, una planta que cultivamos nosotros mismos. Cuando un turista me dice \"¡qué barato!\" por una cobija que me tomó tres semanas tejer, me duele el corazón. Quiero que la gente entienda algo. No están comprando un objeto. Están llevando a su casa quinientos años de historia. Eso no tiene precio.",
+      "script": "Me llamo Esperanza Mendoza y llevo sesenta años tejiendo en este mercado. Mi madre me trajo aquí cuando yo tenía cinco años. Ella tejía cobijas de lana con diseños geométricos que vienen de los antiguos zapotecas. Yo aprendí mirando sus manos. Ahora mis manos hacen lo mismo. Cada diseño tiene un significado. El caracol representa el agua. El diamante representa el cielo. Los colores no los compramos en ninguna tienda. Los hacemos con plantas y animales de nuestra tierra. El rojo viene de la cochinilla, un insecto pequeño que vive en los nopales. El azul viene del añil, una planta que se cultiva en la costa de nuestro estado. Cuando un turista me dice \"¡qué barato!\" por una cobija que me tomó tres semanas tejer, me duele el corazón. Quiero que la gente entienda algo. No están comprando un objeto. Están llevando a su casa quinientos años de historia. Eso no tiene precio.",
       "source": "Doña Esperanza Mendoza, artesana zapoteca",
       "questions": [
         {
@@ -142,8 +142,8 @@
       "headline": "Millones de alas naranjas llegan a los bosques de Michoacán",
       "byline": "Corresponsal, El Mundo Nuestro | Angangueo, Michoacán, México",
       "paragraphs": [
-        "Cada noviembre ocurre algo increíble en las montañas de Michoacán. Millones de mariposas monarca llegan a los bosques de oyamel. Vinieron volando desde Canadá y Estados Unidos. El viaje es de más de cuatro mil kilómetros.",
-        "Lo más asombroso es que ninguna mariposa hace el viaje completa. La monarca vive solo unas semanas. Son sus hijos y sus nietos los que terminan el camino. Nadie les enseña la ruta, pero siempre llegan al mismo bosque.",
+        "Cada noviembre ocurre algo increíble en las montañas de Michoacán. Millones de mariposas monarca llegan a los bosques de oyamel. Vienen volando desde Canadá y Estados Unidos. El viaje es de más de cuatro mil kilómetros.",
+        "Lo más asombroso es la generación que llega a Michoacán. Sus padres vivieron solo unas semanas, pero ella vive hasta ocho meses y hace sola todo el viaje hacia el sur. El regreso hacia el norte, en cambio, lo terminan sus hijos y sus nietos.",
         "Cuando el sol calienta, las mariposas abren las alas todas al mismo tiempo. El bosque entero se vuelve naranja. Se escucha un sonido suave, como lluvia ligera. Son millones de alas moviéndose juntas.",
         "La comunidad de Angangueo protege esta reserva. Antes muchas familias cortaban árboles para vivir. Hoy trabajan como guías y guardabosques. \"El bosque nos da más vivo que muerto\", dice el guardabosques Rubén Ortiz."
       ],
@@ -182,13 +182,13 @@
           "correct": 2
         },
         {
-          "text": "¿Por qué ninguna mariposa hace el viaje completo?",
+          "text": "¿Qué tiene de especial la generación que llega a Michoacán?",
           "type": "mc",
           "opts": [
-            "Porque se pierden",
-            "Porque vive solo unas semanas",
-            "Porque hace mucho frío",
-            "Porque no saben volar bien"
+            "Vive unas pocas semanas",
+            "Vive hasta ocho meses y hace sola el viaje al sur",
+            "No vuela, la llevan otras",
+            "Nace ya en el bosque"
           ],
           "correct": 1
         },
@@ -221,7 +221,7 @@
       ]
     },
     "audio": {
-      "script": "Buenos días. Me llamo Rubén Ortiz y soy guardabosques aquí en la reserva. Mi papá era leñador. Cortaba oyameles para vender la madera. Así comíamos en mi casa. Yo iba con él desde niño y aprendí a usar el hacha a los diez años. Un día llegó una bióloga de la ciudad. Nos explicó que las mariposas viajan cuatro mil kilómetros para llegar exactamente a estos árboles. A estos, no a otros. Mi papá no le creyó al principio. Le pareció imposible. Pero se quedó pensando. Ahora yo cuido los mismos árboles que él cortaba. Camino este bosque todos los días. Cuando llega noviembre y veo el cielo naranja, pienso en él. Los visitantes vienen de todo el mundo y pagan por caminar aquí conmigo. Gano más que mi papá con el hacha. Y el bosque sigue de pie. Eso es lo que le digo a los jóvenes de aquí. Cuidar también es trabajo.",
+      "script": "Buenos días. Me llamo Rubén Ortiz y soy guardabosques aquí en la reserva. Mi papá era leñador. Cortaba oyameles para vender la madera. Así comíamos en mi casa. Yo iba con él desde niño y aprendí a usar el hacha a los diez años. Un día llegó una bióloga de la ciudad. Nos explicó que las mariposas viajan cuatro mil kilómetros para llegar exactamente a estos árboles. A estos, no a otros. Mi papá no le creyó al principio. Le pareció imposible. Pero se quedó pensando. Ahora yo cuido los mismos árboles que él cortaba. Camino por este bosque todos los días. Cuando llega noviembre y veo el cielo naranja, pienso en él. Los visitantes vienen de todo el mundo y pagan por caminar aquí conmigo. Gano más que mi papá con el hacha. Y el bosque sigue de pie. Eso es lo que les digo a los jóvenes de aquí. Cuidar también es trabajo.",
       "source": "Rubén Ortiz, guardabosques de la Reserva de la Biosfera Mariposa Monarca",
       "questions": [
         {
@@ -389,7 +389,7 @@
             "No dijo nada",
             "Se enojó",
             "Lloró",
-            "Se rió"
+            "Se rio"
           ],
           "correct": 2
         },
@@ -415,7 +415,7 @@
       "byline": "Corresponsal, El Mundo Nuestro | Chichicastenango, Guatemala",
       "paragraphs": [
         "Los jueves y domingos, Chichicastenango se llena de gente. Su mercado es uno de los más grandes de toda América. Entre los puestos brillan cientos de huipiles de colores intensos.",
-        "Un huipil es la blusa tradicional de las mujeres mayas. Pero es mucho más que ropa. Los diseños dicen de qué pueblo viene la persona que lo lleva. Es como un mapa que se usa puesto.",
+        "Un huipil es la blusa tradicional de las mujeres mayas. Pero es mucho más que ropa. Los diseños dicen de qué pueblo viene la persona que lo lleva. Es como un mapa que se lleva puesto.",
         "En Santiago Atitlán bordan pájaros. En Nebaj usan rojo y amarillo brillante. En San Antonio Aguas Calientes hacen figuras geométricas muy pequeñas. Una tejedora experta reconoce el pueblo de origen con solo mirar.",
         "Elena Chávez teje con telar de cintura, la misma técnica que usaban sus bisabuelas. El telar se amarra a un poste y a la cintura de la tejedora. \"Mi cuerpo es parte del telar\", explica. Un huipil completo puede tomarle tres meses."
       ],
@@ -550,9 +550,9 @@
       "headline": "Doce pueblos, un lago: la alianza que limpia Atitlán",
       "byline": "Corresponsal, El Mundo Nuestro | Panajachel, Sololá, Guatemala",
       "paragraphs": [
-        "El lago Atitlán está rodeado de tres volcanes y doce pueblos. Muchos viajeros lo llaman el lago más bello del mundo. El agua es azul profunda y muy honda: en algunas partes tiene trescientos metros.",
+        "El lago Atitlán está rodeado de tres volcanes y doce pueblos. Muchos viajeros lo llaman el lago más bello del mundo. El agua es de un azul intenso y el lago es muy hondo: en algunas partes tiene trescientos metros.",
         "Pero hace años apareció un problema. Una capa verde empezó a cubrir el agua. Es una cianobacteria que crece cuando llegan al lago jabones, fertilizantes y aguas sucias. El lago se estaba enfermando.",
-        "Las comunidades no esperaron ayuda de afuera. Los doce pueblos formaron una alianza. Construyeron plantas de tratamiento para el agua sucia. Cambiaron a jabones biodegradables. Sembraron plantas en las orillas para filtrar la tierra.",
+        "Las comunidades no esperaron ayuda de afuera. Los doce pueblos formaron una alianza. Construyeron plantas de tratamiento para el agua sucia. Cambiaron a jabones biodegradables. Sembraron plantas en las orillas para filtrar el agua que baja de los cerros.",
         "Los jóvenes también participan. Cada mes, estudiantes de secundaria recogen basura en lancha y miden la calidad del agua. \"Este lago es de nosotros\", dice Marta Sicay, estudiante de dieciséis años. \"Si nosotros no lo cuidamos, ¿quién?\""
       ],
       "keywords": [
