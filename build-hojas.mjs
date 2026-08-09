@@ -650,6 +650,69 @@ const EX = {
     </tbody>
   </table>`,
 
+  'Nicaragua_0': `
+  <h2>Escribe tres versos</h2>
+  <div class="instr">En el taller de Douglas nadie se burla de nadie: ésa es la primera regla, igual
+  que aquí. Escribe tres versos sobre algo pequeño y tuyo — unas manos, una cocina, un camino,
+  una espera. No tiene que rimar.</div>
+  ${lines(4)}`,
+
+  'Nicaragua_1': `
+  <h2>Una isla no tiene a dónde tirar</h2>
+  <div class="instr">Xiomara dice que en una isla lo que uno tira se queda. Piensa en tu casa una
+  semana: ¿qué es lo que más se tira? ¿A dónde crees que va?</div>
+  <table>
+    <tbody>
+      <tr><td style="width:38%"><strong>Lo que más tiramos</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>A dónde creo que va</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Una cosa que podríamos dejar de tirar</strong></td><td class="blank"></td></tr>
+    </tbody>
+  </table>`,
+
+  'Nicaragua_2': `
+  <h2>Lo que nadie mira</h2>
+  <div class="instr">La mamá de Julio lo puso a hacer flecos dos años: «si no aprendés a hacer bien
+  lo que nadie mira, no vas a poder hacer bien lo que todos miran». Piensa en algo que tú haces
+  bien y que nadie nota.</div>
+  ${lines(3)}`,
+
+  'Costa Rica_0': `
+  <h2>Una solución barata</h2>
+  <div class="instr">El problema era enorme y la solución fue una cuerda entre dos árboles. Piensa
+  en un problema de tu escuela o tu cuadra. ¿Cuál sería la solución más simple y más barata?</div>
+  <table>
+    <tbody>
+      <tr><td style="width:34%"><strong>El problema</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>La solución barata</strong></td><td class="blank" style="height:.45in"></td></tr>
+    </tbody>
+  </table>`,
+
+  'Costa Rica_1': `
+  <h2>De dónde sale la luz</h2>
+  <div class="instr">Álvaro explica que Costa Rica quitó su ejército en 1948 y puso ese dinero en
+  escuelas, salud y energía. Ordena de dónde viene la electricidad tica, según la nota.</div>
+  <table>
+    <thead><tr><th style="width:34%">Fuente</th><th style="width:66%">De dónde saca la energía</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Hidroeléctrica</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Geotérmica</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Eólica</strong></td><td class="blank"></td></tr>
+    </tbody>
+  </table>`,
+
+  'Costa Rica_2': `
+  <h2>Un acuerdo difícil</h2>
+  <div class="instr">En Ostional la comunidad puede recoger los huevos de los primeros días — los que
+  se van a romper de todos modos — y a cambio cuida la playa. Mucha gente de fuera los critica.
+  Escribe un argumento de cada lado antes de decidir qué opinas.</div>
+  <table>
+    <thead><tr><th style="width:50%">Por qué el acuerdo funciona</th>
+      <th style="width:50%">Por qué alguien lo critica</th></tr></thead>
+    <tbody>
+      <tr><td class="blank" style="height:.5in"></td><td></td></tr>
+    </tbody>
+  </table>`,
+
   'El Salvador_2': `
   <h2>Primero la escuela</h2>
   <div class="instr">La regla del club es clara: si no pasas tus materias, no entras al agua.
@@ -919,6 +982,164 @@ const W4_P11 = sheet('Semana 4 · Cierre<br>Proyecto final', `
     </tbody>
   </table>`,
   'La Corresponsal · Semana 4', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 5 — Nicaragua. Skill: la entrada (the lead).
+// ═════════════════════════════════════════════════════════════════════════════
+const W5_P1 = sheet('Semana 5 · Nicaragua<br>Portada', `
+  ${namebar(true)}
+  <h1>Quinta semana: Nicaragua</h1>
+  <div class="sub">Poetas, volcanes y nudos</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Un mes de trabajo. Ya sabes citar y ya sabes usar un dato. Ahora vamos por la parte que
+      decide si alguien te lee o no: la primera oración.</p>
+      <p>Vas a Nicaragua, que es un país raro y maravilloso para un periodista. Es de los pocos
+      lugares del mundo donde el héroe nacional es un poeta, donde una isla se formó de dos
+      volcanes juntos, y donde una hamaca lleva ochocientos nudos hechos a mano.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: la entrada</h2>
+  <div class="instr">La entrada, o el <em>lead</em>, es la primera oración de una nota. Tiene un
+  solo trabajo: hacer que la persona siga leyendo. Compara estas dos maneras de empezar la misma
+  historia.</div>
+  <table>
+    <thead><tr><th style="width:50%">Entrada floja</th><th style="width:50%">Entrada que jala</th></tr></thead>
+    <tbody>
+      <tr><td>Este artículo trata sobre la poesía en Nicaragua.</td>
+          <td>En muchos países los héroes nacionales son militares. En Nicaragua es un poeta.</td></tr>
+      <tr><td>Voy a hablar de unas mariposas que viajan.</td>
+          <td>Ninguna de estas mariposas vivirá para terminar el viaje. Aun así, todas llegan.</td></tr>
+    </tbody>
+  </table>
+  <div class="tip">Las entradas flojas anuncian. Las buenas <strong>empiezan</strong>. Nunca
+  escribas «este artículo trata de…» ni «voy a hablar de…»: eso es calentamiento, no es la nota.</div>
+
+  <h2>Arregla estas entradas</h2>
+  <div class="instr">Reescríbelas para que jalen. Usa un dato, un contraste o una imagen.</div>
+  <ol class="q" style="font-size:.93rem">
+    <li>Este artículo trata sobre unos pescadores de Honduras.
+      ${lines(1)}</li>
+    <li>Voy a hablar de la comida de El Salvador.
+      ${lines(1)}</li>
+  </ol>`,
+  'La Corresponsal · Semana 5', 'Página 1 de 11');
+
+const W5_P11 = sheet('Semana 5 · Cierre<br>Proyecto', `
+  ${namebar()}
+  <h1>Tres entradas</h1>
+  <div class="sub">Cierre de la semana</div>
+
+  <div class="instr">Vuelve a las tres historias de Nicaragua. Escribe una entrada nueva para cada
+  una — la primera oración, nada más. Después escoge la mejor y desarróllala.</div>
+
+  <table>
+    <thead><tr><th style="width:26%">Historia</th><th style="width:74%">Mi entrada</th></tr></thead>
+    <tbody>
+      <tr><td>Los poetas de León</td><td class="blank" style="height:.42in"></td></tr>
+      <tr><td>La isla de Ometepe</td><td class="blank" style="height:.42in"></td></tr>
+      <tr><td>Las hamacas de Masaya</td><td class="blank" style="height:.42in"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Desarrolla la mejor</h2>
+  <div class="instr">Encierra tu entrada favorita de arriba y sigue escribiendo: cinco o seis
+  oraciones más. Incluye una cita directa y un dato exacto, como ya sabes hacer.</div>
+  ${lines(9)}
+
+  <h2>¿Por qué escogiste ésa?</h2>
+  ${lines(2)}`,
+  'La Corresponsal · Semana 5', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 6 — Costa Rica. Skill: describing with the senses.
+// ═════════════════════════════════════════════════════════════════════════════
+const W6_P1 = sheet('Semana 6 · Costa Rica<br>Portada', `
+  ${namebar(true)}
+  <h1>Sexta semana: Costa Rica</h1>
+  <div class="sub">Puentes de cuerda, vapor y tortugas</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Esta semana las tres historias son de gente que arregló algo. Un puente de cuerda que
+      salvó a cientos de monos. Un país que decidió hace décadas de dónde iba a sacar su luz. Un
+      pueblo que se puso a cuidar una playa de noche.</p>
+      <p>Y te voy a pedir algo nuevo: que me hagas <em>ver</em> los lugares. Hasta ahora has
+      contado bien lo que pasa. Esta semana quiero también el ruido, el olor y la temperatura.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: escribir con los sentidos</h2>
+  <div class="instr">Un buen reportaje no explica un lugar: lo pone enfrente. Fíjate en lo que
+  cambia cuando se usan los sentidos.</div>
+  <table>
+    <thead><tr><th style="width:44%">Sólo información</th><th style="width:56%">Con los sentidos</th></tr></thead>
+    <tbody>
+      <tr><td>Llegan muchas mariposas al bosque.</td>
+          <td>Cuando el sol calienta, se oye un sonido suave, como lluvia ligera. Son millones de
+              alas abriéndose al mismo tiempo.</td></tr>
+      <tr><td>La vigilante trabaja de noche.</td>
+          <td>Usa una linterna de luz roja. La blanca desorienta a las tortugas y las manda de
+              regreso al mar sin poner.</td></tr>
+    </tbody>
+  </table>
+  <div class="tip">No se trata de poner más adjetivos. «Un lugar muy bonito» no es una imagen.
+  Un detalle concreto sí lo es: la luz roja, la lluvia ligera, el barro hasta las rodillas.</div>
+
+  <h2>Practica: los cinco sentidos</h2>
+  <div class="instr">Escoge un lugar que conozcas bien — tu cocina, la parada del bus, la cancha.
+  Anota un detalle concreto para cada sentido. Nada de «bonito» ni «feo».</div>
+  <table>
+    <thead><tr><th style="width:22%">Sentido</th><th style="width:78%">Un detalle concreto</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Se ve</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Se oye</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Se huele</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Se siente</strong></td><td class="blank"></td></tr>
+    </tbody>
+  </table>`,
+  'La Corresponsal · Semana 6', 'Página 1 de 11');
+
+const W6_P11 = sheet('Semana 6 · Cierre<br>Proyecto', `
+  ${namebar()}
+  <h1>Llévame ahí</h1>
+  <div class="sub">Cierre de la semana — y de mes y medio</div>
+
+  <div class="instr">Escoge uno de los tres lugares de esta semana: el bosque de Manuel Antonio,
+  la planta geotérmica de Guanacaste o la playa de Ostional de noche. Escribe como si tu lector
+  nunca hubiera salido de aquí.</div>
+
+  <h2>1 · Antes de escribir</h2>
+  <table>
+    <thead><tr><th style="width:22%">Sentido</th><th style="width:78%">Lo que hay en ese lugar, según la nota y la entrevista</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Se ve</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Se oye</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Se siente</strong></td><td class="blank"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>2 · Tu nota</h2>
+  <div class="instr">De 7 a 9 oraciones. Debe llevar: una <strong>entrada que jale</strong>
+  (semana 5), una <strong>cita directa</strong> (semana 3), un <strong>dato exacto</strong>
+  (semana 4) y por lo menos <strong>dos detalles de los sentidos</strong> (esta semana).</div>
+  ${lines(11)}
+
+  <h2>3 · Revisa lo tuyo</h2>
+  <table>
+    <thead><tr><th style="width:70%">¿Lo incluí?</th><th style="width:15%">Sí</th><th style="width:15%">No</th></tr></thead>
+    <tbody>
+      <tr><td>Mi primera oración jala, no anuncia</td><td></td><td></td></tr>
+      <tr><td>Hay una cita entre comillas, copiada exacta</td><td></td><td></td></tr>
+      <tr><td>Hay por lo menos un número</td><td></td><td></td></tr>
+      <tr><td>Hay dos detalles que se ven, se oyen o se sienten</td><td></td><td></td></tr>
+    </tbody>
+  </table>`,
+  'La Corresponsal · Semana 6', 'Página 11 de 11');
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  PROJECTOR DECK — presentacion.html
@@ -1198,6 +1419,24 @@ const w4 = W4_P1
 writeFileSync(join(OUT, 'semana-4.html'),
   docHTML('Semana 4 — El Salvador | La Corresponsal', w4, 'Imprimir las 11 páginas'), 'utf8');
 
+// Week 5: Nicaragua
+const w5 = W5_P1
+  + sessionPages(5, 1, 'Nicaragua_0', EX['Nicaragua_0'], [2, 3, 4],  11)
+  + sessionPages(5, 2, 'Nicaragua_1', EX['Nicaragua_1'], [5, 6, 7],  11)
+  + sessionPages(5, 3, 'Nicaragua_2', EX['Nicaragua_2'], [8, 9, 10], 11)
+  + W5_P11;
+writeFileSync(join(OUT, 'semana-5.html'),
+  docHTML('Semana 5 — Nicaragua | La Corresponsal', w5, 'Imprimir las 11 páginas'), 'utf8');
+
+// Week 6: Costa Rica
+const w6 = W6_P1
+  + sessionPages(6, 1, 'Costa Rica_0', EX['Costa Rica_0'], [2, 3, 4],  11)
+  + sessionPages(6, 2, 'Costa Rica_1', EX['Costa Rica_1'], [5, 6, 7],  11)
+  + sessionPages(6, 3, 'Costa Rica_2', EX['Costa Rica_2'], [8, 9, 10], 11)
+  + W6_P11;
+writeFileSync(join(OUT, 'semana-6.html'),
+  docHTML('Semana 6 — Costa Rica | La Corresponsal', w6, 'Imprimir las 11 páginas'), 'utf8');
+
 // ── Answer key, generated from the same data so it cannot drift ──────────────
 function keyFor(week, sessionNo, key) {
   const s = CONTENT[key];
@@ -1209,37 +1448,52 @@ function keyFor(week, sessionNo, key) {
   <p><strong>Preguntas 1–4 (la nota)</strong></p>
   <ol style="font-size:.8rem">${art.map(row).join('')}</ol>
   <p><strong>Preguntas 5–8 (la entrevista)</strong></p>
-  <ol start="5" style="font-size:.8rem">${aud.map(row).join('')}</ol>
-  <p style="font-size:.8rem"><strong>Tu respuesta:</strong>
-     <span class="open">abierta — se evalúa con la rúbrica.</span></p>`;
+  <ol start="5" style="font-size:.8rem">${aud.map(row).join('')}</ol>`;
 }
 
 const keyPages =
   sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 1: México</h1>
-  <div class="sub">Rojo = respuesta correcta · Verde = abierta</div>
+  <div class="sub">Rojo = respuesta correcta · La pregunta escrita de cada sesión es abierta y se evalúa con la rúbrica</div>
   ${keyFor(1, 1, 'México_0')}
   ${keyFor(1, 2, 'México_1')}
   ${keyFor(1, 3, 'México_2')}`,
-  'Clave · Semana 1', 'Página 1 de 5')
+  'Clave · Semana 1', 'Página 1 de 7')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 2: Guatemala</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(2, 1, 'Guatemala_0')}
   ${keyFor(2, 2, 'Guatemala_1')}
   ${keyFor(2, 3, 'Guatemala_2')}`,
-  'Clave · Semana 2', 'Página 2 de 5')
+  'Clave · Semana 2', 'Página 2 de 7')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 3: Honduras</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(3, 1, 'Honduras_0')}
   ${keyFor(3, 2, 'Honduras_1')}
   ${keyFor(3, 3, 'Honduras_2')}`,
-  'Clave · Semana 3', 'Página 3 de 5')
+  'Clave · Semana 3', 'Página 3 de 7')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 4: El Salvador</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(4, 1, 'El Salvador_0')}
   ${keyFor(4, 2, 'El Salvador_1')}
   ${keyFor(4, 3, 'El Salvador_2')}`,
-  'Clave · Semana 4', 'Página 4 de 5')
+  'Clave · Semana 4', 'Página 4 de 7')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 5: Nicaragua</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
+  ${keyFor(5, 1, 'Nicaragua_0')}
+  ${keyFor(5, 2, 'Nicaragua_1')}
+  ${keyFor(5, 3, 'Nicaragua_2')}`,
+  'Clave · Semana 5', 'Página 5 de 7')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 6: Costa Rica</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
+  ${keyFor(6, 1, 'Costa Rica_0')}
+  ${keyFor(6, 2, 'Costa Rica_1')}
+  ${keyFor(6, 3, 'Costa Rica_2')}`,
+  'Clave · Semana 6', 'Página 6 de 7')
   + sheet('Rúbrica<br>Sólo para la maestra', `
   <h1>Rúbrica para la redacción</h1>
   <div class="sub">Sirve para las dos semanas y para el resto del año</div>
@@ -1300,7 +1554,7 @@ const keyPages =
   fuera del salón): lo que se califica es que la cita directa esté entre comillas y sin
   «arreglar», y que la versión indirecta cambie de verdad la persona del verbo. El contenido de
   la entrevista es de ellos; no lo califiques.</p>`,
-  'Rúbrica y notas', 'Página 5 de 5');
+  'Rúbrica y notas', 'Página 7 de 7');
 
 writeFileSync(join(OUT, 'claves.html'),
   docHTML('Clave de respuestas | La Corresponsal', keyPages, 'Imprimir la clave'), 'utf8');
@@ -1311,4 +1565,4 @@ console.log('semana-1.html     10 páginas');
 console.log('semana-2.html  11 páginas');
 console.log('semana-3.html  11 páginas');
 console.log('semana-4.html  11 páginas');
-console.log('claves.html     5 páginas');
+console.log('semana-5.html  11 páginas');console.log('semana-6.html  11 páginas');console.log('claves.html     7 páginas');

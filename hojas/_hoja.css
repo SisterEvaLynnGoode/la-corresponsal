@@ -104,3 +104,15 @@ td.blank{height:.31in}
 .mc li{margin-bottom:.06rem}
 .opts{list-style:none;margin:.06rem 0 0 .2rem;font-size:.9rem}
 .opts li{margin-bottom:.01rem}
+
+
+/* ── Answer key ────────────────────────────────────────────────────────────
+   These lived in claves.html's inline <style> before the packets moved to a
+   generator, which dropped them: the key rendered with no red/green coding
+   even though its own legend promised it, and unstyled h3 defaults pushed
+   every page over a sheet. */
+.ans{color:#8B1A1A;font-weight:700}
+.open{color:#2D5A27;font-style:italic}
+.sheet h3{font-size:.93rem;margin:.42rem 0 .14rem;border-bottom:1px solid var(--rule);
+  padding-bottom:.08rem}
+.rubric td{font-size:.8rem}
