@@ -650,6 +650,60 @@ const EX = {
     </tbody>
   </table>`,
 
+  'Panamá_0': `
+  <h2>Dos generaciones en el mismo canal</h2>
+  <div class="instr">El abuelo de Ricaurte pintaba compuertas y no podía entrar a ciertas áreas ni
+  ganar el mismo sueldo. Su nieto hoy manda el barco. Anota qué cambió.</div>
+  <table>
+    <thead><tr><th style="width:50%">El abuelo</th><th style="width:50%">El nieto</th></tr></thead>
+    <tbody>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+    </tbody>
+  </table>`,
+
+  'Panamá_1': `
+  <h2>Piensa al revés</h2>
+  <div class="instr">En la mola se corta la capa de arriba para que aparezca el color de abajo:
+  hay que imaginar el resultado antes de cortar, y no hay cómo pegar la tela otra vez. Diseña
+  tu mola con tres capas y di qué color se ve en cada corte.</div>
+  <div style="display:flex;gap:.7rem">
+    <div class="box" style="width:1.5in;height:1.1in;margin:.3rem 0 .5rem"></div>
+    <div style="flex:1">${lines(4)}</div>
+  </div>`,
+
+  'Panamá_2': `
+  <h2>Grano por grano</h2>
+  <div class="instr">Eduviges dice que un solo grano verde arruina el lote entero. Piensa en algo
+  que tú haces donde un detalle pequeño cambia todo el resultado.</div>
+  ${lines(3)}`,
+
+  'Cuba_0': `
+  <h2>Resolver</h2>
+  <div class="instr">En Cuba «resolver» quiere decir encontrar la manera con lo que hay. Yoandri
+  hizo empaquetaduras con una chancleta de goma. Cuenta una vez que alguien de tu familia
+  resolvió algo así.</div>
+  ${lines(4)}`,
+
+  'Cuba_1': `
+  <h2>Un huerto aquí</h2>
+  <div class="instr">Caridad era maestra de primaria y no sabía sembrar. Aprendió. Planea un
+  huerto para tu escuela o tu cuadra.</div>
+  <table>
+    <tbody>
+      <tr><td style="width:34%"><strong>¿Dónde cabría?</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>¿Qué sembraría?</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>¿Quién lo cuidaría?</strong></td><td class="blank"></td></tr>
+    </tbody>
+  </table>`,
+
+  'Cuba_2': `
+  <h2>La clave manda</h2>
+  <div class="instr">Radamés dice que si el grupo se sale de clave, la música se cae aunque cada
+  quien toque bien lo suyo. Piensa en algo que hagas en grupo — un equipo, un baile, una cocina
+  llena de gente. ¿Cuál es «la clave» ahí, eso que si se pierde se cae todo?</div>
+  ${lines(3)}`,
+
   'Nicaragua_0': `
   <h2>Escribe tres versos</h2>
   <div class="instr">En el taller de Douglas nadie se burla de nadie: ésa es la primera regla, igual
@@ -1142,6 +1196,149 @@ const W6_P11 = sheet('Semana 6 · Cierre<br>Proyecto', `
   'La Corresponsal · Semana 6', 'Página 11 de 11');
 
 // ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 7 — Panamá. Skill: el contexto (why a reader should care).
+// ═════════════════════════════════════════════════════════════════════════════
+const W7_P1 = sheet('Semana 7 · Panamá<br>Portada', `
+  ${namebar(true)}
+  <h1>Séptima semana: Panamá</h1>
+  <div class="sub">Un canal, una aguja y un grano de café</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Panamá es el país donde se juntan dos océanos y dos continentes. Esta semana ves las tres
+      cosas por las que el mundo lo conoce y una que casi nadie conoce.</p>
+      <p>Y te voy a pedir la destreza que separa una nota de un dato suelto: el contexto. Que el
+      lector sepa <em>por qué debería importarle</em>.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: el contexto</h2>
+  <div class="instr">Un dato solo flota. Con contexto, aterriza. Fíjate en lo que agrega la
+  segunda columna.</div>
+  <table>
+    <thead><tr><th style="width:44%">El dato solo</th><th style="width:56%">El dato con contexto</th></tr></thead>
+    <tbody>
+      <tr><td>El canal mide ochenta kilómetros.</td>
+          <td>El canal mide ochenta kilómetros. Antes de que existiera, un barco tenía que rodear
+              toda América del Sur.</td></tr>
+      <tr><td>Una mola lleva más de cien horas.</td>
+          <td>Una mola lleva más de cien horas, y no hay cómo pegar la tela otra vez si te
+              equivocas al cortar.</td></tr>
+    </tbody>
+  </table>
+  <div class="tip">La pregunta que abre el contexto es siempre la misma: <strong>¿y eso qué?</strong>
+  Hazte esa pregunta después de cada dato que escribas. Si no tienes respuesta, el dato sobra.</div>
+
+  <h2>Agrega el contexto</h2>
+  <div class="instr">Estos datos son de semanas pasadas. Agrégales una oración que explique por
+  qué importan.</div>
+  <ol class="q" style="font-size:.93rem">
+    <li>El café geisha se vende hasta en mil dólares la libra.
+      ${lines(1)}</li>
+    <li>En Guatemala se hablan veintidós idiomas mayas.
+      ${lines(1)}</li>
+  </ol>`,
+  'La Corresponsal · Semana 7', 'Página 1 de 11');
+
+const W7_P11 = sheet('Semana 7 · Cierre<br>Proyecto', `
+  ${namebar()}
+  <h1>¿Y eso qué?</h1>
+  <div class="sub">Cierre de la semana</div>
+
+  <div class="instr">Escoge una de las tres historias de Panamá. Vas a escribirla dos veces: una
+  sin contexto y otra con contexto. Después decides cuál publicarías.</div>
+
+  <h2>1 · Versión sin contexto</h2>
+  <div class="instr">Tres oraciones. Sólo los hechos, sin explicar por qué importan.</div>
+  ${lines(4)}
+
+  <h2>2 · Versión con contexto</h2>
+  <div class="instr">Las mismas tres ideas, pero después de cada una contesta «¿y eso qué?».</div>
+  ${lines(7)}
+
+  <h2>3 · ¿Cuál publicarías y por qué?</h2>
+  ${lines(2)}`,
+  'La Corresponsal · Semana 7', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 8 — Cuba. Skill: la estructura (what goes first).
+// ═════════════════════════════════════════════════════════════════════════════
+const W8_P1 = sheet('Semana 8 · Cuba<br>Portada', `
+  ${namebar(true)}
+  <h1>Octava semana: Cuba</h1>
+  <div class="sub">Motores, lechugas y tambores</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Dos meses de trabajo. Esta semana vas a Cuba, donde vas a encontrar la misma idea tres
+      veces: gente que hizo algo grande con lo que tenía a la mano. Un carro de 1957 que sigue
+      andando con motor de camión. Un basurero convertido en huerto. Una música que salió de
+      un portal y llegó a Nueva York.</p>
+      <p>La destreza de esta semana es el orden. No qué escribes: en qué orden lo pones.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: qué va primero</h2>
+  <div class="instr">Un periodista no cuenta las cosas en el orden en que pasaron. Las cuenta en
+  orden de importancia: lo más fuerte arriba, los detalles abajo. Se le llama pirámide invertida,
+  y existe por una razón práctica — mucha gente sólo lee el principio.</div>
+  <table>
+    <thead><tr><th style="width:26%">Orden</th><th style="width:74%">Qué va ahí</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1 · Lo más fuerte</strong></td><td>El hecho que haría que alguien se detenga a leer.</td></tr>
+      <tr><td><strong>2 · Quién y dónde</strong></td><td>La persona, el lugar, el dato que lo sostiene.</td></tr>
+      <tr><td><strong>3 · La cita</strong></td><td>La voz de la fuente, en sus palabras.</td></tr>
+      <tr><td><strong>4 · El detalle</strong></td><td>Lo que enriquece pero se puede cortar si falta espacio.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Ordena esta nota</h2>
+  <div class="instr">Estas cuatro oraciones están revueltas. Numéralas del 1 al 4 según la
+  pirámide invertida.</div>
+  <ol class="q" style="font-size:.93rem;list-style:none;margin-left:0">
+    <li>____ «Le estoy devolviendo al mar lo que le saqué», dice Bodden.</li>
+    <li>____ Wilmer Bodden pescó veintidós años en Roatán, igual que su padre y su abuelo.</li>
+    <li>____ Un grupo de pescadores cerró su propia zona de pesca — y al cuarto año volvieron los peces grandes.</li>
+    <li>____ Los viveristas cultivan pedazos de coral en estructuras de plástico bajo el agua.</li>
+  </ol>`,
+  'La Corresponsal · Semana 8', 'Página 1 de 11');
+
+const W8_P11 = sheet('Semana 8 · Cierre<br>Proyecto', `
+  ${namebar()}
+  <h1>Tu nota, en orden</h1>
+  <div class="sub">Cierre de la semana — y de dos meses</div>
+
+  <div class="instr">Escoge una historia de Cuba y ármala por partes antes de escribirla. Primero
+  el esqueleto, después la nota.</div>
+
+  <h2>1 · El esqueleto</h2>
+  <table>
+    <tbody>
+      <tr><td style="width:26%"><strong>1 · Lo más fuerte</strong></td><td class="blank" style="height:.42in"></td></tr>
+      <tr><td><strong>2 · Quién y dónde</strong></td><td class="blank" style="height:.42in"></td></tr>
+      <tr><td><strong>3 · La cita</strong></td><td class="blank" style="height:.42in"></td></tr>
+      <tr><td><strong>4 · El detalle</strong></td><td class="blank" style="height:.42in"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>2 · Ahora escríbela</h2>
+  <div class="instr">Sigue tu propio esqueleto, en ese orden. De 7 a 9 oraciones.</div>
+  ${lines(10)}
+
+  <h2>3 · La prueba del corte</h2>
+  <div class="instr">Tacha la última oración de tu nota. ¿Se sigue entendiendo? Si sí, la ordenaste
+  bien. Si no, algo importante quedó hasta el final.</div>
+  <table>
+    <tbody>
+      <tr><td style="width:44%"><strong>¿Se entiende sin la última oración?</strong></td>
+          <td class="blank" style="height:.3in"></td></tr>
+    </tbody>
+  </table>`,
+  'La Corresponsal · Semana 8', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
 //  PROJECTOR DECK — presentacion.html
 //  Built from the same NORMAS / FRASES / PASOS arrays as the paper packet.
 // ═════════════════════════════════════════════════════════════════════════════
@@ -1437,6 +1634,24 @@ const w6 = W6_P1
 writeFileSync(join(OUT, 'semana-6.html'),
   docHTML('Semana 6 — Costa Rica | La Corresponsal', w6, 'Imprimir las 11 páginas'), 'utf8');
 
+// Week 7: Panamá
+const w7 = W7_P1
+  + sessionPages(7, 1, 'Panamá_0', EX['Panamá_0'], [2, 3, 4],  11)
+  + sessionPages(7, 2, 'Panamá_1', EX['Panamá_1'], [5, 6, 7],  11)
+  + sessionPages(7, 3, 'Panamá_2', EX['Panamá_2'], [8, 9, 10], 11)
+  + W7_P11;
+writeFileSync(join(OUT, 'semana-7.html'),
+  docHTML('Semana 7 — Panamá | La Corresponsal', w7, 'Imprimir las 11 páginas'), 'utf8');
+
+// Week 8: Cuba
+const w8 = W8_P1
+  + sessionPages(8, 1, 'Cuba_0', EX['Cuba_0'], [2, 3, 4],  11)
+  + sessionPages(8, 2, 'Cuba_1', EX['Cuba_1'], [5, 6, 7],  11)
+  + sessionPages(8, 3, 'Cuba_2', EX['Cuba_2'], [8, 9, 10], 11)
+  + W8_P11;
+writeFileSync(join(OUT, 'semana-8.html'),
+  docHTML('Semana 8 — Cuba | La Corresponsal', w8, 'Imprimir las 11 páginas'), 'utf8');
+
 // ── Answer key, generated from the same data so it cannot drift ──────────────
 function keyFor(week, sessionNo, key) {
   const s = CONTENT[key];
@@ -1458,42 +1673,56 @@ const keyPages =
   ${keyFor(1, 1, 'México_0')}
   ${keyFor(1, 2, 'México_1')}
   ${keyFor(1, 3, 'México_2')}`,
-  'Clave · Semana 1', 'Página 1 de 7')
+  'Clave · Semana 1', 'Página 1 de 9')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 2: Guatemala</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(2, 1, 'Guatemala_0')}
   ${keyFor(2, 2, 'Guatemala_1')}
   ${keyFor(2, 3, 'Guatemala_2')}`,
-  'Clave · Semana 2', 'Página 2 de 7')
+  'Clave · Semana 2', 'Página 2 de 9')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 3: Honduras</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(3, 1, 'Honduras_0')}
   ${keyFor(3, 2, 'Honduras_1')}
   ${keyFor(3, 3, 'Honduras_2')}`,
-  'Clave · Semana 3', 'Página 3 de 7')
+  'Clave · Semana 3', 'Página 3 de 9')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 4: El Salvador</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(4, 1, 'El Salvador_0')}
   ${keyFor(4, 2, 'El Salvador_1')}
   ${keyFor(4, 3, 'El Salvador_2')}`,
-  'Clave · Semana 4', 'Página 4 de 7')
+  'Clave · Semana 4', 'Página 4 de 9')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 5: Nicaragua</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(5, 1, 'Nicaragua_0')}
   ${keyFor(5, 2, 'Nicaragua_1')}
   ${keyFor(5, 3, 'Nicaragua_2')}`,
-  'Clave · Semana 5', 'Página 5 de 7')
+  'Clave · Semana 5', 'Página 5 de 9')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 6: Costa Rica</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(6, 1, 'Costa Rica_0')}
   ${keyFor(6, 2, 'Costa Rica_1')}
   ${keyFor(6, 3, 'Costa Rica_2')}`,
-  'Clave · Semana 6', 'Página 6 de 7')
+  'Clave · Semana 6', 'Página 6 de 9')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 7: Panamá</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
+  ${keyFor(7, 1, 'Panamá_0')}
+  ${keyFor(7, 2, 'Panamá_1')}
+  ${keyFor(7, 3, 'Panamá_2')}`,
+  'Clave · Semana 7', 'Página 7 de 9')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 8: Cuba</h1>
+  <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
+  ${keyFor(8, 1, 'Cuba_0')}
+  ${keyFor(8, 2, 'Cuba_1')}
+  ${keyFor(8, 3, 'Cuba_2')}`,
+  'Clave · Semana 8', 'Página 8 de 9')
   + sheet('Rúbrica<br>Sólo para la maestra', `
   <h1>Rúbrica para la redacción</h1>
   <div class="sub">Sirve para las dos semanas y para el resto del año</div>
@@ -1554,7 +1783,7 @@ const keyPages =
   fuera del salón): lo que se califica es que la cita directa esté entre comillas y sin
   «arreglar», y que la versión indirecta cambie de verdad la persona del verbo. El contenido de
   la entrevista es de ellos; no lo califiques.</p>`,
-  'Rúbrica y notas', 'Página 7 de 7');
+  'Rúbrica y notas', 'Página 9 de 9');
 
 writeFileSync(join(OUT, 'claves.html'),
   docHTML('Clave de respuestas | La Corresponsal', keyPages, 'Imprimir la clave'), 'utf8');
@@ -1565,4 +1794,4 @@ console.log('semana-1.html     10 páginas');
 console.log('semana-2.html  11 páginas');
 console.log('semana-3.html  11 páginas');
 console.log('semana-4.html  11 páginas');
-console.log('semana-5.html  11 páginas');console.log('semana-6.html  11 páginas');console.log('claves.html     7 páginas');
+console.log('semana-5.html  11 páginas');console.log('semana-6.html  11 páginas');console.log('semana-7.html  11 páginas');console.log('semana-8.html  11 páginas');console.log('claves.html     9 páginas');
