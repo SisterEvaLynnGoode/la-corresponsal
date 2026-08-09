@@ -59,6 +59,8 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
   padding:.12rem .4rem;cursor:pointer;font-size:.78rem;color:var(--ink-lt);
   font-family:sans-serif;transition:background .15s}
 .tts:hover{background:var(--cream-dk)}
+/* while reading aloud, so a click that produced no sound is still visibly "on" */
+.tts.speaking{background:var(--terracotta);color:var(--white);border-color:var(--terracotta)}
 
 /* ── Game Header ── */
 .g-header{background:var(--terracotta);color:var(--white);padding:.5rem 1rem;
@@ -473,7 +475,7 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
           <div class="llegada-sub" id="ll-sub"></div>
           <div class="llegada-body" id="ll-body"></div>
           <div style="display:flex;gap:.75rem;justify-content:center">
-            <button class="tts" onclick="speak('ll-body')">🔊 Escuchar</button>
+            <button class="tts" onclick="speak('ll-body', this)">🔊 Escuchar</button>
             <button class="btn btn-primary" onclick="nextStep()">Continuar →</button>
           </div>
         </div>
@@ -485,7 +487,7 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
           <div class="sec-title">Nueva Asignación</div>
           <div class="bubble-from">✉️ La Editora</div>
           <div class="bubble" id="asig-bubble"></div>
-          <button class="tts" style="margin-bottom:1.25rem" onclick="speak('asig-bubble')">🔊 Escuchar</button>
+          <button class="tts" style="margin-bottom:1.25rem" onclick="speak('asig-bubble', this)">🔊 Escuchar</button>
           <div style="text-align:center">
             <button class="btn btn-primary" onclick="nextStep()">Aceptar la Asignación →</button>
           </div>
@@ -497,7 +499,7 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
         <div class="art-grid">
           <div>
             <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem">
-              <button class="tts" onclick="speak('art-body')">🔊 Escuchar artículo</button>
+              <button class="tts" onclick="speak('art-body', this)">🔊 Escuchar artículo</button>
             </div>
             <div class="art-headline" id="art-head"></div>
             <div class="art-byline" id="art-byl"></div>
@@ -8930,15 +8932,84 @@ function toast(msg) {
   toastTimer = setTimeout(() => el.classList.remove('show'), 2500);
 }
 
-function speak(id) {
+// Web Speech only works as well as the voices the OS ships. Windows has no
+// Spanish voice unless the language pack is installed, and setting lang='es-MX'
+// while leaving .voice null makes Chrome go silent — which reads to a student as
+// "the button is broken". So: always assign a real voice, prefer Spanish, and
+// say something out loud in the UI rather than failing quietly.
+// Spanish voices only. Falling back to an English voice would read the text with
+// English phonetics, which in a Spanish class teaches wrong pronunciation — worse
+// than staying quiet and saying why.
+function pickVoice() {
+  const vs = window.speechSynthesis.getVoices();
+  if (!vs.length) return undefined;                       // not loaded yet
+  return vs.find(v => /^es[-_]?MX/i.test(v.lang))         // Mexican Spanish
+      || vs.find(v => /^es[-_]?(US|419|LA)/i.test(v.lang))// LatAm Spanish
+      || vs.find(v => /^es/i.test(v.lang))                // any Spanish
+      || null;
+}
+
+// Chrome stops speaking after ~15s unless nudged; the article body is well over
+// that. This keepalive resumes it until the utterance actually ends.
+let speakKeepAlive = null;
+function stopSpeaking() {
+  if (speakKeepAlive) { clearInterval(speakKeepAlive); speakKeepAlive = null; }
+  window.speechSynthesis.cancel();
+  document.querySelectorAll('button.tts.speaking').forEach(b => b.classList.remove('speaking'));
+}
+
+function speak(id, btn) {
   const el = document.getElementById(id);
   if (!el) return;
-  window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(el.innerText || el.textContent);
-  u.lang = 'es-MX'; u.rate = 0.9;
-  const v = window.speechSynthesis.getVoices().find(x => x.lang.startsWith('es'));
-  if (v) u.voice = v;
-  window.speechSynthesis.speak(u);
+  const text = (el.innerText || el.textContent || '').trim();
+  if (!text) return;
+
+  // Second click stops, so a student can shut it up.
+  if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+    stopSpeaking();
+    return;
+  }
+
+  let started = false;
+  const start = () => {
+    if (started) return;   // voiceschanged and the timeout can both fire
+    started = true;
+    const voice = pickVoice();
+    if (!voice) {
+      toast('Esta computadora no tiene voz en español instalada.');
+      if (btn) btn.classList.remove('speaking');
+      return;
+    }
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.voice = voice;
+    u.lang  = voice.lang;   // must match the voice, or some platforms stay silent
+    u.rate  = 0.9;
+
+    if (btn) btn.classList.add('speaking');
+    u.onend = u.onerror = () => {
+      if (speakKeepAlive) { clearInterval(speakKeepAlive); speakKeepAlive = null; }
+      if (btn) btn.classList.remove('speaking');
+    };
+
+    window.speechSynthesis.cancel();
+    // cancel() immediately followed by speak() can drop the utterance in Chrome.
+    setTimeout(() => {
+      window.speechSynthesis.speak(u);
+      speakKeepAlive = setInterval(() => {
+        if (!window.speechSynthesis.speaking) { clearInterval(speakKeepAlive); speakKeepAlive = null; return; }
+        window.speechSynthesis.resume();
+      }, 10000);
+    }, 60);
+  };
+
+  // getVoices() is empty until the engine loads them; wait once, then proceed.
+  if (!window.speechSynthesis.getVoices().length) {
+    window.speechSynthesis.addEventListener('voiceschanged', start, {once: true});
+    setTimeout(start, 1000);   // some browsers never fire the event
+    return;
+  }
+  start();
 }
 
 function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
