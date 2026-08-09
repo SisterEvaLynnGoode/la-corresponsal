@@ -1,1 +1,4 @@
 .vercel
+
+# Local 128k originals — regenerable via generate-audio.mjs, kept out of the repo
+audio-128k-orig/
