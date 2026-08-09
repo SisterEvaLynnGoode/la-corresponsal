@@ -145,9 +145,9 @@ function sessionPages(week, sessionNo, key, extra, pageNos, totalPages) {
   <table>
     <tbody>
       <tr><td style="width:30%"><strong>Una frase suya, copiada palabra por palabra</strong></td>
-          <td class="blank" style="height:.46in"></td></tr>
+          <td class="blank" style="height:.3in"></td></tr>
       <tr><td><strong>La escogí porque…</strong></td>
-          <td class="blank" style="height:.34in"></td></tr>
+          <td class="blank" style="height:.22in"></td></tr>
     </tbody>
   </table>`,
     foot, p(2));
@@ -415,6 +415,71 @@ const EX = {
       <tr><td><strong>¿En qué idioma o idiomas?</strong></td><td class="blank"></td></tr>
       <tr><td><strong>Un aviso importante para mi gente</strong></td><td class="blank"></td></tr>
     </tbody>
+  </table>`,
+
+  'Honduras_0': `
+  <h2>Los sonidos de mi casa</h2>
+  <div class="instr">Para los garífunas, el tambor guarda el idioma. Piensa en los sonidos que
+  para ti significan «casa»: una canción, una voz, la tele prendida, una olla, una risa.</div>
+  <table>
+    <thead><tr><th style="width:44%">El sonido</th><th style="width:56%">Qué me hace sentir o recordar</th></tr></thead>
+    <tbody>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+    </tbody>
+  </table>`,
+
+  'Honduras_1': `
+  <h2>La decisión difícil</h2>
+  <div class="instr">Los pescadores votaron cerrar zonas a la pesca por varios años. Los primeros
+  años se pasó hambre. Ponte en los dos lados antes de opinar — eso hace un periodista.</div>
+  <table>
+    <thead><tr><th style="width:50%">A favor de cerrar la zona</th>
+      <th style="width:50%">En contra de cerrar la zona</th></tr></thead>
+    <tbody>
+      <tr><td class="blank" style="height:.5in"></td><td></td></tr>
+    </tbody>
+  </table>`,
+
+  'Honduras_2': `
+  <h2>Diseña tu glifo</h2>
+  <div class="instr">Los mayas escribían con símbolos, no con letras. Inventa un glifo que te
+  represente a ti o a tu familia, y explica qué significa cada parte.</div>
+  <div style="display:flex;gap:.7rem;align-items:stretch">
+    <div class="box" style="width:1.5in;height:1.15in;margin:.3rem 0 .5rem"></div>
+    <div style="flex:1">${lines(4)}</div>
+  </div>`,
+
+  'El Salvador_0': `
+  <h2>Los pasos, en orden</h2>
+  <div class="instr">Rosa Elena explica cómo se hace una pupusa. Escribe los pasos de una comida
+  que tú sepas hacer, usando estas palabras de orden.</div>
+  <div class="wordbank">primero &nbsp;·&nbsp; después &nbsp;·&nbsp; luego &nbsp;·&nbsp;
+    mientras &nbsp;·&nbsp; al final</div>
+  ${lines(4)}`,
+
+  'El Salvador_1': `
+  <h2>A pleno sol o bajo sombra</h2>
+  <div class="instr">El ingeniero y Silvia no estaban de acuerdo. Anota lo que gana y lo que
+  pierde cada forma de sembrar, según la nota.</div>
+  <table>
+    <thead><tr><th style="width:26%"></th><th style="width:37%">A pleno sol</th>
+      <th style="width:37%">Bajo sombra</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Produce…</strong></td><td class="blank"></td><td></td></tr>
+      <tr><td><strong>La tierra…</strong></td><td class="blank"></td><td></td></tr>
+    </tbody>
+  </table>`,
+
+  'El Salvador_2': `
+  <h2>Primero la escuela</h2>
+  <div class="instr">La regla del club es clara: si no pasas tus materias, no entras al agua.
+  Ponte una meta tuya para este mes y algo concreto que vas a hacer para lograrla.</div>
+  <table>
+    <tbody>
+      <tr><td style="width:30%"><strong>Mi meta de este mes</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Lo que voy a hacer cada semana</strong></td><td class="blank"></td></tr>
+    </tbody>
   </table>`
 };
 
@@ -503,6 +568,180 @@ const W2_P8 = sheet('Semana 2 · Cierre<br>Proyecto', `
   'La Corresponsal · Semana 2', 'Página 11 de 11');
 
 // ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 3 — Honduras. Skill of the week: quoting a source accurately.
+// ═════════════════════════════════════════════════════════════════════════════
+const W3_P1 = sheet('Semana 3 · Honduras<br>Portada', `
+  ${namebar(true)}
+  <h1>Tercera semana: Honduras</h1>
+  <div class="sub">El tambor, el arrecife y las piedras que hablan</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Llevas dos países y seis notas. Ya no eres pasante.</p>
+      <p>Esta semana vas a la costa caribeña de Honduras, después a una isla, y al final a una
+      ciudad maya de hace mil doscientos años. Tres historias sobre lo mismo desde ángulos
+      distintos: quién tiene derecho a contar una historia, y qué pasa cuando por fin la cuenta
+      la gente de ahí.</p>
+      <p>Te pido una cosa más esta semana. Vas a empezar a <strong>citar</strong>. Un periodista
+      que cambia lo que la gente dijo, aunque sea «para que suene mejor», deja de ser periodista.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: la cita</h2>
+  <div class="instr">Hay dos maneras de contar lo que alguien dijo. Las dos son correctas y se
+  usan todo el tiempo en un periódico.</div>
+  <table>
+    <thead><tr><th style="width:22%">Tipo</th><th style="width:78%">Ejemplo</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Cita directa</strong><br><span class="sans" style="font-size:.66rem;color:#5a5a5a">
+        sus palabras exactas, entre comillas</span></td>
+        <td>Teodoro dijo: <strong>«El tambor enseña el idioma.»</strong></td></tr>
+      <tr><td><strong>Cita indirecta</strong><br><span class="sans" style="font-size:.66rem;color:#5a5a5a">
+        lo mismo, contado por ti, sin comillas</span></td>
+        <td>Teodoro dijo <strong>que</strong> el tambor enseña el idioma.</td></tr>
+    </tbody>
+  </table>
+  <div class="tip">Fíjate en lo que cambia: se van las comillas, aparece la palabra
+  <strong>que</strong>, y a veces cambia la persona del verbo. <em>«Yo aprendí»</em> se vuelve
+  <em>dijo que él aprendió</em>.</div>
+
+  <h2>Practica con voces que ya conoces</h2>
+  <div class="instr">Pásalas de directa a indirecta. Empieza cada una con «Dijo que…».</div>
+  <ol class="q" style="font-size:.93rem">
+    <li>Doña Esperanza: «Los colores no los compramos en ninguna tienda.»
+      ${lines(1)}</li>
+    <li>Elena Chávez: «Mi cuerpo es parte del telar.»
+      ${lines(1)}</li>
+    <li>Ana Petzey: «El guaraní no es para conseguir trabajo.»
+      ${lines(1)}</li>
+  </ol>`,
+  'La Corresponsal · Semana 3', 'Página 1 de 11');
+
+const W3_P11 = sheet('Semana 3 · Cierre<br>Proyecto', `
+  ${namebar()}
+  <h1>Una entrevista de verdad</h1>
+  <div class="sub">Tarea de la semana — fuera del salón</div>
+
+  <div class="instr">Karla aprendió a leer las piedras de su propio pueblo. Esta semana te toca a
+  ti: entrevista a alguien de tu familia o de tu barrio y trae su historia al periódico.
+  Puede ser en español, en inglés o mezclando — pero la escribes en español.</div>
+
+  <table>
+    <tbody>
+      <tr><td style="width:32%"><strong>¿A quién entrevisté?</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>¿Qué relación tiene conmigo?</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>¿Dónde y cuándo hablamos?</strong></td><td class="blank"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Mis preguntas y sus respuestas</h2>
+  <div class="instr">Escribe al menos tres preguntas. Una tiene que ser de seguimiento, inventada
+  en el momento.</div>
+  <table>
+    <thead><tr><th style="width:40%">Pregunta</th><th style="width:60%">Lo que contestó</th></tr></thead>
+    <tbody>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+      <tr><td class="blank"></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Una cita directa</h2>
+  <div class="instr">Copia una frase suya <strong>exacta</strong>, entre comillas. Sin arreglarla.</div>
+  <div class="box" style="min-height:.5in"></div>
+
+  <h2>La misma idea, en cita indirecta</h2>
+  ${lines(2)}`,
+  'La Corresponsal · Semana 3', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
+//  WEEK 4 — El Salvador. Skill of the week: evidence over adjectives.
+// ═════════════════════════════════════════════════════════════════════════════
+const W4_P1 = sheet('Semana 4 · El Salvador<br>Portada', `
+  ${namebar(true)}
+  <h1>Cuarta semana: El Salvador</h1>
+  <div class="sub">Las manos que hacen el trabajo</div>
+
+  <div class="nota">
+    <div class="kicker">Nota de la jefa de redacción</div>
+    <div class="lectura" style="font-size:1rem">
+      <p>Última semana de esta primera etapa. Vas a El Salvador y las tres historias son sobre
+      trabajo: unas manos que hacen cuatrocientas pupusas al día, una mujer que decidió no cortar
+      sus árboles, y unas muchachas a las que les dijeron que el mar no era para ellas.</p>
+      <p>Y esta semana te pido precisión. «Muchas pupusas» no es información. «Cuatrocientas
+      pupusas al día» sí lo es. Un dato exacto convence más que diez adjetivos.</p>
+    </div>
+  </div>
+
+  <h2>Destreza de la semana: el dato</h2>
+  <div class="instr">Compara. Las dos oraciones dicen algo parecido, pero sólo una te hace creerlo.</div>
+  <table>
+    <thead><tr><th style="width:50%">Vago</th><th style="width:50%">Con dato</th></tr></thead>
+    <tbody>
+      <tr><td>Llegan muchísimas mariposas.</td>
+          <td>Llegan millones de mariposas después de volar más de cuatro mil kilómetros.</td></tr>
+      <tr><td>El huipil toma mucho tiempo.</td>
+          <td>Un huipil completo puede tomar tres meses.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Arregla estas oraciones</h2>
+  <div class="instr">Todas son verdad, pero ninguna convence. Reescríbelas con el dato exacto que
+  ya leíste en las semanas pasadas. Si no te acuerdas, búscalo en tus hojas.</div>
+  <ol class="q" style="font-size:.93rem">
+    <li>El mercado de Oaxaca es muy viejo.
+      ${lines(1)}</li>
+    <li>En Guatemala se hablan varios idiomas mayas.
+      ${lines(1)}</li>
+    <li>Muchos pueblos rodean el lago Atitlán.
+      ${lines(1)}</li>
+  </ol>
+
+  <div class="tip">Ojo: inventar un dato es peor que no ponerlo. Si no lo sabes, escribe
+  «no aparece» y sigue. Eso también es honestidad periodística.</div>`,
+  'La Corresponsal · Semana 4', 'Página 1 de 11');
+
+const W4_P11 = sheet('Semana 4 · Cierre<br>Proyecto final', `
+  ${namebar()}
+  <h1>Tu portada del mes</h1>
+  <div class="sub">Cierre de las cuatro semanas</div>
+
+  <div class="instr">Cuatro países, doce notas, doce personas entrevistadas. Ahora eres tú quien
+  decide qué va en la portada del mes.</div>
+
+  <h2>1 · La decisión</h2>
+  <table>
+    <tbody>
+      <tr><td style="width:32%"><strong>La historia que elijo</strong></td><td class="blank"></td></tr>
+      <tr><td><strong>Por qué merece la portada</strong></td><td class="blank" style="height:.45in"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>2 · El titular</h2>
+  <div class="instr">Tres versiones. Encierra la mejor.</div>
+  ${lines(3)}
+
+  <h2>3 · Tu nota</h2>
+  <div class="instr">De 6 a 8 oraciones. Tiene que llevar, sin falta: <strong>una cita directa</strong>
+  entre comillas (semana 3) y <strong>un dato exacto</strong> con número (semana 4).</div>
+  ${lines(9)}
+
+  <h2>4 · Lo que ya puedo hacer</h2>
+  <table>
+    <thead><tr><th style="width:58%">Ahora puedo…</th><th style="width:14%">Sí</th>
+      <th style="width:14%">Casi</th><th style="width:14%">Aún no</th></tr></thead>
+    <tbody>
+      <tr><td>Leer una nota en español y entender lo principal</td><td></td><td></td><td></td></tr>
+      <tr><td>Sacar un dato exacto de un texto</td><td></td><td></td><td></td></tr>
+      <tr><td>Citar a alguien sin cambiar lo que dijo</td><td></td><td></td><td></td></tr>
+      <tr><td>Entrevistar y hacer una pregunta de seguimiento</td><td></td><td></td><td></td></tr>
+      <tr><td>Explicar por qué una historia importa</td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>`,
+  'La Corresponsal · Semana 4', 'Página 11 de 11');
+
+// ═════════════════════════════════════════════════════════════════════════════
 //  Assemble
 // ═════════════════════════════════════════════════════════════════════════════
 function docHTML(title, pages, printLabel) {
@@ -543,6 +782,24 @@ const w2 = W2_P1
 writeFileSync(join(OUT, 'semana-2.html'),
   docHTML('Semana 2 — Guatemala | La Corresponsal', w2, 'Imprimir las 11 páginas'), 'utf8');
 
+// Week 3: portada + 3 sessions x 3 pages + proyecto = 11
+const w3 = W3_P1
+  + sessionPages(3, 1, 'Honduras_0', EX['Honduras_0'], [2, 3, 4],  11)
+  + sessionPages(3, 2, 'Honduras_1', EX['Honduras_1'], [5, 6, 7],  11)
+  + sessionPages(3, 3, 'Honduras_2', EX['Honduras_2'], [8, 9, 10], 11)
+  + W3_P11;
+writeFileSync(join(OUT, 'semana-3.html'),
+  docHTML('Semana 3 — Honduras | La Corresponsal', w3, 'Imprimir las 11 páginas'), 'utf8');
+
+// Week 4: portada + 3 sessions x 3 pages + proyecto final = 11
+const w4 = W4_P1
+  + sessionPages(4, 1, 'El Salvador_0', EX['El Salvador_0'], [2, 3, 4],  11)
+  + sessionPages(4, 2, 'El Salvador_1', EX['El Salvador_1'], [5, 6, 7],  11)
+  + sessionPages(4, 3, 'El Salvador_2', EX['El Salvador_2'], [8, 9, 10], 11)
+  + W4_P11;
+writeFileSync(join(OUT, 'semana-4.html'),
+  docHTML('Semana 4 — El Salvador | La Corresponsal', w4, 'Imprimir las 11 páginas'), 'utf8');
+
 // ── Answer key, generated from the same data so it cannot drift ──────────────
 function keyFor(week, sessionNo, key) {
   const s = CONTENT[key];
@@ -566,13 +823,25 @@ const keyPages =
   ${keyFor(1, 1, 'México_0')}
   ${keyFor(1, 2, 'México_1')}
   ${keyFor(1, 3, 'México_2')}`,
-  'Clave · Semana 1', 'Página 1 de 3')
+  'Clave · Semana 1', 'Página 1 de 5')
   + sheet('Clave de respuestas<br>Sólo para la maestra', `
   <h1>Clave — Semana 2: Guatemala</h1>
   ${keyFor(2, 1, 'Guatemala_0')}
   ${keyFor(2, 2, 'Guatemala_1')}
   ${keyFor(2, 3, 'Guatemala_2')}`,
-  'Clave · Semana 2', 'Página 2 de 3')
+  'Clave · Semana 2', 'Página 2 de 5')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 3: Honduras</h1>
+  ${keyFor(3, 1, 'Honduras_0')}
+  ${keyFor(3, 2, 'Honduras_1')}
+  ${keyFor(3, 3, 'Honduras_2')}`,
+  'Clave · Semana 3', 'Página 3 de 5')
+  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  <h1>Clave — Semana 4: El Salvador</h1>
+  ${keyFor(4, 1, 'El Salvador_0')}
+  ${keyFor(4, 2, 'El Salvador_1')}
+  ${keyFor(4, 3, 'El Salvador_2')}`,
+  'Clave · Semana 4', 'Página 4 de 5')
   + sheet('Rúbrica<br>Sólo para la maestra', `
   <h1>Rúbrica para la redacción</h1>
   <div class="sub">Sirve para las dos semanas y para el resto del año</div>
@@ -608,12 +877,38 @@ const keyPages =
       Léela: te dice quién habla qué en casa y qué variedad trae cada estudiante.</li>
     <li><strong>Credencial (p. 4):</strong> acepta nombres de pluma. Un estudiante que no quiere
       usar su nombre real muchas veces está probando si aquí puede tener una voz distinta.</li>
-  </ul>`,
-  'Rúbrica y notas', 'Página 3 de 3');
+  </ul>
+
+  <h2>Destrezas de las semanas 3 y 4</h2>
+  <p><strong>Semana 3 — la cita.</strong> Las tres conversiones de la portada:</p>
+  <ol style="font-size:.84rem">
+    <li><span class="ans">Dijo que los colores no los compran en ninguna tienda.</span></li>
+    <li><span class="ans">Dijo que su cuerpo es parte del telar.</span></li>
+    <li><span class="ans">Dijo que el guaraní no es para conseguir trabajo.</span></li>
+  </ol>
+  <p class="open" style="font-size:.84rem">Acepta variantes razonables. Lo que se evalúa es que
+  desaparezcan las comillas, aparezca «que» y cambie la persona («mi cuerpo» → «su cuerpo»).</p>
+
+  <p><strong>Semana 4 — el dato.</strong> Las tres oraciones vagas:</p>
+  <ol style="font-size:.84rem">
+    <li><span class="ans">El mercado Benito Juárez lleva más de quinientos años en el mismo sitio.</span></li>
+    <li><span class="ans">En Guatemala se hablan veintidós idiomas mayas.</span></li>
+    <li><span class="ans">Doce pueblos rodean el lago Atitlán.</span></li>
+  </ol>
+  <p class="open" style="font-size:.84rem">Los datos están en las hojas de las semanas 1 y 2.
+  Que las busquen es parte del ejercicio.</p>
+
+  <p class="open" style="font-size:.84rem"><strong>Proyecto de la semana 3</strong> (entrevista
+  fuera del salón): lo que se califica es que la cita directa esté entre comillas y sin
+  «arreglar», y que la versión indirecta cambie de verdad la persona del verbo. El contenido de
+  la entrevista es de ellos; no lo califiques.</p>`,
+  'Rúbrica y notas', 'Página 5 de 5');
 
 writeFileSync(join(OUT, 'claves.html'),
   docHTML('Clave de respuestas | La Corresponsal', keyPages, 'Imprimir la clave'), 'utf8');
 
 console.log('semana-1.html  13 páginas');
 console.log('semana-2.html  11 páginas');
-console.log('claves.html     3 páginas');
+console.log('semana-3.html  11 páginas');
+console.log('semana-4.html  11 páginas');
+console.log('claves.html     5 páginas');
