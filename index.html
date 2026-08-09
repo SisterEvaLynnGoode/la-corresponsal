@@ -402,7 +402,17 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
         <input id="inp-name" type="text" placeholder="Escribe tu nombre…" maxlength="40"
                onkeydown="if(event.key==='Enter')startGame()">
       </div>
-      <button class="btn btn-primary" onclick="startGame()">🗞️ Comenzar la Aventura</button>
+      <div class="fgroup">
+        <label>Código de clase <span style="font-weight:400;text-transform:none;opacity:.7">(opcional)</span></label>
+        <input id="inp-class" type="text" placeholder="Ej: KRT4M9" maxlength="8"
+               style="text-transform:uppercase;letter-spacing:2px"
+               onkeydown="if(event.key==='Enter')startGame()">
+        <div class="hint">Tu maestra te lo da. Con el código, tu progreso se guarda
+          aunque cambies de Chromebook. Sin código también puedes jugar.</div>
+      </div>
+      <div id="setup-err" style="display:none;color:var(--deep-red);font-family:sans-serif;
+           font-size:.8rem;margin-bottom:.6rem"></div>
+      <button class="btn btn-primary" id="btn-start" onclick="startGame()">🗞️ Comenzar la Aventura</button>
     </div>
 
     <div id="restore-area" style="margin-top:1rem;border-top:1px solid var(--cream-dk);padding-top:1rem;display:none">
@@ -418,7 +428,9 @@ body{font-family:Georgia,serif;background:var(--cream-dk);color:var(--ink);min-h
     </div>
 
     <div style="margin-top:.85rem;text-align:center;font-family:sans-serif;font-size:.78rem;color:var(--ink-lt)">
-      ¿Maestra? <a href="#" onclick="promptTeacher()" style="color:var(--terracotta)">Acceso docente</a>
+      ¿Maestra? <a href="maestra.html" style="color:var(--terracotta);font-weight:600">Panel y hojas de trabajo</a>
+      &nbsp;·&nbsp;
+      <a href="#" onclick="promptTeacher()" style="color:var(--ink-lt)">Herramientas</a>
       &nbsp;·&nbsp;
       <a href="#" onclick="document.getElementById('restore-area').style.display='block'" style="color:var(--ink-lt)">Restaurar progreso</a>
     </div>
@@ -8854,7 +8866,11 @@ const DEFAULTS = {
   cachedContent:{},
   audioPlayed:false,
   lecSubmitted:false, escSubmitted:false, sessionPublished:false,
-  sessionXP:0
+  sessionXP:0,
+  // Class sync — all null/blank when playing offline without a class code
+  classCode:'', className:'', studentId:null,
+  // Per-session scores, kept so the teacher dashboard can show them
+  lecScore:null, lecTotal:null, escScore:null, escTotal:null, lastArticle:''
 };
 
 let S = {...DEFAULTS};
@@ -8864,6 +8880,47 @@ let audioSpeaking = false;
 // ─────────────────────────────────────────────────────────────────────────────
 // PERSISTENCE
 // ─────────────────────────────────────────────────────────────────────────────
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CLASS SYNC (optional)
+// Students who enter a class code get their progress mirrored to Supabase so the
+// teacher dashboard can see it. Without a code the game is unchanged and fully
+// offline. Every call here is best-effort: a network failure must never block a
+// student mid-lesson, so nothing awaits these and nothing throws.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const SB_URL = 'https://tgstiwubcqmvvscutgzh.supabase.co';
+const SB_KEY = 'sb_publishable_ev5ihc3udMpcSGBUfeRBEw_Bmz3de5g';
+
+async function lcRpc(fn, args) {
+  const res = await fetch(`${SB_URL}/rest/v1/rpc/${fn}`, {
+    method: 'POST',
+    headers: {'Content-Type':'application/json', 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}`},
+    body: JSON.stringify(args || {})
+  });
+  const body = await res.json().catch(() => null);
+  if (!res.ok) throw new Error((body && (body.message || body.hint)) || `Error ${res.status}`);
+  return body;
+}
+
+// Mirror the current session upward. Silent on failure by design.
+function syncProgress() {
+  if (!S.studentId) return;
+  lcRpc('lc_save_progress', {
+    p_student_id:    S.studentId,
+    p_country_index: S.currentCountry,
+    p_session_index: S.currentSession,
+    p_country_name:  COUNTRIES[S.currentCountry].name,
+    p_lectura_score: S.lecScore, p_lectura_total: S.lecTotal,
+    p_escucha_score: S.escScore, p_escucha_total: S.escTotal,
+    p_article_text:  S.lastArticle || '',
+    p_xp_earned:     S.sessionXP,
+    p_total_xp:      S.xp,
+    p_cur_country:   S.currentCountry,
+    p_cur_session:   S.currentSession,
+    p_cur_step:      S.currentStep
+  }).catch(() => { /* offline or server down — localStorage still has everything */ });
+}
 
 function save() {
   localStorage.setItem('lc_state', JSON.stringify(S));
@@ -9084,7 +9141,11 @@ function renderStepBar() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function showStep(n) {
-  S.currentStep = n;
+  // Clamp: the auto-advance timers in submitLectura/submitEscucha can fire after
+  // the student has already moved on, which would otherwise index past the last
+  // step and blank the screen.
+  S.currentStep = Math.max(0, Math.min(n, STEP_IDS.length - 1));
+  n = S.currentStep;
   STEP_IDS.forEach((id, i) => {
     document.getElementById('step-' + id).classList.toggle('active', i === n);
   });
@@ -9414,7 +9475,9 @@ function submitLectura() {
   const xp = 20 + (score === total && total > 0 ? 10 : 0);
   addXP(xp);
   S.lecSubmitted = true;
+  S.lecScore = score; S.lecTotal = total;
   save();
+  syncProgress();
   document.getElementById('btn-lec').disabled = true;
   document.getElementById('btn-lec').textContent = `✓ Entregado (${score}/${total})`;
   setTimeout(nextStep, 1400);
@@ -9682,7 +9745,9 @@ function submitEscucha() {
   const xp = 20 + (score === total && total > 0 ? 10 : 0);
   addXP(xp);
   S.escSubmitted = true;
+  S.escScore = score; S.escTotal = total;
   save();
+  syncProgress();
   document.getElementById('btn-esc').disabled = true;
   document.getElementById('btn-esc').textContent = `✓ Entregado (${score}/${total})`;
   setTimeout(nextStep, 1400);
@@ -9766,11 +9831,13 @@ function publicar() {
 
   addXP(30);
   S.sessionPublished = true;
+  S.lastArticle = txt;
   save();
 
   document.getElementById('xp-award').textContent = `+${S.sessionXP} XP esta sesión`;
   fillClipping(art.headline, S.studentName, ctry.name, today, txt);
   showStep(5);
+  syncProgress();   // after showStep, so the dashboard reports Publicación not Redacción
 }
 
 function fillClipping(headline, byline, country, date, body) {
@@ -9816,6 +9883,9 @@ function advanceSession() {
   S.escSubmitted = false;
   S.sessionPublished = false;
   S.sessionXP = 0;
+  S.lecScore = null; S.lecTotal = null;
+  S.escScore = null; S.escTotal = null;
+  S.lastArticle = '';
   content = null;
 
   save();
@@ -9932,8 +10002,35 @@ function startGame() {
   // No API key needed: all 60 sessions ship baked into FALLBACK. The key lives
   // only in the teacher panel, for regenerating content.
   S.studentName = name;
-  save();
-  enterGame();
+
+  const code = (document.getElementById('inp-class').value || '').trim().toUpperCase();
+  if (!code) { save(); enterGame(); return; }   // offline play, unchanged
+
+  const btn = document.getElementById('btn-start');
+  const err = document.getElementById('setup-err');
+  btn.disabled = true; btn.textContent = 'Conectando…'; err.style.display = 'none';
+
+  lcRpc('lc_join_class', {p_join_code: code, p_name: name})
+    .then(rows => {
+      const r = Array.isArray(rows) ? rows[0] : rows;
+      if (!r) throw new Error('Código de clase no encontrado');
+      S.classCode = code;
+      S.className = r.class_name;
+      S.studentId = r.student_id;
+      // Resume wherever the server last saw them — this is what makes a
+      // different Chromebook pick up where they left off.
+      if (r.total_xp    > S.xp)             S.xp             = r.total_xp;
+      if (r.cur_country > S.currentCountry) S.currentCountry = r.cur_country;
+      else if (r.cur_country === S.currentCountry && r.cur_session > S.currentSession)
+                                            S.currentSession = r.cur_session;
+      save();
+      enterGame();
+    })
+    .catch(e => {
+      err.textContent = e.message + '. Revisa el código, o entra sin código.';
+      err.style.display = 'block';
+    })
+    .finally(() => { btn.disabled = false; btn.textContent = '🗞️ Comenzar la Aventura'; });
 }
 
 function enterGame() {

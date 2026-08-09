@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de la Maestra — La Corresponsal</title>
+<style>
+:root {
+  --terracotta:#C4622D; --terra-lt:#E8956D;
+  --cream:#FDF5E6; --cream-dk:#F0E6D0;
+  --green:#2D5A27; --green-lt:#4A7C43;
+  --gold:#C9A227; --gold-lt:#E8C547;
+  --ink:#2C1810; --ink-lt:#6B4C3B;
+  --red:#8B1A1A;
+  --white:#fff; --shadow:rgba(0,0,0,.15);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;
+  line-height:1.5;min-height:100vh}
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+
+header{background:var(--terracotta);color:var(--white);padding:.7rem 1.2rem;
+  display:flex;align-items:center;gap:1rem;flex-wrap:wrap;box-shadow:0 2px 8px var(--shadow)}
+header h1{font-style:italic;font-size:1.15rem;font-weight:700;white-space:nowrap}
+header .sub{font-family:sans-serif;font-size:.72rem;opacity:.9;text-transform:uppercase;letter-spacing:1.5px}
+header .spacer{flex:1}
+.wrap{max-width:1180px;margin:0 auto;padding:1.2rem}
+
+.card{background:var(--white);border:1px solid var(--cream-dk);border-radius:8px;
+  padding:1.3rem;margin-bottom:1.2rem;box-shadow:0 1px 4px var(--shadow)}
+h2{font-size:1.15rem;margin-bottom:.2rem}
+.muted{color:var(--ink-lt);font-family:sans-serif;font-size:.82rem}
+
+label{display:block;font-family:sans-serif;font-size:.7rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:1.2px;color:var(--ink-lt);margin-bottom:.3rem}
+input[type=text]{width:100%;padding:.55rem .8rem;border:2px solid var(--cream-dk);
+  border-radius:6px;font-size:.95rem;font-family:sans-serif;background:var(--white);color:var(--ink)}
+input[type=text]:focus{outline:none;border-color:var(--terracotta)}
+.btn{background:var(--terracotta);color:var(--white);border:none;border-radius:6px;
+  padding:.55rem 1.1rem;font-family:sans-serif;font-size:.85rem;font-weight:600;cursor:pointer}
+.btn:hover{background:#a8511f}
+.btn:disabled{opacity:.5;cursor:default}
+.btn.ghost{background:none;color:var(--terracotta);border:1px solid var(--terracotta)}
+.btn.ghost:hover{background:var(--cream)}
+.btn.sm{padding:.3rem .7rem;font-size:.76rem}
+.row{display:flex;gap:.7rem;flex-wrap:wrap;align-items:flex-end}
+
+.tabs{display:flex;gap:.4rem;margin-bottom:1.1rem;flex-wrap:wrap}
+.tab{background:none;border:1px solid var(--cream-dk);border-radius:999px;padding:.4rem 1rem;
+  font-family:sans-serif;font-size:.83rem;cursor:pointer;color:var(--ink-lt)}
+.tab.on{background:var(--ink);color:var(--white);border-color:var(--ink)}
+
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{text-align:left;font-family:sans-serif;font-size:.66rem;text-transform:uppercase;
+  letter-spacing:1.2px;color:var(--ink-lt);border-bottom:2px solid var(--cream-dk);
+  padding:.5rem .55rem;white-space:nowrap}
+td{padding:.5rem .55rem;border-bottom:1px solid var(--cream-dk);vertical-align:middle}
+tr:hover td{background:var(--cream)}
+.name{font-weight:700;cursor:pointer}
+.name:hover{color:var(--terracotta);text-decoration:underline}
+.tnum{font-variant-numeric:tabular-nums}
+
+.pill{display:inline-block;padding:.13rem .5rem;border-radius:999px;font-family:sans-serif;
+  font-size:.72rem;font-weight:700}
+.pill.good{background:#E4EFE1;color:var(--green)}
+.pill.mid{background:#FBF0D2;color:#8A6D08}
+.pill.low{background:#F7E0E0;color:var(--red)}
+.pill.none{background:var(--cream-dk);color:var(--ink-lt)}
+
+.bar{height:6px;background:var(--cream-dk);border-radius:999px;overflow:hidden;min-width:64px}
+.bar>span{display:block;height:100%;background:var(--green-lt)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.8rem;margin-bottom:1.1rem}
+.stat{background:var(--white);border:1px solid var(--cream-dk);border-radius:8px;padding:.8rem 1rem}
+.stat .n{font-size:1.6rem;font-weight:700;line-height:1.1}
+.stat .l{font-family:sans-serif;font-size:.68rem;text-transform:uppercase;
+  letter-spacing:1.2px;color:var(--ink-lt);margin-top:.15rem}
+
+.codebox{background:var(--ink);color:var(--gold-lt);font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:1.5rem;letter-spacing:5px;padding:.7rem 1.1rem;border-radius:6px;
+  display:inline-block;font-weight:700}
+.err{background:#F7E0E0;color:var(--red);border-left:3px solid var(--red);
+  padding:.6rem .9rem;border-radius:4px;font-family:sans-serif;font-size:.85rem;margin-bottom:.8rem}
+.ok{background:#E4EFE1;color:var(--green);border-left:3px solid var(--green);
+  padding:.6rem .9rem;border-radius:4px;font-family:sans-serif;font-size:.85rem;margin-bottom:.8rem}
+
+dialog{border:none;border-radius:10px;padding:0;max-width:760px;width:94%;
+  box-shadow:0 12px 40px rgba(0,0,0,.3);background:var(--white);color:var(--ink)}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+.dlg-head{background:var(--ink);color:var(--white);padding:.9rem 1.2rem;
+  display:flex;align-items:center;justify-content:space-between}
+.dlg-body{padding:1.2rem;max-height:70vh;overflow:auto}
+.art{background:var(--cream);border-left:3px solid var(--terracotta);padding:.8rem 1rem;
+  border-radius:4px;margin:.5rem 0 1.1rem;white-space:pre-wrap}
+
+.ws{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.ws a{display:block;background:var(--white);border:1px solid var(--cream-dk);border-radius:8px;
+  padding:1rem 1.1rem;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.ws a:hover{border-color:var(--terracotta)}
+.ws .wk{font-family:sans-serif;font-size:.66rem;text-transform:uppercase;letter-spacing:1.5px;
+  color:var(--terracotta);font-weight:700}
+.ws .ti{font-size:1.02rem;font-weight:700;margin:.15rem 0 .3rem}
+
+@media (max-width:640px){
+  .hide-sm{display:none}
+  .wrap{padding:.8rem}
+  header h1{font-size:1rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>El Mundo Nuestro</h1>
+  <span class="sub">Panel de la Maestra</span>
+  <span class="spacer"></span>
+  <span class="sub" id="hdr-class"></span>
+  <button class="btn ghost sm" id="btn-logout" style="display:none" onclick="logout()">Salir</button>
+</header>
+
+<div class="wrap">
+
+  <!-- ── Sign in ─────────────────────────────────────────────────────────── -->
+  <div id="view-login">
+    <div class="card">
+      <h2>Ver mi clase</h2>
+      <p class="muted" style="margin-bottom:.9rem">
+        Escribe tu código de maestra. Es distinto del código que usan los estudiantes.
+      </p>
+      <div id="login-err"></div>
+      <div class="row">
+        <div style="flex:1;min-width:210px">
+          <label>Código de maestra</label>
+          <input type="text" id="inp-report" placeholder="Ej: CGUG29BU" maxlength="8"
+                 style="text-transform:uppercase;letter-spacing:3px"
+                 onkeydown="if(event.key==='Enter')login()">
+        </div>
+        <button class="btn" id="btn-login" onclick="login()">Entrar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Crear una clase nueva</h2>
+      <p class="muted" style="margin-bottom:.9rem">
+        Se generan dos códigos: uno para los estudiantes y otro sólo para ti.
+      </p>
+      <div id="create-out"></div>
+      <div class="row">
+        <div style="flex:1;min-width:210px">
+          <label>Nombre de la clase</label>
+          <input type="text" id="inp-classname" placeholder="Ej: Período 3 — SSS" maxlength="60"
+                 onkeydown="if(event.key==='Enter')createClass()">
+        </div>
+        <button class="btn ghost" id="btn-create" onclick="createClass()">Crear</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Hojas de trabajo</h2>
+      <p class="muted" style="margin-bottom:.9rem">No necesitas código para imprimirlas.</p>
+      <div class="ws" id="ws-list-public"></div>
+    </div>
+  </div>
+
+  <!-- ── Dashboard ───────────────────────────────────────────────────────── -->
+  <div id="view-dash" style="display:none">
+    <div class="tabs">
+      <button class="tab on" data-tab="roster"  onclick="showTab('roster')">👥 Estudiantes</button>
+      <button class="tab"    data-tab="work"    onclick="showTab('work')">📝 Redacciones</button>
+      <button class="tab"    data-tab="sheets"  onclick="showTab('sheets')">🖨️ Hojas de trabajo</button>
+      <button class="tab"    data-tab="codes"   onclick="showTab('codes')">🔑 Códigos</button>
+      <span style="flex:1"></span>
+      <button class="tab" onclick="refresh()" title="Actualizar">🔄</button>
+    </div>
+
+    <div id="tab-roster">
+      <div class="stats" id="stats"></div>
+      <div class="card">
+        <div class="row" style="justify-content:space-between;margin-bottom:.7rem">
+          <h2 style="margin:0">Progreso de estudiantes</h2>
+          <button class="btn ghost sm" onclick="exportCsv()">⬇ Exportar CSV</button>
+        </div>
+        <div id="roster"></div>
+      </div>
+    </div>
+
+    <div id="tab-work" style="display:none">
+      <div class="card">
+        <h2>Redacciones publicadas</h2>
+        <p class="muted" style="margin-bottom:.9rem">Lo que escribieron en el paso de Redacción.</p>
+        <div id="works"></div>
+      </div>
+    </div>
+
+    <div id="tab-sheets" style="display:none">
+      <div class="card">
+        <h2>Hojas de trabajo imprimibles</h2>
+        <p class="muted" style="margin-bottom:.9rem">
+          Se abren listas para imprimir. Una página por sesión, más la clave de respuestas.
+        </p>
+        <div class="ws" id="ws-list"></div>
+      </div>
+    </div>
+
+    <div id="tab-codes" style="display:none">
+      <div class="card">
+        <h2>Código para estudiantes</h2>
+        <p class="muted" style="margin-bottom:.7rem">
+          Escríbelo en el pizarrón. Lo escriben al empezar, y así su progreso los sigue
+          aunque cambien de Chromebook.
+        </p>
+        <div class="codebox" id="code-join">------</div>
+        <p class="muted" style="margin-top:1.2rem">
+          Tu código de maestra (no lo compartas con la clase):
+        </p>
+        <div class="codebox" style="font-size:1.1rem;background:var(--ink-lt)" id="code-report">--------</div>
+        <p class="muted" style="margin-top:1rem">
+          Guarda esta página en favoritos para entrar sin escribir el código:
+        </p>
+        <div class="muted" style="word-break:break-all" id="bookmark-url"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<dialog id="dlg">
+  <div class="dlg-head">
+    <strong id="dlg-title" class="sans"></strong>
+    <button class="btn ghost sm" style="color:#fff;border-color:#fff" onclick="dlg.close()">Cerrar</button>
+  </div>
+  <div class="dlg-body" id="dlg-body"></div>
+</dialog>
+
+<script>
+const SB_URL = 'https://tgstiwubcqmvvscutgzh.supabase.co';
+const SB_KEY = 'sb_publishable_ev5ihc3udMpcSGBUfeRBEw_Bmz3de5g';
+
+const COUNTRIES = ['México','Guatemala','Honduras','El Salvador','Nicaragua','Costa Rica',
+  'Panamá','Cuba','República Dominicana','Puerto Rico','Colombia','Venezuela','Ecuador',
+  'Perú','Bolivia','Chile','Argentina','Uruguay','Paraguay','España'];
+const STEPS = ['Llegada','Asignación','Lectura','Escucha','Redacción','Publicación'];
+
+const WORKSHEETS = [
+  {wk:'Semana 1', file:'hojas/semana-1.html', title:'México', desc:'Mercados de Oaxaca · Mariposas monarca · Murales de la CDMX'},
+  {wk:'Semana 2', file:'hojas/semana-2.html', title:'Guatemala', desc:'Tejidos de Chichicastenango · Lago Atitlán · Radios comunitarias'},
+  {wk:'Claves',   file:'hojas/claves.html',   title:'Respuestas', desc:'Clave de respuestas para las dos semanas'}
+];
+
+let REPORT = '', ROSTER = [], SESSIONS = [], CLASSNAME = '', JOINCODE = '';
+const dlg = document.getElementById('dlg');
+const $ = id => document.getElementById(id);
+
+async function rpc(fn, args) {
+  const res = await fetch(`${SB_URL}/rest/v1/rpc/${fn}`, {
+    method:'POST',
+    headers:{'Content-Type':'application/json','apikey':SB_KEY,'Authorization':`Bearer ${SB_KEY}`},
+    body: JSON.stringify(args || {})
+  });
+  const body = await res.json().catch(() => null);
+  if (!res.ok) throw new Error((body && (body.message || body.hint)) || `Error ${res.status}`);
+  return body;
+}
+
+// ── Worksheet cards ───────────────────────────────────────────────────────────
+function renderSheets(el) {
+  el.innerHTML = WORKSHEETS.map(w => `
+    <a href="${w.file}" target="_blank" rel="noopener">
+      <div class="wk">${w.wk}</div>
+      <div class="ti">${w.title}</div>
+      <div class="muted">${w.desc}</div>
+    </a>`).join('');
+}
+
+// ── Auth ──────────────────────────────────────────────────────────────────────
+async function login(code) {
+  const c = (code || $('inp-report').value || '').trim().toUpperCase();
+  if (!c) return;
+  $('btn-login').disabled = true;
+  $('login-err').innerHTML = '';
+  try {
+    await loadData(c);
+    REPORT = c;
+    localStorage.setItem('lc_report_code', c);
+    // Put the code in the URL so bookmarking works, without a page reload.
+    history.replaceState(null, '', '?c=' + c);
+    $('view-login').style.display = 'none';
+    $('view-dash').style.display  = '';
+    $('btn-logout').style.display = '';
+    render();
+  } catch (e) {
+    $('login-err').innerHTML = `<div class="err">${e.message}</div>`;
+  } finally {
+    $('btn-login').disabled = false;
+  }
+}
+
+function logout() {
+  localStorage.removeItem('lc_report_code');
+  history.replaceState(null, '', location.pathname);
+  location.reload();
+}
+
+async function createClass() {
+  const name = ($('inp-classname').value || '').trim();
+  if (!name) return;
+  $('btn-create').disabled = true;
+  try {
+    const rows = await rpc('lc_create_class', {p_name: name});
+    const r = Array.isArray(rows) ? rows[0] : rows;
+    $('create-out').innerHTML = `
+      <div class="ok">
+        Clase <strong>${esc(name)}</strong> creada.<br><br>
+        Código para estudiantes: <strong style="font-size:1.15rem;letter-spacing:2px">${r.join_code}</strong><br>
+        Tu código de maestra: <strong style="font-size:1.15rem;letter-spacing:2px">${r.report_code}</strong><br><br>
+        Apunta el código de maestra — es el que abre este panel.
+      </div>`;
+    $('inp-report').value = r.report_code;
+    $('inp-classname').value = '';
+  } catch (e) {
+    $('create-out').innerHTML = `<div class="err">${e.message}</div>`;
+  } finally {
+    $('btn-create').disabled = false;
+  }
+}
+
+// ── Data ──────────────────────────────────────────────────────────────────────
+async function loadData(code) {
+  // lc_class_info is what actually validates the code: it throws for a bad one
+  // and still works for a class nobody has joined yet.
+  const [info, roster, sessions] = await Promise.all([
+    rpc('lc_class_info',     {p_report_code: code}),
+    rpc('lc_class_report',   {p_report_code: code}),
+    rpc('lc_class_sessions', {p_report_code: code})
+  ]);
+  const i = Array.isArray(info) ? info[0] : info;
+  ROSTER    = roster   || [];
+  SESSIONS  = sessions || [];
+  CLASSNAME = i ? i.class_name : '';
+  JOINCODE  = i ? i.join_code  : '';
+}
+
+async function refresh() {
+  if (!REPORT) return;
+  try { await loadData(REPORT); render(); } catch (e) { alert(e.message); }
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+function pct(v) {
+  if (v === null || v === undefined) return '<span class="pill none">—</span>';
+  const n = Math.round(Number(v));
+  const cls = n >= 80 ? 'good' : n >= 60 ? 'mid' : 'low';
+  return `<span class="pill ${cls}">${n}%</span>`;
+}
+
+function ago(ts) {
+  if (!ts) return '—';
+  const mins = Math.floor((Date.now() - new Date(ts)) / 60000);
+  if (mins < 2) return 'ahora';
+  if (mins < 60) return `hace ${mins} min`;
+  const h = Math.floor(mins / 60);
+  if (h < 24) return `hace ${h} h`;
+  const d = Math.floor(h / 24);
+  return d === 1 ? 'ayer' : `hace ${d} días`;
+}
+
+function render() {
+  $('hdr-class').textContent = CLASSNAME || '';
+  $('code-report').textContent = REPORT;
+  $('bookmark-url').textContent = location.origin + location.pathname + '?c=' + REPORT;
+
+  $('code-join').textContent = JOINCODE || '——————';
+
+  const total   = ROSTER.length;
+  const active  = ROSTER.filter(r => r.last_seen_at &&
+                    (Date.now() - new Date(r.last_seen_at)) < 36e5).length;
+  const done    = SESSIONS.length;
+  const avgLec  = avgOf('lectura');
+  const avgEsc  = avgOf('escucha');
+
+  $('stats').innerHTML = `
+    <div class="stat"><div class="n">${total}</div><div class="l">Estudiantes</div></div>
+    <div class="stat"><div class="n">${active}</div><div class="l">Activos hoy</div></div>
+    <div class="stat"><div class="n">${done}</div><div class="l">Sesiones hechas</div></div>
+    <div class="stat"><div class="n">${avgLec === null ? '—' : avgLec + '%'}</div><div class="l">Lectura promedio</div></div>
+    <div class="stat"><div class="n">${avgEsc === null ? '—' : avgEsc + '%'}</div><div class="l">Escucha promedio</div></div>`;
+
+  if (!total) {
+    $('roster').innerHTML = `<p class="muted">Todavía no hay estudiantes. Dales el código de clase
+      (pestaña 🔑 Códigos) y aparecerán aquí en cuanto entren.</p>`;
+  } else {
+    $('roster').innerHTML = `<div style="overflow-x:auto"><table>
+      <thead><tr>
+        <th>Estudiante</th><th>Va en</th><th class="hide-sm">Paso</th>
+        <th>Sesiones</th><th>Lectura</th><th>Escucha</th><th>XP</th><th class="hide-sm">Última vez</th>
+      </tr></thead><tbody>
+      ${ROSTER.map(r => `<tr>
+        <td class="name" onclick="openStudent('${esc(r.student_name)}')">${esc(r.student_name)}</td>
+        <td>${esc(COUNTRIES[r.cur_country] || '—')} <span class="muted">S${(r.cur_session||0)+1}</span></td>
+        <td class="hide-sm muted">${esc(STEPS[r.cur_step] || '')}</td>
+        <td class="tnum">${r.sessions_done}</td>
+        <td>${pct(r.lectura_pct)}</td>
+        <td>${pct(r.escucha_pct)}</td>
+        <td class="tnum">${r.total_xp}</td>
+        <td class="hide-sm muted">${ago(r.last_seen_at)}</td>
+      </tr>`).join('')}
+      </tbody></table></div>`;
+  }
+
+  const withArt = SESSIONS.filter(s => (s.article_text || '').trim());
+  $('works').innerHTML = !withArt.length
+    ? `<p class="muted">Todavía no hay redacciones publicadas.</p>`
+    : withArt.map(s => `
+        <div style="border-bottom:1px solid var(--cream-dk);padding:.8rem 0">
+          <div class="sans" style="font-size:.78rem;color:var(--ink-lt)">
+            <strong style="color:var(--ink)">${esc(s.student_name)}</strong>
+            · ${esc(s.country_name)} S${s.session_index + 1}
+            · Lectura ${s.lectura_score ?? '—'}/${s.lectura_total ?? '—'}
+            · Escucha ${s.escucha_score ?? '—'}/${s.escucha_total ?? '—'}
+          </div>
+          <div class="art">${esc(s.article_text)}</div>
+        </div>`).join('');
+}
+
+function avgOf(kind) {
+  let got = 0, tot = 0;
+  SESSIONS.forEach(s => {
+    const a = s[kind + '_score'], b = s[kind + '_total'];
+    if (a != null && b) { got += a; tot += b; }
+  });
+  return tot ? Math.round(100 * got / tot) : null;
+}
+
+function openStudent(name) {
+  const mine = SESSIONS.filter(s => s.student_name === name);
+  $('dlg-title').textContent = name;
+  $('dlg-body').innerHTML = !mine.length
+    ? '<p class="muted">Todavía no ha terminado ninguna sesión.</p>'
+    : mine.map(s => `
+      <div style="margin-bottom:1.2rem">
+        <div class="sans" style="font-size:.8rem;font-weight:700">
+          ${esc(s.country_name)} — Sesión ${s.session_index + 1}
+        </div>
+        <div class="sans muted" style="font-size:.78rem;margin:.2rem 0 .4rem">
+          Lectura ${s.lectura_score ?? '—'}/${s.lectura_total ?? '—'} ·
+          Escucha ${s.escucha_score ?? '—'}/${s.escucha_total ?? '—'} ·
+          ${s.xp_earned} XP · ${new Date(s.updated_at).toLocaleDateString('es-ES')}
+        </div>
+        ${(s.article_text || '').trim()
+          ? `<div class="art">${esc(s.article_text)}</div>`
+          : '<div class="muted sans" style="font-size:.8rem">Sin redacción publicada.</div>'}
+      </div>`).join('');
+  dlg.showModal();
+}
+
+function exportCsv() {
+  const head = ['Estudiante','País actual','Sesión','Paso','Sesiones hechas',
+                'Lectura %','Escucha %','XP','Última vez'];
+  const rows = ROSTER.map(r => [
+    r.student_name, COUNTRIES[r.cur_country] || '', (r.cur_session || 0) + 1,
+    STEPS[r.cur_step] || '', r.sessions_done,
+    r.lectura_pct ?? '', r.escucha_pct ?? '', r.total_xp,
+    r.last_seen_at ? new Date(r.last_seen_at).toLocaleString('es-ES') : ''
+  ]);
+  const csv = [head, ...rows]
+    .map(r => r.map(c => `"${String(c).replace(/"/g,'""')}"`).join(',')).join('\r\n');
+  // BOM so Excel opens the accents correctly
+  const blob = new Blob(['﻿' + csv], {type:'text/csv;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `la-corresponsal-${(CLASSNAME||'clase').replace(/[^\w-]+/g,'_')}.csv`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function showTab(t) {
+  document.querySelectorAll('.tab[data-tab]').forEach(b =>
+    b.classList.toggle('on', b.dataset.tab === t));
+  ['roster','work','sheets','codes'].forEach(x =>
+    $('tab-' + x).style.display = x === t ? '' : 'none');
+}
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+renderSheets($('ws-list-public'));
+renderSheets($('ws-list'));
+
+const urlCode = new URLSearchParams(location.search).get('c');
+const saved   = localStorage.getItem('lc_report_code');
+if (urlCode || saved) login(urlCode || saved);
+</script>
+</body>
+</html>
