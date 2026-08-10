@@ -191,7 +191,7 @@ const PROFILE = {
 // just an order, and these students have heard plenty of orders about Spanish.
 const NORMAS = [
   ['Aquí no se corrige el español de nadie',
-   'Nadie en este salón se burla de cómo habla otra persona. Ni del acento, ni de una palabra «mal dicha», ni del español de tu casa, ni de lo que dice tu familia en el pueblo de donde vienen. Tampoco se burla nadie de quién eres, a quién quieres, cómo te ves, ni de lo que todavía estás descubriendo. Y va en las dos direcciones: no se le dice a nadie que habla «demasiado español», ni que «ni siquiera sabe español». Ésta es la única regla que no tiene primera advertencia.'],
+   'Nadie en este salón se burla de cómo habla otra persona. Ni del acento, ni de una palabra «mal dicha», ni del español de tu casa, ni del que se habla en el pueblo de donde viene tu familia. Tampoco se burla nadie de quién eres, a quién quieres, cómo te ves, ni de lo que todavía estás descubriendo. Y va en las dos direcciones: no se le dice a nadie que habla «demasiado español», ni que «ni siquiera sabe español». Ésta es la única regla que no tiene primera advertencia.'],
   ['Tu español ya es correcto',
    'No hay un español bueno y muchos malos. Hay un español de la escuela, uno de tu casa, uno de Michoacán, uno de San Salvador, uno de aquí de la esquina. Todos siguen reglas. Este año vamos a agregar uno más — el del periódico — sin quitarte ninguno de los que ya traes.'],
   ['Se escribe aunque salga mal',
@@ -1567,7 +1567,7 @@ function buildDeck() {
   list(1, 'Quién soy', 'Para que me conozcan', PROFILE.facts, PROFILE.personal);
 
   beat(1, 'Por qué existe esta clase', 'Ustedes ya tienen el idioma. Falta lo demás.', [
-    'Esta clase no es español para principiantes y no es español de castigo. Ustedes llegan hablando. Eso es la parte difícil y ya la tienen.',
+    'Esta clase no es español para principiantes y no es español de castigo. Ustedes llegan hablando, y ésa es la parte difícil. Ya la tienen.',
     'Lo que falta es lo que la escuela normalmente no les da: leer un texto largo sin cansarse, escribir sin miedo a la falta de ortografía, y tener palabras para hablar de cosas serias — no sólo de la casa y la familia, sino del trabajo, del medio ambiente, de la política, del arte.',
     'A eso le vamos a llamar «rango». Al final del año van a poder moverse entre el español de su casa y el español del periódico, sin perder ninguno de los dos.',
   ], 'Nadie sale de aquí hablando menos como su familia. Salen hablando también de otras maneras.');
@@ -1636,7 +1636,7 @@ function buildDeck() {
   S.push({cls:'closer', day:3, html:
     `<h2>Mañana sales a México.</h2>
      <p class="hook">Trae tu credencial, tu cuaderno y la pregunta de seguimiento que inventaste.
-     Tu primera historia es un mercado de quinientos años en Oaxaca, y la señora que teje ahí
+     Tu primera historia es un mercado de Oaxaca con quinientos años de historia detrás, y la señora que teje ahí
      lleva sesenta años esperando que alguien cuente bien su historia.</p>`});
 
   const slides = S.map((s, i) => `
