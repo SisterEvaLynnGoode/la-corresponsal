@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyecto del periódico — Presentación | La Corresponsal</title>
+<style>
+:root{--terracotta:#C4622D;--cream:#FDF5E6;--cream-dk:#F0E6D0;--ink:#2C1810;
+  --ink-lt:#6B4C3B;--gold:#E8C547;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--ink);color:var(--ink);font-family:Georgia,'Times New Roman',serif;overflow:hidden}
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+
+.slide{position:absolute;inset:0;display:none;background:var(--cream);
+  padding:4vh 6vw 7vh;overflow:auto}
+.slide.on{display:flex;flex-direction:column;justify-content:center}
+.inner{max-width:min(1180px,88vw);margin:0 auto;width:100%}
+
+.eyebrow{font-family:sans-serif;font-size:clamp(.7rem,1.35vw,1rem);text-transform:uppercase;
+  letter-spacing:.22em;color:var(--terracotta);font-weight:700;margin-bottom:.6rem}
+h1{font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.02;letter-spacing:-.02em;margin-bottom:1.1rem}
+h2{font-size:clamp(1.7rem,3.9vw,3.1rem);line-height:1.1;margin-bottom:1rem}
+p{font-size:clamp(1rem,1.85vw,1.5rem);line-height:1.5;margin-bottom:.75rem;max-width:56ch}
+p.sm{font-size:clamp(.9rem,1.45vw,1.15rem);color:var(--ink-lt)}
+.hook{font-size:clamp(1.15rem,2.5vw,2rem);line-height:1.32;color:var(--ink-lt);max-width:44ch}
+.pull{border-left:5px solid var(--terracotta);padding:.5rem 0 .5rem 1.1rem;margin-top:1.2rem;
+  font-size:clamp(1.05rem,2.05vw,1.6rem);font-style:italic;line-height:1.34;max-width:52ch}
+
+dl{display:grid;grid-template-columns:minmax(min-content,17rem) 1fr;
+  gap:.75rem 1.8rem;align-items:baseline}
+dt{font-family:sans-serif;font-weight:700;font-size:clamp(.9rem,1.6vw,1.35rem);
+  color:var(--terracotta);line-height:1.22}
+dd{font-size:clamp(.9rem,1.55vw,1.3rem);line-height:1.42}
+
+table{width:100%;border-collapse:collapse;font-size:clamp(.82rem,1.4vw,1.2rem)}
+td{padding:.4rem .7rem;border-bottom:1px solid var(--cream-dk);vertical-align:baseline}
+td.es{font-weight:700;white-space:nowrap}
+td.en{color:var(--ink-lt);font-family:sans-serif;font-size:.86em}
+td.nt{color:var(--ink-lt);font-style:italic;font-size:.84em}
+
+.cover{background:var(--ink);color:var(--cream)}
+.cover h1{color:var(--cream)}
+.cover .hook{color:var(--gold)}
+.cover .eyebrow{color:var(--gold)}
+.closer{background:var(--terracotta);color:var(--white)}
+.closer h2,.closer .hook{color:var(--white);max-width:52ch}
+.act{background:var(--cream-dk)}
+.page{display:inline-block;margin-top:1rem;background:var(--ink);color:var(--cream);
+  font-family:sans-serif;font-size:clamp(.85rem,1.5vw,1.2rem);padding:.5rem 1.1rem;border-radius:6px}
+
+.foot{position:absolute;left:6vw;right:6vw;bottom:2.4vh;display:flex;justify-content:space-between;
+  font-family:sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-lt);opacity:.65}
+.cover .foot,.closer .foot{color:var(--cream);opacity:.6}
+
+#bar{position:fixed;left:0;top:0;height:4px;background:var(--terracotta);
+  transition:width .18s;z-index:10}
+#help{position:fixed;right:1rem;bottom:1rem;font-family:sans-serif;font-size:.7rem;
+  color:var(--ink-lt);opacity:.5;z-index:10}
+@media print{
+  body{overflow:visible;background:#fff}
+  .slide{position:relative;display:block !important;page-break-after:always;
+    min-height:0;padding:.5in;border-bottom:1px solid #ccc}
+  .cover,.closer,.act{background:#fff;color:#111}
+  .cover h1,.cover .hook,.cover .eyebrow,.closer h2,.closer .hook{color:#111}
+  #bar,#help{display:none}
+}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.cards div{background:var(--white);border-top:5px solid var(--terracotta);padding:1rem 1.1rem;
+  font-size:clamp(1rem,1.9vw,1.55rem);line-height:1.25;font-weight:700;border-radius:4px}
+ul.checks{list-style:none}
+ul.checks li{font-size:clamp(1rem,1.85vw,1.45rem);line-height:1.4;padding:.45rem 0 .45rem 2.2rem;
+  border-bottom:1px solid var(--cream-dk);position:relative}
+ul.checks li::before{content:'☐';position:absolute;left:0;color:var(--terracotta)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.vs>div{background:var(--white);padding:1.2rem 1.4rem;border-radius:6px;border-top:6px solid var(--ink-lt)}
+.vs>div.win{border-top-color:var(--terracotta)}
+.vs .tag{font-family:sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.15em;
+  font-size:clamp(.75rem,1.2vw,.95rem);color:var(--ink-lt);margin-bottom:.5rem}
+.vs .win .tag{color:var(--terracotta)}
+.vs .q{font-size:clamp(1.15rem,2.3vw,1.9rem);font-weight:700;margin-bottom:.2rem}
+.vs .a{font-size:clamp(1rem,1.9vw,1.5rem);font-style:italic;color:var(--ink-lt)}
+.pyr{display:flex;flex-direction:column;align-items:center;gap:.35rem}
+.pyr div{background:var(--ink);color:var(--cream);text-align:center;padding:.55rem .8rem;
+  font-family:sans-serif;font-weight:700;font-size:clamp(.85rem,1.6vw,1.3rem);border-radius:3px}
+.pyr div:first-child{background:var(--terracotta)}
+.story .by{font-family:sans-serif;font-size:clamp(.8rem,1.3vw,1rem);color:var(--ink-lt);
+  margin:-.4rem 0 1rem;text-transform:uppercase;letter-spacing:.08em}
+.story .cols{columns:2;column-gap:2.4rem}
+.story .cols p{font-size:clamp(.95rem,1.6vw,1.28rem);line-height:1.45;max-width:none;break-inside:avoid}
+.story .cols b{font-family:sans-serif;color:var(--terracotta);margin-right:.45rem;font-size:.8em}
+@media (max-width:700px){.cards,.vs{grid-template-columns:1fr}.story .cols{columns:1}}
+@media print{.cards div,.vs>div{border:1px solid #999}.pyr div{background:#fff;color:#111;border:1px solid #111}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+  <section class="slide cover" data-day="1" id="s0">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 1 de 10</div>
+     <h1>Nuestra propia edición</h1><p class="hook">Dos semanas. Una historia de aquí. Tu nombre impreso en el periódico de la escuela.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>1 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="1" id="s1">
+    <div class="inner"><div class="eyebrow">El proyecto</div><h2>Ahora te toca contar la de aquí.</h2>
+     <p>Hasta ahora has escrito sobre Oaxaca, sobre un lago en Guatemala, sobre un arrecife en Honduras. Historias de otros lugares, contadas por gente de ahí.</p><p>En estas dos semanas vas a escoger una historia de esta escuela o de tu comunidad, entrevistar a una persona real, conseguir la imagen y escribir una nota que se va a imprimir, en español, con tu nombre.</p>
+     <div class="pull">No la vas a escribir de una vez. Nadie en un periódico lo hace.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>2 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="1" id="s2">
+    <div class="inner"><div class="eyebrow">El calendario</div><h2>Diez días, diez pasos</h2>
+     <dl><dt>1 · La noticia por dentro</dt><dd>Leer una noticia modelo y encontrar sus partes</dd><dt>2 · Encuentra tu historia</dt><dd>Lluvia de ideas y propuesta a la editora</dd><dt>3 · Planea la entrevista</dt><dd>Escoger fuente, pedir la entrevista, preguntas</dd><dt>4 · La entrevista</dt><dd>Entrevistar y anotar citas y datos exactos</dd><dt>5 · La imagen</dt><dd>Buscar o dibujar la imagen, pie de foto, crédito</dd><dt>6 · El esqueleto</dt><dd>Ordenar la información y escribir la entrada</dd><dt>7 · Primer borrador</dt><dd>Escribir la nota completa</dd><dt>8 · Edición entre compañeros</dt><dd>Editar la nota de alguien más, recibir la tuya</dd><dt>9 · Segundo borrador</dt><dd>Reescribir con lo que te dijeron</dd><dt>10 · Al cierre</dt><dd>Versión final para imprimir y reflexión</dd></dl>
+     </div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>3 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="1" id="s3">
+    <div class="inner"><div class="eyebrow">Cómo funciona</div><h2>Firma por firma</h2>
+     <p>Cada paso de tu portada lleva mi firma cuando lo terminas. Sin la firma no pasas al siguiente.</p><p>No es para vigilarte. Es para que nadie llegue al día 10 sin entrevista, sin imagen o sin borrador. Si te atrasas, lo vemos el mismo día y no la víspera del cierre.</p>
+     </div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>4 / 47</span></div>
+  </section>
+  <section class="slide story" data-day="1" id="s4">
+    <div class="inner"><div class="eyebrow">La nota modelo · Comunidad</div>
+     <h2>La cafetería cambia el menú y los estudiantes votan por la comida</h2>
+     <div class="by">Por Daniela Ortiz, corresponsal de 10.º grado</div>
+     <div class="cols"><p><b>1</b>Por primera vez, los estudiantes decidieron qué se sirve en la
+      cafetería. Durante dos semanas, más de cuatrocientos alumnos votaron entre doce platillos, y
+      los tres ganadores ya están en el menú de los martes.</p><p><b>2</b>La idea fue de la señora Rosa Méndez, que trabaja en la cafetería desde
+      hace once años. «Veía los platos regresar casi llenos», dijo. «Pensé que si ellos escogían,
+      iban a comer.»</p><p><b>3</b>Los platillos que ganaron fueron el arroz con frijoles, los tacos de
+      pollo y la sopa de fideo. La sopa ganó por sólo nueve votos.</p><p><b>4</b>Según la señora Méndez, desde que empezó el nuevo menú se tira casi la
+      mitad de comida que antes. Marcos Lee, estudiante de 11.º grado, votó por los tacos.
+      «La comida sabe a casa», dijo. «Antes ni entraba a la cafetería.»</p><p><b>5</b>La cafetería piensa repetir la votación cada semestre. La próxima será
+      en enero.</p></div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>5 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="1" id="s5">
+    <div class="inner"><div class="eyebrow">Las partes</div><h2>Toda noticia tiene estas piezas</h2>
+     <dl><dt>El titular</dt><dd>Dice la noticia en una línea</dd><dt>La firma</dt><dd>Dice quién la escribió</dd><dt>La entrada</dt><dd>Engancha al lector con lo más importante</dd><dt>La cita directa</dt><dd>La voz de una persona, entre comillas</dd><dt>El dato</dt><dd>Un número exacto que lo comprueba</dd><dt>El contexto</dt><dd>Por qué le importa al lector</dd><dt>El cierre</dt><dd>Qué pasa después</dd></dl>
+     <div class="pull">Ya las practicaste en las semanas pasadas. Hoy las buscas en una nota de una escuela como ésta.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>6 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="1" id="s6">
+    <div class="inner"><div class="eyebrow">Las seis preguntas</div><h2>Una buena noticia contesta seis</h2>
+     <div class="cards"><div>¿Qué pasó?</div><div>¿Quién?</div><div>¿Cuándo?</div><div>¿Dónde?</div><div>¿Por qué?</div><div>¿Cómo?</div></div>
+     <p class="sm" style="margin-top:1.2rem">Si alguna no se contesta en la nota de la cafetería, escribe «no aparece». Eso también es información.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>7 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="1" id="s7">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>La noticia por dentro</h2><p>Lee la nota de la cafetería dos veces. Explica de qué trata en una sola oración. Después busca cada parte, copia un ejemplo y contesta las seis preguntas.</p>
+     <div class="page">📄 Proyecto del periódico, pp. 2–3</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 1</span><span>8 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="2" id="s8">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 2 de 10</div>
+     <h1>Encuentra tu historia</h1><p class="hook">Una noticia no tiene que ser enorme. Tiene que ser nueva, verdadera y de aquí.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 2</span><span>9 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="2" id="s9">
+    <div class="inner"><div class="eyebrow">Dónde buscar</div><h2>Las buenas historias están cerca</h2>
+     <div class="cards"><div>Algo que cambió o es nuevo</div><div>Una persona que nadie conoce y debería</div><div>Un problema que alguien está arreglando</div><div>Un evento que se acerca o que pasó</div><div>Algo de la cultura de nuestra comunidad</div><div>Una pregunta que todos se hacen</div></div>
+     <p class="sm" style="margin-top:1.2rem">Para empezar: un club nuevo, un maestro que se jubila, el equipo que va ganando, la señora de la cafetería, por qué no sirven los bebederos del segundo piso, un negocio de la familia de alguien, un estudiante que llegó de otro país este año.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 2</span><span>10 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="2" id="s10">
+    <div class="inner"><div class="eyebrow">La prueba de la noticia</div><h2>Antes de enamorarte de una idea</h2>
+     <p class="sm">Escoge tus dos mejores ideas. La que pase las cuatro es tu historia.</p>
+     <ul class="checks"><li>¿Es de nuestra escuela o comunidad?</li><li>¿Hay alguien a quien puedo entrevistar esta semana?</li><li>¿Puedo conseguir por lo menos un dato con número?</li><li>¿A mis compañeros les importaría leerla?</li></ul></div>
+    <div class="foot"><span>Nuestra propia edición · Día 2</span><span>11 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="2" id="s11">
+    <div class="inner"><div class="eyebrow">La propuesta</div><h2>En un periódico nadie escribe sin permiso de la editora.</h2>
+     <p>Hoy me entregas tu propuesta: tu historia en una oración, a quién vas a entrevistar y un dato que puedes conseguir.</p><p>Te la regreso de tres maneras: aprobada, aprobada con cambios, o «busca otra idea». La tercera no es un castigo; es lo que pasa en cualquier redacción.</p>
+     <div class="pull">Pon siempre un plan B. La persona que quieres entrevistar puede decir que no.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 2</span><span>12 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="2" id="s12">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Lluvia de ideas y propuesta</h2><p>Anota por lo menos dos ideas en cada recuadro. Pasa tus dos mejores por la prueba. Llena la propuesta con la ganadora y escribe un titular de trabajo.</p>
+     <div class="page">📄 Proyecto del periódico, pp. 4–5</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 2</span><span>13 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="3" id="s13">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 3 de 10</div>
+     <h1>Planea la entrevista</h1><p class="hook">La entrevista se gana antes de empezar.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 3</span><span>14 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="3" id="s14">
+    <div class="inner"><div class="eyebrow">Paso 1</div><h2>Pide la entrevista</h2>
+     <p>En persona o por escrito, con respeto y con fecha. Di quién eres, para qué es y cuánto tiempo necesitas.</p>
+     <div class="pull">«Buenos días, me llamo ____ y escribo para el periódico en español de la escuela. Estoy haciendo una nota sobre ____. ¿Me permite hacerle unas preguntas? Son diez minutos.»</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 3</span><span>15 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="3" id="s15">
+    <div class="inner"><div class="eyebrow">Paso 2</div><h2>Preguntas que abren</h2>
+     <div class="vs">
+       <div><div class="tag">Cerrada</div><p class="q">«¿Le gusta su trabajo?»</p><p class="a">→ «Sí.»</p>
+         <p class="sm">Se contesta con sí o no. No te da ninguna cita.</p></div>
+       <div class="win"><div class="tag">Abierta</div><p class="q">«¿Cómo fue su primer día aquí?»</p><p class="a">→ una historia.</p>
+         <p class="sm">Empieza con <em>cómo, por qué, qué pasó cuando, cuénteme</em>.</p></div>
+     </div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 3</span><span>16 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="3" id="s16">
+    <div class="inner"><div class="eyebrow">Paso 3</div><h2>La pregunta de seguimiento</h2>
+     <div class="cards"><div>¿Qué quiere decir con…?</div><div>¿Me da un ejemplo?</div><div>¿Y qué pasó después?</div><div>¿Por qué cree que…?</div></div>
+     <p class="sm" style="margin-top:1.2rem">Ésta no se escribe antes. Se inventa en el momento, cuando la respuesta te sorprende. Es la pregunta que importa.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 3</span><span>17 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="3" id="s17">
+    <div class="inner"><div class="eyebrow">Si tu fuente no habla español</div><h2>Entrevista en inglés. Escribe en español.</h2>
+     <p>Eso lo hacen los corresponsales todo el tiempo. Copia la cita en inglés, exacta, en tu libreta. La traduces cuando escribas la nota.</p><p>Lo que no se vale es inventar lo que la persona «quiso decir».</p>
+     </div>
+    <div class="foot"><span>Nuestra propia edición · Día 3</span><span>18 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="3" id="s18">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Planea tu entrevista</h2><p>Pide la entrevista y anota día, hora y lugar. Pregunta si puedes usar su nombre. Escribe seis preguntas abiertas.</p>
+     <div class="page">📄 Proyecto del periódico, p. 6</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 3</span><span>19 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="4" id="s19">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 4 de 10</div>
+     <h1>La entrevista</h1><p class="hook">Hoy sales a reportear. Lleva la libreta y escribe mientras escuchas.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 4</span><span>20 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="4" id="s20">
+    <div class="inner"><div class="eyebrow">La libreta</div><h2>Cómo tomar notas sin perderte nada</h2>
+     <dl><dt>Palabras clave</dt><dd>No trates de escribir todo. Anota lo necesario para acordarte.</dd><dt>Citas exactas</dt><dd>Sólo las frases que quieras citar, palabra por palabra, entre comillas.</dd><dt>Si no alcanzaste</dt><dd>«¿Me lo repite, por favor? Quiero citarlo bien.» Nadie se ofende; al contrario.</dd><dt>Datos</dt><dd>Cualquier número: años, personas, votos, dinero, minutos. Pregunta «¿cuántos?».</dd><dt>Al terminar</dt><dd>Pídele que te deletree su nombre y su puesto. Dale las gracias.</dd></dl>
+     <div class="pull">Una cita mal copiada es peor que ninguna cita.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 4</span><span>21 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="4" id="s21">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>La libreta de entrevista</h2><p>Haz la entrevista. Llena la libreta: notas, tres citas exactas, dos datos, y tu pregunta de seguimiento con lo que contestó.</p>
+     <div class="page">📄 Proyecto del periódico, p. 7</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 4</span><span>22 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="5" id="s22">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 5 de 10</div>
+     <h1>La imagen</h1><p class="hook">Una imagen se lee antes que el titular.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 5</span><span>23 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="5" id="s23">
+    <div class="inner"><div class="eyebrow">Escoge un camino</div><h2>Tres caminos, tres reglas</h2>
+     <dl><dt>Foto propia</dt><dd>Tómala tú o con la cámara del anuario. Si
+        sale una persona, pídele permiso antes. Nunca fotografíes a alguien que te dijo que no.</dd><dt>Imagen de internet</dt><dd>Sólo de sitios con imágenes libres, como
+        <em>Wikimedia Commons</em>, <em>Unsplash</em> o <em>Pixabay</em>. No sirve «la primera que
+        salió en Google»: casi todas tienen dueño. Siempre se da crédito.</dd><dt>Dibujo</dt><dd>Tú lo haces, a mano. Muchos periódicos usan
+        ilustraciones. El crédito dice «Ilustración: tu nombre».</dd></dl>
+     </div>
+    <div class="foot"><span>Nuestra propia edición · Día 5</span><span>24 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="5" id="s24">
+    <div class="inner"><div class="eyebrow">El pie de foto</div><h2>Una o dos oraciones debajo de la imagen</h2>
+     <p>Dice quién o qué se ve, y dónde. No repite el titular. Y siempre lleva crédito: <em>Foto</em>, <em>Imagen</em> o <em>Ilustración</em>, con el nombre de quien la hizo.</p>
+     <div class="pull">La señora Rosa Méndez sirve la sopa de fideo, el platillo que ganó por nueve votos. — Foto: Daniela Ortiz</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 5</span><span>25 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="5" id="s25">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>La imagen de tu nota</h2><p>Escoge tu camino. Haz un boceto de la imagen, explica por qué ésa y no otra, y escribe el pie de foto y el crédito.</p>
+     <div class="page">📄 Proyecto del periódico, p. 8</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 5</span><span>26 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="6" id="s26">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 6 de 10</div>
+     <h1>El esqueleto</h1><p class="hook">Antes de escribir, ordena. Lo más importante va primero.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 6</span><span>27 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="6" id="s27">
+    <div class="inner"><div class="eyebrow">La pirámide invertida</div><h2>Lo más fuerte arriba</h2>
+     <div class="pyr"><div style="width:100%">1 · Lo más importante</div><div style="width:91%">2 · Quién, dónde y cuándo</div><div style="width:82%">3 · La mejor cita (de tu libreta)</div><div style="width:73%">4 · El dato con número</div><div style="width:64%">5 · Por qué le importa al lector</div><div style="width:55%">6 · El cierre: qué pasa después</div></div>
+     <p class="sm" style="margin-top:1rem">Si al periódico le falta espacio, se corta desde abajo.
+     Tu nota tiene que seguir funcionando.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 6</span><span>28 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="6" id="s28">
+    <div class="inner"><div class="eyebrow">La entrada</div><h2>Tres maneras de empezar</h2>
+     <dl><dt>Con un dato</dt><dd>«Más de cuatrocientos alumnos votaron durante dos semanas por lo que se sirve en la cafetería.»</dd><dt>Con una persona</dt><dd>«Durante once años, Rosa Méndez vio regresar los platos casi llenos.»</dd><dt>Con una sorpresa</dt><dd>«La sopa de fideo entró al menú por sólo nueve votos.»</dd><dt>Prohibido</dt><dd>«Este artículo trata de…» — eso anuncia, no engancha.</dd></dl>
+     </div>
+    <div class="foot"><span>Nuestra propia edición · Día 6</span><span>29 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="6" id="s29">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Arma el esqueleto</h2><p>Llena las seis partes con palabras clave, no oraciones. Después escribe tres entradas distintas y encierra la mejor.</p>
+     <div class="page">📄 Proyecto del periódico, p. 9</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 6</span><span>30 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="7" id="s30">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 7 de 10</div>
+     <h1>Primer borrador</h1><p class="hook">Escribe sin borrar. Corregir viene después.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 7</span><span>31 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="7" id="s31">
+    <div class="inner"><div class="eyebrow">Las reglas del borrador</div><h2>Hoy escribes la nota completa</h2>
+     <dl><dt>Largo</dt><dd>Entre 150 y 250 palabras.</dd><dt>Renglón por medio</dt><dd>Deja una línea libre entre cada una, para que tu editor tenga dónde escribir.</dd><dt>Tu mapa</dt><dd>Sigue tu esqueleto y empieza con la entrada que escogiste.</dd><dt>Ortografía</dt><dd>No te detengas a corregirla. Si te detienes, no terminas.</dd></dl>
+     <div class="pull">Un borrador feo y completo vale más que un párrafo perfecto.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 7</span><span>32 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="7" id="s32">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Primer borrador</h2><p>Escribe tu nota completa siguiendo el esqueleto. Al final cuenta más o menos cuántas palabras escribiste.</p>
+     <div class="page">📄 Proyecto del periódico, p. 10</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 7</span><span>33 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="8" id="s33">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 8 de 10</div>
+     <h1>Edición entre compañeros</h1><p class="hook">El editor trabaja para el que escribe.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 8</span><span>34 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="8" id="s34">
+    <div class="inner"><div class="eyebrow">La norma de siempre</div><h2>Aquí no se corrige el español de nadie.</h2>
+     <p>Hoy lees el primer borrador de otra persona. No vas a marcarle acentos ni a cambiarle palabras porque en tu casa se dicen distinto.</p><p>Tu trabajo es ayudar a que su nota se entienda y se lea con ganas.</p>
+     </div>
+    <div class="foot"><span>Nuestra propia edición · Día 8</span><span>35 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="8" id="s35">
+    <div class="inner"><div class="eyebrow">Paso 1</div><h2>¿La nota tiene…?</h2>
+     
+     <ul class="checks"><li>Una entrada que engancha, no que anuncia</li><li>Quién, qué, cuándo y dónde en el primer párrafo</li><li>Por lo menos una cita directa entre comillas</li><li>Por lo menos un dato con número</li><li>Una razón clara de por qué me importa</li><li>Un cierre que dice qué pasa después</li></ul></div>
+    <div class="foot"><span>Nuestra propia edición · Día 8</span><span>36 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="8" id="s36">
+    <div class="inner"><div class="eyebrow">Pasos 2 a 4</div><h2>Lo que le escribes a tu compañero</h2>
+     <dl><dt>Lo que funciona</dt><dd>Copia la oración más fuerte de la nota y di por qué.</dd><dt>Una pregunta</dt><dd>¿Qué quisiste saber y la nota no te dijo? Eso es lo que falta.</dd><dt>Un solo cambio</dt><dd>Si pudieras pedir un solo cambio, ¿cuál sería?</dd></dl>
+     <div class="pull">Uno. No diez. Un cambio que se puede hacer ayuda más que diez que asustan.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 8</span><span>37 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="8" id="s37">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Edita a un compañero</h2><p>Revisa las seis piezas. Después escribe lo que funciona, la pregunta que te quedó y el único cambio que pedirías.</p>
+     <div class="page">📄 Proyecto del periódico, p. 11</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 8</span><span>38 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="9" id="s38">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 9 de 10</div>
+     <h1>Segundo borrador</h1><p class="hook">Revisar no es pasar en limpio.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 9</span><span>39 / 47</span></div>
+  </section>
+  <section class="slide beat" data-day="9" id="s39">
+    <div class="inner"><div class="eyebrow">Tú decides</div><h2>No tienes que aceptar todo. Sí tienes que decidir.</h2>
+     <p>Lee lo que escribió tu editor. Por cada sugerencia, anota si la aceptas y qué vas a cambiar, o por qué no.</p><p>Un segundo borrador que se ve igual al primero no es un segundo borrador.</p>
+     </div>
+    <div class="foot"><span>Nuestra propia edición · Día 9</span><span>40 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="9" id="s40">
+    <div class="inner"><div class="eyebrow">Revisión de estilo</div><h2>El estilo de nuestro periódico</h2>
+     <p class="sm">El español de tu casa no se corrige. Pero todo periódico tiene un estilo para escribir, igual que tiene un tamaño de letra, y en el nuestro se usan acentos y signos completos.</p>
+     <ul class="checks"><li>Las preguntas llevan <strong>¿</strong> al principio y <strong>?</strong> al final</li><li>Las citas van entre comillas «así» o "así"</li><li>Los verbos en pasado llevan acento: <em>habló, llegó, decidió</em></li><li><em>Qué, cómo, dónde, cuándo, por qué</em> llevan acento cuando preguntan</li><li>Los nombres de personas y lugares empiezan con mayúscula</li><li>Busqué en el diccionario por lo menos tres palabras de las que dudé</li></ul></div>
+    <div class="foot"><span>Nuestra propia edición · Día 9</span><span>41 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="9" id="s41">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Plan de revisión y segundo borrador</h2><p>Anota cada sugerencia y tu decisión. Revisa tu propio borrador con la lista de estilo. Después escribe la nota completa otra vez con tus cambios.</p>
+     <div class="page">📄 Proyecto del periódico, pp. 12–13</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 9</span><span>42 / 47</span></div>
+  </section>
+  <section class="slide cover" data-day="10" id="s42">
+    <div class="inner"><div class="eyebrow">Nuestra propia edición · Día 10 de 10</div>
+     <h1>Al cierre</h1><p class="hook">Hoy tu nota va a la imprenta.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 10</span><span>43 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="10" id="s43">
+    <div class="inner"><div class="eyebrow">La página final</div><h2>Lo que va en la página 14</h2>
+     <dl><dt>Sección</dt><dd>Comunidad, Cultura, Deportes, Escuela, Opinión, Personas o Medio ambiente.</dd><dt>Titular y firma</dt><dd>Tu titular final y tu nombre de corresponsal, con tu grado.</dd><dt>Imagen</dt><dd>Pegada o dibujada en el recuadro, con pie de foto y crédito.</dd><dt>La nota</dt><dd>En limpio, en dos columnas, con tu mejor letra, o a máquina y pegada.</dd></dl>
+     <div class="pull">Esta página es la que va a la imprenta. Lo que no esté en ella no sale.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 10</span><span>44 / 47</span></div>
+  </section>
+  <section class="slide list" data-day="10" id="s44">
+    <div class="inner"><div class="eyebrow">Cómo se califica</div><h2>La misma tabla para ti y para mí</h2>
+     <dl><dt>Reportaje</dt><dd>Entrevisté a alguien de verdad y lo cité exacto.</dd><dt>Estructura</dt><dd>Entrada fuerte y lo importante primero.</dd><dt>Datos</dt><dd>Un dato exacto, y contexto.</dd><dt>Proceso</dt><dd>Revisé con lo que me dijeron, y se nota.</dd><dt>Imagen</dt><dd>Imagen, pie de foto y crédito.</dd></dl>
+     <div class="pull">Tres puntos cada una, quince en total. Fíjate en lo que no está: la ortografía.</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 10</span><span>45 / 47</span></div>
+  </section>
+  <section class="slide act" data-day="10" id="s45">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Al cierre</h2><p>Pasa tu nota final en limpio en la página 14 y pega tu imagen. Después compara tu primera oración con la final, contesta la reflexión y califica tu nota con la tabla.</p>
+     <div class="page">📄 Proyecto del periódico, pp. 14–15</div></div>
+    <div class="foot"><span>Nuestra propia edición · Día 10</span><span>46 / 47</span></div>
+  </section>
+  <section class="slide closer" data-day="10" id="s46">
+    <div class="inner"><h2>Ésta es nuestra edición.</h2>
+     <p class="hook">Hace dos semanas era una idea en un recuadro. Hoy es una nota con una voz real,
+     un dato que se puede comprobar y tu nombre arriba. Así se hace un periódico.</p></div>
+    <div class="foot"><span>Nuestra propia edición · Día 10</span><span>47 / 47</span></div>
+  </section>
+<div id="help">← → o barra espaciadora · F pantalla completa</div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = Math.min(+(location.hash.slice(1) || 0), slides.length - 1);
+  function show(n) {
+    i = Math.max(0, Math.min(n, slides.length - 1));
+    slides.forEach((s, k) => s.classList.toggle('on', k === i));
+    document.getElementById('bar').style.width = ((i + 1) / slides.length * 100) + '%';
+    history.replaceState(null, '', '#' + i);
+    slides[i].scrollTop = 0;
+  }
+  addEventListener('keydown', e => {
+    if (['ArrowRight',' ','PageDown','ArrowDown'].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    else if (['ArrowLeft','PageUp','ArrowUp'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (e.key.toLowerCase() === 'f') {
+      document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+    }
+  });
+  // Tap right half to advance, left half to go back — for a touchscreen panel.
+  addEventListener('click', e => show(e.clientX > innerWidth / 2 ? i + 1 : i - 1));
+  show(i);
+</script>
+</body>
+</html>
