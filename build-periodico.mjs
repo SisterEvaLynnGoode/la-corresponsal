@@ -170,7 +170,7 @@ page('Proyecto · Dos semanas<br>Portada', `
   </div>
 
   <h2>Tu calendario</h2>
-  <div class="instr">Tu maestra firma cada paso cuando lo termines. No puedes pasar al siguiente
+  <div class="instr">Tu profe firma cada paso cuando lo termines. No puedes pasar al siguiente
   sin la firma: así nadie llega al día 10 sin entrevista.</div>
   <table>
     <thead><tr><th style="width:8%">Día</th><th style="width:30%">Paso</th>
@@ -277,7 +277,7 @@ page('Día 2<br>La propuesta', `
   <h1>Propón tu historia</h1>
   <div class="sub">Día 2 — En un periódico nadie escribe sin permiso de la editora</div>
 
-  <div class="instr">Llena la propuesta con la idea que más pasó la prueba. Tu maestra la aprueba
+  <div class="instr">Llena la propuesta con la idea que más pasó la prueba. Tu profe la aprueba
   o te pide cambios antes de que salgas a entrevistar.</div>
 
   <table>
@@ -560,7 +560,7 @@ page('Día 9<br>Segundo borrador', `
   <div class="sub">Día 9 — La versión mejorada</div>
 
   <div class="instr">Escríbela otra vez completa con tus cambios. Ésta es la que va a revisar tu
-  maestra antes del cierre.</div>
+  profe antes del cierre.</div>
 
   <table>
     <tbody>
@@ -629,7 +629,7 @@ page('Día 10<br>Reflexión', `
   </ol>
 
   <h2>3 · Califica tu nota</h2>
-  <div class="instr">Encierra un número en cada fila. Tu maestra usa la misma tabla.</div>
+  <div class="instr">Encierra un número en cada fila. Tu profe usa la misma tabla.</div>
   <table class="rubric">
     <thead><tr><th style="width:22%">Criterio</th><th style="width:26%">3 · Lo logré</th>
       <th style="width:26%">2 · Casi</th><th style="width:26%">1 · Todavía no</th></tr></thead>

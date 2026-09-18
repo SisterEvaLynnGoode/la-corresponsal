@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Panel de la Maestra — La Corresponsal</title>
+<title>Panel docente — La Corresponsal</title>
 <style>
 :root {
   --terracotta:#C4622D; --terra-lt:#E8956D;
@@ -112,7 +112,7 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
 
 <header>
   <h1>El Mundo Nuestro</h1>
-  <span class="sub">Panel de la Maestra</span>
+  <span class="sub">Panel docente</span>
   <span class="spacer"></span>
   <span class="sub" id="hdr-class"></span>
   <button class="btn ghost sm" id="btn-logout" style="display:none" onclick="logout()">Salir</button>
@@ -125,12 +125,12 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
     <div class="card">
       <h2>Ver mi clase</h2>
       <p class="muted" style="margin-bottom:.9rem">
-        Escribe tu código de maestra. Es distinto del código que usan los estudiantes.
+        Escribe tu código docente. Es distinto del código que usan los estudiantes.
       </p>
       <div id="login-err"></div>
       <div class="row">
         <div style="flex:1;min-width:210px">
-          <label>Código de maestra</label>
+          <label>Código docente</label>
           <input type="text" id="inp-report" placeholder="Ej: CGUG29BU" maxlength="8"
                  style="text-transform:uppercase;letter-spacing:3px"
                  onkeydown="if(event.key==='Enter')login()">
@@ -211,7 +211,7 @@ dialog::backdrop{background:rgba(0,0,0,.5)}
         </p>
         <div class="codebox" id="code-join">------</div>
         <p class="muted" style="margin-top:1.2rem">
-          Tu código de maestra (no lo compartas con la clase):
+          Tu código docente (no lo compartas con la clase):
         </p>
         <div class="codebox" style="font-size:1.1rem;background:var(--ink-lt)" id="code-report">--------</div>
         <p class="muted" style="margin-top:1rem">
@@ -352,8 +352,8 @@ async function createClass() {
       <div class="ok">
         Clase <strong>${esc(name)}</strong> creada.<br><br>
         Código para estudiantes: <strong style="font-size:1.15rem;letter-spacing:2px">${r.join_code}</strong><br>
-        Tu código de maestra: <strong style="font-size:1.15rem;letter-spacing:2px">${r.report_code}</strong><br><br>
-        Apunta el código de maestra — es el que abre este panel.
+        Tu código docente: <strong style="font-size:1.15rem;letter-spacing:2px">${r.report_code}</strong><br><br>
+        Apunta el código docente — es el que abre este panel.
       </div>`;
     $('inp-report').value = r.report_code;
     $('inp-classname').value = '';

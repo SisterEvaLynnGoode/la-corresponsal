@@ -1779,77 +1779,77 @@ function keyFor(week, sessionNo, key) {
 }
 
 const keyPages =
-  sheet('Clave de respuestas<br>Sólo para la maestra', `
+  sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 1: México</h1>
   <div class="sub">Rojo = respuesta correcta · La pregunta escrita de cada sesión es abierta y se evalúa con la rúbrica</div>
   ${keyFor(1, 1, 'México_0')}
   ${keyFor(1, 2, 'México_1')}
   ${keyFor(1, 3, 'México_2')}`,
   'Clave · Semana 1', 'Página 1 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 2: Guatemala</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(2, 1, 'Guatemala_0')}
   ${keyFor(2, 2, 'Guatemala_1')}
   ${keyFor(2, 3, 'Guatemala_2')}`,
   'Clave · Semana 2', 'Página 2 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 3: Honduras</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(3, 1, 'Honduras_0')}
   ${keyFor(3, 2, 'Honduras_1')}
   ${keyFor(3, 3, 'Honduras_2')}`,
   'Clave · Semana 3', 'Página 3 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 4: El Salvador</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(4, 1, 'El Salvador_0')}
   ${keyFor(4, 2, 'El Salvador_1')}
   ${keyFor(4, 3, 'El Salvador_2')}`,
   'Clave · Semana 4', 'Página 4 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 5: Nicaragua</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(5, 1, 'Nicaragua_0')}
   ${keyFor(5, 2, 'Nicaragua_1')}
   ${keyFor(5, 3, 'Nicaragua_2')}`,
   'Clave · Semana 5', 'Página 5 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 6: Costa Rica</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(6, 1, 'Costa Rica_0')}
   ${keyFor(6, 2, 'Costa Rica_1')}
   ${keyFor(6, 3, 'Costa Rica_2')}`,
   'Clave · Semana 6', 'Página 6 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 7: Panamá</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(7, 1, 'Panamá_0')}
   ${keyFor(7, 2, 'Panamá_1')}
   ${keyFor(7, 3, 'Panamá_2')}`,
   'Clave · Semana 7', 'Página 7 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 8: Cuba</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(8, 1, 'Cuba_0')}
   ${keyFor(8, 2, 'Cuba_1')}
   ${keyFor(8, 3, 'Cuba_2')}`,
   'Clave · Semana 8', 'Página 8 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 9: República Dominicana</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(9, 1, 'República Dominicana_0')}
   ${keyFor(9, 2, 'República Dominicana_1')}
   ${keyFor(9, 3, 'República Dominicana_2')}`,
   'Clave · Semana 9', 'Página 9 de 11')
-  + sheet('Clave de respuestas<br>Sólo para la maestra', `
+  + sheet('Clave de respuestas<br>Sólo para uso docente', `
   <h1>Clave — Semana 10: Puerto Rico</h1>
   <div class="sub">La pregunta escrita de cada sesión es abierta — rúbrica en la última página</div>
   ${keyFor(10, 1, 'Puerto Rico_0')}
   ${keyFor(10, 2, 'Puerto Rico_1')}
   ${keyFor(10, 3, 'Puerto Rico_2')}`,
   'Clave · Semana 10', 'Página 10 de 11')
-  + sheet('Rúbrica<br>Sólo para la maestra', `
+  + sheet('Rúbrica<br>Sólo para uso docente', `
   <h1>Rúbrica para la redacción</h1>
   <div class="sub">Sirve para las dos semanas y para el resto del año</div>
   <table class="rubric">
