@@ -2,10 +2,12 @@
 // propaganda-poster unit.
 //
 // The newspaper project taught students to report without taking a side. This
-// one hands them the other half of the trade: persuasion. They decode the same
-// technique arguing both sides of one strike, name the nine moves, then pick a
-// cause they actually believe in and build a poster — slogan, symbol, draft,
-// peer test, final — ending with the counter-poster their opponents would make.
+// one hands them the other half of the trade: persuasion. They take apart eight
+// real posters — two that speak to the same workers and ask opposite things, two
+// that point the same finger from opposite sides of a war, an ad against a
+// public-health poster, a satirical campaign poster, and one poster that an AI
+// invented — then design their own for a cause they believe in, ending with the
+// counter-poster their opponents would print.
 //
 // Schedule is a block week: Mon 50, Tue 50, Wed/Thu 80 (studio), Fri 50.
 // Ten meetings, so the long studio days land on days 3 and 7.
@@ -13,17 +15,17 @@
 // Outputs:
 //   hojas/carteles.html           student packet, 16 pages, black and white
 //   hojas/carteles-maestra.html   teacher guide, English: day plan, rubric, prep
-//   hojas/carteles-claves.html    answer key for the analysis pages
+//   hojas/carteles-claves.html    answer key, generated from carteles-img.mjs
 //   carteles-presentacion.html    projector deck, posters in colour
 //
-// Art lives in carteles-art.mjs and is rendered twice from one source: grayscale
-// on paper, colour on the projector. Shares _hoja.css and deck-shell.mjs.
-// Run: node build-carteles.mjs
+// Posters and their facts live in carteles-img.mjs; the scans are processed by
+// prep-carteles-img.mjs. Shares _hoja.css and deck-shell.mjs.
+// Run: node prep-carteles-img.mjs && node build-carteles.mjs
 import { writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { deckHTML } from './deck-shell.mjs';
-import { CARTELES, GRIS, TECNICAS, byId, svgCartel, tecNombre } from './carteles-art.mjs';
+import { CARTELES, TECNICAS, byId, figCartel, imgCartel, tecNombre } from './carteles-img.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, 'hojas');
@@ -33,10 +35,6 @@ const namebar = () =>
   `<div class="namebar"><span>Nombre: </span><span>Período: </span><span>Fecha: </span></div>`;
 const blanks = (label, h = '.34in') =>
   `<tr><td style="width:34%"><strong>${label}</strong></td><td class="blank" style="height:${h}"></td></tr>`;
-const fig = (id, cap, cls = '') => {
-  const c = byId(id);
-  return `<figure class="${cls}">${svgCartel(c, GRIS)}<figcaption><b>${c.titulo}</b> · ${cap || c.estilo}</figcaption></figure>`;
-};
 const chips = ts => `<div class="chips">${ts.map(t => `<span>☐ ${t}</span>`).join('')}</div>`;
 const TODAS = TECNICAS.map(t => t[0]);
 
@@ -45,19 +43,18 @@ const TODAS = TECNICAS.map(t => t[0]);
 //  and projector can never disagree.
 // ─────────────────────────────────────────────────────────────────────────────
 const DIAS = [
-  ['1',  '50', 'Lunes',     '¿Qué es la propaganda?',   'Leer, y comparar dos carteles del mismo pleito', 'pp. 2–3'],
-  ['2',  '50', 'Martes',    'La caja de herramientas',  'Nombrar las nueve técnicas y cazarlas',          'pp. 4–5'],
-  ['3',  '80', 'Bloque',    'Taller 1 · Carteles en duelo', 'Decodificar, escoger tu causa, tres bocetos','pp. 6–8'],
-  ['4',  '50', 'Viernes',   'Tu causa',                 'La prueba del cartel y la propuesta',            'p. 9'],
-  ['5',  '50', 'Lunes',     'El eslogan',               'Mandatos: tú, usted, nosotros',                  'p. 10'],
-  ['6',  '50', 'Martes',    'La imagen',                'Un símbolo, un foco, tres segundos',             'p. 11'],
-  ['7',  '80', 'Bloque',    'Taller 2 · Borrador',      'El cartel completo a lápiz',                     'p. 12'],
-  ['8',  '50', 'Viernes',   'La prueba de 3 segundos',  'Edición entre compañeros y plan de cambios',     'p. 13'],
-  ['9',  '50', 'Lunes',     'Taller 3 · Cartel final',  'La versión final, con color',                    'p. 14'],
-  ['10', '50', 'Martes',    'La defensa',               'Defensa escrita, contracartel y reflexión',      'pp. 15–16'],
+  ['1',  '50', 'Lunes',   '¿Qué es la propaganda?',   'Leer, y comparar dos carteles hechos para la misma gente', 'pp. 2–3'],
+  ['2',  '50', 'Martes',  'La caja de herramientas',  'Las diez técnicas, y el mismo dedo desde dos países',      'pp. 4–5'],
+  ['3',  '80', 'Bloque',  'Taller 1 · Vender y avisar','Anuncio contra salud, el cartel falso, y tu causa',        'pp. 6–8'],
+  ['4',  '50', 'Viernes', 'Tu causa',                 'La prueba del cartel y la propuesta',                      'p. 9'],
+  ['5',  '50', 'Lunes',   'El eslogan',               'Mandatos: tú, usted, nosotros',                            'p. 10'],
+  ['6',  '50', 'Martes',  'La imagen',                'Un símbolo, un foco, tres segundos',                       'p. 11'],
+  ['7',  '80', 'Bloque',  'Taller 2 · Borrador',      'El cartel completo a lápiz',                               'p. 12'],
+  ['8',  '50', 'Viernes', 'La prueba de 3 segundos',  'Edición entre compañeros y plan de cambios',               'p. 13'],
+  ['9',  '50', 'Lunes',   'Taller 3 · Cartel final',  'La versión final, con color',                              'p. 14'],
+  ['10', '50', 'Martes',  'La defensa',               'Defensa escrita, contracartel y reflexión',                'pp. 15–16'],
 ];
 
-// The cause has to survive this before anyone draws anything.
 const PRUEBA = [
   '¿Es una causa real, que me importa de verdad?',
   '¿La puedo decir en siete palabras o menos?',
@@ -66,7 +63,6 @@ const PRUEBA = [
   '¿Se puede colgar en el pasillo de esta escuela?',
 ];
 
-// Mandatos: the grammar the slogan runs on. Pronoun attached = written accent.
 const MANDATOS = [
   ['unirse',     '¡Únete!',       '¡Únase!',       '¡Unámonos!'],
   ['luchar',     '¡Lucha!',       '¡Luche!',       '¡Luchemos!'],
@@ -92,6 +88,15 @@ const TRES_SEG = [
   '¿Qué palabra se te quedó?',
 ];
 
+// The four questions asked of every poster in the unit, so the analysis pages,
+// the deck and the key all ask the same thing in the same order.
+const CUATRO = [
+  ['primero', '¿Qué ves primero?'],
+  ['nosotros', '¿Quién es «nosotros»?'],
+  ['pide',    '¿Qué quiere que hagas?'],
+  ['calla',   '¿Qué <em>no</em> te dice?'],
+];
+
 let pageNo = 0;
 const PAGES = [];
 const page = (meta, body) => PAGES.push({ meta, body, n: ++pageNo });
@@ -108,6 +113,18 @@ function render(pages, footLabel, en = false) {
 </div>`).join('');
 }
 
+// Two posters side by side, with the four questions underneath.
+const tablaCuatro = (a, b) => `
+  <table>
+    <thead><tr><th style="width:26%">Pregunta</th><th style="width:37%">${a}</th>
+      <th style="width:37%">${b}</th></tr></thead>
+    <tbody>
+      ${CUATRO.map(([, q]) =>
+        `<tr><td><strong>${q}</strong></td><td class="blank" style="height:.38in"></td>
+          <td class="blank" style="height:.38in"></td></tr>`).join('\n      ')}
+    </tbody>
+  </table>`;
+
 // ─────────────────────────────────────────────────────────────────────────────
 //  1 · Portada
 // ─────────────────────────────────────────────────────────────────────────────
@@ -123,9 +140,8 @@ page('Taller de carteles<br>Portada', `
       dejaras que el lector decidiera. Ese trabajo se acabó.</p>
       <p>Este mes el taller imprime carteles. Un cartel no informa: convence. Tiene siete palabras y
       tres segundos para meterse en la cabeza de quien pasa.</p>
-      <p>Primero vas a aprender a desarmarlos — los que te gustan y los que no — porque las mismas
-      nueve técnicas sirven para cualquier causa, incluyendo las que están en tu contra. Después vas
-      a escoger algo en lo que crees de verdad y vas a hacer el tuyo.</p>
+      <p>Primero vas a desarmar ocho carteles de verdad — de guerras, de huelgas, de anuncios, y uno
+      que no hizo ninguna persona. Después escoges algo en lo que crees y haces el tuyo.</p>
     </div>
   </div>
 
@@ -157,21 +173,21 @@ page('Día 1<br>¿Qué es la propaganda?', `
       Pero propaganda es cualquier mensaje hecho para que pienses algo y hagas algo. No tiene que
       ser mentira. Mucha propaganda dice la verdad; lo que hace es decir <em>una parte</em> de la
       verdad, muy fuerte, y callar el resto.</p>
-      <p><b class="pn">2</b>Piensa en tres mensajes distintos sobre la misma fábrica. El primero
-      dice: «La fábrica abre a las seis.» Eso es <strong>información</strong>. El segundo dice:
-      «Trabaja con nosotros: buen sueldo.» Eso es un <strong>anuncio</strong>: quiere tu dinero o
-      tu firma. El tercero dice: «¡El turno es nuestro!» Eso es <strong>propaganda</strong>: quiere
-      que te sientas parte de un lado y que actúes.</p>
-      <p><b class="pn">3</b>La frontera entre los tres es delgada, y los tres usan las mismas
-      herramientas. Por eso vale la pena aprenderlas: no para dejar de creer en todo, sino para
-      saber qué te están pidiendo y quién gana si se lo das.</p>
-      <p><b class="pn">4</b>En los años veinte, en las fábricas y las panaderías, los sindicatos
-      imprimían carteles para pedir turnos de ocho horas. Las empresas imprimían los suyos para
-      pedir calma y producción. Los dos usaban puños, obreros grandes vistos desde abajo y la
-      palabra <em>nosotros</em>. El dibujo era casi igual. Lo que cambiaba era quién pagaba la
-      imprenta.</p>
-      <p><b class="pn">5</b>Esa es la pregunta con la que vas a leer todo este mes: <strong>¿quién
-      pagó este cartel, y qué quiere que yo haga?</strong></p>
+      <p><b class="pn">2</b>Piensa en tres mensajes sobre la misma fábrica. «La fábrica abre a las
+      seis» es <strong>información</strong>: no quiere nada de ti. «Trabaja con nosotros: buen
+      sueldo» es un <strong>anuncio</strong>: quiere tu firma o tu dinero. «¡Nosotros podemos
+      hacerlo!» es <strong>propaganda</strong>: quiere que te sientas parte de un lado y que
+      actúes. Los tres usan las mismas herramientas.</p>
+      <p><b class="pn">3</b>En 1943, en Estados Unidos, una empresa de electricidad imprimió un
+      cartel con una trabajadora enseñando el brazo. Decía <em>We Can Do It</em>: nosotros podemos.
+      Ese «nosotros» incluía a la empresa, y lo que pedía era producir más.</p>
+      <p><b class="pn">4</b>Veinte años después, en California, el sindicato de campesinos imprimió
+      otro cartel para trabajadores. Un águila negra y dos palabras: <em>¡Viva la huelga!</em> Ese
+      «nosotros» eran los que cortaban la uva, y lo que pedía era exactamente lo contrario:
+      <strong>dejar de trabajar</strong>.</p>
+      <p><b class="pn">5</b>Los dos le hablan al mismo tipo de persona. Los dos la dibujan grande y
+      fuerte. Por eso la pregunta con la que vas a leer todo este mes no es «¿es bonito?» ni «¿es
+      verdad?», sino: <strong>¿quién pagó este cartel, y qué quiere que yo haga?</strong></p>
     </div>
   </div>
 
@@ -183,46 +199,38 @@ page('Día 1<br>¿Qué es la propaganda?', `
   ${lines(2)}`);
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  3 · Los carteles en duelo
+//  3 · El par obrero
 // ─────────────────────────────────────────────────────────────────────────────
-page('Día 1<br>Dos lados, un mismo truco', `
+page('Día 1<br>Dos carteles, la misma gente', `
   ${namebar()}
-  <h1>El mismo pleito, dos carteles</h1>
-  <div class="sub">Día 1 — La huelga de las panaderías</div>
+  <h1>Los dos le hablan al que trabaja</h1>
+  <div class="sub">Día 1 — Y le piden cosas contrarias</div>
 
-  <div class="instr">Los dos carteles salieron la misma semana, de la misma huelga. Uno lo pagó el
-  sindicato; el otro, la empresa. Míralos tres segundos cada uno, como si pasaras caminando.</div>
+  <div class="instr">Míralos tres segundos cada uno, como si pasaras caminando. Después contesta
+  las cuatro preguntas para cada cartel.</div>
 
   <div class="carteles med">
-    ${fig('turno', 'Lo pagó el <b>sindicato</b>')}
-    ${fig('fabrica', 'Lo pagó la <b>empresa</b>')}
+    ${figCartel('wecandoit')}
+    ${figCartel('huelga')}
   </div>
 
-  <table>
-    <thead><tr><th style="width:30%">Pregunta</th><th style="width:35%">Cartel del sindicato</th>
-      <th style="width:35%">Cartel de la empresa</th></tr></thead>
-    <tbody>
-      <tr><td><strong>¿Qué ves primero?</strong></td><td class="blank"></td><td class="blank"></td></tr>
-      <tr><td><strong>¿Quién es «nosotros»?</strong></td><td class="blank"></td><td class="blank"></td></tr>
-      <tr><td><strong>¿Qué quiere que hagas?</strong></td><td class="blank"></td><td class="blank"></td></tr>
-      <tr><td><strong>¿Qué <em>no</em> te dice?</strong></td><td class="blank" style="height:.42in"></td>
-        <td class="blank" style="height:.42in"></td></tr>
-    </tbody>
-  </table>
+  ${tablaCuatro('«We Can Do It!» (1943)', '«¡Viva la huelga!» (años 60)')}
 
-  <div class="tip">Los dos usan un obrero grande y la palabra <em>nosotros</em>. La misma herramienta
-  sirve para pedir ocho horas y para pedir que nadie pare la máquina.</div>
+  <div class="tip">Uno lo pagó una empresa y pide <em>más trabajo</em>. El otro lo pagó un sindicato
+  y pide <em>parar el trabajo</em>. Los dos dibujan al trabajador fuerte, y los dos dicen
+  «nosotros».</div>
 
-  <div class="instr">¿Cuál te convenció más? Di por qué, y nombra una cosa del dibujo que te convenció.</div>
+  <div class="instr">¿Cuál te convenció más? Di por qué, y nombra una cosa del dibujo que te
+  convenció.</div>
   ${lines(3)}`);
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  4 · La caja de herramientas
 // ─────────────────────────────────────────────────────────────────────────────
-page('Día 2<br>Las nueve técnicas', `
+page('Día 2<br>Las diez técnicas', `
   ${namebar()}
   <h1>La caja de herramientas</h1>
-  <div class="sub">Día 2 — Nueve técnicas con nombre</div>
+  <div class="sub">Día 2 — Diez técnicas con nombre</div>
 
   <div class="instr">Con nombre se ven. Sin nombre funcionan. Léelas y, en la última columna, apunta
   dónde has visto cada una — en un cartel, un anuncio, un video o la boca de alguien que conoces.</div>
@@ -240,112 +248,107 @@ page('Día 2<br>Las nueve técnicas', `
   de guerra usan las mismas. Lo que cambia es para qué, y quién gana.</div>`);
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  5 · Caza de técnicas
+//  5 · El mismo dedo, dos países
 // ─────────────────────────────────────────────────────────────────────────────
-page('Día 2<br>Caza de técnicas', `
+page('Día 2<br>El mismo dedo', `
   ${namebar()}
-  <h1>Caza de técnicas</h1>
-  <div class="sub">Día 2 — Dos carteles más</div>
-
-  <div class="instr">Para cada cartel: marca las técnicas que encuentres, copia la prueba exacta del
-  cartel y escribe qué te pide hacer.</div>
+  <h1>El mismo dedo, dos países enemigos</h1>
+  <div class="sub">Día 2 — 1917 y 1920</div>
 
   <div class="carteles med">
-    ${fig('boicot')}
-    ${fig('necesitamos')}
+    ${figCartel('samtio', { nota: 'Te quiero a TI para el ejército' })}
+    ${figCartel('moor', { nota: '«¿Tú te has alistado como voluntario?»' })}
   </div>
 
-  <h2>Cartel de la izquierda</h2>
+  <div class="instr">Tres años y nueve mil kilómetros separan estos dos carteles. Los países iban a
+  ser enemigos casi todo el siglo. Marca las técnicas que encuentres en cada uno.</div>
+
+  <h2>Cartel de la izquierda · Estados Unidos, 1917</h2>
   ${chips(TODAS)}
+  <h2>Cartel de la derecha · Rusia soviética, 1920</h2>
+  ${chips(TODAS)}
+
+  <h2>Lo que comparten</h2>
   <table>
     <tbody>
-      ${blanks('La prueba (cópiala)', '.4in')}
-      ${blanks('¿Qué quiere que hagas?')}
+      ${blanks('¿Qué hacen los dos con los ojos y la mano?', '.4in')}
+      ${blanks('¿Por qué sientes que te habla a ti?', '.4in')}
+      ${blanks('Si los dos usan el mismo truco, ¿quién tenía la razón?', '.46in')}
     </tbody>
   </table>
-
-  <h2>Cartel de la derecha</h2>
-  ${chips(TODAS)}
-  <table>
-    <tbody>
-      ${blanks('La prueba (cópiala)', '.4in')}
-      ${blanks('¿Qué quiere que hagas?')}
-    </tbody>
-  </table>`);
+  <div class="tip">Esa última pregunta no tiene respuesta corta, y ése es el punto: la técnica no
+  te dice quién tiene la razón. Sólo te dice que alguien quiere algo de ti.</div>`);
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  6 · Taller 1, primera parte: salud y anuncio
+//  6 · Taller 1 (1 de 3): vender y avisar
 // ─────────────────────────────────────────────────────────────────────────────
 page('Día 3 · Bloque<br>Taller 1 (1 de 3)', `
   ${namebar()}
-  <h1>Vender agua, vender cosas</h1>
+  <h1>Vender harina, avisar de una enfermedad</h1>
   <div class="sub">Día 3 — Las mismas herramientas, dos intenciones</div>
 
-  <div class="instr">Uno quiere que tomes agua. El otro quiere tu dinero. Compáralos con cuidado:
-  usan casi las mismas técnicas.</div>
-
   <div class="carteles med">
-    ${fig('agua')}
-    ${fig('compra')}
+    ${figCartel('anuncio')}
+    ${figCartel('keepfit')}
   </div>
 
-  <table>
-    <thead><tr><th style="width:30%">Pregunta</th><th style="width:35%">Cartel de salud</th>
-      <th style="width:35%">Anuncio</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Técnicas que usa</strong></td><td class="blank" style="height:.4in"></td>
-        <td class="blank" style="height:.4in"></td></tr>
-      <tr><td><strong>¿Quién gana si le haces caso?</strong></td><td class="blank" style="height:.4in"></td>
-        <td class="blank" style="height:.4in"></td></tr>
-      <tr><td><strong>¿El dato es comprobable?</strong></td><td class="blank"></td><td class="blank"></td></tr>
-    </tbody>
-  </table>
+  ${tablaCuatro('El anuncio (1920)', 'La salud pública (1939)')}
 
   <h2>La pregunta difícil</h2>
-  <div class="instr">Si las dos usan las mismas técnicas, ¿por qué una nos parece bien y la otra no?
-  No hay una sola respuesta correcta; defiende la tuya.</div>
+  <div class="instr">Los dos te dan una orden y los dos te enseñan gente feliz y sana. ¿Por qué uno
+  nos parece bien y el otro no? No hay una sola respuesta correcta; defiende la tuya.</div>
   ${lines(4)}`);
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  7 · Taller 1, segunda parte: la pantalla
+//  7 · Taller 1 (2 de 3): el cartel que nunca existió
 // ─────────────────────────────────────────────────────────────────────────────
 page('Día 3 · Bloque<br>Taller 1 (2 de 3)', `
   ${namebar()}
-  <h1>El cartel que traes en el bolsillo</h1>
-  <div class="sub">Día 3 — La propaganda ya no se pega en la pared</div>
+  <h1>El cartel que nunca existió</h1>
+  <div class="sub">Día 3 — Lo hizo una máquina, este año</div>
 
   <div class="two" style="gap:0 .9rem">
-    <div>${fig('parque', 'Publicación de vecinos · hoy', 'med')}</div>
+    <div>${figCartel('falso', { clase: 'med' })}</div>
     <div>
-      <div class="instr">Hoy los carteles se deslizan. Tienen la misma estructura: una imagen, pocas
-      palabras, una orden. Y una ventaja nueva: el número de gente que ya dijo que sí.</div>
+      <div class="instr">Este cartel parece de 1936 y parece soviético. No lo es. Lo generó una
+      inteligencia artificial en 2026, y la «mancomunidad americano-soviética» que anuncia nunca
+      existió: nunca hubo un país así.</div>
+      <div class="instr">Acércate y búscale las costuras.</div>
       <table>
         <tbody>
-          ${blanks('Técnica más fuerte', '.38in')}
-          ${blanks('El número que usa', '.3in')}
-          ${blanks('Qué te pide', '.3in')}
+          ${blanks('Una palabra que se deshace', '.36in')}
+          ${blanks('Algo que no cuadra en el dibujo', '.4in')}
+          ${blanks('Lo que sí logra: ¿qué sentimiento te da?', '.4in')}
         </tbody>
       </table>
     </div>
   </div>
 
-  <h2>Tu propio bolsillo</h2>
-  <div class="instr">Piensa en algo que viste en tu teléfono esta semana y que quería convencerte de
-  algo: un anuncio, un video, una publicación de alguien famoso.</div>
+  <h2>Cómo se revisa un cartel viejo</h2>
   <table>
     <tbody>
-      ${blanks('¿Qué era?', '.38in')}
-      ${blanks('¿Qué técnica usaba?')}
-      ${blanks('¿Quién ganaba si le hacías caso?', '.38in')}
-      ${blanks('¿Funcionó contigo? Sé honesto', '.38in')}
+      <tr><td style="width:30%"><strong>Las letras</strong></td><td>Acércate. Las máquinas todavía
+        inventan letras que no son letras, sobre todo chiquitas.</td></tr>
+      <tr><td><strong>Los datos</strong></td><td>¿El país, el año y la organización existieron?
+        Eso se busca en treinta segundos.</td></tr>
+      <tr><td><strong>El autor</strong></td><td>Un cartel real casi siempre tiene imprenta, sindicato
+        o gobierno impreso en alguna esquina.</td></tr>
+      <tr><td><strong>De dónde salió</strong></td><td>¿Lo tiene un museo o un archivo, o nada más
+      apareció en una red social?</td></tr>
     </tbody>
   </table>
 
-  <div class="tip">Cuando algo te hace sentir que te vas a quedar fuera si no actúas ya, eso tiene
-  nombre: «todos lo hacen» más «la llamada». Es la pareja más vieja del oficio.</div>`);
+  <h2>Tu propio bolsillo</h2>
+  <div class="instr">Algo que viste en tu teléfono esta semana y que quería convencerte de algo.</div>
+  <table>
+    <tbody>
+      ${blanks('¿Qué era y qué técnica usaba?', '.4in')}
+      ${blanks('¿Quién ganaba si le hacías caso?', '.36in')}
+    </tbody>
+  </table>`);
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  8 · Taller 1, tercera parte: escoge tu causa
+//  8 · Taller 1 (3 de 3): escoge tu causa
 // ─────────────────────────────────────────────────────────────────────────────
 page('Día 3 · Bloque<br>Taller 1 (3 de 3)', `
   ${namebar()}
@@ -428,7 +431,7 @@ page('Día 5<br>El eslogan', `
   <div class="sub">Día 5 — Siete palabras o menos, y casi siempre un mandato</div>
 
   <div class="instr">Los eslóganes mandan: ¡Únete! ¡No compres! ¡Apágala! Eso es un
-  <strong>mandato</strong>. Cambia según a quién le hables.</div>
+  <strong>mandato</strong>, y cambia según a quién le hables.</div>
 
   <table>
     <thead><tr><th style="width:20%">Verbo</th><th style="width:27%">A un compañero (tú)</th>
@@ -441,7 +444,8 @@ page('Día 5<br>El eslogan', `
 
   <div class="tip"><strong>El acento del mandato:</strong> cuando le pegas un pronombre al final, la
   palabra crece y pide acento escrito: <em>cuida → cuídalo</em>, <em>apaga → apágala</em>,
-  <em>une → únete</em>. Dilo en voz alta: el golpe no se movió, pero la palabra sí.</div>
+  <em>une → únete</em>. Dilo en voz alta: el golpe no se movió, pero la palabra sí. En negativo el
+  pronombre se va adelante y el acento se cae: <em>¡No te calles!</em></div>
 
   <h2>Escribe cinco</h2>
   <div class="instr">Cinco eslóganes para tu causa. Siete palabras o menos. Por lo menos tres tienen
@@ -451,7 +455,6 @@ page('Día 5<br>El eslogan', `
   </ol>
 
   <h2>El que escoges</h2>
-  <div class="instr">Encierra el mejor arriba y cópialo aquí, con sus acentos y sus signos.</div>
   <div class="box" style="padding:.5rem .6rem"><div class="lines"><div></div></div></div>
   <div class="instr">¿Cuántas palabras tiene? ________ &nbsp;&nbsp; ¿Qué mandato usa? ______________________</div>`);
 
@@ -461,42 +464,49 @@ page('Día 5<br>El eslogan', `
 page('Día 6<br>La imagen', `
   ${namebar()}
   <h1>Un símbolo, un foco, tres segundos</h1>
-  <div class="sub">Día 6 — Cómo se ve un cartel que sí funciona</div>
+  <div class="sub">Día 6 — Y a veces, un chiste</div>
 
   <div class="two" style="gap:0 .9rem">
-    <div>${fig('luz', 'Cartel de una estudiante · hecho a mano', 'med')}</div>
+    <div>${figCartel('boomboom', { clase: 'med' })}</div>
     <div>
-      <div class="instr">Este lo hizo una estudiante con tres marcadores. Funciona por cuatro
-      razones, y las cuatro las puedes copiar hoy.</div>
+      <div class="instr">San Francisco, 1982: una candidata de protesta, una monja en una escoba.
+      No ganó, pero sacó más de veinte mil votos. Su técnica es la décima de la lista:
+      <strong>el humor</strong>.</div>
       <table>
         <tbody>
-          <tr><td><strong>Un símbolo</strong><br>Un foco. No un foco, un salón, un recibo y un planeta.</td></tr>
-          <tr><td><strong>Un foco visual</strong><br>Lo más importante es lo más grande y está en el centro.</td></tr>
-          <tr><td><strong>Letras que se leen de lejos</strong><br>Gruesas, derechas, pocas.</td></tr>
-          <tr><td><strong>Un dato chiquito</strong><br>Abajo, para el que se acerca.</td></tr>
+          ${blanks('¿Qué ves primero?', '.34in')}
+          ${blanks('¿Qué te pide, y cuándo?', '.34in')}
+          ${blanks('¿Qué NO te dice?', '.34in')}
         </tbody>
       </table>
+      <div class="tip">Cuesta enojarse con un chiste. Por eso el humor convence a gente que ya
+      había decidido no escucharte.</div>
     </div>
   </div>
 
-  <h2>Tu símbolo</h2>
-  <div class="instr">Escribe tres objetos que podrían representar tu causa. Después encierra el que
-  se entienda sin explicación.</div>
-  <table><tbody><tr><td class="blank" style="height:.34in"></td></tr></tbody></table>
+  <h2>Las cuatro cosas que hacen que un cartel funcione</h2>
+  <table>
+    <tbody>
+      <tr><td style="width:26%"><strong>Un símbolo</strong></td><td>Uno. El águila de la huelga, el
+        brazo, la escoba. No cinco cosas a la vez.</td></tr>
+      <tr><td><strong>Un foco</strong></td><td>Lo más importante es lo más grande, y está cerca del centro.</td></tr>
+      <tr><td><strong>Letras de lejos</strong></td><td>Gruesas, derechas, pocas.</td></tr>
+      <tr><td><strong>Un dato chiquito</strong></td><td>Abajo, para quien se acerque.</td></tr>
+    </tbody>
+  </table>
 
-  <h2>Las letras</h2>
-  <div class="instr">Practica tu eslogan con letras de palo, mayúsculas, gruesas. Usa el renglón de
-  abajo como guía: primero marca dónde empieza y termina cada palabra, y luego engrosa.</div>
-  <div class="box" style="padding:.45rem .5rem">
-    <div class="lines"><div style="height:.4in"></div><div style="height:.4in"></div></div>
+  <h2>Tu símbolo y tus letras</h2>
+  <div class="instr">Escribe tres objetos que podrían representar tu causa y encierra el que se
+  entienda sin explicación. Después practica tu eslogan con letras de palo, gruesas.</div>
+  <table><tbody><tr><td class="blank" style="height:.32in"></td></tr></tbody></table>
+  <div class="box" style="padding:.4rem .5rem">
+    <div class="lines"><div style="height:.34in"></div></div>
   </div>
 
   <h2>Tu composición</h2>
-  <div class="instr">Tres maneras distintas de acomodar lo mismo: símbolo arriba y letras abajo,
-  letras arriba y símbolo abajo, símbolo gigante con las letras encima.</div>
   <div class="carteles tres">
     ${['símbolo arriba', 'letras arriba', 'símbolo gigante'].map(t =>
-      `<div class="marco" style="height:1.15in"><div class="campo">${t}</div></div>`).join('')}
+      `<div class="marco" style="height:.75in"><div class="campo">${t}</div></div>`).join('')}
   </div>`);
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -588,7 +598,7 @@ page('Día 10<br>La defensa', `
 
   <h2>El contracartel</h2>
   <div class="instr">Ahora el otro lado. Alguien no está de acuerdo contigo y tiene dinero para
-  imprimir. Con las mismas nueve técnicas, ¿qué cartel haría contra el tuyo?</div>
+  imprimir. Con las mismas diez técnicas, ¿qué cartel haría contra el tuyo?</div>
   <table>
     <tbody>
       ${blanks('Su eslogan sería', '.42in')}
@@ -618,7 +628,7 @@ page('Día 10<br>Reflexión', `
 
   <h2>2 · Piensa</h2>
   <ol class="q">
-    <li>¿Qué técnica usaste tú, de las nueve, y por qué ésa? ${lines(2)}</li>
+    <li>¿Qué técnica usaste tú, de las diez, y por qué ésa? ${lines(2)}</li>
     <li>Después de este mes, ¿qué vas a mirar distinto cuando veas un anuncio? ${lines(2)}</li>
   </ol>
 
@@ -638,75 +648,70 @@ page('Día 10<br>Reflexión', `
   va a ver tres segundos y va a pensar en tu causa. Eso es todo el oficio.</div>`);
 
 // ═════════════════════════════════════════════════════════════════════════════
-//  Answer key
+//  Answer key — generated from the posters' own `hechos`, so it cannot drift
 // ═════════════════════════════════════════════════════════════════════════════
 const KEY = [];
 const keyPage = (meta, body) => KEY.push({ meta, body, n: KEY.length + 1 });
-const tecs = c => c.tecnicas.map(tecNombre).join(', ');
+const tecs = id => byId(id).tecnicas.map(tecNombre).join(', ');
+
+const claveCuatro = (a, b) => {
+  const A = byId(a), B = byId(b);
+  return `<table>
+    <thead><tr><th style="width:22%">Pregunta</th><th style="width:39%">${A.titulo}</th>
+      <th style="width:39%">${B.titulo}</th></tr></thead>
+    <tbody>
+      ${CUATRO.map(([k, q]) =>
+        `<tr><td>${q}</td><td class="ans">${A.hechos[k]}</td><td class="ans">${B.hechos[k]}</td></tr>`).join('\n      ')}
+      <tr><td>Técnicas</td><td class="ans">${tecs(a)}</td><td class="ans">${tecs(b)}</td></tr>
+    </tbody>
+  </table>`;
+};
 
 keyPage('Clave de respuestas<br>Sólo para uso docente', `
   <h1>El taller de carteles — clave</h1>
-  <div class="sub">Páginas 3, 5 y 6 · análisis de carteles</div>
+  <div class="sub">Páginas 3 y 5 · los dos pares</div>
   <div class="instr"><span class="ans">En rojo</span> lo que debe aparecer.
-  <span class="open">En verde</span> lo que es respuesta abierta: se califica por la defensa, no por
-  coincidir conmigo.</div>
+  <span class="open">En verde</span> lo abierto: se califica por la defensa, no por coincidir conmigo.</div>
 
-  <h3>Página 3 · El mismo pleito, dos carteles</h3>
-  <table>
-    <thead><tr><th style="width:24%">Pregunta</th><th style="width:38%">Sindicato («¡El turno es nuestro!»)</th>
-      <th style="width:38%">Empresa («La fábrica somos todos»)</th></tr></thead>
-    <tbody>
-      <tr><td>¿Qué ves primero?</td><td class="open">El puño con el rodillo</td><td class="open">La fábrica y la flecha que sube</td></tr>
-      <tr><td>¿Quién es «nosotros»?</td><td class="ans">Las panaderas, los trabajadores</td>
-        <td class="ans">Los dueños y los trabajadores juntos — la empresa incluye al obrero en su «nosotros»</td></tr>
-      <tr><td>¿Qué quiere que hagas?</td><td class="ans">Unirte al sindicato, exigir las 8 horas</td>
-        <td class="ans">Seguir produciendo, sentirte parte, no parar</td></tr>
-      <tr><td>¿Qué <em>no</em> te dice?</td><td class="ans">Qué se pierde en la huelga; si hay sueldo esos días</td>
-        <td class="ans">Cuántas horas se trabajan; quién se queda con el +19%</td></tr>
-    </tbody>
-  </table>
-  <div class="instr">La respuesta que buscas en la última pregunta: los dos usan
-  <strong>el nosotros</strong> y <strong>la imagen heroica</strong>. Si alguien lo dice sin ayuda,
-  ya entendió el mes entero.</div>
+  <h3>Página 3 · Los dos le hablan al que trabaja</h3>
+  ${claveCuatro('wecandoit', 'huelga')}
+  <div class="instr">Lo que buscas que alguien diga en voz alta: los dos usan
+  <strong>el nosotros</strong> y <strong>la imagen heroica</strong>, y piden cosas contrarias —
+  trabajar más y dejar de trabajar. Si sale sin ayuda, ya entendieron el mes entero.</div>
 
-  <h3>Página 5 · Caza de técnicas</h3>
-  <table>
-    <thead><tr><th style="width:26%">Cartel</th><th style="width:40%">Técnicas</th><th style="width:34%">Qué pide</th></tr></thead>
-    <tbody>
-      ${['boicot', 'necesitamos'].map(id => { const c = byId(id); return
-        `<tr><td><strong>${c.titulo}</strong></td><td class="ans">${tecs(c)}</td>
-          <td class="ans">${id === 'boicot' ? 'Que preguntes quién lo hizo antes de comprar' : 'Que te presentes el lunes'}</td></tr>`;
-      }).join('\n      ')}
-    </tbody>
-  </table>
-
-  <h3>Página 6 · Salud y anuncio</h3>
-  <table>
-    <thead><tr><th style="width:26%">Cartel</th><th style="width:40%">Técnicas</th><th style="width:34%">Quién gana</th></tr></thead>
-    <tbody>
-      ${['agua', 'compra'].map(id => { const c = byId(id); return
-        `<tr><td><strong>${c.titulo}</strong></td><td class="ans">${tecs(c)}</td>
-          <td class="ans">${id === 'agua' ? 'El estudiante que toma agua; nadie cobra' : 'La tienda — el «dato» aquí no existe'}</td></tr>`;
-      }).join('\n      ')}
-    </tbody>
-  </table>
-  <div class="instr">El dato del cartel de salud («8 de cada 10 llegan sin tomar agua») es
-  <strong>comprobable</strong> en teoría: se puede preguntar, contar, medir. El anuncio no da ningún
-  número — sólo dice «todos lo tienen». Esa es la diferencia que quieres que vean.</div>`);
+  <h3>Página 5 · El mismo dedo</h3>
+  ${claveCuatro('samtio', 'moor')}
+  <div class="instr">Las tres preguntas de abajo de esa página: los dos <span class="ans">miran de
+  frente y señalan con el dedo hacia afuera del cartel</span>; funciona porque <span class="ans">el
+  dedo y los ojos te siguen, y el texto te habla de tú</span>. La tercera —
+  <em>¿quién tenía la razón?</em> — es <span class="open">abierta a propósito</span>: la técnica no
+  contesta esa pregunta, y ésa es la lección.</div>`);
 
 keyPage('Clave de respuestas<br>Sólo para uso docente', `
-  <h1>Clave — páginas 7 y 10</h1>
-  <div class="sub">Redes y mandatos</div>
+  <h1>Clave — páginas 6 y 7</h1>
 
-  <h3>Página 7 · #SalvaElParque</h3>
+  <h3>Página 6 · El anuncio y la salud pública</h3>
+  ${claveCuatro('anuncio', 'keepfit')}
+  <div class="instr">«La pregunta difícil» es <span class="open">abierta</span>. La distinción que
+  vale la pena sacar: el cartel de salud te pide algo que te sirve a ti y no le da dinero a nadie;
+  el anuncio te pide algo que le sirve a quien lo pagó. Las dos cosas pueden ser ciertas a la vez.</div>
+
+  <h3>Página 7 · El cartel falso</h3>
   <table>
     <tbody>
-      <tr><td style="width:30%"><strong>Técnica más fuerte</strong></td>
-        <td class="ans">«Todos lo hacen» — los 1.284 vecinos que ya firmaron</td></tr>
-      <tr><td><strong>El número</strong></td><td class="ans">1.284 firmas. Nadie dice de dónde salió ni de cuándo es</td></tr>
-      <tr><td><strong>Qué pide</strong></td><td class="ans">Que firmes tú también</td></tr>
+      <tr><td style="width:26%"><strong>Qué es</strong></td>
+        <td class="ans">Imagen generada por inteligencia artificial en 2026. No hubo nunca una «mancomunidad americano-soviética»</td></tr>
+      <tr><td><strong>Las costuras</strong></td>
+        <td class="ans">${byId('falso').hechos.calla}</td></tr>
+      <tr><td><strong>Lo que sí logra</strong></td>
+        <td class="open">Sí da el sentimiento: puño, rayos, fábricas. La técnica funciona aunque el cartel no sea de nadie</td></tr>
     </tbody>
   </table>
+  <div class="instr">Si alguien pregunta por qué importa: porque este cartel se puede hacer en un
+  minuto, y una foto «histórica» falsa circula igual de rápido que una real.</div>`);
+
+keyPage('Clave de respuestas<br>Sólo para uso docente', `
+  <h1>Clave — páginas 10 y 11</h1>
 
   <h3>Página 10 · Mandatos</h3>
   <table>
@@ -717,18 +722,20 @@ keyPage('Clave de respuestas<br>Sólo para uso docente', `
         `<tr><td>${v}</td><td class="ans">${tu}</td><td class="ans">${ud}</td><td class="ans">${nos}</td></tr>`).join('\n      ')}
     </tbody>
   </table>
-  <div class="instr">El punto de la fila de <em>callarse</em>: en negativo el pronombre se va
-  <strong>antes</strong> del verbo y el acento desaparece — <em>¡No te calles!</em>, no
-  «¡No cállate!». Es el error más común y vale la pena decirlo en voz alta.</div>
+  <div class="instr">El error más común es «¡No cállate!». En negativo el pronombre va antes del
+  verbo y el acento desaparece: <strong>¡No te calles!</strong></div>
 
-  <h3>Lo que no lleva calificación</h3>
-  <p style="font-size:.9rem"><span class="open">Abiertas:</span> «¿cuál te convenció más?» (p. 3),
-  la pregunta difícil (p. 6), el bolsillo (p. 7), la causa y la propuesta (pp. 8–9), todo lo del
-  cartel (pp. 10–14), la defensa y el contracartel (p. 15) y la reflexión (p. 16).</p>
-  <p style="font-size:.9rem">En el contracartel busca una cosa: que la técnica que nombra
-  <strong>sea de la lista</strong> y que el eslogan contrario de verdad golpee su propia causa. Si
-  escribe un contracartel débil a propósito, no entendió — o no quiso entender — que las
-  herramientas no tienen lado.</p>`);
+  <h3>Página 11 · Sister Boom Boom</h3>
+  <table>
+    <tbody>
+      ${CUATRO.filter(([k]) => k !== 'nosotros').map(([k, q]) =>
+        `<tr><td style="width:26%">${q}</td><td class="ans">${byId('boomboom').hechos[k]}</td></tr>`).join('\n      ')}
+    </tbody>
+  </table>
+  <div class="instr"><span class="open">Abiertas:</span> todo lo del teléfono (p. 7), la causa y la
+  propuesta (pp. 8–9), el cartel entero (pp. 10–14), la defensa y el contracartel (p. 15) y la
+  reflexión (p. 16). En el contracartel busca una cosa: que la técnica que nombra sea de la lista y
+  que el eslogan contrario de verdad golpee su propia causa.</div>`);
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  Teacher guide (English)
@@ -738,11 +745,10 @@ TEACHER.push({ n: 1, meta: 'Teacher guide<br>Ten-day plan', body: `
   <h1>El taller de carteles — Teacher Guide</h1>
   <div class="sub">Propaganda unit · ten meetings · student packet is 16 pages</div>
 
-  <p style="font-size:.95rem">Students decode posters that argue both sides of one labour dispute,
-  name nine techniques, then design a poster for a cause they choose. The unit ends with the
-  counter-poster: the slogan their opponents would print, using a technique they just learned.
-  The example posters are drawn originals, not reproductions, so the packet copies forever —
-  grayscale on paper, colour on the projector.</p>
+  <p style="font-size:.95rem">Students take apart eight real posters, name ten techniques, then
+  design a poster for a cause they choose. The unit ends with the counter-poster: the slogan their
+  opponents would print, using a technique they just learned. Two of the eight posters are still in
+  copyright and live outside the published site — see the note at the bottom of page 2.</p>
 
   <h2>The ten days</h2>
   <table style="font-size:.8rem">
@@ -756,12 +762,12 @@ TEACHER.push({ n: 1, meta: 'Teacher guide<br>Ten-day plan', body: `
         return `<tr><td>${d}</td><td>${dia === 'Bloque' ? '<strong>80 min</strong>' : min + ' min'}</td>
           <td><strong>${paso}</strong><br><span class="sans" style="font-size:.6rem;color:#5a5a5a">${hoja}</span></td>
           <td>${[
-            'Read the passage, then the duelling pair. Both posters use the same two tools — that is the unit.',
-            'Name the nine techniques, then hunt them. Expect arguing over which is which; the argument is the lesson.',
-            'Block. Health vs advertisement, the phone-feed poster, then choose a cause and sketch three thumbnails.',
+            'Read the passage, then Westinghouse\'s "We Can Do It!" against the UFW strike poster. Same worker, opposite ask.',
+            'The ten techniques, then Uncle Sam (1917) beside Moor\'s Red Army poster (1920). Same finger, enemy countries.',
+            'Block. The 1920 Pillsbury ad against the WPA tuberculosis poster, then the AI-made poster, then choose a cause and sketch.',
             'The cause test and the pitch. Approve, request changes, or send them back for another cause.',
             'Mandatos: tú, usted, nosotros, and the accent that appears when a pronoun is attached.',
-            'One symbol, one focal point, three seconds. Lettering practice, three compositions.',
+            'Sister Boom Boom and humour as persuasion, then symbol, focal point, lettering, three compositions.',
             'Block. Full pencil draft. Stop everyone at the half hour for a partner look.',
             'The three-second test, then three concrete changes. Not "make it better".',
             'Final poster, colour media. Keep it to the hour.',
@@ -771,44 +777,66 @@ TEACHER.push({ n: 1, meta: 'Teacher guide<br>Ten-day plan', body: `
     </tbody>
   </table>
 
-  <h2>Sort these out before day 1</h2>
-  <p style="font-size:.88rem"><strong>Materials.</strong> Markers and colored pencils for days 7 and
-  9. The packet's frames are letter-size, so nothing bigger is required; with 11×17, page 14 becomes
-  the plan and they scale it up. &nbsp;<strong>Wall space.</strong> Decide where the posters hang and
-  tell them on day 1 — the unit leans on strangers seeing the poster.
-  &nbsp;<strong>Causes.</strong> You sign the pitch on day 4, which is where you redirect anything
-  aimed at a person rather than an idea.</p>` });
+  <p style="font-size:.9rem"><strong>Materials:</strong> markers and colored pencils for days 7 and
+  9. The poster frames are letter-size; with 11×17, page 14 becomes the plan and they scale it up.
+  Decide where the posters hang before day 1 and tell them on day 1 — the unit leans on strangers
+  seeing it.</p>` });
 
-TEACHER.push({ n: 2, meta: 'Teacher guide<br>Teaching notes', body: `
+TEACHER.push({ n: 2, meta: 'Teacher guide<br>The posters', body: `
+  <h1>The eight posters</h1>
+  <table style="font-size:.78rem">
+    <thead><tr><th style="width:28%">Poster</th><th style="width:42%">Source</th><th style="width:30%">Techniques it runs on</th></tr></thead>
+    <tbody>
+      ${CARTELES.map(c => `<tr><td><strong>${c.titulo}</strong><br>
+        <span class="sans" style="font-size:.9em;color:#5a5a5a">${c.lado}</span></td>
+        <td>${c.pie}<br><span class="sans" style="font-size:.9em;color:#5a5a5a">${c.credito}</span></td>
+        <td>${c.tecnicas.map(tecNombre).join(', ')}</td></tr>`).join('\n      ')}
+    </tbody>
+  </table>
+
+  <h2>Printing, and the two copyrighted posters</h2>
+  <p style="font-size:.9rem">Six posters are public domain and print from anywhere. The UFW strike
+  poster (page 3) and Sister Boom Boom (page 11) are still in copyright, so their image files stay
+  off the public site: they print from <strong>your</strong> machine and show a labelled box if you
+  print the packet from the website. Print student copies from the project folder, or project those
+  two pages in class.</p>
+
+  <h2>The AI poster</h2>
+  <p style="font-size:.9rem">Page 7 is a poster generated this year that claims to be from a 1936
+  "American-Soviet Commonwealth" — a country that never existed. Students look for the tells: letters
+  that dissolve under a close look, flags of nothing, no printer or union mark in any corner, and no
+  archive it came from. The honest ending to that discussion is that it still works on the eye: the
+  technique does its job even when nobody made the thing on purpose.</p>` });
+
+TEACHER.push({ n: 3, meta: 'Teacher guide<br>Teaching notes', body: `
   <h1>Teaching notes</h1>
 
-  <h2>Why labour and not war</h2>
-  <p style="font-size:.95rem">The duelling pair is a bakers' strike: the union's poster and the
-  company's poster, same week, same fist, same word «nosotros». Students see one technique argue
-  both sides before anyone asks them to pick a side, and the heat stays on who paid the printer
-  rather than on anybody's identity. The ad-versus-public-health pair on day 3 makes the same point
-  with lower stakes: a poster you approve of and a poster you don't, running the same play.</p>
+  <h2>Why labour and not race</h2>
+  <p style="font-size:.95rem">The two pairs are chosen so that the heat stays on <em>who paid the
+  printer</em>. Day 1 is a company poster and a union poster aimed at the same workers, asking
+  opposite things. Day 2 is the American and Soviet recruiting posters: the same pointing finger,
+  countries that spent a century as enemies, and no way to tell from the technique which one was
+  right. Day 3 does it a third time with an advertisement and a public-health poster.</p>
 
   <h2>The question that runs the unit</h2>
-  <p style="font-size:.95rem">«¿Quién pagó este cartel, y qué quiere que yo haga?» Ask it every
-  single day, about every poster, including the one on the student's own desk on day 9.</p>
+  <p style="font-size:.95rem">«¿Quién pagó este cartel, y qué quiere que yo haga?» Ask it every day,
+  about every poster, including the one on the student's own desk on day 9.</p>
 
   <h2>What to watch for</h2>
   <ul style="font-size:.9rem">
-    <li><strong>Posters that are flyers.</strong> The commonest failure is four sentences and a
-      border. The three-second test on day 8 fixes it better than you can by telling them.</li>
-    <li><strong>A cause with no action.</strong> "Stop racism" is a belief, not a call. Push for the
-      thing a reader does this week: sign, ask, show up, turn it off, bring one.</li>
-    <li><strong>Students who can't draw.</strong> One symbol, big, is the whole requirement, and the
-      model poster on page 11 is a light bulb. Lettering counts as art.</li>
+    <li><strong>Posters that are flyers.</strong> Four sentences and a border. The three-second test
+      on day 8 fixes this better than you can by telling them.</li>
+    <li><strong>A cause with no action.</strong> "Stop racism" is a belief, not a call. Push for what
+      a reader does this week: sign, ask, show up, turn it off, bring one.</li>
+    <li><strong>Students who can't draw.</strong> One symbol, big, is the whole requirement.
+      Lettering counts as art.</li>
     <li><strong>The counter-poster going soft.</strong> If a student writes a weak slogan for the
       other side, they have dodged the point. Make them write the one that would actually hurt.</li>
   </ul>
 
   <h2>Grading</h2>
-  <p style="font-size:.95rem">Fifteen points, same table the student uses on page 16. Spelling is
-  not on it — accents on the slogan are coached on page 10 as the shop's house style, the same way
-  the newspaper unit handled them.</p>
+  <p style="font-size:.95rem">Fifteen points, the same table the student uses on page 16. Spelling is
+  not on it — accents on the slogan are coached on page 10 as the shop's house style.</p>
   <table class="rubric">
     <thead><tr><th style="width:16%">Criterion</th><th style="width:30%">3</th><th style="width:28%">2</th>
       <th style="width:26%">1</th></tr></thead>
@@ -820,8 +848,10 @@ TEACHER.push({ n: 2, meta: 'Teacher guide<br>Teaching notes', body: `
       }).join('\n      ')}
     </tbody>
   </table>
+
   <p style="font-size:.9rem">The answer key (<em>carteles-claves</em>) covers the analysis pages.
-  Everything from the pitch onward is open and is graded on the defense, not on agreeing with you.</p>` });
+  Everything from the pitch onward is open and is graded on the defense, not on agreeing with
+  you.</p>` });
 
 // ═════════════════════════════════════════════════════════════════════════════
 //  Projector deck
@@ -846,84 +876,101 @@ function buildDeck() {
   const act = (day, head, what, page) => S.push({cls:'act', day, html:
     `<div class="eyebrow">Manos a la obra</div><h2>${head}</h2><p>${what}</p>
      <div class="page">📄 Taller de carteles, ${page}</div>`});
-  // One poster, big, with the question we ask of it.
-  const uno = (day, id, eyebrow, pregunta) => { const c = byId(id); S.push({cls:'solo', day, html:
-    `<div class="eyebrow">${eyebrow}</div>
-     <div class="soloWrap">${svgCartel(c, c.color)}
-       <div><h2>${c.titulo}</h2><p class="sm">${c.estilo}</p><div class="pull">${pregunta}</div></div>
+  // One poster, large, with the question we put to it.
+  const uno = (day, id, pregunta) => { const c = byId(id); S.push({cls:'solo', day, html:
+    `<div class="eyebrow">${c.pie}</div>
+     <div class="soloWrap">${imgCartel(id)}
+       <div><h2>${c.titulo}</h2>
+         ${c.traduccion ? `<p class="sm">${c.traduccion}</p>` : ''}
+         <div class="pull">${pregunta}</div></div>
      </div>`}); };
-  const duo = (day, a, b, eyebrow, head, pie, rotulos = []) => S.push({cls:'duo', day, html:
+  const duo = (day, a, b, eyebrow, head, pie) => S.push({cls:'duo', day, html:
     `<div class="eyebrow">${eyebrow}</div><h2>${head}</h2>
      <div class="duoWrap">
-       ${[a, b].map((id, i) => { const c = byId(id); return `<figure>${svgCartel(c, c.color)}
-         <figcaption>${rotulos[i] || c.lema}</figcaption></figure>`; }).join('')}
+       ${[a, b].map(id => { const c = byId(id); return `<figure>${imgCartel(id)}
+         <figcaption>${c.lado}</figcaption></figure>`; }).join('')}
      </div>${pie ? `<p class="sm pie">${pie}</p>` : ''}`});
+  // The four questions, as a slide to work through out loud.
+  const cuatro = (day, id) => { const c = byId(id); S.push({cls:'list', day, html:
+    `<div class="eyebrow">Las cuatro preguntas</div><h2>${c.titulo}</h2>
+     <dl>${CUATRO.map(([, q]) => `<dt>${q.replace(/<\/?em>/g, '')}</dt><dd>…</dd>`).join('')}</dl>
+     <div class="pull">¿Quién pagó este cartel, y qué quiere que yo haga?</div>`}); };
 
   // ── DÍA 1 ────────────────────────────────────────────────────────────────
   cover(1, 'El taller de carteles',
     'Diez días. Una causa tuya. Siete palabras y tres segundos para convencer a alguien.');
 
   beat(1, 'El trabajo nuevo', 'En el periódico no tomabas partido. Eso se acabó.', [
-    'Una noticia informa y deja que el lector decida. Un cartel no: un cartel quiere que hagas algo, y tiene tres segundos para lograrlo.',
-    'Primero vamos a desarmar carteles — los que te gustan y los que no. Después haces el tuyo, sobre algo en lo que de verdad crees, y se cuelga donde lo vea gente que no conoces.',
+    'Una noticia informa y deja que el lector decida. Un cartel no: quiere que hagas algo, y tiene tres segundos para lograrlo.',
+    'Primero vamos a desarmar ocho carteles de verdad. Después haces el tuyo, sobre algo en lo que crees, y se cuelga donde lo vea gente que no conoces.',
   ], '¿Quién pagó este cartel, y qué quiere que yo haga?');
 
   list(1, 'El calendario', 'Diez días',
-    DIAS.map(([d, min, dia, paso, que]) => [`${d} · ${paso}${dia === 'Bloque' ? ' (bloque)' : ''}`, que]));
+    DIAS.map(([d, , dia, paso, que]) => [`${d} · ${paso}${dia === 'Bloque' ? ' (bloque)' : ''}`, que]));
 
   list(1, 'Tres mensajes', 'Información, anuncio, propaganda', [
     ['Información', '«La fábrica abre a las seis.» No quiere nada de ti.'],
     ['Anuncio', '«Trabaja con nosotros: buen sueldo.» Quiere tu dinero o tu firma.'],
-    ['Propaganda', '«¡El turno es nuestro!» Quiere que te sientas de un lado, y que actúes.'],
+    ['Propaganda', '«¡Nosotros podemos hacerlo!» Quiere que te sientas de un lado, y que actúes.'],
   ], 'No tiene que ser mentira. Casi siempre es una parte de la verdad, dicha muy fuerte.');
 
-  duo(1, 'turno', 'fabrica', 'La huelga de las panaderías', 'El mismo pleito, dos carteles',
-    'Misma semana, mismo puño, misma palabra: nosotros.',
-    ['Lo pagó el sindicato', 'Lo pagó la empresa']);
+  uno(1, 'wecandoit', 'Lo pagó la empresa donde ella trabaja. ¿Qué quiere que haga la gente que lo ve?');
+  uno(1, 'huelga', 'Lo pagó el sindicato de campesinos. ¿Qué quiere que haga la gente que lo ve?');
 
-  beat(1, 'Lo que hay que ver', 'El dibujo es casi igual. Lo que cambia es quién pagó la imprenta.', [
-    'Los dos ponen a un obrero grande, visto desde abajo, donde nadie está cansado.',
-    'Los dos dicen «nosotros» — pero el «nosotros» del sindicato son las trabajadoras, y el de la empresa incluye al dueño.',
-  ], 'La misma herramienta sirve para pedir ocho horas y para pedir que nadie pare la máquina.');
+  duo(1, 'wecandoit', 'huelga', 'Los dos le hablan al que trabaja', 'Uno pide producir. El otro pide parar.',
+    'Misma persona dibujada fuerte, misma palabra «nosotros», peticiones contrarias.');
+
+  cuatro(1, 'wecandoit');
 
   act(1, 'Lee y compara',
-    'Lee la página 2 y subraya la diferencia entre información, anuncio y propaganda. Después llena la tabla de los dos carteles y contesta cuál te convenció más.',
+    'Lee la página 2 y subraya la diferencia entre información, anuncio y propaganda. Después contesta las cuatro preguntas para los dos carteles.',
     'pp. 2–3');
 
   // ── DÍA 2 ────────────────────────────────────────────────────────────────
   cover(2, 'La caja de herramientas', 'Con nombre se ven. Sin nombre funcionan.');
 
-  list(2, 'Las nueve técnicas', 'Nómbralas', TECNICAS.slice(0, 5).map(([n, , d]) => [n, d]));
-  list(2, 'Las nueve técnicas', 'Nómbralas (2)', TECNICAS.slice(5).map(([n, , d]) => [n, d]));
+  list(2, 'Las diez técnicas', 'Nómbralas', TECNICAS.slice(0, 5).map(([n, , d]) => [n, d]));
+  list(2, 'Las diez técnicas', 'Nómbralas (2)', TECNICAS.slice(5).map(([n, , d]) => [n, d]));
 
-  uno(2, 'boicot', 'Caza de técnicas', '¿Qué técnicas ves? ¿Qué te pide hacer, hoy, antes de comprar?');
-  uno(2, 'necesitamos', 'Caza de técnicas', '¿A quién mira? ¿Por qué el dedo se siente dirigido a ti?');
+  uno(2, 'samtio', 'Estados Unidos, 1917. ¿Por qué sientes que te está mirando a ti?');
+  uno(2, 'moor', 'Rusia soviética, 1920. El mismo dedo, tres años después, del otro lado del mundo.');
+
+  duo(2, 'samtio', 'moor', '1917 y 1920', 'El mismo dedo, dos países enemigos',
+    'Si los dos usan exactamente el mismo truco, el truco no te dice quién tenía la razón.');
 
   beat(2, 'Antes de juzgar', 'Ninguna técnica es mala por sí sola.', [
-    'Un cartel de vacunas y un cartel de guerra usan exactamente las mismas nueve. Lo que cambia es para qué, y quién gana.',
+    'Un cartel de vacunas y un cartel de guerra usan las mismas diez. Lo que cambia es para qué, y quién gana.',
   ], 'Tú las vas a usar también. La diferencia es que tú vas a saber cuáles usaste.');
 
-  act(2, 'Caza de técnicas', 'Llena la tabla de las nueve técnicas con dónde has visto cada una. Después marca las técnicas de los dos carteles y copia la prueba exacta.', 'pp. 4–5');
+  act(2, 'Caza de técnicas',
+    'Llena la tabla de las diez técnicas con dónde has visto cada una. Después marca las técnicas de los dos carteles del dedo y contesta las tres preguntas de abajo.',
+    'pp. 4–5');
 
   // ── DÍA 3 · BLOQUE ───────────────────────────────────────────────────────
-  cover(3, 'Taller 1', 'Ochenta minutos: dos pares de carteles, tu causa y tres bocetos.');
+  cover(3, 'Taller 1', 'Ochenta minutos: dos carteles más, uno falso, y tu causa.');
 
-  duo(3, 'agua', 'compra', 'Las mismas herramientas', 'Uno quiere que tomes agua. El otro quiere tu dinero.',
-    'Mandato, repetición y un número. Los dos. ¿Por qué uno nos parece bien y el otro no?',
-    ['Salud pública', 'Anuncio comercial']);
+  duo(3, 'anuncio', 'keepfit', 'Las mismas herramientas', 'Vender harina, avisar de una enfermedad',
+    'Los dos te dan una orden y los dos te enseñan gente sana y feliz.');
 
   beat(3, 'El dato', 'Un número suena a prueba. A veces lo es.', [
-    '«8 de cada 10 llegan sin tomar agua» se puede comprobar: se cuenta, se pregunta, se mide.',
-    '«Todos lo tienen» no se puede comprobar, y por eso se usa tanto.',
+    'El cartel de la tuberculosis te manda a hacerte una prueba que existe, en un lugar que existe.',
+    'El anuncio no te da ningún número: te da una señora sonriendo y una torre de panqueques.',
   ], 'Cuando veas un número en un cartel, pregúntate quién lo contó.');
 
-  uno(3, 'parque', 'Hoy', 'Los carteles ya no se pegan en la pared: se deslizan. ¿Cuál es el número, y quién lo contó?');
+  uno(3, 'falso', 'Éste parece de 1936 y parece soviético. No lo es: lo hizo una máquina en 2026, y el país que anuncia nunca existió.');
+
+  list(3, 'Cómo se revisa', 'Cuatro maneras de cacharlo', [
+    ['Las letras', 'Acércate. Las máquinas todavía inventan letras que no son letras.'],
+    ['Los datos', '¿El país, el año y la organización existieron? Se busca en treinta segundos.'],
+    ['El autor', 'Un cartel real casi siempre tiene imprenta, sindicato o gobierno en una esquina.'],
+    ['De dónde salió', '¿Lo tiene un museo o un archivo, o nada más apareció en una red?'],
+  ], 'Y aun así funciona: te da el sentimiento. Por eso hay que revisar antes de compartir.');
 
   checks(3, 'Tu causa', 'La prueba del cartel', PRUEBA,
-    'Escoge dos ideas. La que pase las cinco preguntas es la que vas a dibujar durante dos semanas, así que escoge una que te importe.');
+    'La que pase las cinco es la que vas a dibujar durante dos semanas. Escoge una que te importe.');
 
   act(3, 'Escoge tu causa',
-    'Compara los dos pares. Contesta lo de tu propio teléfono. Después llena los seis recuadros de ideas, pasa tus dos mejores por la prueba y haz tres bocetos de un minuto antes de salir.',
+    'Compara el anuncio con el cartel de salud, búscale las costuras al cartel falso, y después llena los seis recuadros de ideas, pasa tus dos mejores por la prueba y haz tres bocetos.',
     'pp. 6–8');
 
   // ── DÍA 4 ────────────────────────────────────────────────────────────────
@@ -968,18 +1015,23 @@ function buildDeck() {
   act(5, 'Escribe cinco', 'Cinco eslóganes para tu causa. Después encierra el mejor y cópialo con sus acentos y sus signos.', 'p. 10');
 
   // ── DÍA 6 ────────────────────────────────────────────────────────────────
-  cover(6, 'La imagen', 'Un símbolo. Un foco. Tres segundos.');
+  cover(6, 'La imagen', 'Un símbolo. Un foco. Tres segundos. Y a veces, un chiste.');
 
-  uno(6, 'luz', 'El modelo', 'Lo hizo una estudiante con tres marcadores. Un foco, letras gruesas, y un dato chiquito abajo.');
+  uno(6, 'boomboom', 'San Francisco, 1982. Una candidata de protesta, una escoba, y más de veinte mil votos.');
 
-  list(6, 'Las cuatro razones', 'Por qué ese cartel funciona', [
-    ['Un símbolo', 'Un foco. No un foco, un salón, un recibo y un planeta.'],
-    ['Un foco visual', 'Lo más importante es lo más grande, y está en el centro.'],
+  beat(6, 'El humor', 'Cuesta enojarse con un chiste.', [
+    'El humor es la décima técnica de la lista, y es la que entra donde ya nadie te quiere escuchar.',
+    'También tiene un precio: la gente se acuerda del chiste y a veces no de la causa.',
+  ]);
+
+  list(6, 'Las cuatro razones', 'Por qué un cartel funciona', [
+    ['Un símbolo', 'Uno. El águila, el brazo, la escoba. No cinco cosas a la vez.'],
+    ['Un foco', 'Lo más importante es lo más grande, y está cerca del centro.'],
     ['Letras de lejos', 'Gruesas, derechas, pocas. Se leen desde el otro lado del pasillo.'],
     ['Un dato chiquito', 'Abajo, para quien se acerque. No compite con el eslogan.'],
   ]);
 
-  act(6, 'Tu composición', 'Escoge tu símbolo, practica las letras gruesas y haz las tres composiciones: símbolo arriba, letras arriba, símbolo gigante.', 'p. 11');
+  act(6, 'Tu composición', 'Contesta las tres preguntas del cartel de 1982, escoge tu símbolo, practica las letras y haz las tres composiciones.', 'p. 11');
 
   // ── DÍA 7 · BLOQUE ───────────────────────────────────────────────────────
   cover(7, 'Taller 2', 'Ochenta minutos y un lápiz. El cartel completo.');
@@ -992,7 +1044,7 @@ function buildDeck() {
     'Tu firma de autor, abajo a la derecha',
   ], 'A lápiz, para poder borrar. A la media hora paramos todos y alguien más lo ve.');
 
-  act(7, 'Borrador a lápiz', 'Dibuja el cartel completo en la página 12 y contesta las cuatro casillas de abajo: eslogan, símbolo, qué quieres que hagan y tus dos técnicas.', 'p. 12');
+  act(7, 'Borrador a lápiz', 'Dibuja el cartel completo en la página 12 y contesta las cuatro casillas de abajo.', 'p. 12');
 
   // ── DÍA 8 ────────────────────────────────────────────────────────────────
   cover(8, 'La prueba de tres segundos', 'Nadie se para a estudiar un cartel.');
@@ -1029,12 +1081,12 @@ function buildDeck() {
   list(10, 'La defensa escrita', 'Entre 80 y 120 palabras, y contesta cuatro cosas', [
     ['Tu causa', 'De qué trata y por qué te importa a ti.'],
     ['Tu público', 'A quién le hablas, en persona, no «a todos».'],
-    ['Tus técnicas', 'Dos, con nombre, de las nueve.'],
+    ['Tus técnicas', 'Dos, con nombre, de las diez.'],
     ['Tu símbolo', 'Por qué ése y no otro.'],
   ]);
 
   beat(10, 'El contracartel', 'Ahora el otro lado, y en serio.', [
-    'Alguien no está de acuerdo contigo y tiene dinero para imprimir. Con las mismas nueve técnicas, ¿qué cartel haría contra el tuyo?',
+    'Alguien no está de acuerdo contigo y tiene dinero para imprimir. Con las mismas diez técnicas, ¿qué cartel haría contra el tuyo?',
     'Escribe el eslogan que de verdad golpearía tu causa — no uno débil para quedar bien.',
   ], 'Las herramientas no tienen lado. El que las conoce, las ve venir.');
 
@@ -1056,14 +1108,16 @@ ul.checks{list-style:none}
 ul.checks li{font-size:clamp(1rem,1.85vw,1.45rem);line-height:1.4;padding:.45rem 0 .45rem 2.2rem;
   border-bottom:1px solid var(--cream-dk);position:relative}
 ul.checks li::before{content:'☐';position:absolute;left:0;color:var(--terracotta)}
-.duoWrap{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:start}
-.duoWrap svg,.soloWrap svg{display:block;width:100%;height:auto;max-height:58vh;
-  border:1px solid var(--ink-lt);box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.cartelImg{display:block;width:100%;height:auto;max-height:58vh;object-fit:contain;
+  box-shadow:0 6px 20px rgba(0,0,0,.22)}
+.cartelImg.falta{display:none}
+.duoWrap{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:start;justify-items:center}
+.duoWrap figure{display:flex;flex-direction:column;align-items:center}
 .duoWrap figcaption{font-family:sans-serif;font-weight:700;text-transform:uppercase;
-  letter-spacing:.1em;font-size:clamp(.72rem,1.2vw,1rem);color:var(--ink-lt);margin-top:.5rem;text-align:center}
+  letter-spacing:.1em;font-size:clamp(.72rem,1.2vw,1rem);color:var(--ink-lt);margin-top:.6rem;text-align:center}
 p.sm.pie{margin-top:1rem;max-width:none;text-align:center}
-.soloWrap{display:grid;grid-template-columns:minmax(0,34%) 1fr;gap:2rem;align-items:center}
-.soloWrap svg{max-height:66vh}
+.soloWrap{display:grid;grid-template-columns:minmax(0,38%) 1fr;gap:2.2rem;align-items:center}
+.soloWrap .cartelImg{max-height:72vh}
 .solo h2{margin-bottom:.3rem}
 table.mand{width:100%;border-collapse:collapse;font-size:clamp(.85rem,1.5vw,1.25rem)}
 table.mand th{font-family:sans-serif;font-size:.62em;text-transform:uppercase;letter-spacing:.14em;
@@ -1072,7 +1126,7 @@ table.mand td{padding:.3rem .6rem;border-bottom:1px solid var(--cream-dk)}
 table.mand td.v{font-style:italic;color:var(--ink-lt)}
 table.mand td.hit{font-weight:700;color:var(--terracotta)}
 @media (max-width:760px){.duoWrap,.soloWrap{grid-template-columns:1fr}}
-@media print{.duoWrap svg,.soloWrap svg{box-shadow:none}}
+@media print{.cartelImg{box-shadow:none;max-height:4in}}
 `;
 
 // ── Write ─────────────────────────────────────────────────────────────────────
@@ -1119,4 +1173,4 @@ writeFileSync(join(__dirname, 'carteles-presentacion.html'), buildDeck(), 'utf8'
 console.log(`carteles.html           ${PAGES.length} páginas`);
 console.log(`carteles-maestra.html    ${TEACHER.length} páginas`);
 console.log(`carteles-claves.html     ${KEY.length} páginas`);
-console.log(`carteles-presentacion.html  deck · ${CARTELES.length} carteles`);
+console.log(`carteles-presentacion.html  deck · ${CARTELES.length} carteles (${CARTELES.filter(c => c.local).length} sólo locales)`);

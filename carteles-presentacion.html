@@ -71,14 +71,16 @@ ul.checks{list-style:none}
 ul.checks li{font-size:clamp(1rem,1.85vw,1.45rem);line-height:1.4;padding:.45rem 0 .45rem 2.2rem;
   border-bottom:1px solid var(--cream-dk);position:relative}
 ul.checks li::before{content:'☐';position:absolute;left:0;color:var(--terracotta)}
-.duoWrap{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:start}
-.duoWrap svg,.soloWrap svg{display:block;width:100%;height:auto;max-height:58vh;
-  border:1px solid var(--ink-lt);box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.cartelImg{display:block;width:100%;height:auto;max-height:58vh;object-fit:contain;
+  box-shadow:0 6px 20px rgba(0,0,0,.22)}
+.cartelImg.falta{display:none}
+.duoWrap{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:start;justify-items:center}
+.duoWrap figure{display:flex;flex-direction:column;align-items:center}
 .duoWrap figcaption{font-family:sans-serif;font-weight:700;text-transform:uppercase;
-  letter-spacing:.1em;font-size:clamp(.72rem,1.2vw,1rem);color:var(--ink-lt);margin-top:.5rem;text-align:center}
+  letter-spacing:.1em;font-size:clamp(.72rem,1.2vw,1rem);color:var(--ink-lt);margin-top:.6rem;text-align:center}
 p.sm.pie{margin-top:1rem;max-width:none;text-align:center}
-.soloWrap{display:grid;grid-template-columns:minmax(0,34%) 1fr;gap:2rem;align-items:center}
-.soloWrap svg{max-height:66vh}
+.soloWrap{display:grid;grid-template-columns:minmax(0,38%) 1fr;gap:2.2rem;align-items:center}
+.soloWrap .cartelImg{max-height:72vh}
 .solo h2{margin-bottom:.3rem}
 table.mand{width:100%;border-collapse:collapse;font-size:clamp(.85rem,1.5vw,1.25rem)}
 table.mand th{font-family:sans-serif;font-size:.62em;text-transform:uppercase;letter-spacing:.14em;
@@ -87,7 +89,7 @@ table.mand td{padding:.3rem .6rem;border-bottom:1px solid var(--cream-dk)}
 table.mand td.v{font-style:italic;color:var(--ink-lt)}
 table.mand td.hit{font-weight:700;color:var(--terracotta)}
 @media (max-width:760px){.duoWrap,.soloWrap{grid-template-columns:1fr}}
-@media print{.duoWrap svg,.soloWrap svg{box-shadow:none}}
+@media print{.cartelImg{box-shadow:none;max-height:4in}}
 </style>
 </head>
 <body>
@@ -96,478 +98,341 @@ table.mand td.hit{font-weight:700;color:var(--terracotta)}
   <section class="slide cover" data-day="1" id="s0">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 1 de 10</div>
      <h1>El taller de carteles</h1><p class="hook">Diez días. Una causa tuya. Siete palabras y tres segundos para convencer a alguien.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 1</span><span>1 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>1 / 53</span></div>
   </section>
   <section class="slide beat" data-day="1" id="s1">
     <div class="inner"><div class="eyebrow">El trabajo nuevo</div><h2>En el periódico no tomabas partido. Eso se acabó.</h2>
-     <p>Una noticia informa y deja que el lector decida. Un cartel no: un cartel quiere que hagas algo, y tiene tres segundos para lograrlo.</p><p>Primero vamos a desarmar carteles — los que te gustan y los que no. Después haces el tuyo, sobre algo en lo que de verdad crees, y se cuelga donde lo vea gente que no conoces.</p>
+     <p>Una noticia informa y deja que el lector decida. Un cartel no: quiere que hagas algo, y tiene tres segundos para lograrlo.</p><p>Primero vamos a desarmar ocho carteles de verdad. Después haces el tuyo, sobre algo en lo que crees, y se cuelga donde lo vea gente que no conoces.</p>
      <div class="pull">¿Quién pagó este cartel, y qué quiere que yo haga?</div></div>
-    <div class="foot"><span>El taller de carteles · Día 1</span><span>2 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>2 / 53</span></div>
   </section>
   <section class="slide list" data-day="1" id="s2">
     <div class="inner"><div class="eyebrow">El calendario</div><h2>Diez días</h2>
-     <dl><dt>1 · ¿Qué es la propaganda?</dt><dd>Leer, y comparar dos carteles del mismo pleito</dd><dt>2 · La caja de herramientas</dt><dd>Nombrar las nueve técnicas y cazarlas</dd><dt>3 · Taller 1 · Carteles en duelo (bloque)</dt><dd>Decodificar, escoger tu causa, tres bocetos</dd><dt>4 · Tu causa</dt><dd>La prueba del cartel y la propuesta</dd><dt>5 · El eslogan</dt><dd>Mandatos: tú, usted, nosotros</dd><dt>6 · La imagen</dt><dd>Un símbolo, un foco, tres segundos</dd><dt>7 · Taller 2 · Borrador (bloque)</dt><dd>El cartel completo a lápiz</dd><dt>8 · La prueba de 3 segundos</dt><dd>Edición entre compañeros y plan de cambios</dd><dt>9 · Taller 3 · Cartel final</dt><dd>La versión final, con color</dd><dt>10 · La defensa</dt><dd>Defensa escrita, contracartel y reflexión</dd></dl>
+     <dl><dt>1 · ¿Qué es la propaganda?</dt><dd>Leer, y comparar dos carteles hechos para la misma gente</dd><dt>2 · La caja de herramientas</dt><dd>Las diez técnicas, y el mismo dedo desde dos países</dd><dt>3 · Taller 1 · Vender y avisar (bloque)</dt><dd>Anuncio contra salud, el cartel falso, y tu causa</dd><dt>4 · Tu causa</dt><dd>La prueba del cartel y la propuesta</dd><dt>5 · El eslogan</dt><dd>Mandatos: tú, usted, nosotros</dd><dt>6 · La imagen</dt><dd>Un símbolo, un foco, tres segundos</dd><dt>7 · Taller 2 · Borrador (bloque)</dt><dd>El cartel completo a lápiz</dd><dt>8 · La prueba de 3 segundos</dt><dd>Edición entre compañeros y plan de cambios</dd><dt>9 · Taller 3 · Cartel final</dt><dd>La versión final, con color</dd><dt>10 · La defensa</dt><dd>Defensa escrita, contracartel y reflexión</dd></dl>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 1</span><span>3 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>3 / 53</span></div>
   </section>
   <section class="slide list" data-day="1" id="s3">
     <div class="inner"><div class="eyebrow">Tres mensajes</div><h2>Información, anuncio, propaganda</h2>
-     <dl><dt>Información</dt><dd>«La fábrica abre a las seis.» No quiere nada de ti.</dd><dt>Anuncio</dt><dd>«Trabaja con nosotros: buen sueldo.» Quiere tu dinero o tu firma.</dd><dt>Propaganda</dt><dd>«¡El turno es nuestro!» Quiere que te sientas de un lado, y que actúes.</dd></dl>
+     <dl><dt>Información</dt><dd>«La fábrica abre a las seis.» No quiere nada de ti.</dd><dt>Anuncio</dt><dd>«Trabaja con nosotros: buen sueldo.» Quiere tu dinero o tu firma.</dd><dt>Propaganda</dt><dd>«¡Nosotros podemos hacerlo!» Quiere que te sientas de un lado, y que actúes.</dd></dl>
      <div class="pull">No tiene que ser mentira. Casi siempre es una parte de la verdad, dicha muy fuerte.</div></div>
-    <div class="foot"><span>El taller de carteles · Día 1</span><span>4 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>4 / 53</span></div>
   </section>
-  <section class="slide duo" data-day="1" id="s4">
-    <div class="inner"><div class="eyebrow">La huelga de las panaderías</div><h2>El mismo pleito, dos carteles</h2>
+  <section class="slide solo" data-day="1" id="s4">
+    <div class="inner"><div class="eyebrow">J. Howard Miller para Westinghouse, Estados Unidos, 1943</div>
+     <div class="soloWrap"><img class="cartelImg " src="img/carteles/wecandoit.jpg"
+     alt="«We Can Do It!»" onerror="this.classList.add('falta')">
+       <div><h2>«We Can Do It!»</h2>
+         <p class="sm">«¡Nosotros podemos hacerlo!»</p>
+         <div class="pull">Lo pagó la empresa donde ella trabaja. ¿Qué quiere que haga la gente que lo ve?</div></div>
+     </div></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>5 / 53</span></div>
+  </section>
+  <section class="slide solo" data-day="1" id="s5">
+    <div class="inner"><div class="eyebrow">United Farm Workers, California, años sesenta</div>
+     <div class="soloWrap"><img class="cartelImg " src="img-local/carteles/huelga.jpg"
+     alt="«¡Viva la huelga!»" onerror="this.classList.add('falta')">
+       <div><h2>«¡Viva la huelga!»</h2>
+         
+         <div class="pull">Lo pagó el sindicato de campesinos. ¿Qué quiere que haga la gente que lo ve?</div></div>
+     </div></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>6 / 53</span></div>
+  </section>
+  <section class="slide duo" data-day="1" id="s6">
+    <div class="inner"><div class="eyebrow">Los dos le hablan al que trabaja</div><h2>Uno pide producir. El otro pide parar.</h2>
      <div class="duoWrap">
-       <figure><svg class="cartel " viewBox="0 0 300 400" width="100%" role="img"
-     aria-label="El turno es nuestro" xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="400" fill="#F3E9D2"/>
-    <path d="M0 400 L300 0 L300 130 L120 400 Z" fill="#C8372D"/>
-    <g fill="#E8A33D">
-      <path d="M150 60 L300 20 L300 60 Z" opacity=".85"/>
-      <circle cx="96" cy="104" r="46"/>
-    </g>
-    <!-- a baker's fist around a rolling pin: the focal shape, always full black -->
-    <g transform="rotate(-18 150 210)">
-      <g fill="#1A1A1A">
-        <rect x="56" y="150" width="188" height="26" rx="13"/>
-        <rect x="36" y="156" width="26" height="14" rx="6"/>
-        <rect x="238" y="156" width="26" height="14" rx="6"/>
-      </g>
-      <g fill="#1A1A1A">
-        <path d="M104 176 q-6 0 -6 10 l0 56 q0 34 38 34 l30 0 q34 0 34-34 l0-56 q0-10-8-10 z"/>
-        <g fill="#F3E9D2" opacity=".9">
-          <circle cx="120" cy="196" r="7"/><circle cx="142" cy="196" r="7"/>
-          <circle cx="164" cy="196" r="7"/><circle cx="186" cy="196" r="7"/>
-        </g>
-        <path d="M196 212 q22 2 22 22 t-24 20 l-10 0 z"/>
-      </g>
-    </g>
-    <rect x="0" y="310" width="300" height="62" fill="#1A1A1A"/>
-    <text x="18" y="340" font-size="27" fill="#F3E9D2" text-anchor="start"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="148" lengthAdjust="spacingAndGlyphs">¡EL TURNO</text>
-    <text x="18" y="364" font-size="27" fill="#F3E9D2" text-anchor="start"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="178" lengthAdjust="spacingAndGlyphs">ES NUESTRO!</text>
-    <text x="18" y="388" font-size="10.5" fill="#1A1A1A" text-anchor="start"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     letter-spacing="1.2" textLength="264" lengthAdjust="spacingAndGlyphs">SINDICATO DE PANADERAS · 8 HORAS</text></svg>
-         <figcaption>Lo pagó el sindicato</figcaption></figure><figure><svg class="cartel " viewBox="0 0 300 400" width="100%" role="img"
-     aria-label="La fábrica somos todos" xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="400" fill="#EAF0F4"/>
-    <path d="M300 400 L0 0 L0 130 L180 400 Z" fill="#2E6F9E"/>
-    <g fill="#8FBBD6"><circle cx="210" cy="100" r="44"/></g>
-    <!-- the plant, a rising line, and one contented worker: the same "we",
-         pointed the other way -->
-    <g fill="#1B2A35">
-      <path d="M28 300 l0-96 l54 0 l0 30 l54-30 l0 30 l54-30 l0 96 z"/>
-      <rect x="196" y="150" width="20" height="54"/>
-      <rect x="226" y="168" width="20" height="36"/>
-      <g fill="#EAF0F4">
-        <rect x="44" y="236" width="20" height="26"/><rect x="96" y="236" width="20" height="26"/>
-        <rect x="148" y="236" width="20" height="26"/><rect x="200" y="236" width="20" height="26"/>
-      </g>
-      <circle cx="150" cy="110" r="30"/>
-      <path d="M100 196 q6-50 50-58 q44 8 50 58 z"/>
-      <path d="M44 184 L96 140 L140 164 L246 86" fill="none" stroke="#1B2A35" stroke-width="7"/>
-      <path d="M224 80 L256 78 L250 110 Z"/>
-    </g>
-    <rect x="0" y="312" width="300" height="60" fill="#1B2A35"/>
-    <text x="18" y="340" font-size="25" fill="#EAF0F4" text-anchor="start"
-     font-family="Georgia,'Times New Roman',serif" font-weight="700"
-     textLength="150" lengthAdjust="spacingAndGlyphs">LA FÁBRICA</text>
-    <text x="18" y="364" font-size="25" fill="#EAF0F4" text-anchor="start"
-     font-family="Georgia,'Times New Roman',serif" font-weight="700"
-     textLength="182" lengthAdjust="spacingAndGlyphs">SOMOS TODOS</text>
-    <text x="18" y="388" font-size="10.5" fill="#1B2A35" text-anchor="start"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     letter-spacing="1.2" textLength="264" lengthAdjust="spacingAndGlyphs">PRODUCCIÓN +19% · GRACIAS A USTEDES</text></svg>
-         <figcaption>Lo pagó la empresa</figcaption></figure>
-     </div><p class="sm pie">Misma semana, mismo puño, misma palabra: nosotros.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 1</span><span>5 / 48</span></div>
+       <figure><img class="cartelImg " src="img/carteles/wecandoit.jpg"
+     alt="«We Can Do It!»" onerror="this.classList.add('falta')">
+         <figcaption>La empresa, en plena guerra</figcaption></figure><figure><img class="cartelImg " src="img-local/carteles/huelga.jpg"
+     alt="«¡Viva la huelga!»" onerror="this.classList.add('falta')">
+         <figcaption>Los trabajadores del campo</figcaption></figure>
+     </div><p class="sm pie">Misma persona dibujada fuerte, misma palabra «nosotros», peticiones contrarias.</p></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>7 / 53</span></div>
   </section>
-  <section class="slide beat" data-day="1" id="s5">
-    <div class="inner"><div class="eyebrow">Lo que hay que ver</div><h2>El dibujo es casi igual. Lo que cambia es quién pagó la imprenta.</h2>
-     <p>Los dos ponen a un obrero grande, visto desde abajo, donde nadie está cansado.</p><p>Los dos dicen «nosotros» — pero el «nosotros» del sindicato son las trabajadoras, y el de la empresa incluye al dueño.</p>
-     <div class="pull">La misma herramienta sirve para pedir ocho horas y para pedir que nadie pare la máquina.</div></div>
-    <div class="foot"><span>El taller de carteles · Día 1</span><span>6 / 48</span></div>
+  <section class="slide list" data-day="1" id="s7">
+    <div class="inner"><div class="eyebrow">Las cuatro preguntas</div><h2>«We Can Do It!»</h2>
+     <dl><dt>¿Qué ves primero?</dt><dd>…</dd><dt>¿Quién es «nosotros»?</dt><dd>…</dd><dt>¿Qué quiere que hagas?</dt><dd>…</dd><dt>¿Qué no te dice?</dt><dd>…</dd></dl>
+     <div class="pull">¿Quién pagó este cartel, y qué quiere que yo haga?</div></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>8 / 53</span></div>
   </section>
-  <section class="slide act" data-day="1" id="s6">
-    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Lee y compara</h2><p>Lee la página 2 y subraya la diferencia entre información, anuncio y propaganda. Después llena la tabla de los dos carteles y contesta cuál te convenció más.</p>
+  <section class="slide act" data-day="1" id="s8">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Lee y compara</h2><p>Lee la página 2 y subraya la diferencia entre información, anuncio y propaganda. Después contesta las cuatro preguntas para los dos carteles.</p>
      <div class="page">📄 Taller de carteles, pp. 2–3</div></div>
-    <div class="foot"><span>El taller de carteles · Día 1</span><span>7 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 1</span><span>9 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="2" id="s7">
+  <section class="slide cover" data-day="2" id="s9">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 2 de 10</div>
      <h1>La caja de herramientas</h1><p class="hook">Con nombre se ven. Sin nombre funcionan.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 2</span><span>8 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>10 / 53</span></div>
   </section>
-  <section class="slide list" data-day="2" id="s8">
-    <div class="inner"><div class="eyebrow">Las nueve técnicas</div><h2>Nómbralas</h2>
-     <dl><dt>el eslogan</dt><dd>Una orden corta que se queda pegada. Casi siempre es un mandato: ¡Únete! ¡No compres! ¡Apaga!</dd><dt>la repetición</dt><dd>La misma palabra o forma vuelve, hasta que suena a verdad: «Compra. Sonríe. Repite.»</dd><dt>el nosotros</dt><dd>Te mete en un grupo al que ya perteneces: «La fábrica somos todos», «el turno es nuestro».</dd><dt>el ellos</dt><dd>Alguien tiene la culpa, y nunca eres tú ni quien hizo el cartel.</dd><dt>el tú directo</dt><dd>Te mira, te señala, te habla de tú: «Te necesitamos a ti.»</dd></dl>
+  <section class="slide list" data-day="2" id="s10">
+    <div class="inner"><div class="eyebrow">Las diez técnicas</div><h2>Nómbralas</h2>
+     <dl><dt>el eslogan</dt><dd>Una orden corta que se queda pegada. Casi siempre es un mandato: ¡Únete! ¡No compres! ¡Apaga!</dd><dt>la repetición</dt><dd>La misma palabra o la misma forma vuelve, hasta que suena a verdad.</dd><dt>el nosotros</dt><dd>Te mete en un grupo al que ya perteneces: «we», «nuestra causa», «la fábrica somos todos».</dd><dt>el ellos</dt><dd>Alguien tiene la culpa — un país, una empresa, una enfermedad — y nunca es quien hizo el cartel.</dd><dt>el tú directo</dt><dd>Te mira, te señala, te habla de tú: «I want YOU», «¿Tú te has alistado?»</dd></dl>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 2</span><span>9 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>11 / 53</span></div>
   </section>
-  <section class="slide list" data-day="2" id="s9">
-    <div class="inner"><div class="eyebrow">Las nueve técnicas</div><h2>Nómbralas (2)</h2>
-     <dl><dt>la imagen heroica</dt><dd>Una persona grande, fuerte, vista desde abajo. Nadie está cansado ni tiene miedo.</dd><dt>el dato</dt><dd>Un número exacto que suena a prueba. A veces lo es; a veces nadie lo revisa.</dd><dt>todos lo hacen</dt><dd>Si todos ya firmaron, ya compraron, ya se unieron, ¿qué esperas tú?</dd><dt>la llamada</dt><dd>Te dice exactamente qué hacer hoy: firma, preséntate, pregunta, apaga.</dd></dl>
+  <section class="slide list" data-day="2" id="s11">
+    <div class="inner"><div class="eyebrow">Las diez técnicas</div><h2>Nómbralas (2)</h2>
+     <dl><dt>la imagen heroica</dt><dd>Una persona grande, fuerte, vista desde abajo. Nadie está cansado ni tiene miedo.</dd><dt>el dato</dt><dd>Un número exacto que suena a prueba. A veces lo es; a veces nadie lo revisa.</dd><dt>todos lo hacen</dt><dd>Si todos ya firmaron, ya compraron, ya se unieron, ¿qué esperas tú?</dd><dt>la llamada</dt><dd>Te dice exactamente qué hacer y dónde: firma, preséntate, hazte la prueba, no compres.</dd><dt>el humor</dt><dd>Te hace reír, y lo que te hace reír se te queda. Cuesta enojarse con un chiste.</dd></dl>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 2</span><span>10 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>12 / 53</span></div>
   </section>
-  <section class="slide solo" data-day="2" id="s10">
-    <div class="inner"><div class="eyebrow">Caza de técnicas</div>
-     <div class="soloWrap"><svg class="cartel " viewBox="0 0 300 400" width="100%" role="img"
-     aria-label="No compres sin preguntar" xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="400" fill="#FBF3E4"/>
-    <circle cx="150" cy="168" r="118" fill="#B4212A"/>
-    <circle cx="150" cy="168" r="118" fill="none" stroke="#141414" stroke-width="5"/>
-    <!-- open palm: stop, and ask -->
-    <g fill="#FBF3E4" stroke="#141414" stroke-width="5" stroke-linejoin="round">
-      <path d="M118 244 l0-56 q-14 4-18-8 l-14-42 q-4-14 10-18 t18 10 l10 28 l0-72 q0-15 14-15 t14 15 l0 54
-               l0-64 q0-15 14-15 t14 15 l0 64 l4-46 q2-15 16-13 t12 17 l-6 72 q-4 56-44 74 z"/>
-    </g>
-    <g fill="#E3C04A">
-      <path d="M150 58 l10 20 l22 4 l-16 16 l4 22 l-20-11 l-20 11 l4-22 l-16-16 l22-4 z" opacity=".9"/>
-    </g>
-    <text x="150" y="322" font-size="27" fill="#141414" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="184" lengthAdjust="spacingAndGlyphs">NO COMPRES</text>
-    <text x="150" y="350" font-size="27" fill="#141414" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="232" lengthAdjust="spacingAndGlyphs">SIN PREGUNTAR</text>
-    <text x="150" y="376" font-size="11" fill="#141414" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     letter-spacing="1" textLength="258" lengthAdjust="spacingAndGlyphs">¿QUIÉN LO HIZO? ¿CUÁNTO LE PAGARON?</text></svg>
-       <div><h2>No compres sin preguntar</h2><p class="sm">Cartel de boicot / huelga</p><div class="pull">¿Qué técnicas ves? ¿Qué te pide hacer, hoy, antes de comprar?</div></div>
+  <section class="slide solo" data-day="2" id="s12">
+    <div class="inner"><div class="eyebrow">James Montgomery Flagg, Estados Unidos, 1917</div>
+     <div class="soloWrap"><img class="cartelImg " src="img/carteles/samtio.jpg"
+     alt="«I Want You for U.S. Army»" onerror="this.classList.add('falta')">
+       <div><h2>«I Want You for U.S. Army»</h2>
+         <p class="sm">«Te quiero a TI para el ejército de Estados Unidos»</p>
+         <div class="pull">Estados Unidos, 1917. ¿Por qué sientes que te está mirando a ti?</div></div>
      </div></div>
-    <div class="foot"><span>El taller de carteles · Día 2</span><span>11 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>13 / 53</span></div>
   </section>
-  <section class="slide solo" data-day="2" id="s11">
-    <div class="inner"><div class="eyebrow">Caza de técnicas</div>
-     <div class="soloWrap"><svg class="cartel " viewBox="0 0 300 400" width="100%" role="img"
-     aria-label="Te necesitamos a ti" xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="400" fill="#F2EAD8"/>
-    <g stroke="#DCCDA8" stroke-width="12">
-      <line x1="150" y1="170" x2="-60" y2="-40"/><line x1="150" y1="170" x2="0" y2="-40"/><line x1="150" y1="170" x2="60" y2="-40"/><line x1="150" y1="170" x2="120" y2="-40"/><line x1="150" y1="170" x2="180" y2="-40"/><line x1="150" y1="170" x2="240" y2="-40"/><line x1="150" y1="170" x2="300" y2="-40"/><line x1="150" y1="170" x2="360" y2="-40"/><line x1="150" y1="170" x2="420" y2="-40"/>
-    </g>
-    <circle cx="150" cy="150" r="104" fill="#1F4E79"/>
-    <!-- shoulders and head behind; the arm comes at the reader, so the hand is
-         the biggest thing on the sheet and the finger overlaps everything -->
-    <g fill="#17202B">
-      <circle cx="118" cy="136" r="36"/>
-      <path d="M120 100 q-26-4-26-26 q24-14 54 0 q0 22-28 26 z"/>
-      <path d="M54 300 q8-52 52-64 l36 0 q40 10 52 64 z"/>
-      <path d="M150 300 L196 222 L254 254 L214 324 Z"/>
-    </g>
-    <g fill="#F2EAD8" stroke="#17202B" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
-      <rect x="188" y="216" width="76" height="72" rx="24"/>
-      <rect x="120" y="236" width="92" height="32" rx="16" transform="rotate(16 166 252)"/>
-      <rect x="196" y="190" width="28" height="48" rx="14" transform="rotate(-18 210 214)"/>
-      <g fill="none"><path d="M212 240 l40 0 M214 262 l44 0"/></g>
-    </g>
-    <rect x="0" y="306" width="300" height="66" fill="#C0392B"/>
-    <text x="150" y="338" font-size="30" fill="#F2EAD8" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="258" lengthAdjust="spacingAndGlyphs">TE NECESITAMOS</text>
-    <text x="150" y="366" font-size="30" fill="#F2EAD8" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="62" lengthAdjust="spacingAndGlyphs">A TI</text>
-    <text x="150" y="390" font-size="10.5" fill="#17202B" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     letter-spacing="1.4" textLength="252" lengthAdjust="spacingAndGlyphs">PRESÉNTATE EL LUNES · NO ESPERES</text></svg>
-       <div><h2>Te necesitamos a ti</h2><p class="sm">Cartel de reclutamiento (el dedo que señala)</p><div class="pull">¿A quién mira? ¿Por qué el dedo se siente dirigido a ti?</div></div>
+  <section class="slide solo" data-day="2" id="s13">
+    <div class="inner"><div class="eyebrow">Dmitri Moor, Rusia soviética, 1920</div>
+     <div class="soloWrap"><img class="cartelImg " src="img/carteles/moor.jpg"
+     alt="«¿Tú te has alistado como voluntario?»" onerror="this.classList.add('falta')">
+       <div><h2>«¿Tú te has alistado como voluntario?»</h2>
+         <p class="sm">En ruso: «Ты записался добровольцем?»</p>
+         <div class="pull">Rusia soviética, 1920. El mismo dedo, tres años después, del otro lado del mundo.</div></div>
      </div></div>
-    <div class="foot"><span>El taller de carteles · Día 2</span><span>12 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>14 / 53</span></div>
   </section>
-  <section class="slide beat" data-day="2" id="s12">
-    <div class="inner"><div class="eyebrow">Antes de juzgar</div><h2>Ninguna técnica es mala por sí sola.</h2>
-     <p>Un cartel de vacunas y un cartel de guerra usan exactamente las mismas nueve. Lo que cambia es para qué, y quién gana.</p>
-     <div class="pull">Tú las vas a usar también. La diferencia es que tú vas a saber cuáles usaste.</div></div>
-    <div class="foot"><span>El taller de carteles · Día 2</span><span>13 / 48</span></div>
-  </section>
-  <section class="slide act" data-day="2" id="s13">
-    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Caza de técnicas</h2><p>Llena la tabla de las nueve técnicas con dónde has visto cada una. Después marca las técnicas de los dos carteles y copia la prueba exacta.</p>
-     <div class="page">📄 Taller de carteles, pp. 4–5</div></div>
-    <div class="foot"><span>El taller de carteles · Día 2</span><span>14 / 48</span></div>
-  </section>
-  <section class="slide cover" data-day="3" id="s14">
-    <div class="inner"><div class="eyebrow">El taller de carteles · Día 3 de 10</div>
-     <h1>Taller 1</h1><p class="hook">Ochenta minutos: dos pares de carteles, tu causa y tres bocetos.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 3</span><span>15 / 48</span></div>
-  </section>
-  <section class="slide duo" data-day="3" id="s15">
-    <div class="inner"><div class="eyebrow">Las mismas herramientas</div><h2>Uno quiere que tomes agua. El otro quiere tu dinero.</h2>
+  <section class="slide duo" data-day="2" id="s14">
+    <div class="inner"><div class="eyebrow">1917 y 1920</div><h2>El mismo dedo, dos países enemigos</h2>
      <div class="duoWrap">
-       <figure><svg class="cartel " viewBox="0 0 300 400" width="100%" role="img"
-     aria-label="Toma agua, no excusas" xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="400" fill="#EFF6F5"/>
-    <g fill="#CCE5E1">
-      <circle cx="26" cy="30" r="9"/><circle cx="62" cy="30" r="9"/><circle cx="98" cy="30" r="9"/><circle cx="134" cy="30" r="9"/><circle cx="170" cy="30" r="9"/><circle cx="206" cy="30" r="9"/><circle cx="242" cy="30" r="9"/><circle cx="278" cy="30" r="9"/><circle cx="26" cy="64" r="9"/><circle cx="62" cy="64" r="9"/><circle cx="98" cy="64" r="9"/><circle cx="134" cy="64" r="9"/><circle cx="170" cy="64" r="9"/><circle cx="206" cy="64" r="9"/><circle cx="242" cy="64" r="9"/><circle cx="278" cy="64" r="9"/><circle cx="26" cy="98" r="9"/><circle cx="62" cy="98" r="9"/><circle cx="98" cy="98" r="9"/><circle cx="134" cy="98" r="9"/><circle cx="170" cy="98" r="9"/><circle cx="206" cy="98" r="9"/><circle cx="242" cy="98" r="9"/><circle cx="278" cy="98" r="9"/><circle cx="26" cy="132" r="9"/><circle cx="62" cy="132" r="9"/><circle cx="98" cy="132" r="9"/><circle cx="134" cy="132" r="9"/><circle cx="170" cy="132" r="9"/><circle cx="206" cy="132" r="9"/><circle cx="242" cy="132" r="9"/><circle cx="278" cy="132" r="9"/>
-    </g>
-    <path d="M150 128 q58 70 58 106 a58 58 0 0 1-116 0 q0-36 58-106 z" fill="#2E9B8F"/>
-    <path d="M150 128 q58 70 58 106 a58 58 0 0 1-116 0 q0-36 58-106 z" fill="none" stroke="#10343A" stroke-width="5"/>
-    <path d="M124 238 a26 26 0 0 0 26 26" fill="none" stroke="#EFF6F5" stroke-width="7" stroke-linecap="round"/>
-    <circle cx="232" cy="96" r="24" fill="#F2B544"/>
-    <text x="30" y="330" font-size="26" fill="#10343A" text-anchor="start"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="166" lengthAdjust="spacingAndGlyphs">TOMA AGUA,</text>
-    <text x="30" y="356" font-size="26" fill="#10343A" text-anchor="start"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="182" lengthAdjust="spacingAndGlyphs">NO EXCUSAS.</text>
-    <text x="30" y="380" font-size="10.5" fill="#10343A" text-anchor="start"
-     font-family="Helvetica,Arial,sans-serif" font-weight="400"
-     letter-spacing="1" textLength="240" lengthAdjust="spacingAndGlyphs">8 DE CADA 10 LLEGAN SIN TOMAR AGUA</text></svg>
-         <figcaption>Salud pública</figcaption></figure><figure><svg class="cartel " viewBox="0 0 300 400" width="100%" role="img"
-     aria-label="Compra. Sonríe. Repite." xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="400" fill="#FFF4E8"/>
-    <g fill="#FBD9B4">
-      <path d="M150 170 L274 170 L272.9221462526188 186.31398052744302 Z"/><path d="M150 170 L267.93100802059905 208.31810730249347 L261.86461096165715 223.5005496644389 Z"/><path d="M150 170 L250.3181073024935 242.88537128426668 L239.8569881431938 255.45011224003122 Z"/><path d="M150 170 L222.88537128426668 270.3181073024935 L209.05353725482445 279.035222463629 Z"/><path d="M150 170 L188.3181073024935 287.93100802059905 L172.46951468976505 291.94720541942087 Z"/><path d="M150 170 L150 294 L133.68601947255698 292.9221462526188 Z"/><path d="M150 170 L111.68189269750653 287.93100802059905 L96.49945033556111 281.86461096165715 Z"/><path d="M150 170 L77.11462871573335 270.3181073024935 L64.54988775996881 259.8569881431938 Z"/><path d="M150 170 L49.68189269750653 242.88537128426668 L40.964777536371045 229.05353725482448 Z"/><path d="M150 170 L32.06899197940096 208.3181073024935 L28.052794580579132 192.46951468976508 Z"/><path d="M150 170 L26 170.00000000000003 L27.077853747381184 153.68601947255695 Z"/><path d="M150 170 L32.068991979400934 131.68189269750658 L38.135389038342836 116.49945033556114 Z"/><path d="M150 170 L49.68189269750651 97.11462871573335 L60.143011856806226 84.54988775996878 Z"/><path d="M150 170 L77.11462871573332 69.68189269750653 L90.94646274517551 60.964777536371045 Z"/><path d="M150 170 L111.6818926975065 52.06899197940096 L127.53048531023504 48.05279458057912 Z"/><path d="M150 170 L149.99999999999997 46 L166.313980527443 47.077853747381184 Z"/><path d="M150 170 L188.31810730249344 52.06899197940095 L203.50054966443895 58.13538903834288 Z"/><path d="M150 170 L222.88537128426663 69.6818926975065 L235.45011224003127 80.14301185680625 Z"/><path d="M150 170 L250.31810730249347 97.1146287157333 L259.035222463629 110.9464627451756 Z"/><path d="M150 170 L267.93100802059905 131.6818926975065 L271.94720541942087 147.530485310235 Z"/>
-    </g>
-    <circle cx="150" cy="170" r="86" fill="#E2552C"/>
-    <g fill="#FFF4E8" font-family="Helvetica,Arial,sans-serif" font-weight="800" text-anchor="middle">
-      <text x="150" y="150" font-size="22">NUEVO</text>
-      <text x="150" y="182" font-size="34">¡YA!</text>
-      <text x="150" y="208" font-size="13" letter-spacing="1.4">TODOS LO TIENEN</text>
-    </g>
-    <g fill="#49A2B8"><rect x="40" y="248" width="48" height="36" rx="4"/><rect x="212" y="248" width="48" height="36" rx="4"/></g>
-    <text x="150" y="322" font-size="25" fill="#2B1B12" text-anchor="middle"
-     font-family="Georgia,'Times New Roman',serif" font-weight="700" font-style="italic"
-     textLength="196" lengthAdjust="spacingAndGlyphs">Compra. Sonríe.</text>
-    <text x="150" y="350" font-size="25" fill="#2B1B12" text-anchor="middle"
-     font-family="Georgia,'Times New Roman',serif" font-weight="700" font-style="italic"
-     textLength="88" lengthAdjust="spacingAndGlyphs">Repite.</text>
-    <text x="150" y="378" font-size="10.5" fill="#2B1B12" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     letter-spacing="1.3" textLength="250" lengthAdjust="spacingAndGlyphs">PAGA DESPUÉS · NO PIENSES TANTO</text></svg>
-         <figcaption>Anuncio comercial</figcaption></figure>
-     </div><p class="sm pie">Mandato, repetición y un número. Los dos. ¿Por qué uno nos parece bien y el otro no?</p></div>
-    <div class="foot"><span>El taller de carteles · Día 3</span><span>16 / 48</span></div>
+       <figure><img class="cartelImg " src="img/carteles/samtio.jpg"
+     alt="«I Want You for U.S. Army»" onerror="this.classList.add('falta')">
+         <figcaption>El gobierno de Estados Unidos</figcaption></figure><figure><img class="cartelImg " src="img/carteles/moor.jpg"
+     alt="«¿Tú te has alistado como voluntario?»" onerror="this.classList.add('falta')">
+         <figcaption>El Ejército Rojo, en plena guerra civil</figcaption></figure>
+     </div><p class="sm pie">Si los dos usan exactamente el mismo truco, el truco no te dice quién tenía la razón.</p></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>15 / 53</span></div>
   </section>
-  <section class="slide beat" data-day="3" id="s16">
+  <section class="slide beat" data-day="2" id="s15">
+    <div class="inner"><div class="eyebrow">Antes de juzgar</div><h2>Ninguna técnica es mala por sí sola.</h2>
+     <p>Un cartel de vacunas y un cartel de guerra usan las mismas diez. Lo que cambia es para qué, y quién gana.</p>
+     <div class="pull">Tú las vas a usar también. La diferencia es que tú vas a saber cuáles usaste.</div></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>16 / 53</span></div>
+  </section>
+  <section class="slide act" data-day="2" id="s16">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Caza de técnicas</h2><p>Llena la tabla de las diez técnicas con dónde has visto cada una. Después marca las técnicas de los dos carteles del dedo y contesta las tres preguntas de abajo.</p>
+     <div class="page">📄 Taller de carteles, pp. 4–5</div></div>
+    <div class="foot"><span>El taller de carteles · Día 2</span><span>17 / 53</span></div>
+  </section>
+  <section class="slide cover" data-day="3" id="s17">
+    <div class="inner"><div class="eyebrow">El taller de carteles · Día 3 de 10</div>
+     <h1>Taller 1</h1><p class="hook">Ochenta minutos: dos carteles más, uno falso, y tu causa.</p></div>
+    <div class="foot"><span>El taller de carteles · Día 3</span><span>18 / 53</span></div>
+  </section>
+  <section class="slide duo" data-day="3" id="s18">
+    <div class="inner"><div class="eyebrow">Las mismas herramientas</div><h2>Vender harina, avisar de una enfermedad</h2>
+     <div class="duoWrap">
+       <figure><img class="cartelImg " src="img/carteles/anuncio.jpg"
+     alt="«How Many More Can You Eat?»" onerror="this.classList.add('falta')">
+         <figcaption>Una empresa de harina</figcaption></figure><figure><img class="cartelImg " src="img/carteles/keepfit.jpg"
+     alt="«Keep Fit — Get Your Test Now»" onerror="this.classList.add('falta')">
+         <figcaption>La salud pública</figcaption></figure>
+     </div><p class="sm pie">Los dos te dan una orden y los dos te enseñan gente sana y feliz.</p></div>
+    <div class="foot"><span>El taller de carteles · Día 3</span><span>19 / 53</span></div>
+  </section>
+  <section class="slide beat" data-day="3" id="s19">
     <div class="inner"><div class="eyebrow">El dato</div><h2>Un número suena a prueba. A veces lo es.</h2>
-     <p>«8 de cada 10 llegan sin tomar agua» se puede comprobar: se cuenta, se pregunta, se mide.</p><p>«Todos lo tienen» no se puede comprobar, y por eso se usa tanto.</p>
+     <p>El cartel de la tuberculosis te manda a hacerte una prueba que existe, en un lugar que existe.</p><p>El anuncio no te da ningún número: te da una señora sonriendo y una torre de panqueques.</p>
      <div class="pull">Cuando veas un número en un cartel, pregúntate quién lo contó.</div></div>
-    <div class="foot"><span>El taller de carteles · Día 3</span><span>17 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 3</span><span>20 / 53</span></div>
   </section>
-  <section class="slide solo" data-day="3" id="s17">
-    <div class="inner"><div class="eyebrow">Hoy</div>
-     <div class="soloWrap"><svg class="cartel " viewBox="0 0 320 320" width="100%" role="img"
-     aria-label="#SalvaElParque" xmlns="http://www.w3.org/2000/svg">
-    <rect width="320" height="320" fill="#15181C"/>
-    <circle cx="160" cy="146" r="104" fill="#2A3038"/>
-    <g fill="#5BD08A">
-      <circle cx="160" cy="118" r="52"/><circle cx="118" cy="150" r="36"/><circle cx="202" cy="150" r="36"/>
-      <rect x="150" y="166" width="20" height="84" rx="5"/>
-    </g>
-    <text x="160" y="276" font-size="30" fill="#F4F6F8" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="216" lengthAdjust="spacingAndGlyphs">#SalvaElParque</text>
-    <text x="160" y="298" font-size="12" fill="#F4F6F8" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="400"
-     textLength="212" lengthAdjust="spacingAndGlyphs">1.284 vecinos ya firmaron · firma tú</text>
-    <g fill="#F25C78">
-      <path d="M34 36 q-12-14 2-22 t14 8 q0-16 14-8 t2 22 l-16 16 z"/>
-      <circle cx="286" cy="34" r="13"/>
-    </g>
-    <g fill="#F4F6F8" opacity=".75" font-family="Helvetica,Arial,sans-serif" font-size="11">
-      <text x="58" y="40">vecinos_del_sur</text>
-      <text x="278" y="38" text-anchor="end" fill="#15181C" font-weight="800">3</text>
-    </g></svg>
-       <div><h2>#SalvaElParque</h2><p class="sm">Publicación de redes sociales (hoy)</p><div class="pull">Los carteles ya no se pegan en la pared: se deslizan. ¿Cuál es el número, y quién lo contó?</div></div>
+  <section class="slide solo" data-day="3" id="s20">
+    <div class="inner"><div class="eyebrow">Dice «American-Soviet Commonwealth, 1936». No existió nunca</div>
+     <div class="soloWrap"><img class="cartelImg " src="img/carteles/falso.jpg"
+     alt="«Labor · Liberty · Union»" onerror="this.classList.add('falta')">
+       <div><h2>«Labor · Liberty · Union»</h2>
+         <p class="sm">«Trabajo · Libertad · Unión» / «Defiende · Construye · Únete»</p>
+         <div class="pull">Éste parece de 1936 y parece soviético. No lo es: lo hizo una máquina en 2026, y el país que anuncia nunca existió.</div></div>
      </div></div>
-    <div class="foot"><span>El taller de carteles · Día 3</span><span>18 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 3</span><span>21 / 53</span></div>
   </section>
-  <section class="slide list" data-day="3" id="s18">
+  <section class="slide list" data-day="3" id="s21">
+    <div class="inner"><div class="eyebrow">Cómo se revisa</div><h2>Cuatro maneras de cacharlo</h2>
+     <dl><dt>Las letras</dt><dd>Acércate. Las máquinas todavía inventan letras que no son letras.</dd><dt>Los datos</dt><dd>¿El país, el año y la organización existieron? Se busca en treinta segundos.</dd><dt>El autor</dt><dd>Un cartel real casi siempre tiene imprenta, sindicato o gobierno en una esquina.</dd><dt>De dónde salió</dt><dd>¿Lo tiene un museo o un archivo, o nada más apareció en una red?</dd></dl>
+     <div class="pull">Y aun así funciona: te da el sentimiento. Por eso hay que revisar antes de compartir.</div></div>
+    <div class="foot"><span>El taller de carteles · Día 3</span><span>22 / 53</span></div>
+  </section>
+  <section class="slide list" data-day="3" id="s22">
     <div class="inner"><div class="eyebrow">Tu causa</div><h2>La prueba del cartel</h2>
-     <p class="sm">Escoge dos ideas. La que pase las cinco preguntas es la que vas a dibujar durante dos semanas, así que escoge una que te importe.</p>
+     <p class="sm">La que pase las cinco es la que vas a dibujar durante dos semanas. Escoge una que te importe.</p>
      <ul class="checks"><li>¿Es una causa real, que me importa de verdad?</li><li>¿La puedo decir en siete palabras o menos?</li><li>¿Hay algo que quiero que la gente haga?</li><li>¿La puedo dibujar con un solo símbolo?</li><li>¿Se puede colgar en el pasillo de esta escuela?</li></ul></div>
-    <div class="foot"><span>El taller de carteles · Día 3</span><span>19 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 3</span><span>23 / 53</span></div>
   </section>
-  <section class="slide act" data-day="3" id="s19">
-    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Escoge tu causa</h2><p>Compara los dos pares. Contesta lo de tu propio teléfono. Después llena los seis recuadros de ideas, pasa tus dos mejores por la prueba y haz tres bocetos de un minuto antes de salir.</p>
+  <section class="slide act" data-day="3" id="s23">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Escoge tu causa</h2><p>Compara el anuncio con el cartel de salud, búscale las costuras al cartel falso, y después llena los seis recuadros de ideas, pasa tus dos mejores por la prueba y haz tres bocetos.</p>
      <div class="page">📄 Taller de carteles, pp. 6–8</div></div>
-    <div class="foot"><span>El taller de carteles · Día 3</span><span>20 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 3</span><span>24 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="4" id="s20">
+  <section class="slide cover" data-day="4" id="s24">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 4 de 10</div>
      <h1>Tu causa</h1><p class="hook">Nadie imprime sin permiso.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 4</span><span>21 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 4</span><span>25 / 53</span></div>
   </section>
-  <section class="slide beat" data-day="4" id="s21">
+  <section class="slide beat" data-day="4" id="s25">
     <div class="inner"><div class="eyebrow">La propuesta</div><h2>Hoy me convences a mí primero.</h2>
      <p>Tu causa en una oración, por qué te importa a ti, a quién le hablas, qué quieres que haga esa persona, un dato, y el símbolo que podrías usar.</p><p>Te la regreso aprobada, aprobada con cambios, o «busca otra causa». Eso último no es castigo: pasa en cualquier taller.</p>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 4</span><span>22 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 4</span><span>26 / 53</span></div>
   </section>
-  <section class="slide list" data-day="4" id="s22">
+  <section class="slide list" data-day="4" id="s26">
     <div class="inner"><div class="eyebrow">Lo que hunde una propuesta</div><h2>Tres maneras de atorarse</h2>
      <dl><dt>Una creencia sin acción</dt><dd>«Parar el racismo» es una creencia. ¿Qué hace el lector esta semana? Firma, pregunta, trae, apaga, ven.</dd><dt>Una causa de nadie</dt><dd>Si no la puedes decir en siete palabras, todavía no es una causa: son tres.</dd><dt>Un símbolo que hay que explicar</dt><dd>Si tienes que explicarlo, en el pasillo no vas a estar tú para hacerlo.</dd></dl>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 4</span><span>23 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 4</span><span>27 / 53</span></div>
   </section>
-  <section class="slide act" data-day="4" id="s23">
+  <section class="slide act" data-day="4" id="s27">
     <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>La propuesta</h2><p>Llena la propuesta completa y escoge a tu público: una persona real, no «toda la escuela».</p>
      <div class="page">📄 Taller de carteles, p. 9</div></div>
-    <div class="foot"><span>El taller de carteles · Día 4</span><span>24 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 4</span><span>28 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="5" id="s24">
+  <section class="slide cover" data-day="5" id="s28">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 5 de 10</div>
      <h1>El eslogan</h1><p class="hook">Siete palabras o menos. Casi siempre, un mandato.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 5</span><span>25 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 5</span><span>29 / 53</span></div>
   </section>
-  <section class="slide list" data-day="5" id="s25">
+  <section class="slide list" data-day="5" id="s29">
     <div class="inner"><div class="eyebrow">Mandatos</div><h2>La misma orden, tres públicos</h2>
      <table class="mand">
        <tr><th></th><th>a un compañero</th><th>a un adulto</th><th>a todos</th></tr>
        <tr><td class="v">unirse</td><td class="hit">¡Únete!</td><td>¡Únase!</td><td>¡Unámonos!</td></tr><tr><td class="v">luchar</td><td class="hit">¡Lucha!</td><td>¡Luche!</td><td>¡Luchemos!</td></tr><tr><td class="v">cuidar</td><td class="hit">¡Cuídalo!</td><td>¡Cuídelo!</td><td>¡Cuidémoslo!</td></tr><tr><td class="v">apagar</td><td class="hit">¡Apágala!</td><td>¡Apáguela!</td><td>¡Apaguémosla!</td></tr><tr><td class="v">firmar</td><td class="hit">¡Firma!</td><td>¡Firme!</td><td>¡Firmemos!</td></tr><tr><td class="v">preguntar</td><td class="hit">¡Pregunta!</td><td>¡Pregunte!</td><td>¡Preguntemos!</td></tr><tr><td class="v">callarse</td><td class="hit">¡No te calles!</td><td>¡No se calle!</td><td>¡No nos callemos!</td></tr>
      </table></div>
-    <div class="foot"><span>El taller de carteles · Día 5</span><span>26 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 5</span><span>30 / 53</span></div>
   </section>
-  <section class="slide beat" data-day="5" id="s26">
+  <section class="slide beat" data-day="5" id="s30">
     <div class="inner"><div class="eyebrow">El acento del mandato</div><h2>Cuando le pegas un pronombre, la palabra pide acento.</h2>
      <p>cuida → <b>cuídalo</b> · apaga → <b>apágala</b> · une → <b>únete</b> · firma → <b>fírmala</b></p><p>Dilo en voz alta: el golpe de la voz no se movió. La palabra creció, y por eso ahora el acento se escribe.</p>
      <div class="pull">En negativo, el pronombre se va adelante y el acento se cae: ¡No te calles!</div></div>
-    <div class="foot"><span>El taller de carteles · Día 5</span><span>27 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 5</span><span>31 / 53</span></div>
   </section>
-  <section class="slide list" data-day="5" id="s27">
+  <section class="slide list" data-day="5" id="s31">
     <div class="inner"><div class="eyebrow">Tu eslogan</div><h2>Lo que tiene que cumplir</h2>
      
      <ul class="checks"><li>Siete palabras o menos</li><li>Por lo menos tres de tus cinco empiezan con un mandato</li><li>Uno de los cinco le habla de usted</li><li>Se entiende sin leer el resto del cartel</li></ul></div>
-    <div class="foot"><span>El taller de carteles · Día 5</span><span>28 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 5</span><span>32 / 53</span></div>
   </section>
-  <section class="slide act" data-day="5" id="s28">
+  <section class="slide act" data-day="5" id="s32">
     <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Escribe cinco</h2><p>Cinco eslóganes para tu causa. Después encierra el mejor y cópialo con sus acentos y sus signos.</p>
      <div class="page">📄 Taller de carteles, p. 10</div></div>
-    <div class="foot"><span>El taller de carteles · Día 5</span><span>29 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 5</span><span>33 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="6" id="s29">
+  <section class="slide cover" data-day="6" id="s33">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 6 de 10</div>
-     <h1>La imagen</h1><p class="hook">Un símbolo. Un foco. Tres segundos.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 6</span><span>30 / 48</span></div>
+     <h1>La imagen</h1><p class="hook">Un símbolo. Un foco. Tres segundos. Y a veces, un chiste.</p></div>
+    <div class="foot"><span>El taller de carteles · Día 6</span><span>34 / 53</span></div>
   </section>
-  <section class="slide solo" data-day="6" id="s30">
-    <div class="inner"><div class="eyebrow">El modelo</div>
-     <div class="soloWrap"><svg class="cartel " viewBox="0 0 300 400" width="100%" role="img"
-     aria-label="¡Apaga la luz!" xmlns="http://www.w3.org/2000/svg">
-    <rect width="300" height="400" fill="#FFFBEA"/>
-    <rect x="12" y="12" width="276" height="376" fill="none" stroke="#1C1C1C" stroke-width="7"/>
-    <circle cx="150" cy="168" r="78" fill="#F2C230"/>
-    <g stroke="#1C1C1C" stroke-width="6" stroke-linecap="round">
-      <line x1="242" y1="168" x2="262" y2="168"/><line x1="215.0538238691624" y1="233.0538238691624" x2="229.19595949289334" y2="247.1959594928933"/><line x1="150" y1="260" x2="150" y2="280"/><line x1="84.94617613083763" y1="233.0538238691624" x2="70.80404050710669" y2="247.19595949289334"/><line x1="58" y1="168" x2="38" y2="168"/><line x1="84.94617613083761" y1="102.94617613083763" x2="70.80404050710666" y2="88.80404050710669"/><line x1="149.99999999999997" y1="76" x2="149.99999999999997" y2="56"/><line x1="215.05382386916236" y1="102.94617613083761" x2="229.1959594928933" y2="88.80404050710666"/>
-    </g>
-    <g fill="none" stroke="#1C1C1C" stroke-width="7" stroke-linejoin="round">
-      <path d="M150 112 a42 42 0 0 1 26 75 l0 14 l-52 0 l0-14 a42 42 0 0 1 26-75 z"/>
-      <path d="M128 212 l44 0 M132 224 l36 0"/>
-    </g>
-    <text x="150" y="300" font-size="35" fill="#1C1C1C" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="148" lengthAdjust="spacingAndGlyphs">¡APAGA</text>
-    <text x="150" y="332" font-size="35" fill="#1C1C1C" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="800"
-     textLength="152" lengthAdjust="spacingAndGlyphs">LA LUZ!</text>
-    <text x="150" y="356" font-size="11" fill="#3F7D4F" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="700"
-     textLength="248" lengthAdjust="spacingAndGlyphs">LA ÚLTIMA PERSONA QUE SALGA DEL SALÓN</text>
-    <text x="150" y="374" font-size="11" fill="#1C1C1C" text-anchor="middle"
-     font-family="Helvetica,Arial,sans-serif" font-weight="400"
-     textLength="248" lengthAdjust="spacingAndGlyphs">La escuela gasta $4,000 al año en luz de noche</text></svg>
-       <div><h2>¡Apaga la luz!</h2><p class="sm">Cartel de estudiante (hecho a mano)</p><div class="pull">Lo hizo una estudiante con tres marcadores. Un foco, letras gruesas, y un dato chiquito abajo.</div></div>
+  <section class="slide solo" data-day="6" id="s34">
+    <div class="inner"><div class="eyebrow">Campaña municipal, San Francisco, 2 de noviembre de 1982</div>
+     <div class="soloWrap"><img class="cartelImg " src="img-local/carteles/boomboom.jpg"
+     alt="«Sister Boom Boom for Supervisor»" onerror="this.classList.add('falta')">
+       <div><h2>«Sister Boom Boom for Supervisor»</h2>
+         <p class="sm">«Sister Boom Boom para supervisora»</p>
+         <div class="pull">San Francisco, 1982. Una candidata de protesta, una escoba, y más de veinte mil votos.</div></div>
      </div></div>
-    <div class="foot"><span>El taller de carteles · Día 6</span><span>31 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 6</span><span>35 / 53</span></div>
   </section>
-  <section class="slide list" data-day="6" id="s31">
-    <div class="inner"><div class="eyebrow">Las cuatro razones</div><h2>Por qué ese cartel funciona</h2>
-     <dl><dt>Un símbolo</dt><dd>Un foco. No un foco, un salón, un recibo y un planeta.</dd><dt>Un foco visual</dt><dd>Lo más importante es lo más grande, y está en el centro.</dd><dt>Letras de lejos</dt><dd>Gruesas, derechas, pocas. Se leen desde el otro lado del pasillo.</dd><dt>Un dato chiquito</dt><dd>Abajo, para quien se acerque. No compite con el eslogan.</dd></dl>
+  <section class="slide beat" data-day="6" id="s35">
+    <div class="inner"><div class="eyebrow">El humor</div><h2>Cuesta enojarse con un chiste.</h2>
+     <p>El humor es la décima técnica de la lista, y es la que entra donde ya nadie te quiere escuchar.</p><p>También tiene un precio: la gente se acuerda del chiste y a veces no de la causa.</p>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 6</span><span>32 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 6</span><span>36 / 53</span></div>
   </section>
-  <section class="slide act" data-day="6" id="s32">
-    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Tu composición</h2><p>Escoge tu símbolo, practica las letras gruesas y haz las tres composiciones: símbolo arriba, letras arriba, símbolo gigante.</p>
+  <section class="slide list" data-day="6" id="s36">
+    <div class="inner"><div class="eyebrow">Las cuatro razones</div><h2>Por qué un cartel funciona</h2>
+     <dl><dt>Un símbolo</dt><dd>Uno. El águila, el brazo, la escoba. No cinco cosas a la vez.</dd><dt>Un foco</dt><dd>Lo más importante es lo más grande, y está cerca del centro.</dd><dt>Letras de lejos</dt><dd>Gruesas, derechas, pocas. Se leen desde el otro lado del pasillo.</dd><dt>Un dato chiquito</dt><dd>Abajo, para quien se acerque. No compite con el eslogan.</dd></dl>
+     </div>
+    <div class="foot"><span>El taller de carteles · Día 6</span><span>37 / 53</span></div>
+  </section>
+  <section class="slide act" data-day="6" id="s37">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Tu composición</h2><p>Contesta las tres preguntas del cartel de 1982, escoge tu símbolo, practica las letras y haz las tres composiciones.</p>
      <div class="page">📄 Taller de carteles, p. 11</div></div>
-    <div class="foot"><span>El taller de carteles · Día 6</span><span>33 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 6</span><span>38 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="7" id="s33">
+  <section class="slide cover" data-day="7" id="s38">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 7 de 10</div>
      <h1>Taller 2</h1><p class="hook">Ochenta minutos y un lápiz. El cartel completo.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 7</span><span>34 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 7</span><span>39 / 53</span></div>
   </section>
-  <section class="slide list" data-day="7" id="s34">
+  <section class="slide list" data-day="7" id="s39">
     <div class="inner"><div class="eyebrow">El borrador</div><h2>Todo esto tiene que estar hoy</h2>
      <p class="sm">A lápiz, para poder borrar. A la media hora paramos todos y alguien más lo ve.</p>
      <ul class="checks"><li>El eslogan, con sus acentos</li><li>El símbolo, grande</li><li>El dato, chiquito</li><li>La llamada: qué hace el lector</li><li>Tu firma de autor, abajo a la derecha</li></ul></div>
-    <div class="foot"><span>El taller de carteles · Día 7</span><span>35 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 7</span><span>40 / 53</span></div>
   </section>
-  <section class="slide act" data-day="7" id="s35">
-    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Borrador a lápiz</h2><p>Dibuja el cartel completo en la página 12 y contesta las cuatro casillas de abajo: eslogan, símbolo, qué quieres que hagan y tus dos técnicas.</p>
+  <section class="slide act" data-day="7" id="s40">
+    <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Borrador a lápiz</h2><p>Dibuja el cartel completo en la página 12 y contesta las cuatro casillas de abajo.</p>
      <div class="page">📄 Taller de carteles, p. 12</div></div>
-    <div class="foot"><span>El taller de carteles · Día 7</span><span>36 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 7</span><span>41 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="8" id="s36">
+  <section class="slide cover" data-day="8" id="s41">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 8 de 10</div>
      <h1>La prueba de tres segundos</h1><p class="hook">Nadie se para a estudiar un cartel.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 8</span><span>37 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 8</span><span>42 / 53</span></div>
   </section>
-  <section class="slide list" data-day="8" id="s37">
+  <section class="slide list" data-day="8" id="s42">
     <div class="inner"><div class="eyebrow">Cómo se hace</div><h2>Tres segundos y se tapa</h2>
      <dl><dt>Enseña</dt><dd>Le muestras tu borrador a un compañero tres segundos. Se tapa.</dd><dt>Pregunta</dt><dd>Él contesta de memoria: qué vio, de qué trata, qué le pide, qué palabra se le quedó.</dd><dt>Apunta</dt><dd>Tú no discutes ni explicas. Sólo escribes lo que te dijo.</dd></dl>
      <div class="pull">Si no vio lo que querías, el problema es del cartel, no de sus ojos.</div></div>
-    <div class="foot"><span>El taller de carteles · Día 8</span><span>38 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 8</span><span>43 / 53</span></div>
   </section>
-  <section class="slide list" data-day="8" id="s38">
+  <section class="slide list" data-day="8" id="s43">
     <div class="inner"><div class="eyebrow">Plan de cambios</div><h2>Tres cambios concretos</h2>
      <p class="sm">«Hacerlo mejor» no es un cambio. «Poner el eslogan arriba y el foco más grande» sí lo es.</p>
      <ul class="checks"><li>Qué se hace más grande</li><li>Qué se quita</li><li>Qué se mueve de lugar</li></ul></div>
-    <div class="foot"><span>El taller de carteles · Día 8</span><span>39 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 8</span><span>44 / 53</span></div>
   </section>
-  <section class="slide act" data-day="8" id="s39">
+  <section class="slide act" data-day="8" id="s44">
     <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>La prueba</h2><p>Haz la prueba con dos personas distintas si alcanza el tiempo. Llena la tabla y escribe tus tres cambios.</p>
      <div class="page">📄 Taller de carteles, p. 13</div></div>
-    <div class="foot"><span>El taller de carteles · Día 8</span><span>40 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 8</span><span>45 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="9" id="s40">
+  <section class="slide cover" data-day="9" id="s45">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 9 de 10</div>
      <h1>Taller 3</h1><p class="hook">La versión final. Con color.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 9</span><span>41 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 9</span><span>46 / 53</span></div>
   </section>
-  <section class="slide list" data-day="9" id="s41">
+  <section class="slide list" data-day="9" id="s46">
     <div class="inner"><div class="eyebrow">Antes de entregar</div><h2>La lista del cierre</h2>
      <dl><dt>Color</dt><dd>Marcadores o colores. El símbolo primero; el fondo, al final.</dd><dt>Letras</dt><dd>Marca el contorno, luego engrosa. Nunca escribas directo con el marcador grueso.</dd><dt>Acentos</dt><dd>Revisa el eslogan otra vez. En letras grandes, un acento que falta se ve a tres metros.</dd><dt>Tu firma</dt><dd>Chiquita, abajo a la derecha. Es tuyo.</dd></dl>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 9</span><span>42 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 9</span><span>47 / 53</span></div>
   </section>
-  <section class="slide act" data-day="9" id="s42">
+  <section class="slide act" data-day="9" id="s47">
     <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Cartel final</h2><p>La versión final en la página 14, con los tres cambios que escribiste ayer.</p>
      <div class="page">📄 Taller de carteles, p. 14</div></div>
-    <div class="foot"><span>El taller de carteles · Día 9</span><span>43 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 9</span><span>48 / 53</span></div>
   </section>
-  <section class="slide cover" data-day="10" id="s43">
+  <section class="slide cover" data-day="10" id="s48">
     <div class="inner"><div class="eyebrow">El taller de carteles · Día 10 de 10</div>
      <h1>La defensa</h1><p class="hook">Hoy explicas lo que hiciste, y haces el cartel del otro lado.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 10</span><span>44 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 10</span><span>49 / 53</span></div>
   </section>
-  <section class="slide list" data-day="10" id="s44">
+  <section class="slide list" data-day="10" id="s49">
     <div class="inner"><div class="eyebrow">La defensa escrita</div><h2>Entre 80 y 120 palabras, y contesta cuatro cosas</h2>
-     <dl><dt>Tu causa</dt><dd>De qué trata y por qué te importa a ti.</dd><dt>Tu público</dt><dd>A quién le hablas, en persona, no «a todos».</dd><dt>Tus técnicas</dt><dd>Dos, con nombre, de las nueve.</dd><dt>Tu símbolo</dt><dd>Por qué ése y no otro.</dd></dl>
+     <dl><dt>Tu causa</dt><dd>De qué trata y por qué te importa a ti.</dd><dt>Tu público</dt><dd>A quién le hablas, en persona, no «a todos».</dd><dt>Tus técnicas</dt><dd>Dos, con nombre, de las diez.</dd><dt>Tu símbolo</dt><dd>Por qué ése y no otro.</dd></dl>
      </div>
-    <div class="foot"><span>El taller de carteles · Día 10</span><span>45 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 10</span><span>50 / 53</span></div>
   </section>
-  <section class="slide beat" data-day="10" id="s45">
+  <section class="slide beat" data-day="10" id="s50">
     <div class="inner"><div class="eyebrow">El contracartel</div><h2>Ahora el otro lado, y en serio.</h2>
-     <p>Alguien no está de acuerdo contigo y tiene dinero para imprimir. Con las mismas nueve técnicas, ¿qué cartel haría contra el tuyo?</p><p>Escribe el eslogan que de verdad golpearía tu causa — no uno débil para quedar bien.</p>
+     <p>Alguien no está de acuerdo contigo y tiene dinero para imprimir. Con las mismas diez técnicas, ¿qué cartel haría contra el tuyo?</p><p>Escribe el eslogan que de verdad golpearía tu causa — no uno débil para quedar bien.</p>
      <div class="pull">Las herramientas no tienen lado. El que las conoce, las ve venir.</div></div>
-    <div class="foot"><span>El taller de carteles · Día 10</span><span>46 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 10</span><span>51 / 53</span></div>
   </section>
-  <section class="slide act" data-day="10" id="s46">
+  <section class="slide act" data-day="10" id="s51">
     <div class="inner"><div class="eyebrow">Manos a la obra</div><h2>Defensa, contracartel y reflexión</h2><p>Escribe tu defensa, haz el contracartel, contesta la reflexión y califícate con la tabla. Después colgamos los carteles.</p>
      <div class="page">📄 Taller de carteles, pp. 15–16</div></div>
-    <div class="foot"><span>El taller de carteles · Día 10</span><span>47 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 10</span><span>52 / 53</span></div>
   </section>
-  <section class="slide closer" data-day="10" id="s47">
+  <section class="slide closer" data-day="10" id="s52">
     <div class="inner"><h2>Tu cartel se queda colgado.</h2>
      <p class="hook">Alguien que no conoces va a pasar por el pasillo, lo va a ver tres segundos y va
      a pensar en tu causa. Eso es todo el oficio.</p></div>
-    <div class="foot"><span>El taller de carteles · Día 10</span><span>48 / 48</span></div>
+    <div class="foot"><span>El taller de carteles · Día 10</span><span>53 / 53</span></div>
   </section>
 <div id="help">← → o barra espaciadora · F pantalla completa</div>
 <script>
